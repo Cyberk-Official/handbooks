@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POL-SEC-001 — Information Security Policy</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0A071B;
+      --red: #D9212E;
+      --grey: #717070;
+      --line: #E8E8EC;
+      --soft: #F7F7F9;
+      --muted: #A0A0A8;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    @page {
+      size: A4;
+      margin: 20mm 20mm 22mm;
+    }
+
+    body {
+      font-family: 'Satoshi', -apple-system, 'Segoe UI', sans-serif;
+      font-size: 13.5px;
+      line-height: 1.75;
+      color: var(--ink);
+      background: #EDEDF0;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page {
+      max-width: 210mm;
+      margin: 40px auto;
+      padding: 64px 60px 72px;
+      background: #fff;
+      box-shadow: 0 4px 24px rgba(10,7,27,0.07);
+    }
+
+    /* ---------- Header ---------- */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 7px;
+    }
+
+    .brand svg { display: block; }
+
+    .brand-logo {
+      height: 26px;
+      width: auto;
+      display: block;
+    }
+
+    .brand-meta {
+      font-size: 9.5px;
+      letter-spacing: 1px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .brand-meta b {
+      font-weight: 700;
+      color: var(--grey);
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 10.5px;
+      letter-spacing: 0.4px;
+      color: var(--muted);
+      line-height: 1.9;
+    }
+
+    .stamp {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 2px 9px;
+      border: 1px solid var(--red);
+      color: var(--red);
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 2px;
+    }
+
+    /* ---------- Title block ---------- */
+    .title-block {
+      margin: 44px 0 36px;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: var(--red);
+      margin-bottom: 14px;
+    }
+
+    .doc-title {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1.18;
+      letter-spacing: -0.5px;
+      color: var(--ink);
+    }
+
+    .doc-subject {
+      font-size: 14px;
+      color: var(--grey);
+      margin-top: 10px;
+      max-width: 80%;
+    }
+
+    /* ---------- Articles ---------- */
+    .article {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 12px;
+      text-align: justify;
+      color: #2a2735;
+    }
+
+    .article:first-of-type { margin-top: 8px; }
+
+    .article-num {
+      flex: 0 0 auto;
+      font-weight: 900;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    .effective {
+      text-align: center;
+      font-size: 11px;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      color: var(--muted);
+      margin: 40px 0 0;
+      padding: 12px 0 0;
+      border-top: 1px solid var(--line);
+    }
+
+    /* ---------- Policy body ---------- */
+    .body h2 {
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: -0.2px;
+      margin: 34px 0 14px;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      page-break-after: avoid;
+    }
+
+    .body h2::before {
+      content: "";
+      width: 6px;
+      height: 18px;
+      background: var(--red);
+      border-radius: 1px;
+      flex: 0 0 auto;
+    }
+
+    .body h3 {
+      font-size: 13.5px;
+      font-weight: 700;
+      margin: 20px 0 7px;
+      color: var(--ink);
+      page-break-after: avoid;
+    }
+
+    .body p { margin-bottom: 8px; text-align: justify; color: #2a2735; }
+
+    .body ul, .body ol { margin: 8px 0 14px 20px; color: #2a2735; }
+    .body li { margin-bottom: 5px; padding-left: 4px; }
+    .body li::marker { color: var(--red); }
+
+    .body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 12.5px;
+    }
+
+    .body th, .body td {
+      border: 1px solid var(--line);
+      padding: 9px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .body th {
+      background: var(--soft);
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--grey);
+    }
+
+    .body code {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 11.5px;
+      background: var(--soft);
+      padding: 2px 6px;
+      border-radius: 3px;
+      color: var(--red);
+    }
+
+    .body blockquote {
+      border-left: 3px solid var(--line);
+      background: var(--soft);
+      padding: 10px 18px;
+      margin: 14px 0;
+      color: var(--grey);
+      font-style: italic;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 30px 0;
+    }
+
+    /* ---------- Signature ---------- */
+    .sign {
+      margin-top: 60px;
+      display: flex;
+      justify-content: flex-end;
+      page-break-inside: avoid;
+    }
+
+    .signer { text-align: center; min-width: 200px; }
+
+    .sign-role {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .sign-mark {
+      font-family: 'Brush Script MT', 'Segoe Script', 'Apple Chancery', cursive;
+      font-size: 38px;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .sign-name {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--ink);
+      padding-top: 8px;
+      border-top: 1px solid var(--ink);
+      display: inline-block;
+      min-width: 160px;
+    }
+
+    /* ---------- Footer ---------- */
+    .footer {
+      margin-top: 46px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      font-size: 9.5px;
+      letter-spacing: 0.5px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    /* ---------- Print ---------- */
+    @media print {
+      body { background: #fff; }
+      .page {
+        padding: 0;
+        margin: 0;
+        max-width: none;
+        box-shadow: none;
+      }
+      .body h2, .sign { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+      <div class="brand">
+        <img class="brand-logo" src="../../bootstrap/skills/export-pdf/logos/LOGO%20CYBERK%20TRANS%20B.png" alt="CYBERK">
+        <div class="brand-meta">Doc No. <b>POL-SEC-001</b> · Version <b>1.1</b></div>
+      </div>
+      <div class="header-right">
+        June 26, 2025<br>
+        CYBERK CO., LTD<br>
+        <span class="stamp">Internal</span>
+      </div>
+    </header>
+
+    <!-- ============ TITLE ============ -->
+    <div class="title-block">
+      <div class="eyebrow">Decision · Policy Issuance</div>
+      <h1 class="doc-title">Information Security Policy</h1>
+      <p class="doc-subject">Re: Issuance of the Information Security Policy (ISP), applicable to all employees and contractors at CYBERK CO., LTD.</p>
+    </div>
+
+    <!-- ============ ARTICLES ============ -->
+    <div class="article">
+      <span class="article-num">Article 1.</span>
+      <span>This Decision promulgates the attached <strong>"Information Security Policy (ISP)"</strong>, applicable to all employees and contractors at CYBERK CO., LTD.</span>
+    </div>
+    <div class="article">
+      <span class="article-num">Article 2.</span>
+      <span>This Decision takes effect from the date of signing. Any previous provisions contrary to this Decision are hereby repealed.</span>
+    </div>
+    <div class="article">
+      <span class="article-num">Article 3.</span>
+      <span>All Department Heads and the CTO shall be responsible for implementing this Decision. Any violation will be handled in accordance with internal regulations.</span>
+    </div>
+
+    <!-- ============ CONTENT ============ -->
+    <div class="body">
+
+      <h2>1. Account Security</h2>
+
+      <h3>1.1. Two-Factor Authentication (2FA)</h3>
+      <ul>
+        <li><strong>Mandatory</strong> 2FA for all of the following accounts: company email, GitHub, cloud services (AWS, GCP, Azure, etc.), and any account used for company projects.</li>
+        <li>Accepted 2FA methods: authenticator apps (Google Authenticator, Microsoft Authenticator, Authy), hardware security keys (YubiKey, Titan Security Key), or biometric authentication when available.</li>
+      </ul>
+
+      <h3>1.2. Password Requirements</h3>
+      <ul>
+        <li>Use a strong, unique password for each account. Recommended: use a password manager (1Password, Bitwarden, LastPass).</li>
+        <li>Minimum length: 12 characters. Must include uppercase, lowercase, numbers, and special characters.</li>
+        <li>Change passwords every 6 months (180 days) or immediately if compromise is suspected.</li>
+      </ul>
+
+      <h3>1.3. Phishing Awareness</h3>
+      <ul>
+        <li>Always verify sender emails and suspicious links before clicking.</li>
+        <li>Never provide login credentials or personal information through unverified links.</li>
+        <li>Report phishing emails to management immediately.</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>2. Device Security</h2>
+
+      <h3>2.1. Encryption Requirements</h3>
+      <ul>
+        <li>All work devices must have full-disk encryption enabled: <strong>macOS:</strong> FileVault, <strong>Windows:</strong> BitLocker, <strong>Linux:</strong> LUKS.</li>
+        <li>Encryption recovery keys must be stored in a secure location, separate from the device.</li>
+      </ul>
+
+      <h3>2.2. Access Control</h3>
+      <ul>
+        <li>Strong password/passphrase required for device login.</li>
+        <li>Auto-lock screen after 5 minutes of inactivity.</li>
+        <li>Install all security updates and OS patches as soon as available.</li>
+      </ul>
+
+      <h3>2.3. Lost or Stolen Devices</h3>
+      <ul>
+        <li>Report immediately to management when a device is lost or stolen.</li>
+        <li>The company will execute remote lock and wipe procedures when possible.</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>3. Physical Document Management</h2>
+
+      <h3>3.1. Paper Document Policy</h3>
+      <ul>
+        <li>Prioritize digital documents over paper.</li>
+        <li>Paper documents containing sensitive information must be <strong>shredded</strong> before disposal.</li>
+        <li>Sensitive documents must not leave company premises without management approval.</li>
+        <li>Must be stored in locked cabinets when not in use.</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>4. Sensitive Data Management</h2>
+
+      <h3>4.1. Keys &amp; Secrets Management</h3>
+      <ul>
+        <li><strong>ABSOLUTELY PROHIBITED</strong> to store sensitive keys (secret keys, API keys, private keys), passwords, or credentials in: GitHub repositories (including private repos), public cloud storage (Google Drive, Dropbox), unencrypted local storage, or messaging apps (Slack, Discord, Zalo) and email.</li>
+      </ul>
+
+      <h3>4.2. Recommended Practices</h3>
+      <ul>
+        <li><strong>Environment variables (<code>.env</code>):</strong> Use <code>.env</code> files for local development and ensure they are added to <code>.gitignore</code>.</li>
+        <li><strong>Secrets Vault:</strong> Use dedicated services such as AWS Secrets Manager, HashiCorp Vault, Azure Key Vault, or Google Secret Manager.</li>
+        <li><strong><code>.gitignore</code>:</strong> Ensure sensitive files (<code>*.pem</code>, <code>*.key</code>, <code>credentials.json</code>, <code>.env</code>) are always declared in <code>.gitignore</code>.</li>
+        <li><strong>Source code scanning:</strong> Deploy automated scanning tools (<code>git-secrets</code>, <code>truffleHog</code>) in CI/CD pipelines to detect accidentally committed secrets.</li>
+        <li><strong>Principle of Least Privilege:</strong> Grant access to keys and secrets only to those who genuinely need it.</li>
+      </ul>
+
+      <h3>4.3. API &amp; Database Security</h3>
+      <ul>
+        <li>Always use secure connection strings (e.g., via SSL/TLS).</li>
+        <li>Implement Role-Based Access Control (RBAC) to limit data access.</li>
+        <li>Rotate access keys periodically.</li>
+        <li>Log all access and critical actions.</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>5. Client Data Protection</h2>
+
+      <h3>5.1. Data Storage &amp; Access</h3>
+      <ul>
+        <li>Client data may <strong>only</strong> be stored in approved, security-configured cloud environments.</li>
+        <li><strong>Prohibited</strong> to store client databases or data copies on personal computers.</li>
+        <li>Do not share client data outside authorized systems.</li>
+        <li>Data access logs must be maintained and reviewed regularly.</li>
+      </ul>
+
+      <h3>5.2. Data Transmission</h3>
+      <ul>
+        <li>Use secure protocols for all data transmission (HTTPS, SFTP, TLS).</li>
+        <li>Encrypt all data in transit.</li>
+      </ul>
+
+      <h3>5.3. Data Lifecycle</h3>
+      <ul>
+        <li>Establish retention and deletion policies for client data upon contract expiration or upon request.</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>6. Software Security</h2>
+
+      <h3>6.1. Software Installation Policy</h3>
+      <ul>
+        <li>Only install software from verified and trusted sources (official websites, App Store).</li>
+        <li><strong>Prohibited:</strong> software from unknown sources, applications flagged as dangerous by the OS, and cracked or pirated software.</li>
+      </ul>
+
+      <h3>6.2. Updates &amp; Dependency Management</h3>
+      <ul>
+        <li>Keep all OS and installed software up to date.</li>
+        <li>Enable automatic security updates when possible.</li>
+        <li>Regularly scan project libraries and dependencies for vulnerabilities (e.g., <code>npm audit</code>, GitHub <code>Dependabot</code>).</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>7. Network Security &amp; Connectivity</h2>
+
+      <h3>7.1. Wi-Fi Usage</h3>
+      <ul>
+        <li>Prioritize wired (Ethernet) or secured company Wi-Fi connections.</li>
+        <li>When working remotely, avoid unprotected public Wi-Fi. Use company VPN if necessary.</li>
+      </ul>
+
+      <h3>7.2. VPN</h3>
+      <ul>
+        <li>All remote connections to internal company resources must be made through an approved VPN.</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>8. Security Incident Response</h2>
+
+      <h3>8.1. Reporting Procedure</h3>
+      <ul>
+        <li>Any employee who discovers or suspects a security incident (e.g., lost device, compromised account, malware) must report <strong>immediately</strong> to their direct manager or security team.</li>
+      </ul>
+
+      <h3>8.2. Responsibilities</h3>
+      <ul>
+        <li>Do not attempt to resolve incidents independently. Follow instructions from the technical team to avoid further damage.</li>
+        <li>Cooperate fully during investigation and remediation.</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>9. Blockchain &amp; Crypto Security</h2>
+
+      <h3>9.1. Private Key &amp; Seed Phrase Management</h3>
+      <ul>
+        <li><strong>Core principle:</strong> Private keys and seed phrases are critical assets. Losing them means losing all wallet assets permanently.</li>
+        <li><strong>ABSOLUTELY PROHIBITED</strong> to store private keys or seed phrases in unencrypted digital form on any device, cloud service, email, or messaging app.</li>
+        <li><strong>Top priority:</strong> Use cold wallets (Ledger, Trezor) for important assets and high-value transaction signing.</li>
+        <li>Physical backup of seed phrases must be stored in extremely secure locations (fireproof safe, bank deposit box) and may be split into parts if necessary.</li>
+        <li><strong>Hot Wallets:</strong> Use only for daily operations with small amounts. Never import cold wallet seed phrases into hot wallets.</li>
+      </ul>
+
+      <h3>9.2. Smart Contract Safety</h3>
+      <ul>
+        <li><strong>Audit:</strong> All smart contracts must be audited by at least one independent, reputable third party before mainnet deployment. All discovered vulnerabilities must be resolved.</li>
+        <li>Prioritize well-known, community-vetted libraries (OpenZeppelin, SafeMath).</li>
+        <li><strong>Testing:</strong> Comprehensive test suites including unit tests, integration tests, and fuzz testing. Deploy on testnet and invite community testing before production.</li>
+        <li>Consider launching a bug bounty program post-deployment.</li>
+      </ul>
+
+      <h3>9.3. Safe Interaction with Protocols &amp; dApps</h3>
+      <ul>
+        <li>Always verify contract addresses on reputable block explorers (Etherscan, BscScan) before interacting.</li>
+        <li>Exercise extreme caution with "airdrop" or "minting" messages on social media (Discord, Telegram, Twitter). Never click unknown links or scan unknown QR codes.</li>
+        <li>Regularly review and revoke unnecessary token approvals using tools like Revoke.cash.</li>
+        <li>Use burner wallets with small balances to interact with new or unvetted protocols.</li>
+      </ul>
+
+      <h3>9.4. Infrastructure &amp; Node Security</h3>
+      <ul>
+        <li>If operating self-hosted nodes, RPC endpoints must not be publicly exposed without strict security measures.</li>
+        <li>Limit node server access to trusted IP addresses only.</li>
+        <li>Keep all clients (Geth, Prysm, etc.) updated to the latest version to patch known vulnerabilities.</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>10. AI Safety</h2>
+
+      <h3>10.1. Approved AI Tools</h3>
+      <ul>
+        <li>Employees may use personal or company-provided AI accounts for work.</li>
+        <li><strong>Only use</strong> genuine AI accounts purchased directly from original providers: <strong>Google Gemini</strong>, <strong>Anthropic Claude</strong>, <strong>OpenAI</strong>, or company-provided APIs.</li>
+        <li><strong>Prohibited:</strong> AI APIs sold or distributed by third parties, AI proxy services, or any non-official intermediary.</li>
+      </ul>
+
+      <h3>10.2. Protecting Sensitive Information</h3>
+      <ul>
+        <li><strong>ABSOLUTELY PROHIBITED</strong> to provide AI tools with: private keys, seed phrases, environment variables (<code>.env</code>), passwords, authentication tokens, or API keys.</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>11. Software Licensing</h2>
+
+      <ul>
+        <li><strong>Prohibited:</strong> installing or using cracked, pirated, or unlicensed software on work devices.</li>
+        <li><strong>Prohibited:</strong> using tools, software, or licenses sold or distributed by unauthorized third parties.</li>
+        <li>Do not use bypass methods or any form of license circumvention.</li>
+        <li>All software used for work must be purchased or registered directly from official providers, or licensed by the company.</li>
+      </ul>
+
+      <blockquote>
+        <strong>Note:</strong> This document should be reviewed and updated annually or when significant changes in technology, processes, or security requirements occur. Section 10 (AI Safety) should be reviewed more frequently (at least every 6 months) due to the rapidly evolving AI landscape.
+      </blockquote>
+
+    </div>
+
+    <!-- ============ SIGNATURE ============ -->
+    <div class="sign">
+      <div class="signer">
+        <div class="sign-role">Approved by</div>
+        <div class="sign-mark">Anderson</div>
+        <div class="sign-name">Dao Tuan Anh — CEO</div>
+      </div>
+    </div>
+
+    <!-- ============ EFFECTIVE DATE ============ -->
+    <div class="effective">Effective from June 26, 2025</div>
+
+    <!-- ============ FOOTER ============ -->
+    <div class="footer">
+      <span>CYBERK CO., LTD</span>
+      <span>POL-SEC-001 · v1.1</span>
+      <span>Confidential — Internal</span>
+    </div>
+
+  </div>
+</body>
+</html>
