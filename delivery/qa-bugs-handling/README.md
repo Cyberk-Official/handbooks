@@ -37,15 +37,6 @@ Handbook này gồm 4 loại tài liệu, mỗi loại phục vụ mục đích 
 
 ---
 
-## Nguyên tắc cốt lõi
-
-1. **Phản hồi nhanh** — Khách hàng phải biết bug đã được tiếp nhận trong vòng **15 phút**. Im lặng = mất niềm tin.
-2. **Minh bạch** — Luôn cung cấp mã bug, link tracking, và thời gian dự kiến. Không bao giờ hứa hẹn mơ hồ.
-3. **Truy vết được** — Mọi bug phải có GitHub Issue. Mọi hành động phải có dấu vết trên board.
-4. **Chuyên nghiệp** — Tin nhắn gửi khách hàng phải đúng tone. QA đại diện cho cả team.
-
----
-
 ## Tài liệu tham chiếu
 
 - [Board Management Playbook](../../cyberk-process-qa/board-management-playbook.md) — Quản lý board, capacity QA
