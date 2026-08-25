@@ -9,7 +9,7 @@ status: Nháp
 
 # 👥 Team — Quản lý Nhân sự Dự Án
 
-> **Đối tượng:** PM, Tech Lead, và mọi thành viên team
+> **Đối tượng:** Product Lead và mọi thành viên team
 > **Mục đích:** Chuẩn hóa cách thêm người vào dự án và bàn giao khi rời dự án.
 
 ---
