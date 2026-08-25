@@ -43,6 +43,19 @@ Mỗi trang không chỉ ghi "làm X" mà giải thích "vì sao làm X". Lý do
 Đây là điểm phân biệt handbook sống và tài liệu chết. Nếu chỉ vài người được sửa, nội dung sẽ lỗi thời và tạo tâm lý "phải hỏi mới chắc". Giải pháp: **tách vai trò người ĐỀ XUẤT và người DUYỆT**. Ai cũng đề xuất được (kể cả người mới); người chịu trách nhiệm trang mới là người duyệt. Mở cho đề xuất không nguy hiểm, vì luôn có người gác cổng. Người mới đề xuất còn mang lại góc nhìn tươi mới.
 - *Thực hành:* Bất kỳ ai cũng đề xuất sửa được (qua Pull Request nếu dùng Git). Người phụ trách trang duyệt.
 
+### 1.5. Handbook phải có hồn
+Template là skeleton — nhưng nội dung gốc thường chứa **triết lý, câu chuyện, lý do**. Đó mới là giá trị. Khi migrate tài liệu cũ sang format mới, **giữ linh hồn, đổi hình thức** — không tóm tắt. Một trang handbook khô khan, chỉ có bảng mà mất hết cảm xúc thì không ai muốn đọc.
+- *Thực hành:* Khi viết lại tài liệu cũ, đọc bản gốc kỹ. Giữ lại những câu có "tại sao", có triết lý, có câu chuyện. Chỉ đổi cấu trúc, không giết nội dung.
+
+### 1.6. Audience split — cùng chủ đề, khác đối tượng thì tách folder
+Một chủ đề mà có ≥ 2 đối tượng đọc khác nhau (VD: onboarding cho newbie vs onboarding cho HR/manager), **tách thành 2 folder riêng** và cross-link. Trộn lẫn = không ai đọc đúng phần mình cần.
+- *Thực hành:* Trước khi viết, hỏi: "Ai sẽ đọc trang này?" Nếu câu trả lời là "cả A và B" → tách.
+- *VD thực tế:* `getting-started/` (newbie đọc) ↔ `welcoming-newbie/` (HR/manager đọc)
+
+### 1.7. Template trống trước, nội dung sau
+Khi tạo folder mới, **luôn tạo template trống trước** — chỉ có cấu trúc, chưa có nội dung. Duyệt cấu trúc xong mới điền. Lý do: template trống buộc bạn nhìn tổng thể (bao nhiêu file, loại gì, link nhau ra sao) trước khi đi vào chi tiết.
+- *Thực hành:* Copy template từ `workflow/process-template.md` và `workflow/handbook-template.md`, đặt vào folder mới, duyệt cấu trúc, rồi mới viết nội dung.
+
 ---
 
 ## Phần 2 — Nguyên tắc viết (giọng văn & hình thức)
@@ -67,8 +80,15 @@ Mỗi trang trong handbook thuộc một trong 6 loại. Mỗi loại có mục 
 | **Example** | Mẫu sẵn — tin nhắn, template, ví dụ tốt vs tồi | Cần **copy-paste** hoặc học cách làm đúng | `-example.md` |
 | **Reference** | Bảng tra cứu — phân loại, SLA, deadline, labels | Cần **tra nhanh** một con số hoặc tiêu chuẩn | `-reference.md` |
 | **Role** | Vai trò / team — trách nhiệm, handoff, cách cộng tác | Cần biết **ai làm gì** và phối hợp ra sao | `-role.md` |
+| **AI Instruction** | Hướng dẫn cho AI — prompt, quy tắc sinh nội dung, format đầu ra | Cần **cho AI prompt** để sinh tài liệu đúng chuẩn | `-instruction.md` (trong subfolder `*-ai-instruction/`) |
 
-> Không phải chủ đề nào cũng cần đủ 6 loại. Viết cái nào cần trước, bổ sung dần.
+> Không phải chủ đề nào cũng cần đủ 7 loại. Combo tối thiểu cho mỗi folder: **Process + Handbook**. Thêm Example khi cần mẫu copy-paste, thêm AI Instruction khi muốn AI sinh nội dung chuẩn.
+
+**AI Instruction là gì?**
+
+Một số tài liệu không dành cho người đọc, mà dành cho **AI đọc rồi sinh nội dung**. VD: file `daily-report-instruction.md` chứa quy tắc để AI viết daily report đúng chuẩn — dev chỉ cần prompt file này là AI biết cách viết. Tương tự, `daily-report-template.md` là mẫu đầu ra cho AI copy theo.
+
+Cách tổ chức: đặt trong subfolder riêng (VD `daily-report-ai-instruction/`) để tách biệt với tài liệu dành cho người đọc.
 
 ### Cấu trúc folder cho mỗi chủ đề
 
@@ -76,29 +96,47 @@ Một chủ đề phức tạp (nhiều file) nên gom thành folder:
 
 ```
 handbook/[mục-lớn]/[chủ-đề]/
-├── README.md                     ← Mục lục + giải thích các loại tài liệu
-├── [chủ-đề]-process.md           ← Flowchart, bảng bước, quy tắc cứng
-├── [chủ-đề]-handbook.md          ← Cẩm nang cách nghĩ, mẫu tốt/tồi
-├── [chủ-đề]-example.md           ← Mẫu sẵn để copy-paste
-└── [tên-cụ-thể]-reference.md     ← Bảng tra cứu
+├── README.md                              ← Mục lục + giải thích các loại tài liệu
+├── [chủ-đề]-process.md                    ← Flowchart, bảng bước, quy tắc cứng
+├── [chủ-đề]-handbook.md                   ← Cẩm nang cách nghĩ, mẫu tốt/tồi
+├── [chủ-đề]-example.md                    ← Mẫu sẵn để copy-paste
+├── [tên-cụ-thể]-reference.md              ← Bảng tra cứu
+└── [chủ-đề]-ai-instruction/               ← (Nếu cần) Hướng dẫn cho AI
+    ├── [chủ-đề]-instruction.md            ← Quy tắc để AI sinh nội dung
+    └── [chủ-đề]-template.md               ← Mẫu đầu ra cho AI
 ```
 
 VD thực tế đã triển khai:
 
 ```
-handbook/delivery/qa-bugs-handling/
-├── README.md
-├── bug-handling-process.md
-├── bug-handling-handbook.md
-├── acknowledgment-messages-example.md
-└── bug-severity-sla-handbook.md
+handbook/delivery/dev-daily-report/
+├── daily-report-process.md                ← Board-first → thông báo → viết → gửi
+├── daily-report-handbook.md               ← Cách nghĩ khi viết từng mục
+├── daily-report-example.md                ← Mẫu tốt/tồi + template trống
+└── daily-report-ai-instruction/           ← Cho AI viết report
+    ├── daily-report-instruction.md        ← Quy tắc AI phải tuân theo
+    └── daily-report-template.md           ← Mẫu đầu ra
+```
+
+```
+handbook/hr/getting-started/               ← Audience: Newbie
+├── getting-started-process.md
+├── getting-started-handbook.md
+├── lunch-handbook.md
+└── outfit-handbook.md
+
+handbook/hr/welcoming-newbie/              ← Audience: HR/Manager (cùng chủ đề, khác đối tượng)
+├── welcoming-newbie-process.md
+└── welcoming-newbie-handbook.md
 ```
 
 ---
 
 ## Phần 3 — Bộ Page Template (dùng lại cho từng trang)
 
-Sáu template tương ứng 6 loại tài liệu. Copy nguyên khối khi tạo trang mới.
+Bảy template tương ứng 7 loại tài liệu. Copy nguyên khối khi tạo trang mới.
+
+> **Template sẵn:** Các template Process và Handbook đã được lưu tại `workflow/process-template.md` và `workflow/handbook-template.md` — copy file khi tạo folder mới.
 
 ### 3.1. Template — Trang QUY TRÌNH (Process / Workflow)
 ```
@@ -260,6 +298,33 @@ Bảng tra nhanh — con số, phân loại, tiêu chuẩn. Tối thiểu text, 
 ## Liên kết
 ```
 
+### 3.7. Template — Trang HƯỚNG DẪN AI (AI Instruction)
+
+Dùng khi muốn AI sinh nội dung chuẩn — dev prompt file này để AI biết cách viết. Thường đi kèm 1 file template (mẫu đầu ra).
+
+```
+# [Tên công việc] — AI Instruction
+
+> File này dành cho AI đọc, không phải cho người đọc trực tiếp.
+> Người đọc: xem [handbook](link) hoặc [example](link).
+
+Các quy tắc cần tuân thủ:
+- [Quy tắc 1: VD "Liệt kê cụ thể, không dùng mô tả chung chung"]
+- [Quy tắc 2: VD "Next-step phải có ETA"]
+- [Quy tắc 3: VD "Blocker phải có severity + action plan"]
+
+### [Mục 1]
+**Explain:** [Mục này là gì]
+**Instruction:** [AI phải làm gì]
+- Ví dụ tốt: [...]
+- Ví dụ tệ: [...]
+
+### [Mục 2...]
+
+📌 Note:
+- [Lưu ý quan trọng cho AI]
+```
+
 ---
 
 ## Phần 4 — Checklist "một trang tốt" (tự kiểm trước khi publish)
@@ -275,6 +340,9 @@ Bảng tra nhanh — con số, phân loại, tiêu chuẩn. Tối thiểu text, 
 - [ ] Mẫu tin nhắn/template viết đúng tone kênh giao tiếp (chat ≠ email)
 - [ ] Mỗi hướng dẫn quan trọng có cặp **tốt + tồi** kèm giải thích
 - [ ] Tên file đúng quy ước `[chủ-đề]-[loại].md`
+- [ ] **Giữ hồn** — migrate tài liệu cũ không mất triết lý, câu chuyện, lý do
+- [ ] **Audience rõ** — trang này ai đọc? Nếu ≥ 2 đối tượng → đã tách chưa?
+- [ ] Nếu có AI instruction → đặt trong subfolder riêng, không trộn với tài liệu người đọc
 
 ---
 
@@ -390,4 +458,8 @@ CyberK Handbook
 **Sau đó:** mỗi tuần thêm 2–3 trang, ưu tiên theo "cái gì đang hay bị hỏi lại nhiều nhất".
 
 ---
-*Playbook v2.0 — dành riêng cho CyberK. Đây là tài liệu sống: chính playbook này cũng nên được cải tiến khi CyberK bắt đầu viết handbook thật và rút ra bài học.*
+*Playbook v2.1 — dành riêng cho CyberK. Đây là tài liệu sống: chính playbook này cũng nên được cải tiến khi CyberK bắt đầu viết handbook thật và rút ra bài học.*
+
+*Changelog:*
+*- v2.1 (2026-08-25): Thêm 3 nguyên tắc mới (1.5 Có hồn, 1.6 Audience split, 1.7 Template trống trước). Thêm loại tài liệu thứ 7: AI Instruction. Cập nhật folder structure, checklist, và ví dụ thực tế.*
+*- v2.0 (2026-08-25): Thêm hệ thống 6 loại tài liệu, quy ước đặt tên, 3 template mới (Handbook, Example, Reference).*
