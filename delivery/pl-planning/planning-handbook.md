@@ -4,24 +4,24 @@
 **Cập nhật lần cuối:** 2026-08-26
 **Trạng thái:** Nháp
 
-Bạn là PL/PM, dự án mới vừa ký xong và bạn cần tổ chức buổi Internal Kickoff Meeting. Buổi kickoff không chỉ là "họp giới thiệu dự án" — đây là **lúc duy nhất** cả team cùng ngồi lại để hiểu đúng cùng một thứ. Làm tốt thì dự án chạy mượt từ ngày đầu; làm hời hợt thì 2 tuần sau mới phát hiện mỗi người hiểu một kiểu.
+Bạn là PL/PM, dự án mới vừa ký xong và bạn cần tổ chức buổi Internal Planning Meeting. Buổi planning không chỉ là "họp giới thiệu dự án" — đây là **lúc duy nhất** cả team cùng ngồi lại để hiểu đúng cùng một thứ. Làm tốt thì dự án chạy mượt từ ngày đầu; làm hời hợt thì 2 tuần sau mới phát hiện mỗi người hiểu một kiểu.
 
-Trang này giúp bạn hiểu **cách nghĩ đúng** ở từng giai đoạn của buổi kickoff — không chỉ làm gì, mà tại sao làm vậy.
+Trang này giúp bạn hiểu **cách nghĩ đúng** ở từng giai đoạn của buổi planning — không chỉ làm gì, mà tại sao làm vậy.
 
 ---
 
-## Tại sao kickoff meeting quan trọng đến vậy?
+## Tại sao planning meeting quan trọng đến vậy?
 
-Kickoff meeting là buổi họp duy nhất mà **cả team cùng ngồi lại hiểu mục đích dự án** — không phải chỉ hiểu task. Sai lầm lớn nhất là biến kickoff thành buổi "giao task" — PL đọc danh sách việc, dev gật đầu, ai về nấy code. Kết quả: mỗi người hiểu scope một kiểu, 3 tuần sau mới phát hiện.
+Planning meeting là buổi họp duy nhất mà **cả team cùng ngồi lại hiểu mục đích dự án** — không phải chỉ hiểu task. Sai lầm lớn nhất là biến buổi planning thành buổi "giao task" — PL đọc danh sách việc, dev gật đầu, ai về nấy code. Kết quả: mỗi người hiểu scope một kiểu, 3 tuần sau mới phát hiện.
 
-Một buổi kickoff tốt đạt được 4 điều:
+Một buổi planning tốt đạt được 4 điều:
 
 1. **Cả team hiểu mục đích của khách hàng** — Khách hàng làm dự án này để làm gì? Gọi vốn? Có nhiều user? Có doanh thu từ sớm? Hiểu mục đích thì dev mới quyết định đúng khi gặp trade-off.
 2. **Toàn bộ team hiểu đúng yêu cầu** — Không phải "đọc qua PRD" mà là thảo luận, hỏi, và chốt.
 3. **Có Planning Report** — Kết quả cụ thể: task list, người phụ trách, deadline, rủi ro. Gửi được cho client ngay trong ngày.
 4. **Đồng bộ kỳ vọng** — Kỳ vọng của khách hàng, kỳ vọng của công ty, và cách triển khai dự án — mọi người phải cùng hiểu.
 
-> **Quy tắc:** Buổi kickoff thành công khi kết thúc có Planning Report gửi được cho client ngay trong ngày. Không có report = buổi họp thất bại.
+> **Quy tắc:** Buổi planning thành công khi kết thúc có Planning Report gửi được cho client ngay trong ngày. Không có report = buổi họp thất bại.
 
 ---
 
@@ -33,11 +33,11 @@ Cụ thể PL cần làm:
 - Gửi PRD cho team đọc trước, yêu cầu comment trực tiếp vào tài liệu
 - Gửi Planning Template để mọi người xem qua cấu trúc
 - Custom template cho phù hợp với dự án cụ thể
-- Book phòng họp nghiêm túc — kickoff nên **càng xa khu vực làm việc thường ngày càng tốt** (tạo không khí khác biệt, tập trung)
+- Book phòng họp nghiêm túc — buổi planning nên **càng xa khu vực làm việc thường ngày càng tốt** (tạo không khí khác biệt, tập trung)
 
 ✅ Cách tốt:
 > PL gửi PRD vào Telegram kèm tin nhắn:
-> *"Team ơi, đây là PRD dự án mới — Booking Platform cho client David. Mọi người đọc trước và comment trực tiếp vào doc, đặc biệt phần booking flow (trang 5-8) và payment (trang 12). Kickoff meeting 2pm thứ Ba, phòng họp tầng 3. Ai có câu hỏi ghi sẵn vào doc nhé."*
+> *"Team ơi, đây là PRD dự án mới — Booking Platform cho client David. Mọi người đọc trước và comment trực tiếp vào doc, đặc biệt phần booking flow (trang 5-8) và payment (trang 12). Planning meeting 2pm thứ Ba, phòng họp tầng 3. Ai có câu hỏi ghi sẵn vào doc nhé."*
 >
 > Kèm theo: link PRD (Google Doc, cho phép comment) + link Planning Template.
 
@@ -45,7 +45,7 @@ Tại sao tốt: Team biết đọc gì, đọc phần nào kỹ. Comment trực
 
 ❌ Cách tồi:
 > PL bước vào phòng họp, mở PRD trên máy:
-> *"Ok, hôm nay mình kickoff dự án mới. Để anh giải thích PRD cho mọi người..."*
+> *"Ok, hôm nay mình planning dự án mới. Để anh giải thích PRD cho mọi người..."*
 > → Mất 45 phút đọc PRD, team ngồi nghe thụ động, không ai hỏi vì chưa đọc trước.
 
 Tại sao tồi: Team đến buổi họp "tay trắng" — chưa đọc, chưa nghĩ, chưa có câu hỏi. Kết quả: PL nói một mình, team gật đầu nhưng không thực sự hiểu. Về code rồi mới phát hiện "ủa, tính năng này hoạt động kiểu gì?"
@@ -54,7 +54,7 @@ Tại sao tồi: Team đến buổi họp "tay trắng" — chưa đọc, chưa 
 
 ## Hiểu sản phẩm — Đừng chỉ hiểu tính năng, hiểu MỤC ĐÍCH
 
-Phần đầu buổi kickoff không phải đi vào chi tiết tính năng — mà là giúp cả team hiểu **bối cảnh dự án**. Sản phẩm này giải quyết vấn đề gì? Cho ai? Tại sao khách hàng cần nó? 
+Phần đầu buổi planning không phải đi vào chi tiết tính năng — mà là giúp cả team hiểu **bối cảnh dự án**. Sản phẩm này giải quyết vấn đề gì? Cho ai? Tại sao khách hàng cần nó? 
 
 Khi dev hiểu mục đích, họ sẽ tự biết cái nào quan trọng hơn khi phải trade-off. Ví dụ: nếu mục đích là "gọi vốn" → UX/UI phải đẹp, flow phải mượt, dù backend chưa perfect. Nếu mục đích là "có doanh thu" → payment phải ổn định, admin phải dễ dùng.
 
@@ -79,7 +79,7 @@ Tại sao tồi: Dev nghe tính năng mà không hiểu mục đích → code đ
 
 ## Đọc PRD cùng team — Thảo luận, không chỉ đọc
 
-Đây là phần **lõi** của buổi kickoff. Mục tiêu không phải "đọc xong PRD" — mà là **cả team hiểu giống nhau** về những gì PRD mô tả. Nơi nào PRD chưa rõ, chưa logic → ghi lại để hỏi client.
+Đây là phần **lõi** của buổi planning. Mục tiêu không phải "đọc xong PRD" — mà là **cả team hiểu giống nhau** về những gì PRD mô tả. Nơi nào PRD chưa rõ, chưa logic → ghi lại để hỏi client.
 
 Leader hoặc BA giải thích từng phần PRD, ưu tiên theo tính năng quan trọng. Dev và QA chủ động hỏi ngay chỗ chưa rõ — **đừng chờ về code rồi mới phát hiện**.
 
@@ -103,7 +103,7 @@ Tại sao tốt: Mỗi câu hỏi bây giờ là 1 bug/conflict được **chặ
 > Team: *"... không."*
 > → 2 tuần sau, dev Slack PL lúc 11h đêm: *"Anh ơi, payment flow này em không hiểu logic, PRD viết mâu thuẫn chỗ này..."*
 
-Tại sao tồi: "Không có câu hỏi" thường có nghĩa là "chưa hiểu đủ sâu để hỏi". Im lặng trong kickoff = câu hỏi sẽ nổ ra khi code — lúc đó tốn gấp 10 lần thời gian.
+Tại sao tồi: "Không có câu hỏi" thường có nghĩa là "chưa hiểu đủ sâu để hỏi". Im lặng trong buổi planning = câu hỏi sẽ nổ ra khi code — lúc đó tốn gấp 10 lần thời gian.
 
 ---
 
@@ -183,7 +183,7 @@ Tại sao tồi: "Không có rủi ro" là câu nói nguy hiểm nhất. Mọi d
 
 ## Gửi Planning Report — Chốt trong ngày, không để qua đêm
 
-Buổi kickoff kết thúc, PL có 1 việc quan trọng nhất: **tổng hợp Planning Report và gửi trong ngày**. Không phải "mai em gửi" — vì ngày mai bạn sẽ quên 30% chi tiết đã thảo luận.
+Buổi planning kết thúc, PL có 1 việc quan trọng nhất: **tổng hợp Planning Report và gửi trong ngày**. Không phải "mai em gửi" — vì ngày mai bạn sẽ quên 30% chi tiết đã thảo luận.
 
 Report cần gửi cho 2 nhóm:
 1. **Client** — để xác nhận scope, timeline, và team hiểu đúng yêu cầu
@@ -196,7 +196,7 @@ Report cần gửi cho 2 nhóm:
 > - Thêm phần "Follow-up Questions for Client" — những điểm chưa rõ cần hỏi
 >
 > Xuất PDF, gửi qua Telegram cho client:
-> *"Hi David, here's our project plan following today's internal kickoff. Please review the scope, timeline, and let us know if anything needs adjustment. We also have a few questions listed on page 4 — would appreciate your input on those."*
+> *"Hi David, here's our project plan following today's internal planning. Please review the scope, timeline, and let us know if anything needs adjustment. We also have a few questions listed on page 4 — would appreciate your input on those."*
 >
 > Đồng thời gửi qua Telegram cho Anderson:
 > *"Anh ơi, em gửi Planning Report dự án Booking Platform. Tổng timeline 3 tháng, team 3 người. Có 2 rủi ro chính: Stripe integration chưa có kinh nghiệm và design chưa final. Em đã có giải pháp cho cả 2. Anh xem có góp ý gì không ạ."*
@@ -208,7 +208,7 @@ Tại sao tốt: Client nhận report trong ngày → cảm thấy team professi
 > → 3 ngày sau vẫn chưa gửi. Phải hỏi lại dev "hôm đó estimate bao nhiêu ngày nhỉ?" Dev: "Em không nhớ..."
 > → 1 tuần sau mới gửi report. Client: "Sao lâu vậy, mọi thứ ổn chứ?"
 
-Tại sao tồi: Report gửi trễ = chi tiết sai (vì quên). Client lo lắng. Leaders không nắm được tình hình. Và team mất momentum — "cảm giác kickoff" đã bay mất.
+Tại sao tồi: Report gửi trễ = chi tiết sai (vì quên). Client lo lắng. Leaders không nắm được tình hình. Và team mất momentum — "cảm giác planning" đã bay mất.
 
 ---
 
@@ -227,5 +227,5 @@ Tại sao tồi: Report gửi trễ = chi tiết sai (vì quên). Client lo lắ
 
 ## Liên kết
 
-- [Quy trình kickoff — 4 bước](kick-off-process.md)
+- [Quy trình planning — 4 bước](./planning-process.md)
 - [Mẫu Planning Report & Agenda](./planning-example.md)

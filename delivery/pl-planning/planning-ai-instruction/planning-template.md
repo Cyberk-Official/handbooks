@@ -101,7 +101,7 @@ Kết quả đầu ra là những gì mà một công việc cần tạo ra sau 
 * Output của hoạt động retrospective: Là **improvement reports**: báo cáo những điểm cần cải tiến sau sprint, Là **danh sách hành động cải tiến** cho sprint sau (ai làm, khi nào).
 * Output của họp với khách hàng: Là **BRD – Business Requirement Document**: tài liệu yêu cầu nghiệp vụ. Hoặc Là **biên bản họp (meeting minutes)**: ghi chú các điểm thống nhất và việc cần làm.
 * Output của thiết lập cloud: Là **architecture design document**: tài liệu mô tả kiến trúc hệ thống. Hoặc Là **hướng dẫn cấu hình cloud**: mô tả chi tiết cách setup, quyền truy cập, bảo mật.
-* Output của việc kick-off dự án: Là **planning report**: tài liệu lập kế hoạch dự án (chính là tài liệu này). Là **slide giới thiệu dự án**: dùng để trình bày với team và khách hàng.
+* Output của việc lập kế hoạch dự án (Internal Planning): Là **planning report**: tài liệu lập kế hoạch dự án (chính là tài liệu này). Là **slide giới thiệu dự án**: dùng để trình bày với team và khách hàng.
 * Output của việc setup repository: Là **Git repo với cấu trúc chuẩn**. Là **README file**: hướng dẫn sử dụng repo, nhánh chính, quy tắc commit.
 
 ## **Chiến lược phát triển dự án (Project Development Strategy)**

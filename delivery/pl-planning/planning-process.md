@@ -6,7 +6,7 @@
 
 ## Tại sao có trang này
 
-Internal Kickoff Meeting là buổi họp quan trọng nhất trước khi bắt tay vào phát triển — quyết định cả team có cùng hiểu đúng yêu cầu, cùng thống nhất kế hoạch, hay mạnh ai nấy hiểu. Kickoff tốt thì dự án chạy mượt từ sprint đầu; kickoff hời hợt thì 2 tuần sau mới phát hiện mỗi người hiểu một kiểu.
+Internal Planning Meeting là buổi họp quan trọng nhất trước khi bắt tay vào phát triển — quyết định cả team có cùng hiểu đúng yêu cầu, cùng thống nhất kế hoạch, hay mạnh ai nấy hiểu. Planning tốt thì dự án chạy mượt từ sprint đầu; planning hời hợt thì 2 tuần sau mới phát hiện mỗi người hiểu một kiểu.
 
 ## Khi nào áp dụng (Trigger)
 
@@ -18,7 +18,7 @@ Khi dự án mới được ký hợp đồng, PRD đã sẵn sàng, và team đ
 
 ```mermaid
 flowchart LR
-    A["1. Chuẩn bị\nPRD + template\n+ hẹn lịch"] --> B["2. Kickoff Meeting\nHiểu sản phẩm\nĐọc PRD\nLập plan"]
+    A["1. Chuẩn bị\nPRD + template\n+ hẹn lịch"] --> B["2. Planning Meeting\nHiểu sản phẩm\nĐọc PRD\nLập plan"]
     B --> C["3. Hoàn thiện\nPlanning Report"]
     C --> D["4. Gửi report\ncho client & leaders"]
 ```
@@ -29,7 +29,7 @@ flowchart LR
 
 | Vai trò | Chịu trách nhiệm gì |
 |---------|---------------------|
-| Product Lead / PM | Chuẩn bị buổi họp (gửi PRD, book phòng), dẫn dắt buổi kickoff, tổng hợp Planning Report, gửi cho client & leaders |
+| Product Lead / PM | Chuẩn bị buổi họp (gửi PRD, book phòng), dẫn dắt buổi planning, tổng hợp Planning Report, gửi cho client & leaders |
 | Tech Lead | Đánh giá kiến trúc kỹ thuật, estimate effort tổng thể, xác định rủi ro công nghệ, đề xuất tech stack |
 | Dev | Đọc PRD trước và ghi chú câu hỏi, estimate task của mình, nhận phân công, góp ý task list |
 | QA | Xác định test strategy, góp ý về rủi ro chất lượng, estimate effort QA |
@@ -42,7 +42,7 @@ flowchart LR
 | # | Việc làm | Ai làm | Đầu ra | Timeline |
 |---|----------|--------|--------|----------|
 | 1 | **Chuẩn bị** — Gửi PRD cho team đọc trước (yêu cầu comment vào doc). Gửi Planning Template để xem qua. Custom template cho phù hợp dự án. Book phòng họp nghiêm túc — càng xa khu vực làm việc thường ngày càng tốt. | PL | PRD đã gửi (Google Doc, cho phép comment), Planning Template đã custom, lịch đã book | Trước buổi họp ít nhất 1 ngày |
-| 2 | **Kickoff Meeting** — Gồm 4 phần trong 1 buổi họp: | PL + cả team | | |
+| 2 | **Planning Meeting** — Gồm 4 phần trong 1 buổi họp: | PL + cả team | | |
 | 2a | → *Hiểu sản phẩm:* Leader trình bày bối cảnh dự án — khách hàng là ai, vấn đề họ đang giải quyết, mục đích (gọi vốn? doanh thu? user?). Dùng slide, user flow, hoặc demo nếu có. | PL | Team hiểu MỤC ĐÍCH, không chỉ tính năng | 15 phút |
 | 2b | → *Đọc PRD & thảo luận:* Leader giải thích từng phần PRD theo user flow. Dev/QA hỏi ngay chỗ chưa rõ. Ghi lại câu hỏi chưa trả lời được vào "Follow-up Questions for Client". | PL + cả team | Danh sách câu hỏi cho client, điểm mâu thuẫn đã phát hiện | 30–45 phút |
 | 2c | → *Lập kế hoạch:* Cả team cùng phân loại feature (4 mức: Key Success → Thiết yếu → Không ưu tiên → Nice-to-have). Dev estimate task. Phân công owner cho từng task/epic. | PL + cả team | Task list có owner + deadline + estimate | 30–45 phút |
@@ -58,10 +58,10 @@ flowchart LR
 |---------|-------|
 | Team phải đọc PRD **trước** buổi họp | Không đọc trước = mất 45 phút đầu giải thích lại, buổi họp không có chiều sâu thảo luận |
 | Key-members (TL, dev chính, QA) bắt buộc tham gia | Thiếu người quan trọng = quyết định thiếu cơ sở kỹ thuật, phải họp lại lần 2 |
-| Planning Report phải gửi **trong ngày** sau kickoff | Để lâu = quên 30% chi tiết, report mất chính xác, client lo lắng |
+| Planning Report phải gửi **trong ngày** sau buổi planning | Để lâu = quên 30% chi tiết, report mất chính xác, client lo lắng |
 | Mỗi task phải có **1 owner + deadline cụ thể** | Task không có owner = không ai làm. Không có deadline = không bao giờ xong |
 | Dev tự estimate task của mình, PL không estimate thay | PL estimate thay = con số sai (không hiểu chi tiết kỹ thuật). Dev không commit vì "không phải con số của mình" |
-| Buổi kickoff phải có **facilitator** (người dẫn dắt) rõ ràng | Không có facilitator = buổi họp loãng, không có kết luận, không có quyết định |
+| Buổi planning phải có **facilitator** (người dẫn dắt) rõ ràng | Không có facilitator = buổi họp loãng, không có kết luận, không có quyết định |
 
 ---
 
@@ -71,8 +71,8 @@ flowchart LR
 |-----------|----------|
 | PRD chưa rõ, có nhiều điểm mâu thuẫn | Ghi lại tất cả câu hỏi, follow-up với client **trước** khi lập kế hoạch chi tiết. Không estimate trên requirement mơ hồ. |
 | Team không đủ capacity cho scope dự án | Escalate lên COO/Anderson để điều chỉnh resource, timeline, hoặc scope. Không im lặng chấp nhận rồi trễ. |
-| Client thay đổi yêu cầu sau kickoff | Đánh giá impact (timeline, effort, cost), cập nhật Planning Report, thông báo cho client + leaders. |
-| Key-member vắng buổi kickoff | Ghi lại meeting notes, brief riêng cho người vắng trong vòng 24h. Không để ai "tự đọc meeting notes". |
+| Client thay đổi yêu cầu sau buổi planning | Đánh giá impact (timeline, effort, cost), cập nhật Planning Report, thông báo cho client + leaders. |
+| Key-member vắng buổi planning | Ghi lại meeting notes, brief riêng cho người vắng trong vòng 24h. Không để ai "tự đọc meeting notes". |
 | Không kịp gửi report trong ngày | Gửi bản draft (dù chưa perfect) kèm ghi chú "final version gửi trước 10am mai". Không để quá 24h. |
 
 ---
