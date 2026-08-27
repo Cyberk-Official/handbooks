@@ -4,92 +4,150 @@
 >
 > Handbook là trái tim của Cyberk — nơi ghi lại cách làm, kinh nghiệm từ những sai lầm đi trước, và cách sửa sai. Mỗi trang tồn tại vì ai đó đã từng vấp, đã rút ra bài học, và đã viết xuống.
 
-Nếu bạn là thành viên của Cyberk, đây là nơi bạn tìm thấy câu trả lời. Nếu bạn là người mới, hãy bắt đầu từ [Reading Roadmap](./reading-roadmap.md).
+Nếu bạn là thành viên của Cyberk, đây là nơi bạn tìm thấy câu trả lời. Nếu bạn là người mới, bắt đầu từ [Tầng 1 — Nền tảng](#tầng-1--nền-tảng-ai-cũng-đọc).
 
 ---
 
-## Cấu trúc thư viện
+## Bắt đầu từ đâu? — 4 tầng đọc
 
-### 📖 The Cyberk Way — Triết lý & Nền tảng
-> *Đọc khi:* Muốn hiểu Cyberk là ai, tin vào điều gì, và làm việc như thế nào.
+```
+Tầng 1: Nền tảng        ← Ai cũng đọc (The Cyberk Way + Văn hoá)
+Tầng 2: Vai trò          ← Đọc theo vị trí của bạn (Dev / QA / PL / HR)
+Tầng 3: Tình huống       ← Đọc khi gặp case cụ thể (bàn giao, xử lý bug, onboard...)
+Tầng 4: Đóng góp         ← Đọc khi muốn sửa/thêm handbook
+```
 
-| Tài liệu | Mô tả |
-|-----------|-------|
-| [The Cyberk Way](./01-cyberk-way/0.0.handbook-structure.md) | Cẩm nang triết lý, bí quyết và cách vận hành — cuốn sách nền tảng |
-| [Lời nói đầu](./01-cyberk-way/0.1-loi-noi-dau.md) | Tại sao cuốn cẩm nang này tồn tại |
-| [Lịch sử hình thành](./01-cyberk-way/0.3-lich-su-hinh-thanh.md) | Câu chuyện Cyberk từ ngày đầu |
-| [Sứ mệnh](./01-cyberk-way/2.1-su-menh.md) & [Giá trị cốt lõi](./01-cyberk-way/2.2-gia-tri-cot-loi.md) | La bàn cho mọi quyết định |
-| [Tổng quan về Cyberk](./01-cyberk-way/2.3-tong-quan-ve-cyberk.md) | Cyberk làm gì, phục vụ ai |
-| [Cơ cấu tổ chức](./01-cyberk-way/2.5-co-cau-to-chuc.md) | Cách team được tổ chức |
-| [3 Bí quyết Cyberk](./01-cyberk-way/3.1-cham-hay-khong-bang-tay-quen.md) | Chăm hay không bằng tay quen · Dĩ bất biến ứng vạn biến · Trăm nghe không bằng một thấy |
-| [Quy trình làm việc](./01-cyberk-way/5.1-quy-trinh.md) & [Sprint một ngày](./01-cyberk-way/5.1-sprint-mot-ngay.md) | Cách chúng ta vận hành hàng ngày |
+> **Tips:** Đừng đọc hết một lần. Đọc Tầng 1 → đọc theo vai trò → tra theo tình huống khi cần. Process cho biết *luồng tổng thể*; Handbook giải thích *cách nghĩ*. Khi cần làm gì đó lần đầu, tìm file `-example.md` để copy-paste.
 
 ---
 
-### 👥 HR — Con người
-> *Đọc khi:* Onboard người mới, tìm hiểu chính sách, hoặc tổ chức đón thành viên.
+## Tầng 1 — Nền tảng (Ai cũng đọc)
 
-| Folder | Audience | Nội dung |
-|--------|----------|----------|
-| [hr/getting-started/](./hr/getting-started/) | 🧑‍💻 Newbie | Hướng dẫn ngày đầu tiên — ăn trưa, trang phục, bắt đầu từ đâu |
-| [hr/welcoming-newbie/](./hr/welcoming-newbie/) | 👔 HR / Manager | Cách chuẩn bị đón người mới — checklist, quy trình, trách nhiệm |
+> Đọc lần lượt từ trên xuống. Đây là "la bàn" — không có nền tảng này, bạn sẽ không hiểu tại sao chúng ta làm theo cách mình đang làm.
 
----
+| # | Đọc gì | File | Thời gian |
+|---|--------|------|-----------|
+| 1 | **Lời nói đầu** — Tại sao handbook tồn tại | [0.1-loi-noi-dau.md](./01-cyberk-way/0.1-loi-noi-dau.md) | 2 phút |
+| 2 | **Câu chuyện Cyberk** — Lịch sử hình thành từ ngày đầu | [0.3-lich-su-hinh-thanh.md](./01-cyberk-way/0.3-lich-su-hinh-thanh.md) | 5 phút |
+| 3 | **Sứ mệnh & Giá trị cốt lõi** — La bàn cho mọi quyết định | [2.1-su-menh.md](./01-cyberk-way/2.1-su-menh.md) → [2.2-gia-tri-cot-loi.md](./01-cyberk-way/2.2-gia-tri-cot-loi.md) | 5 phút |
+| 4 | **Tổng quan & Cơ cấu tổ chức** — Cyberk làm gì, phục vụ ai | [2.3-tong-quan.md](./01-cyberk-way/2.3-tong-quan-ve-cyberk.md) → [2.5-co-cau.md](./01-cyberk-way/2.5-co-cau-to-chuc.md) | 5 phút |
+| 5 | **3 Bí quyết Cyberk** — Triết lý vận hành cốt lõi | [3.1](./01-cyberk-way/3.1-cham-hay-khong-bang-tay-quen.md) → [3.2](./01-cyberk-way/3.2-di-bat-bien-ung-van-bien.md) → [3.3](./01-cyberk-way/3.3-tram-nghe-khong-bang-mot-thay.md) | 10 phút |
+| 6 | **Giao tiếp trong team** — Horenso: Báo cáo · Liên lạc · Thảo luận | [communicate-handbook.md](./03-team/team-communicate/communicate-handbook.md) | 10 phút |
+| 7 | **Quy trình làm việc & Sprint một ngày** — Cách vận hành hàng ngày | [5.1-quy-trinh.md](./01-cyberk-way/5.1-quy-trinh.md) → [sprint-mot-ngay.md](./01-cyberk-way/5.1-sprint-mot-ngay.md) | 5 phút |
 
-### 🔧 Delivery — Cách chúng ta làm sản phẩm
-> *Đọc khi:* Cần biết quy trình làm việc hàng ngày — từ code, test, report đến bàn giao.
-
-| Folder | Nội dung | Trạng thái |
-|--------|----------|-----------|
-| [delivery/board-handbook/](./delivery/board-handbook/) | Quản lý board, task, epic, milestone trên GitHub Projects | ✅ Có nội dung |
-| [delivery/dev-daily-report/](./delivery/dev-daily-report/) | Quy trình viết daily report — process, handbook, example, AI instruction | ✅ Hoàn chỉnh |
-| [delivery/qa-bugs-handling/](./delivery/qa-bugs-handling/) | Xử lý bugs — phân loại severity, SLA, mẫu tin nhắn tiếp nhận | ✅ Hoàn chỉnh |
-| [delivery/qa-bugs-logs/](./delivery/qa-bugs-logs/) | Cách tạo bug trên GitHub — format, quy tắc | ⚠️ Skeleton |
-| [delivery/pl-hangover/](./delivery/pl-hangover/) | Bàn giao sản phẩm cho client — process, handbook, example, maintenance policy | ✅ Hoàn chỉnh |
-| [delivery/planning/](./delivery/planning/) | Kickoff meeting & Planning — instruction, template | ✅ Có nội dung |
-| [delivery/dev/](./delivery/dev/) | Dev methodology — AI-driven dev, Asimov pipeline, Solo-dev way | ✅ Có nội dung |
+> ⏱ **Tổng: ~40 phút.** Đọc xong tầng này, bạn hiểu Cyberk là ai và cách chúng ta vận hành.
 
 ---
 
-### 🤝 Team — Văn hoá & Tổ chức nhóm
-> *Đọc khi:* Cần hiểu văn hoá Cyberk, cách giao tiếp, hoặc quy trình join/leave project.
+## Tầng 2 — Theo vai trò
 
-| Folder | Nội dung | Trạng thái |
-|--------|----------|-----------|
-| [team/02-culture/](./team/02-culture/) | Văn hoá Cyberk — Horenso (báo cáo, liên lạc, thảo luận) | ✅ Có nội dung |
-| [team/project-onboarding/](./team/project-onboarding/) | Quy trình thành viên mới tham gia dự án | ⚠️ Skeleton |
-| [team/project-leave/](./team/project-leave/) | Quy trình thành viên rời khỏi dự án | ⚠️ Skeleton |
+### 🧑‍🎓 Nếu bạn là Newbie (vừa vào Cyberk)
+
+| # | Đọc gì | File |
+|---|--------|------|
+| 1 | ⬆️ **Tầng 1 trước** | Xem bảng ở trên |
+| 2 | Getting Started — Ngày đầu tiên | [getting-started/](./05-hr/getting-started/) |
+| 3 | Daily Report — Bắt đầu viết từ ngày đầu | [daily-report-handbook.md](./04-delivery/dev-daily-report/daily-report-handbook.md) |
+| 4 | Đọc thêm theo vai trò | Xem mục Dev / QA / PL bên dưới |
+
+### 🧑‍💻 Nếu bạn là Developer
+
+| # | Đọc gì | File |
+|---|--------|------|
+| 1 | Daily Report — Cách viết | [daily-report-handbook.md](./04-delivery/dev-daily-report/daily-report-handbook.md) |
+| 2 | Board & Task — Quản lý công việc | [board-handbook/](./04-delivery/board-handbook/) |
+| 3 | Bug Handling — Xử lý khi gặp bug | [qa-bugs-handling/](./04-delivery/qa-bugs-handling/) |
+
+### 🧪 Nếu bạn là QA
+
+| # | Đọc gì | File |
+|---|--------|------|
+| 1 | Bug Handling — Quy trình đầy đủ | [qa-bugs-handling/](./04-delivery/qa-bugs-handling/) |
+| 2 | Severity & SLA | [bug-severity-sla-handbook.md](./04-delivery/qa-bugs-handling/bug-severity-sla-handbook.md) |
+| 3 | Bug Logging trên GitHub | [qa-bugs-logs/](./04-delivery/qa-bugs-logs/) |
+
+### 📋 Nếu bạn là Product Lead / PM
+
+| # | Đọc gì | File |
+|---|--------|------|
+| 1 | Internal Planning — Họp nội bộ lập kế hoạch | [pl-planning/](./04-delivery/pl-planning/) |
+| 2 | Kick-off với khách hàng | [pl-kick-off/](./04-delivery/pl-kick-off/) |
+| 3 | Bàn giao sản phẩm | [pl-hangover/](./04-delivery/pl-hangover/) |
+| 4 | Board & Task Management | [board-handbook/](./04-delivery/board-handbook/) |
+| 5 | Daily Report — Đảm bảo team report đúng | [dev-daily-report/](./04-delivery/dev-daily-report/) |
+
+### 👔 Nếu bạn là HR / Manager
+
+| # | Đọc gì | File |
+|---|--------|------|
+| 1 | Đón người mới — Quy trình cho HR | [welcoming-newbie/](./05-hr/welcoming-newbie/) |
+| 2 | Thành viên join dự án | [project-onboarding/](./03-team/project-onboarding/) |
+| 3 | Thành viên rời dự án | [project-leave/](./03-team/project-leave/) |
 
 ---
 
-### 🛠 Workflow — Template & Công cụ
-> *Đọc khi:* Cần template để tạo trang handbook mới hoặc tài liệu dự án.
+## Tầng 3 — Theo tình huống
 
-| File | Mô tả |
-|------|-------|
-| [process-template.md](./workflow/process-template.md) | Template cho trang Quy trình |
-| [handbook-template.md](./workflow/handbook-template.md) | Template cho trang Cẩm nang |
-| [planning-meeting-guide.md](./workflow/planning-meeting-guide.md) | Hướng dẫn tổ chức Planning Meeting |
-| [planning-report-template.md](./workflow/planning-report-template.md) | Template báo cáo kế hoạch dự án |
+> Không cần đọc hết. Tra khi gặp case cụ thể.
 
----
-
-### 📋 Về Handbook Này
-> *Đọc khi:* Muốn đóng góp, sửa, hoặc hiểu cách handbook vận hành.
-
-| File | Mô tả |
-|------|-------|
-| [contributing-handbook.md](./05-about-handbook/contributing-handbook.md) | Cách nghĩ khi viết — triết lý, mẫu tốt/tồi |
-| [contributing-process.md](./05-about-handbook/contributing-process.md) | Quy trình đề xuất & duyệt thay đổi (PR-based) |
-| [owners-reference.md](./05-about-handbook/owners-reference.md) | Bảng tra: ai chịu trách nhiệm mục nào |
-| [playbook.md](./playbook.md) | Playbook v2.1 — "hiến pháp" hướng dẫn viết handbook |
+| Tôi đang cần... | Đọc |
+|-----------------|-----|
+| Viết daily report | [04-delivery/dev-daily-report/](./04-delivery/dev-daily-report/) |
+| Xử lý 1 con bug | [04-delivery/qa-bugs-handling/](./04-delivery/qa-bugs-handling/) |
+| Tạo bug trên GitHub | [04-delivery/qa-bugs-logs/](./04-delivery/qa-bugs-logs/) |
+| Quản lý board/task | [04-delivery/board-handbook/](./04-delivery/board-handbook/) |
+| Lập kế hoạch dự án (nội bộ) | [04-delivery/pl-planning/](./04-delivery/pl-planning/) |
+| Kick-off với khách hàng | [04-delivery/pl-kick-off/](./04-delivery/pl-kick-off/) |
+| Bàn giao sản phẩm cho client | [04-delivery/pl-hangover/](./04-delivery/pl-hangover/) |
+| Đón newbie vào công ty | [05-hr/welcoming-newbie/](./05-hr/welcoming-newbie/) |
+| Đưa người mới vào dự án | [03-team/project-onboarding/](./03-team/project-onboarding/) |
+| Chuyển giao khi rời dự án | [03-team/project-leave/](./03-team/project-leave/) |
+| Hiểu cách giao tiếp nội bộ | [03-team/team-communicate/](./03-team/team-communicate/) |
 
 ---
 
-## Bắt đầu từ đâu?
+## Tầng 4 — Đóng góp vào Handbook
 
-→ Xem **[Reading Roadmap](./reading-roadmap.md)** — lộ trình đọc handbook theo từng vai trò và mục tiêu.
+> Đọc khi bạn muốn **sửa, thêm, hoặc cải thiện** handbook.
+
+| # | Đọc gì | File |
+|---|--------|------|
+| 1 | Tại sao viết handbook quan trọng | [contributing-handbook.md](./02-about-handbook/contributing-handbook.md) |
+| 2 | Quy trình đề xuất & duyệt (PR) | [contributing-process.md](./02-about-handbook/contributing-process.md) |
+| 3 | Ai chịu trách nhiệm mục nào | [owners-reference.md](./02-about-handbook/owners-reference.md) |
+| 4 | Playbook — Hướng dẫn viết chi tiết | [playbook.md](./workflow/playbook.md) |
+| 5 | Template Process & Handbook | [process-template.md](./workflow/process-template.md) · [handbook-template.md](./workflow/handbook-template.md) |
 
 ---
 
-> Handbook là tài liệu sống. Không bao giờ "xong". Nếu bạn thấy điều gì chưa đúng hoặc có thể tốt hơn — [đề xuất sửa](./05-about-handbook/contributing-process.md). Đó cũng là tinh thần Cyberk.
+## Cấu trúc thư mục
+
+```
+handbook/
+│
+├── 📖 01-cyberk-way/          # Triết lý, bí quyết, cách vận hành
+├── 📋 02-about-handbook/       # Cách đóng góp, owners, quy trình viết
+├── 🤝 03-team/                 # Văn hoá, giao tiếp, join/leave dự án
+│   ├── team-communicate/       #   Horenso — báo cáo, liên lạc, thảo luận
+│   ├── project-onboarding/     #   Thành viên mới tham gia dự án
+│   └── project-leave/          #   Thành viên rời khỏi dự án
+├── 🔧 04-delivery/             # Quy trình làm sản phẩm
+│   ├── pl-planning/            #   Internal Planning Meeting (nội bộ)
+│   ├── pl-kick-off/            #   Kick-off Meeting (với khách hàng)
+│   ├── pl-hangover/            #   Bàn giao sản phẩm
+│   ├── dev-daily-report/       #   Daily report
+│   ├── board-handbook/         #   Quản lý board GitHub Projects
+│   ├── qa-bugs-handling/       #   Xử lý bugs
+│   └── qa-bugs-logs/           #   Logging bugs trên GitHub
+├── 👥 05-hr/                   # Con người
+│   ├── getting-started/        #   Ngày đầu tiên cho newbie
+│   └── welcoming-newbie/       #   Chuẩn bị đón người mới (cho HR)
+└── 🛠 workflow/                # Template & Playbook
+    ├── playbook.md             #   "Hiến pháp" hướng dẫn viết handbook
+    ├── process-template.md     #   Template trang quy trình
+    └── handbook-template.md    #   Template trang cẩm nang
+```
+
+---
+
+> Handbook là tài liệu sống. Không bao giờ "xong". Nếu bạn thấy điều gì chưa đúng hoặc có thể tốt hơn — [đề xuất sửa](./02-about-handbook/contributing-process.md). Đó cũng là tinh thần Cyberk.
