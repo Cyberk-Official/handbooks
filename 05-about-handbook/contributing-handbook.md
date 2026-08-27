@@ -4,33 +4,39 @@
 **Cập nhật lần cuối:** 2026-08-25
 **Trạng thái:** Đang dùng
 
-Bạn muốn sửa hoặc thêm nội dung vào handbook nhưng không biết bắt đầu từ đâu? Trang này hướng dẫn bạn **cách nghĩ** khi viết — không chỉ format, mà tại sao chúng ta viết theo cách đó.
+> **"Làm thế nào để vấn đề này không lặp lại?"**
 
-> Handbook không bao giờ "xong". Một sửa đổi nhỏ hôm nay tốt hơn một kế hoạch viết đầy đủ ngày mai mà không bao giờ thực hiện.
+Đây là câu hỏi quan trọng nhất tại Cyberk. Không phải "ai gây ra lỗi?", không phải "sao lại để xảy ra?" — mà là **"làm gì để lần sau không vấp lại chỗ này?"**
+
+Handbook và process chính là **trái tim của Cyberk** — nơi ghi lại cách làm, kinh nghiệm từ những sai lầm đi trước, và cách sửa sai. Mỗi trang trong handbook tồn tại vì ai đó đã từng vấp, đã rút ra bài học, và đã **viết xuống** để người đi sau không phải trả giá lần nữa.
+
+Vì vậy, viết vào handbook không phải là "làm tài liệu" — đó là **hành động quan trọng nhất** bạn có thể làm cho đồng đội của mình.
 
 ---
 
 ## Khi nào nên viết vào handbook?
 
-Câu hỏi kiểm tra nhanh: **"Mình vừa trả lời câu hỏi này cho ai đó trên chat chưa?"** Nếu rồi — và nó không phải câu hỏi chỉ áp dụng 1 lần — thì nó cần vào handbook.
+Mỗi khi bạn tự hỏi: **"Làm thế nào để vấn đề này không lặp lại?"** — câu trả lời luôn là viết xuống.
 
-Dấu hiệu cụ thể:
-- Cùng một câu hỏi được hỏi lại ≥ 2 lần bởi những người khác nhau
-- Bạn vừa giải quyết xong một sự cố và rút ra bài học
-- Có quyết định mới vừa được chốt trong cuộc họp
-- Bạn phát hiện handbook thiếu hoặc sai so với thực tế
+Cụ thể hơn:
+- Bạn vừa **mắc lỗi hoặc chứng kiến sự cố** — và đã tìm ra cách tránh lần sau
+- Bạn vừa **trả lời cùng một câu hỏi** cho người thứ hai trở lên
+- Một **quyết định vừa được chốt** trong cuộc họp — nhưng chưa ai ghi lại
+- Bạn **phát hiện handbook sai** so với cách team đang làm thực tế
+- Bạn là **người mới** và thấy thiếu thông tin khi onboard — góc nhìn của bạn là vô giá
+
+> Tài liệu giá trị nhất thường sinh ra từ thất bại. Sau mỗi sự cố, viết lại thành trang — đó là cách Cyberk biến đau thương thành trí tuệ tập thể.
 
 ✅ Cách tốt:
-> Sau buổi họp chốt quy trình code review mới, PL viết ngay vào `delivery/code-review/code-review-process.md`, rồi gửi Slack:
-> *"Đã cập nhật quy trình code review mới vào handbook: [link]. Mọi người review giúp nhé."*
+> Sprint vừa rồi deploy bị lỗi vì quên chạy migration. Sau khi fix xong, dev viết ngay vào `delivery/deploy/deploy-process.md` thêm bước "Kiểm tra migration trước khi deploy" + lý do, rồi gửi Slack:
+> *"Đã cập nhật quy trình deploy — thêm bước kiểm tra migration. Xem ở đây: [link]"*
 
-Tại sao tốt: Viết-trước, thông báo-sau. Thông tin sống ở một nơi duy nhất. Slack chỉ là kênh thông báo, không phải nơi lưu trữ.
+Tại sao tốt: Biến sai lầm thành bài học cho toàn bộ team. Viết-trước, thông báo-sau. Lần deploy sau, ai cũng có checklist.
 
 ❌ Cách tồi:
-> PL thông báo trên Slack: *"Từ giờ code review phải có ít nhất 2 reviewer approve nhé."*
-> → 3 tháng sau không ai nhớ quy tắc này. Người mới vào hỏi lại. Không ai biết post ở đâu.
+> Deploy lỗi → fix xong → meeting nói "lần sau nhớ chạy migration nhé" → ai cũng gật → 2 tháng sau lặp lại y hệt.
 
-Tại sao tồi: Thông tin chết trong luồng chat. Không có nguồn thông tin duy nhất. Câu hỏi bị hỏi đi hỏi lại.
+Tại sao tồi: Lời nói bay đi. Không ai ghi lại = bài học không tồn tại. Vấn đề **chắc chắn** sẽ lặp lại.
 
 ---
 
