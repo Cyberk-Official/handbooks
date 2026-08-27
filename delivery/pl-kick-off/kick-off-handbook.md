@@ -1,231 +1,255 @@
-# Planning & Kickoff — Cẩm nang cho Product Lead
+# Kick-off với Khách hàng — Cẩm nang cho Product Lead
 
 **Người chịu trách nhiệm:** [PL/PM]
-**Cập nhật lần cuối:** 2026-08-26
+**Cập nhật lần cuối:** 2026-08-27
 **Trạng thái:** Nháp
 
-Bạn là PL/PM, dự án mới vừa ký xong và bạn cần tổ chức buổi Internal Kickoff Meeting. Buổi kickoff không chỉ là "họp giới thiệu dự án" — đây là **lúc duy nhất** cả team cùng ngồi lại để hiểu đúng cùng một thứ. Làm tốt thì dự án chạy mượt từ ngày đầu; làm hời hợt thì 2 tuần sau mới phát hiện mỗi người hiểu một kiểu.
+Bạn là PL/PM, hợp đồng vừa ký, Internal Planning đã xong. Giờ bạn cần tổ chức buổi Kick-off Meeting chính thức với khách hàng. Đây là **ấn tượng đầu tiên** — client đánh giá team qua buổi này. Chuyên nghiệp hay hời hợt, có chuẩn bị hay bị động — tất cả lộ ra trong 45 phút kick-off.
 
-Trang này giúp bạn hiểu **cách nghĩ đúng** ở từng giai đoạn của buổi kickoff — không chỉ làm gì, mà tại sao làm vậy.
-
----
-
-## Tại sao kickoff meeting quan trọng đến vậy?
-
-Kickoff meeting là buổi họp duy nhất mà **cả team cùng ngồi lại hiểu mục đích dự án** — không phải chỉ hiểu task. Sai lầm lớn nhất là biến kickoff thành buổi "giao task" — PL đọc danh sách việc, dev gật đầu, ai về nấy code. Kết quả: mỗi người hiểu scope một kiểu, 3 tuần sau mới phát hiện.
-
-Một buổi kickoff tốt đạt được 4 điều:
-
-1. **Cả team hiểu mục đích của khách hàng** — Khách hàng làm dự án này để làm gì? Gọi vốn? Có nhiều user? Có doanh thu từ sớm? Hiểu mục đích thì dev mới quyết định đúng khi gặp trade-off.
-2. **Toàn bộ team hiểu đúng yêu cầu** — Không phải "đọc qua PRD" mà là thảo luận, hỏi, và chốt.
-3. **Có Planning Report** — Kết quả cụ thể: task list, người phụ trách, deadline, rủi ro. Gửi được cho client ngay trong ngày.
-4. **Đồng bộ kỳ vọng** — Kỳ vọng của khách hàng, kỳ vọng của công ty, và cách triển khai dự án — mọi người phải cùng hiểu.
-
-> **Quy tắc:** Buổi kickoff thành công khi kết thúc có Planning Report gửi được cho client ngay trong ngày. Không có report = buổi họp thất bại.
+Trang này giúp bạn hiểu **cách nghĩ đúng** ở từng giai đoạn — không chỉ làm gì, mà tại sao làm vậy.
 
 ---
 
-## Chuẩn bị — Nếu không chuẩn bị, buổi họp sẽ lãng phí
+## Tại sao kick-off với client quan trọng?
 
-Chuẩn bị **không phải việc của riêng PL**. PL chuẩn bị tài liệu và tổ chức; team chuẩn bị bằng cách **đọc trước PRD và ghi chú câu hỏi**. Buổi họp tốt xảy ra vì mọi người đến đã hiểu 70% — chỉ cần thảo luận 30% còn lại.
+Kick-off với client **không phải buổi planning lần 2**. Planning đã xong rồi — bạn đã có plan, có task list, có risk assessment. Buổi kick-off với client phục vụ mục đích hoàn toàn khác:
 
-Cụ thể PL cần làm:
-- Gửi PRD cho team đọc trước, yêu cầu comment trực tiếp vào tài liệu
-- Gửi Planning Template để mọi người xem qua cấu trúc
-- Custom template cho phù hợp với dự án cụ thể
-- Book phòng họp nghiêm túc — kickoff nên **càng xa khu vực làm việc thường ngày càng tốt** (tạo không khí khác biệt, tập trung)
+1. **Tạo niềm tin** — Client thấy team đã chủ động lập kế hoạch, có người cụ thể phụ trách, có plan rõ ràng. Niềm tin xây ở buổi đầu tiên sẽ "mua" cho bạn sự kiên nhẫn khi gặp vấn đề sau này.
+2. **Đặt kỳ vọng đúng** — Scope là gì, approach ra sao, deadline nào, ai liên hệ gì. Nếu không align ở đây, 3 tuần sau client sẽ hỏi "Sao chưa có feature X?" — một thứ team chưa bao giờ cam kết.
+3. **Thiết lập cách làm việc** — Kênh liên lạc, tần suất báo cáo, escalation path. Không thiết lập sớm = mỗi bên một cách, hỗn loạn từ sprint 2.
+
+> **Quy tắc:** Mục tiêu duy nhất của buổi kick-off: client rời buổi họp với cảm giác "Team này biết mình đang làm gì. Tôi yên tâm."
+
+---
+
+## Tin nhắn ngày đầu tiên — chào hỏi, giới thiệu quy trình, hẹn lịch
+
+Ngày đầu tiên không chỉ là "báo tin team bắt đầu." Đây là lần đầu client nhận tin nhắn từ PL — **ấn tượng đầu tiên**. Client cần biết 3 thứ: mình sẽ làm việc với ai, team sẽ làm gì hôm nay, và tiếp theo là gì.
+
+Tin nhắn ngày đầu phải làm được 4 việc:
+1. **Tự giới thiệu** — PL là ai, vai trò gì, liên hệ thế nào
+2. **Giải thích quy trình hôm nay** — Internal Planning là gì, tại sao quan trọng
+3. **Giới thiệu bước tiếp theo** — Kick-off Call để làm gì, tại sao cần
+4. **Hỏi lịch** — Đề xuất hẹn kick-off call ngay trong tin nhắn đầu tiên
 
 ✅ Cách tốt:
-> PL gửi PRD vào Slack kèm tin nhắn:
-> *"Team ơi, đây là PRD dự án mới — Booking Platform cho client David. Mọi người đọc trước và comment trực tiếp vào doc, đặc biệt phần booking flow (trang 5-8) và payment (trang 12). Kickoff meeting 2pm thứ Ba, phòng họp tầng 3. Ai có câu hỏi ghi sẵn vào doc nhé."*
+> *"Hi David, good morning! I'm Minh, your Product Lead from Cyberk — I'll be your main point of contact throughout the project. Very excited to be working with you on BookingApp!*
 >
-> Kèm theo: link PRD (Google Doc, cho phép comment) + link Planning Template.
+> *I wanted to share how we kick things off at Cyberk:*
+>
+> *📋 Step 1 — Internal Planning (today): Our full team — developers, QA, and tech lead — will sit down together to go through the project requirements in detail. We'll build a complete project plan: task breakdown, timeline, milestones, risk assessment, and team assignments. Why? We want every team member to deeply understand the product before writing a single line of code. I'll send you the Planning Report by end of day today.*
+>
+> *🤝 Step 2 — Kick-off Call (with you): After the plan is ready, I'd like to schedule a call where we introduce the team, walk through the plan, and discuss our approach together. This is where we align expectations and make sure we're 100% on the same page before Sprint 1 begins.*
+>
+> *Could you share your availability for a 45–60 min call in the next 2–3 days? I'll send an agenda beforehand so you know exactly what we'll cover.*
+>
+> *Looking forward to a great collaboration!"*
 
-Tại sao tốt: Team biết đọc gì, đọc phần nào kỹ. Comment trực tiếp vào doc = PL thấy được ai đã đọc, ai chưa. Buổi họp không mất 30 phút đầu giải thích "dự án này là gì".
+Tại sao tốt: Client biết ngay PL là ai. Hiểu quy trình Cyberk — team không code bừa mà có planning bài bản. Biết sẽ có buổi kick-off call, không bị bất ngờ. Và PL đã hỏi lịch luôn — không phải chờ bước 2 rồi mới hẹn.
 
 ❌ Cách tồi:
-> PL bước vào phòng họp, mở PRD trên máy:
-> *"Ok, hôm nay mình kickoff dự án mới. Để anh giải thích PRD cho mọi người..."*
-> → Mất 45 phút đọc PRD, team ngồi nghe thụ động, không ai hỏi vì chưa đọc trước.
+> *(Im lặng cả ngày. Tối mới gửi file: "Hi David, attached is the plan.")*
 
-Tại sao tồi: Team đến buổi họp "tay trắng" — chưa đọc, chưa nghĩ, chưa có câu hỏi. Kết quả: PL nói một mình, team gật đầu nhưng không thực sự hiểu. Về code rồi mới phát hiện "ủa, tính năng này hoạt động kiểu gì?"
+Tại sao tồi: Client không biết PL là ai. Không hiểu team đang làm gì cả ngày. File gửi trơn không context. Mất cơ hội tạo ấn tượng chuyên nghiệp ngay từ ngày 1.
+
+❌ Cũng tồi:
+> *"Hi David, good morning! Today our team is holding an internal planning session. We'll send you the plan by end of day."*
+
+Tại sao tồi: Không tự giới thiệu — client không biết nói chuyện với ai. Không giải thích planning là gì, tại sao quan trọng — client nghĩ đây chỉ là thủ tục. Không nhắc kick-off call — bước tiếp theo bị bỏ ngỏ. "Soon" và "by end of day" quá mờ nhạt.
+
+> Mẫu tin nhắn hoàn chỉnh: xem [kick-off-example.md](./kick-off-example.md)
 
 ---
 
-## Hiểu sản phẩm — Đừng chỉ hiểu tính năng, hiểu MỤC ĐÍCH
+## Gửi plan — summary trước, file sau
 
-Phần đầu buổi kickoff không phải đi vào chi tiết tính năng — mà là giúp cả team hiểu **bối cảnh dự án**. Sản phẩm này giải quyết vấn đề gì? Cho ai? Tại sao khách hàng cần nó? 
+Sai lầm lớn nhất khi gửi Planning Report: gửi file trơn. Client mở PDF 10 trang ra, không biết đọc phần nào quan trọng, lướt qua rồi đóng. Khi buổi kick-off diễn ra, client chưa thực sự đọc plan.
 
-Khi dev hiểu mục đích, họ sẽ tự biết cái nào quan trọng hơn khi phải trade-off. Ví dụ: nếu mục đích là "gọi vốn" → UX/UI phải đẹp, flow phải mượt, dù backend chưa perfect. Nếu mục đích là "có doanh thu" → payment phải ổn định, admin phải dễ dùng.
+**Nguyên tắc: summary text đi trước file.** Client đọc summary trong 30 giây, nắm 3 ý chính, rồi mới mở file xem chi tiết nếu muốn.
+
+Ba mục bắt buộc trong summary:
+
+1. **Approach** — Team sẽ tiếp cận dự án thế nào? (Agile? Sprint bao lâu? Feature nào làm trước?)
+2. **Key Risks** — Rủi ro nào đáng lưu ý nhất? Team sẽ xử lý thế nào?
+3. **Strategy** — Chiến lược delivery: ưu tiên gì, tại sao thứ tự này?
+
+Lúc này client đã biết sẽ có buổi kick-off (bạn đã hẹn ở tin nhắn sáng). Nên tin nhắn gửi plan chỉ cần focus vào **nội dung plan** — không cần hỏi lịch lại.
 
 ✅ Cách tốt:
-> PL mở slide giới thiệu dự án:
-> *"David là founder của một chuỗi tiệm massage ở Bangkok. Vấn đề của David: khách gọi điện book lịch nhưng hay quên, nhân viên ghi sổ tay nên hay trùng slot. David muốn build app để khách tự book online, giảm no-show, và David xem dashboard biết được revenue hàng ngày."*
+> PL gửi Telegram kèm file:
 >
-> *"Mục tiêu chính: David cần MVP trong 3 tháng để pitch cho nhà đầu tư. Nghĩa là UX/UI phải ấn tượng, flow booking phải mượt — đó là điều quan trọng nhất."*
+> *"Hi David, our internal planning is complete! Here's the Planning Report (attached). Quick summary:*
 >
-> *"Còn câu hỏi gì về bối cảnh trước khi mình đi vào PRD chi tiết không?"*
+> *📋 Approach: We'll run 2-week sprints, starting with the booking flow — the core user journey — before building secondary features like admin reports.*
+>
+> *⚠️ Key Risks: The payment gateway API documentation is incomplete. We've allocated a spike in Sprint 1 to validate integration before committing to a timeline for that module.*
+>
+> *🎯 Strategy: Key Success Features first (booking, payment, notifications). Nice-to-have features (analytics dashboard) will be prioritized if we have capacity in Sprint 4.*
+>
+> *Looking forward to walking you through this in our kick-off call! I'll send the agenda once we confirm the time."*
 
-Tại sao tốt: Team thấy được "người thật, việc thật" — không phải danh sách tính năng trừu tượng. Khi code booking flow, dev sẽ tự biết "cái này phải mượt vì David cần nó để gọi vốn".
+Tại sao tốt: Client hiểu 3 ý chính trong 30 giây. Risk được frame thành "team đã nghĩ trước và có plan" — không phải "có vấn đề". Nối liền với kick-off call đã hẹn sáng — quy trình mạch lạc.
 
 ❌ Cách tồi:
-> PL mở PRD, bắt đầu đọc:
-> *"Feature 1: User Registration — cho phép user đăng ký bằng email hoặc social login. Feature 2: Booking — user chọn ngày giờ và book slot..."*
-> → Đọc danh sách tính năng mà không ai biết tại sao client cần từng cái.
+> *"Hi David, please find the attached Planning Report."*
 
-Tại sao tồi: Dev nghe tính năng mà không hiểu mục đích → code đúng spec nhưng sai spirit. Ví dụ: build booking flow 10 bước vì spec viết vậy, trong khi David cần flow "under 30 seconds". Hiểu mục đích mới code đúng.
+Tại sao tồi: Client mở PDF, lướt qua, đóng lại. Không nắm ý chính, không biết phần nào quan trọng. Buổi kick-off sau đó phải giải thích từ đầu — lãng phí thời gian.
+
+❌ Cũng tồi:
+> *"Hi David, the plan is done. The project has some risks but we'll handle them. Let me know when you're free to call."*
+
+Tại sao tồi: "Some risks but we'll handle them" = mơ hồ, không chuyên nghiệp. "Let me know when you're free" = bị động — bạn đã hỏi lịch ở tin nhắn sáng rồi, đừng hỏi lại.
+
+> Mẫu tin nhắn hoàn chỉnh: xem [kick-off-example.md](./kick-off-example.md)
+
+> **Về agenda kick-off:** Khi client confirm giờ, gửi agenda ít nhất **1 ngày trước buổi call**. Client biết trước sẽ thảo luận gì, chuẩn bị câu hỏi, không bị bất ngờ.
 
 ---
 
-## Đọc PRD cùng team — Thảo luận, không chỉ đọc
+## Buổi Kick-off Call — ấn tượng đầu tiên
 
-Đây là phần **lõi** của buổi kickoff. Mục tiêu không phải "đọc xong PRD" — mà là **cả team hiểu giống nhau** về những gì PRD mô tả. Nơi nào PRD chưa rõ, chưa logic → ghi lại để hỏi client.
+Đây là lúc client **thấy team bằng mắt** lần đầu tiên. Mọi thứ trước đó là tin nhắn và file. Buổi call quyết định client nghĩ gì về team trong suốt dự án.
 
-Leader hoặc BA giải thích từng phần PRD, ưu tiên theo tính năng quan trọng. Dev và QA chủ động hỏi ngay chỗ chưa rõ — **đừng chờ về code rồi mới phát hiện**.
+### Phần 1: Team Introduction (10 phút)
+
+**Mục đích:** Client biết mình sẽ làm việc với ai, liên hệ ai khi cần gì.
+
+Đừng chỉ nói tên + chức danh. Client cần biết: **người này sẽ giúp tôi gì?**
 
 ✅ Cách tốt:
-> PL chiếu PRD, đi theo từng user flow:
-> *"Ok, flow booking: user mở app → chọn dịch vụ → chọn ngày giờ → điền thông tin → thanh toán → nhận confirmation. Ai có câu hỏi gì về flow này?"*
+> PL: *"Let me introduce the team. I'm [Name], I'll be your main point of contact for everything — progress updates, questions, changes. If you need anything, come to me first."*
 >
-> Dev hỏi: *"Payment hỗ trợ những phương thức nào? Có cần refund không?"*
-> PL: *"Good question. PRD ghi Stripe, nhưng chưa nói rõ refund. Mình ghi lại để hỏi David."*
+> *"This is [TL Name], our Tech Lead. He'll be leading the technical architecture and code quality. If you ever have questions about how something works under the hood, he's the person."*
 >
-> QA hỏi: *"Nếu 2 user book cùng 1 slot cùng lúc thì xử lý sao?"*
-> PL: *"PRD chưa cover case này. Ghi vào danh sách rủi ro — cần quyết định: first-come-first-serve hay queue?"*
->
-> → Ghi lại tất cả câu hỏi chưa trả lời được vào "Follow-up Questions for Client".
+> *"And this is [Dev Name], our lead developer on this project. He'll be building the core booking flow."*
 
-Tại sao tốt: Mỗi câu hỏi bây giờ là 1 bug/conflict được **chặn trước** khi xảy ra. Dev hỏi payment = tránh build sai rồi refactor. QA hỏi concurrency = tránh bug production. Và PL có danh sách cụ thể để hỏi client.
+Tại sao tốt: Mỗi người được giới thiệu với vai trò cụ thể trong dự án **này** — không phải bio chung chung. Client biết ngay: "Có vấn đề gì → liên hệ PL. Câu hỏi kỹ thuật → TL."
 
 ❌ Cách tồi:
-> PL đọc PRD từ đầu đến cuối. Team im lặng.
-> PL: *"Ok, mọi người hiểu hết rồi nhé? Có câu hỏi gì không?"*
-> Team: *"... không."*
-> → 2 tuần sau, dev Slack PL lúc 11h đêm: *"Anh ơi, payment flow này em không hiểu logic, PRD viết mâu thuẫn chỗ này..."*
+> *"I'm [Name], PM. This is [TL], senior developer. This is [Dev], developer."*
 
-Tại sao tồi: "Không có câu hỏi" thường có nghĩa là "chưa hiểu đủ sâu để hỏi". Im lặng trong kickoff = câu hỏi sẽ nổ ra khi code — lúc đó tốn gấp 10 lần thời gian.
+Tại sao tồi: Chức danh không nói gì. Client không biết ai phụ trách gì, liên hệ ai khi cần gì.
 
----
+### Phần 2: Planning Walk-through (15 phút)
 
-## Lập kế hoạch — Cả team cùng plan, không phải PL plan xong rồi giao
+**Mục đích:** Client hiểu plan — không phải đọc lại plan.
 
-Sai lầm phổ biến: PL ngồi estimate rồi assign task cho từng người. Dev không đồng thuận nhưng không nói → task bị trễ → PL frustrate → dev frustrate. Vòng lặp tiêu cực.
+Client đã nhận Planning Report rồi (có thể đã đọc, có thể chưa). Phần này bạn **walk through** — không phải đọc lại từng dòng.
 
-Cách đúng: **cả team cùng tham gia lập plan**. Dev estimate task của mình (vì dev hiểu effort hơn PL). QA góp ý test strategy. Designer xác nhận design timeline. PL tổng hợp và điều phối.
-
-### Phân loại feature — 4 mức ưu tiên
-
-Planning Template của Cyberk chia feature thành 4 mức. Cả team cần cùng thống nhất feature nào thuộc mức nào:
-
-| Mức | Tên | Ý nghĩa | Ví dụ |
-|-----|-----|---------|-------|
-| 🔴 | **Key Success Features** | Tính năng quyết định thành công. Thiếu = dự án fail. | Booking flow, Payment |
-| 🟡 | **Thiết yếu** | Cần để hệ thống hoạt động đúng, nhưng không phải điểm nhấn. | User registration, Email notification |
-| 🔵 | **Không ưu tiên** | Bổ sung nhưng không bắt buộc trong phiên bản đầu. | Reporting dashboard, Export CSV |
-| ⚪ | **Nice-to-have** | Ý tưởng mở rộng cho tương lai. Không làm trong scope hiện tại. | SMS reminder, Multi-language |
+Focus vào 4 ý chính:
+1. **Scope** — Chúng ta sẽ build gì? (Feature list, phân loại ưu tiên)
+2. **Timeline** — Khi nào xong? (Milestones, sprint plan)
+3. **Ownership** — Ai làm gì? (Task breakdown theo người)
+4. **Risks** — Điều gì có thể chậm trễ và team sẽ xử lý thế nào?
 
 ✅ Cách tốt:
-> PL chiếu danh sách feature, hỏi team:
-> *"Ok, theo mọi người, Booking Flow là Key Success hay Thiết yếu?"*
-> Dev: *"Key Success — không có nó thì app không có giá trị."*
-> PL: *"Đồng ý. Vậy Reporting Dashboard?"*
-> QA: *"Không ưu tiên — David có thể xem revenue trên Stripe dashboard trước, sprint sau mình build riêng."*
-> PL: *"Good call. Ghi Reporting = Không ưu tiên."*
+> PL share screen, mở Planning Report:
+> *"You've received the full plan — let me walk through the key points. We've prioritized features into 4 levels. The Key Success Features — booking flow, payment, and notifications — will be delivered in Sprints 1–3. These are the must-haves that determine whether the product works."*
 >
-> → Sau khi phân loại xong, PL hỏi estimate cho từng Key Success Feature:
-> *"Booking Flow — Dev estimate bao lâu?"*
-> Dev: *"Frontend 3 ngày, backend 2 ngày, integration test 1 ngày. Tổng 6 ngày."*
-> PL ghi vào Planning Template.
+> *"One risk I want to flag early: the payment API docs are incomplete. We're running a validation spike in Sprint 1 — by the end of week 2, we'll know if we need to adjust the approach."*
 
-Tại sao tốt: Mọi người cùng quyết định ưu tiên — không có cảm giác "bị giao việc". Estimate do dev tự đưa ra → dev commit vì đó là con số của họ. PL chỉ tổng hợp và điều phối.
+Tại sao tốt: Không đọc lại plan — tóm ý chính. Risk được frame chủ động ("team đã có plan"), không bị động ("có vấn đề").
 
 ❌ Cách tồi:
-> PL mở spreadsheet đã estimate sẵn:
-> *"Booking Flow — 3 ngày. Payment — 2 ngày. Dashboard — 4 ngày. Đức làm booking, Thái làm payment, Mai làm dashboard."*
-> Dev im lặng, gật đầu.
-> → Sprint 2, Đức Slack: *"Anh ơi, booking flow phức tạp hơn em tưởng, cần thêm 3 ngày."*
+> PL mở slide 1, đọc: *"Page 1, Project Overview..."* → Đọc từng trang, y hệt file PDF.
 
-Tại sao tồi: PL estimate thay dev = estimate sai (vì PL không hiểu chi tiết kỹ thuật). Dev không commit vì "đây không phải con số của mình". Khi trễ, ai cũng đổ lỗi.
+Tại sao tồi: Client đã có file. Đọc lại = lãng phí thời gian. Buổi call phải tạo giá trị **thêm** so với đọc file — đó là giải thích, highlight, và trả lời câu hỏi.
 
----
+### Phần 3: Approach & Strategy Discussion (15 phút)
 
-## Xác định rủi ro — Chủ động hôm nay, đỡ cháy ngày mai
+**Mục đích:** Client hiểu **tại sao** team chọn cách này, và có cơ hội góp ý.
 
-Nhiều team bỏ qua phần này vì "có gì thì xử lý sau". Sai. Rủi ro **luôn** xảy ra — câu hỏi chỉ là bạn đã chuẩn bị hay bị bất ngờ.
+Đây là phần quan trọng nhất — nơi client thấy team có suy nghĩ, không chỉ nhận yêu cầu và code. Nội dung thảo luận:
 
-4 loại rủi ro cần xem xét:
-
-| Loại | Ví dụ | Câu hỏi kiểm tra |
-|------|-------|-------------------|
-| **Tiến độ** | Thay đổi yêu cầu đột xuất, phụ thuộc bên thứ ba | Có feature nào phụ thuộc API/service ngoài không? |
-| **Công nghệ** | Thư viện/công cụ chưa từng dùng | Team đã dùng tech stack này chưa? Cần PoC không? |
-| **Giao tiếp client** | Phản hồi chậm, hiểu sai yêu cầu | PRD có điểm nào mâu thuẫn? Client response nhanh không? |
-| **Con người** | Nghỉ việc đột xuất, quá tải | Ai là single point of failure? Có backup không? |
+- **Development methodology** — Agile/Sprint, tần suất báo cáo, cách feedback
+- **Technical approach** — Tại sao chọn tech stack này? Architecture như thế nào?
+- **Risk mitigation** — Team sẽ xử lý risk thế nào nếu nó xảy ra?
+- **Communication cadence** — Weekly sync? Bi-weekly demo? Report qua kênh nào?
 
 ✅ Cách tốt:
-> PL mở phần Risk trong Planning Template:
-> *"Ok, rủi ro. Mình thấy Payment Integration dùng Stripe API — team đã integrate Stripe bao giờ chưa?"*
-> Dev: *"Chưa. Em chỉ dùng thử sandbox."*
-> PL: *"Vậy ghi rủi ro: 'Stripe integration chưa có kinh nghiệm'. Giải pháp: Đức dành 1 ngày đầu sprint làm PoC — nếu gặp blocker thì báo ngay, mình switch sang payment gateway khác."*
+> PL: *"Let me explain our approach. We'll work in 2-week sprints. At the end of each sprint, you'll get a demo of what's been built — you can see it running and give feedback immediately. If something needs to change, we catch it early."*
 >
-> TL: *"Thêm 1 rủi ro: design chưa final, nếu designer deliver trễ thì FE bị block."*
-> PL: *"Đúng. Giải pháp: Designer commit deliver wireframe trước, high-fidelity sau. FE code theo wireframe trước."*
+> TL: *"On the technical side, we're using Next.js with a PostgreSQL database. This gives us the best balance between development speed and scalability for your expected 10,000 users in the first 6 months."*
+>
+> PL: *"For communication, I'd suggest a weekly sync call every Monday — 30 minutes, progress update plus any blockers. Between calls, we'll use Telegram for quick questions. Does that work for your team?"*
 
-Tại sao tốt: Mỗi rủi ro đã có giải pháp trước khi xảy ra. PoC ngày đầu = biết sớm có vấn đề hay không. Designer deliver wireframe trước = FE không bị block.
+Tại sao tốt: Client hiểu methodology (sẽ thấy output mỗi 2 tuần), TL giải thích tech choice bằng ngôn ngữ business (không phải jargon), và communication được thiết lập cụ thể — ngày, kênh, tần suất.
 
 ❌ Cách tồi:
-> PL: *"Rủi ro thì... chắc không có gì đặc biệt. Ok, tiếp nhé."*
-> → Sprint 2: Stripe API thay đổi, dev mất 3 ngày debug. Designer deliver trễ 1 tuần, FE ngồi chờ.
+> PL: *"We'll use Agile. Any questions?"*
 
-Tại sao tồi: "Không có rủi ro" là câu nói nguy hiểm nhất. Mọi dự án đều có rủi ro — chỉ khác là bạn thấy trước hay bị bất ngờ.
+Tại sao tồi: Client nghe "Agile" hàng chục lần rồi. Không nói gì mới, không tạo giá trị.
 
----
+### Phần 4: Open Q&A (10 phút)
 
-## Gửi Planning Report — Chốt trong ngày, không để qua đêm
+**Mục đích:** Client hỏi bất cứ gì — kể cả điều họ ngại hỏi.
 
-Buổi kickoff kết thúc, PL có 1 việc quan trọng nhất: **tổng hợp Planning Report và gửi trong ngày**. Không phải "mai em gửi" — vì ngày mai bạn sẽ quên 30% chi tiết đã thảo luận.
-
-Report cần gửi cho 2 nhóm:
-1. **Client** — để xác nhận scope, timeline, và team hiểu đúng yêu cầu
-2. **Leaders (Anderson/COO)** — để nắm tiến độ và hỗ trợ khi cần
+Mở bằng câu mời rõ ràng, không hỏi chung chung "Có câu hỏi gì không?"
 
 ✅ Cách tốt:
-> Ngay sau buổi họp, PL ngồi lại 1 tiếng, tổng hợp Planning Template đã điền:
-> - Kiểm tra logic: task list có cover hết Key Success Features không?
-> - Kiểm tra format: mỗi task có owner + deadline chưa?
-> - Thêm phần "Follow-up Questions for Client" — những điểm chưa rõ cần hỏi
->
-> Xuất PDF, gửi qua Telegram cho client:
-> *"Hi David, here's our project plan following today's internal kickoff. Please review the scope, timeline, and let us know if anything needs adjustment. We also have a few questions listed on page 4 — would appreciate your input on those."*
->
-> Đồng thời gửi qua Telegram cho Anderson:
-> *"Anh ơi, em gửi Planning Report dự án Booking Platform. Tổng timeline 3 tháng, team 3 người. Có 2 rủi ro chính: Stripe integration chưa có kinh nghiệm và design chưa final. Em đã có giải pháp cho cả 2. Anh xem có góp ý gì không ạ."*
+> *"Before we wrap up — is there anything you'd like us to do differently? Any concerns about the timeline, the approach, or anything else? This is the best time to raise it — we'd rather adjust now than discover a misalignment in Sprint 3."*
 
-Tại sao tốt: Client nhận report trong ngày → cảm thấy team professional và có kế hoạch rõ. Anderson nắm được tình hình ngay. Câu hỏi cho client được gửi sớm = trả lời sớm = không bị block.
+Tại sao tốt: "Do differently" mời client góp ý (không chỉ hỏi). "Rather adjust now" = frame rằng feedback sớm là tốt, không phải phàn nàn.
 
 ❌ Cách tồi:
-> PL: *"Ok, em sẽ tổng hợp report gửi sau nhé."*
-> → 3 ngày sau vẫn chưa gửi. Phải hỏi lại dev "hôm đó estimate bao nhiêu ngày nhỉ?" Dev: "Em không nhớ..."
-> → 1 tuần sau mới gửi report. Client: "Sao lâu vậy, mọi thứ ổn chứ?"
+> *"Any questions? No? Ok let's wrap up."*
 
-Tại sao tồi: Report gửi trễ = chi tiết sai (vì quên). Client lo lắng. Leaders không nắm được tình hình. Và team mất momentum — "cảm giác kickoff" đã bay mất.
+Tại sao tồi: Hỏi nhanh, không chờ = client nghĩ team không thực sự muốn nghe. Những lo lắng chưa nói ra sẽ thành vấn đề 3 tuần sau.
+
+### Phần 5: Next Steps (5 phút)
+
+**Mục đích:** Ai làm gì tiếp theo, khi nào, bằng kênh nào.
+
+Kết thúc buổi call bằng 3 câu cụ thể:
+1. *"Sprint 1 starts on [Date]."*
+2. *"I'll send a summary email today with everything we discussed."*
+3. *"Our first weekly sync will be [Day, Time]. I'll send the calendar invite today."*
+
+> **Quy tắc:** Không kết thúc buổi call mà không có 3 thứ: ngày bắt đầu, next action item, và kênh liên lạc đã confirm.
 
 ---
 
-## Tóm lại
+## Sau buổi call — tổng kết trong ngày
 
-| Giai đoạn | Nguyên tắc cốt lõi | Sai lầm hay gặp |
-|-----------|-------------------|-----------------| 
-| Chuẩn bị | Gửi PRD trước, team đọc và ghi chú, book phòng nghiêm túc | Không gửi trước, mất 45 phút đọc PRD trong buổi họp |
-| Hiểu sản phẩm | Hiểu MỤC ĐÍCH của client, không chỉ tính năng | Đọc danh sách feature mà không ai biết tại sao |
-| Đọc PRD | Thảo luận chủ động, ghi lại mọi câu hỏi chưa rõ | Team im lặng, PRD mâu thuẫn không ai phát hiện |
-| Lập kế hoạch | Cả team cùng estimate, phân loại 4 mức ưu tiên | PL tự estimate rồi assign, dev không commit |
-| Rủi ro | Xác định sớm 4 loại, mỗi rủi ro có kịch bản xử lý | "Không có rủi ro" — câu nói nguy hiểm nhất |
-| Gửi report | Gửi cho client + leaders TRONG NGÀY | Để 1 tuần mới tổng hợp, quên chi tiết, mất momentum |
+Email tổng kết phải gửi **trong ngày** — không phải "mai tổng hợp rồi gửi." Lý do:
+
+- Client vừa rời buổi họp với ấn tượng tốt → email ngay = củng cố ấn tượng
+- Để qua đêm = client quên 30% nội dung, bạn cũng quên
+- Email tổng kết là **tài liệu tham chiếu** — client sẽ mở lại khi cần
+
+Email tổng kết cần có:
+- Danh sách attendees
+- Key decisions (những gì đã thống nhất)
+- Action items (ai, làm gì, khi nào)
+- Next steps (ngày bắt đầu sprint, first sync, kênh liên lạc)
+
+✅ Cách tốt:
+> Gửi email 2 tiếng sau buổi call, structured rõ ràng, có bảng action items.
+
+❌ Cách tồi:
+> Gửi ngày hôm sau, nội dung là 1 đoạn văn dài không bullet points.
+
+> Mẫu email hoàn chỉnh: xem [kick-off-example.md](./kick-off-example.md)
+
+---
+
+## Mẫu tốt vs Mẫu tồi — tổng hợp
+
+| Giai đoạn | Mẫu tốt ✅ | Mẫu tồi ❌ |
+|-----------|-----------|-----------| 
+| Tin nhắn ngày đầu | Tự giới thiệu, giải thích 2-step process, hỏi lịch kick-off luôn | Im lặng cả ngày, hoặc gửi tin không giới thiệu mình |
+| Gửi plan | Summary text (Approach, Risks, Strategy) + file PDF | Gửi file trơn: "Please see attached" |
+| Team intro | Giới thiệu vai trò cụ thể trong dự án **này** | Đọc chức danh: "PM, Senior Dev, Dev" |
+| Walk-through | Tóm ý chính, highlight risk, mời hỏi | Đọc lại PDF từng trang |
+| Approach | Giải thích methodology + tech choice bằng business language | "We use Agile. Any questions?" |
+| Q&A | Mời góp ý: "Is there anything you'd like us to do differently?" | "Any questions? No? Ok done." |
+| Next Steps | 3 câu: start date, summary email, first sync | Kết thúc không commit gì cụ thể |
+| Email tổng kết | Gửi trong ngày, structured, có action items table | Gửi hôm sau, đoạn văn dài |
 
 ---
 
 ## Liên kết
 
-- [Quy trình kickoff — 4 bước](kick-off-process.md)
-- [Mẫu Planning Report & Agenda](./planning-example.md)
+- [Quy trình kick-off với client — từng bước](./kick-off-process.md)
+- [Mẫu agenda, tin nhắn & email](./kick-off-example.md)
+- [Internal Planning — họp nội bộ lập kế hoạch](../pl-planning/planning-handbook.md)

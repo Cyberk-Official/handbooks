@@ -68,6 +68,19 @@ Khi tạo folder mới, **luôn tạo template trống trước** — chỉ có 
 - **Đúng tone kênh giao tiếp:** Mẫu tin nhắn cho Telegram viết kiểu chat — ngắn, thân thiện, có emoji. Mẫu cho email viết formal hơn. Không dùng lẫn.
 - **Đặt tên file theo quy ước:** `[chủ-đề]-[loại].md` — VD `bug-handling-process.md`, `bug-handling-handbook.md`, `bug-severity-sla-handbook.md`. Nhìn tên file là biết nội dung gì và thuộc loại nào.
 
+### Công cụ chuẩn của CyberK
+
+Khi viết handbook, **luôn dùng đúng tên công cụ** mà CyberK thực tế sử dụng. Viết sai công cụ = người đọc bị lạc.
+
+| Mục đích | Công cụ CyberK dùng | KHÔNG dùng |
+|----------|---------------------|------------|
+| Giao tiếp nội bộ & với client | **Telegram** | ~~Slack~~, ~~Zalo~~, ~~Teams~~ |
+| Quản lý task & board dự án | **GitHub Projects** | ~~Jira~~, ~~Trello~~, ~~Notion board~~ |
+| Lưu trữ tài liệu / handbook | **Git + Markdown** | ~~Confluence~~, ~~Google Docs~~ (trừ khi share cho client) |
+| Email | **Email** (khi cần formal với client) | |
+
+> **Quy tắc:** Khi viết mẫu tin nhắn, mẫu quy trình, hoặc ví dụ — phải dùng đúng tên công cụ trên. VD: viết "gửi qua Telegram" chứ không viết "gửi qua Slack". Viết "tạo issue trên GitHub Projects" chứ không viết "tạo ticket trên Jira".
+
 ### Hệ thống 6 loại tài liệu
 
 Mỗi trang trong handbook thuộc một trong 6 loại. Mỗi loại có mục đích và lúc đọc khác nhau:
@@ -338,6 +351,7 @@ Các quy tắc cần tuân thủ:
 - [ ] Đủ chi tiết để dùng, nhưng không rườm rà
 - [ ] Đã đặt link tới các trang liên quan
 - [ ] Mẫu tin nhắn/template viết đúng tone kênh giao tiếp (chat ≠ email)
+- [ ] Công cụ đúng tên: **Telegram** (không Slack), **GitHub Projects** (không Jira)
 - [ ] Mỗi hướng dẫn quan trọng có cặp **tốt + tồi** kèm giải thích
 - [ ] Tên file đúng quy ước `[chủ-đề]-[loại].md`
 - [ ] **Giữ hồn** — migrate tài liệu cũ không mất triết lý, câu chuyện, lý do
