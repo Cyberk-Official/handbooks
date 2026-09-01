@@ -22,7 +22,7 @@ Các Quy tắc cần tuân thủ:
 * Ví dụ tốt: **80% of work completed**, **3 days ahead of schedule,** expected completion date: **Sep 15, 20 working days remaining**  
 * Ví dụ không tốt: Project is progressing well", "Work is on track"
 
-👉 *Ví dụ:* **80% công việc** đã hoàn thành, **nhanh hơn 3 ngày** so với kế hoạch, Dự kiến ngày hoàn thành dự án: 20 Steptember. 10 còn lại. 
+👉 *Ví dụ:* **80% công việc** đã hoàn thành, **nhanh hơn 3 ngày** so với kế hoạch, Dự kiến ngày hoàn thành dự án: 20 September. 10 còn lại. 
 
 ---
 

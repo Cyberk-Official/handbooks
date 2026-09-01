@@ -146,8 +146,8 @@ Tại sao tốt: Tiết kiệm hàng giờ đồng hồ cho người tiếp qu�
 
 ```text
 - Code ở trên GitHub branch main.
-- Các task cần làm đều ở trên Jira.
-- Có gì không hiểu thì cứ ping Slack cho em (mặc dù đã rời dự án).
+- Các task cần làm đều ở trên Board (GitHub Projects).
+- Có gì không hiểu thì cứ nhắn Telegram cho em (mặc dù đã rời dự án).
 ```
 
 Tại sao tồi: Người tiếp quản sẽ không biết bắt đầu từ đâu, branch nào là branch mới nhất, và dễ dẫn đến việc làm sai logic cũ.

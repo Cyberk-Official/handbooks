@@ -35,7 +35,7 @@ Những điều cần tránh trong buổi planning meeting
 **Mục tiêu:** 
 
 * **Giúp tiết kiệm thời gian họp**   
-* **Tăng hiệu quả đầu ra. Học xong có kết quả báo cáo ngay.** 
+* **Tăng hiệu quả đầu ra. Họp xong có kết quả báo cáo ngay.** 
 
 **Gợi Ý thực Hiện:** 
 

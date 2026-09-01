@@ -5,7 +5,7 @@ Tài liệu này là mẫu kế hoạch dành cho các dự án phát triển ph
 ## **Mục tiêu của dự án**
 
 _Mục tiêu 1: Mô tả ngắn gọn mục tiêu một._\
-&#xNAN;_&#x4D;ục tiêu 2:_
+_Mục tiêu 2:_
 
 **Hướng dẫn**
 
@@ -15,7 +15,7 @@ _Mục tiêu 1: Mô tả ngắn gọn mục tiêu một._\
    2. _Điều gì là quan trọng đối với họ._
 3. _Kỳ Vọng của công ty:_
    1. _Mục tiêu chiến lược của dự án: ý nghĩa của việc hoàn thành dự án, ví dụ như UX/UI đạt chất lượng vượt trội_
-   2. _Mục tiêu với khách hàng: Ví dụ Chinh phục được khách hàng bằng chất Lượng_ [_UX.UI_](http://ux.ui)
+   2. _Mục tiêu với khách hàng: Ví dụ Chinh phục được khách hàng bằng chất lượng UX/UI_
 
 ## **Các tính năng tối quan trọng (Key Success Features)**
 

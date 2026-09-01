@@ -101,7 +101,7 @@ Tại sao tốt: Mỗi câu hỏi bây giờ là 1 bug/conflict được **chặ
 > PL đọc PRD từ đầu đến cuối. Team im lặng.
 > PL: *"Ok, mọi người hiểu hết rồi nhé? Có câu hỏi gì không?"*
 > Team: *"... không."*
-> → 2 tuần sau, dev Slack PL lúc 11h đêm: *"Anh ơi, payment flow này em không hiểu logic, PRD viết mâu thuẫn chỗ này..."*
+> → 2 tuần sau, dev nhắn Telegram PL lúc 11h đêm: *"Anh ơi, payment flow này em không hiểu logic, PRD viết mâu thuẫn chỗ này..."*
 
 Tại sao tồi: "Không có câu hỏi" thường có nghĩa là "chưa hiểu đủ sâu để hỏi". Im lặng trong buổi planning = câu hỏi sẽ nổ ra khi code — lúc đó tốn gấp 10 lần thời gian.
 
@@ -143,7 +143,7 @@ Tại sao tốt: Mọi người cùng quyết định ưu tiên — không có c
 > PL mở spreadsheet đã estimate sẵn:
 > *"Booking Flow — 3 ngày. Payment — 2 ngày. Dashboard — 4 ngày. Đức làm booking, Thái làm payment, Mai làm dashboard."*
 > Dev im lặng, gật đầu.
-> → Sprint 2, Đức Slack: *"Anh ơi, booking flow phức tạp hơn em tưởng, cần thêm 3 ngày."*
+> → Sprint 2, Đức nhắn Telegram: *"Anh ơi, booking flow phức tạp hơn em tưởng, cần thêm 3 ngày."*
 
 Tại sao tồi: PL estimate thay dev = estimate sai (vì PL không hiểu chi tiết kỹ thuật). Dev không commit vì "đây không phải con số của mình". Khi trễ, ai cũng đổ lỗi.
 

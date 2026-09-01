@@ -58,7 +58,7 @@ flowchart LR
 | 2 | **Thông báo team kéo task:** nhắn team cập nhật trạng thái task, kéo về Done nếu đã xong, ghi note nếu bị block | Tech Lead | Mọi dev đã cập nhật board | 30 phút trước deadline report |
 | 3 | **Thu thập Production Metrics** *(nếu đã launch)*: lấy snapshot Users (active/total/new), Business KPIs (revenue/transactions), Production Bugs (open/fixed/total) từ analytics tools | PM / Leader | Metrics sẵn sàng cho report | Trước giờ viết report |
 | 4 | **Viết report từ Board + Metrics:** dựa trên board đã cập nhật, viết: Progress % → 📊 Production Metrics (nếu có) → What I did → Next steps (có ETA) → Risks (có action plan) | PM / Tech Lead | Report hoàn chỉnh | Cuối ngày |
-| 5 | **Gửi khách hàng:** gửi report qua kênh đã quy định (email / Slack / Telegram) | PM | Khách hàng nhận report | Cuối ngày |
+| 5 | **Gửi khách hàng:** gửi report qua kênh đã quy định (email / Telegram) | PM | Khách hàng nhận report | Cuối ngày |
 
 ---
 

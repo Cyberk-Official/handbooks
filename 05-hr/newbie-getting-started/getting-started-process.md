@@ -100,4 +100,4 @@ flowchart LR
 
 - [Trang phục](outfit-handbook.md) — Mặc gì đi làm
 - [Cơm trưa](lunch-handbook.md) — Cách hoạt động và đăng ký
-- [Welcoming Newbie (dành cho HR/Manager)](../welcoming-newbie/welcoming-newbie-process.md)
+- [Welcoming Newbie (dành cho HR/Manager)](../admin-welcoming-newbie/welcoming-newbie-process.md)

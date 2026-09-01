@@ -75,7 +75,7 @@ flowchart TD
 
 | Tình huống | Hành động |
 |-----------|----------|
-| **Nghỉ đột xuất (lý do bất khả kháng: sức khỏe, gia đình)** | - Product Lead lập tức tiếp quản và rà soát các task hiện tại trên Jira/Board.<br>- Chỉ định khẩn cấp Receiver để tiếp quản tạm thời.<br>- Đề xuất phân chia thưởng pro-rata theo đóng góp thực tế (cần Anderson duyệt). |
+| **Nghỉ đột xuất (lý do bất khả kháng: sức khỏe, gia đình)** | - Product Lead lập tức tiếp quản và rà soát các task hiện tại trên GitHub Projects.<br>- Chỉ định khẩn cấp Receiver để tiếp quản tạm thời.<br>- Đề xuất phân chia thưởng pro-rata theo đóng góp thực tế (cần Anderson duyệt). |
 | **Không tìm được Receiver phù hợp** | Product Lead của dự án sẽ tạm thời đóng vai trò Receiver để lưu giữ thông tin, tránh gián đoạn trước khi tìm được nhân sự thay thế. |
 
 ---
@@ -87,7 +87,7 @@ flowchart TD
 - [ ] Buổi họp bàn giao (Handover Session) đã được thực hiện (có Record).
 - [ ] Toàn bộ các Pull Request (PR) cá nhân đã được merge hoặc giao lại cho người khác quản lý.
 - [ ] Tài khoản/API key dùng chung đã bàn giao quyền sở hữu (Owner) cho Product Lead.
-- [ ] Thu hồi phân quyền cá nhân trên Git, Cloud (AWS/Azure/GCP), và các công cụ SaaS (Figma, Jira, Slack, ...).
+- [ ] Thu hồi phân quyền cá nhân trên Git, Cloud (AWS/Azure/GCP), và các công cụ SaaS (Figma, GitHub Projects, Telegram, ...).
 - [ ] Cập nhật trạng thái trên tài liệu nhân sự dự án chung.
 
 ---

@@ -28,7 +28,7 @@ Cụ thể hơn:
 > Tài liệu giá trị nhất thường sinh ra từ thất bại. Sau mỗi sự cố, viết lại thành trang — đó là cách Cyberk biến đau thương thành trí tuệ tập thể.
 
 ✅ Cách tốt:
-> Sprint vừa rồi deploy bị lỗi vì quên chạy migration. Sau khi fix xong, dev viết ngay vào `delivery/deploy/deploy-process.md` thêm bước "Kiểm tra migration trước khi deploy" + lý do, rồi gửi Slack:
+> Sprint vừa rồi deploy bị lỗi vì quên chạy migration. Sau khi fix xong, dev viết ngay vào `delivery/deploy/deploy-process.md` thêm bước "Kiểm tra migration trước khi deploy" + lý do, rồi gửi Telegram:
 > *"Đã cập nhật quy trình deploy — thêm bước kiểm tra migration. Xem ở đây: [link]"*
 
 Tại sao tốt: Biến sai lầm thành bài học cho toàn bộ team. Viết-trước, thông báo-sau. Lần deploy sau, ai cũng có checklist.
@@ -146,4 +146,4 @@ VD: `handbook/add-code-review-guidelines`, `handbook/fix-onboarding-typo`
 
 - [Quy trình đề xuất & duyệt](./contributing-process.md)
 - [Bảng tra: ai chịu trách nhiệm mục nào](./owners-reference.md)
-- [Playbook — Bộ hướng dẫn chi tiết](../playbook.md)
+- [Playbook — Bộ hướng dẫn chi tiết](../workflow/playbook.md)

@@ -31,5 +31,5 @@ Folder này hướng dẫn **lập trình viên (Dev)** cách tự viết Busine
 
 - [BRD Template đầy đủ](../../../bootstrap/skills/write-prd/templates/brd-template.md) — Template gốc
 - [Dev Tasks Logs — Tạo task từ BRD](../dev-tasks-logs/dev-tasks-logs-process.md) — Sau khi có BRD → tạo task
-- [Board Handbook](../board-handbook/handbook.md) — Tổng quan quản lý dự án
+- [Board Handbook](../board-handbook/board-handbook.md) — Tổng quan quản lý dự án
 - [Asimov Spec-Driven Approach](../../../asimov/asimov-dev-pipeline/asimov-approach-en.md)

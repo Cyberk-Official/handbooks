@@ -145,7 +145,7 @@ Nội dung tài liệu Handover cần bao gồm:
 Tại sao tốt: Client không chỉ "nhận file" mà thực sự hiểu. Cho client thử login ngay = xác nhận credentials hoạt động. Câu hỏi được giải đáp tại chỗ — không để tích lũy thành frustration 2 tuần sau.
 
 ❌ Cách tồi:
-> PL gửi Slack sau buổi họp:
+> PL gửi Telegram sau buổi họp:
 > *"Hi David, đính kèm tài liệu bàn giao. Anh xem nhé, có gì liên hệ team."*
 > → Đính kèm file PDF 15 trang.
 

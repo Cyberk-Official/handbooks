@@ -61,7 +61,7 @@ Tại sao tốt: Ice-breaking tự nhiên, newbie biết mặt đồng nghiệp,
 **❌ Cách tồi:**
 
 ```
-"Email mình gửi qua Slack nhé." (Newbie chưa có Slack)
+"Email mình gửi qua Telegram nhé." (Newbie chưa có Telegram)
 "Bạn tự giới thiệu đi." (Ép người mới tự phá băng với 20 người lạ)
 ```
 
@@ -93,7 +93,7 @@ Tại sao tồi: Ăn một mình ngày đầu → cảm giác cô đơn → khó
 
 ## Buổi chiều — Truyền đạt "luật chơi"
 
-Gửi link tài liệu [Getting Started](../getting-started/getting-started-handbook.md) cho newbie đọc, nhưng **đừng chỉ gửi link**. Dành 15–30 phút ngồi cùng để nhấn mạnh 3 thứ quan trọng nhất:
+Gửi link tài liệu [Getting Started](../newbie-getting-started/getting-started-handbook.md) cho newbie đọc, nhưng **đừng chỉ gửi link**. Dành 15–30 phút ngồi cùng để nhấn mạnh 3 thứ quan trọng nhất:
 
 1. **Horenso** — Cách giao tiếp trong công ty. Không hiểu Horenso = không hoà nhập được.
 2. **Trang phục** — Nhẹ nhàng nhắc, không phải giảng.
@@ -135,6 +135,6 @@ Nguyên tắc xuyên suốt: **Chuẩn bị trước. Đón tiếp ấm áp. Kh�
 ## Liên kết
 
 - [Quy trình Đón Người Mới](welcoming-newbie-process.md) — Checklist đầy đủ
-- [Getting Started — gửi cho Newbie](../getting-started/getting-started-handbook.md)
-- [Trang phục](../getting-started/outfit-handbook.md)
-- [Cơm trưa](../getting-started/lunch-handbook.md)
+- [Getting Started — gửi cho Newbie](../newbie-getting-started/getting-started-handbook.md)
+- [Trang phục](../newbie-getting-started/outfit-handbook.md)
+- [Cơm trưa](../newbie-getting-started/lunch-handbook.md)

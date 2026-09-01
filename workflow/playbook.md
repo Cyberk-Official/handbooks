@@ -24,8 +24,8 @@ Nguyên tắc bao trùm, nhớ trước mọi thứ khác:
 Đây là "linh hồn" khiến handbook sống được. Thiếu chúng, handbook chỉ là một đống file Word chết.
 
 ### 1.1. Viết xuống TRƯỚC, thông báo SAU
-Đảo ngược thói quen thông thường. Cách làm phổ biến: quyết định → thông báo qua họp/Slack → (thỉnh thoảng) mới viết tài liệu — và bước cuối hay bị bỏ quên. CyberK làm ngược: **viết giải pháp vào handbook trước, rồi mới thông báo bằng cách dẫn link**. Nhờ vậy không tồn tại bước "làm tài liệu sau" để mà quên.
-- *Thực hành:* Khi có quyết định/quy trình mới, người phụ trách viết vào handbook trước, rồi mới gửi Slack kèm link. Câu cửa miệng: "Đã cập nhật handbook, xem ở đây."
+Đảo ngược thói quen thông thường. Cách làm phổ biến: quyết định → thông báo qua họp/chat → (thỉnh thoảng) mới viết tài liệu — và bước cuối hay bị bỏ quên. CyberK làm ngược: **viết giải pháp vào handbook trước, rồi mới thông báo bằng cách dẫn link**. Nhờ vậy không tồn tại bước "làm tài liệu sau" để mà quên.
+- *Thực hành:* Khi có quyết định/quy trình mới, người phụ trách viết vào handbook trước, rồi mới gửi Telegram kèm link. Câu cửa miệng: "Đã cập nhật handbook, xem ở đây."
 
 ### 1.2. Một nguồn thông tin duy nhất
 Mỗi thông tin chỉ sống ở đúng một nơi. Mục tiêu: **không bao giờ tồn tại hai "phiên bản" của cùng một thứ** để phải phân vân bản nào mới. Mọi trùng lặp là kẻ thù. Khi phát hiện hai nơi cùng nói về một chuyện, gộp về một, và chỗ khác chỉ **link tới**, không copy lại.
@@ -426,7 +426,7 @@ Handbook chết là vì không ai duy trì. Thiết lập những thứ sau ngay
 
 **6.4. Biến "viết-trước" thành thói quen công ty.** Quy ước: bất kỳ câu trả lời/giải pháp nào chưa được ghi lại thì cần được ghi lại. "Nó có trong handbook chưa?" trở thành câu hỏi phản xạ.
 
-**6.5. Chốt quyết định từ chat vào handbook.** Thảo luận nhanh trong Slack là bình thường, nhưng quyết định quan trọng phải được chốt lại vào handbook trong vòng 48h — nếu không, kiến thức sẽ tan biến trong luồng chat và mọi người lại hỏi đi hỏi lại.
+**6.5. Chốt quyết định từ chat vào handbook.** Thảo luận nhanh trong Telegram là bình thường, nhưng quyết định quan trọng phải được chốt lại vào handbook trong vòng 48h — nếu không, kiến thức sẽ tan biến trong luồng chat và mọi người lại hỏi đi hỏi lại.
 
 **6.6. Nhịp review.** Mỗi trang có ngày cập nhật; định kỳ (VD mỗi quý) người phụ trách rà lại phần của mình. Trang lỗi thời đánh dấu rõ.
 

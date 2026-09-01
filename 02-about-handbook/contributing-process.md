@@ -52,7 +52,7 @@ flowchart LR
 | 5 | Mở Pull Request, mô tả lý do thay đổi | Người đề xuất | PR trên GitHub | — |
 | 6 | Review nội dung + format | Owner của mục | Approve / Request changes | Trong 2 ngày làm việc |
 | 7 | Merge vào main | Owner / Biên tập | Handbook cập nhật | Sau khi approve |
-| 8 | Thông báo trên Slack/Telegram kèm link | Người đề xuất | "Đã cập nhật handbook, xem ở đây" | Ngay sau merge |
+| 8 | Thông báo trên Telegram kèm link | Người đề xuất | "Đã cập nhật handbook, xem ở đây" | Ngay sau merge |
 
 ---
 
@@ -81,7 +81,7 @@ flowchart LR
 
 ## Checklist
 
-- [ ] Nội dung đúng format theo playbook (xem [playbook.md](../playbook.md))
+- [ ] Nội dung đúng format theo playbook (xem [playbook.md](../workflow/playbook.md))
 - [ ] Tên file đúng quy ước `[chủ-đề]-[loại].md`
 - [ ] Có mục "Tại sao" hoặc context mở đầu
 - [ ] Không trùng lặp nội dung với trang khác (link thay vì copy)
@@ -94,4 +94,4 @@ flowchart LR
 
 - [Cách nghĩ khi viết handbook](./contributing-handbook.md)
 - [Bảng tra: ai chịu trách nhiệm mục nào](./owners-reference.md)
-- [Playbook — Bộ hướng dẫn viết handbook](../playbook.md)
+- [Playbook — Bộ hướng dẫn viết handbook](../workflow/playbook.md)

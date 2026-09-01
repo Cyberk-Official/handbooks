@@ -116,7 +116,7 @@ flowchart LR
 - [ ] Hướng dẫn đăng ký cơm trưa
 
 ### Chiều (Manager)
-- [ ] Gửi link tài liệu [Getting Started](../getting-started/getting-started-handbook.md)
+- [ ] Gửi link tài liệu [Getting Started](../newbie-getting-started/getting-started-handbook.md)
 - [ ] Giải thích 15–30 phút: Horenso, trang phục, bảo mật
 - [ ] Giao task đầu tiên (nhỏ, đơn giản)
 
@@ -124,6 +124,6 @@ flowchart LR
 
 ## Liên kết
 
-- [Getting Started — Cẩm nang cho Newbie](../getting-started/getting-started-handbook.md) — Gửi link này cho newbie đọc
-- [Trang phục](../getting-started/outfit-handbook.md)
-- [Cơm trưa](../getting-started/lunch-handbook.md)
+- [Getting Started — Cẩm nang cho Newbie](../newbie-getting-started/getting-started-handbook.md) — Gửi link này cho newbie đọc
+- [Trang phục](../newbie-getting-started/outfit-handbook.md)
+- [Cơm trưa](../newbie-getting-started/lunch-handbook.md)

@@ -84,20 +84,20 @@ AI breakdown rất nhanh, nhưng **bạn cần nghĩ trước** để output ch�
 
 ### Prompt AI
 
-Sau khi đã nghĩ rõ scope, cho AI **Feature ID + mô tả + tech stack + constraints**:
+Context đã có sẵn trong BRD (Feature ID, scope, acceptance criteria) và architect docs (tech stack). **Bạn không cần nhập lại.** Prompt chỉ cần tập trung vào **quy tắc break tasks:**
 
 **✅ Prompt tốt:**
 
 ```
-Breakdown FR-003 (JWT Refresh Token) thành tasks cho GitHub Projects.
+Đọc BRD [link file BRD trong repo] và breakdown thành tasks cho GitHub Projects.
 
-Context:
-- FR-003: POST /api/auth/refresh, token rotation, return 401 nếu invalid
-- Tech: Node.js, Express, PostgreSQL
+Quy tắc:
+- Mỗi task < 4 giờ. Nếu lớn hơn, tách thành sub-tasks
+- Sub-tasks phải có parent task để quản lý domain
+- Mỗi task phải gắn Epic: [tên Epic]
 - Branch naming: feat/FR-XXX-short-desc
-- Task < 4 giờ
-- Epic: User Authentication
-- Nếu task lớn, tạo parent task + sub-tasks
+- Task status mặc định: Backlog
+- Output: title, body (Mục tiêu + Checklist), branch name, estimate, label
 ```
 
 **❌ Prompt tồi:**
@@ -106,7 +106,7 @@ Context:
 Tạo tasks cho feature authentication
 ```
 
-Tồi vì: không có Feature ID, không có scope, không có Epic. AI sẽ tưởng tượng ra 15 task bao gồm OAuth, 2FA, SSO — trong khi PRD chỉ yêu cầu login bằng email.
+Tồi vì: không link BRD, không có quy tắc break. AI sẽ tự đoán scope, tự đoán cách chia — output không khớp quy trình.
 
 ### Khi nào dừng lại hỏi thay vì prompt AI?
 
@@ -176,5 +176,5 @@ Task kéo dài hơn dự kiến? → Comment trong issue, báo Lead, tách task 
 - [Quy trình tạo Task](dev-tasks-logs-process.md) — Flowchart, quy tắc cứng
 - [Mẫu Task tốt/tồi](dev-tasks-logs-example.md) — Template, GH CLI scripts
 - [AI Instruction](dev-tasks-logs-ai-instruction/dev-tasks-instruction.md) — Quy tắc cho AI
-- [Board Handbook](../board-handbook/handbook.md) — Tổng quan quản lý dự án
+- [Board Handbook](../board-handbook/board-handbook.md) — Tổng quan quản lý dự án
 - [Daily Report](../dev-daily-report/daily-report-handbook.md) — Task → report cho khách

@@ -324,5 +324,5 @@ gh issue create \
 - [Quy trình tạo Task](dev-tasks-logs-process.md) — Flowchart, bảng bước, quy tắc cứng
 - [Cẩm nang tạo Task](dev-tasks-logs-handbook.md) — Cách nghĩ khi prompt AI, review, push
 - [AI Instruction](dev-tasks-logs-ai-instruction/dev-tasks-instruction.md) — Quy tắc cho AI
-- [Board Handbook](../board-handbook/handbook.md) — Tổng quan quản lý dự án
+- [Board Handbook](../board-handbook/board-handbook.md) — Tổng quan quản lý dự án
 - [PRD/BRD Templates](../../../bootstrap/skills/write-prd/templates/) — Viết requirement

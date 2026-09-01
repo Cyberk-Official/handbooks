@@ -134,7 +134,7 @@ flowchart LR
 - [Cẩm nang tạo Task cho Dev](dev-tasks-logs-handbook.md) — Cách prompt AI, review output, xử lý edge case
 - [Mẫu Task tốt/tồi](dev-tasks-logs-example.md) — Template copy-paste + GH CLI commands
 - [AI Instruction](dev-tasks-logs-ai-instruction/dev-tasks-instruction.md) — Quy tắc cho AI breakdown FR → tasks
-- [Board Handbook — Tổng quan quản lý dự án](../board-handbook/handbook.md)
+- [Board Handbook — Tổng quan quản lý dự án](../board-handbook/board-handbook.md)
 - [PRD/BRD Templates](../../../bootstrap/skills/write-prd/templates/) — Template viết PRD/BRD
 - [Asimov Spec-Driven Approach](../../../asimov/asimov-dev-pipeline/asimov-approach-en.md)
 - [Git & Branch Policy](../../../policy/dev-policy/source-code-and-git.md) — Branch naming convention

@@ -25,7 +25,7 @@ status: Nháp
 
 ## 1. Project Progress
 85% completed, 2 days ahead of schedule
-Expected completion: Sep 15, 15 working days remaining
+Expected completion: Oct 15, 15 working days remaining
 
 ## 📊 Production Metrics (Post-Launch)
 > Snapshot ngày 17 Sep — Số liệu do PM cung cấp
@@ -41,9 +41,9 @@ Expected completion: Sep 15, 15 working days remaining
 - Resolved testnet downtime issue from yesterday
 
 ## 3. Next Steps
-- Smart contract development and audit - ETA: Aug 24
-- Portfolio analytics dashboard integration - ETA: Aug 23
-- Vesting test plan and automation - ETA: Aug 22
+- Smart contract development and audit - ETA: Sep 24
+- Portfolio analytics dashboard integration - ETA: Sep 23
+- Vesting test plan and automation - ETA: Sep 22
 
 ## 4. Risks and Blockers
 - CRITICAL: Gas optimization needed for vesting contract

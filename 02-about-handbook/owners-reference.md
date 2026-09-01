@@ -11,15 +11,15 @@ Bảng tra nhanh: ai là owner (người duyệt PR) cho mục nào trong handbo
 |-----|--------|-------|--------|
 | **The Cyberk Way** (triết lý, giá trị) | `01-cyberk-way/` | Anderson | — |
 | **Culture** (Horenso, cơm nhà, trang phục) | `02-culture/` | Anderson | — |
-| **Getting Started** (onboarding newbie) | `hr/getting-started/` | [HR Lead] | Anderson |
-| **Welcoming Newbie** (onboarding cho manager) | `hr/welcoming-newbie/` | [HR Lead] | Anderson |
+| **Getting Started** (onboarding newbie) | `05-hr/newbie-getting-started/` | [HR Lead] | Anderson |
+| **Welcoming Newbie** (onboarding cho manager) | `05-hr/admin-welcoming-newbie/` | [HR Lead] | Anderson |
 | **Daily Report** | `delivery/dev-daily-report/` | [PL/PM] | Tech Lead |
 | **Bug Handling** | `delivery/qa-bugs-handling/` | [QA Lead] | PL |
 | **Bug Logging** | `delivery/qa-bugs-logs/` | [QA Lead] | PL |
 | **Board Management** | `delivery/board-handbook/` | [PL/PM] | Anderson |
-| **PL Handover** | `delivery/pl-hangover/` | [PL/PM] | Anderson |
+| **PL Handover** | `delivery/pl-handover/` | [PL/PM] | Anderson |
 | **Team Join/Leave Project** | `team/` | [PL/PM] | Anderson |
-| **Về Handbook** (contributing, playbook) | `05-about-handbook/` | Anderson | — |
+| **Về Handbook** (contributing, playbook) | `02-about-handbook/` | Anderson | — |
 
 > **Chưa có owner?** → Mặc định là Anderson cho đến khi gán. Nếu bạn muốn nhận trách nhiệm một mục, nói với Anderson.
 

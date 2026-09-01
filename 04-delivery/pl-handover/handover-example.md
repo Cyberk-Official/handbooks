@@ -99,9 +99,9 @@ Slide 8: Thank You & Open Discussion
 ## 5. Contact Information
 | Vai trò | Tên | Liên hệ | Khi nào liên hệ |
 |--------|-----|---------|-----------------|
-| Product Lead | [Tên PL] | [email/Slack] | Mọi vấn đề chung |
-| Tech Lead | [Tên TL] | [email/Slack] | Vấn đề kỹ thuật khẩn |
-| QA | [Tên QA] | [email/Slack] | Báo bug |
+| Product Lead | [Tên PL] | [email/Telegram] | Mọi vấn đề chung |
+| Tech Lead | [Tên TL] | [email/Telegram] | Vấn đề kỹ thuật khẩn |
+| QA | [Tên QA] | [email/Telegram] | Báo bug |
 ```
 
 ### Mẫu Repository README — Đóng gói repo
@@ -277,7 +277,7 @@ Tại sao tồi: "Done" khi vẫn còn bugs — không trung thực. Không có 
 >
 > ***Maintenance period:***
 > *- Duration: 30 days (Aug 26 → Sep 25)*
-> *- Bug reports: send to [Slack channel / email]*
+> *- Bug reports: send to [Telegram group / email]*
 > *- Response time: critical issues within 4 business hours, other bugs within 1 business day*
 > *- Scope: bug fixes and stability improvements. New features will be scoped separately.*
 >

@@ -207,4 +207,4 @@ flowchart LR
 - [Mẫu BRD](dev-write-brd-example.md) — BRD thật cho feature phát sinh
 - [BRD Template gốc](../../../bootstrap/skills/write-prd/templates/brd-template.md) — Template đầy đủ
 - [Dev Tasks Logs](../dev-tasks-logs/dev-tasks-logs-process.md) — BRD → tasks
-- [Board Handbook](../board-handbook/handbook.md) — Tổng quan quản lý dự án
+- [Board Handbook](../board-handbook/board-handbook.md) — Tổng quan quản lý dự án
