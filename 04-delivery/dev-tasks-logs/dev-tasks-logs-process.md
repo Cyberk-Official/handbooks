@@ -43,8 +43,8 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    X["❓ Chưa có\nPRD/BRD"] --> Y["✍️ Tự tạo BRD\nhoặc yêu cầu PM"]
-    Y --> Z["📄 BRD approved\n→ quay lại Bước 1"]
+    X["❓ Chưa có\nPRD/BRD"] --> Y["📞 Liên hệ\nDev Lead / PM"]
+    Y --> Z["📄 Feature ID\n→ quay lại Bước 1"]
 
     style X fill:#ff6b6b,stroke:#333,color:#fff
     style Y fill:#ffa94d,stroke:#333,color:#fff
@@ -68,10 +68,10 @@ flowchart LR
 
 | # | Việc làm | Ai làm | Đầu ra | Timeline |
 |---|----------|--------|--------|----------|
-| 1 | **Kiểm tra PRD/BRD:** Xác nhận Feature ID (`BR-XXX`, `FR-XXX`) tồn tại trong tài liệu PRD/BRD của dự án. Nếu chưa có → tự tạo BRD (dùng [write-prd skill](../../../bootstrap/skills/write-prd/skill.md)) hoặc yêu cầu PM/PL bổ sung | Dev | PRD/BRD có Feature ID rõ ràng, đã approved | Trước khi tạo task |
-| 2 | **AI soạn tasks:** Prompt AI với Feature ID + mô tả từ PRD. AI phân tích qua quy trình BA của Asimov: breakdown feature → danh sách tasks, mỗi task có title, body, branch name, labels, estimate | AI + Dev | Draft task list (xem [AI Instruction](dev-tasks-logs-ai-instruction/dev-tasks-instruction.md)) | Ngay sau khi có Feature ID |
-| 3 | **Dev review & approve:** Kiểm tra output AI: scope đúng FR không, estimate < 4h không, branch name đúng convention không, 6 trường bắt buộc đủ không. Iterate lại nếu sai | Dev | Task list approved, sẵn sàng push | Ngay sau khi AI output |
-| 4 | **AI push lên Board:** Dùng GH CLI (`gh issue create` + `gh project item-add`) để tạo issues và thêm vào GitHub Projects. Status mặc định = **Backlog** | AI | Tasks xuất hiện trên board | Ngay sau khi Dev approve |
+| 1 | **Kiểm tra Feature ID:** Xác nhận Feature ID (`BR-XXX`, `FR-XXX`) tồn tại trong PRD/BRD của dự án. Nếu chưa có → **liên hệ Dev Lead / PM** để bổ sung. Không tự tạo, không skip | Dev | Feature ID confirmed | Trước khi tạo task |
+| 2 | **AI soạn tasks:** Prompt AI với Feature ID + mô tả + tech stack. AI breakdown feature → danh sách tasks với title, body, branch name, estimates | AI + Dev | Draft task list (xem [AI Instruction](dev-tasks-logs-ai-instruction/dev-tasks-instruction.md)) | Ngay sau khi có Feature ID |
+| 3 | **Dev duyệt:** Tasks có khớp plan triển khai của bạn không? Khớp → approve. Không → sửa prompt, chạy lại | Dev | Task list approved | Ngay sau khi AI output |
+| 4 | **AI push lên Board:** Dùng GH CLI (`gh issue create` + `gh project item-add`) để tạo issues và thêm vào GitHub Projects. Status mặc định = **Backlog** | AI | Tasks xuất hiện trên board | Ngay sau khi approve |
 
 ---
 
@@ -80,8 +80,8 @@ flowchart LR
 | Quy tắc | Lý do |
 |---------|-------|
 | **Task PHẢI link Feature ID** (`BR-XXX` hoặc `FR-XXX`) từ PRD/BRD | Task "trôi nổi" không ai biết nó thuộc feature nào → không verify scope, không trace lỗi |
-| **Không có PRD/BRD → KHÔNG tạo task** (phải tạo/bổ sung PRD trước) | Bắt đầu code mà không có spec = code sai direction. Tạo BRD 30 phút, sửa code sai 3 ngày |
-| **Task được AI tạo, Dev review** — không skip review | AI có thể hallucinate scope, miss edge case. Dev là người chịu trách nhiệm cuối cùng |
+| **Không có PRD/BRD → liên hệ Dev Lead / PM** — không tự tạo task | Bắt đầu code mà không có spec = code sai direction. Liên hệ Lead mất 5 phút, sửa code sai mất 3 ngày |
+| **Dev duyệt tasks phải khớp plan triển khai** | AI breakdown đúng format, nhưng Dev mới biết thứ tự triển khai nào hợp lý với thực tế dự án |
 | **Push lên board bằng GH CLI/automation** — không click tay trên UI | Manual = chậm, dễ thiếu trường, không reproducible. Automation = đồng nhất, audit trail |
 | **Task PHẢI < 4 giờ** — nếu lớn hơn, breakdown tiếp | Task quá to → khó ước lượng, dễ trễ, khó theo dõi tiến độ |
 | **6 trường bắt buộc PHẢI đủ** khi tạo task | Thiếu trường = board lộn xộn, không filter được, Sprint Board vô nghĩa |
@@ -95,9 +95,9 @@ flowchart LR
 
 | Tình huống | Hành động |
 |-----------|----------|
-| Feature quá mơ hồ trong PRD, AI không breakdown được | Yêu cầu PM/PL làm rõ PRD. Nếu 30 phút chưa có câu trả lời → escalate lên Tech Lead |
-| Phát sinh việc ngoài PRD (hotfix, technical debt) | Vẫn phải tạo BRD entry (có thể minimal 2-3 dòng). Gắn label `tech-debt` hoặc `hotfix`. Báo PM |
-| AI output sai scope hoặc không hợp lý | Iterate prompt: bổ sung context, ràng buộc, hoặc ví dụ. Nếu 3 lần AI vẫn sai → Dev tự viết task, ghi note "AI-assisted" |
+| Feature quá mơ hồ trong PRD, AI không breakdown được | Liên hệ Dev Lead / PM làm rõ. Nếu 30 phút chưa có → escalate |
+| Phát sinh việc ngoài PRD (hotfix, technical debt) | Báo Dev Lead để bổ sung Feature ID. Gắn label `tech-debt` hoặc `hotfix` |
+| AI output không khớp plan triển khai | Sửa prompt, bổ sung context. Nếu 3 lần vẫn sai → Dev tự điều chỉnh tasks |
 | GH CLI lỗi hoặc không push được | Kiểm tra auth (`gh auth status`). Nếu lỗi hệ thống → tạm tạo manual, log issue cho DevOps |
 
 ---
