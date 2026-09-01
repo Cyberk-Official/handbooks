@@ -2,7 +2,7 @@
 type: delivery
 tags: [daily-report, example, template]
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-09-01
 author:
 status: Nháp
 ---
@@ -27,6 +27,13 @@ status: Nháp
 85% completed, 2 days ahead of schedule
 Expected completion: Sep 15, 15 working days remaining
 
+## 📊 Production Metrics (Post-Launch)
+> Snapshot ngày 17 Sep — Số liệu do PM cung cấp
+
+- 👥 Users: 1,250 active / 5,000 total / +45 new today (source: Firebase)
+- 💰 Business: $12,500 revenue / 320 transactions (source: Stripe)
+- 🐛 Bugs: 12 open (2 critical, 4 high) / 85 fixed / 97 total since launch
+
 ## 2. What I did
 - Deployed staking contract with gas optimization, reduced cost by 30%
 - Completed new dashboard UI with dark mode support
@@ -49,6 +56,7 @@ Expected completion: Sep 15, 15 working days remaining
 
 Tốt vì:
 - Progress có %, có ngày dự kiến, có số ngày còn lại
+- Production Metrics: có số cụ thể, có nguồn data, phân severity cho bugs
 - What I did: cụ thể từng task, có chi tiết kỹ thuật
 - Next steps: mỗi task có ETA rõ ràng
 - Risks: phân loại severity + mỗi cái có action plan
@@ -65,6 +73,16 @@ Work is on track
 ```
 
 Tồi vì: Không có %, không có ngày, không ai biết "well" nghĩa là gì.
+
+### 📊 Production Metrics tồi
+
+```
+- Có nhiều người dùng mới
+- Doanh thu tốt
+- Có vài bugs cần fix
+```
+
+Tồi vì: Không có số, không nguồn data, không severity. "Doanh thu tốt" không nói gì cả — tốt so với cái gì?
 
 ### 2. What I did tồi
 
@@ -106,6 +124,15 @@ Tồi vì: Không severity, không action plan, không nguyên nhân. "Chưa có
 [X]% completed, [ahead/behind X days]
 Expected completion: [Date], [X] working days remaining
 
+## 📊 Production Metrics (Post-Launch)
+> Snapshot ngày [Date] — Số liệu do PM cung cấp
+
+- 👥 Users: [active] active / [total] total / +[new] new today (source: [tool])
+- 💰 Business: $[revenue] revenue / [transactions] transactions (source: [tool])
+- 🐛 Bugs: [open] open ([critical] critical) / [fixed] fixed / [total] total since launch
+
+> ⚠️ Nếu dự án chưa launch → bỏ qua mục này
+
 ## 2. What I did
 - [Task cụ thể + chi tiết]
 - [Task cụ thể + chi tiết]
@@ -118,7 +145,8 @@ Expected completion: [Date], [X] working days remaining
 ## 4. Risks and Blockers
 - [CRITICAL/HIGH/MEDIUM/LOW]: [Vấn đề + hậu quả]
   → Action: [Giải pháp / đang làm gì]
-- [Nếu chờ khách hàng]: Đang chờ [Tên] cung cấp [gì] 
+- [Nếu chờ khách hàng]: Đang chờ [Tên] cung cấp [gì]
+- [Nếu metrics bất thường]: ⚠️ WARNING: [Mô tả biến động + impact]
 ```
 
 ---
@@ -132,6 +160,7 @@ Expected completion: [Date], [X] working days remaining
 | "Có vấn đề performance" | "CRITICAL: Response time > 3s, Action: profiling + cache" |
 | "Chưa có risk" | Nghĩ kỹ lại — luôn có ít nhất 1 risk tiềm ẩn |
 | Bỏ qua risk hôm trước | Nêu lại nếu chưa resolved, highlight nếu kéo dài |
+| "Users tăng", "Doanh thu tốt" | "1,250 active / 5,000 total / +45 new (Firebase)" |
 
 ---
 

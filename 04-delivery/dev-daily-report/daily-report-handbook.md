@@ -2,7 +2,7 @@
 type: delivery
 tags: [daily-report, handbook]
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-09-01
 author:
 status: Nháp
 ---
@@ -14,10 +14,11 @@ status: Nháp
 
 Daily report không phải để "báo cáo sếp". Nó là công cụ để **bạn tự tổ chức công việc** và để PM **biết đang ở đâu mà report cho khách hàng**. Viết tốt = ít bị hỏi lại. Viết tồi = khách hàng lo lắng, PM hỏi liên tục.
 
-Report gồm **4 mục cố định** — luôn giữ đúng thứ tự:
+Report gồm **4 mục cố định** — luôn giữ đúng thứ tự. Nếu dự án đã launch, thêm mục **📊 Production Metrics** ngay sau Progress:
 
 ```
 1. Project Progress
+📊 Production Metrics (nếu đã launch)
 2. What I did
 3. Next Steps
 4. Risks and Blockers
@@ -52,6 +53,47 @@ Work is on track
 ```
 
 Tại sao tồi: "Well" nghĩa là gì? "On track" so với cái gì? Không %, không ngày, không số — PM không có gì để report cho khách.
+
+---
+
+## 📊 Production Metrics — Chỉ số vận hành khi dự án đã Launch
+
+> **Khi nào áp dụng:** Dự án đã launch, có người dùng thật, có doanh thu hoặc giao dịch.
+
+Sau khi launch, PM/khách hàng không chỉ quan tâm "dev xong bao nhiêu %" — họ cần biết sản phẩm **đang sống như thế nào**. Mục này nằm ngay sau Project Progress.
+
+**Số liệu do Leader/PM cung cấp** — dev chỉ copy vào report. Nếu chưa có, ghi: `⚠️ Awaiting data from PM/Leader`.
+
+**3 nhóm metrics bắt buộc:**
+
+| Nhóm | Metrics | Nguồn |
+|------|---------|-------|
+| 👥 **Users** | Active Users / Total Users / New Users Today | Firebase, Mixpanel, v.v. |
+| 💰 **Business** | Revenue / Transactions / Profit (hoặc KPI quan trọng khác) | Stripe, internal dashboard |
+| 🐛 **Bugs** | Open (by severity) / Fixed / Total since launch | GitHub Issues, project board |
+
+**✅ Cách tốt:**
+
+```
+## 📊 Production Metrics (Post-Launch)
+> Snapshot ngày 17 Sep — Số liệu do PM cung cấp
+
+- 👥 Users: 1,250 active / 5,000 total / +45 new today (source: Firebase)
+- 💰 Business: $12,500 revenue / 320 transactions (source: Stripe)
+- 🐛 Bugs: 12 open (2 critical, 4 high) / 85 fixed / 97 total since launch
+```
+
+**❌ Cách tồi:**
+
+```
+- Có nhiều người dùng mới
+- Doanh thu tốt
+- Có vài bugs cần fix
+```
+
+Tại sao tồi: Không có số, không nguồn, không severity. "Doanh thu tốt" không nói gì cả.
+
+**Quy tắc cảnh báo:** Nếu có biến động bất thường (users giảm >20%, revenue drop, critical bugs tăng đột biến) — PHẢI highlight `⚠️ WARNING` và ghi thêm vào mục **4. Risks and Blockers**.
 
 ---
 
@@ -177,6 +219,7 @@ Tại sao tồi: Không severity, không impact, không action plan. "Chưa có 
 | Mục | Phải có | Tuyệt đối không |
 |-----|---------|-----------------|
 | **1. Progress** | %, so sánh kế hoạch, ngày dự kiến, số ngày còn lại | "Progressing well", "On track" |
+| **📊 Metrics** *(post-launch)* | Users (active/total/new), Business KPIs, Bugs (open/fixed/total) + nguồn data | "Users tăng", "Doanh thu tốt" |
 | **2. What I did** | Task cụ thể + chi tiết + risk cũ đã resolved | "Worked on X", "Fixed bugs" |
 | **3. Next steps** | Task cụ thể + ETA mỗi task | "Continue coding", "Will work on Y" |
 | **4. Risks** | Severity + impact + action plan + risk cũ chưa resolved | "Có vấn đề", "Chưa có risk" |

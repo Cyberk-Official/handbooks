@@ -24,7 +24,52 @@ Các Quy tắc cần tuân thủ:
 
 👉 *Ví dụ:* **80% công việc** đã hoàn thành, **nhanh hơn 3 ngày** so với kế hoạch, Dự kiến ngày hoàn thành dự án: 20 Steptember. 10 còn lại. 
 
-###  
+---
+
+### **📊 Production Metrics (Nếu dự án đã Launch)**
+
+**Explain:** Khi dự án đã launch và có người dùng thật, mục Overview cần bổ sung các chỉ số vận hành thực tế bên cạnh tiến độ phát triển feature mới.
+
+**Instruction:**
+- Số liệu do **Leader/PM cung cấp**, dev copy vào report.
+- Nếu PM chưa cung cấp, dev PHẢI ghi: `⚠️ Awaiting data from PM/Leader`
+- Metrics là **snapshot cuối ngày hôm trước**, không cần real-time.
+- Nếu có **biến động bất thường** (users giảm >20%, revenue drop, critical bugs tăng), PHẢI highlight bằng `⚠️ WARNING` và ghi thêm vào mục **Risks and Blockers**.
+
+#### **👥 Users (Active / Total / New)**
+
+Phản ánh tình trạng adoption và tăng trưởng người dùng.
+
+- Ghi rõ nguồn data (Firebase, Mixpanel, v.v.)
+- Format: `Active Users / Total Users / New Users Today`
+
+*Ví dụ tốt:* `👥 Users: 1,250 active / 5,000 total / +45 new today (source: Firebase)`
+
+*Ví dụ tệ:* `"Có nhiều người dùng mới"`, `"Users tăng"`
+
+#### **💰 Business KPIs (Revenue / Transactions / Profit)**
+
+Tùy dự án chọn metrics phù hợp: Revenue, Transactions, Profit margin, hoặc KPI quan trọng khác.
+
+- Ghi rõ nguồn data (Stripe, internal dashboard, v.v.)
+- Nếu không có data, ghi: `N/A — awaiting PM input`
+
+*Ví dụ tốt:* `💰 Revenue: $12,500 / 320 transactions / Profit margin: 15% (source: Stripe Dashboard)`
+
+*Ví dụ tệ:* `"Doanh thu tốt"`, `"Có giao dịch mới"`
+
+#### **🐛 Production Bugs (Open / Fixed / Total)**
+
+Số liệu bug **tích lũy từ ngày launch** (không reset theo sprint). Lấy từ GitHub Issues hoặc project board.
+
+- Phân theo severity: Critical / High / Medium / Low
+- PHẢI highlight nếu có **Critical bugs chưa fix**
+
+*Ví dụ tốt:* `🐛 Bugs: 12 open (2 critical, 4 high) / 85 fixed / 97 total since launch`
+
+*Ví dụ tệ:* `"Có vài bugs cần fix"`, `"Đang fix bugs"`
+
+---
 
 ### **2\. Tôi đã làm những gì (What I did)**
 

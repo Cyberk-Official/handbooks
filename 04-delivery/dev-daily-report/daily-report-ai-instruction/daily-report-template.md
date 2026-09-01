@@ -4,6 +4,14 @@
 
 85% completed, 2 days ahead of schedule Expected completion: Sep 15, 15 working days remaining
 
+## **📊 Production Metrics** *(Post-Launch)*
+
+> *Số liệu do Leader/PM cung cấp — Snapshot ngày [DATE]*
+
+- 👥 **Users**: 1,250 active / 5,000 total / +45 new today *(source: Firebase)*
+- 💰 **Business**: $12,500 revenue / 320 transactions *(source: Stripe Dashboard)*
+- 🐛 **Bugs**: 12 open (2 critical, 4 high) / 85 fixed / 97 total since launch
+
 ## **2\. What I did**
 
 * Deployed staking contract with gas optimization, reduced cost by 30%  
