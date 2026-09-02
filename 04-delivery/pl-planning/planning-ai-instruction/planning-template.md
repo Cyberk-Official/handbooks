@@ -1,7 +1,7 @@
 ---
 type: delivery
 tags: [planning, templates, ai-instruction]
-created-date: 2026-09-02
+created-date: 2026-06-29
 updated-date: 2026-09-02
 author: anderson
 status: Nháp

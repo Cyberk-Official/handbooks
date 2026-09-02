@@ -1,7 +1,7 @@
 ---
 type: team
 tags: [communication, horenso, handbook]
-created-date: 2026-09-02
+created-date: 2026-08-27
 updated-date: 2026-09-02
 author: anderson
 status: Nháp

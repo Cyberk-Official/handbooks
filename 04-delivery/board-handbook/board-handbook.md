@@ -1,7 +1,7 @@
 ---
 type: delivery
 tags: [board, github-projects, project-management, handbook]
-created: 2026-08-22
+created: 2026-08-14
 updated: 2026-09-01
 author: anderson
 status: Đang dùng

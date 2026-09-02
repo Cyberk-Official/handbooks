@@ -1,7 +1,7 @@
 ---
 type: delivery
 tags: [handover, templates, client-management]
-created-date: 2026-09-02
+created-date: 2026-08-25
 updated-date: 2026-09-02
 author: anderson
 status: Nháp

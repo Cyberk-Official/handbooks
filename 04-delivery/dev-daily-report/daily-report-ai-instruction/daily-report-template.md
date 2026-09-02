@@ -1,7 +1,7 @@
 ---
 type: delivery
 tags: [daily-report, templates, ai-instruction]
-created-date: 2026-09-02
+created-date: 2025-07-05
 updated-date: 2026-09-02
 author: anderson
 status: Nháp

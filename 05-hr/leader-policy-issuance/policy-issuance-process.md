@@ -1,7 +1,7 @@
 ---
 type: process
 tags: [policy, governance, decision-making, cyberk-way]
-created: 2026-08-29
+created: 2026-09-01
 updated: 2026-08-29
 author: anderson
 ---

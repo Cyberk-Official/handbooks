@@ -1,7 +1,7 @@
 ---
 type: delivery
 tags: [postmortem, process]
-created-date: 2026-09-02
+created-date: 2025-11-29
 updated-date: 2026-09-02
 author: anderson
 status: Nháp
