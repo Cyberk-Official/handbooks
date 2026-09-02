@@ -1,4 +1,4 @@
-# CyberK Handbook Playbook v2.0
+# CyberK Handbook Playbook v2.1
 ### Bộ hướng dẫn để viết Handbook cho CyberK
 
 > **Playbook này là gì:** hướng dẫn *CÁCH* viết một handbook tốt cho CyberK — nguyên tắc, template, và cách duy trì.
@@ -81,9 +81,9 @@ Khi viết handbook, **luôn dùng đúng tên công cụ** mà CyberK thực t�
 
 > **Quy tắc:** Khi viết mẫu tin nhắn, mẫu quy trình, hoặc ví dụ — phải dùng đúng tên công cụ trên. VD: viết "gửi qua Telegram" chứ không viết "gửi qua Slack". Viết "tạo issue trên GitHub Projects" chứ không viết "tạo ticket trên Jira".
 
-### Hệ thống 6 loại tài liệu
+### Hệ thống 7 loại tài liệu
 
-Mỗi trang trong handbook thuộc một trong 6 loại. Mỗi loại có mục đích và lúc đọc khác nhau:
+Mỗi trang trong handbook thuộc một trong 7 loại. Mỗi loại có mục đích và lúc đọc khác nhau:
 
 | Loại | Ý nghĩa | Khi nào đọc | Hậu tố file |
 |------|---------|-------------|-------------|

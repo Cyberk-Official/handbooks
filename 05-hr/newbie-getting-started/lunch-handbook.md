@@ -9,7 +9,7 @@ status: Nháp
 
 # Cơm Trưa — Cẩm nang cho Newbie
 
-**Người chịu trách nhiệm:** [tên/vai trò]
+**Người chịu trách nhiệm:** Anderson
 **Cập nhật lần cuối:** [ngày]
 **Trạng thái:** [Nháp / Đang dùng / Ngừng dùng]
 

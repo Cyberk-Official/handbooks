@@ -9,7 +9,7 @@ status: Nháp
 
 # Onboarding Dự Án — Cẩm nang cho Team
 
-**Người chịu trách nhiệm:** [tên/vai trò]
+**Người chịu trách nhiệm:** PL/PM dự án
 **Trạng thái:** Nháp
 
 [1–2 câu mở đầu: người đọc đang ở đâu, tại sao cần đọc trang này]

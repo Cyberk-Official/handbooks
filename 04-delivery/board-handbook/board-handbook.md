@@ -111,7 +111,7 @@ Mọi dự án tại Cyberk đều bắt buộc sử dụng **GitHub Projects** 
 1. Truy cập vào GitHub Organization `Cyberk-Official` → Chọn tab **Projects** → Nhấn **New project**.
 2. Đặt tên Board theo chuẩn Quy tắc đặt tên ở trên (Ví dụ: `atlantis-management` hoặc `media`).
 3. **Cấu hình các Field bắt buộc (Project Fields):**
-   - **`Status`**: `Backlog` *(mặc định)*, `Todo`, `In Progress`, `Done`.
+   - **`Status`**: `Backlog` *(mặc định)*, `Todo`, `In Progress`, `Testing`, `Done`.
    - **`Assignees`**: Chọn chính xác GitHub ID của nhân sự (`anna-cyberk`, `anderson-cyberk`, `hungdn-cyberk`, `truonglx-cyberk`).
    - **`Labels`**: Nhãn phân loại (`operations`, `dev`, `design`, `qa`, `bug`).
    - **`Epic`**: Gắn đúng tên tính năng / Epic của dự án.
@@ -146,7 +146,8 @@ flowchart LR
 ### Quy tắc cốt lõi
 - **Mọi task PHẢI link Feature ID** (`FR-XXX` / `BR-XXX`) từ PRD/BRD
 - **Task < 4 giờ** — nếu lớn hơn, breakdown tiếp
-- **6 trường bắt buộc:** Assignees, Target date, Labels, Epic, Milestone, Week
+- **6 trường bắt buộc:** Assignees, Target date, Labels, Epic, Milestone, Start date
+- **3 trường optional:** Week, Estimate, End date
 - **Task mới tạo luôn ở Backlog**
 - **Push bằng GH CLI** — không click tay trên GitHub UI
 
@@ -172,6 +173,7 @@ flowchart LR
 
 ## Những dấu hiệu khi quản lý dự án không tốt
 
+### Dấu hiệu ở cấp team / dự án
 - Bạn không rõ, mơ hồ, hoặc không biết mục tiêu cuối cùng của dự án là gì (Scope)? Tháng này phải bàn giao tính năng nào cho khách hàng, tại sao?
 - Không rõ việc cần làm và chờ người quản lý giao việc cho bạn? hoặc bạn không biết mình cần phải làm gì.
 - Bạn không biết đâu là task quan trọng nhất cần phải làm ngay trong hôm nay?
@@ -185,6 +187,16 @@ flowchart LR
 - **Task không link Feature ID** — không ai biết nó thuộc feature nào, không verify được scope.
 - **Task được tạo manual** thay vì qua quy trình AI-driven — thiếu trường, không nhất quán.
 
+### Dấu hiệu ở cấp cá nhân (Personal Board)
+- **Quá nhiều Todo (> 10 tasks)** — Board thành danh sách mong ước, không phải kế hoạch. Developer bị choáng ngợp, không biết bắt đầu từ đâu.
+- **Quá ít Todo (0–1 tasks)** — Developer đang reactive, chờ ai đó giao việc. Thiếu chủ động review Epic và tự kéo task.
+- **In Progress > 3 tasks cùng lúc** — Multitasking giả. Context switching giết năng suất. Thực tế không task nào được tập trung.
+- **Task treo `In Progress` > 2 ngày liên tục** — Task quá lớn cần breakdown, hoặc bị block mà không báo.
+- **Không có task `Done` trong cả tuần** — Hoặc không cập nhật board, hoặc task quá lớn chưa xong. Cả hai đều là vấn đề.
+- **Board không được mở đầu ngày** — Developer code theo quán tính, không theo ưu tiên. Đây là dấu hiệu nghiêm trọng nhất.
+
+> 📖 **Xem chi tiết:** [Dev Daily — Quản lý công việc cá nhân](../../03-team/dev-daily/dev-daily-process.md) — quy trình hàng ngày, ma trận ưu tiên, và cách tự kiểm tra board cá nhân.
+
 ---
 
 ## Liên kết
@@ -194,5 +206,7 @@ flowchart LR
 - [Dev Tasks Logs — Mẫu task tốt/tồi](../dev-tasks-logs/dev-tasks-logs-example.md)
 - [QA Bugs Logs — Quy trình tạo bug](../qa-bugs-logs/qa-bugs-logs-process.md)
 - [Daily Report — Báo cáo hàng ngày](../dev-daily-report/daily-report-process.md)
+- [Dev Daily — Quản lý công việc cá nhân](../../03-team/dev-daily/dev-daily-process.md)
 - [PRD/BRD Templates](../../../bootstrap/skills/write-prd/templates/)
 - [Git & Branch Policy](../../../policy/dev-policy/source-code-and-git.md)
+

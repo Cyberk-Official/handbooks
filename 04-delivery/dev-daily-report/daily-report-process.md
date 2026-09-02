@@ -9,7 +9,7 @@ status: Nháp
 
 # Viết Daily Report
 
-**Người chịu trách nhiệm:** [Tech Lead / PM]
+**Người chịu trách nhiệm:** PM / Product Lead
 **Trạng thái:** Nháp
 
 ## Tại sao có trang này

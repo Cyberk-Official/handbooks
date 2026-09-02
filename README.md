@@ -27,10 +27,14 @@ Mỗi quy trình trong đây tồn tại vì đã có người làm sai trước
 
 ## Đọc thế nào?
 
-- Mỗi folder có 3 loại file:
+- Mỗi folder có thể chứa tối đa 7 loại file (xem [Playbook](./workflow/playbook.md)):
   - `*-process.md` — Các bước, checklist, diagram
   - `*-handbook.md` — Cách nghĩ, ví dụ tốt/tồi
   - `*-example.md` — Mẫu copy-paste
+  - `*-reference.md` — Bảng tra cứu nhanh (SLA, phân loại...)
+  - `*-policy.md` — Chính sách, quy định
+  - `*-role.md` — Vai trò, trách nhiệm
+  - `*-ai-instruction/` — Hướng dẫn cho AI sinh nội dung
 - **Người mới:** đọc [01-cyberk-way/](./01-cyberk-way/) + [Giao tiếp](./03-team/team-communicate/) + [Getting Started](./05-hr/newbie-getting-started/), rồi đọc theo vai trò
 - **Dev:** [Daily Report](./04-delivery/dev-daily-report/) → [Board](./04-delivery/board-handbook/) → [Bug Handling](./04-delivery/qa-bugs-handling/)
 - **QA:** [Bug Handling](./04-delivery/qa-bugs-handling/) → [Bug Logging](./04-delivery/qa-bugs-logs/)
@@ -48,16 +52,21 @@ handbook/
 ├── 📋 02-about-handbook/       # Cách đóng góp, owners, quy trình viết
 ├── 🤝 03-team/                 # Văn hoá, giao tiếp, join/leave dự án
 │   ├── team-communicate/       #   Horenso — báo cáo, liên lạc, thảo luận
+│   ├── dev-daily/              #   Quản lý công việc cá nhân hàng ngày
 │   ├── project-onboarding/     #   Thành viên mới tham gia dự án
 │   └── project-leave/          #   Thành viên rời khỏi dự án
 ├── 🔧 04-delivery/             # Quy trình làm sản phẩm
 │   ├── pl-planning/            #   Internal Planning Meeting (nội bộ)
 │   ├── pl-kick-off/            #   Kick-off Meeting (với khách hàng)
+│   ├── pl-board-create/        #   Khởi tạo Board dự án
 │   ├── pl-handover/            #   Bàn giao sản phẩm
 │   ├── dev-daily-report/       #   Daily report
+│   ├── dev-tasks-logs/         #   Tạo task trên board (AI-driven)
+│   ├── dev-write-brd/          #   Viết BRD cho developer
 │   ├── board-handbook/         #   Quản lý board GitHub Projects
 │   ├── qa-bugs-handling/       #   Xử lý bugs
-│   └── qa-bugs-logs/           #   Logging bugs trên GitHub
+│   ├── qa-bugs-logs/           #   Logging bugs trên GitHub
+│   └── blameless-postmortem.md #   Quy trình Postmortem
 ├── 👥 05-hr/                   # Con người
 │   ├── newbie-getting-started/  #   Ngày đầu tiên cho newbie
 │   ├── admin-welcoming-newbie/  #   Chuẩn bị đón người mới (cho HR)

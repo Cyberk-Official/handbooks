@@ -9,7 +9,7 @@ status: Nháp
 
 # Tạo Bug trên GitHub — Cẩm nang cho QA
 
-**Người chịu trách nhiệm:** [tên/vai trò]
+**Người chịu trách nhiệm:** Kate (QA Lead)
 **Cập nhật lần cuối:** [ngày]
 **Trạng thái:** [Nháp / Đang dùng / Ngừng dùng]
 

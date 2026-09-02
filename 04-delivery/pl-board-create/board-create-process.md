@@ -58,7 +58,7 @@ flowchart LR
 | # | Việc làm | Ai làm | Đầu ra |
 |---|----------|--------|--------|
 | 1 | **Chuẩn bị input:** Tên dự án, danh sách Epic, Milestones, GitHub ID members | PM/TL | Input sẵn sàng |
-| 2 | **Prompt AI tạo board:** Cung cấp input → AI chạy GH CLI tạo project + 4 custom fields (Epic, Milestone, Week, Estimate) | AI + PM | Project + 8 fields sẵn sàng |
+| 2 | **Prompt AI tạo board:** Cung cấp input → AI chạy GH CLI tạo project + 2 custom fields bắt buộc (Epic, Milestone) + 2 optional (Week, Estimate) | AI + PM | Project + fields sẵn sàng |
 | 3 | **Thiết lập 3 Views trên GitHub UI:** Sprint Board, Bugs Board, Personal Board cho mỗi member | PM/TL | 3 views hoạt động |
 | 4 | **Verify & thông báo:** Kiểm checklist → gửi link board qua Telegram | PM/TL | Team confirm |
 
@@ -68,7 +68,7 @@ flowchart LR
 
 ## Board cần có gì?
 
-### 8 Fields bắt buộc
+### 6 Fields bắt buộc + 2 Optional
 
 | Field | Loại | Có sẵn? | Ghi chú |
 |-------|------|---------|---------|
@@ -79,15 +79,16 @@ flowchart LR
 | Target date | Date | ✅ | Hạn chót |
 | **Epic** | Single select | ❌ Tạo thêm | Tên tính năng — task không có Epic = task trôi nổi |
 | **Milestone** | Single select | ❌ Tạo thêm | Mốc bàn giao: `W33`, `Alpha`, `Beta`... |
-| **Week** | Number | ❌ Tạo thêm | Số tuần — Sprint Board filter theo field này |
-| **Estimate** | Number | ❌ Tạo thêm | Giờ công — nhận ra Sprint overload sớm |
+| **Week** *(optional)* | Number | ❌ Tạo thêm | Số tuần — Sprint Board filter theo field này |
+| **Estimate** *(optional)* | Number | ❌ Tạo thêm | Giờ công — nhận ra Sprint overload sớm |
 
-### 3 Views chuẩn
+### 4 Views chuẩn
 
 | View | Filter | Group by | Mục đích |
 |------|--------|----------|---------|
 | 📌 **Sprint Board** | `Week = [tuần hiện tại]` | Status | Tuần này team làm gì? |
-| 🐞 **Bugs Board** | `Labels = bug` | Status | Nợ kỹ thuật đang ở đâu? |
+| 🐞 **Bugs Board** | `Labels = bug` | Status | Bugs đang ở đâu? |
+| 🔧 **Refactor Board** | `Labels = refactor` | Status | Nợ kỹ thuật đang chồng bao nhiêu? |
 | 👤 **Personal Board** | `Assignees = [github-id]` | Status | Tôi phải làm gì? |
 
 ---
@@ -97,7 +98,7 @@ flowchart LR
 | Quy tắc | Lý do |
 |---------|-------|
 | **Tên board đúng convention** (`[project]-management` / tên bộ phận) | Tên lung tung → 6 tháng sau không ai biết board nào của dự án nào |
-| **8 fields — không thiếu, không thêm** | Thiếu = không filter được. Thêm = team không điền |
+| **6 fields bắt buộc + 2 optional (Week, Estimate)** | Thiếu bắt buộc = không filter được. Thêm không cần = team không điền |
 | **Status chỉ 4 giá trị** | Thêm "Review"/"Blocked" → mỗi người hiểu khác nhau, task kẹt giữa cột |
 | **Mỗi member có Personal Board view** | Không thấy task → phải hỏi Lead → mất tự chủ |
 | **Board tạo TRƯỚC task đầu tiên** | Task trước board → thiếu fields, sửa sau mất gấp 3 |
@@ -116,7 +117,7 @@ flowchart LR
 ### Board
 - [ ] Project đã tạo trong Org `Cyberk-Official`
 - [ ] Tên đúng convention
-- [ ] `gh project field-list` hiển thị 8 fields
+- [ ] `gh project field-list` hiển thị 6 fields bắt buộc (+ optional nếu cần)
 - [ ] Status: 4 giá trị, default = Backlog
 
 ### Views
@@ -136,7 +137,7 @@ flowchart LR
 |-----------|----------|
 | Không có quyền tạo Project trên Org | Liên hệ Anderson (Org owner) |
 | Dự án nhỏ, 1–2 người | Vẫn cần Sprint + Bugs Board. Personal gộp Sprint nếu 1 người |
-| Board bộ phận (design, qa...) | Giữ 8 fields. Epic thay bằng loại công việc |
+| Board bộ phận (design, qa...) | Giữ 6 fields bắt buộc. Epic thay bằng loại công việc |
 | Kế thừa board cũ | Thiếu > 3 fields → tạo mới. Thiếu ≤ 3 → bổ sung |
 | GH CLI lỗi | `gh auth refresh -s project`. Vẫn lỗi → tạo manual, log issue DevOps |
 

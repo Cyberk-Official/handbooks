@@ -26,7 +26,7 @@ Mỗi khi nhận bug report từ khách hàng — bất kể kênh nào.
 
 ```mermaid
 flowchart LR
-    A["🔔 Nhận bug"] --> B["💬 Reply ≤15p"]
+    A["🔔 Nhận bug"] --> B["💬 Reply\ntheo SLA"]
     B --> C["🔍 Validate"]
     C --> D{"Bug thật?"}
     D -->|"Không"| E["Báo khách\n→ Đóng"]
@@ -62,7 +62,7 @@ flowchart LR
 | # | Việc | Ai | Đầu ra | Timeline |
 |---|------|----|--------|----------|
 | 1 | Nhận bug từ khách (Telegram / GitHub) | QA | Nắm nội dung bug report | — |
-| 2 | Reply xác nhận + mã tracking + timeline | QA | Khách biết đã nhận | **≤ 15 phút** |
+| 2 | **Triage nhanh + Reply** xác nhận + mã tracking + timeline. Đọc bug report → đánh giá sơ severity (dựa trên mô tả: hệ thống down = P0, chức năng chính hỏng = P1, có workaround = P2, UI/typo = P3) → reply theo SLA tương ứng | QA | Khách biết đã nhận | **Theo [SLA severity](bug-severity-sla-handbook.md):** P0 ≤30p, P1 ≤1h, P2 ≤4h, P3 ≤1 ngày |
 | 3 | Tạo task validate trên board, tái hiện bug | QA | Kết quả: bug / not bug / cần thêm info | 2h–1 ngày |
 | 4 | Nếu bug → đóng task validate, tạo Bug Issue trên GitHub (severity, labels, deadline) | QA | GitHub Issue chính thức | Ngay sau validate |
 | 5 | Báo khách: mã bug + link + timeline fix. Assign developer + deadline | QA | Khách được cập nhật. Dev được giao việc | Ngay sau log |
@@ -77,7 +77,7 @@ flowchart LR
 
 | Quy tắc | Lý do |
 |---------|-------|
-| Reply khách **≤ 15 phút**, kể cả khi chưa biết bug thật hay giả | Im lặng = mất niềm tin. Acknowledge trước, validate sau |
+| **Triage nhanh + Reply** theo SLA severity ([xem bảng P0–P3](bug-severity-sla-handbook.md)). QA đánh giá sơ severity từ mô tả bug, reply theo SLA tương ứng, kể cả khi chưa validate xong | Im lặng = mất niềm tin. Triage nhanh → acknowledge trước, validate chi tiết sau |
 | Mọi bug phải có **GitHub Issue** với severity + deadline | Không có issue = không truy vết được = không ai chịu trách nhiệm |
 | QA **tự verify** sau khi dev fix, không tin lời nói | Dev nói "done" không có nghĩa là fix đúng. QA là người gác cổng cuối |
 | Không dùng "soon", "ASAP", "shortly" với khách | Mơ hồ = thiếu cam kết. Luôn cho timeline cụ thể |
@@ -99,7 +99,7 @@ flowchart LR
 
 ## Checklist mỗi bug
 
-- [ ] Reply khách ≤ 15 phút (có tracking + timeline)
+- [ ] Reply khách theo SLA severity (có tracking + timeline)
 - [ ] Tạo task validate trên board
 - [ ] Validate + chụp evidence
 - [ ] Tạo Bug Issue (severity, steps, evidence, labels)

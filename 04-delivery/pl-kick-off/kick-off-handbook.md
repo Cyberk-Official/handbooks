@@ -1,6 +1,6 @@
 # Kick-off với Khách hàng — Cẩm nang cho Product Lead
 
-**Người chịu trách nhiệm:** [PL/PM]
+**Người chịu trách nhiệm:** PL/PM dự án
 **Cập nhật lần cuối:** 2026-08-27
 **Trạng thái:** Nháp
 
@@ -80,7 +80,7 @@ Lúc này client đã biết sẽ có buổi kick-off (bạn đã hẹn ở tin 
 >
 > *"Hi David, our internal planning is complete! Here's the Planning Report (attached). Quick summary:*
 >
-> *📋 Approach: We'll run 2-week sprints, starting with the booking flow — the core user journey — before building secondary features like admin reports.*
+> *📋 Approach: We'll run 1-week sprints with daily progress updates, starting with the booking flow — the core user journey — before building secondary features like admin reports.*
 >
 > *⚠️ Key Risks: The payment gateway API documentation is incomplete. We've allocated a spike in Sprint 1 to validate integration before committing to a timeline for that module.*
 >
@@ -164,16 +164,16 @@ Tại sao tồi: Client đã có file. Đọc lại = lãng phí thời gian. Bu
 - **Development methodology** — Agile/Sprint, tần suất báo cáo, cách feedback
 - **Technical approach** — Tại sao chọn tech stack này? Architecture như thế nào?
 - **Risk mitigation** — Team sẽ xử lý risk thế nào nếu nó xảy ra?
-- **Communication cadence** — Weekly sync? Bi-weekly demo? Report qua kênh nào?
+- **Communication cadence** — Daily demo? Daily report qua kênh nào?
 
 ✅ Cách tốt:
-> PL: *"Let me explain our approach. We'll work in 2-week sprints. At the end of each sprint, you'll get a demo of what's been built — you can see it running and give feedback immediately. If something needs to change, we catch it early."*
+> PL: *"Let me explain our approach. We'll work in 1-week sprints, with daily progress updates and demos. Every day, you'll see what's been built — you can see it running and give feedback immediately. If something needs to change, we catch it the next day, not next week."*
 >
 > TL: *"On the technical side, we're using Next.js with a PostgreSQL database. This gives us the best balance between development speed and scalability for your expected 10,000 users in the first 6 months."*
 >
-> PL: *"For communication, I'd suggest a weekly sync call every Monday — 30 minutes, progress update plus any blockers. Between calls, we'll use Telegram for quick questions. Does that work for your team?"*
+> PL: *"For communication, we'll send you a daily progress report via Telegram — including what was built, what's next, and any blockers. Each day ends with a quick demo of what's been completed, so you can see the product evolving in real-time and give feedback immediately. Does that work for your team?"**
 
-Tại sao tốt: Client hiểu methodology (sẽ thấy output mỗi 2 tuần), TL giải thích tech choice bằng ngôn ngữ business (không phải jargon), và communication được thiết lập cụ thể — ngày, kênh, tần suất.
+Tại sao tốt: Client hiểu methodology (sẽ thấy output mỗi ngày, không phải chờ cuối sprint), TL giải thích tech choice bằng ngôn ngữ business (không phải jargon), và communication được thiết lập cụ thể — ngày, kênh, tần suất.
 
 ❌ Cách tồi:
 > PL: *"We'll use Agile. Any questions?"*
@@ -203,7 +203,7 @@ Tại sao tồi: Hỏi nhanh, không chờ = client nghĩ team không thực s�
 Kết thúc buổi call bằng 3 câu cụ thể:
 1. *"Sprint 1 starts on [Date]."*
 2. *"I'll send a summary email today with everything we discussed."*
-3. *"Our first weekly sync will be [Day, Time]. I'll send the calendar invite today."*
+3. *"You'll receive daily progress reports via Telegram, starting from day one. I'll set up the group today."*
 
 > **Quy tắc:** Không kết thúc buổi call mà không có 3 thứ: ngày bắt đầu, next action item, và kênh liên lạc đã confirm.
 

@@ -7,12 +7,12 @@ author:
 status: Nháp
 ---
 
-# Viết Daily Report — Cẩm nang cho Dev
+# Viết Daily Report — Cẩm nang cho PM/PL
 
-**Người chịu trách nhiệm:** [Tech Lead / PM]
+**Người chịu trách nhiệm:** PM / Product Lead
 **Trạng thái:** Nháp
 
-Daily report không phải để "báo cáo sếp". Nó là công cụ để **bạn tự tổ chức công việc** và để PM **biết đang ở đâu mà report cho khách hàng**. Viết tốt = ít bị hỏi lại. Viết tồi = khách hàng lo lắng, PM hỏi liên tục.
+Daily report không phải để "báo cáo sếp". Nó là công cụ để PM/PL **tổng hợp tiến độ từ board** và **report cho khách hàng**. Viết tốt = khách yên tâm. Viết tồi = khách hàng lo lắng, hỏi liên tục.
 
 Report gồm **4 mục cố định** — luôn giữ đúng thứ tự. Nếu dự án đã launch, thêm mục **📊 Production Metrics** ngay sau Progress:
 

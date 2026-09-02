@@ -9,7 +9,7 @@ status: Nháp
 
 # Mẫu Daily Report — Tốt vs Không Tốt
 
-**Người chịu trách nhiệm:** [tên/vai trò]
+**Người chịu trách nhiệm:** PM / Product Lead
 **Cập nhật lần cuối:** [ngày]
 
 > Quy tắc: Ngắn gọn, cụ thể, có số liệu. Next-step luôn có ETA. Blocker luôn có giải pháp.

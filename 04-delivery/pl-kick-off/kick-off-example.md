@@ -77,7 +77,7 @@ Here's a quick summary:
 
 📋 Approach
 - [1–2 câu mô tả cách team sẽ tiếp cận dự án]
-- Example: "We'll follow an agile approach with 2-week sprints, 
+- Example: "We'll follow an agile approach with 1-week sprints, 
   starting with the core user flow before building out secondary features."
 
 ⚠️ Key Risks
@@ -194,7 +194,7 @@ KEY POINTS DISCUSSED
 
 2. Planning
    - Timeline: [Start date] → [End date]
-   - Sprint cadence: [2-week sprints]
+   - Sprint cadence: [1-week sprints]
    - Key milestones: [list]
 
 3. Approach
@@ -209,7 +209,7 @@ ACTION ITEMS
 |---|------|-------|-----|
 | 1 | [e.g. Client to provide API credentials] | [Client] | [Date] |
 | 2 | [e.g. Cyberk to set up dev environment] | [TL] | [Date] |
-| 3 | [e.g. Schedule weekly sync call] | [PL] | [Date] |
+| 3 | [e.g. Set up daily report Telegram group] | [PL] | [Date] |
 
 ━━━━━━━━━━━━━━━━━━━━━
 
@@ -217,7 +217,7 @@ NEXT STEPS
   • Sprint 1 starts: [Date]
   • First progress report: [Date]
   • Communication channel: [Telegram group]
-  • Weekly sync: [Day, Time]
+  • Daily report & demo: via Telegram, starting [Date]
 
 ━━━━━━━━━━━━━━━━━━━━━
 

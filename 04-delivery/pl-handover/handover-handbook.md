@@ -1,6 +1,6 @@
 # Bàn giao sản phẩm — Cẩm nang cho Product Lead
 
-**Người chịu trách nhiệm:** [tên/vai trò]
+**Người chịu trách nhiệm:** PL/PM dự án
 **Cập nhật lần cuối:** 2026-08-25
 **Trạng thái:** Nháp
 
@@ -238,4 +238,4 @@ Buổi họp kết thúc không có nghĩa là xong. Có 3 việc cần làm nga
 - [Quy trình bàn giao](./handover-process.md)
 - [Mẫu tin nhắn](./handover-example.md)
 - [Bảng tra SLA bảo trì](./maintenance-policy-reference.md)
-- [Meeting Agenda (cho Client)](../hangover/meeting-agenda-client.md)
+- *(Meeting Agenda cho Client — chưa có, cần tạo)*

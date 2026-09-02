@@ -10,15 +10,15 @@ Bảng tra nhanh: ai là owner (người duyệt PR) cho mục nào trong handbo
 | Mục | Folder | Owner | Backup |
 |-----|--------|-------|--------|
 | **The Cyberk Way** (triết lý, giá trị) | `01-cyberk-way/` | Anderson | — |
-| **Culture** (Horenso, cơm nhà, trang phục) | `02-culture/` | Anderson | — |
-| **Getting Started** (onboarding newbie) | `05-hr/newbie-getting-started/` | [HR Lead] | Anderson |
-| **Welcoming Newbie** (onboarding cho manager) | `05-hr/admin-welcoming-newbie/` | [HR Lead] | Anderson |
-| **Daily Report** | `delivery/dev-daily-report/` | [PL/PM] | Tech Lead |
-| **Bug Handling** | `delivery/qa-bugs-handling/` | [QA Lead] | PL |
-| **Bug Logging** | `delivery/qa-bugs-logs/` | [QA Lead] | PL |
-| **Board Management** | `delivery/board-handbook/` | [PL/PM] | Anderson |
-| **PL Handover** | `delivery/pl-handover/` | [PL/PM] | Anderson |
-| **Team Join/Leave Project** | `team/` | [PL/PM] | Anderson |
+| **Culture** (Horenso, cơm nhà, trang phục) | `05-hr/newbie-getting-started/` | Anderson | — |
+| **Getting Started** (onboarding newbie) | `05-hr/newbie-getting-started/` | Anderson | — |
+| **Welcoming Newbie** (onboarding cho manager) | `05-hr/admin-welcoming-newbie/` | Anderson | — |
+| **Daily Report** | `04-delivery/dev-daily-report/` | PL/PM dự án | Tech Lead |
+| **Bug Handling** | `04-delivery/qa-bugs-handling/` | Kate | PL |
+| **Bug Logging** | `04-delivery/qa-bugs-logs/` | Kate | PL |
+| **Board Management** | `04-delivery/board-handbook/` | PL/PM dự án | Anderson |
+| **PL Handover** | `04-delivery/pl-handover/` | PL/PM dự án | Anderson |
+| **Team Join/Leave Project** | `03-team/` | PL/PM dự án | Anderson |
 | **Về Handbook** (contributing, playbook) | `02-about-handbook/` | Anderson | — |
 
 > **Chưa có owner?** → Mặc định là Anderson cho đến khi gán. Nếu bạn muốn nhận trách nhiệm một mục, nói với Anderson.

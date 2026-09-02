@@ -9,7 +9,7 @@ status: Nháp
 
 # Onboarding Dự Án
 
-**Người chịu trách nhiệm:** [tên/vai trò]
+**Người chịu trách nhiệm:** PL/PM dự án
 **Trạng thái:** Nháp
 
 ## Tại sao có trang này

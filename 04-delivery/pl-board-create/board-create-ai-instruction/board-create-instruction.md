@@ -111,7 +111,7 @@ GH CLI chưa hỗ trợ sửa built-in field options. Hướng dẫn PM vào **S
 gh project field-list PROJECT_NUMBER --owner Cyberk-Official
 ```
 
-Output phải có **8 fields:**
+Output phải có **6 fields bắt buộc** (+ 2 optional nếu PM yêu cầu):
 
 | # | Field | Loại | Nguồn |
 |---|-------|------|-------|
@@ -187,13 +187,13 @@ Sau khi hoàn tất, báo cáo cho PM:
 - **Link:** [URL]
 - **Fields:** 8/8 ✅
 - **Views:** Sprint Board ✅ | Bugs Board ✅ | Personal Boards ✅
-- **Status:** Backlog (default), Todo, In Progress, Done
+- **Status:** Backlog (default), Todo, In Progress, Testing, Done
 - **Epics:** [danh sách]
 - **Milestones:** [danh sách]
 - **Members:** [danh sách github-id]
 
 ### ⚠️ PM cần làm thêm (trên GitHub UI):
-- [ ] Chỉnh Status options (nếu chưa đúng 4 giá trị)
+- [ ] Chỉnh Status options (nếu chưa đúng 5 giá trị)
 - [ ] Tạo 3 views (Sprint, Bugs, Personal)
 - [ ] Gửi link board cho team qua Telegram
 ```
@@ -202,8 +202,8 @@ Sau khi hoàn tất, báo cáo cho PM:
 
 ## 📌 Lưu ý quan trọng
 
-- **KHÔNG tạo thêm field ngoài 8 fields trên** — thêm field = thêm phức tạp, team sẽ không điền
+- **KHÔNG tạo thêm field ngoài 6 bắt buộc + 2 optional (Week, Estimate)** — thêm field = thêm phức tạp, team sẽ không điền
 - **KHÔNG đổi naming convention** — luôn `[project-name]-management` hoặc tên bộ phận
-- **KHÔNG thêm Status options** — chỉ 4 giá trị, không ngoại lệ
+- **KHÔNG thêm Status options** — chỉ 5 giá trị (`Backlog`, `Todo`, `In Progress`, `Testing`, `Done`), không ngoại lệ
 - **Epic/Milestone options** phải lấy từ PM — không tự đoán tên feature
 - Nếu PM chưa có danh sách Epic → yêu cầu PM hoàn tất [PRD/BRD](../../../../bootstrap/skills/write-prd/templates/) trước

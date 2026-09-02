@@ -1,6 +1,6 @@
 # Bàn giao sản phẩm cho khách hàng
 
-**Người chịu trách nhiệm:** [PL/PM]
+**Người chịu trách nhiệm:** PL/PM dự án
 **Cập nhật lần cuối:** 2026-08-25
 **Trạng thái:** Nháp
 

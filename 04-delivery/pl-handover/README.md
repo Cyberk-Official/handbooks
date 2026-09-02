@@ -1,7 +1,7 @@
 # Handover — Cẩm nang cho Product Lead
 
 > Folder này dành cho **Product Lead / PM** — hướng dẫn cách chuẩn bị và thực hiện buổi bàn giao sản phẩm cho khách hàng.
-> Tài liệu dành cho client (meeting agenda): xem [`hangover/`](../hangover/)
+> Tài liệu dành cho client (meeting agenda): xem [`pl-handover/`](./)
 
 ## Mục lục
 

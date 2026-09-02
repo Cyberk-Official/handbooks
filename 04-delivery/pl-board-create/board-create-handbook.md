@@ -42,9 +42,9 @@ Board giải quyết 3 vấn đề cốt lõi:
 
 ---
 
-## 8 Fields — Tại sao mỗi trường đều cần, không thiếu không thừa?
+## 6 Fields bắt buộc + 2 Optional — Tại sao mỗi trường đều cần?
 
-Board có 8 fields. Không phải con số ngẫu nhiên — mỗi field giải quyết một câu hỏi cụ thể. Thiếu 1 field = board không trả lời được 1 câu hỏi. Thêm 1 field = team phải điền thêm 1 thứ mà có thể không ai dùng.
+Board có **6 fields bắt buộc** và **2 fields optional** (Week, Estimate). Mỗi field giải quyết một câu hỏi cụ thể. Thiếu 1 field bắt buộc = board không trả lời được 1 câu hỏi. Thêm field không cần = team phải điền thêm 1 thứ mà không ai dùng.
 
 ### Status — Tại sao chỉ 5?
 
@@ -79,7 +79,7 @@ Task không có Epic giống hàng trong kho không gắn nhãn — có đó, nh
 
 Milestone trả lời: "Tuần 34 phải bàn giao cái gì cho khách?" Nếu task không gắn Milestone, PM phải tự nhớ — hoặc mở file khác tra — board không tự trả lời được.
 
-### Week — Động cơ của Sprint Board
+### Week *(optional)* — Động cơ của Sprint Board
 
 `33`, `34`, `35`...
 
@@ -87,7 +87,7 @@ Sprint Board filter theo Week. **Thiếu Week → Sprint Board hiển thị tr�
 
 Đầu mỗi tuần, PM đổi filter `Week = [tuần mới]` → Sprint Board tự cập nhật. Nhanh, sạch, không cần tạo board mới mỗi sprint.
 
-### Estimate — Không phải để đo giờ, mà để phát hiện overload
+### Estimate *(optional)* — Không phải để đo giờ, mà để phát hiện overload
 
 `2`, `3`, `4` (giờ)
 
@@ -150,9 +150,19 @@ Nếu member mở board mà phải search, scroll, filter thủ công mới th�
 
 > **Quy tắc:** Tạo board xong, nếu bất kỳ member nào không thấy task của mình trong **1 click** — quay lại sửa Personal Board view.
 
+### Refactor Board — "Nợ kỹ thuật đang chồng bao nhiêu?"
+
+Filter: `Labels = refactor`. Group by: `Status`.
+
+Bugs là lỗi khách hàng thấy. Refactor là nợ kỹ thuật mà **chỉ dev biết** — code cũ cần viết lại, performance cần tối ưu, dependency cần cập nhật. Nếu trộn lẫn refactor vào Sprint Board, chúng sẽ luôn bị đẩy xuống cuối vì không "gấp" bằng feature mới — rồi nợ chồng nợ cho đến khi hệ thống quá chậm hoặc quá khó maintain.
+
+Refactor Board tách riêng nợ kỹ thuật ra, giúp PM và Tech Lead nhìn rõ: còn bao nhiêu nợ, đang tăng hay giảm, có cần dành sprint riêng để trả nợ không.
+
+> **Quy tắc:** Khi phát hiện code cần refactor — tạo task, gắn label `refactor`, đưa vào Refactor Board. Không để trong đầu.
+
 ---
 
-## 3 Views nâng cao — Khi nào mới cần?
+## Views nâng cao — Khi nào mới cần?
 
 Không phải dự án nào cũng cần. Thêm view khi **có nhu cầu thật**, không thêm cho đủ.
 

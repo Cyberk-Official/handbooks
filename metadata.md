@@ -1,6 +1,12 @@
-# Gitbook — Metadata
+---
+created-date: 2026-08-25
+updated-date: 2026-09-01
+author: anderson
+---
 
-Quy ước chung xem [[metadata-rule]].
+# Handbook — Metadata
+
+Quy ước chung xem [metadata-rule](../../.agents/rules/metadata-rule.md).
 
 ---
 
@@ -8,15 +14,14 @@ Quy ước chung xem [[metadata-rule]].
 
 | Giá trị | Mô tả |
 | ------- | ----- |
-| `on-boarding` | Tài liệu dành cho onboarding nhân sự mới |
-| `dev` | Tài liệu dành cho developer |
-| `po` | Tài liệu dành cho product owner |
-| `thinking` | Suy nghĩ, reasoning của Anderson về một vấn đề |
-| `design` | Tài liệu dành cho designer |
+| `cyberk` | Hiểu biết chung về CyberK, CyberK Way, triết lý |
+| `delivery` | Tài liệu quy trình delivery (board, planning, kick-off, handover, bugs, tasks) |
+| `hr` | Tài liệu nhân sự (onboarding, policy, welcoming) |
 | `qa` | Tài liệu dành cho bộ phận quality control |
-| `manager` | Tài liệu dành cho bộ phận quản lý |
-| `cyberk` | Hiểu biết chung về CyberK, CyberK Way |
-| `mkt` | Tài liệu marketing, mô tả dịch vụ, sales collateral |
+| `team` | Tài liệu về team (daily, communicate, project join/leave) |
+| `handbook` | Tài liệu meta — cách đóng góp, owners, quy trình viết handbook |
+| `process` | Template và hướng dẫn viết quy trình |
+| `template` | Template dùng chung |
 
 ---
 
@@ -24,11 +29,32 @@ Quy ước chung xem [[metadata-rule]].
 
 | Giá trị | Mô tả |
 | ------- | ----- |
-| `solo-dev` | Nội dung về mô hình solo-dev |
-| `native-ai` | Chuyển đổi, sử dụng AI triệt để vào công việc |
 | `cyberk-way` | Phương pháp CyberK, bí quyết, văn hóa |
-| `agentic` | Agentic development và các hiểu biết liên quan |
+| `process` | Quy trình, flowchart, checklist |
+| `handbook` | Cẩm nang, hướng dẫn chi tiết |
+| `board` | GitHub Projects, board management |
+| `github-projects` | Liên quan đến GitHub Projects |
+| `bug-handling` | Xử lý bugs, severity, SLA |
+| `communication` | Giao tiếp với khách hàng, team |
+| `client-management` | Quản lý quan hệ khách hàng |
+| `templates` | Mẫu tin nhắn, mẫu tài liệu |
+| `onboarding` | Onboarding nhân sự mới |
+| `project-management` | Quản lý dự án |
+| `personal-management` | Quản lý công việc cá nhân |
 | `policy` | Chính sách của Cyberk |
+| `dev-daily` | Daily meeting, daily report |
+| `setup` | Khởi tạo, cài đặt |
+| `workflow` | Luồng công việc |
+
+---
+
+## `status`
+
+| Giá trị | Mô tả |
+| ------- | ----- |
+| `Nháp` | Đang viết, chưa review |
+| `Đang dùng` | Đã review, đang áp dụng |
+| `Ngừng dùng` | Không còn áp dụng |
 
 ---
 

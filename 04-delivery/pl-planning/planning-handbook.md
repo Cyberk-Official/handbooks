@@ -1,6 +1,6 @@
 # Planning — Cẩm nang cho Product Lead
 
-**Người chịu trách nhiệm:** [PL/PM]
+**Người chịu trách nhiệm:** PL/PM dự án
 **Cập nhật lần cuối:** 2026-08-26
 **Trạng thái:** Nháp
 
@@ -228,4 +228,4 @@ Tại sao tồi: Report gửi trễ = chi tiết sai (vì quên). Client lo lắ
 ## Liên kết
 
 - [Quy trình planning — 4 bước](./planning-process.md)
-- [Mẫu Planning Report & Agenda](./planning-example.md)
+- *(Mẫu Planning Report & Agenda — chưa có, cần tạo)*

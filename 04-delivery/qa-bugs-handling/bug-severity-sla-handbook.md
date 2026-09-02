@@ -88,4 +88,4 @@ SLA paused — waiting for [lý do]. Clock paused at [thời gian].
 
 ---
 
-*Đọc thêm: [Xử lý Bugs](bug-handling-workflow.md) · [Mẫu tin nhắn](acknowledgment-messages-example.md)*
+*Đọc thêm: [Xử lý Bugs](bug-handling-process.md) · [Mẫu tin nhắn](acknowledgment-messages-example.md)*

@@ -1,6 +1,6 @@
 # Lập kế hoạch dự án (Internal Planning)
 
-**Người chịu trách nhiệm:** [PL/PM]
+**Người chịu trách nhiệm:** PL/PM dự án
 **Cập nhật lần cuối:** 2026-08-26
 **Trạng thái:** Nháp
 
@@ -105,4 +105,4 @@ flowchart LR
 ## Liên kết
 
 - [Cách nghĩ khi planning — triết lý & mẫu tốt/tồi](./planning-handbook.md)
-- [Mẫu Planning Report & Agenda](./planning-example.md)
+- *(Mẫu Planning Report & Agenda — chưa có, cần tạo)*

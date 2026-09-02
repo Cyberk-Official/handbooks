@@ -207,4 +207,4 @@ Tại sao tồi: Admin không biết gửi kênh nào, viết subject gì, body 
 - [Quy trình ban hành Policy](./policy-issuance-process.md) — Flowchart, bảng bước, checklist
 - [Skill soạn Policy](../skills/create-decision/SKILL.md) — Pipeline MD → HTML → PDF
 - [Template HTML quyết định](../skills/create-decision/cyberk-decision-template.html)
-- [Playbook viết Handbook](../../handbook/workflow/playbook.md) — Nguyên tắc viết tài liệu CyberK
+- [Playbook viết Handbook](../../workflow/playbook.md) — Nguyên tắc viết tài liệu CyberK

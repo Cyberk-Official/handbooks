@@ -1,6 +1,6 @@
 # Mẫu bàn giao — Template & Ví dụ cho từng bước
 
-**Người chịu trách nhiệm:** [PL/PM]
+**Người chịu trách nhiệm:** PL/PM dự án
 **Cập nhật lần cuối:** 2026-08-25
 
 > File này chứa **mẫu sẵn để copy-paste** cho từng bước trong [quy trình bàn giao](./handover-process.md). Cách nghĩ chi tiết hơn: xem [handbook](./handover-handbook.md).

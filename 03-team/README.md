@@ -7,10 +7,10 @@ author: anderson
 status: Nháp
 ---
 
-# 👥 Team — Quản lý Nhân sự Dự Án
+# 👥 Team — Văn hoá, Giao tiếp & Quản lý Nhân sự Dự Án
 
 > **Đối tượng:** Product Lead và mọi thành viên team
-> **Mục đích:** Chuẩn hóa cách thêm người vào dự án và bàn giao khi rời dự án.
+> **Mục đích:** Chuẩn hóa cách giao tiếp trong team, quản lý công việc cá nhân hàng ngày, và quy trình thêm/rời dự án.
 
 ---
 
@@ -18,7 +18,10 @@ status: Nháp
 
 | # | Chủ đề | File | Loại |
 |---|--------|------|------|
-| 1 | Onboarding dự án | [process](project-onboarding/project-onboarding-process.md) | Process |
-| 2 | Onboarding dự án | [handbook](project-onboarding/project-onboarding-handbook.md) | Handbook |
-| 3 | Rời dự án | [process](project-leave/project-leave-process.md) | Process |
-| 4 | Rời dự án | [handbook](project-leave/project-leave-handbook.md) | Handbook |
+| 1 | Giao tiếp team (Horenso) | [handbook](team-communicate/team-communicate-handbook.md) | Handbook |
+| 2 | Quản lý công việc cá nhân | [process](dev-daily/dev-daily-process.md) | Process |
+| 3 | Quản lý công việc cá nhân | [handbook](dev-daily/dev-daily-handbook.md) | Handbook |
+| 4 | Onboarding dự án | [process](project-onboarding/project-onboarding-process.md) | Process |
+| 5 | Onboarding dự án | [handbook](project-onboarding/project-onboarding-handbook.md) | Handbook |
+| 6 | Rời dự án | [process](project-leave/project-leave-process.md) | Process |
+| 7 | Rời dự án | [handbook](project-leave/project-leave-handbook.md) | Handbook |

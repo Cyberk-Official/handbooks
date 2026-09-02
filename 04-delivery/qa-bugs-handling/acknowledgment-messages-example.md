@@ -17,7 +17,7 @@ author: anderson
 
 ### 1. Tiếp nhận nhanh
 
-> Vừa nhận bug report, reply trong 15 phút.
+> Vừa nhận bug report, triage nhanh và reply theo [SLA severity](bug-severity-sla-handbook.md) (P0 ≤30p, P1 ≤1h, P2 ≤4h, P3 ≤1 ngày).
 
 ```
 Hi [Client] 👋 Got it, we're looking into this now!
@@ -181,7 +181,7 @@ Tại sao tồi: Lạnh lùng, từ chối giúp, bắt khách tự làm. QA ph�
 
 | ❌ Không | ✅ Nên |
 |---------|-------|
-| Im lặng > 30 phút | Reply trong 15 phút |
+| Im lặng quá SLA severity | Triage nhanh + reply theo [SLA severity](bug-severity-sla-handbook.md) |
 | "soon", "ASAP", "shortly" | "within 2 hours", "by end of day" |
 | "works on my machine" | Hỏi thêm environment, thử nhiều setup |
 | "quick fix" khi chưa validate | "investigating, update within [time]" |

@@ -16,7 +16,9 @@ Cuốn cẩm nang này giúp bạn biết phải làm gì — từ lúc nhận t
 
 ## Khách báo lỗi — Bạn làm gì đầu tiên?
 
-**Reply ngay. Trong vòng 15 phút.**
+**Triage nhanh + Reply ngay. Theo [SLA severity](bug-severity-sla-handbook.md)** — P0 trong 30 phút, P1 trong 1 giờ, P2 trong 4 giờ, P3 trong 1 ngày.
+
+Đọc bug report → **đánh giá sơ severity** (hệ thống down? chức năng cốt lõi hỏng? có workaround? chỉ là UI?) → reply theo SLA tương ứng.
 
 Không cần biết bug thật hay giả. Không cần hiểu hết vấn đề. Việc đầu tiên là cho khách biết: *"Tôi đã nhận được, tôi đang xem."*
 
@@ -201,7 +203,7 @@ Toàn bộ quy trình gói gọn trong 6 việc:
 | # | Việc | Thời gian |
 |---|------|-----------|
 | 1 | Nhận bug từ khách | — |
-| 2 | Reply xác nhận | ≤ 15 phút |
+| 2 | Reply xác nhận | Theo [SLA severity](bug-severity-sla-handbook.md) |
 | 3 | Tự validate | 2h–1 ngày |
 | 4 | Log bug trên GitHub | Ngay sau validate |
 | 5 | Báo khách + assign dev | Ngay sau log |
