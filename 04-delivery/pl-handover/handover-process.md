@@ -1,3 +1,12 @@
+---
+type: delivery
+tags: [handover, process]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # Bàn giao sản phẩm cho khách hàng
 
 **Người chịu trách nhiệm:** PL/PM dự án

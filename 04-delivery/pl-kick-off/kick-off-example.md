@@ -1,3 +1,12 @@
+---
+type: delivery
+tags: [kick-off, templates, client-management]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # Kick-off với Khách hàng — Mẫu Agenda, Tin nhắn & Email
 
 **Cập nhật lần cuối:** 2026-08-27

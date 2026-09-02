@@ -3,7 +3,7 @@ type: delivery
 tags: [tasks, github, dev, process, ai-driven, spec-driven]
 created: 2026-09-01
 updated: 2026-09-01
-author:
+author: anderson
 status: Nháp
 ---
 

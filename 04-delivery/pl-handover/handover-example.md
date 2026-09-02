@@ -1,3 +1,12 @@
+---
+type: delivery
+tags: [handover, templates, client-management]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # Mẫu bàn giao — Template & Ví dụ cho từng bước
 
 **Người chịu trách nhiệm:** PL/PM dự án

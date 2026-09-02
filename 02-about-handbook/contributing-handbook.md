@@ -1,3 +1,12 @@
+---
+type: handbook
+tags: [contributing, handbook]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # Đóng góp Handbook — Cẩm nang cho mọi thành viên
 
 **Người chịu trách nhiệm:** Anderson (CEO)

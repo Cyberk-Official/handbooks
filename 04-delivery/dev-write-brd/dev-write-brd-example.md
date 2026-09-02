@@ -3,7 +3,7 @@ type: delivery
 tags: [brd, documentation, dev, example]
 created: 2026-09-01
 updated: 2026-09-01
-author:
+author: anderson
 status: Nháp
 ---
 
@@ -28,7 +28,7 @@ Dev đang code portfolio page, phát hiện hệ thống không có tính năng 
 ---
 title: BRD — Auto-Sync Transaction History
 version: 1.0
-status: Draft
+status: Nháp
 created_at: 2026-09-01
 author: hungdn-cyberk
 project: Koto
@@ -168,7 +168,7 @@ Tại sao tồi: Scope vô tận. 1 feature phát sinh biến thành 1 Epic mớ
 ---
 title: BRD — [Tên feature]
 version: 1.0
-status: Draft
+status: Nháp
 created_at: [YYYY-MM-DD]
 author: [github-id]
 project: [Tên dự án]

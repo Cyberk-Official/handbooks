@@ -1,3 +1,12 @@
+---
+type: delivery
+tags: [handover, maintenance, reference]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # Chính sách bảo trì sau bàn giao — Sổ tay cho Product Lead
 
 **Người chịu trách nhiệm:** PL/PM dự án

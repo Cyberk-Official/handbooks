@@ -1,3 +1,12 @@
+---
+type: delivery
+tags: [daily-report, templates, ai-instruction]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # Cyberk Daily Report \- [Ngày]
 
 ## **1\. Project Progress**
@@ -31,4 +40,3 @@
 * CRITICAL: Gas optimization needed for vesting contract \- Action: Implementing batch processing, external audit scheduled  
 * HIGH: Expected high network load \- Action: Setting up load balancing with DevOps  
 * MEDIUM: Pending dark mode specs from Jon \- Action: Implementing light mode first, following up daily
-

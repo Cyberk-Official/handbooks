@@ -3,7 +3,7 @@ type: delivery
 tags: [brd, ai-instruction, documentation, context-engineering]
 created: 2026-09-01
 updated: 2026-09-01
-author:
+author: anderson
 status: Nháp
 ---
 
@@ -52,7 +52,7 @@ Nếu Dev mô tả quá sơ sài, **hỏi lại** trước khi viết. Tối thi
 ---
 title: BRD — [Tên feature]
 version: 1.0
-status: Draft
+status: Nháp
 created_at: [YYYY-MM-DD]
 author: [github-id]
 project: [Tên dự án]
@@ -172,7 +172,7 @@ Cần sync từ Ethereum và Polygon.
 ---
 title: BRD — Auto-Sync Transaction History
 version: 1.0
-status: Draft
+status: Nháp
 created_at: 2026-09-01
 author: hungdn-cyberk
 project: Koto

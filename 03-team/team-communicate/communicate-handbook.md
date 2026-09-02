@@ -1,3 +1,12 @@
+---
+type: team
+tags: [communication, horenso, handbook]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # Giao tiếp trong team — Cẩm nang cho mọi thành viên Cyberk
 
 **Người chịu trách nhiệm:** [COO/Anderson]

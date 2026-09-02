@@ -1,3 +1,12 @@
+---
+type: handbook
+tags: [playbook, handbook, process]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # CyberK Handbook Playbook v2.1
 ### Bộ hướng dẫn để viết Handbook cho CyberK
 

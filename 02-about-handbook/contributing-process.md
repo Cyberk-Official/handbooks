@@ -1,3 +1,12 @@
+---
+type: handbook
+tags: [contributing, process]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # Đề xuất & duyệt thay đổi handbook
 
 **Người chịu trách nhiệm:** Anderson (CEO)

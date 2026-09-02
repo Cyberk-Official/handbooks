@@ -1,3 +1,12 @@
+---
+type: delivery
+tags: [planning, ai-instruction]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 ## **Internal Planning Meeting – Agenda & Hướng dẫn thực hiện**
 
 
@@ -95,4 +104,3 @@ Những điều cần tránh trong buổi planning meeting
 * Kiểm tra kỹ nội dung: logic, format, phân vai rõ ràng.  
 * Gửi qua email hoặc workspace chung cho khách hàng và leader, đồng thời nhắc lịch follow-up.  
 * Gửi Report PDF qua Telegram cho khách hàng và Anderson (Group Leaders)
-

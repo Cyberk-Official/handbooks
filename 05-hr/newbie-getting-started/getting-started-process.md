@@ -3,7 +3,7 @@ type: hr
 tags: [onboarding, newbie]
 created: 2026-08-25
 updated: 2026-08-25
-author:
+author: anderson
 status: Nháp
 ---
 

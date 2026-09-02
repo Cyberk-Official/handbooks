@@ -1,3 +1,12 @@
+---
+type: delivery
+tags: [kick-off, handbook, client-management]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # Kick-off với Khách hàng — Cẩm nang cho Product Lead
 
 **Người chịu trách nhiệm:** PL/PM dự án

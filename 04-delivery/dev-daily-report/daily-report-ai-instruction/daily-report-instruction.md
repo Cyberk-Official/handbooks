@@ -1,3 +1,12 @@
+---
+type: delivery
+tags: [daily-report, ai-instruction]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # **Cyberk Daily Report Instruction** 
 
 Các Quy tắc cần tuân thủ: 
@@ -125,4 +134,3 @@ Số liệu bug **tích lũy từ ngày launch** (không reset theo sprint). L�
 * **Next-step luôn phải có ETA.**
 
 * **Blocker phải có giải pháp đi kèm**, không chỉ liệt kê vấn đề.
-

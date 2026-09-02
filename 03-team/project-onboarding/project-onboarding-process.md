@@ -3,7 +3,7 @@ type: team
 tags: [onboarding, project]
 created: 2026-08-25
 updated: 2026-08-25
-author:
+author: anderson
 status: Nháp
 ---
 

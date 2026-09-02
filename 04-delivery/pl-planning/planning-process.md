@@ -1,3 +1,12 @@
+---
+type: delivery
+tags: [planning, process]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # Lập kế hoạch dự án (Internal Planning)
 
 **Người chịu trách nhiệm:** PL/PM dự án

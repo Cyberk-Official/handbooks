@@ -3,7 +3,7 @@ type: delivery
 tags: [daily-report, example, template]
 created: 2026-08-25
 updated: 2026-09-01
-author:
+author: anderson
 status: Nháp
 ---
 

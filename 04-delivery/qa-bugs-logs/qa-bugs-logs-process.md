@@ -3,7 +3,7 @@ type: qa
 tags: [bugs, github, logging]
 created: 2026-08-25
 updated: 2026-08-25
-author:
+author: anderson
 status: Nháp
 ---
 
@@ -11,7 +11,7 @@ status: Nháp
 
 **Người chịu trách nhiệm:** [tên/vai trò — đúng MỘT người]
 **Cập nhật lần cuối:** [ngày]
-**Trạng thái:** [Nháp / Đang dùng / Ngừng dùng]
+**Trạng thái:** Nháp
 
 ## Tại sao có trang này
 

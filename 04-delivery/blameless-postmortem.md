@@ -1,3 +1,12 @@
+---
+type: delivery
+tags: [postmortem, process]
+created-date: 2026-09-02
+updated-date: 2026-09-02
+author: anderson
+status: Nháp
+---
+
 # Template: Biên Bản Mổ Xẻ Vấn Đề (Blameless Postmortem)
 
 **Đối tượng:** Toàn bộ team.
