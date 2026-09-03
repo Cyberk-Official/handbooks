@@ -40,7 +40,6 @@ VJ có thể mặc áo Cyberk nếu muốn, nhưng đây không phải yêu cầ
 
 Tại sao tốt: Trang phục đơn giản và chuyên nghiệp giúp người xem tập trung vào nội dung thay vì bị phân tán bởi hình ảnh.
 
-> 📸 *Chèn ảnh minh hoạ trang phục tốt tại đây*
 
 **❌ Cách tồi:**
 
@@ -50,7 +49,6 @@ Tại sao tốt: Trang phục đơn giản và chuyên nghiệp giúp người x
 
 Tại sao tồi: Logo của tổ chức khác trên áo gây nhầm lẫn thương hiệu. Hoạ tiết caro và sọc ngang tạo hiệu ứng moiré (nhấp nháy) trên camera. Màu neon thì bị loang (bleed) khi quay, khiến hình ảnh kém sắc nét.
 
-> 📸 *Chèn ảnh minh hoạ trang phục tồi tại đây*
 
 ---
 
@@ -84,7 +82,6 @@ Hầu hết video chỉ quay nửa phần trên. Tuy nhiên, để tránh tình 
 - Quần đùi
 - Quần ngủ
 
-> 📸 *Chèn ảnh minh hoạ quần phù hợp vs không phù hợp tại đây*
 
 ---
 
@@ -99,8 +96,3 @@ Trước khi bấm nút quay, VJ dành 30 giây chạy qua danh sách bên dư�
 - [ ] Quần dài hoặc qua đầu gối
 - [ ] Kính (nếu đeo) không bị phản sáng dưới đèn quay
 
----
-
-## Liên kết
-
-- [Trang phục đi làm — Cẩm nang cho Newbie](../../05-hr/getting-started/outfit-handbook.md)
