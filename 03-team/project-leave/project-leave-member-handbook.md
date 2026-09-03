@@ -1,18 +1,19 @@
 ---
 type: team
-tags: [offboarding, project]
+tags: [offboarding, project, team, member]
 created: 2026-08-25
-updated: 2026-08-25
+updated: 2026-09-03
 author: Brian
 status: Đang dùng
 ---
 
-# Rời Dự Án — Cẩm nang cho Team
+# Rời Dự Án — Cẩm nang cho Thành viên (Member)
 
-**Người chịu trách nhiệm:** Product Lead
-**Trạng thái:** Đang dùng
+**Người chịu trách nhiệm:** Product Lead  
+**Cập nhật lần cuối:** 2026-09-03  
+**Trạng thái:** Đang dùng  
 
-Sổ tay này cung cấp các hướng dẫn thực tế, giải thích cách xử lý trong từng tình huống cụ thể (chủ động rời đi, điều chuyển nội bộ, nghỉ đột xuất/bất khả kháng, hoặc chưa có người tiếp quản) để đảm bảo tính chuyên nghiệp và tính liên tục của dự án tại Cyberk.
+Sổ tay này cung cấp các hướng dẫn thực tế, giải thích cách tư duy trách nhiệm, phương pháp giao tiếp và các bước xử lý cụ thể dành cho **Thành viên dự án** khi rời khỏi một dự án tại Cyberk (chủ động xin nghỉ, điều chuyển nội bộ sang dự án mới, hoặc gặp sự cố bất khả kháng) nhằm đảm bảo tính chuyên nghiệp và uy tín cá nhân.
 
 ---
 
@@ -20,18 +21,18 @@ Sổ tay này cung cấp các hướng dẫn thực tế, giải thích cách x�
 
 Khi bạn muốn rời dự án vì lý do cá nhân hoặc định hướng công việc, cách bạn giao tiếp quyết định sự chuyên nghiệp và uy tín cá nhân của bạn.
 
-**✅ Cách tốt:**
+**✅ Cách tốt:**  
 > Thông báo sớm ít nhất 2 tuần, giải thích lý do rõ ràng, lịch sự và chủ động đề xuất kế hoạch bàn giao chi tiết.
 
 ```text
-"Chào anh/chị [Product Lead], em xin phép được bàn giao công việc tại dự án X từ ngày [DD/MM]. Lý do là em cần tập trung hoàn thành [lý do cụ thể/định hướng mới].
+"Chào anh [Product Lead], em xin phép được bàn giao công việc tại dự án X từ ngày [DD/MM]. Lý do là em cần tập trung hoàn thành [lý do cụ thể/định hướng mới].
 Em đã chuẩn bị sẵn danh sách các task đang làm dở và đề xuất anh [Tên Receiver] là người tiếp nhận vì anh ấy nắm rõ phần module Y nhất.
-Em gửi kèm link dự thảo kế hoạch bàn giao ở đây để anh/chị xem xét ạ."
+Em gửi kèm link dự thảo kế hoạch bàn giao ở đây để anh xem xét ạ."
 ```
 
 Tại sao tốt: Giúp Product Lead ở thế chủ động sắp xếp người thay thế, giảm thiểu xung đột và giữ mối quan hệ tốt đẹp giữa các thành viên.
 
-**❌ Cách tồi:**
+**❌ Cách tồi:**  
 > Thông báo sát ngày (hoặc đột ngột nghỉ) mà không có sự chuẩn bị hay bàn giao gì.
 
 ```text
@@ -46,7 +47,7 @@ Tại sao tồi: Gây khó khăn cực kỳ lớn cho team, làm vỡ tiến đ�
 
 Khi công ty yêu cầu bạn chuyển sang một dự án mới quan trọng hơn hoặc phù hợp hơn, bạn vẫn có trách nhiệm đóng gói và bàn giao dự án cũ một cách trọn vẹn.
 
-**✅ Cách tốt:**
+**✅ Cách tốt:**  
 > Phối hợp cùng Product Lead dự án cũ và Product Lead dự án mới để thống nhất "Điểm cắt chuyển giao" (Transition Cutoff), tập trung hoàn thiện dứt điểm các task đang làm trước ngày switch hoàn toàn.
 
 ```text
@@ -57,7 +58,7 @@ Em gửi kế hoạch chuyển giao chi tiết ở đây ạ."
 
 Tại sao tốt: Đảm bảo dự án cũ không bị "gãy", bạn bước sang dự án mới với tâm thế thoải mái và vẫn được hưởng chính sách thưởng dự án theo tỷ lệ đóng góp (pro-rata).
 
-**❌ Cách tồi:**
+**❌ Cách tồi:**  
 > Ngay khi có lệnh chuyển là lập tức bỏ bê dự án cũ, dồn toàn bộ sự chú ý sang dự án mới hoặc ôm đồm cả 2 mà không làm rõ giới hạn năng lực.
 
 ```text
@@ -72,7 +73,7 @@ Tại sao tồi: Gây ách tắc cho dự án cũ, tạo ấn tượng thiếu t
 
 Khi xảy ra biến cố bất khả kháng, ưu tiên hàng đầu là sự an toàn và sức khỏe của bạn. Tuy nhiên, hãy cố gắng cung cấp thông tin tối thiểu cần thiết để team có thể vận hành tiếp.
 
-**✅ Cách tốt:**
+**✅ Cách tốt:**  
 > Báo ngay cho Product Lead càng sớm càng tốt qua điện thoại hoặc tin nhắn ngắn gọn. Gửi thông tin truy cập khẩn cấp và vị trí code/tài liệu đang dở dang.
 
 ```text
@@ -85,7 +86,7 @@ Em ủy quyền cho anh tiếp quản task này giúp em. Khi sức khỏe ổn 
 
 Tại sao tốt: Giúp team có ngay phương án ứng phó khẩn cấp, tiếp quản code kịp thời, và vẫn được xem xét bảo lưu quyền lợi thưởng pro-rata theo chính sách bất khả kháng.
 
-**❌ Cách tồi:**
+**❌ Cách tồi:**  
 > Biến mất hoàn toàn không một lời nhắn (Ghosting), giữ mã nguồn dở dang trên máy cá nhân mà không push lên Git, hoặc giữ tài khoản độc quyền khiến team không thể truy cập.
 
 Tại sao tồi: Làm tê liệt toàn bộ luồng công việc của đồng đội, team phải viết lại từ đầu hoặc mất quyền truy cập tài nguyên của khách hàng.
@@ -96,7 +97,7 @@ Tại sao tồi: Làm tê liệt toàn bộ luồng công việc của đồng �
 
 Nếu thời điểm bạn rời đi mà công ty chưa tuyển hoặc chưa sắp xếp được nhân sự mới vào thay thế ngay, người nhận bàn giao mặc định là **Product Lead**.
 
-**✅ Cách tốt:**
+**✅ Cách tốt:**  
 > Soạn tài liệu bàn giao dưới dạng "Tự giải thích" (Self-explanatory Documentation) để bất kỳ nhân sự nào vào sau đọc cũng có thể tự chạy và hiểu được mà không cần bạn giải thích lại.
 
 ```markdown
@@ -104,16 +105,16 @@ Nếu thời điểm bạn rời đi mà công ty chưa tuyển hoặc chưa s�
 
 ## 1. Môi trường & Thiết lập
 - Cần Node v20+, cài đặt bằng `npm install`.
-- File env mẫu đã được lưu tại `.env.example`.
+- Biến môi trường được mã hóa bảo mật bằng `dotenvx`, key giải mã đã chuyển giao cho Product Lead.
 
 ## 2. Luồng xử lý chính
 - Request vào đi qua Middleware `AuthGuard` -> Controller `PaymentController` -> Service `StripeProvider`.
-- Nếu gặp lỗi Timeout từ cổng thanh toán, xem cách debug tại Wiki `troubleshooting-payment`.
+- Nếu gặp lỗi Timeout từ cổng thanh toán, xem cách debug tại mục Troubleshooting bên dưới.
 ```
 
-Tại sao tốt: Giúp Product Lead dễ dàng lưu trữ và bàn giao lại cho người mới bất cứ lúc nào trong tương lai.
+Tại sao tốt: Giúp Product Lead dễ dàng lưu trữ và bàn giao lại cho người mới bất cứ lúc nào trong tương lai theo đúng [[project-onboarding-process|Quy trình Onboarding Dự Án]].
 
-**❌ Cách tồi:**
+**❌ Cách tồi:**  
 > Bàn giao theo kiểu nói miệng một chiều cho Product Lead mà không lưu lại tài liệu thành văn bản, vì nghĩ "dù sao Lead cũng biết code/quản lý rồi".
 
 Tại sao tồi: Product Lead quản lý nhiều đầu việc sẽ nhanh chóng quên các chi tiết kỹ thuật nhỏ, dẫn đến việc người mới vào sau vẫn bị bế tắc.
@@ -122,26 +123,30 @@ Tại sao tồi: Product Lead quản lý nhiều đầu việc sẽ nhanh chóng
 
 ## Tình huống 5 — Viết tài liệu bàn giao (Handover Document) như thế nào là đạt chuẩn?
 
-Tài liệu bàn giao là di sản bạn để lại cho dự án. Một tài liệu tốt giúp người sau làm việc tiếp mà không phải liên tục nhắn tin hỏi bạn sau khi bạn đã rời đi.
+Tài liệu bàn giao là di sản bạn để lại cho dự án. Một tài liệu tốt giúp người sau làm việc tiếp mà không phải liên tục nhắn tin làm phiền bạn sau khi bạn đã rời đi.
 
-**✅ Cách tốt:**
-> Tài liệu rõ ràng, chia làm 3 phần: (1) Danh sách task dở dang và trạng thái hiện tại, (2) Sơ đồ cấu trúc/logic cốt lõi do bạn chịu trách nhiệm, (3) Thông tin tài khoản/API key và cách setup môi trường đặc biệt.
+**✅ Cách tốt:**  
+> Tài liệu rõ ràng, chia làm 4 phần: (1) Danh sách task dở dang và trạng thái hiện tại, (2) Sơ đồ cấu trúc/logic cốt lõi do bạn chịu trách nhiệm, (3) Thông tin tài khoản/API key và cách setup môi trường, (4) Video quay ngắn luồng chạy tính năng.
 
 ```markdown
-# Tài liệu Bàn giao Dự án X - [Tên của bạn]
+# Tài liệu Bàn giao Dự án X — [Tên của bạn]
 
 ## 1. Công việc dở dang (Pending Tasks)
-- Task CYB-123 (Feature Login): Đã làm xong API, đang viết Frontend. Người tiếp quản cần tiếp tục ở branch `feature/login`.
-- Task CYB-124 (Fix bug Payment): Đã reproduce được bug, ghi chú cách fix tại [Link comment].
+- Task CYB-123 (Feature Login): Đã làm xong API, đang viết Frontend. Người tiếp quản tiếp tục ở branch `feature/login` trên remote GitHub.
+- Task CYB-124 (Fix bug Payment): Đã reproduce được bug, ghi chú cách fix tại [Link comment trên GitHub issue].
 
 ## 2. Tài nguyên & Quyền truy cập
-- Quyền Admin GCP: Đã transfer cho anh [Product Lead Name] (email: ...).
-- API Key test tích hợp Sandbox: Lưu trong Vault 1Password của dự án.
+- Quyền Admin GCP: Đã transfer owner cho Product Lead (email: ...).
+- API Key test Sandbox: Lưu trong Vault 1Password của dự án.
+- Biến môi trường: Sử dụng `dotenvx`, key giải mã đã chuyển giao an toàn cho Product Lead.
+
+## 3. Video Walkthrough
+- Link video demo luồng code Payment: [Link Loom / Video Drive]
 ```
 
 Tại sao tốt: Tiết kiệm hàng giờ đồng hồ cho người tiếp quản và giữ vững chất lượng dự án.
 
-**❌ Cách tồi:**
+**❌ Cách tồi:**  
 > Viết tài liệu qua loa, chung chung, không có tính định hướng hành động.
 
 ```text
@@ -162,12 +167,16 @@ Tại sao tồi: Người tiếp quản sẽ không biết bắt đầu từ đ�
 | **Công ty điều chuyển** | Thống nhất Cutoff Date, dứt điểm task cũ, chuyển giao có trật tự. | Bỏ dở dự án cũ ngay khi có lệnh điều chuyển. |
 | **Bất khả kháng (ốm/việc gấp)** | Báo khẩn cấp ngay, push commit mới nhất, gửi quyền truy cập. | Biến mất không báo trước (Ghosting), giữ code dở trên local. |
 | **Chưa có Receiver** | Viết tài liệu tự giải thích (Self-explanatory) gửi Product Lead. | Chỉ nói miệng qua loa cho Product Lead rồi thôi. |
-| **Bàn giao code & quyền** | Code sạch, push branch rõ ràng, transfer owner tài khoản. | Code dở dang không push, vẫn giữ quyền admin sau khi rời đi. |
+| **Bàn giao code & quyền** | Code sạch, push 100% remote branch, transfer owner tài khoản. | Code dở dang không push, vẫn giữ quyền admin sau khi rời đi. |
+| **Tài liệu bàn giao** | Đủ 4 phần + Video demo luồng chạy, cập nhật task trên GitHub Projects. | Viết vài dòng chung chung hoặc hứa "có gì nhắn hỏi sau". |
 
 ---
 
 ## Liên kết
 
-- [Quy trình Rời Dự Án](project-leave-process.md)
-- [Project Onboarding](../project-onboarding/project-onboarding-process.md)
-- [Chính Sách Thưởng Dự Án](../../delivery/dev/bonus-policy/project-bonus-policy.md)
+- [Quy trình Rời Dự Án (Process)](project-leave-process.md)
+- [Cẩm nang Rời Dự Án cho Product Lead (Lead Handbook)](project-leave-lead-handbook.md)
+- [Quy trình Onboarding Dự Án](../project-onboarding/project-onboarding-process.md)
+- [Cẩm nang Giao tiếp trong Team (Horenso)](../team-communicate/team-communicate-handbook.md)
+- [Cẩm nang Quản lý Board Dự Án](../../04-delivery/board-handbook/board-handbook.md)
+- [Chính Sách Thưởng Dự Án](../../04-delivery/bonus-policy/project-bonus-policy.md)

@@ -24,4 +24,5 @@ status: Nháp
 | 4 | Onboarding dự án | [process](project-onboarding/project-onboarding-process.md) | Process |
 | 5 | Onboarding dự án | [handbook](project-onboarding/project-onboarding-handbook.md) | Handbook |
 | 6 | Rời dự án | [process](project-leave/project-leave-process.md) | Process |
-| 7 | Rời dự án | [handbook](project-leave/project-leave-handbook.md) | Handbook |
+| 7 | Rời dự án (cho Member) | [handbook](project-leave/project-leave-member-handbook.md) | Handbook |
+| 8 | Rời dự án (cho Product Lead) | [handbook](project-leave/project-leave-lead-handbook.md) | Handbook |
