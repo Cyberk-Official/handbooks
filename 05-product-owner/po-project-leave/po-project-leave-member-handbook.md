@@ -178,5 +178,5 @@ Tại sao tồi: Người tiếp quản sẽ không biết bắt đầu từ đ�
 - [Cẩm nang Rời Dự Án cho Product Owner (Lead Handbook)](project-leave-lead-handbook.md)
 - [Quy trình Onboarding Dự Án](../project-onboarding/project-onboarding-process.md)
 - [Cẩm nang Giao tiếp trong Team (Horenso)](../team-communicate/team-communicate-handbook.md)
-- [Cẩm nang Quản lý Board Dự Án](../../04-delivery/board-handbook/board-handbook.md)
-- [Chính Sách Thưởng Dự Án](../../04-delivery/bonus-policy/project-bonus-policy.md)
+- [Cẩm nang Quản lý Board Dự Án](../../05-product-owner/board-handbook/board-handbook.md)
+- Chính Sách Thưởng Dự Án *(tài liệu đang cập nhật)*

@@ -127,5 +127,5 @@ flowchart TD
 - [Quy trình Rời Dự Án (Project Leave)](../project-leave/project-leave-process.md)
 - [Cẩm nang Giao tiếp trong Team (Horenso)](../team-communicate/team-communicate-handbook.md)
 - [Quy trình Quản lý Công việc Hàng ngày (Dev Daily)](../dev-daily/dev-daily-process.md)
-- [Cẩm nang Quản lý Board Dự Án (Board Handbook)](../../04-delivery/board-handbook/board-handbook.md)
-- [Quy trình Báo cáo Hàng ngày (Dev Daily Report)](../../04-delivery/dev-daily-report/daily-report-process.md)
+- [Cẩm nang Quản lý Board Dự Án (Board Handbook)](../../05-product-owner/board-handbook/board-handbook.md)
+- [Quy trình Báo cáo Hàng ngày (Dev Daily Report)](../../04-developer/dev-daily-report/daily-report-process.md)

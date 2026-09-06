@@ -243,6 +243,6 @@ Tại sao tồi: Board nói dối — task xong vẫn hiện đang làm, task m�
 ## Liên kết
 
 - [Dev Daily Process — Quy trình từng bước](dev-daily-process.md)
-- [Board Handbook — Tổng quan quản lý dự án](../../04-delivery/board-handbook/board-handbook.md)
-- [Daily Report — Quy trình báo cáo](../../04-delivery/dev-daily-report/daily-report-process.md)
-- [Dev Tasks Logs — Quy trình tạo task](../../04-delivery/dev-tasks-logs/dev-tasks-logs-process.md)
+- [Board Handbook — Tổng quan quản lý dự án](../../05-product-owner/board-handbook/board-handbook.md)
+- [Daily Report — Quy trình báo cáo](../../04-developer/dev-daily-report/daily-report-process.md)
+- [Dev Tasks Logs — Quy trình tạo task](../../04-developer/dev-tasks-logs/dev-tasks-logs-process.md)

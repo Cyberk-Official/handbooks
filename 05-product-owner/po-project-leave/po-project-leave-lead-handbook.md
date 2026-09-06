@@ -289,5 +289,5 @@ Tại sao tồi: Phá vỡ văn hóa công ty, tạo hình ảnh xấu về năn
 - [Quy trình Onboarding Dự Án](../project-onboarding/project-onboarding-process.md)
 - [Cẩm nang Onboarding Dự Án](../project-onboarding/project-onboarding-handbook.md)
 - [Cẩm nang Giao tiếp trong Team (Horenso)](../team-communicate/team-communicate-handbook.md)
-- [Cẩm nang Quản lý Board Dự Án](../../04-delivery/board-handbook/board-handbook.md)
-- [Chính Sách Thưởng Dự Án](../../04-delivery/bonus-policy/project-bonus-policy.md)
+- [Cẩm nang Quản lý Board Dự Án](../../05-product-owner/board-handbook/board-handbook.md)
+- Chính Sách Thưởng Dự Án *(tài liệu đang cập nhật)*

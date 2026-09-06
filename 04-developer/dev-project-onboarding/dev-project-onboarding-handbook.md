@@ -187,5 +187,5 @@ Tại sao tồi: Tạo tâm lý tiêu cực cho tập thể và bỏ lỡ cơ h�
 - [Quy trình Onboarding Dự Án (Process)](dev-project-onboarding-process.md)
 - [Cẩm nang Giao tiếp trong Team (Horenso)](../team-communicate/team-communicate-handbook.md)
 - [Quy trình Quản lý Công việc Hàng ngày (Dev Daily)](../dev-daily/dev-daily-process.md)
-- [Cẩm nang Quản lý Board Cá nhân & Dự Án](../../04-delivery/board-handbook/board-handbook.md)
+- [Cẩm nang Quản lý Board Cá nhân & Dự Án](../../05-product-owner/board-handbook/board-handbook.md)
 - [Quy trình Rời Dự Án (Project Leave)](../project-leave/project-leave-process.md)

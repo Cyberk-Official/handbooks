@@ -25,6 +25,6 @@ status: Nháp
 
 ## Liên kết
 
-- [Board Handbook — Tổng quan quản lý dự án](../../04-delivery/board-handbook/board-handbook.md)
-- [Daily Report — Báo cáo hàng ngày](../../04-delivery/dev-daily-report/daily-report-process.md)
-- [Dev Tasks Logs — Quy trình tạo task](../../04-delivery/dev-tasks-logs/dev-tasks-logs-process.md)
+- [Board Handbook — Tổng quan quản lý dự án](../../05-product-owner/board-handbook/board-handbook.md)
+- [Daily Report — Báo cáo hàng ngày](../../04-developer/dev-daily-report/daily-report-process.md)
+- [Dev Tasks Logs — Quy trình tạo task](../../04-developer/dev-tasks-logs/dev-tasks-logs-process.md)

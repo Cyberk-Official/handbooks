@@ -35,11 +35,11 @@ Mỗi quy trình trong đây tồn tại vì đã có người làm sai trước
   - `*-policy.md` — Chính sách, quy định
   - `*-role.md` — Vai trò, trách nhiệm
   - `*-ai-instruction/` — Hướng dẫn cho AI sinh nội dung
-- **Người mới:** đọc [01-cyberk-way/](./01-cyberk-way/) + [Giao tiếp](./03-team/team-communicate/) + [Getting Started](./05-hr/newbie-getting-started/), rồi đọc theo vai trò
-- **Dev:** [Daily Report](./04-delivery/dev-daily-report/) → [Board](./04-delivery/board-handbook/) → [Bug Handling](./04-delivery/qa-bugs-handling/)
-- **QA:** [Bug Handling](./04-delivery/qa-bugs-handling/) → [Bug Logging](./04-delivery/qa-bugs-logs/)
-- **PO:** [Planning](./04-delivery/po-planning/) → [Kick-off](./04-delivery/po-kick-off/) → [Bàn giao](./04-delivery/po-handover/)
-- **HR:** [Đón newbie](./05-hr/admin-welcoming-newbie/) → [Getting Started](./05-hr/newbie-getting-started/)
+- **Người mới:** đọc [01-cyberk-way/](./01-cyberk-way/) + [Giao tiếp](./03-team/team-communicate/) + [Getting Started](./07-hr/newbie-getting-started/), rồi đọc theo vai trò
+- **Dev:** [Daily Report](./04-developer/dev-daily-report/) → [Board](./05-product-owner/board-handbook/) → [Bug Handling](./06-qa/qa-bugs-handling/)
+- **QA:** [Bug Handling](./06-qa/qa-bugs-handling/) → [Bug Logging](./06-qa/qa-bugs-logs/)
+- **PO:** [Planning](./05-product-owner/po-planning/) → [Kick-off](./05-product-owner/po-kick-off/) → [Bàn giao](./05-product-owner/po-handover/)
+- **HR:** [Đón newbie](./07-hr/admin-welcoming-newbie/) → [Getting Started](./07-hr/newbie-getting-started/)
 
 ---
 
@@ -48,34 +48,43 @@ Mỗi quy trình trong đây tồn tại vì đã có người làm sai trước
 ```
 handbook/
 │
-├── 📖 01-cyberk-way/          # Triết lý, bí quyết, cách vận hành
-├── 📋 02-about-handbook/       # Cách đóng góp, owners, quy trình viết
-├── 🤝 03-team/                 # Văn hoá, giao tiếp, join/leave dự án
-│   ├── team-communicate/       #   Horenso — báo cáo, liên lạc, thảo luận
-│   ├── dev-daily/              #   Quản lý công việc cá nhân hàng ngày
-│   ├── project-onboarding/     #   Thành viên mới tham gia dự án
-│   └── project-leave/          #   Thành viên rời khỏi dự án
-├── 🔧 04-delivery/             # Quy trình làm sản phẩm
-│   ├── po-planning/            #   Internal Planning Meeting (nội bộ)
-│   ├── po-kick-off/            #   Kick-off Meeting (với khách hàng)
-│   ├── po-board-create/        #   Khởi tạo Board dự án
-│   ├── po-handover/            #   Bàn giao sản phẩm
-│   ├── dev-daily-report/       #   Daily report
-│   ├── dev-tasks-logs/         #   Tạo task trên board (AI-driven)
-│   ├── dev-write-brd/          #   Viết BRD cho developer
-│   ├── board-handbook/         #   Quản lý board GitHub Projects
-│   ├── qa-bugs-handling/       #   Xử lý bugs
-│   ├── qa-bugs-logs/           #   Logging bugs trên GitHub
-│   └── blameless-postmortem.md #   Quy trình Postmortem
-├── 👥 05-hr/                   # Con người
+├── 📖 01-cyberk-way/           # Triết lý, bí quyết, cách vận hành
+├── 📋 02-about-handbook/        # Cách đóng góp, owners, quy trình viết
+├── 🤝 03-team/                  # Văn hoá & giao tiếp chung (mọi role)
+│   └── team-communicate/        #   Horenso — báo cáo, liên lạc, thảo luận
+│
+├── 💻 04-developer/             # Dành cho Developer
+│   ├── dev-daily/               #   Quản lý công việc cá nhân hàng ngày
+│   ├── dev-project-onboarding/  #   Tham gia dự án mới
+│   ├── dev-daily-report/        #   Viết Daily Report gửi khách hàng
+│   ├── dev-tasks-logs/          #   Tạo & quản lý task trên board (AI-driven)
+│   └── dev-write-brd/           #   Viết BRD khi phát sinh yêu cầu mới
+│
+├── 🎯 05-product-owner/         # Dành cho Product Owner
+│   ├── po-project-leave/        #   Quy trình thành viên rời dự án
+│   ├── po-planning/             #   Internal Planning Meeting (nội bộ)
+│   ├── po-kick-off/             #   Kick-off Meeting (với khách hàng)
+│   ├── po-board-create/         #   Khởi tạo Board dự án
+│   ├── po-handover/             #   Bàn giao sản phẩm
+│   └── board-handbook/          #   Quản lý board GitHub Projects
+│
+├── 🔍 06-qa/                    # Dành cho QA
+│   ├── qa-bugs-handling/        #   Xử lý & phân loại bugs
+│   ├── qa-bugs-logs/            #   Logging bugs trên GitHub
+│   └── blameless-postmortem.md  #   Quy trình Postmortem
+│
+├── 👥 07-hr/                    # Con người & onboarding
 │   ├── newbie-getting-started/  #   Ngày đầu tiên cho newbie
 │   ├── admin-welcoming-newbie/  #   Chuẩn bị đón người mới (cho HR)
 │   └── leader-policy-issuance/  #   Ban hành chính sách
-└── 🛠 workflow/                # Playbook & Template
-    ├── playbook.md             #   "Hiến pháp" hướng dẫn viết handbook
-    ├── process-template.md     #   Template trang quy trình
-    └── handbook-template.md    #   Template trang cẩm nang
+│
+├── 🎬 08-media/                 # Media & VJ
+└── 🛠 workflow/                 # Playbook & Template
+    ├── playbook.md              #   "Hiến pháp" hướng dẫn viết handbook
+    ├── process-template.md      #   Template trang quy trình
+    └── handbook-template.md     #   Template trang cẩm nang
 ```
+
 
 ---
 

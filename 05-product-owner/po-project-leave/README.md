@@ -29,5 +29,5 @@ status: Đang dùng
 - [Project Onboarding — Quy trình & Cẩm nang tiếp nhận vào dự án](../project-onboarding/README.md)
 - [Team Communicate — Cẩm nang giao tiếp Horenso](../team-communicate/team-communicate-handbook.md)
 - [Dev Daily — Quản lý công việc cá nhân hàng ngày](../dev-daily/dev-daily-process.md)
-- [Board Handbook — Cẩm nang quản lý board dự án](../../04-delivery/board-handbook/board-handbook.md)
-- [Chính Sách Thưởng Dự Án](../../04-delivery/bonus-policy/project-bonus-policy.md)
+- [Board Handbook — Cẩm nang quản lý board dự án](../../05-product-owner/board-handbook/board-handbook.md)
+- Chính Sách Thưởng Dự Án *(tài liệu đang cập nhật)*

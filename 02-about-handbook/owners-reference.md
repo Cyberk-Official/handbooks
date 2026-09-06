@@ -19,23 +19,24 @@ Bảng tra nhanh: ai là owner (người duyệt PR) cho mục nào trong handbo
 | Mục | Folder | Owner | Backup |
 |-----|--------|-------|--------|
 | **The Cyberk Way** (triết lý, giá trị) | `01-cyberk-way/` | Anderson | — |
-| **Culture** (Horenso, cơm nhà, trang phục) | `05-hr/newbie-getting-started/` | Anderson | — |
-| **Getting Started** (onboarding newbie) | `05-hr/newbie-getting-started/` | Anderson | — |
-| **Welcoming Newbie** (onboarding cho manager) | `05-hr/admin-welcoming-newbie/` | Anderson | — |
-| **Policy Issuance** (ban hành chính sách) | `05-hr/leader-policy-issuance/` | Anderson | — |
-| **Planning** | `04-delivery/po-planning/` | Anderson | Tech Lead |
-| **Kick-off** | `04-delivery/po-kick-off/` | Anderson | Tech Lead |
-| **Board Create** (khởi tạo board) | `04-delivery/po-board-create/` | Anderson | Tech Lead |
-| **Daily Report** | `04-delivery/dev-daily-report/` | Anderson | Tech Lead |
-| **Dev Tasks Logs** (tạo task AI-driven) | `04-delivery/dev-tasks-logs/` | Anderson | Tech Lead |
-| **Dev Write BRD** | `04-delivery/dev-write-brd/` | Anderson | Tech Lead |
-| **Bug Handling** | `04-delivery/qa-bugs-handling/` | Kate | Anderson |
-| **Bug Logging** | `04-delivery/qa-bugs-logs/` | Kate | Anderson |
-| **Board Management** | `04-delivery/board-handbook/` | Anderson | Tech Lead |
-| **PO Handover** | `04-delivery/po-handover/` | Anderson | Tech Lead |
-| **Dev Daily** (quản lý công việc cá nhân) | `03-team/dev-daily/` | Anderson | Tech Lead |
+| **Culture** (Horenso, cơm nhà, trang phục) | `07-hr/newbie-getting-started/` | Anderson | — |
+| **Getting Started** (onboarding newbie) | `07-hr/newbie-getting-started/` | Anderson | — |
+| **Welcoming Newbie** (onboarding cho manager) | `07-hr/admin-welcoming-newbie/` | Anderson | — |
+| **Policy Issuance** (ban hành chính sách) | `07-hr/leader-policy-issuance/` | Anderson | — |
+| **Planning** | `05-product-owner/po-planning/` | Anderson | Tech Lead |
+| **Kick-off** | `05-product-owner/po-kick-off/` | Anderson | Tech Lead |
+| **Board Create** (khởi tạo board) | `05-product-owner/po-board-create/` | Anderson | Tech Lead |
+| **Daily Report** | `04-developer/dev-daily-report/` | Anderson | Tech Lead |
+| **Dev Tasks Logs** (tạo task AI-driven) | `04-developer/dev-tasks-logs/` | Anderson | Tech Lead |
+| **Dev Write BRD** | `04-developer/dev-write-brd/` | Anderson | Tech Lead |
+| **Bug Handling** | `06-qa/qa-bugs-handling/` | Kate | Anderson |
+| **Bug Logging** | `06-qa/qa-bugs-logs/` | Kate | Anderson |
+| **Board Management** | `05-product-owner/board-handbook/` | Anderson | Tech Lead |
+| **PO Handover** | `05-product-owner/po-handover/` | Anderson | Tech Lead |
+| **Dev Daily** (quản lý công việc cá nhân) | `04-developer/dev-daily/` | Anderson | Tech Lead |
 | **Team Communicate** (Horenso) | `03-team/team-communicate/` | Anderson | — |
-| **Team Join/Leave Project** | `03-team/project-*` | Anderson | Tech Lead |
+| **Project Onboarding** (tham gia dự án) | `04-developer/dev-project-onboarding/` | Anderson | Tech Lead |
+| **Project Leave** (rời dự án) | `05-product-owner/po-project-leave/` | Anderson | Tech Lead |
 | **Về Handbook** (contributing, playbook) | `02-about-handbook/`, `workflow/` | Anderson | — |
 
 > **Chưa có owner cụ thể?** → Mặc định là Anderson cho đến khi gán. Khi team đủ lớn, owner sẽ được chuyển cho người phù hợp nhất.

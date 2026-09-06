@@ -196,7 +196,7 @@ flowchart LR
 - **Không có task `Done` trong cả tuần** — Hoặc không cập nhật board, hoặc task quá lớn chưa xong. Cả hai đều là vấn đề.
 - **Board không được mở đầu ngày** — Developer code theo quán tính, không theo ưu tiên. Đây là dấu hiệu nghiêm trọng nhất.
 
-> 📖 **Xem chi tiết:** [Dev Daily — Quản lý công việc cá nhân](../../03-team/dev-daily/dev-daily-process.md) — quy trình hàng ngày, ma trận ưu tiên, và cách tự kiểm tra board cá nhân.
+> 📖 **Xem chi tiết:** [Dev Daily — Quản lý công việc cá nhân](../../04-developer/dev-daily/dev-daily-process.md) — quy trình hàng ngày, ma trận ưu tiên, và cách tự kiểm tra board cá nhân.
 
 ---
 
@@ -207,7 +207,7 @@ flowchart LR
 - [Dev Tasks Logs — Mẫu task tốt/tồi](../dev-tasks-logs/dev-tasks-logs-example.md)
 - [QA Bugs Logs — Quy trình tạo bug](../qa-bugs-logs/qa-bugs-logs-process.md)
 - [Daily Report — Báo cáo hàng ngày](../dev-daily-report/daily-report-process.md)
-- [Dev Daily — Quản lý công việc cá nhân](../../03-team/dev-daily/dev-daily-process.md)
+- [Dev Daily — Quản lý công việc cá nhân](../../04-developer/dev-daily/dev-daily-process.md)
 - [PRD/BRD Templates](../../../bootstrap/skills/write-prd/templates/)
 - [Git & Branch Policy](../../../policy/dev-policy/source-code-and-git.md)
 

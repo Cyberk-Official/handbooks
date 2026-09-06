@@ -13,4 +13,4 @@
 
 - [Khởi tạo Board](../po-board-create/) — Quy trình tạo board mới
 - [Dev Tasks Logs](../dev-tasks-logs/) — Quy trình tạo task
-- [Dev Daily](../../03-team/dev-daily/) — Quản lý công việc cá nhân
+- [Dev Daily](../../04-developer/dev-daily/) — Quản lý công việc cá nhân

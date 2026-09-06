@@ -14,4 +14,4 @@
 ## Liên kết
 
 - [Board Handbook](../board-handbook/) — Quản lý board tổng quan
-- [Dev Daily](../../03-team/dev-daily/) — Quản lý công việc cá nhân
+- [Dev Daily](../../04-developer/dev-daily/) — Quản lý công việc cá nhân

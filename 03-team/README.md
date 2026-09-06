@@ -1,28 +1,26 @@
 ---
 type: team
 tags: [handbook, team-management]
-created: 2026-08-25
-updated: 2026-08-25
+created-date: 2026-08-25
+updated-date: 2026-09-06
 author: anderson
 status: Nháp
 ---
 
-# 👥 Team — Văn hoá, Giao tiếp & Quản lý Nhân sự Dự Án
+# 🤝 03 — Team (Chung)
 
-> **Đối tượng:** Product Owner và mọi thành viên team
-> **Mục đích:** Chuẩn hóa cách giao tiếp trong team, quản lý công việc cá nhân hàng ngày, và quy trình thêm/rời dự án.
+> **Đối tượng:** Mọi thành viên — Developer, PO, QA, Designer
+> **Mục đích:** Quy tắc giao tiếp và văn hoá chung của team Cyberk.
+
+Tài liệu trong folder này áp dụng cho **tất cả mọi role**. Các tài liệu theo role cụ thể xem tại:
+- 💻 Developer → [04-developer/](../04-developer/)
+- 🎯 Product Owner → [05-product-owner/](../05-product-owner/)
+- 🔍 QA → [06-qa/](../06-qa/)
 
 ---
 
 ## Tài liệu
 
-| # | Chủ đề | File | Loại |
-|---|--------|------|------|
-| 1 | Giao tiếp team (Horenso) | [handbook](team-communicate/team-communicate-handbook.md) | Handbook |
-| 2 | Quản lý công việc cá nhân | [process](dev-daily/dev-daily-process.md) | Process |
-| 3 | Quản lý công việc cá nhân | [handbook](dev-daily/dev-daily-handbook.md) | Handbook |
-| 4 | Onboarding dự án | [process](project-onboarding/project-onboarding-process.md) | Process |
-| 5 | Onboarding dự án | [handbook](project-onboarding/project-onboarding-handbook.md) | Handbook |
-| 6 | Rời dự án | [process](project-leave/project-leave-process.md) | Process |
-| 7 | Rời dự án (cho Member) | [handbook](project-leave/project-leave-member-handbook.md) | Handbook |
-| 8 | Rời dự án (cho Product Owner) | [handbook](project-leave/project-leave-lead-handbook.md) | Handbook |
+| Chủ đề | File | Loại |
+|--------|------|------|
+| Giao tiếp team (Horenso) | [communicate-handbook](team-communicate/communicate-handbook.md) | Handbook |

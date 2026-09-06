@@ -130,5 +130,5 @@ flowchart TD
 - [Cẩm nang Onboarding Dự Án (Handbook)](../project-onboarding/project-onboarding-handbook.md)
 - [Cẩm nang Giao tiếp trong Team (Horenso)](../team-communicate/team-communicate-handbook.md)
 - [Quy trình Quản lý Công việc Hàng ngày (Dev Daily)](../dev-daily/dev-daily-process.md)
-- [Cẩm nang Quản lý Board Dự Án](../../04-delivery/board-handbook/board-handbook.md)
-- [Chính Sách Thưởng Dự Án](../../04-delivery/bonus-policy/project-bonus-policy.md)
+- [Cẩm nang Quản lý Board Dự Án](../../05-product-owner/board-handbook/board-handbook.md)
+- Chính Sách Thưởng Dự Án *(tài liệu đang cập nhật)*

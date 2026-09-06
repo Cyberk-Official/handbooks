@@ -28,5 +28,5 @@ status: Đang dùng
 - [Project Leave — Quy trình bàn giao khi rời dự án](../project-leave/project-leave-process.md)
 - [Dev Daily — Quản lý công việc cá nhân hàng ngày](../dev-daily/dev-daily-process.md)
 - [Team Communicate — Cẩm nang giao tiếp Horenso](../team-communicate/team-communicate-handbook.md)
-- [Board Handbook — Cẩm nang quản lý board dự án](../../04-delivery/board-handbook/board-handbook.md)
-- [Dev Daily Report — Quy trình báo cáo hàng ngày](../../04-delivery/dev-daily-report/daily-report-process.md)
+- [Board Handbook — Cẩm nang quản lý board dự án](../../05-product-owner/board-handbook/board-handbook.md)
+- [Dev Daily Report — Quy trình báo cáo hàng ngày](../../04-developer/dev-daily-report/daily-report-process.md)
