@@ -53,7 +53,7 @@ flowchart LR
 |---------|-------------------|
 | **QA** | Tiếp nhận, reply khách, validate, log bug, verify fix, báo khách kết quả |
 | **Developer** | Fix bug trong deadline theo severity |
-| **PM** | Escalation point cho P0/P1. Phê duyệt thay đổi severity |
+| **PO** | Escalation point cho P0/P1. Phê duyệt thay đổi severity |
 
 ---
 
@@ -89,11 +89,11 @@ flowchart LR
 
 | Tình huống | Hành động |
 |-----------|----------|
-| Bug **P0** (hệ thống chết) | Gọi trực tiếp Dev + PM + Tech Lead. Không chờ Telegram. |
-| Bug **P1** (chức năng cốt lõi) | Nhắn Telegram DEV channel + PM ngay. |
+| Bug **P0** (hệ thống chết) | Gọi trực tiếp Dev + PO + Tech Lead. Không chờ Telegram. |
+| Bug **P1** (chức năng cốt lõi) | Nhắn Telegram DEV channel + PO ngay. |
 | Không tái hiện được bug | Thử ≥ 3 lần, hỏi khách thêm info. Giữ issue mở 2 ngày theo dõi. |
-| Khách yêu cầu nâng priority | PM quyết định. QA không tự nâng/hạ severity. |
-| Dev quá hạn deadline | QA escalate lên PM. Không tự gia hạn. |
+| Khách yêu cầu nâng priority | PO quyết định. QA không tự nâng/hạ severity. |
+| Dev quá hạn deadline | QA escalate lên PO. Không tự gia hạn. |
 
 ---
 

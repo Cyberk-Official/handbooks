@@ -13,7 +13,7 @@ status: Nháp
 **Cập nhật lần cuối:** 2026-09-01
 **Trạng thái:** Nháp
 
-Bạn là developer tại Cyberk. Theo tinh thần Agile, bạn không phải người **chờ được giao việc** — bạn là người **tự giao việc cho mình**. PM/PL định hướng Epic và sprint goal, nhưng việc chọn task nào làm trước, breakdown ra sao, cập nhật board thế nào — đó là trách nhiệm của bạn.
+Bạn là developer tại Cyberk. Theo tinh thần Agile, bạn không phải người **chờ được giao việc** — bạn là người **tự giao việc cho mình**. PO định hướng Epic và sprint goal, nhưng việc chọn task nào làm trước, breakdown ra sao, cập nhật board thế nào — đó là trách nhiệm của bạn.
 
 Một lập trình viên chuyên nghiệp không đợi ai mở board giúp mình. Bạn tự mở, tự chọn, tự quản lý — và board chính là công cụ để bạn làm điều đó.
 
@@ -121,10 +121,10 @@ Task: "[FR-015] Implement user profile page"
 → Nghĩ: "OK để làm xem sao"
 → Code 3 ngày, task vẫn In Progress
 → Daily meeting 3 ngày liên tiếp: "Vẫn đang làm profile page"
-→ PM hỏi "còn bao lâu?" — trả lời: "Chắc sắp xong"
+→ PO hỏi "còn bao lâu?" — trả lời: "Chắc sắp xong"
 ```
 
-Tại sao tồi: Không ai biết bạn đang ở đâu trong task. "Sắp xong" là câu trả lời vô nghĩa. Task to khiến bạn khó estimate, PM khó lập kế hoạch, sprint dễ trễ.
+Tại sao tồi: Không ai biết bạn đang ở đâu trong task. "Sắp xong" là câu trả lời vô nghĩa. Task to khiến bạn khó estimate, PO khó lập kế hoạch, sprint dễ trễ.
 
 ---
 
@@ -141,12 +141,12 @@ Nguyên tắc: **báo ngay trên Telegram** + **gắn comment trên task** + **p
 → Cần API key từ payment provider, đã gửi mail từ hôm qua nhưng chưa có reply
 → Hành động:
   1. Comment trên task: "Blocked: chờ API key từ Stripe, đã follow up 10:00 AM"
-  2. Gửi Telegram cho PM: "FR-042 bị block vì chờ API key Stripe.
+  2. Gửi Telegram cho PO: "FR-042 bị block vì chờ API key Stripe.
      Đã follow up. Trong lúc chờ, mình chuyển sang FR-043"
   3. Chuyển FR-042 về Todo, pick FR-043 vào In Progress
 ```
 
-Tại sao tốt: Team biết blocker ngay lập tức. PM có thể escalate nếu cần. Bạn không ngồi chờ — vẫn productive với task khác. Board phản ánh đúng thực tế.
+Tại sao tốt: Team biết blocker ngay lập tức. PO có thể escalate nếu cần. Bạn không ngồi chờ — vẫn productive với task khác. Board phản ánh đúng thực tế.
 
 **❌ Cách tồi:**
 
@@ -155,10 +155,10 @@ Tại sao tốt: Team biết blocker ngay lập tức. PM có thể escalate n�
 → Cần API key, chưa có
 → Lướt web chờ... rồi fix mấy cái CSS nhỏ nhỏ... rồi xem tutorial
 → Daily meeting hôm sau: "Ờ hôm qua mình bị block vì chờ API key"
-→ PM: "Sao không nói sớm? Mình có thể gọi provider ngay hôm qua mà"
+→ PO: "Sao không nói sớm? Mình có thể gọi provider ngay hôm qua mà"
 ```
 
-Tại sao tồi: Mất nguyên 1 ngày vì không báo. PM không biết nên không giúp được. Board vẫn hiện "In Progress" nhưng thực tế bạn không progress gì cả. Cả team mất ít nhất 1 ngày vì một tin nhắn 30 giây không được gửi.
+Tại sao tồi: Mất nguyên 1 ngày vì không báo. PO không biết nên không giúp được. Board vẫn hiện "In Progress" nhưng thực tế bạn không progress gì cả. Cả team mất ít nhất 1 ngày vì một tin nhắn 30 giây không được gửi.
 
 ---
 
@@ -189,7 +189,7 @@ Xong [FR-043] lúc 3h chiều
    không tạo task, không báo ai
 ```
 
-Tại sao tồi: 2 tiếng lãng phí. Hoặc tệ hơn — refactor không có trên board, team không biết, PM không biết. Nếu refactor gây bug → không ai trace được vì "việc này không tồn tại" trên board.
+Tại sao tồi: 2 tiếng lãng phí. Hoặc tệ hơn — refactor không có trên board, team không biết, PO không biết. Nếu refactor gây bug → không ai trace được vì "việc này không tồn tại" trên board.
 
 ---
 
@@ -222,7 +222,7 @@ Tại sao tốt: Board luôn đúng. Report viết dễ vì nhìn board là th�
 → Daily Meeting: "Ờ hôm qua mình làm mấy cái... quên rồi"
 ```
 
-Tại sao tồi: Board nói dối — task xong vẫn hiện đang làm, task mới không có. PM nhìn board thấy sai. Daily Meeting báo cáo sai vì không nhớ. Mọi dữ liệu trong sprint đều bị nhiễu.
+Tại sao tồi: Board nói dối — task xong vẫn hiện đang làm, task mới không có. PO nhìn board thấy sai. Daily Meeting báo cáo sai vì không nhớ. Mọi dữ liệu trong sprint đều bị nhiễu.
 
 ---
 

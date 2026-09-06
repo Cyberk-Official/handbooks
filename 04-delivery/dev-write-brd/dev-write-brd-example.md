@@ -227,7 +227,7 @@ project: [Tên dự án]
 | "Sync transaction" (1 câu) | Problem + Solution + Criteria (3 section) |
 | "Phải hoạt động tốt" | "Fetch history trong ≤ 30 giây, retry 3 lần" |
 | Không có Out of Scope | Ghi rõ "Phase 2" / "Khác Epic" / "Chưa cần" |
-| Chờ PM viết | Dev viết draft 15 phút, commit PR, thông báo team |
+| Chờ PO viết | Dev viết draft 15 phút, commit PR, thông báo team |
 
 ---
 

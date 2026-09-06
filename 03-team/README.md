@@ -9,7 +9,7 @@ status: Nháp
 
 # 👥 Team — Văn hoá, Giao tiếp & Quản lý Nhân sự Dự Án
 
-> **Đối tượng:** Product Lead và mọi thành viên team
+> **Đối tượng:** Product Owner và mọi thành viên team
 > **Mục đích:** Chuẩn hóa cách giao tiếp trong team, quản lý công việc cá nhân hàng ngày, và quy trình thêm/rời dự án.
 
 ---
@@ -25,4 +25,4 @@ status: Nháp
 | 5 | Onboarding dự án | [handbook](project-onboarding/project-onboarding-handbook.md) | Handbook |
 | 6 | Rời dự án | [process](project-leave/project-leave-process.md) | Process |
 | 7 | Rời dự án (cho Member) | [handbook](project-leave/project-leave-member-handbook.md) | Handbook |
-| 8 | Rời dự án (cho Product Lead) | [handbook](project-leave/project-leave-lead-handbook.md) | Handbook |
+| 8 | Rời dự án (cho Product Owner) | [handbook](project-leave/project-leave-lead-handbook.md) | Handbook |

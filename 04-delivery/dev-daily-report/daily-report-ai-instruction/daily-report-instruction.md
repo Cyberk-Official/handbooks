@@ -2,7 +2,7 @@
 type: delivery
 tags: [daily-report, ai-instruction]
 created-date: 2026-06-29
-updated-date: 2026-09-02
+updated-date: 2026-09-06
 author: anderson
 status: Nháp
 ---
@@ -40,8 +40,8 @@ Các Quy tắc cần tuân thủ:
 **Explain:** Khi dự án đã launch và có người dùng thật, mục Overview cần bổ sung các chỉ số vận hành thực tế bên cạnh tiến độ phát triển feature mới.
 
 **Instruction:**
-- Số liệu do **Leader/PM cung cấp**, dev copy vào report.
-- Nếu PM chưa cung cấp, dev PHẢI ghi: `⚠️ Awaiting data from PM/Leader`
+- Số liệu do **Leader/PO cung cấp**, dev copy vào report.
+- Nếu PO chưa cung cấp, dev PHẢI ghi: `⚠️ Awaiting data from PO/Leader`
 - Metrics là **snapshot cuối ngày hôm trước**, không cần real-time.
 - Nếu có **biến động bất thường** (users giảm >20%, revenue drop, critical bugs tăng), PHẢI highlight bằng `⚠️ WARNING` và ghi thêm vào mục **Risks and Blockers**.
 
@@ -61,7 +61,7 @@ Phản ánh tình trạng adoption và tăng trưởng người dùng.
 Tùy dự án chọn metrics phù hợp: Revenue, Transactions, Profit margin, hoặc KPI quan trọng khác.
 
 - Ghi rõ nguồn data (Stripe, internal dashboard, v.v.)
-- Nếu không có data, ghi: `N/A — awaiting PM input`
+- Nếu không có data, ghi: `N/A — awaiting PO input`
 
 *Ví dụ tốt:* `💰 Revenue: $12,500 / 320 transactions / Profit margin: 15% (source: Stripe Dashboard)`
 

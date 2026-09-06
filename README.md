@@ -38,7 +38,7 @@ Mỗi quy trình trong đây tồn tại vì đã có người làm sai trước
 - **Người mới:** đọc [01-cyberk-way/](./01-cyberk-way/) + [Giao tiếp](./03-team/team-communicate/) + [Getting Started](./05-hr/newbie-getting-started/), rồi đọc theo vai trò
 - **Dev:** [Daily Report](./04-delivery/dev-daily-report/) → [Board](./04-delivery/board-handbook/) → [Bug Handling](./04-delivery/qa-bugs-handling/)
 - **QA:** [Bug Handling](./04-delivery/qa-bugs-handling/) → [Bug Logging](./04-delivery/qa-bugs-logs/)
-- **PL/PM:** [Planning](./04-delivery/pl-planning/) → [Kick-off](./04-delivery/pl-kick-off/) → [Bàn giao](./04-delivery/pl-handover/)
+- **PO:** [Planning](./04-delivery/po-planning/) → [Kick-off](./04-delivery/po-kick-off/) → [Bàn giao](./04-delivery/po-handover/)
 - **HR:** [Đón newbie](./05-hr/admin-welcoming-newbie/) → [Getting Started](./05-hr/newbie-getting-started/)
 
 ---
@@ -56,10 +56,10 @@ handbook/
 │   ├── project-onboarding/     #   Thành viên mới tham gia dự án
 │   └── project-leave/          #   Thành viên rời khỏi dự án
 ├── 🔧 04-delivery/             # Quy trình làm sản phẩm
-│   ├── pl-planning/            #   Internal Planning Meeting (nội bộ)
-│   ├── pl-kick-off/            #   Kick-off Meeting (với khách hàng)
-│   ├── pl-board-create/        #   Khởi tạo Board dự án
-│   ├── pl-handover/            #   Bàn giao sản phẩm
+│   ├── po-planning/            #   Internal Planning Meeting (nội bộ)
+│   ├── po-kick-off/            #   Kick-off Meeting (với khách hàng)
+│   ├── po-board-create/        #   Khởi tạo Board dự án
+│   ├── po-handover/            #   Bàn giao sản phẩm
 │   ├── dev-daily-report/       #   Daily report
 │   ├── dev-tasks-logs/         #   Tạo task trên board (AI-driven)
 │   ├── dev-write-brd/          #   Viết BRD cho developer

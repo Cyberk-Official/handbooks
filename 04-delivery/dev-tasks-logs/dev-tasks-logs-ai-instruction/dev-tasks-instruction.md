@@ -207,4 +207,4 @@ Unit tests cho endpoint POST /api/auth/refresh — happy path + error cases.
 - **KHÔNG output task không có Feature ID** — mọi task phải bắt đầu bằng `[FR-XXX]` hoặc `[BR-XXX]`
 - **KHÔNG ước lượng lạc quan** — estimate thực tế bao gồm cả thời gian test + debug
 - Nếu Dev không cung cấp Feature ID → **hỏi lại**, không tự tạo task
-- Nếu acceptance criteria mơ hồ → **gợi ý câu hỏi** cho Dev hỏi PM, không tự đoán
+- Nếu acceptance criteria mơ hồ → **gợi ý câu hỏi** cho Dev hỏi PO, không tự đoán

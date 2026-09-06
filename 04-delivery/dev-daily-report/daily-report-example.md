@@ -9,7 +9,7 @@ status: Nháp
 
 # Mẫu Daily Report — Tốt vs Không Tốt
 
-**Người chịu trách nhiệm:** PM / Product Lead
+**Người chịu trách nhiệm:** PO / Product Owner
 **Cập nhật lần cuối:** [ngày]
 
 > Quy tắc: Ngắn gọn, cụ thể, có số liệu. Next-step luôn có ETA. Blocker luôn có giải pháp.
@@ -28,7 +28,7 @@ status: Nháp
 Expected completion: Oct 15, 15 working days remaining
 
 ## 📊 Production Metrics (Post-Launch)
-> Snapshot ngày 17 Sep — Số liệu do PM cung cấp
+> Snapshot ngày 17 Sep — Số liệu do PO cung cấp
 
 - 👥 Users: 1,250 active / 5,000 total / +45 new today (source: Firebase)
 - 💰 Business: $12,500 revenue / 320 transactions (source: Stripe)
@@ -125,7 +125,7 @@ Tồi vì: Không severity, không action plan, không nguyên nhân. "Chưa có
 Expected completion: [Date], [X] working days remaining
 
 ## 📊 Production Metrics (Post-Launch)
-> Snapshot ngày [Date] — Số liệu do PM cung cấp
+> Snapshot ngày [Date] — Số liệu do PO cung cấp
 
 - 👥 Users: [active] active / [total] total / +[new] new today (source: [tool])
 - 💰 Business: $[revenue] revenue / [transactions] transactions (source: [tool])

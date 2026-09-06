@@ -1,6 +1,6 @@
 # Dev Daily Report — Báo cáo hàng ngày
 
-> **Đối tượng:** PL/PM
+> **Đối tượng:** PO
 > **Mục đích:** Chuẩn hóa cách viết daily report cho khách hàng — format, nội dung, mẫu tốt/tồi.
 
 ## Tài liệu

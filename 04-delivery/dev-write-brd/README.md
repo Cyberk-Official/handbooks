@@ -13,7 +13,7 @@ Folder này hướng dẫn **lập trình viên (Dev)** cách tự viết Busine
 
 > **Tại sao Dev cần viết BRD?** Trong thực tế, requirement mới phát sinh liên tục — đang code mới phát hiện thiếu workflow, khách hàng chủ động đưa thêm yêu cầu. Thay vì dừng làm việc và họp hành, Dev tự viết BRD → AI breakdown → task lên board. Nhanh, chính xác, có trace.
 
-> **Audience:** Dev. Nếu bạn là PM/PL cần viết BRD cho dự án mới, xem [write-prd skill](../../../bootstrap/skills/write-prd/skill.md).
+> **Audience:** Dev. Nếu bạn là PO cần viết BRD cho dự án mới, xem [write-prd skill](../../../bootstrap/skills/write-prd/skill.md).
 
 ---
 

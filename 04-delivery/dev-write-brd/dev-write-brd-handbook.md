@@ -13,19 +13,19 @@ status: Nháp
 **Cập nhật lần cuối:** 2026-09-01
 **Trạng thái:** Nháp
 
-Bạn đang code, phát hiện thiếu một workflow. Hoặc khách hàng vừa gửi yêu cầu mới qua Telegram. Trước đây bạn sẽ nói "anh PM ơi, viết tài liệu giúp em" rồi chờ. Giờ bạn **tự viết BRD trong 15-30 phút**, commit PR, thông báo team, AI breakdown thành tasks, lên board. Không chờ ai.
+Bạn đang code, phát hiện thiếu một workflow. Hoặc khách hàng vừa gửi yêu cầu mới qua Telegram. Trước đây bạn sẽ nói "anh PO ơi, viết tài liệu giúp em" rồi chờ. Giờ bạn **tự viết BRD trong 15-30 phút**, commit PR, thông báo team, AI breakdown thành tasks, lên board. Không chờ ai.
 
 ---
 
-## Tại sao Dev nên viết BRD, không phải chỉ PM?
+## Tại sao Dev nên viết BRD, không phải chỉ PO?
 
-**1. Bạn hiểu vấn đề rõ nhất.** Bạn đang code, bạn phát hiện thiếu workflow — bạn biết chính xác cần gì. PM phải hỏi lại bạn rồi mới viết. Tại sao không viết thẳng?
+**1. Bạn hiểu vấn đề rõ nhất.** Bạn đang code, bạn phát hiện thiếu workflow — bạn biết chính xác cần gì. PO phải hỏi lại bạn rồi mới viết. Tại sao không viết thẳng?
 
-**2. Tiết kiệm thời gian cho cả team.** Cách cũ: bạn báo PM → PM hỏi lại → PM viết → PM gửi review → bạn mới code. Mất 1-2 ngày. Cách mới: bạn viết 15 phút → commit PR → thông báo team → code. Mất 1 giờ.
+**2. Tiết kiệm thời gian cho cả team.** Cách cũ: bạn báo PO → PO hỏi lại → PO viết → PO gửi review → bạn mới code. Mất 1-2 ngày. Cách mới: bạn viết 15 phút → commit PR → thông báo team → code. Mất 1 giờ.
 
 **3. Context Engineering.** BRD là **context chất lượng cao** — cho AI, cho đồng đội, cho chính bạn trong tương lai. Viết BRD tốt = AI breakdown chính xác = code đúng direction = ít sửa lại. Đây là phần quan trọng nhất trong quy trình làm việc với AI.
 
-**4. Ai cũng đóng góp được.** Thay vì PM/PL luôn là người viết tài liệu, quy trình này cho phép **bất kỳ ai trong team** tự document phần việc của mình. Handbook sống vì mọi người đều đóng góp.
+**4. Ai cũng đóng góp được.** Thay vì PO luôn là người viết tài liệu, quy trình này cho phép **bất kỳ ai trong team** tự document phần việc của mình. Handbook sống vì mọi người đều đóng góp.
 
 ---
 

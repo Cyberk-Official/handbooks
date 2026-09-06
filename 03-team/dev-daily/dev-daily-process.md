@@ -61,7 +61,7 @@ flowchart TD
 | Vai trò | Chịu trách nhiệm gì |
 |---------|---------------------|
 | Developer | Chủ động quản lý Personal Board của mình: cập nhật status, báo blocker, đảm bảo board phản ánh đúng thực tế |
-| Tech Lead / PM | Review board của team để phát hiện bất thường (task treo, overload, board trống), hỗ trợ khi dev bị block |
+| Tech Lead / PO | Review board của team để phát hiện bất thường (task treo, overload, board trống), hỗ trợ khi dev bị block |
 
 ---
 
@@ -70,7 +70,7 @@ flowchart TD
 | # | Việc làm | Ai làm | Đầu ra | Timeline |
 |---|----------|--------|--------|----------|
 | 1 | **Daily Meeting** — Báo cáo: hôm qua làm gì, hôm nay làm gì, có blocker không | Developer | Team nắm được tiến độ | Đầu ngày |
-| 2 | **⚡ Capture ngay trong meeting** — Trong lúc họp, phát sinh task mới (bug, refactor, việc cần làm)? **Tạo task trên board ngay lập tức** — không chờ PM giao, không ghi giấy "để tạo sau". Đằng nào cũng phải tạo, tạo ngay khi não còn nhớ | Developer | Tasks mới xuất hiện trên board | Ngay trong meeting |
+| 2 | **⚡ Capture ngay trong meeting** — Trong lúc họp, phát sinh task mới (bug, refactor, việc cần làm)? **Tạo task trên board ngay lập tức** — không chờ PO giao, không ghi giấy "để tạo sau". Đằng nào cũng phải tạo, tạo ngay khi não còn nhớ | Developer | Tasks mới xuất hiện trên board | Ngay trong meeting |
 | 3 | **Mở Personal Board** — Review toàn bộ task của mình trên board (bao gồm task vừa tạo) | Developer | Biết rõ bức tranh tổng thể | Ngay sau meeting |
 | 4 | **Phân loại ưu tiên** — Dùng ma trận Quan trọng–Khẩn cấp để chọn task | Developer | Task ưu tiên được chọn | Ngay sau bước 3 |
 | 5 | **Update Board** — Chuyển task ưu tiên sang `In Progress`, cập nhật status chính xác | Developer | Board phản ánh đúng thực tế | Trước khi code |
@@ -80,7 +80,7 @@ flowchart TD
 | 9 | **Cuối ngày — Update Board lần cuối** — Đảm bảo mọi status đúng, chuẩn bị cho Daily Report | Developer | Board sạch, Daily Report có dữ liệu | Cuối ngày |
 
 > **Tại sao phải tạo task ngay trong meeting?**
-> Sau meeting, bạn sẽ mở IDE, bắt đầu code — và những gì vừa thảo luận sẽ **chìm vào quên lãng** trong vòng 30 phút. Chờ PM/PL đến giao việc tạo task cho bạn thì bạn đang **thụ động** — một lập trình viên chuyên nghiệp tự capture, tự tạo, tự quản lý. Tạo task mất 2 phút. Quên task rồi phải hỏi lại mất 2 ngày.
+> Sau meeting, bạn sẽ mở IDE, bắt đầu code — và những gì vừa thảo luận sẽ **chìm vào quên lãng** trong vòng 30 phút. Chờ PO đến giao việc tạo task cho bạn thì bạn đang **thụ động** — một lập trình viên chuyên nghiệp tự capture, tự tạo, tự quản lý. Tạo task mất 2 phút. Quên task rồi phải hỏi lại mất 2 ngày.
 
 ---
 
@@ -112,7 +112,7 @@ Nhìn vào board cá nhân 5 giây là biết developer đang làm việc hiệu
 
 **❌ Board bệnh:** Task "Integrate payment gateway" nằm ở `In Progress` đã **5 ngày**. Không comment, không update. Team nghĩ bạn đang làm, bạn thì đang kẹt mà ngại nói.
 
-**✅ Board khỏe:** Task bị kẹt → **ngay lập tức** gắn comment "Blocked: chờ API key từ payment provider, đã ping @PM lúc 10h sáng". Đồng thời pick task khác làm trong lúc chờ — board luôn có task đang chuyển động.
+**✅ Board khỏe:** Task bị kẹt → **ngay lập tức** gắn comment "Blocked: chờ API key từ payment provider, đã ping @PO lúc 10h sáng". Đồng thời pick task khác làm trong lúc chờ — board luôn có task đang chuyển động.
 
 > **Ngưỡng:** Task In Progress > 2 ngày → phải breakdown nhỏ hơn hoặc báo blocker ngay.
 
@@ -120,7 +120,7 @@ Nhìn vào board cá nhân 5 giây là biết developer đang làm việc hiệu
 
 ### 4. Không có task Done
 
-**❌ Board bệnh:** Cả tuần không có task nào ở cột `Done`. Board trông như đang đứng im. PM nhìn vào không biết bạn đang làm gì — đang code chăm chỉ hay đang stuck.
+**❌ Board bệnh:** Cả tuần không có task nào ở cột `Done`. Board trông như đang đứng im. PO nhìn vào không biết bạn đang làm gì — đang code chăm chỉ hay đang stuck.
 
 **✅ Board khỏe:** Mỗi ngày có ít nhất **1 task nhỏ Done** — dù chỉ là sub-task. Board có nhịp chuyển động, cả team thấy progress rõ ràng.
 
@@ -130,11 +130,11 @@ Nhìn vào board cá nhân 5 giây là biết developer đang làm việc hiệu
 
 ### 5. Làm việc "ngoài board"
 
-**❌ Board bệnh:** Client nhờ hotfix gấp, bạn nhảy vào fix ngay — mất 3 tiếng. Board vẫn hiện task khác đang `In Progress`. PM hỏi "hôm nay làm gì?" — bạn kể một đống việc không có trên board. Board nói dối.
+**❌ Board bệnh:** Client nhờ hotfix gấp, bạn nhảy vào fix ngay — mất 3 tiếng. Board vẫn hiện task khác đang `In Progress`. PO hỏi "hôm nay làm gì?" — bạn kể một đống việc không có trên board. Board nói dối.
 
 **✅ Board khỏe:** Client nhờ hotfix → **tạo task trên board TRƯỚC** (chỉ mất 2 phút), chuyển `In Progress`, rồi mới làm. Xong → chuyển `Done`. Board luôn phản ánh đúng thực tế — 100% thời gian.
 
-> **Nguyên tắc:** Nếu một việc không có trên board, team không biết, PM không biết — khi có vấn đề, không ai giúp bạn được.
+> **Nguyên tắc:** Nếu một việc không có trên board, team không biết, PO không biết — khi có vấn đề, không ai giúp bạn được.
 
 ---
 
@@ -156,10 +156,10 @@ Năm quy tắc trên gói lại thành 5 câu không bao giờ vi phạm:
 
 | Tình huống | Hành động |
 |-----------|----------|
-| Không có task nào trên board (board trống) | Chủ động review Epic còn lại, tự kéo task. Nếu hết task → **báo PM/Tech Lead ngay** trong buổi sáng, không chờ đến hết ngày |
+| Không có task nào trên board (board trống) | Chủ động review Epic còn lại, tự kéo task. Nếu hết task → **báo PO/Tech Lead ngay** trong buổi sáng, không chờ đến hết ngày |
 | Task bị block bởi team khác (Design chưa xong, API chưa có) | Gắn comment blocker trên task, báo Telegram. **Không được ngồi chờ** — pick task khác trong khi đợi |
 | Phát sinh công việc ngoài board (client nhờ gấp, hotfix) | Tạo task trên board TRƯỚC khi làm (dù chỉ 5 phút để tạo). Board phải biết bạn đang làm gì |
-| Ước tính sai — task tưởng 2 giờ hóa ra mất 2 ngày | Cập nhật estimate, chia nhỏ task, báo PM/Lead để điều chỉnh sprint |
+| Ước tính sai — task tưởng 2 giờ hóa ra mất 2 ngày | Cập nhật estimate, chia nhỏ task, báo PO/Lead để điều chỉnh sprint |
 
 
 ---

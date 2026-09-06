@@ -9,7 +9,7 @@ status: Đang dùng
 
 # Handbook Hướng dẫn quản lý dự án
 
-**Người chịu trách nhiệm:** [PM / Tech Lead]
+**Người chịu trách nhiệm:** [PO / Tech Lead]
 **Cập nhật lần cuối:** 2026-09-01
 **Trạng thái:** Đang dùng
 
@@ -117,7 +117,8 @@ Mọi dự án tại Cyberk đều bắt buộc sử dụng **GitHub Projects** 
    - **`Epic`**: Gắn đúng tên tính năng / Epic của dự án.
    - **`Milestone`**: BẮT BUỘC gắn mốc bàn giao (`YYYY-MM-DD`, `Alpha`, `Beta`...).
    - **`Week`**: Số tuần thực hiện trong năm (Ví dụ: `33`, `34`, `35`).
-   - **`Start date` & `Target date`**: Ngày bắt đầu và hạn chót hoàn thành.
+   - **`Start date`**: Ngày bắt đầu.
+   - **`Target date`** *(optional)*: Hạn chót hoàn thành — dùng khi cần track deadline cụ thể.
    - **`Estimate`**: Ước tính giờ công (tính theo giờ).
 
 ### Thiết lập 3 View chuẩn cho Board
@@ -146,8 +147,8 @@ flowchart LR
 ### Quy tắc cốt lõi
 - **Mọi task PHẢI link Feature ID** (`FR-XXX` / `BR-XXX`) từ PRD/BRD
 - **Task < 4 giờ** — nếu lớn hơn, breakdown tiếp
-- **6 trường bắt buộc:** Assignees, Target date, Labels, Epic, Milestone, Start date
-- **3 trường optional:** Week, Estimate, End date
+- **5 trường bắt buộc:** Assignees, Labels, Epic, Milestone, Start date
+- **4 trường optional:** Target date, Week, Estimate, End date
 - **Task mới tạo luôn ở Backlog**
 - **Push bằng GH CLI** — không click tay trên GitHub UI
 

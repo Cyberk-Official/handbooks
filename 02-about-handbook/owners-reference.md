@@ -2,7 +2,7 @@
 type: handbook
 tags: [owners, reference]
 created-date: 2026-08-25
-updated-date: 2026-09-02
+updated-date: 2026-09-06
 author: anderson
 status: Nháp
 ---
@@ -23,16 +23,16 @@ Bảng tra nhanh: ai là owner (người duyệt PR) cho mục nào trong handbo
 | **Getting Started** (onboarding newbie) | `05-hr/newbie-getting-started/` | Anderson | — |
 | **Welcoming Newbie** (onboarding cho manager) | `05-hr/admin-welcoming-newbie/` | Anderson | — |
 | **Policy Issuance** (ban hành chính sách) | `05-hr/leader-policy-issuance/` | Anderson | — |
-| **Planning** | `04-delivery/pl-planning/` | Anderson | Tech Lead |
-| **Kick-off** | `04-delivery/pl-kick-off/` | Anderson | Tech Lead |
-| **Board Create** (khởi tạo board) | `04-delivery/pl-board-create/` | Anderson | Tech Lead |
+| **Planning** | `04-delivery/po-planning/` | Anderson | Tech Lead |
+| **Kick-off** | `04-delivery/po-kick-off/` | Anderson | Tech Lead |
+| **Board Create** (khởi tạo board) | `04-delivery/po-board-create/` | Anderson | Tech Lead |
 | **Daily Report** | `04-delivery/dev-daily-report/` | Anderson | Tech Lead |
 | **Dev Tasks Logs** (tạo task AI-driven) | `04-delivery/dev-tasks-logs/` | Anderson | Tech Lead |
 | **Dev Write BRD** | `04-delivery/dev-write-brd/` | Anderson | Tech Lead |
 | **Bug Handling** | `04-delivery/qa-bugs-handling/` | Kate | Anderson |
 | **Bug Logging** | `04-delivery/qa-bugs-logs/` | Kate | Anderson |
 | **Board Management** | `04-delivery/board-handbook/` | Anderson | Tech Lead |
-| **PL Handover** | `04-delivery/pl-handover/` | Anderson | Tech Lead |
+| **PO Handover** | `04-delivery/po-handover/` | Anderson | Tech Lead |
 | **Dev Daily** (quản lý công việc cá nhân) | `03-team/dev-daily/` | Anderson | Tech Lead |
 | **Team Communicate** (Horenso) | `03-team/team-communicate/` | Anderson | — |
 | **Team Join/Leave Project** | `03-team/project-*` | Anderson | Tech Lead |

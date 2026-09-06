@@ -18,8 +18,8 @@ Cyberk phân làm 4 mức: P0, P1, P2, P3. Đọc xong phần dưới, bạn s�
 
 | | Mô tả | Ví dụ | Reply | Fix | Báo ai |
 |---|---|---|---|---|---|
-| **P0** 🔴 | Hệ thống chết, mất tiền, mất dữ liệu, lỗ hổng bảo mật | Production down, giao dịch treo, contract bị exploit | **≤ 30p** (24/7) | **≤ 4–8h** | Dev + PM + Tech Lead (gọi trực tiếp) |
-| **P1** 🟠 | Chức năng cốt lõi hỏng, >20% users ảnh hưởng | Không login được, thanh toán lỗi, data sai | **≤ 1h** | **≤ 1 ngày** | Dev + PM (Telegram) |
+| **P0** 🔴 | Hệ thống chết, mất tiền, mất dữ liệu, lỗ hổng bảo mật | Production down, giao dịch treo, contract bị exploit | **≤ 30p** (24/7) | **≤ 4–8h** | Dev + PO + Tech Lead (gọi trực tiếp) |
+| **P1** 🟠 | Chức năng cốt lõi hỏng, >20% users ảnh hưởng | Không login được, thanh toán lỗi, data sai | **≤ 1h** | **≤ 1 ngày** | Dev + PO (Telegram) |
 | **P2** 🟡 | Có lỗi nhưng có workaround | Filter hỏng nhưng search được, export lỗi nhưng copy-paste được | **≤ 4h** | **≤ 3 ngày** | Dev (GitHub) |
 | **P3** 🟢 | UI, typo, thẩm mỹ — không ảnh hưởng chức năng | Sai font, lệch layout 1-2px, tooltip sai chỗ | **≤ 1 ngày** | **Sprint** | Dev (GitHub) |
 
@@ -52,7 +52,7 @@ flowchart TD
 ## Khi nào thay đổi severity
 
 **Nâng lên:**
-- Khách yêu cầu khẩn cấp → PM có quyền nâng 1 bậc
+- Khách yêu cầu khẩn cấp → PO có quyền nâng 1 bậc
 - Trong 48 giờ trước event/launch → tự động nâng lên P1
 - Bug lặp lại sau khi đã fix → nâng 1 bậc
 - Liên quan bảo mật → luôn ít nhất P1
@@ -60,7 +60,7 @@ flowchart TD
 **Hạ xuống:**
 - Tìm được workaround → P1 có thể hạ xuống P2
 - Điều tra thấy ảnh hưởng nhỏ hơn dự kiến
-- Mọi thay đổi severity đều cần **PM xác nhận**
+- Mọi thay đổi severity đều cần **PO xác nhận**
 
 ---
 

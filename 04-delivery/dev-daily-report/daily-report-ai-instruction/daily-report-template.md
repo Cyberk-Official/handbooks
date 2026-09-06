@@ -2,7 +2,7 @@
 type: delivery
 tags: [daily-report, templates, ai-instruction]
 created-date: 2025-07-05
-updated-date: 2026-09-02
+updated-date: 2026-09-06
 author: anderson
 status: Nháp
 ---
@@ -15,7 +15,7 @@ status: Nháp
 
 ## **📊 Production Metrics** *(Post-Launch)*
 
-> *Số liệu do Leader/PM cung cấp — Snapshot ngày [DATE]*
+> *Số liệu do Leader/PO cung cấp — Snapshot ngày [DATE]*
 
 - 👥 **Users**: 1,250 active / 5,000 total / +45 new today *(source: Firebase)*
 - 💰 **Business**: $12,500 revenue / 320 transactions *(source: Stripe Dashboard)*

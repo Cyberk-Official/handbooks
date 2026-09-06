@@ -61,7 +61,7 @@ Trước khi prompt AI, bạn cần **Feature ID** (`FR-XXX` hoặc `BR-XXX`) t�
 **Có Feature ID rồi?** → Nhảy sang Bước 2.
 
 **Chưa có?** → Hai lựa chọn:
-1. **Liên hệ Dev Lead / PM** — nói rõ: "Feature X chưa có trong PRD, tôi cần Feature ID để tạo task."
+1. **Liên hệ Dev Lead / PO** — nói rõ: "Feature X chưa có trong PRD, tôi cần Feature ID để tạo task."
 2. **Tự viết BRD** nếu bạn hiểu rõ yêu cầu — xem [quy trình viết BRD](../dev-write-brd/dev-write-brd-handbook.md). Chỉ cần 3 section, mất 15-30 phút.
 
 > Không tự nghĩ ra Feature ID. Không skip bước này.
@@ -77,7 +77,7 @@ AI breakdown rất nhanh, nhưng **bạn cần nghĩ trước** để output ch�
 | Tình huống | Cách xử lý |
 |-----------|-----------|
 | **Milestone quá lớn** | Chia thành nhiều Epic nhỏ. Mỗi Epic = 1 tính năng, 1 team < 5 người hoàn thành trong 1 tuần |
-| **Task mơ hồ** — "Implement authentication" | Dừng lại. Hỏi rõ Dev Lead / PM / khách hàng: scope đến đâu? Login thôi hay cả register, reset password? |
+| **Task mơ hồ** — "Implement authentication" | Dừng lại. Hỏi rõ Dev Lead / PO / khách hàng: scope đến đâu? Login thôi hay cả register, reset password? |
 | **Task estimate > 4 giờ** | Break thành nhiều task con. VD: "Implement auth" → task 1: DB schema, task 2: API endpoint, task 3: unit tests |
 | **Nhiều task con (sub-tasks)** | Tạo **parent task** làm task tổng để quản lý domain. VD: `[FR-003] Auth — parent task` rồi sub-tasks bên dưới |
 | **Task không có Epic** | Không tạo. Mọi task PHẢI có Epic để trace. Task không có Epic = task trôi nổi, không ai biết nó thuộc feature nào |
@@ -110,7 +110,7 @@ Tồi vì: không link BRD, không có quy tắc break. AI sẽ tự đoán scop
 
 ### Khi nào dừng lại hỏi thay vì prompt AI?
 
-- **Bạn đọc PRD mà không hiểu feature cần gì** → hỏi PM/khách hàng
+- **Bạn đọc PRD mà không hiểu feature cần gì** → hỏi PO/khách hàng
 - **Acceptance criteria mơ hồ** ("hoạt động tốt", "nhanh") → yêu cầu con số cụ thể
 - **Không biết task này thuộc Epic nào** → hỏi Dev Lead
 - **Scope có thể overlap với feature khác** → confirm với team trước

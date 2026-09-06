@@ -7,12 +7,12 @@ author: anderson
 status: Nháp
 ---
 
-# Viết Daily Report — Cẩm nang cho PM/PL
+# Viết Daily Report — Cẩm nang cho PO
 
-**Người chịu trách nhiệm:** PM / Product Lead
+**Người chịu trách nhiệm:** PO / Product Owner
 **Trạng thái:** Nháp
 
-Daily report không phải để "báo cáo sếp". Nó là công cụ để PM/PL **tổng hợp tiến độ từ board** và **report cho khách hàng**. Viết tốt = khách yên tâm. Viết tồi = khách hàng lo lắng, hỏi liên tục.
+Daily report không phải để "báo cáo sếp". Nó là công cụ để PO **tổng hợp tiến độ từ board** và **report cho khách hàng**. Viết tốt = khách yên tâm. Viết tồi = khách hàng lo lắng, hỏi liên tục.
 
 Report gồm **4 mục cố định** — luôn giữ đúng thứ tự. Nếu dự án đã launch, thêm mục **📊 Production Metrics** ngay sau Progress:
 
@@ -28,7 +28,7 @@ Report gồm **4 mục cố định** — luôn giữ đúng thứ tự. Nếu d
 
 ## 1. Project Progress — Tổng quan tiến độ trong 1 dòng
 
-Mục này hiển thị **tổng quan tiến độ** đã hoàn thành, ngắn gọn trong 1–2 dòng. PM đọc mục này đầu tiên. Họ cần biết ngay: xong bao nhiêu %, có đúng tiến độ không, bao giờ xong.
+Mục này hiển thị **tổng quan tiến độ** đã hoàn thành, ngắn gọn trong 1–2 dòng. PO đọc mục này đầu tiên. Họ cần biết ngay: xong bao nhiêu %, có đúng tiến độ không, bao giờ xong.
 
 **Phải có:**
 - Phần trăm trên tổng tiến độ
@@ -52,7 +52,7 @@ Project is progressing well
 Work is on track
 ```
 
-Tại sao tồi: "Well" nghĩa là gì? "On track" so với cái gì? Không %, không ngày, không số — PM không có gì để report cho khách.
+Tại sao tồi: "Well" nghĩa là gì? "On track" so với cái gì? Không %, không ngày, không số — PO không có gì để report cho khách.
 
 ---
 
@@ -60,9 +60,9 @@ Tại sao tồi: "Well" nghĩa là gì? "On track" so với cái gì? Không %, 
 
 > **Khi nào áp dụng:** Dự án đã launch, có người dùng thật, có doanh thu hoặc giao dịch.
 
-Sau khi launch, PM/khách hàng không chỉ quan tâm "dev xong bao nhiêu %" — họ cần biết sản phẩm **đang sống như thế nào**. Mục này nằm ngay sau Project Progress.
+Sau khi launch, PO/khách hàng không chỉ quan tâm "dev xong bao nhiêu %" — họ cần biết sản phẩm **đang sống như thế nào**. Mục này nằm ngay sau Project Progress.
 
-**Số liệu do Leader/PM cung cấp** — dev chỉ copy vào report. Nếu chưa có, ghi: `⚠️ Awaiting data from PM/Leader`.
+**Số liệu do Leader/PO cung cấp** — dev chỉ copy vào report. Nếu chưa có, ghi: `⚠️ Awaiting data from PO/Leader`.
 
 **3 nhóm metrics bắt buộc:**
 
@@ -76,7 +76,7 @@ Sau khi launch, PM/khách hàng không chỉ quan tâm "dev xong bao nhiêu %" �
 
 ```
 ## 📊 Production Metrics (Post-Launch)
-> Snapshot ngày 17 Sep — Số liệu do PM cung cấp
+> Snapshot ngày 17 Sep — Số liệu do PO cung cấp
 
 - 👥 Users: 1,250 active / 5,000 total / +45 new today (source: Firebase)
 - 💰 Business: $12,500 revenue / 320 transactions (source: Stripe)
@@ -196,7 +196,7 @@ Báo cáo những vấn đề đang cản trở hoặc rủi ro tiềm tàng. Nh
 
 - ⚠️ UNRESOLVED from yesterday: Cannot contact Jon for Google Dev account
   → Impact: Cannot deploy to Play Store
-  → Action: PM escalating via email today
+  → Action: PO escalating via email today
 ```
 
 **❌ Cách tồi:**

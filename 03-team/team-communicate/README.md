@@ -11,4 +11,4 @@
 ## Audience
 
 - **Tất cả thành viên Cyberk** — đặc biệt người mới (onboarding)
-- **Leader/PL/PM** — hiểu kỳ vọng về giao tiếp để coaching team
+- **Leader/PO** — hiểu kỳ vọng về giao tiếp để coaching team

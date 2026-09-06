@@ -17,9 +17,9 @@ status: Nháp
 
 Trước khi dự án bắt đầu, PRD/BRD cần sẵn sàng. Nhưng trong thực tế, **yêu cầu mới phát sinh liên tục** — đang code mới phát hiện thiếu một workflow, khách hàng chủ động đưa thêm yêu cầu, hoặc team phát hiện edge case chưa ai nghĩ tới.
 
-Cách cũ: dừng code → họp → chờ PM viết tài liệu → mới code tiếp. **Chậm, mất nhịp, tốn thời gian.**
+Cách cũ: dừng code → họp → chờ PO viết tài liệu → mới code tiếp. **Chậm, mất nhịp, tốn thời gian.**
 
-Cách mới: **Dev tự viết BRD** cho phần việc phát sinh → Dev Lead/PM duyệt → AI breakdown thành tasks → lên board. **Nhanh, có trace, ai cũng đóng góp được.**
+Cách mới: **Dev tự viết BRD** cho phần việc phát sinh → Dev Lead/PO duyệt → AI breakdown thành tasks → lên board. **Nhanh, có trace, ai cũng đóng góp được.**
 
 Đây cũng là một phần quan trọng của **Context Engineering** — bạn đang tạo context chất lượng cao cho AI và cho đồng đội. Viết BRD tốt = AI hiểu đúng = code đúng = ít sửa.
 
@@ -54,7 +54,7 @@ flowchart LR
 |---------|---------------------|
 | **Dev** | Phát hiện yêu cầu mới, viết BRD draft (có AI hỗ trợ), commit PR, thông báo team |
 | **Dev Lead** | Review BRD trong PR (code review thông thường). Đảm bảo scope hợp lý, không conflict |
-| **PM** | Nắm requirement mới qua thông báo team. Đánh giá impact hợp đồng nếu từ khách |
+| **PO** | Nắm requirement mới qua thông báo team. Đánh giá impact hợp đồng nếu từ khách |
 
 ---
 
@@ -86,8 +86,8 @@ flowchart LR
 | Tình huống | Hành động |
 |-----------|----------|
 | Hotfix khẩn cấp, không kịp viết BRD đầy đủ | Viết BRD minimal (3 dòng: vấn đề gì, fix gì, impact) → code → bổ sung BRD sau trong 24h |
-| Khách hàng thêm yêu cầu lớn (thay đổi scope hợp đồng) | Báo PM ngay. PM đánh giá trước khi viết BRD. Có thể cần đàm phán hợp đồng |
-| Dev Lead không đồng ý scope | Discuss. Nếu không thống nhất → escalate lên PM/PL |
+| Khách hàng thêm yêu cầu lớn (thay đổi scope hợp đồng) | Báo PO ngay. PO đánh giá trước khi viết BRD. Có thể cần đàm phán hợp đồng |
+| Dev Lead không đồng ý scope | Discuss. Nếu không thống nhất → escalate lên PO |
 | Không biết yêu cầu thuộc BR mới hay BR cũ | Hỏi Dev Lead. Có thể chỉ cần update BR hiện tại thay vì tạo BR mới |
 
 ---

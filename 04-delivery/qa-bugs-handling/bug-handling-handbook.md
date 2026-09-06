@@ -164,7 +164,7 @@ Tại sao tồi: Không mã bug, không link, không severity, không timeline. 
 
 Đồng thời trên GitHub:
 - **Assign** developer phù hợp + gắn deadline
-- P0 hoặc P1: **nhắn thêm qua Telegram** cho developer và PM — đừng chỉ rely vào GitHub notification
+- P0 hoặc P1: **nhắn thêm qua Telegram** cho developer và PO — đừng chỉ rely vào GitHub notification
 
 ---
 
