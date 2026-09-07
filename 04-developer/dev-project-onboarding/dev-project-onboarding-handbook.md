@@ -24,11 +24,11 @@ Dưới sự dẫn dắt trực tiếp của **Product Owner**, kết hợp vớ
 Một dự án phần mềm có thể có khối lượng mã nguồn rất lớn và nhiều luồng nghiệp vụ phức tạp. Nếu thành viên mới tự mở từng file code ra đọc từ trên xuống dưới mà không có định hướng, họ sẽ chìm trong chi tiết vụn vặt và mất phương hướng.
 
 **✅ Cách tốt:**  
-Product Owner tổ chức buổi định hướng tổng quan (30–45 phút), sau đó thành viên mới chủ động kết hợp công cụ AI để tìm hiểu dự án theo chiều từ trên xuống (Top-down):
-1. **Lắng nghe Product Owner giới thiệu bối cảnh:** Hiểu rõ bài toán sản phẩm giải quyết cho khách hàng, đối tượng người dùng chính và luồng nghiệp vụ cốt lõi (Happy Path).
+Product Owner tổ chức buổi định hướng tổng quan (30–45 phút), sau đó thành viên mới chủ động dùng AI để tìm hiểu dự án từ bức tranh tổng thể trước rồi mới đi vào chi tiết:
+1. **Lắng nghe Product Owner giới thiệu bối cảnh:** Hiểu rõ bài toán sản phẩm giải quyết cho khách hàng, đối tượng người dùng chính và các luồng sử dụng cơ bản của sản phẩm.
 2. **Dùng AI phân tích kiến trúc dự án:** Đưa các file cấu hình (`package.json`, `go.mod`, thư mục repo) vào AI để yêu cầu tóm tắt cấu trúc module, các service chính và luồng dữ liệu giao tiếp.
 3. **Cài đặt và trải nghiệm sản phẩm:** Dưới sự hướng dẫn của Product Owner, khởi động ứng dụng trên máy cá nhân và trực tiếp trải nghiệm thử các tính năng từ góc nhìn người dùng.
-4. **Ghi chép có hệ thống:** Ghi chú lại các câu hỏi về logic nghiệp vụ sâu hoặc các góc khuất kiến trúc để trao đổi với Product Owner vào cuối ngày.
+4. **Ghi chép lại các điểm chưa rõ:** Ghi chú lại những câu hỏi về logic nghiệp vụ hoặc các phần mã nguồn chưa hiểu để trao đổi với Product Owner vào cuối ngày.
 
 Tại sao tốt: Thành viên mới nắm được bức tranh tổng thể chỉ trong vài giờ đầu tiên, hiểu được mục đích của mã nguồn trước khi bắt tay vào code.
 
@@ -46,16 +46,16 @@ Tại sao tồi: Tốn thời gian của cả Product Owner lẫn bản thân, t
 
 ## Tình huống 2 — Cài đặt môi trường máy cá nhân và giải mã biến môi trường với dotenvx gặp lỗi thì xử lý thế nào?
 
-Tại Cyberk, biến môi trường của dự án được mã hóa bảo mật trực tiếp trong Git bằng [dotenvx](https://github.com/dotenvx/dotenvx). Thành viên mới không cần xin file `.env` plain text thô, mà chỉ cần nhận **key giải mã (`DOTENV_PRIVATE_KEY`)** do Product Owner cấp để khởi chạy ứng dụng (`dotenvx run -- ...`).
+Tại Cyberk, biến môi trường của dự án được mã hóa bảo mật trực tiếp trong Git bằng [dotenvx](https://github.com/dotenvx/dotenvx). Thành viên mới không cần xin file `.env` thông thường (chưa mã hóa), mà chỉ cần nhận **key giải mã (`DOTENV_PRIVATE_KEY`)** do Product Owner cấp để chạy ứng dụng (`dotenvx run -- ...`).
 
-Nếu gặp lỗi trong quá trình cài đặt hoặc giải mã, nguyên tắc xử lý được định nghĩa bằng **Quy tắc 30 phút Horenso**.
+Nếu gặp lỗi trong quá trình cài đặt hoặc giải mã, áp dụng **Quy tắc 30 phút**: tự tìm cách xử lý trong tối đa 30 phút, nếu không được thì phải hỏi ngay.
 
 > **Quy tắc 30 phút:**  
 > Khi gặp lỗi cài đặt hoặc lỗi giải mã env: Thành viên mới kiểm tra lại cú pháp lệnh `dotenvx`, đọc log lỗi, kết hợp dùng AI phân tích nguyên nhân và thử khắc phục trong **tối đa 30 phút**.  
 > Nếu sau 30 phút vẫn chưa giải quyết được: **Bắt buộc phải báo cáo cho Product Owner** để được hỗ trợ trực tiếp. Tuyệt đối không ngồi im lặng mò mẫm cả ngày làm trôi qua mốc 24h chạy local.
 
 **✅ Cách tốt:**  
-Báo cáo cho Product Owner qua Telegram theo đúng cấu trúc Horenso: nêu rõ bước đang làm, log lỗi chi tiết, chẩn đoán từ AI và các cách bản thân đã thử.
+Nhắn tin báo cáo rõ ràng cho Product Owner qua Telegram: nêu rõ bước đang làm, gửi đoạn log lỗi, phân tích từ AI và các cách mình đã tự thử.
 
 ```text
 "Chào anh [Product Owner], em đang thực hiện chạy ứng dụng với dotenvx theo README nhưng gặp lỗi kết nối PostgreSQL:
@@ -75,7 +75,7 @@ Nhắn tin cụt lủn, hỏi xin file `.env` thô không mã hóa qua chat, ho�
 (Đến tận buổi họp cuối ngày mới thông báo: "Hôm nay em chưa làm được gì vì máy lỗi...")
 ```
 
-Tại sao tồi: Vi phạm quy định an toàn bảo mật khi yêu cầu gửi secrets dạng text trần; thể hiện sự thiếu chủ động và làm gián đoạn kế hoạch onboarding của dự án.
+Tại sao tồi: Vi phạm quy định bảo mật khi yêu cầu gửi thông tin mật khẩu/khóa bí mật ở dạng văn bản thô; thể hiện sự thiếu chủ động và làm gián đoạn kế hoạch onboarding của dự án.
 
 ---
 
@@ -91,7 +91,7 @@ Thiết lập khuôn khổ rõ ràng và chủ động chuẩn bị tài nguyên
 4. **Thiết lập 2 mốc trao đổi cố định trong ngày (15 phút mỗi mốc):**
    - **Đầu ngày (09:15):** Thống nhất mục tiêu trong ngày (Day 1: Chạy local; Day 2: Hoàn thành First PR).
    - **Cuối ngày (17:00):** Nghiệm thu kết quả chạy local hoặc review PR, tháo gỡ khó khăn nếu có.
-5. **Định hướng thành viên dùng AI làm trợ lý cấp 1:** Khuyến khích thành viên dùng AI để giải đáp các câu hỏi về cú pháp, thư viện hoặc đọc log lỗi trước khi hỏi Product Owner.
+5. **Khuyến khích dùng AI tra cứu trước khi hỏi:** Hướng dẫn thành viên chủ động hỏi AI về cú pháp code, cách dùng thư viện hoặc nhờ AI giải thích log lỗi trước khi hỏi Product Owner.
 
 Tại sao tốt: Thành viên mới được định hướng rõ ràng, nhận được sự hỗ trợ kịp thời nhưng vẫn rèn luyện tính độc lập. Product Owner vẫn bảo vệ được thời gian tập trung xử lý các công việc quản lý và kỹ thuật quan trọng của mình.
 
@@ -109,10 +109,10 @@ Khi tiếp nhận dự án để thay thế một nhân sự chuyển đi, mục
 
 **✅ Cách tốt:**  
 Dưới sự chủ trì của Product Owner, thực hiện đối soát và kiểm chứng thực tế:
-1. **Yêu cầu Live Demo:** Đề nghị người rời đi chia sẻ màn hình và chạy thử toàn bộ luồng nghiệp vụ họ đang phụ trách trên môi trường staging/local.
-2. **Tự tay chạy lại mã nguồn:** Thành viên mới tự clone code về máy cá nhân, dùng key giải mã `dotenvx` chạy thử nghiệm thu dưới sự chứng kiến của người bàn giao và Product Owner.
-3. **Kiểm tra quyền truy cập và secrets:** Xác nhận key `dotenvx` giải mã đầy đủ mọi môi trường cần thiết; đảm bảo toàn bộ quyền truy cập cloud/server cá nhân của người cũ đã được chuyển giao cho Product Owner hoặc thu hồi.
-4. **Hỏi rõ các điểm lưu ý kỹ thuật:** Làm rõ các logic phức tạp, điểm yếu của hệ thống hoặc những vấn đề thường phát sinh khi vận hành.
+1. **Yêu cầu chạy thử trực tiếp (Demo):** Đề nghị người bàn giao chia sẻ màn hình và chạy thử các chức năng họ phụ trách trên môi trường staging hoặc máy cá nhân.
+2. **Tự tay chạy thử mã nguồn:** Thành viên mới tự clone code về máy mình, dùng key giải mã `dotenvx` chạy thử trực tiếp dưới sự chứng kiến của người bàn giao và Product Owner.
+3. **Kiểm tra quyền truy cập và biến môi trường:** Xác nhận key `dotenvx` giải mã được đầy đủ các môi trường cần thiết; đảm bảo toàn bộ quyền truy cập hệ thống của người cũ đã được chuyển giao cho Product Owner hoặc thu hồi.
+4. **Hỏi rõ các điểm lưu ý khi vận hành:** Làm rõ các phần code phức tạp, lỗi hay gặp hoặc những điểm cần chú ý khi chạy thực tế.
 
 Tại sao tốt: Đảm bảo chuyển giao thông suốt, phát hiện sớm các khúc mắc trước khi người cũ hoàn tất thủ tục rời dự án.
 
@@ -131,8 +131,8 @@ Task đầu tiên trong Ngày thứ 2 là cơ hội để thành viên mới là
 Tuân thủ chuẩn mực kỹ thuật và quy trình của team:
 1. **Tiếp nhận task trên GitHub Projects:** Chuyển trạng thái task sang `In Progress`.
 2. **Đặt tên nhánh đúng quy ước:** Ví dụ: `fix/CYB-101-update-auth-flow` hoặc `feature/CYB-105-user-list-api`.
-3. **Kết hợp công cụ AI:** Dùng AI hỗ trợ rà soát edge cases, viết unit test tự động và tối ưu hóa đoạn code vừa viết.
-4. **Tự kiểm tra (Self-review):** Tự xem lại toàn bộ diff trước khi commit, loại bỏ code thừa, log debug hoặc biến không sử dụng.
+3. **Dùng AI hỗ trợ:** Nhờ AI kiểm tra các trường hợp lỗi có thể xảy ra (ngoại lệ), viết test tự động (unit test) và gợi ý viết code gọn hơn.
+4. **Tự kiểm tra lại code trước khi commit:** Xem lại những chỗ mình vừa thay đổi, xóa bỏ code thừa, câu lệnh in log thử nghiệm và các biến không dùng.
 5. **Mở Pull Request hoàn chỉnh trước cuối Day 2:**
    - Đặt tiêu đề rõ ràng kèm mã task: `[CYB-101] Fix auth token refresh issue`.
    - Mô tả ngắn gọn: Nội dung thay đổi là gì? Đã kiểm thử như thế nào?
@@ -153,10 +153,10 @@ Tại sao tồi: Làm tăng nguy cơ lỗi cho hệ thống, thể hiện tác p
 Codebase thay đổi liên tục nhưng tài liệu hướng dẫn thường bị chậm cập nhật. Khi cài đặt môi trường trong Day 1, thành viên mới là người có điều kiện tốt nhất để phát hiện các điểm sai sót này.
 
 **✅ Cách tốt:**  
-Áp dụng **Nguyên tắc Hướng đạo sinh (Boy Scout Rule):** Luôn để bãi trại sạch sẽ hơn khi bạn đến.
-- Trong quá trình cài đặt dưới sự hướng dẫn của Product Owner, ghi chép lại chính xác các câu lệnh hoặc biến môi trường cần bổ sung.
-- Sau khi ứng dụng chạy thành công, mở ngay một Pull Request nhỏ: `docs: update setup instructions in README`.
-- Nêu rõ trong PR: *"Cập nhật bổ sung lệnh cài đặt và hướng dẫn nạp key dotenvx trong quá trình setup máy mới"*.
+**Thấy chỗ nào sai hoặc thiếu thì tiện tay sửa luôn và mở PR cập nhật:**
+- Trong lúc cài đặt, ghi chú lại những câu lệnh hoặc bước cấu hình còn thiếu trong tài liệu.
+- Sau khi ứng dụng chạy thành công trên máy mình, mở ngay một Pull Request nhỏ để cập nhật lại file `README.md` (ví dụ: `docs: update setup instructions in README`).
+- Nêu rõ trong PR: *"Bổ sung lệnh cài đặt và hướng dẫn nạp key dotenvx còn thiếu trong README"* để người vào sau cài đặt dễ dàng hơn.
 
 Tại sao tốt: Giúp các nhân sự gia nhập sau này cài đặt suôn sẻ, biến trải nghiệm thực tế của bản thân thành giá trị chung cho toàn đội ngũ.
 
@@ -172,20 +172,20 @@ Tại sao tồi: Tạo tâm lý tiêu cực cho tập thể và bỏ lỡ cơ h�
 | Tiêu chí | Chuyên nghiệp (Nên làm) | Không chuyên nghiệp (Tránh làm) |
 |---|---|---|
 | **Vai trò hướng dẫn** | Product Owner trực tiếp định hướng, hướng dẫn cài đặt và đồng hành trong 3 ngày đầu. | Để thành viên mới tự xoay xở một mình hoặc bỏ rơi không có hướng dẫn. |
-| **Bảo mật biến môi trường** | Sử dụng `dotenvx`, Product Owner cấp key giải mã an toàn; cấm commit `.env.keys` lên Git. | Xin gửi file `.env` plain text qua chat, hoặc vô tình commit private key lên repo. |
+| **Bảo mật biến môi trường** | Sử dụng `dotenvx`, Product Owner cấp key giải mã an toàn; cấm commit `.env.keys` lên Git. | Xin gửi file `.env` chưa mã hóa qua chat, hoặc vô tình commit private key lên repo. |
 | **Ứng dụng công cụ AI** | Thành viên mới chủ động dùng AI tìm hiểu kiến trúc, giải mã log lỗi và sinh test để tăng tốc. | Không tận dụng công cụ hỗ trợ, hoặc ỷ lại copy-paste code từ AI mà không hiểu. |
 | **Mục tiêu thời gian** | Trong 24h chạy thành công local; Ngày thứ 2 merge First PR; Ngày thứ 3 vào Sprint chính thức. | Kéo dài thời gian làm quen cả tuần, không có mục tiêu cụ thể theo từng ngày. |
-| **Xử lý sự cố kỹ thuật** | Tự tìm hiểu cùng AI tối đa 30 phút; nếu kẹt, báo cáo ngay Product Owner theo chuẩn Horenso. | Ngồi im lặng mò mẫm cả ngày hoặc vừa gặp lỗi nhỏ đã kêu ca không chịu suy nghĩ. |
-| **Bàn giao từ người rời đi** | Product Owner chủ trì, kiểm tra giải mã `dotenvx`, Live Demo và tự tay chạy lại code trước khi xác nhận. | Chỉ nghe giải thích qua loa, gật đầu thụ động khi bản thân chưa chạy được code. |
+| **Xử lý sự cố kỹ thuật** | Tự tìm hiểu cùng AI tối đa 30 phút; nếu kẹt, báo ngay Product Owner kèm log lỗi và cách đã thử. | Ngồi im lặng mò mẫm cả ngày hoặc vừa gặp lỗi nhỏ đã kêu ca không chịu suy nghĩ. |
+| **Bàn giao từ người rời đi** | Product Owner chủ trì, kiểm tra giải mã `dotenvx`, xem demo trực tiếp và tự tay chạy lại code trước khi xác nhận. | Chỉ nghe giải thích qua loa, gật đầu thụ động khi bản thân chưa chạy được code. |
 | **Thực hiện First PR** | Nhận task trên Board, branch chuẩn, code sạch có test, PR có ảnh bằng chứng kiểm thử. | Commit cẩu thả, mở PR không mô tả, chưa tự test kỹ lưỡng trên local. |
-| **Tài liệu dự án bị thiếu/sai** | Mở ngay PR cập nhật lại `README.md` sau khi cài đặt thành công trên máy mình. | Phàn nàn chê bai trên nhóm chat hoặc sửa được cho máy mình rồi thôi. |
+| **Tài liệu dự án bị thiếu/sai** | Tiện tay mở ngay PR cập nhật lại `README.md` sau khi cài đặt thành công trên máy mình. | Phàn nàn chê bai trên nhóm chat hoặc sửa được cho máy mình rồi thôi. |
 
 ---
 
 ## Liên kết
 
 - [Quy trình Onboarding Dự Án (Process)](dev-project-onboarding-process.md)
-- [Cẩm nang Giao tiếp trong Team (Horenso)](../team-communicate/team-communicate-handbook.md)
+- [Cẩm nang Giao tiếp trong Team (Horenso)](../../03-team/team-communicate/team-communicate-handbook.md)
 - [Quy trình Quản lý Công việc Hàng ngày (Dev Daily)](../dev-daily/dev-daily-process.md)
 - [Cẩm nang Quản lý Board Cá nhân & Dự Án](../../05-product-owner/board-handbook/board-handbook.md)
-- [Quy trình Rời Dự Án (Project Leave)](../project-leave/project-leave-process.md)
+- [Quy trình Rời Dự Án (Project Leave)](../../05-product-owner/po-project-leave/po-project-leave-process.md)

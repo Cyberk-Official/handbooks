@@ -18,15 +18,15 @@ status: Đang dùng
 
 | # | Chủ đề | File | Loại |
 |---|--------|------|------|
-| 1 | Quy trình tiếp nhận vào dự án | [process](project-onboarding-process.md) | Process |
-| 2 | Cẩm nang onboarding thực chiến cho team | [handbook](project-onboarding-handbook.md) | Handbook |
+| 1 | Quy trình tiếp nhận vào dự án | [process](dev-project-onboarding-process.md) | Process |
+| 2 | Cẩm nang onboarding thực chiến cho team | [handbook](dev-project-onboarding-handbook.md) | Handbook |
 
 ---
 
 ## Liên kết
 
-- [Project Leave — Quy trình bàn giao khi rời dự án](../project-leave/project-leave-process.md)
+- [Project Leave — Quy trình bàn giao khi rời dự án](../../05-product-owner/po-project-leave/po-project-leave-process.md)
 - [Dev Daily — Quản lý công việc cá nhân hàng ngày](../dev-daily/dev-daily-process.md)
-- [Team Communicate — Cẩm nang giao tiếp Horenso](../team-communicate/team-communicate-handbook.md)
+- [Team Communicate — Cẩm nang giao tiếp](../../03-team/team-communicate/team-communicate-handbook.md)
 - [Board Handbook — Cẩm nang quản lý board dự án](../../05-product-owner/board-handbook/board-handbook.md)
-- [Dev Daily Report — Quy trình báo cáo hàng ngày](../../04-developer/dev-daily-report/daily-report-process.md)
+- [Dev Daily Report — Quy trình báo cáo hàng ngày](../dev-daily-report/daily-report-process.md)
