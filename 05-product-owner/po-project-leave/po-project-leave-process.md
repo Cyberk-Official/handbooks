@@ -2,7 +2,7 @@
 type: team
 tags: [offboarding, project, process]
 created: 2026-08-25
-updated: 2026-09-03
+updated: 2026-09-07
 author: Brian
 status: Đang dùng
 ---
@@ -10,7 +10,7 @@ status: Đang dùng
 # Rời Dự Án — Quy trình Chuẩn
 
 **Người chịu trách nhiệm:** Product Owner  
-**Cập nhật lần cuối:** 2026-09-03  
+**Cập nhật lần cuối:** 2026-09-07
 **Trạng thái:** Đang dùng  
 
 ## Tại sao có trang này
@@ -45,7 +45,7 @@ flowchart TD
 |---------|---------------------|
 | **Product Owner** | - Chịu trách nhiệm trực tiếp và toàn diện về quá trình offboarding thành viên khỏi dự án.<br>- Họp 1-1 xác nhận timeline, đánh giá rủi ro (Impact Assessment) và điểm nghẽn SPOF.<br>- Chỉ định Receiver và thiết lập Cutoff Date (T-7 dừng nhận task mới).<br>- Thẩm định và phê duyệt tài liệu bàn giao (Handover Doc).<br>- Chủ trì buổi họp bàn giao (Handover Session), giám sát Live & Reverse Demo và lưu trữ video record.<br>- Thực hiện thu hồi 100% quyền truy cập (GitHub, Cloud, Secrets, SaaS) và chuyển Owner dịch vụ.<br>- Đánh giá chất lượng bàn giao, đề xuất thưởng dự án theo [[project-bonus-policy\|Chính Sách Thưởng Dự Án]] và ký duyệt Sign-off. |
 | **Thành viên rời đi (Outgoing Member)** | - Thông báo chính thức trước tối thiểu 2 tuần.<br>- Tập trung dứt điểm các task dở dang trước mốc Cutoff Date.<br>- Push 100% commit và branch cá nhân lên remote GitHub (không để code trên máy cá nhân).<br>- Soạn thảo tài liệu bàn giao chuẩn 4 trụ cột và quay video demo luồng chạy.<br>- Trình diễn Live Demo tại buổi họp bàn giao và giải đáp mọi khúc mắc kỹ thuật.<br>- Bàn giao quyền sở hữu (Owner) toàn bộ tài khoản/API key cho Product Owner. |
-| **Thành viên nhận bàn giao (Receiver)** | - Đọc trước tài liệu bàn giao và mã nguồn liên quan trước buổi họp.<br>- Tham gia buổi họp bàn giao, chủ động đặt câu hỏi làm rõ logic ngầm và edge cases.<br>- **Tự tay clone mã nguồn, nạp key giải mã `dotenvx` và chạy ứng dụng thành công trên máy mình** dưới sự chứng kiến của PO và người rời đi.<br>- Tiếp quản chính thức các issue và module được phân công. |
+| **Thành viên nhận bàn giao (Receiver)** | - Đọc trước tài liệu bàn giao và mã nguồn liên quan trước buổi họp.<br>- Tham gia buổi họp bàn giao, chủ động đặt câu hỏi làm rõ logic ngầm và edge cases.<br>- **Tự tay clone mã nguồn, tạo `.env` từ `.env.example`, lấy cấu hình development từ kho secrets và chạy ứng dụng thành công trên máy mình** dưới sự chứng kiến của PO và người rời đi.<br>- Tiếp quản chính thức các issue và module được phân công. |
 
 ---
 
@@ -58,7 +58,7 @@ flowchart TD
 | 3 | **Thiết lập Cutoff Date & Đóng gói công việc**<br>- Dừng nhận task mới, dứt điểm task cũ.<br>- Push 100% remote branch, đóng gói Draft PRs. | Outgoing Member + Product Owner | Git sạch, PR được merge hoặc đóng gói, Board cập nhật | **T-7 ngày** đến **T-3 ngày** |
 | 4 | **Soạn thảo & Phê duyệt tài liệu bàn giao**<br>- Outgoing Member soạn Handover Doc chuẩn 4 phần kèm video demo.<br>- Product Owner thẩm định tính tự giải thích (Self-explanatory). | Outgoing Member (Soạn) + Product Owner (Duyệt) | Handover Doc hoàn thiện được Product Owner phê duyệt | Hoàn thành trước **T-3 ngày** |
 | 5 | **Chủ trì Họp bàn giao & Live Verification**<br>- Live Demo luồng tính năng.<br>- Receiver tự tay chạy local (Reverse Demo).<br>- Record video buổi họp và lưu vào Wiki. | Product Owner (Chủ trì) + Outgoing Member + Receiver | Buổi họp hoàn tất, video được lưu trữ, Receiver chạy được app | **T-2 ngày** |
-| 6 | **Thu hồi quyền truy cập & Bảo mật Zero Trust**<br>- Thu hồi quyền GitHub, Cloud SSH/IAM, rotate secret nếu cần, transfer Owner SaaS, thu hồi key `dotenvx`. | Product Owner | Bảng kiểm định quyền hạn thu hồi 100% | **Ngày làm việc cuối cùng** (Trước 18:00) |
+| 6 | **Thu hồi quyền truy cập & Bảo mật Zero Trust**<br>- Thu hồi quyền GitHub, Cloud SSH/IAM, kho secrets, transfer Owner SaaS và rotate credentials mà thành viên từng nắm giữ. | Product Owner | Bảng kiểm định quyền hạn thu hồi 100% | **Ngày làm việc cuối cùng** (Trước 18:00) |
 | 7 | **Đánh giá Thưởng, Tri ân & Ký duyệt Sign-off**<br>- Đánh giá thưởng pro-rata theo chính sách.<br>- Gửi lời cảm ơn trên nhóm team và ký duyệt hoàn tất. | Product Owner | Checklist hoàn tất 100%, Sign-off đóng quy trình | **Ngày làm việc cuối cùng** |
 
 ---
@@ -99,7 +99,7 @@ flowchart TD
 - [ ] **Last Day:** Đã thu hồi quyền GitHub Repo/Org của thành viên.
 - [ ] **Last Day:** Đã xóa SSH keys trên server, xóa IAM User/Service Account, thu hồi quyền Database.
 - [ ] **Last Day:** Đã tiếp nhận chuyển giao quyền sở hữu (Owner) các tài khoản SaaS (Figma, Sentry, Vercel, Domain...).
-- [ ] **Last Day:** Đã xoay vòng (rotate) API keys nhạy cảm (nếu cần) và thu hồi key `dotenvx`.
+- [ ] **Last Day:** Đã thu hồi quyền kho secrets và xoay vòng API keys/credentials mà thành viên từng nắm giữ.
 - [ ] **Last Day:** Đã xóa khỏi các nhóm/topic Telegram bảo mật của dự án.
 - [ ] **Last Day:** Đã đánh giá thưởng dự án pro-rata theo chính sách, gửi lời cảm ơn trên nhóm team và ký duyệt Sign-off.
 
@@ -116,7 +116,7 @@ flowchart TD
 ### Dành cho Người nhận bàn giao (Receiver)
 
 - [ ] **T-3:** Đã đọc trước tài liệu bàn giao và chuẩn bị danh sách câu hỏi làm rõ.
-- [ ] **T-2:** Đã tham gia buổi họp, tự tay clone code, nạp key `dotenvx` và chạy ứng dụng thành công trên máy mình.
+- [ ] **T-2:** Đã tham gia buổi họp, tự tay clone code, tạo `.env` từ `.env.example` và chạy ứng dụng thành công trên máy mình.
 - [ ] **T-2:** Đã nắm rõ luồng xử lý của module, các edge cases và cách debug khi có sự cố.
 - [ ] **Last Day:** Đã tiếp nhận chính thức các issue và task được phân công trên GitHub Projects.
 

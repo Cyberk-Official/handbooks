@@ -2,7 +2,7 @@
 type: team
 tags: [handbook, onboarding, project, team-management]
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-07
 author: Brian
 status: Đang dùng
 ---
@@ -25,8 +25,9 @@ status: Đang dùng
 
 ## Liên kết
 
-- [Project Leave — Quy trình bàn giao khi rời dự án](../../05-product-owner/po-project-leave/po-project-leave-process.md)
+- [Tạo Repository Mới — Quy ước `.env` và `.env.example`](../dev-new-repo/dev-new-repo-process.md)
 - [Dev Daily — Quản lý công việc cá nhân hàng ngày](../dev-daily/dev-daily-process.md)
-- [Team Communicate — Cẩm nang giao tiếp](../../03-team/team-communicate/team-communicate-handbook.md)
+- [Project Leave — Quy trình bàn giao khi rời dự án](../../05-product-owner/po-project-leave/po-project-leave-process.md)
+- [Team Communicate — Cẩm nang giao tiếp](../../03-team/team-communicate/communicate-handbook.md)
 - [Board Handbook — Cẩm nang quản lý board dự án](../../05-product-owner/board-handbook/board-handbook.md)
 - [Dev Daily Report — Quy trình báo cáo hàng ngày](../dev-daily-report/daily-report-process.md)

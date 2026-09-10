@@ -2,7 +2,7 @@
 type: team
 tags: [offboarding, project, team, lead]
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-07
 author: Brian
 status: Đang dùng
 ---
@@ -10,7 +10,7 @@ status: Đang dùng
 # Rời Dự Án — Cẩm nang cho Product Owner
 
 **Người chịu trách nhiệm:** Product Owner  
-**Cập nhật lần cuối:** 2026-09-03  
+**Cập nhật lần cuối:** 2026-09-07
 **Trạng thái:** Đang dùng  
 
 Sổ tay này cung cấp hướng dẫn thực chiến, giải thích cách tư duy quản trị rủi ro, phương pháp điều phối chuyển giao và cách xử lý từng tình huống cụ thể dành riêng cho **Product Owner** khi có thành viên rời khỏi dự án (chủ động xin nghỉ, điều chuyển nội bộ, hoặc nghỉ đột xuất/bất khả kháng) tại Cyberk.
@@ -142,7 +142,7 @@ Product Owner là người chịu trách nhiệm cuối cùng về chất lượ
 Product Owner thẩm định tài liệu dựa trên **Bộ tiêu chuẩn 4 Trụ Cột & Tính tự giải thích (Self-explanatory)**:
 1. **Trụ cột 1 — Bức tranh tổng quan & Module phụ trách:** Sơ đồ cấu trúc, luồng nghiệp vụ cốt lõi, công nghệ đặc thù.
 2. **Trụ cột 2 — Danh mục công việc dở dang (Pending Tasks):** Mã issue trên GitHub Projects, tên branch tương ứng, trạng thái hiện tại và hướng xử lý tiếp theo.
-3. **Trụ cột 3 — Tài nguyên, Secrets & Cấu hình:** Danh sách tài khoản dịch vụ, biến môi trường đặc biệt, key giải mã `dotenvx`.
+3. **Trụ cột 3 — Tài nguyên, Secrets & Cấu hình:** Danh sách tài khoản dịch vụ, vị trí lưu secrets và hướng dẫn tạo `.env` từ `.env.example`.
 4. **Trụ cột 4 — Kinh nghiệm vận hành & Edge cases:** Những lỗi hay gặp (known issues), cách khắc phục sự cố khẩn cấp (troubleshooting).
 5. **Yêu cầu Walkthrough Video:** Đối với các luồng nghiệp vụ phức tạp, yêu cầu member quay một video ngắn (10–15 phút quay màn hình giải thích luồng code) đính kèm vào tài liệu.
 
@@ -167,7 +167,7 @@ Buổi họp bàn giao không phải là buổi thuyết trình một chiều, m
 **✅ Cách tốt:**  
 Product Owner điều phối buổi họp theo kịch bản 3 bước:
 1. **Bước 1 — Live Demo (20 phút):** Thành viên rời đi chia sẻ màn hình, trình diễn luồng chạy của các tính năng và module do mình phụ trách trên môi trường staging/local.
-2. **Bước 2 — Reverse Demo / Live Setup (25 phút):** **Receiver trực tiếp chia sẻ màn hình**, tự clone repo, nạp key giải mã `dotenvx`, khởi chạy dự án và chạy thử test case dưới sự quan sát của Member và Product Owner. Mọi thắc mắc được giải đáp trực tiếp ngay tại chỗ.
+2. **Bước 2 — Reverse Demo / Live Setup (25 phút):** **Receiver trực tiếp chia sẻ màn hình**, tự clone repo, tạo `.env` từ `.env.example`, lấy cấu hình development từ kho secrets, khởi chạy dự án và chạy thử test case dưới sự quan sát của Member và Product Owner. Mọi thắc mắc được giải đáp trực tiếp ngay tại chỗ.
 3. **Bước 3 — Ghi âm & Đóng gói (5 phút):** Product Owner ghi âm/quay video (Record) toàn bộ buổi họp, lưu link record vào Wiki dự án để làm tài liệu đào tạo cho các nhân sự gia nhập sau này.
 
 Tại sao tốt: Xác thực 100% việc người mới đã cài đặt và hiểu được mã nguồn; lưu trữ tư liệu sống động cho dự án.
@@ -190,7 +190,7 @@ Product Owner áp dụng nguyên tắc **Zero Trust Offboarding**, thực hiện
 |---|---|
 | **GitHub Repository / Org** | Xóa khỏi Collaborators/Team trên GitHub Repo của dự án (hoặc hạ quyền xuống Read-only nếu member vẫn làm dự án khác trong công ty). |
 | **Cloud & Servers (AWS/GCP/VPS)** | Xóa SSH public keys cá nhân trên server; vô hiệu hóa/xóa IAM User, Service Account; thu hồi quyền truy cập Database production/staging. |
-| **Biến môi trường & Secrets** | Nếu member từng nắm giữ master secret/root credentials: **thực hiện xoay vòng (rotate) toàn bộ API keys và secrets liên quan**; cập nhật lại file env mã hóa qua `dotenvx`. |
+| **Biến môi trường & Secrets** | Thu hồi quyền truy cập kho secrets. Nếu member từng nắm giữ master secret/root credentials: **thực hiện xoay vòng (rotate) toàn bộ API keys và secrets liên quan** rồi cập nhật giá trị trong kho secrets. |
 | **Công cụ SaaS & Quản lý** | Thu hồi quyền trên Figma, Postman Workspace, Sentry, Vercel, Supabase, 1Password vault của dự án. |
 | **Giao tiếp & Trao đổi** | Xóa khỏi Topic/Group Telegram bảo mật của dự án (nếu member nghỉ việc hoặc chuyển sang dự án không liên quan). |
 | **Chuyển quyền sở hữu (Ownership Transfer)** | Kiểm tra và chuyển toàn bộ các dịch vụ/domain/bot Telegram do member đăng ký sang email quản trị của Product Owner. |
@@ -276,7 +276,7 @@ Tại sao tồi: Phá vỡ văn hóa công ty, tạo hình ảnh xấu về năn
 | **Quản trị Git & Task (T-5 đến T-3)** | Yêu cầu push 100% remote branch, đóng gói Draft PRs, reassign task dở dang trên GitHub Projects. | Để code dở dang nằm trên máy local của member. |
 | **Duyệt Handover Doc (T-3)** | Thẩm định theo 4 trụ cột, kiểm tra tính tự giải thích (Self-explanatory), yêu cầu video demo. | Duyệt qua loa tài liệu sơ sài chỉ có vài gạch đầu dòng. |
 | **Chủ trì họp Handover (T-2)** | Điều phối Live Demo, yêu cầu Receiver tự tay chạy local (Reverse Demo), quay video lưu trữ. | Vắng mặt trong buổi họp hoặc chỉ để hai bên nói chuyện miệng. |
-| **Bảo mật & Thu hồi quyền (Last Day)** | Thu hồi toàn bộ quyền GitHub, Cloud SSH/IAM, rotate secret, chuyển Owner SaaS, thu hồi key `dotenvx`. | Bỏ quên SSH keys trên server hoặc giữ nguyên quyền Admin SaaS. |
+| **Bảo mật & Thu hồi quyền (Last Day)** | Thu hồi toàn bộ quyền GitHub, Cloud SSH/IAM, kho secrets; rotate credentials liên quan và chuyển Owner SaaS. | Bỏ quên SSH keys trên server hoặc giữ nguyên quyền Admin SaaS. |
 | **Xử lý sự cố / Ghosting** | Khóa quyền tức thì trong 1h, kéo remote branch về, kích hoạt Interim Receiver, báo cáo quản lý. | Hoảng loạn, than phiền với khách hàng và bỏ mặc tiến độ Sprint. |
 | **Sign-off & Tri ân (Last Day)** | Kiểm tra checklist 100%, đề xuất thưởng pro-rata công tâm, gửi lời cảm ơn trang trọng trên nhóm team. | Cắt thưởng vô lý hoặc âm thầm kick member ra khỏi nhóm chat. |
 

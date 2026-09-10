@@ -2,7 +2,7 @@
 type: team
 tags: [offboarding, project, team, member]
 created: 2026-08-25
-updated: 2026-09-03
+updated: 2026-09-07
 author: Brian
 status: Đang dùng
 ---
@@ -10,7 +10,7 @@ status: Đang dùng
 # Rời Dự Án — Cẩm nang cho Thành viên (Member)
 
 **Người chịu trách nhiệm:** Product Owner  
-**Cập nhật lần cuối:** 2026-09-03  
+**Cập nhật lần cuối:** 2026-09-07
 **Trạng thái:** Đang dùng  
 
 Sổ tay này cung cấp các hướng dẫn thực tế, giải thích cách tư duy trách nhiệm, phương pháp giao tiếp và các bước xử lý cụ thể dành cho **Thành viên dự án** khi rời khỏi một dự án tại Cyberk (chủ động xin nghỉ, điều chuyển nội bộ sang dự án mới, hoặc gặp sự cố bất khả kháng) nhằm đảm bảo tính chuyên nghiệp và uy tín cá nhân.
@@ -105,7 +105,7 @@ Nếu thời điểm bạn rời đi mà công ty chưa tuyển hoặc chưa s�
 
 ## 1. Môi trường & Thiết lập
 - Cần Node v20+, cài đặt bằng `npm install`.
-- Biến môi trường được mã hóa bảo mật bằng `dotenvx`, key giải mã đã chuyển giao cho Product Owner.
+- Tạo `.env` từ `.env.example`; giá trị development được lưu trong kho secrets do Product Owner quản lý.
 
 ## 2. Luồng xử lý chính
 - Request vào đi qua Middleware `AuthGuard` -> Controller `PaymentController` -> Service `StripeProvider`.
@@ -138,7 +138,7 @@ Tài liệu bàn giao là di sản bạn để lại cho dự án. Một tài li
 ## 2. Tài nguyên & Quyền truy cập
 - Quyền Admin GCP: Đã transfer owner cho Product Owner (email: ...).
 - API Key test Sandbox: Lưu trong Vault 1Password của dự án.
-- Biến môi trường: Sử dụng `dotenvx`, key giải mã đã chuyển giao an toàn cho Product Owner.
+- Biến môi trường: `.env.example` đã đầy đủ; giá trị thật được lưu trong Vault 1Password của dự án.
 
 ## 3. Video Walkthrough
 - Link video demo luồng code Payment: [Link Loom / Video Drive]
