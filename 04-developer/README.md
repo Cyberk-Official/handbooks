@@ -16,6 +16,8 @@ Tài liệu dành cho **Developer** tại Cyberk. Mọi quy trình, cẩm nang v
 4. dev-write-brd      ← Khi phát sinh yêu cầu mới → tự document
         ↓
 5. dev-tasks-logs     ← Tạo task từ PRD/BRD lên board bằng AI
+        ↓
+6. dev-project-offboarding ← Bàn giao code, task và quyền khi rời dự án
 ```
 
 > **Ghi chú:** [dev-project-onboarding/](./dev-project-onboarding/) và [dev-daily-report/](./dev-daily-report/) đọc song song từ bước 3 trở đi.
@@ -33,3 +35,4 @@ Tài liệu dành cho **Developer** tại Cyberk. Mọi quy trình, cẩm nang v
 | 3 | [dev-daily-report/](./dev-daily-report/) | Viết Daily Report gửi khách hàng — format, ví dụ | Developer |
 | 4 | [dev-write-brd/](./dev-write-brd/) | Khi phát sinh yêu cầu mới — tự document thay vì chờ PO | Developer |
 | 5 | [dev-tasks-logs/](./dev-tasks-logs/) | Tạo & quản lý task trên board bằng AI | Developer |
+| 6 | [dev-project-offboarding/](./dev-project-offboarding/) | Rời dự án — đóng gói code/task, tài liệu, kiểm chứng và chuyển quyền | Developer rời dự án |

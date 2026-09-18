@@ -56,6 +56,7 @@ handbook/
 ├── 💻 04-developer/             # Dành cho Developer
 │   ├── dev-daily/               #   Quản lý công việc cá nhân hàng ngày
 │   ├── dev-project-onboarding/  #   Tham gia dự án mới
+│   ├── dev-project-offboarding/ #   Bàn giao khi Developer rời dự án
 │   ├── dev-daily-report/        #   Viết Daily Report gửi khách hàng
 │   ├── dev-tasks-logs/          #   Tạo & quản lý task trên board (AI-driven)
 │   └── dev-write-brd/           #   Viết BRD khi phát sinh yêu cầu mới
