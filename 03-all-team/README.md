@@ -2,7 +2,7 @@
 type: team
 tags: [handbook, team-management]
 created-date: 2026-08-25
-updated-date: 2026-09-06
+updated-date: 2026-10-22
 author: anderson
 status: Nháp
 ---
@@ -24,3 +24,4 @@ Tài liệu trong folder này áp dụng cho **tất cả mọi role**. Các tà
 | Chủ đề | File | Loại |
 |--------|------|------|
 | Giao tiếp team (Horenso) | [communicate-handbook](team-communicate/communicate-handbook.md) | Handbook |
+| 4 group chat cho mỗi khách hàng | [team-chat-groups/](team-chat-groups/README.md) | Process + Handbook + Example |
