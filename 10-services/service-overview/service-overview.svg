@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1348 1690" width="1348" height="1690" font-family="Satoshi, Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title>Cyberk Service Overview: Source Code Rescue → Zero to Product → Retainer</title>
+  <!--
+    Style theo CYBERK GUIDELINE: font Satoshi; màu #0A071B (navy), #FFFFFF, #717070 (grey), #D9212E (red).
+    Màu theo người làm:
+      PO          → nền navy #0A071B, chữ trắng
+      Team Asimov → nền đỏ nhạt #FBE9EA, vạch trên #D9212E
+      Devs        → nền xám nhạt #EFEFEF, vạch trên #717070
+      QA, Maintainer → nền trắng, viền navy, vạch trên #0A071B
+      Design      → nền trắng, viền nét đứt #717070 (vai trò hỗ trợ)
+    Sửa: mỗi ô là một <g class="card">, mỗi mũi tên là một <path class="edge">. Toạ độ giữ nguyên theo bản gốc.
+  -->
+  <defs>
+    <marker id="arr" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M1,1 L10,6 L1,11" fill="none" stroke="#717070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .page   { fill:#FAFAFA; }
+      .panel  { fill:#FFFFFF; stroke:#DADADA; stroke-width:1; }
+      .section{ font-size:28px; font-weight:800; fill:#0A071B; letter-spacing:0.5px; }
+      .rule   { stroke:#0A071B; stroke-width:2; }
+      .lane   { font-size:13px; font-weight:700; fill:#717070; letter-spacing:1.6px; }
+      .step   { font-size:11px; font-weight:700; letter-spacing:1.4px; }
+      .note   { font-size:13px; fill:#0A071B; }
+      .noteW  { font-size:13px; fill:#FFFFFF; }
+      .edge   { fill:none; stroke:#717070; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+      .label  { font-size:12px; font-style:italic; fill:#717070; }
+
+      .po     { fill:#0A071B; }
+      .asimov { fill:#FBE9EA; }
+      .asimovBar { fill:#D9212E; }
+      .dev    { fill:#EFEFEF; }
+      .devBar { fill:#717070; }
+      .qa     { fill:#FFFFFF; stroke:#0A071B; stroke-width:1.2; }
+      .qaBar  { fill:#0A071B; }
+      .design { fill:#FFFFFF; stroke:#717070; stroke-width:1.2; stroke-dasharray:5 4; }
+    </style>
+  </defs>
+
+  <rect class="page" width="1348" height="1690"/>
+
+  <!-- ===== SOURCE CODE RESCUE ===== -->
+  <text class="section" x="58" y="86">SOURCE CODE RESCUE</text>
+  <line class="rule" x1="58" y1="99" x2="120" y2="99"/>
+  <rect class="panel" x="58" y="111" width="1230" height="365" rx="4"/>
+  <text class="lane" x="342" y="182">ASIMOV</text>
+  <g class="card">
+    <rect class="asimov" x="342" y="205" width="178" height="178"/>
+    <rect class="asimovBar" x="342" y="205" width="178" height="4"/>
+    <text class="step" x="357" y="232" fill="#D9212E">AUDIT</text>
+    <text class="note" x="357" y="252">Audit Source Code</text>
+  </g>
+
+  <!-- ===== ZERO - TO - PRODUCT ===== -->
+  <rect class="panel" x="58" y="621" width="1230" height="566" rx="4"/>
+  <!-- Audit → Bước 1 (vẽ dưới nhãn section) -->
+  <path class="edge" marker-end="url(#arr)" d="M430,387 V548 Q430,560 418,560 H87 Q75,560 75,572 V815 Q75,827 87,827 H104"/>
+  <rect x="58" y="566" width="300" height="40" fill="#FAFAFA"/>
+  <text class="section" x="58" y="596">ZERO - TO - PRODUCT</text>
+  <line class="rule" x1="58" y1="609" x2="120" y2="609"/>
+
+  <text class="lane" x="110" y="692">PRODUCT OWNER</text>
+  <text class="lane" x="342" y="692">ASIMOV</text>
+  <text class="lane" x="573" y="692">DEVS</text>
+  <text class="lane" x="804" y="692">QA</text>
+  <text class="lane" x="1035" y="692">DEVS</text>
+
+  <!-- row 1 -->
+  <g class="card">
+    <rect class="po" x="110" y="738" width="178" height="178"/>
+    <text class="step" x="125" y="765" fill="#FFFFFF" opacity="0.7">BƯỚC 1</text>
+    <text class="noteW" x="125" y="786">• Chốt Design cho tới khi
+      <tspan x="136" dy="18">khách hàng hài lòng</tspan>
+      <tspan x="125" dy="18">• Clear Specs</tspan>
+    </text>
+  </g>
+
+  <g class="card">
+    <rect class="asimov" x="342" y="738" width="178" height="178"/>
+    <rect class="asimovBar" x="342" y="738" width="178" height="4"/>
+    <text class="step" x="357" y="765" fill="#D9212E">BƯỚC 2 · SENIOR</text>
+    <text class="note" x="357" y="786">• Dựng Base</text>
+  </g>
+
+  <g class="card">
+    <rect class="dev" x="573" y="738" width="178" height="178"/>
+    <rect class="devBar" x="573" y="738" width="178" height="4"/>
+    <text class="step" x="588" y="765" fill="#717070">BƯỚC 3</text>
+    <text class="note" x="588" y="786">• Đắp Skin
+      <tspan x="588" dy="18">• Custom Functions</tspan>
+    </text>
+  </g>
+
+  <g class="card">
+    <rect class="qa" x="804" y="738" width="178" height="178"/>
+    <rect class="qaBar" x="804" y="738" width="178" height="4"/>
+    <text class="step" x="819" y="765" fill="#0A071B">QA</text>
+    <text class="note" x="819" y="786">• Run Test &amp; Validate</text>
+  </g>
+
+  <g class="card">
+    <rect class="dev" x="1035" y="738" width="178" height="178"/>
+    <rect class="devBar" x="1035" y="738" width="178" height="4"/>
+    <text class="step" x="1050" y="765" fill="#717070">BƯỚC 4</text>
+    <text class="note" x="1050" y="786">• Launch
+      <tspan x="1050" dy="18">• Bàn giao</tspan>
+    </text>
+  </g>
+
+  <!-- row 2 -->
+  <g class="card">
+    <rect class="design" x="110" y="975" width="178" height="178"/>
+    <text class="step" x="125" y="1002" fill="#717070">HỖ TRỢ</text>
+    <text class="note" x="125" y="1023">Design UX/UI</text>
+  </g>
+
+  <g class="card">
+    <rect class="asimov" x="342" y="975" width="178" height="178"/>
+    <rect class="asimovBar" x="342" y="975" width="178" height="4"/>
+    <text class="step" x="357" y="1002" fill="#D9212E">BASE GỒM</text>
+    <text class="note" x="357" y="1023">• Contract
+      <tspan x="357" dy="18">• Infra</tspan>
+      <tspan x="357" dy="18">• Repo</tspan>
+      <tspan x="357" dy="18">• Bảo mật</tspan>
+      <tspan x="357" dy="18">• Phân tích dữ liệu</tspan>
+    </text>
+  </g>
+
+  <g class="card">
+    <rect class="dev" x="573" y="975" width="178" height="178"/>
+    <rect class="devBar" x="573" y="975" width="178" height="4"/>
+    <text class="step" x="588" y="1002" fill="#717070">HẰNG NGÀY</text>
+    <text class="note" x="588" y="1023">• Call với khách hàng
+      <tspan x="599" dy="18">để demo sản phẩm</tspan>
+      <tspan x="599" dy="18">cho đúng</tspan>
+    </text>
+  </g>
+
+  <g class="card">
+    <rect class="asimov" x="1035" y="975" width="178" height="178"/>
+    <rect class="asimovBar" x="1035" y="975" width="178" height="4"/>
+    <text class="step" x="1050" y="1002" fill="#D9212E">DISTIL</text>
+    <text class="note" x="1050" y="1023">Cyberk Platform Distil</text>
+  </g>
+
+  <!-- ===== RETAINER ===== -->
+  <rect class="panel" x="58" y="1273" width="958" height="387" rx="4"/>
+  <text class="lane" x="448" y="1343">MAINTAINER</text>
+  <g class="card">
+    <rect class="qa" x="448" y="1378" width="178" height="178"/>
+    <rect class="qaBar" x="448" y="1378" width="178" height="4"/>
+    <text class="step" x="463" y="1405" fill="#0A071B">RETAINER</text>
+    <text class="note" x="463" y="1426">All is Developers</text>
+  </g>
+
+  <!-- ===== edges ===== -->
+  <path class="edge" marker-end="url(#arr)" d="M293,827 H336"/>
+  <path class="edge" marker-end="url(#arr)" d="M524,827 H567"/>
+  <path class="edge" marker-end="url(#arr)" d="M755,827 H798"/>
+  <path class="edge" marker-end="url(#arr)" d="M986,827 H1029"/>
+  <path class="edge" marker-end="url(#arr)" d="M430,920 V969"/>
+  <path class="edge" marker-end="url(#arr)" d="M661,920 V969"/>
+  <path class="edge" marker-end="url(#arr)" d="M1124,920 V969"/>
+  <!-- Daily revise: Call → Bước 3 -->
+  <path class="edge" marker-end="url(#arr)" d="M568,1063 H549 Q537,1063 537,1051 V872 Q537,860 549,860 H567"/>
+  <rect x="500" y="952" width="74" height="20" fill="#FFFFFF"/>
+  <text class="label" x="537" y="967" text-anchor="middle">Daily revise</text>
+  <!-- Bước 4 → Maintainer (Dự án nhà làm) -->
+  <path class="edge" marker-end="url(#arr)" d="M1217,827 H1236 Q1248,827 1248,839 V1212 Q1248,1224 1236,1224 H549 Q537,1224 537,1236 V1372"/>
+  <rect x="844" y="1214" width="98" height="20" fill="#FAFAFA"/>
+  <text class="label" x="893" y="1229" text-anchor="middle">Dự án nhà làm</text>
+  <!-- Distil → Maintainer -->
+  <path class="edge" marker-end="url(#arr)" d="M1124,1157 V1455 Q1124,1467 1112,1467 H632"/>
+
+  <!-- Retainer section label: vẽ sau cùng để nằm trên đường "Dự án nhà làm" -->
+  <rect x="58" y="1218" width="160" height="40" fill="#FAFAFA"/>
+  <text class="section" x="58" y="1248">RETAINER</text>
+  <line class="rule" x1="58" y1="1261" x2="120" y2="1261"/>
+</svg>

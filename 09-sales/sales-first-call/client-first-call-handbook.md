@@ -2,7 +2,7 @@
 type: sales
 tags: [sales, handbook, client-management, communication]
 created-date: 2026-10-15
-updated-date: 2026-10-15
+updated-date: 2026-10-26
 author: neo
 status: Nháp
 voice-check: pending
@@ -11,7 +11,7 @@ voice-check: pending
 # Buổi call đầu tiên với đối tác — Cẩm nang cho người bán hàng
 
 **Người chịu trách nhiệm:** Anderson
-**Cập nhật lần cuối:** 2026-10-15
+**Cập nhật lần cuối:** 2026-10-26
 **Trạng thái:** Nháp
 
 Bạn sắp có buổi call đầu tiên với một startup chưa từng làm việc với Cyberk. Nhiều khả năng họ đã nghe vài agency tự khen mình trước đó, nên họ sẽ nghe bạn với một chút nghi ngờ. Trang này nói bạn nên nói gì, theo thứ tự nào, và vì sao.
@@ -158,10 +158,52 @@ Tại sao tồi: hứa điều trái với cách Cyberk làm. Một tháng sau �
 
 Trước buổi call, chọn 2–3 sản phẩm đã ship gần với bài toán của đối tác và mở sẵn link. Mở sản phẩm thật lên cho đối tác xem, đừng chỉ đọc mô tả.
 
-| Sản phẩm | Bài toán | Link |
-|---|---|---|
-| *(cần bổ sung)* | | |
-| *(cần bổ sung)* | | |
+Dự án được chia làm ba nhóm. Nghe đối tác trả lời câu hỏi mở đầu ở phần 1 xong, bạn thường đã biết nên mở nhóm nào:
+
+| Đối tác nói gì | Mở nhóm |
+|---|---|
+| Muốn đưa AI hoặc agent vào sản phẩm, muốn tự động hoá một việc đang làm tay | [7.1 AI solution](#71-ai-solution) |
+| Làm token, stablecoin, token hoá tài sản thật (RWA), bán node | [7.2 Blockchain solution](#72-blockchain-solution) |
+| Đã có code (tự viết, vibe code bằng Cursor/Lovable, team cũ để lại) nhưng chạy không ổn, hoặc nhà đầu tư cần người đánh giá kỹ thuật | [7.3 Tech Audit / Source Code Rescue](#73-tech-audit--source-code-rescue) |
+
+Cột *Câu nói sẵn* là một câu tiếng Anh để nói ngay trong call hoặc dán vào tin nhắn sau call.
+
+### 7.1 AI solution
+
+| Dự án | Bài toán của đối tác | Cyberk làm gì | Câu nói sẵn | Link |
+|---|---|---|---|---|
+| **Relmo**, CRM cho môi giới bất động sản (Singapore) | Môi giới để lead nguội vì quên chăm sóc, không biết hôm nay nên gọi ai | Agent đọc hội thoại WhatsApp, chấm điểm sức khoẻ từng mối quan hệ, gợi ý việc cần làm mỗi ngày và căn hộ phù hợp với từng người. Đối tác ký tiếp sau phase 1 | *"Relmo is a CRM for real estate agents in Singapore. The agent reads WhatsApp conversations, scores how healthy each client relationship is, and suggests who to follow up with today."* | *(cần bổ sung)* |
+| **Skin Agent**, AI tư vấn chăm sóc da | Người dùng hay tự chẩn đoán sai loại da, tư vấn theo lời họ thì gợi ý sai sản phẩm | Agent hỏi lại bằng câu hỏi lâm sàng trước khi gợi ý. Khi triệu chứng giống ca cần gặp bác sĩ, agent từ chối tư vấn | *"Skin Agent is an AI skincare advisor. Before recommending anything, it asks follow-up questions to check what users say about their own skin, and it refuses to advise when the symptoms look like a case for a doctor."* | *(cần bổ sung)* |
+| **VisibleBrands**, công cụ AIO audit | Doanh nghiệp không biết ChatGPT và các trợ lý AI có tìm thấy và giới thiệu website của mình không | Agent crawl website và chấm điểm mức độ AI đọc hiểu, trích dẫn được nội dung. Skin Agent phase 2 có được nhờ dự án này | *"VisibleBrands crawls a website and scores how well ChatGPT and other AI assistants can read and recommend it."* | Mục Selected Works trên cyberk.io |
+
+### 7.2 Blockchain solution
+
+| Dự án | Bài toán của đối tác | Cyberk làm gì | Câu nói sẵn | Link |
+|---|---|---|---|---|
+| **Kenanga / Myrra**, quỹ thị trường tiền tệ token hoá đầu tiên tại Malaysia | Ngân hàng đầu tư muốn đưa quỹ truyền thống lên blockchain (Stellar) | Toàn bộ phần kỹ thuật của nền tảng Myrra | *"Kenanga Group launched Malaysia's first tokenised money market funds on their Myrra platform, built on Stellar. We handled the full technical build."* | [Kenanga media release](https://www.kenanga.com.my/news/media-releases/kenanga-group-launches-malaysias-first-tokenised-money-market-funds/) |
+| **Helix**, nền tảng token hoá tài sản thật (RWA) | Token phải tuân thủ KYC, chỉ được chuyển giữa các ví đã xác minh | Smart contract theo ERC-3643, định danh on-chain (ERC-725/735), vault chia lợi tức (ERC-4626). Đang làm theo mô hình Lab hằng tháng | *"Helix tokenises real-world assets. KYC is enforced at the token level with ERC-3643, so a token can only move between verified wallets."* | *(cần bổ sung)* |
+| **Atlas**, stablecoin | Cần một stablecoin hoàn chỉnh, người dùng không phải giữ ETH để trả phí gas | Làm từ smart contract tới frontend: cơ chế neo giá, quản lý dự trữ, mint/burn, approve không tốn gas bằng ERC-2612 | *"Atlas is a stablecoin we built from the smart contracts to the frontend, including the peg, reserve management, and gasless approvals with ERC-2612."* | Mục Selected Works trên cyberk.io |
+| **Humanity Protocol**, bán license node | Phát hành license cho zkProofer node và quản lý hàng loạt node đã bán | NFT license dùng ERC-6551 (mỗi NFT có ví riêng để nhận thưởng), cùng dashboard quản lý node DePIN | *"For Humanity Protocol we built the NFT licences for their zkProofer nodes, and the dashboard operators use to manage those nodes."* | *(cần bổ sung)* |
+| **Tria**, hạ tầng token sau TGE | Token đã ra mắt, giờ cần staking, quản trị on-chain và bridge sang chain khác | Staking có khoá thời gian, governance (veToken, uỷ quyền), bridge LayerZero OFT, buyback-and-burn | *"After Tria's token launch we built the token infrastructure: staking, on-chain governance, and a LayerZero bridge."* | *(cần bổ sung)* |
+| **Aethir**, mạng GPU phi tập trung | Bán node cho cộng đồng và chia thưởng cho người vận hành node | Smart contract bán Checker Node trên Arbitrum, staking với vesting 4 năm, phân phối thưởng cho người vận hành | *"For Aethir we built the node sale contracts for their GPU network on Arbitrum, with staking, four-year reward vesting, and reward distribution to node operators."* | [Aethir: công bố node sale](https://ecosystem.aethir.com/blog-posts/aethir-announces-its-first-decentralized-ai-node-sale) |
+
+### 7.3 Tech Audit / Source Code Rescue
+
+Nhóm này đi với gói [Source Code Rescue](../../../marketing/services/source-code-rescue/source-code-rescue.md). Hiện mới có hai dự án, nên với đối tác thuộc nhóm này, bạn nên kể kỹ một dự án thay vì liệt kê.
+
+| Dự án | Bài toán của đối tác | Cyberk làm gì | Câu nói sẵn | Link |
+|---|---|---|---|---|
+| **Alchemy**, nền tảng DeFi bảo chứng bằng vàng | Trước thương vụ $155M với Amaze Holdings, bên mua cần biết hệ thống kỹ thuật thực sự ở tình trạng nào | Tech Audit: đánh giá kỹ thuật. Cyberk **không** xây sản phẩm này | *"Alchemy is the gold-backed DeFi platform that Amaze Holdings signed a $155M deal for. We ran the tech audit."* | [Yahoo Finance](https://finance.yahoo.com/markets/crypto/articles/amaze-holdings-signs-155m-deal-140400504.html) |
+| **America Fun**, nền tảng phát hành token | Hệ thống đang chạy, team cũ để lại, cần người nhận lại code, sửa lỗi và giữ cho ổn định | Nhận lại codebase, sửa lỗi, tinh chỉnh backend, chỉnh nhỏ UX/UI. Sau đợt này đối tác hỏi tiếp việc mở rộng sang EVM | *"For America Fun we took over a token launcher that was already live, fixed bugs, tuned the backend, and made small UX/UI fixes."* | *(cần bổ sung)* |
+
+### Lưu ý khi cho xem
+
+- Ghi đúng vai trò. Với Alchemy, Cyberk chỉ làm audit, không nói *"we built Alchemy"*. Với Kenanga, Cyberk làm toàn bộ phần kỹ thuật.
+- Không nói giá hợp đồng hay quy mô team của dự án cũ cho đối tác mới.
+- Dự án nào còn ghi *(cần bổ sung)* ở cột Link thì mở [Behance của Cyberk](https://www.behance.net/cyberk_io) hoặc mục Selected Works trên cyberk.io thay thế. Đừng gửi link môi trường dev.
+- Gửi qua Telegram: chỉ link đầu tiên hiện preview, nên đặt dự án gần mảng của đối tác nhất lên đầu.
+- Anderson đã cho phép nêu tên thật các đối tác trong bảng trên (26/10/2026). Khi thêm dự án mới, hỏi Anderson trước khi nêu tên.
+- Nguồn dữ liệu: [portfolio-2026.md](../../../marketing/sales-kit/portfolio-2026.md) và `proposal/project-list.csv`. Thêm dự án mới thì cập nhật cả hai nơi và bảng này.
 
 ---
 
@@ -198,6 +240,7 @@ Kết thúc bằng một bước tiếp theo có ngày cụ thể. Trong ngày, 
 | Một đầu mối | Kể chỗ tốn tiền giữa designer và dev trước |
 | Đổi ý | $5,000/tháng, đổi ý dùng thời gian của tháng đó |
 | Cái giá | Một khung giờ cố định mỗi ngày, nói trước khi bị hỏi |
+| Cho xem | Chọn nhóm AI / Blockchain / Tech Audit theo bài toán của đối tác, mở sẵn link |
 | Kết | Giá rõ, bước tiếp theo có ngày |
 
 ---
@@ -206,6 +249,8 @@ Kết thúc bằng một bước tiếp theo có ngày cụ thể. Trong ngày, 
 
 - Gói dịch vụ: [zero-to-product.md](../../../marketing/services/zero-to-product/zero-to-product.md)
 - Danh sách dịch vụ và giá: [services/readme.md](../../../marketing/services/readme.md)
+- Gói Source Code Rescue: [source-code-rescue.md](../../../marketing/services/source-code-rescue/source-code-rescue.md)
+- Dự án tiêu biểu để gửi kèm tin nhắn: [portfolio-2026.md](../../../marketing/sales-kit/portfolio-2026.md)
 - Triết lý phản hồi hằng ngày: [5.1-sprint-mot-ngay.md](../../01-cyberk-way/5.1-sprint-mot-ngay.md)
 - Bước sau khi ký hợp đồng: [kick-off-handbook.md](../../05-product-owner/po-kick-off/kick-off-handbook.md)
 - Luật viết: [writing-rules.md](../../../marketing/skills/docs/writing-rules.md)
