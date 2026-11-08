@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyberk – Design Process</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+@page { size: A4; margin: 0; }
+html, body { margin: 0; background: #EDEDEF; }
+.page { width: 794px; height: 1123px; margin: 32px auto; box-shadow: 0 1px 4px rgba(0,0,0,.08); background: #fff; overflow: hidden; }
+@media print {
+  html, body { background: #fff; }
+  .page { margin: 0; box-shadow: none; break-after: page; page-break-after: always; }
+  .page:last-child { break-after: auto; page-break-after: auto; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+.c1{display: flex; gap: 14px; font-size: 15px; line-height: 1.55}
+.c2{flex: none; width: 12px; height: 1px; margin-top: 12px; background: #0A071B}
+.c3{margin: 0; font-size: 11px; font-weight: 500; letter-spacing: 0.32em; text-transform: uppercase; color: #717070}
+.c4{margin: 0; font-size: 10px; font-weight: 500; letter-spacing: 0.32em; text-transform: uppercase; color: #717070}
+.c5{display: flex; align-items: center; gap: 6px}
+.c6{position: relative; width: 794px; height: 1123px; box-sizing: border-box; padding: 64px 72px 56px; display: flex; flex-direction: column; background: #FFFFFF; color: #0A071B; font-family: 'Be Vietnam Pro', system-ui, sans-serif; overflow: hidden}
+.c7{font-size: 12px; font-weight: 500; letter-spacing: 0.12em; color: #717070}
+.c8{display: flex; flex-direction: column; gap: 4px}
+.c9{display: flex; align-items: center; gap: 10px; margin-bottom: 18px}
+.c10{display: block; flex: none}
+.c11{margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; color: #0A071B}
+.c12{margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px}
+.c13{display: flex; flex-direction: column; gap: 10px}
+.c14{display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid #E4E4E7}
+.c15{display: flex; align-items: center; gap: 8px}
+.c16{flex: none; width: 26px; height: 4px; border-radius: 2px; background: #0A071B; align-self: center; margin-bottom: 4px}
+.c17{display: flex; justify-content: space-between; align-items: center; padding-bottom: 18px; border-bottom: 1px solid #0A071B}
+.c18{height: 15px; width: 82px; display: block}
+.c19{font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #0A071B; line-height: 1.2}
+.c20{flex: none; width: 18px; height: 18px; border-radius: 4px; background: #E4E4E7}
+.c21{flex: none; width: 52px; height: 5px; border-radius: 3px; background: #C9C9CF}
+.c22{flex: none; width: 34px; height: 5px; border-radius: 3px; background: #E4E4E7}
+.c23{font-size: 9px; font-family: ui-monospace, Menlo, monospace; color: #717070}
+.c24{margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; color: #D9212E}
+.c25{position: absolute; width: 650px; height: 92px; box-sizing: border-box; padding: 0 28px 0 24px; display: flex; align-items: center; gap: 20px; background: #FFFFFF; border: 1px solid #0A071B; border-radius: 4px}
+.c26{flex: none; width: 36px; font-size: 26px; font-weight: 200; letter-spacing: -0.02em; color: #D9212E}
+.c27{font-size: 20px; line-height: 26px; font-weight: 700; letter-spacing: -0.01em}
+.c28{font-size: 14px; line-height: 20px; font-weight: 400; letter-spacing: 0; color: #717070}
+.c29{flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 48px 0 40px}
+.c30{display: flex; flex-direction: column; gap: 32px}
+.c31{display: flex; align-items: flex-end; gap: 24px}
+.c32{flex: none; font-size: 112px; font-weight: 200; line-height: 0.8; letter-spacing: -0.06em; color: #D9212E}
+.c33{flex: 1; display: flex; flex-direction: column; gap: 10px}
+.c34{margin: 0; font-size: 30px; font-weight: 800; line-height: 1.12; letter-spacing: -0.01em; text-transform: uppercase; text-wrap: balance}
+.c35{display: block; flex: none; align-self: flex-start}
+.c36{font-size: 9px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #717070; line-height: 1.2}
+.c37{display: grid; grid-template-columns: 3fr 2fr; gap: 48px}
+.c38{display: grid; grid-template-columns: 3fr 2fr; gap: 48px; padding-top: 24px; border-top: 1px solid #0A071B}
+.c39{margin: 0; font-size: 15px; line-height: 1.55}
+.c40{margin: 0; display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 700; line-height: 1.4}
+.c41{flex: none; width: 8px; height: 8px; border-radius: 50%; background: #D9212E}
+.c42{flex: none; width: 20px; height: 20px; border-radius: 5px; background: #F59E0B}
+.c43{font-size: 8px; font-weight: 700; color: #FFFFFF; letter-spacing: 0.04em}
+.c44{display: flex; align-items: baseline; gap: 8px}
+.c45{font-size: 9px; color: #717070}
+.c46{position: absolute; width: 8px; height: 39px; overflow: visible; fill: none; stroke: #0A071B; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round}
+.c47{stroke: none; fill: #0A071B; fill: context-stroke}
+.c48{font-size: 13px; font-weight: 600; letter-spacing: 0.2em; color: #D9212E}
+.c49{margin: 0; font-size: 30px; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; white-space: pre-line}
+.c50{margin: 0; font-size: 15px; line-height: 1.65; color: #717070; padding-top: 6px}
+.c51{flex: none; width: 44px; font-size: 9px; color: #717070; white-space: nowrap}
+.c52{position: relative; flex: none; width: 104px; height: 196px; box-sizing: border-box; border: 1.5px solid #0A071B; border-radius: 18px; background: #FFFFFF; padding: 12px 9px 10px; display: flex; flex-direction: column; gap: 6px; overflow: hidden}
+.c53{flex: none; height: 34px; border-radius: 8px; background: #FFFFFF; border: 1px solid #E4E4E7; display: flex; align-items: center; gap: 6px; padding: 0 6px}
+.c54{flex: none; width: 40px; height: 5px; border-radius: 3px; background: #0A071B}
+.c55{flex: none; width: 28px; height: 4px; border-radius: 3px; background: #E4E4E7}
+.c56{display: flex; flex-direction: column; gap: 8px; align-items: center}
+.c57{position: relative; flex: none; width: 112px; height: 190px; box-sizing: border-box; border: 1.5px solid #0A071B; border-radius: 18px; background: #FFFFFF; padding: 12px 9px 10px; display: flex; flex-direction: column; gap: 6px; overflow: hidden}
+.c58{flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; text-align: center}
+.c59{font-size: 10px; font-weight: 700; color: #0A071B; line-height: 1.2}
+.c60{font-size: 8px; color: #717070; line-height: 1.35}
+.c61{flex: none; height: 22px; border-radius: 7px; background: #0F766E; display: flex; align-items: center; justify-content: center}
+.c62{text-align: center}
+.c63{display: block; flex: none; position: absolute}
+.c64{font-weight: 800}
+.c65{display: grid; grid-template-columns: 56px 1fr 1fr; gap: 24px; padding: 36px 0; border-top: 1px solid #E4E4E7}
+.c66{flex: none; width: 48%; height: 30px; border-radius: 5px; background: #E4E4E7}
+.c67{display: flex; flex-direction: column; gap: 8px}
+.c68{font-size: 16px; font-weight: 600}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position: absolute" aria-hidden="true"><defs><symbol id="cube1" viewBox="-1 -1 102 117.5" fill="none"><g stroke="#D4D4D8" stroke-width="1" vector-effect="non-scaling-stroke" stroke-linejoin="round"><polygon points="50,0 100,28.87 100,86.6 50,115.47 0,86.6 0,28.87" vector-effect="non-scaling-stroke"></polygon><line x1="0" y1="28.87" x2="100" y2="28.87" vector-effect="non-scaling-stroke"></line><line x1="0" y1="28.87" x2="50" y2="115.47" vector-effect="non-scaling-stroke"></line><line x1="100" y1="28.87" x2="50" y2="115.47" vector-effect="non-scaling-stroke"></line></g><g stroke="#D9212E" stroke-width="1" stroke-linejoin="round"><line x1="0" y1="28.87" x2="50" y2="57.7" vector-effect="non-scaling-stroke"></line><line x1="100" y1="28.87" x2="50" y2="57.7" vector-effect="non-scaling-stroke"></line><line x1="50" y1="57.7" x2="50" y2="115.47" vector-effect="non-scaling-stroke"></line></g></symbol><symbol id="cube2" viewBox="-1 -1 102 117.5" fill="none"><g stroke="#0A071B" stroke-width="1.2" vector-effect="non-scaling-stroke" stroke-linejoin="round"><polygon points="50,0 100,28.87 100,86.6 50,115.47 0,86.6 0,28.87" vector-effect="non-scaling-stroke"></polygon><line x1="0" y1="28.87" x2="100" y2="28.87" vector-effect="non-scaling-stroke"></line><line x1="0" y1="28.87" x2="50" y2="115.47" vector-effect="non-scaling-stroke"></line><line x1="100" y1="28.87" x2="50" y2="115.47" vector-effect="non-scaling-stroke"></line></g><g stroke="#D9212E" stroke-width="1.2" stroke-linejoin="round"><line x1="0" y1="28.87" x2="50" y2="57.7" vector-effect="non-scaling-stroke"></line><line x1="100" y1="28.87" x2="50" y2="57.7" vector-effect="non-scaling-stroke"></line><line x1="50" y1="57.7" x2="50" y2="115.47" vector-effect="non-scaling-stroke"></line></g></symbol><symbol id="cube3" viewBox="-1 -1 102 117.5" fill="none"><g stroke="#0A071B" stroke-width="1.2" vector-effect="non-scaling-stroke" stroke-linejoin="round"><polygon points="50,0 100,28.87 100,86.6 50,115.47 0,86.6 0,28.87" vector-effect="non-scaling-stroke"></polygon><line x1="0" y1="28.87" x2="100" y2="28.87" vector-effect="non-scaling-stroke"></line><line x1="0" y1="28.87" x2="50" y2="115.47" vector-effect="non-scaling-stroke"></line><line x1="100" y1="28.87" x2="50" y2="115.47" vector-effect="non-scaling-stroke"></line></g><g stroke="#0A071B" stroke-width="1.2" stroke-linejoin="round"><line x1="0" y1="28.87" x2="50" y2="57.7" vector-effect="non-scaling-stroke"></line><line x1="100" y1="28.87" x2="50" y2="57.7" vector-effect="non-scaling-stroke"></line><line x1="50" y1="57.7" x2="50" y2="115.47" vector-effect="non-scaling-stroke"></line></g></symbol><symbol id="cyberk-logo" viewBox="0 0 1050 192"><path fill="#000" fill-rule="evenodd" d="M41.5 168.1L0.5 144.3L0.5 96.0L0.5 47.7L41.8 23.8L83.2 -0.0L124.5 23.7L165.9 47.5L165.9 96.0L165.9 144.5L125.0 168.0C102.5 180.9 83.7 191.6 83.3 191.7C82.9 191.8 64.1 181.1 41.5 168.1ZM63.5 156.2C57.2 145.4 42.7 120.2 31.3 100.3C19.8 80.4 10.2 64.1 9.8 64.0C9.3 64.0 9.0 80.8 9.0 101.2L9.0 138.5L41.3 157.2C59.0 167.5 73.8 175.9 74.2 175.9C74.6 176.0 69.7 167.1 63.5 156.2ZM127.8 155.5L157.0 138.7L157.0 100.6C156.9 71.6 156.7 63.0 155.8 64.5C155.2 65.6 140.6 90.9 123.3 120.8C106.1 150.6 92.0 175.3 92.0 175.6C92.0 175.9 93.5 175.3 95.2 174.3C97.0 173.3 111.7 164.8 127.8 155.5ZM78.3 98.9C77.0 97.6 23.7 67.0 23.4 67.3C23.1 67.6 65.2 141.1 75.8 159.0L78.5 163.5L78.8 131.6C78.9 114.0 78.7 99.3 78.3 98.9ZM142.8 67.5C142.6 67.3 130.2 74.2 115.2 82.8L88.0 98.5L88.0 131.0L88.0 163.4L115.6 115.6C130.8 89.3 143.0 67.7 142.8 67.5ZM246.7 143.0C237.4 141.4 230.5 135.6 226.1 126.0C223.1 119.5 223.0 71.9 225.9 65.4C228.4 59.9 233.4 54.5 238.9 51.2L243.5 48.5L275.8 48.2C303.2 47.9 308.9 48.1 312.9 49.5C320.5 52.0 328.3 59.7 330.5 66.8C331.1 68.9 330.9 69.0 326.3 69.0C321.9 69.0 321.3 68.7 319.3 65.5C314.5 58.1 313.0 57.9 276.6 58.2L244.3 58.5L240.6 61.4C233.6 66.7 233.0 69.4 233.0 95.7C233.0 120.8 233.3 122.6 238.3 127.9C244.0 133.9 244.9 134.0 277.7 134.0C311.2 134.0 313.0 133.6 318.6 126.6C321.2 123.4 322.0 123.0 326.2 123.0C331.7 123.0 331.6 122.8 329.0 128.0C326.3 133.4 321.2 138.2 315.4 141.1C310.6 143.5 309.9 143.5 281.0 143.7C264.8 143.8 249.4 143.5 246.7 143.0ZM502.7 143.3C502.3 143.0 502.0 131.0 502.0 116.8L502.0 91.0L544.5 91.0C591.1 91.0 591.3 91.0 596.3 85.1C604.2 75.7 600.1 61.3 588.5 58.1C585.9 57.4 570.1 57.0 543.2 57.0L502.0 57.0L502.0 52.5L502.0 48.0L545.8 48.0L589.5 48.0L594.6 50.4C604.6 55.1 611.0 66.5 609.5 77.4C608.8 82.7 605.0 90.8 601.9 93.6C600.1 95.2 600.2 95.5 604.0 100.7C616.1 117.6 607.9 139.2 588.1 143.0C582.2 144.1 503.8 144.4 502.7 143.3ZM412.8 121.8L413.1 100.5L387.2 74.7L361.4 49.0L368.0 49.0L374.5 49.1L398.2 72.6L422.0 96.0L422.0 119.5L422.0 143.0L417.2 143.0L412.5 143.0L412.8 121.8ZM653.0 116.5L653.0 90.0L687.5 90.0L722.0 90.0L722.0 95.0L722.0 100.0L692.0 100.0L662.0 100.0L662.2 116.8L662.5 133.5L709.8 133.8L757.0 134.0L757.0 138.5L757.0 143.0L705.0 143.0L653.0 143.0L653.0 116.5ZM799.0 124.1L799.0 105.1L839.8 104.8C879.3 104.5 880.6 104.4 884.5 102.3C901.2 93.3 902.1 70.6 886.3 61.3L881.5 58.5L840.5 58.0L799.5 57.5L799.2 52.7L798.9 47.9L840.7 48.2L882.5 48.5L888.2 51.3C908.8 61.4 913.3 88.4 897.2 104.6C893.7 108.1 889.2 110.6 881.2 113.6C879.1 114.5 879.4 115.1 889.0 128.2C894.5 135.8 899.0 142.2 899.0 142.5C899.0 142.8 896.4 143.0 893.3 142.8L887.6 142.5L877.2 128.2L866.8 114.0L837.9 114.0L809.0 114.0L809.0 128.5L809.0 143.0L804.0 143.0L799.0 143.0L799.0 124.1ZM951.0 95.5L951.0 48.0L956.0 48.0L961.0 48.0L961.2 73.6L961.5 99.3L992.5 73.6L1023.5 48.0L1031.0 48.0C1038.3 48.0 1038.4 48.1 1036.3 49.8C1023.6 60.0 1003.0 77.5 1003.0 78.2C1003.0 78.7 1013.4 93.2 1026.0 110.6C1038.7 127.9 1049.0 142.3 1049.0 142.5C1049.0 142.8 1046.4 143.0 1043.2 142.9L1037.5 142.9L1016.2 113.5L994.9 84.1L977.9 98.1L961.0 112.1L961.0 127.6L961.0 143.0L956.0 143.0L951.0 143.0L951.0 95.5ZM590.3 132.6C600.2 128.5 603.6 115.1 596.9 106.6C592.1 100.6 592.0 100.5 551.1 100.2C530.6 100.0 513.2 100.1 512.6 100.3C511.8 100.6 511.6 105.8 511.8 117.4L512.1 134.0L549.6 134.0C579.0 134.0 587.8 133.7 590.3 132.6ZM427.1 87.6L423.9 84.3L442.2 66.7L460.5 49.0L467.0 49.0L473.4 49.0L469.5 53.1C467.3 55.3 457.6 64.8 447.9 74.0L430.3 90.9L427.1 87.6ZM112.4 73.8L140.5 57.5L111.8 57.2C95.9 57.1 70.1 57.1 54.3 57.2L25.7 57.5L53.6 73.7C68.9 82.6 82.1 89.9 82.9 89.9C83.7 90.0 96.9 82.7 112.4 73.8ZM653.0 53.5L653.0 49.0L704.8 49.0L756.5 49.0L756.2 53.5L755.8 58.0L704.4 58.0L653.0 58.0L653.0 53.5ZM146.9 47.6C146.7 47.4 133.0 39.5 116.5 30.0C100.0 20.5 85.8 12.2 84.9 11.7C83.6 10.9 76.5 14.6 51.6 28.9C34.2 39.0 20.0 47.4 20.0 47.6C20.0 47.8 48.6 48.0 83.7 48.0C118.7 48.0 147.1 47.8 146.9 47.6Z"></path></symbol></defs></svg>
+<section class="page"><div class="c6">
+
+<svg aria-hidden="true" width="560" height="647" class="c63" style="right: -150px; bottom: -120px"><use href="#cube1"></use></svg>
+<header style="display: flex; justify-content: space-between; align-items: center">
+<svg role="img" aria-label="Cyberk" width="142" height="26" viewBox="0 0 426 78" style="height: 26px; width: 142px; display: block"><use href="#cyberk-logo"></use></svg>
+</header>
+<div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: flex-start; gap: 40px; padding-top: 150px">
+<p class="c24">A guide for our clients</p>
+<h1 style="margin: 0; font-size: 108px; line-height: 0.98; letter-spacing: -0.045em; font-weight: 300">Design<br><span class="c64">Process</span></h1>
+<p style="margin: 0; max-width: 420px; font-size: 22px; line-height: 1.45; font-weight: 300; color: #717070">From your idea to a product ready to build.</p>
+</div>
+<div style="position: relative"><footer class="c14">
+<p class="c3">Cyberk Design Process</p>
+<span class="c7">01 / 08</span>
+</footer></div>
+</div></section>
+<section class="page"><div class="c6">
+<header class="c17">
+<svg role="img" aria-label="Cyberk" width="82" height="15" viewBox="0 0 426 78" class="c18"><use href="#cyberk-logo"></use></svg>
+<p class="c3">Overview</p>
+</header>
+<div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<p class="c24">Overview</p>
+<h1 style="margin: 0; font-size: 44px; font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase; text-wrap: balance">4 steps from idea to product</h1>
+<p style="margin: 0; max-width: 470px; font-size: 16px; line-height: 1.65; color: #717070">Each step ends with a gate where you review, comment and approve before we move on.</p>
+</div>
+<div style="position: relative; width: 650px; height: 488px">
+<svg width="8" height="39" viewBox="0 0 8 39" preserveAspectRatio="none" class="c46" style="left: 40px; top: 92px"><defs><marker id="dc-arrow-head-filled-1" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#0A071B" stroke="none" class="c47"/></marker></defs><path d="M 4 0 L 4 36" marker-end="url(#dc-arrow-head-filled-1)"></path></svg><svg width="8" height="39" viewBox="0 0 8 39" preserveAspectRatio="none" class="c46" style="left: 40px; top: 224px"><defs><marker id="dc-arrow-head-filled-2" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#0A071B" stroke="none" class="c47"/></marker></defs><path d="M 4 0 L 4 36" marker-end="url(#dc-arrow-head-filled-2)"></path></svg><svg width="8" height="39" viewBox="0 0 8 39" preserveAspectRatio="none" class="c46" style="left: 40px; top: 356px"><defs><marker id="dc-arrow-head-filled-3" orient="auto" markerWidth="5" markerHeight="5" refX="2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#0A071B" stroke="none" class="c47"/></marker></defs><path d="M 4 0 L 4 36" marker-end="url(#dc-arrow-head-filled-3)"></path></svg>
+<div class="c25" style="left: 0px; top: 0px"><span class="c26">01</span><span class="c27">Discovery &amp; Prototype<br><span class="c28">Research your market and users, then turn it into a clickable blueprint of your product</span></span></div><div class="c25" style="left: 0px; top: 132px"><span class="c26">02</span><span class="c27">Visual Direction &amp; Key Mockups<br><span class="c28">See your product in your brand's look on a few key screens, then pick a direction</span></span></div><div class="c25" style="left: 0px; top: 264px"><span class="c26">03</span><span class="c27">Design System<br><span class="c28">One rulebook for how your product looks, so it stays consistent and AI tools can build it faster</span></span></div><div class="c25" style="left: 0px; top: 396px"><span class="c26">04</span><span class="c27">Detailed UI &amp; Testing<br><span class="c28">Every screen finished, including the moments most apps forget: no internet, nothing to show, something went wrong</span></span></div>
+</div>
+</div>
+<footer class="c14">
+<p class="c3">Cyberk Design Process</p>
+<span class="c7">02 / 08</span>
+</footer>
+</div></section>
+<section class="page"><div class="c6">
+<header class="c17">
+<svg role="img" aria-label="Cyberk" width="82" height="15" viewBox="0 0 426 78" class="c18"><use href="#cyberk-logo"></use></svg>
+<p class="c3">Principles</p>
+</header>
+<div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 64px">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<p class="c24">How we work</p>
+<h1 style="margin: 0; font-size: 48px; font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase">Three principles</h1>
+</div>
+<div><div style="display: grid; grid-template-columns: 56px 1fr 1fr; gap: 24px; padding: 36px 0; border-top: 1px solid #0A071B">
+<span class="c48">01</span>
+<h3 class="c49">Structure first,
+colour later.</h3>
+<p class="c50">We lock flows and structure in black and white before investing in colour and imagery.</p>
+</div><div class="c65">
+<span class="c48">02</span>
+<h3 class="c49">Validate
+early.</h3>
+<p class="c50">We test with real users and review feasibility while changes are still cheap.</p>
+</div><div class="c65">
+<span class="c48">03</span>
+<h3 class="c49">You approve
+every gate.</h3>
+<p class="c50">Every step ends with a clear approval gate, so there are no surprises at the end.</p>
+</div></div>
+</div>
+<footer class="c14">
+<p class="c3">Cyberk Design Process</p>
+<span class="c7">03 / 08</span>
+</footer>
+</div></section>
+<section class="page"><div class="c6">
+<header class="c17">
+<svg role="img" aria-label="Cyberk" width="82" height="15" viewBox="0 0 426 78" class="c18"><use href="#cyberk-logo"></use></svg>
+<p class="c3">Step 01 / 04</p>
+</header>
+<div class="c29">
+<div class="c30">
+<div class="c31">
+<span class="c32">01</span>
+<div class="c33">
+<h1 class="c34">Discovery &amp; Prototype</h1>
+<p class="c3">Right problem, right flow</p>
+</div>
+<svg aria-hidden="true" width="40" height="46" class="c35"><use href="#cube2"></use></svg>
+</div>
+<div role="img" aria-label="Research findings turned into a clickable wireframe prototype" style="height: 240px; border-radius: 8px; background: #F4F4F5; display: flex; align-items: center; justify-content: center; gap: 18px; overflow: hidden"><div style="flex: none; width: 150px; height: 196px; box-sizing: border-box; border: 1px solid #E4E4E7; border-radius: 10px; background: #FFFFFF; padding: 14px; display: flex; flex-direction: column; gap: 10px"><span class="c19">Research</span><div style="display: flex; flex-direction: column; gap: 7px"><div class="c5"><span class="c51">You</span><div style="flex: none; width: 66px; height: 8px; border-radius: 4px; background: #0A071B"></div></div><div class="c5"><span class="c51">Comp. A</span><div style="flex: none; width: 48px; height: 8px; border-radius: 4px; background: #717070"></div></div><div class="c5"><span class="c51">Comp. B</span><div style="flex: none; width: 32px; height: 8px; border-radius: 4px; background: #E4E4E7"></div></div></div><div style="height: 1px; background: #E4E4E7"></div><span class="c36">Persona</span><div class="c15"><div style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #E4E4E7"></div><div style="display: flex; flex-direction: column; gap: 5px"><div style="flex: none; width: 60px; height: 6px; border-radius: 3px; background: #0A071B"></div><div style="flex: none; width: 44px; height: 6px; border-radius: 3px; background: #E4E4E7"></div></div></div></div><svg aria-hidden="true" width="28" height="10" viewBox="0 0 28 10" fill="none" style="flex: none"><path d="M1 5 H25 M21 1 L26 5 L21 9" stroke="#0A071B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><div class="c52"><div class="c16"></div><div style="flex: none; width: 60%; height: 8px; border-radius: 3px; background: #E4E4E7"></div><div style="flex: none; width: 100%; height: 52px; border-radius: 6px; background: #E4E4E7"></div><div style="flex: none; width: 85%; height: 6px; border-radius: 3px; background: #E4E4E7"></div><div style="flex: none; width: 60%; height: 6px; border-radius: 3px; background: #E4E4E7"></div><div style="display: flex; align-items: center; gap: 4px"><div class="c66"></div><div class="c66"></div></div><div style="position: relative; margin-top: auto; height: 20px; border: 1.5px solid #0A071B; border-radius: 6px"></div><div style="position: absolute; right: 22px; bottom: 6px; width: 22px; height: 22px; border-radius: 50%; border: 2px solid #D9212E; background: rgba(217,33,46,0.12)"></div></div><svg aria-hidden="true" width="28" height="10" viewBox="0 0 28 10" fill="none" style="flex: none"><path d="M1 5 H25 M21 1 L26 5 L21 9" stroke="#0A071B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><div class="c52"><div class="c16"></div><div style="flex: none; width: 50%; height: 8px; border-radius: 3px; background: #E4E4E7"></div><div class="c5"><div class="c20"></div><div class="c8"><div class="c21"></div><div class="c22"></div></div></div><div class="c5"><div class="c20"></div><div class="c8"><div class="c21"></div><div class="c22"></div></div></div><div class="c5"><div class="c20"></div><div class="c8"><div class="c21"></div><div class="c22"></div></div></div><div class="c5"><div class="c20"></div><div class="c8"><div class="c21"></div><div class="c22"></div></div></div><div class="c5"><div class="c20"></div><div class="c8"><div class="c21"></div><div class="c22"></div></div></div></div></div>
+</div>
+<div class="c37">
+<div><div class="c9"><svg aria-hidden="true" width="11" height="13" class="c10"><use href="#cube3"></use></svg><p class="c11">What we do</p></div><ul class="c12"><li class="c1"><span class="c2"></span><span>Review your business goals, requirements and brand</span></li><li class="c1"><span class="c2"></span><span>Research your market, competitors and the apps your users already know</span></li><li class="c1"><span class="c2"></span><span>Talk to target users, or analyse the feedback you already have</span></li><li class="c1"><span class="c2"></span><span>Map user flows and wireframe every screen</span></li><li class="c1"><span class="c2"></span><span>Link them into a clickable prototype and test it with users</span></li></ul></div>
+<div><div class="c9"><svg aria-hidden="true" width="11" height="13" class="c10"><use href="#cube3"></use></svg><p class="c11">What you get</p></div><ul class="c12"><li class="c1"><span class="c2"></span><span>Market &amp; competitor research</span></li><li class="c1"><span class="c2"></span><span>User personas</span></li><li class="c1"><span class="c2"></span><span>User flows &amp; wireframes</span></li><li class="c1"><span class="c2"></span><span>Clickable prototype</span></li><li class="c1"><span class="c2"></span><span>Test findings</span></li></ul></div>
+</div>
+<div class="c38">
+<div class="c13"><p class="c4">What we need from you</p><p class="c39">Business documents, brand guidelines, access to real users if available, and feedback on the flows.</p></div>
+<div class="c13"><p class="c4">Approval gate</p><p class="c40"><span class="c41"></span>Goals, flows &amp; screen list agreed</p></div>
+</div>
+</div>
+<footer class="c14">
+<p class="c3">Cyberk Design Process</p>
+<span class="c7">04 / 08</span>
+</footer>
+</div></section>
+<section class="page"><div class="c6">
+<header class="c17">
+<svg role="img" aria-label="Cyberk" width="82" height="15" viewBox="0 0 426 78" class="c18"><use href="#cyberk-logo"></use></svg>
+<p class="c3">Step 02 / 04</p>
+</header>
+<div class="c29">
+<div class="c30">
+<div class="c31">
+<span class="c32">02</span>
+<div class="c33">
+<h1 class="c34">Visual Direction &amp; Key Mockups</h1>
+<p class="c3">Test the look on a few screens</p>
+</div>
+<svg aria-hidden="true" width="40" height="46" class="c35"><use href="#cube2"></use></svg>
+</div>
+<div role="img" aria-label="A moodboard and two key screens in the chosen visual style" style="height: 240px; border-radius: 8px; background: #F4F4F5; display: flex; align-items: center; justify-content: center; gap: 22px; overflow: hidden"><div style="flex: none; width: 190px; height: 196px; box-sizing: border-box; border: 1px solid #E4E4E7; border-radius: 10px; background: #FFFFFF; padding: 14px; display: flex; flex-direction: column; gap: 12px"><span class="c19">Moodboard</span><div class="c5"><div style="flex: none; width: 34px; height: 34px; border-radius: 8px; background: #0F766E"></div><div style="flex: none; width: 34px; height: 34px; border-radius: 8px; background: #F59E0B"></div><div style="flex: none; width: 34px; height: 34px; border-radius: 8px; background: #0A071B"></div><div style="flex: none; width: 34px; height: 34px; border-radius: 8px; background: #F5EFE3; border: 1px solid #E4E4E7"></div></div><div style="display: flex; align-items: center; gap: 12px"><span style="font-size: 46px; font-weight: 700; line-height: 1; letter-spacing: -0.03em; color: #0A071B">Aa</span><div style="display: flex; flex-direction: column; gap: 6px"><div style="flex: none; width: 56px; height: 7px; border-radius: 3px; background: #0A071B"></div><div style="flex: none; width: 72px; height: 5px; border-radius: 3px; background: #E4E4E7"></div><div style="flex: none; width: 64px; height: 5px; border-radius: 3px; background: #E4E4E7"></div></div></div><div class="c15"><div style="flex: none; width: 70px; height: 34px; border-radius: 8px; background: #F5EFE3; border: 1px solid #E4E4E7"></div><div style="flex: none; width: 70px; height: 34px; border-radius: 8px; background: #0F766E"></div></div></div><div style="position: relative; flex: none; width: 104px; height: 196px; box-sizing: border-box; border: 1.5px solid #0A071B; border-radius: 18px; background: #F5EFE3; padding: 12px 9px 10px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><div class="c16"></div><div style="flex: none; height: 56px; border-radius: 10px; background: #0F766E; padding: 8px; box-sizing: border-box; display: flex; flex-direction: column; gap: 5px"><div style="flex: none; width: 50%; height: 6px; border-radius: 3px; background: #FFFFFF"></div><div style="flex: none; width: 70%; height: 4px; border-radius: 3px; background: rgba(255,255,255,0.6)"></div></div><div class="c53"><div class="c42"></div><div class="c8"><div class="c54"></div><div class="c55"></div></div></div><div class="c53"><div class="c42"></div><div class="c8"><div class="c54"></div><div class="c55"></div></div></div><div class="c53"><div class="c42"></div><div class="c8"><div class="c54"></div><div class="c55"></div></div></div></div><div class="c52"><div class="c16"></div><div style="flex: none; width: 100%; height: 70px; border-radius: 10px; background: #F59E0B"></div><div style="flex: none; width: 70%; height: 8px; border-radius: 3px; background: #0A071B"></div><div style="flex: none; width: 90%; height: 5px; border-radius: 3px; background: #E4E4E7"></div><div style="flex: none; width: 60%; height: 5px; border-radius: 3px; background: #E4E4E7"></div><div style="margin-top: auto; height: 22px; border-radius: 7px; background: #0F766E; display: flex; align-items: center; justify-content: center"><span class="c43">BOOK NOW</span></div></div></div>
+</div>
+<div class="c37">
+<div><div class="c9"><svg aria-hidden="true" width="11" height="13" class="c10"><use href="#cube3"></use></svg><p class="c11">What we do</p></div><ul class="c12"><li class="c1"><span class="c2"></span><span>Build a moodboard: colour, type and imagery style</span></li><li class="c1"><span class="c2"></span><span>Fully design 2–4 core screens</span></li><li class="c1"><span class="c2"></span><span>Check contrast and visual hierarchy, and preview on a real phone</span></li></ul></div>
+<div><div class="c9"><svg aria-hidden="true" width="11" height="13" class="c10"><use href="#cube3"></use></svg><p class="c11">What you get</p></div><ul class="c12"><li class="c1"><span class="c2"></span><span>Visual direction moodboard</span></li><li class="c1"><span class="c2"></span><span>2–4 finished key screens</span></li></ul></div>
+</div>
+<div class="c38">
+<div class="c13"><p class="c4">What we need from you</p><p class="c39">Your impressions and your choice of the direction that best fits your brand.</p></div>
+<div class="c13"><p class="c4">Approval gate</p><p class="c40"><span class="c41"></span>Visual direction approved</p></div>
+</div>
+</div>
+<footer class="c14">
+<p class="c3">Cyberk Design Process</p>
+<span class="c7">05 / 08</span>
+</footer>
+</div></section>
+<section class="page"><div class="c6">
+<header class="c17">
+<svg role="img" aria-label="Cyberk" width="82" height="15" viewBox="0 0 426 78" class="c18"><use href="#cyberk-logo"></use></svg>
+<p class="c3">Step 03 / 04</p>
+</header>
+<div class="c29">
+<div class="c30">
+<div class="c31">
+<span class="c32">03</span>
+<div class="c33">
+<h1 class="c34">Design System</h1>
+<p class="c3">One rulebook, faster build</p>
+</div>
+<svg aria-hidden="true" width="40" height="46" class="c35"><use href="#cube2"></use></svg>
+</div>
+<div role="img" aria-label="A design system board with colours, type styles and reusable components" style="height: 240px; border-radius: 8px; background: #F4F4F5; display: flex; align-items: center; justify-content: center; gap: 24px; overflow: hidden"><div style="flex: none; width: 600px; height: 200px; box-sizing: border-box; border: 1px solid #E4E4E7; border-radius: 10px; background: #FFFFFF; padding: 16px 20px; display: flex; justify-content: space-between"><div style="display: flex; flex-direction: column; gap: 9px; flex: none; width: 110px"><span class="c19">Colours</span><div class="c15"><div style="flex: none; width: 20px; height: 20px; border-radius: 5px; background: #0F766E"></div><span class="c23">#0F766E</span></div><div class="c15"><div class="c42"></div><span class="c23">#F59E0B</span></div><div class="c15"><div style="flex: none; width: 20px; height: 20px; border-radius: 5px; background: #0A071B"></div><span class="c23">#0A071B</span></div><div class="c15"><div style="flex: none; width: 20px; height: 20px; border-radius: 5px; background: #717070"></div><span class="c23">#717070</span></div><div class="c15"><div style="flex: none; width: 20px; height: 20px; border-radius: 5px; background: #F5EFE3; border: 1px solid #E4E4E7"></div><span class="c23">#F5EFE3</span></div></div><div style="display: flex; flex-direction: column; gap: 12px; flex: none; width: 120px"><span class="c19">Type</span><div class="c44"><span style="flex: none; width: 46px; font-size: 32px; font-weight: 700; line-height: 1; letter-spacing: -0.02em; color: #0A071B">Aa</span><span class="c45">Heading</span></div><div class="c44"><span style="flex: none; width: 46px; font-size: 22px; font-weight: 600; line-height: 1; letter-spacing: -0.02em; color: #0A071B">Aa</span><span class="c45">Title</span></div><div class="c44"><span style="flex: none; width: 46px; font-size: 15px; font-weight: 400; line-height: 1; letter-spacing: -0.02em; color: #0A071B">Aa</span><span class="c45">Body</span></div><div class="c44"><span style="flex: none; width: 46px; font-size: 11px; font-weight: 400; line-height: 1; letter-spacing: -0.02em; color: #0A071B">Aa</span><span class="c45">Caption</span></div></div><div style="display: flex; flex-direction: column; gap: 10px; flex: none; width: 150px"><span class="c19">Components</span><div style="flex: none; width: 150px; height: 28px; box-sizing: border-box; border-radius: 8px; background: #0F766E; border: 1.5px solid #0F766E; display: flex; align-items: center; justify-content: center"><span style="font-size: 10px; font-weight: 600; color: #FFFFFF">Primary button</span></div><div style="flex: none; width: 150px; height: 28px; box-sizing: border-box; border-radius: 8px; background: #FFFFFF; border: 1.5px solid #0F766E; display: flex; align-items: center; justify-content: center"><span style="font-size: 10px; font-weight: 600; color: #0F766E">Secondary button</span></div><div style="flex: none; width: 150px; height: 28px; box-sizing: border-box; border-radius: 8px; background: #FFFFFF; border: 1px solid #C9C9CF; display: flex; align-items: center; padding: 0 10px"><span style="font-size: 10px; color: #717070">Email address</span></div><div style="display: flex; align-items: center; gap: 10px"><div style="flex: none; width: 34px; height: 18px; border-radius: 9px; background: #0F766E; position: relative"><div style="position: absolute; right: 2px; top: 2px; width: 14px; height: 14px; border-radius: 50%; background: #FFFFFF"></div></div><div style="flex: none; width: 18px; height: 18px; border-radius: 5px; background: #0F766E; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5.2 L4.2 7.4 L8 3" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="flex: none; height: 18px; padding: 0 8px; border-radius: 9px; background: #F5EFE3; display: flex; align-items: center"><span style="font-size: 9px; font-weight: 600; color: #0A071B">Tag</span></div></div></div></div></div>
+</div>
+<div class="c37">
+<div><div class="c9"><svg aria-hidden="true" width="11" height="13" class="c10"><use href="#cube3"></use></svg><p class="c11">What we do</p></div><ul class="c12"><li class="c1"><span class="c2"></span><span>Set the rules for colours, fonts and spacing</span></li><li class="c1"><span class="c2"></span><span>Create a ready-made set of buttons, forms and cards to reuse on every screen</span></li><li class="c1"><span class="c2"></span><span>Organise everything so AI coding tools can read it and turn it into code</span></li><li class="c1"><span class="c2"></span><span>Make sure text is easy to read and buttons are easy to tap</span></li></ul></div>
+<div><div class="c9"><svg aria-hidden="true" width="11" height="13" class="c10"><use href="#cube3"></use></svg><p class="c11">What you get</p></div><ul class="c12"><li class="c1"><span class="c2"></span><span>A complete style library in Figma</span></li><li class="c1"><span class="c2"></span><span>Files ready for your developers and AI tools</span></li><li class="c1"><span class="c2"></span><span>A simple guide on how to use it</span></li></ul></div>
+</div>
+<div class="c38">
+<div class="c13"><p class="c4">What we need from you</p><p class="c39">Nothing required. You are welcome to review and comment.</p></div>
+<div class="c13"><p class="c4">Approval gate</p><p class="c40"><span class="c41"></span>Design standards confirmed</p></div>
+</div>
+</div>
+<footer class="c14">
+<p class="c3">Cyberk Design Process</p>
+<span class="c7">06 / 08</span>
+</footer>
+</div></section>
+<section class="page"><div class="c6">
+<header class="c17">
+<svg role="img" aria-label="Cyberk" width="82" height="15" viewBox="0 0 426 78" class="c18"><use href="#cyberk-logo"></use></svg>
+<p class="c3">Step 04 / 04</p>
+</header>
+<div class="c29">
+<div class="c30">
+<div class="c31">
+<span class="c32">04</span>
+<div class="c33">
+<h1 class="c34">Detailed UI &amp; Testing</h1>
+<p class="c3">No screen left unfinished</p>
+</div>
+<svg aria-hidden="true" width="40" height="46" class="c35"><use href="#cube2"></use></svg>
+</div>
+<div role="img" aria-label="Three finished edge-case screens: offline, empty and error" style="height: 240px; border-radius: 8px; background: #F4F4F5; display: flex; align-items: center; justify-content: center; gap: 40px; overflow: hidden"><div class="c56"><div class="c57"><div class="c16"></div><div class="c58"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0A071B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2l20 20"></path><path d="M8.5 16.5a5 5 0 0 1 7 0"></path><path d="M5 12.9a10 10 0 0 1 5.2-2.7"></path><path d="M19 12.9a10 10 0 0 0-2.3-1.6"></path><path d="M2 8.8a15 15 0 0 1 4.2-2.6"></path><path d="M22 8.8A15 15 0 0 0 10.7 5"></path><path d="M12 20h.01"></path></svg><span class="c59">You're offline</span><span class="c60">Check your connection and try again</span></div><div class="c61"><span class="c43">TRY AGAIN</span></div></div><div class="c62"><span class="c36">No internet</span></div></div><div class="c56"><div class="c57"><div class="c16"></div><div class="c58"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0A071B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"></path><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg><span class="c59">Nothing here yet</span><span class="c60">Your bookings will appear here</span></div><div class="c61"><span class="c43">BOOK NOW</span></div></div><div class="c62"><span class="c36">Empty screen</span></div></div><div class="c56"><div class="c57"><div class="c16"></div><div class="c58"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D9212E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg><span class="c59">Something went wrong</span><span class="c60">We couldn't load this page</span></div><div class="c61"><span class="c43">RETRY</span></div></div><div class="c62"><span class="c36">Error</span></div></div></div>
+</div>
+<div class="c37">
+<div><div class="c9"><svg aria-hidden="true" width="11" height="13" class="c10"><use href="#cube3"></use></svg><p class="c11">What we do</p></div><ul class="c12"><li class="c1"><span class="c2"></span><span>Finish every remaining screen in your product</span></li><li class="c1"><span class="c2"></span><span>Design the moments most apps forget: no internet, nothing to show yet, errors</span></li><li class="c1"><span class="c2"></span><span>Polish every detail so the whole app feels finished</span></li><li class="c1"><span class="c2"></span><span>Do a final check with real content on real phones</span></li></ul></div>
+<div><div class="c9"><svg aria-hidden="true" width="11" height="13" class="c10"><use href="#cube3"></use></svg><p class="c11">What you get</p></div><ul class="c12"><li class="c1"><span class="c2"></span><span>Every screen of your app, finished</span></li><li class="c1"><span class="c2"></span><span>A polished, consistent look throughout</span></li><li class="c1"><span class="c2"></span><span>Files ready to hand to your developers</span></li></ul></div>
+</div>
+<div class="c38">
+<div class="c13"><p class="c4">What we need from you</p><p class="c39">Review each screen and send us the final wording.</p></div>
+<div class="c13"><p class="c4">Approval gate</p><p class="c40"><span class="c41"></span>Design signed off for development</p></div>
+</div>
+</div>
+<footer class="c14">
+<p class="c3">Cyberk Design Process</p>
+<span class="c7">07 / 08</span>
+</footer>
+</div></section>
+<section class="page"><div class="c6">
+
+<svg aria-hidden="true" width="420" height="485" class="c63" style="right: -110px; top: 150px"><use href="#cube1"></use></svg>
+<header style="display: flex; justify-content: flex-end"><p class="c3">Contact</p></header>
+<div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 48px; padding-bottom: 72px">
+<p class="c24">Next step</p>
+<h1 style="margin: 0; font-size: 64px; line-height: 1.08; letter-spacing: -0.035em; font-weight: 300">Start with<br><span class="c64">your idea.</span></h1>
+<p style="margin: 0; max-width: 400px; font-size: 17px; line-height: 1.65; color: #717070">A short conversation is all we need to understand the problem and propose the right scope.</p>
+<div style="display: flex; gap: 64px; padding-top: 28px; border-top: 1px solid #0A071B">
+<div class="c67"><p class="c4">Email</p><span class="c68">[Contact email]</span></div>
+<div class="c67"><p class="c4">Phone</p><span class="c68">[Phone number]</span></div>
+</div>
+</div>
+<div style="position: relative; display: flex; justify-content: space-between; align-items: flex-end; padding-top: 16px; border-top: 1px solid #E4E4E7">
+<svg role="img" aria-label="Cyberk" width="120" height="22" viewBox="0 0 426 78" style="height: 22px; width: 120px; display: block"><use href="#cyberk-logo"></use></svg>
+<span class="c7">08 / 08</span>
+</div>
+</div></section>
+</body>
+</html>
