@@ -60,17 +60,18 @@ flowchart LR
 
 | # | Việc | Ai | Đầu ra | Timeline |
 |---|------|----|--------|----------|
-| 1 | Chuẩn bị bàn làm việc, thiết bị sạch sẽ sẵn sàng | Manager | Chỗ ngồi ready | Trước ngày đến |
+| 1 | Chuẩn bị bàn làm việc, kiểm tra và reset sạch thiết bị (không còn dữ liệu/Apple ID của người cũ) | Manager / HR | Chỗ ngồi & máy sạch sẵn sàng | Trước ngày đến |
 | 2 | Thông báo trên group chat nội bộ: "Ngày mai có newbie vào" | Manager | Team biết, chuẩn bị chào đón | Trước ngày đến |
 | 3 | Tạo sẵn email công ty + các tài khoản cần thiết | Manager + HR | Email + password sẵn sàng | Trước ngày đến |
 | 4 | Đích thân đón newbie, dẫn tham quan văn phòng (vệ sinh, nước, nghỉ ngơi) | Buddy | Newbie biết không gian | Sáng |
 | 5 | Giới thiệu sơ lược với các thành viên khác — ice-breaking | Buddy | Phá băng | Sáng |
-| 6 | Bàn giao: email, WiFi, hướng dẫn tạo Chrome Profile + Telegram | Manager/Buddy | Newbie online và nhận được tin nhắn | Sáng |
-| 7 | Rủ newbie ăn trưa cùng team (hoặc nhắc team mời) | Buddy | Không khí thân thiện | Trưa |
-| 8 | Hướng dẫn đăng ký cơm trưa | Buddy | Newbie biết cách đặt cơm | Trưa |
-| 9 | Gửi link tài liệu onboarding, yêu cầu đọc nghiêm túc | Manager | Newbie có tài liệu | Chiều |
-| 10 | Dành 15–30 phút giải thích "luật chơi": Horenso, trang phục, bảo mật | Manager | Newbie nắm quy định cốt lõi | Chiều |
-| 11 | Giao task đầu tiên — nhỏ, đơn giản (clone repo, chạy local, hoặc bài giới thiệu) | Manager | Newbie bắt đầu làm quen workflow | Chiều |
+| 6 | Bàn giao thiết bị làm việc, cùng newbie kiểm tra tình trạng máy/phụ kiện, ký biên bản bàn giao và đảm bảo máy đã được reset sạch (xem [Nhận & Cài đặt máy](../newbie-getting-started/device-setup-handbook.md)) | HR / Manager | Biên bản bàn giao đã ký, máy sạch, đặt mật khẩu & Auto-Lock | Sáng |
+| 7 | Bàn giao: email, WiFi, hướng dẫn tạo Chrome Profile + Telegram | Manager/Buddy | Newbie online và nhận được tin nhắn | Sáng |
+| 8 | Rủ newbie ăn trưa cùng team (hoặc nhắc team mời) | Buddy | Không khí thân thiện | Trưa |
+| 9 | Hướng dẫn đăng ký cơm trưa | Buddy | Newbie biết cách đặt cơm | Trưa |
+| 10 | Gửi link tài liệu onboarding, yêu cầu đọc nghiêm túc | Manager | Newbie có tài liệu | Chiều |
+| 11 | Dành 15–30 phút giải thích "luật chơi": Horenso, trang phục, bảo mật | Manager | Newbie nắm quy định cốt lõi | Chiều |
+| 12 | Giao task đầu tiên — nhỏ, đơn giản (clone repo, chạy local, hoặc bài giới thiệu) | Manager | Newbie bắt đầu làm quen workflow | Chiều |
 
 ---
 
@@ -104,10 +105,11 @@ flowchart LR
 - [ ] Tạo email công ty + mật khẩu khởi tạo
 - [ ] Chỉ định Buddy
 
-### Sáng ngày 1 (Buddy)
+### Sáng ngày 1 (HR + Buddy)
 - [ ] Đích thân đón newbie
 - [ ] Dẫn tham quan văn phòng
 - [ ] Giới thiệu với team (ice-breaking)
+- [ ] Bàn giao máy làm việc, kiểm tra hiện trạng & ký biên bản bàn giao (nhắc newbie đặt mật khẩu, Touch ID, Auto-Lock ≤ 5 phút)
 - [ ] Bàn giao: email, WiFi, Chrome Profile, Telegram
 - [ ] Add vào các nhóm Telegram công ty/dự án
 
@@ -125,5 +127,6 @@ flowchart LR
 ## Liên kết
 
 - [Getting Started — Cẩm nang cho Newbie](../newbie-getting-started/getting-started-handbook.md) — Gửi link này cho newbie đọc
+- [Nhận & Cài đặt máy](../newbie-getting-started/device-setup-handbook.md) — Hướng dẫn newbie kiểm tra thiết bị, bảo mật và cài đặt công cụ
 - [Trang phục](../newbie-getting-started/outfit-handbook.md)
 - [Cơm trưa](../newbie-getting-started/lunch-handbook.md)

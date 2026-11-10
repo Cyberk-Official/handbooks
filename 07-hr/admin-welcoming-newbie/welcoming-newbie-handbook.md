@@ -136,5 +136,6 @@ Nguyên tắc xuyên suốt: **Chuẩn bị trước. Đón tiếp ấm áp. Kh�
 
 - [Quy trình Đón Người Mới](welcoming-newbie-process.md) — Checklist đầy đủ
 - [Getting Started — gửi cho Newbie](../newbie-getting-started/getting-started-handbook.md)
+- [Nhận & Cài đặt máy](../newbie-getting-started/device-setup-handbook.md)
 - [Trang phục](../newbie-getting-started/outfit-handbook.md)
 - [Cơm trưa](../newbie-getting-started/lunch-handbook.md)
