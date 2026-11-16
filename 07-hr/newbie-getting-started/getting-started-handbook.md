@@ -20,11 +20,12 @@ Ngày đầu có thể hơi bỡ ngỡ — bao nhiêu thứ mới, bao nhiêu ng
 
 ## Ngày đầu — Làm gì trước?
 
-Buổi sáng ngày 1 chỉ cần lo **3 thứ**: email, WiFi, và Telegram. Xong 3 cái này là bạn "tồn tại" được trong công ty rồi 😄
+Buổi sáng ngày 1 chỉ cần lo **nhận máy** và **3 thứ**: email, WiFi, và Telegram. Xong bước này là bạn "tồn tại" được trong công ty rồi 😄
 
-1. Liên hệ Manager hoặc Buddy → nhận **email công ty** + **WiFi password**
-2. Tạo một **Chrome Profile riêng** cho công việc → đăng nhập email công ty → bật thông báo Gmail
-3. Cài **Telegram** → join các nhóm công ty và dự án
+1. **Nhận bàn giao, reset máy sạch sẽ & thiết lập bảo mật:** Kiểm tra ngoại quan/phụ kiện cùng HR/Admin, reset toàn bộ máy nếu còn dữ liệu từ người trước, đặt mật khẩu + vân tay, bật tự động khóa màn hình (xem chi tiết tại [Nhận & Cài đặt máy](device-setup-handbook.md))
+2. Liên hệ Manager hoặc Buddy → nhận **email công ty** + **WiFi password**
+3. Tạo một **Chrome Profile riêng** cho công việc → đăng nhập email công ty → bật thông báo Gmail
+4. Cài **Telegram** → join các nhóm công ty và dự án
 
 **✅ Cách tốt:**
 
@@ -107,5 +108,6 @@ Nguyên tắc xuyên suốt: **Chủ động. Hỏi sớm. Đọc tài liệu. K
 ## Liên kết
 
 - [Quy trình Getting Started](getting-started-process.md) — Checklist đầy đủ
+- [Nhận & Cài đặt máy](device-setup-handbook.md) — Kiểm tra thiết bị, bảo mật và cài đặt công cụ chuẩn
 - [Trang phục](outfit-handbook.md) — Mặc gì đi làm
 - [Cơm trưa](lunch-handbook.md) — Cách đăng ký và chi phí
