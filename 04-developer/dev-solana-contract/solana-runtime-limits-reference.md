@@ -35,7 +35,7 @@ Bảng này để tra nhanh các giới hạn của runtime khi làm bước Thi
 | Kích thước tx v1 (SIMD-0385) | 4.096 B; không dùng được ALT; tối đa 12 chữ ký, 64 instruction | Vừa 64 địa chỉ viết thẳng, không cần ALT. CU limit và loaded-data limit nằm trong message config, bỏ trống là 0 | Feature `txv1aq4p…`, bật ở slot 447.120.000 (15/09/2026); nội dung SIMD-0385 | Feature `[V]` 19/11 · chi tiết `[V]` 10/11 |
 | Account bị khóa mỗi tx | 64, cho cả legacy, v0, v1. v0 tính cả account nạp qua ALT | ALT chỉ tiết kiệm byte, không thêm được account. Đây thường là giới hạn chạm trước, không phải số byte | Agave `accounts-db/src/account_locks.rs:14` | `[V]` 10/11 |
 | Account mỗi instruction | 255 | — | SIMD-0406 | `[V]` 10/11 |
-| Độ sâu CPI | 4 tầng CPI (stack height 5, instruction top-level tính là 1) | Mình → aggregator → DEX → Token đã chạm trần. Thêm một program trung gian hoặc mint có TransferHook là vượt | Agave `program-runtime/src/execution_budget.rs:8-18` | `[V]` 10/11 |
+| Độ sâu CPI | 4 tầng CPI (stack height 5, instruction top-level tính là 1) | Mình → Titan → Jupiter → DEX → Token là 5, chạm trần. Chuỗi 4 program (mình → aggregator → DEX → Token) còn dư 1 tầng. Đã ở trần thì thêm một program trung gian hoặc mint có TransferHook là vượt | Agave `program-runtime/src/execution_budget.rs:8-18` | `[V]` 10/11 |
 | Instruction trace mỗi tx | 64, gồm instruction top-level và mọi CPI | Mỗi `emit_cpi!` là một self-CPI, tính 1. Tính event vào ngân sách | Agave `transaction-context/src/lib.rs:26` | `[V]` 10/11 |
 | Compute unit mỗi tx | Tối đa 1.400.000; mặc định 200.000 mỗi instruction | CU là ngân sách chung của cả tx. Đặt CU limit theo simulate | Agave `program-runtime/src/execution_budget.rs:26` | `[V]` 10/11 |
 | Compute unit mỗi block | 100.000.000 (SIMD-0286) | Mỗi account writable tối đa 40% block = 40.000.000 `[ER]` | Feature `P1BCUMpA…`, bật ở slot 435.888.000 | Feature `[V]` 19/11 |
@@ -77,14 +77,14 @@ Bảng này để tra nhanh các giới hạn của runtime khi làm bước Thi
 |---------|-------|
 | Không hard-code rent; program đọc `Rent::get()` | Rent đã giảm hai lần trong 09/2026 và còn giảm tiếp. Doc cũ của Flux từng dùng 6.960 lamports/byte lấy từ một fork, lệch với mainnet |
 | Test giới hạn byte và account của tx trên Surfpool, không trên LiteSVM | LiteSVM (npm 1.6.2) cho một tx v0 2.034 B chạy qua; nó không chặn kích thước packet `[V]` 10/11 |
-| Đo CU trên đúng kiến trúc sBPF sẽ deploy | Số đo trên sBPF v2 không dùng lại được cho bản v3 |
+| Đo CU trên đúng kiến trúc sBPF sẽ deploy | Chưa kiểm số đo trên sBPF v0–v2 có dùng lại được cho bản v3 không `[U]`. Số CU của Flux trước spike đến từ build v0, nên phải đo lại |
 | Trường `status` trong repo SIMD chậm hơn thực tế | SIMD-0437 ghi "Idea" trong khi bước của nó đã chạy trên mainnet. Muốn biết đã bật chưa thì đọc feature account |
 
 ---
 
 ## Cách kiểm lại
 
-Một feature đã bật thì có account trên mainnet do `Feature111…` sở hữu; account không tồn tại nghĩa là chưa bật. Gom mọi địa chỉ vào **một** request, đừng gọi từng cái:
+Feature account do `Feature111…` sở hữu. Account không tồn tại thì chắc chắn chưa bật. Có account thì phải đọc dữ liệu, vì feature đang chờ kích hoạt cũng có account: byte đầu bằng 1 và 8 byte sau là slot kích hoạt (u64 little-endian) mới là đã bật. Gom mọi địa chỉ vào **một** request, đừng gọi từng cái:
 
 ```bash
 curl -s https://api.mainnet-beta.solana.com -X POST -H 'Content-Type: application/json' -d '{
@@ -97,7 +97,7 @@ curl -s https://api.mainnet-beta.solana.com -X POST -H 'Content-Type: applicatio
   ],{"encoding":"jsonParsed"}]}'
 ```
 
-Thứ tự kết quả: sysvar Rent (`lamportsPerByte`), SIMD-0268 (CPI depth 8), tx v1, sBPF v3. Kết quả `null` là chưa bật.
+Thứ tự kết quả: sysvar Rent (`lamportsPerByte`), SIMD-0268 (CPI depth 8), tx v1, sBPF v3. Kết quả `null` là chưa bật. Feature account trả dữ liệu dạng base64, ví dụ `AYCCphoAAAAA` là byte đầu 1 và slot 447.120.000.
 
 Với hằng số trong source: mở file Agave ghi ở cột Nguồn tại tag mà mainnet đang chạy. Kiểm xong thì sửa bảng và ghi ngày mới.
 

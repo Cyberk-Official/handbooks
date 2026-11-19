@@ -116,7 +116,7 @@ html, body { margin: 0; background: #EDEDEF; }
 <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: flex-start; gap: 40px; padding-top: 120px">
 <p class="kicker">A guide for our clients</p>
 <h1 style="margin: 0; font-size: 108px; line-height: 0.98; letter-spacing: -0.045em; font-weight: 300">Solana<br>Contract<br><span style="font-weight: 800">Process</span></h1>
-<p style="margin: 0; max-width: 430px; font-size: 22px; line-height: 1.45; font-weight: 300; color: #717070">From your idea to a verified program on mainnet, with evidence at every gate.</p>
+<p style="margin: 0; max-width: 430px; font-size: 22px; line-height: 1.45; font-weight: 300; color: #717070">From your idea to a build-verified program on mainnet, with evidence at every gate.</p>
 </div>
 <div style="position: relative"><footer class="foot">
 <p>Cyberk Solana Contract Process</p>
@@ -143,7 +143,7 @@ html, body { margin: 0; background: #EDEDEF; }
 <div class="link"><svg width="8" height="30" viewBox="0 0 8 30"><path d="M4 0 L4 26"></path><path d="M1 22 L4 27 L7 22"></path></svg></div>
 <div class="card"><div class="n">03</div><div><div><span class="t">Build</span><span class="tag">· Every instruction tested to fail</span></div><div class="d">Write the program with three layers of tests: unit, mainnet fork and fuzzing</div></div></div>
 <div class="link"><svg width="8" height="30" viewBox="0 0 8 30"><path d="M4 0 L4 26"></path><path d="M1 22 L4 27 L7 22"></path></svg></div>
-<div class="card"><div class="n">04</div><div><div><span class="t">Audit</span><span class="tag">· Authors never self-approve</span></div><div class="d">Independent reviews on frozen code, then fix and re-verify until clean</div></div></div>
+<div class="card"><div class="n">04</div><div><div><span class="t">Audit</span><span class="tag">· Authors never self-approve</span></div><div class="d">Independent internal reviews on frozen code, then fix and re-verify until clean</div></div></div>
 <div class="link"><svg width="8" height="30" viewBox="0 0 8 30"><path d="M4 0 L4 26"></path><path d="M1 22 L4 27 L7 22"></path></svg></div>
 <div class="card"><div class="n">05</div><div><div><span class="t">Launch</span><span class="tag">· Deploy exactly what was audited</span></div><div class="d">Reproducible build of the audited commit, authority moved to your multisig</div></div></div>
 </div>
@@ -259,10 +259,10 @@ html, body { margin: 0; background: #EDEDEF; }
 <svg class="arr" aria-hidden="true" width="28" height="10" viewBox="0 0 28 10" fill="none"><path d="M1 5 H25 M21 1 L26 5 L21 9" stroke="#0A071B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 <div class="ic ink" style="width: 236px; height: 180px; gap: 8px">
 <p class="ict">Measured on a mainnet fork</p>
-<div class="row" style="justify-content: space-between"><span class="ics">Transaction size</span><span class="mono">2,275 / 4,096 B</span></div>
-<div class="meter"><b style="width: 55.5%"></b><u style="left: 100%"></u></div>
-<div class="row" style="justify-content: space-between"><span class="ics">Accounts locked</span><span class="mono">60 / 64</span></div>
-<div class="meter"><b style="width: 93.7%"></b><u style="left: 100%"></u></div>
+<div class="row" style="justify-content: space-between"><span class="ics">Transaction size</span><span class="mono">1,877 / 4,096 B</span></div>
+<div class="meter"><b style="width: 45.8%"></b><u style="left: 100%"></u></div>
+<div class="row" style="justify-content: space-between"><span class="ics">Accounts locked</span><span class="mono">49 / 64</span></div>
+<div class="meter"><b style="width: 76.6%"></b><u style="left: 100%"></u></div>
 <div class="row" style="justify-content: space-between"><span class="ics">Compute units</span><span class="mono">332k / 1.4M</span></div>
 <div class="meter"><b style="width: 23.7%"></b><u style="left: 100%"></u></div>
 <div style="flex: 1"></div>
@@ -428,7 +428,7 @@ html, body { margin: 0; background: #EDEDEF; }
 <div class="colh"><svg aria-hidden="true" width="11" height="13"><use href="#cube3"></use></svg><p>What we do</p></div>
 <ul class="list">
 <li><i></i><span>Freeze the code at one commit and brief the reviewers in neutral language</span></li>
-<li><i></i><span>Run independent reviews: each reviewer works alone and reports separately</span></li>
+<li><i></i><span>Run independent internal reviews: each reviewer works alone and reports separately</span></li>
 <li><i></i><span>Merge and triage the findings, then fix them</span></li>
 <li><i></i><span>Re-verify every fix by someone who did not write it, until nothing new appears</span></li>
 </ul>
@@ -443,7 +443,7 @@ html, body { margin: 0; background: #EDEDEF; }
 </div>
 </div>
 <div class="bottom">
-<div><p class="label">What we need from you</p><p class="need">Your decision on any risk we propose to accept, and on whether to add an external audit.</p></div>
+<div><p class="label">What we need from you</p><p class="need">Your decision on any risk we propose to accept, and on whether to add a third-party audit on top of this internal one.</p></div>
 <div><p class="label">Approval gate</p><p class="gate"><i></i><span>No critical or high finding left open</span></p></div>
 </div>
 </div>
@@ -490,8 +490,8 @@ html, body { margin: 0; background: #EDEDEF; }
 <div>
 <div class="colh"><svg aria-hidden="true" width="11" height="13"><use href="#cube3"></use></svg><p>What we do</p></div>
 <ul class="list">
-<li><i></i><span>Rehearse the full launch on devnet with your real multisig setup</span></li>
 <li><i></i><span>Build the program in Docker from the audited commit and record its hash</span></li>
+<li><i></i><span>Rehearse the full launch on devnet with that build and your real multisig setup</span></li>
 <li><i></i><span>Deploy to mainnet and move the upgrade authority to your multisig</span></li>
 <li><i></i><span>Show that the on-chain hash matches the audited build</span></li>
 </ul>
@@ -499,7 +499,7 @@ html, body { margin: 0; background: #EDEDEF; }
 <div>
 <div class="colh"><svg aria-hidden="true" width="11" height="13"><use href="#cube3"></use></svg><p>What you get</p></div>
 <ul class="list">
-<li><i></i><span>Verified program on mainnet, authority in your multisig</span></li>
+<li><i></i><span>Build-verified program on mainnet, authority in your multisig</span></li>
 <li><i></i><span>IDL, generated client and runbooks: deploy, upgrade, pause, incident</span></li>
 <li><i></i><span>Audit reports and the accepted-risk list</span></li>
 </ul>
@@ -526,14 +526,14 @@ html, body { margin: 0; background: #EDEDEF; }
 <div class="rules-top">
 <p class="kicker">Measure before trusting</p>
 <h1 class="title">7 rules we don't break</h1>
-<p class="lead" style="max-width: 600px">A contract bug costs money and cannot be patched like a web bug. Every technical claim we hand you is labelled verified, inferred or unknown, and the rules below come from what real project work has taught us.</p>
+<p class="lead" style="max-width: 600px">A contract bug costs money and cannot be patched like a web bug. Every technical claim we hand you is labelled verified, inferred or unknown, and the rules below are the ones we hold ourselves to.</p>
 </div>
 <div class="rule"><div class="n">01</div><h3>No program code before the design is measured and reviewed</h3><p>Changing a document is cheap. Changing tested code is not. Design review and measurement both catch serious issues before a line is written.</p></div>
-<div class="rule"><div class="n">02</div><h3>The toolchain is pinned</h3><p>Every tool runs the exact binary we will deploy. A test that passes on a different build proves nothing about the one on chain.</p></div>
+<div class="rule"><div class="n">02</div><h3>The toolchain is pinned</h3><p>Every test tool runs the same architecture and toolchain version we deploy, and the final build is smoke-tested again before launch.</p></div>
 <div class="rule"><div class="n">03</div><h3>Every fuzz run has planted bugs</h3><p>A green run only counts once the fuzzer has shown it can catch a bug we put there on purpose.</p></div>
-<div class="rule"><div class="n">04</div><h3>Code is frozen during audit</h3><p>Reviewers cite findings by line at one commit. Editing the code mid-review breaks every reference.</p></div>
+<div class="rule"><div class="n">04</div><h3>Code is frozen during audit</h3><p>An audit report speaks only for the commit it reviewed. Code changed mid-review is code nobody has reviewed.</p></div>
 <div class="rule"><div class="n">05</div><h3>Every fix is re-verified by someone else</h3><p>A fix is new code that nobody has reviewed yet. Re-verification has found new issues inside fixes.</p></div>
-<div class="rule"><div class="n">06</div><h3>Only the Docker build of the audited commit is deployed</h3><p>A reproducible build is what lets anyone confirm that the code on chain is the code that was audited.</p></div>
+<div class="rule"><div class="n">06</div><h3>Only the Docker build of the audited commit is deployed</h3><p>A reproducible build is what lets anyone with the source confirm that the code on chain is the code that was audited.</p></div>
 <div class="rule"><div class="n">07</div><h3>Upgrade authority lives in a multisig</h3><p>Whoever holds it can replace the whole program, so it never sits in one person's wallet.</p></div>
 </div>
 <footer class="foot">
