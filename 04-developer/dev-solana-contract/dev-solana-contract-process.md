@@ -25,7 +25,7 @@ Bug trong contract làm mất tiền của user, và tiền đã mất thì khô
 > `[V]` phải kèm bằng chứng chạy lại được: tx, số đo, `file:dòng` tại một commit, hoặc kết quả RPC.
 
 Tại sao?
-- **Docs và trí nhớ sai nhiều hơn mình nghĩ.** Ở dự án Flux, bản fact-check trên giấy kết luận "swap dùng v0 + ALT"; gửi tx thật trên fork mainnet thì kết luận đảo thành tx v1.
+- **Docs và trí nhớ sai nhiều hơn mình nghĩ.** Ở một dự án Solana Cyberk đã làm (11/2026, trang này gọi là dự án tham chiếu), bản fact-check trên giấy kết luận "swap dùng v0 + ALT"; gửi tx thật trên fork mainnet thì kết luận đảo thành tx v1.
 - **Giới hạn runtime thay đổi.** Con số đúng năm ngoái có thể sai hôm nay, nên số nào cũng cần ngày kiểm.
 - **Người sau biết chỗ nào còn mỏng.** Nhãn `[U]` là việc phải làm, không phải chỗ để trống.
 
@@ -171,7 +171,7 @@ Một vai có thể do người hoặc AI session đảm nhận, và một ngư�
 
 > *Deploy đúng cái đã audit*
 
-> ⚠️ Bước này chưa có bằng chứng từ dự án thật trên mainnet. Flux mới deploy devnet (16/11/2026). Các việc mainnet dưới đây dựa trên tài liệu công khai và lệnh CLI đã kiểm, xem [cẩm nang](./dev-solana-contract-handbook.md#launch-deploy-đúng-cái-đã-audit-nghĩa-là-gì).
+> ⚠️ Bước này chưa có bằng chứng từ dự án thật trên mainnet. Dự án tham chiếu mới deploy devnet (16/11/2026). Các việc mainnet dưới đây dựa trên tài liệu công khai và lệnh CLI đã kiểm, xem [cẩm nang](./dev-solana-contract-handbook.md#launch-deploy-đúng-cái-đã-audit-nghĩa-là-gì).
 
 | # | Việc làm | Ai làm | Đầu ra | Bằng chứng cần lưu |
 |---|----------|--------|--------|-------------------|
@@ -205,16 +205,16 @@ Một vai có thể do người hoặc AI session đảm nhận, và một ngư�
 
 ## Quy tắc cứng (không được vi phạm) + lý do
 
-Các lý do dưới đây lấy từ kinh nghiệm thật của dự án Flux (11/2026), một dự án mới tới devnet. Quy tắc 6 và 7 chưa có bằng chứng từ mainnet.
+Các lý do dưới đây lấy từ kinh nghiệm thật của dự án tham chiếu (11/2026), một dự án mới tới devnet. Quy tắc 6 và 7 chưa có bằng chứng từ mainnet.
 
 | # | Quy tắc | Lý do |
 |---|---------|-------|
-| 1 | **Không code program trước khi Spike xong và thiết kế qua review** | Review thiết kế của Flux bắt 4 finding High trước khi có dòng code nào; spike lật kết luận "v0 + ALT" thành tx v1. Sửa trên doc rẻ hơn sửa code đã test |
+| 1 | **Không code program trước khi Spike xong và thiết kế qua review** | Review thiết kế của dự án tham chiếu bắt 4 finding High trước khi có dòng code nào; spike lật kết luận "v0 + ALT" thành tx v1. Sửa trên doc rẻ hơn sửa code đã test |
 | 2 | **Pin toolchain; mọi công cụ test chạy đúng kiến trúc sBPF và version toolchain sẽ deploy** | Mollusk 0.10 (bản template Anchor kéo về) không đọc được ELF sBPF v3 mà Anchor 1.2 build mặc định. Không pin thì bản đã test khác kiến trúc với bản deploy |
-| 3 | **Fuzz phải có planted control** | Khi Flux thử fuzzer, Trident chạy 1.000 lần lặp trên một program cài sẵn bug mà không bắt được lần nào, cho đến khi sửa harness. Chưa thấy fuzzer bắt được bug cài sẵn thì "xanh" không chứng minh gì |
+| 3 | **Fuzz phải có planted control** | Khi dự án tham chiếu thử fuzzer, Trident chạy 1.000 lần lặp trên một program cài sẵn bug mà không bắt được lần nào, cho đến khi sửa harness. Chưa thấy fuzzer bắt được bug cài sẵn thì "xanh" không chứng minh gì |
 | 4 | **Đóng băng code program trong lúc audit** | Báo cáo audit chỉ nói về code tại commit pin. Code đổi giữa chừng là code chưa ai review |
-| 5 | **Fix xong phải verify lại, bởi người không viết fix** | Lượt verify của Flux: 3/3 reviewer cùng tìm ra một lỗ hổng mới nằm trong chính bản fix của guard oracle |
-| 6 | **Chỉ deploy file `.so` build trong Docker từ commit đã audit** | Ở Flux, build trên macOS không khớp hash với build Docker (Anchor 1.2.2, platform-tools v1.57, Mac arm64). Hash không khớp thì không chứng minh được code on-chain là code đã audit |
+| 5 | **Fix xong phải verify lại, bởi người không viết fix** | Lượt verify của dự án tham chiếu: 3/3 reviewer cùng tìm ra một lỗ hổng mới nằm trong chính bản fix của guard oracle |
+| 6 | **Chỉ deploy file `.so` build trong Docker từ commit đã audit** | Ở dự án tham chiếu, build trên macOS không khớp hash với build Docker (Anchor 1.2.2, platform-tools v1.57, Mac arm64). Hash không khớp thì không chứng minh được code on-chain là code đã audit |
 | 7 | **Upgrade authority không nằm ở ví cá nhân: ở multisig, hoặc đã bỏ hẳn (program bất biến)** | Ai giữ upgrade authority thì thay được toàn bộ code, kể cả phần giữ tiền của user. Role admin lưu trong account cũng theo quy tắc này; key nóng chỉ giữ quyền thu hẹp như pause |
 
 ---
@@ -237,7 +237,7 @@ Các lý do dưới đây lấy từ kinh nghiệm thật của dự án Flux (1
 | # | Câu hỏi |
 |---|---------|
 | 1 | Timeline của từng bước |
-| 2 | Số reviewer độc lập tối thiểu ở Audit (Flux dùng 3) |
+| 2 | Số reviewer độc lập tối thiểu ở Audit (dự án tham chiếu dùng 3) |
 | 3 | Khi nào bắt buộc audit bên ngoài ngoài lượt audit nội bộ |
 | 4 | Ngưỡng ký và time_lock mặc định của multisig giữ upgrade authority |
 | 5 | Nơi lưu bằng chứng (đề xuất: thư mục `docs/` trong repo dự án) |
@@ -246,7 +246,7 @@ Các lý do dưới đây lấy từ kinh nghiệm thật của dự án Flux (1
 
 ## Liên kết
 
-- [Cẩm nang: vì sao của từng bước, gotcha, ví dụ từ Flux](./dev-solana-contract-handbook.md)
+- [Cẩm nang: vì sao của từng bước, gotcha, ví dụ từ dự án tham chiếu](./dev-solana-contract-handbook.md)
 - [Bảng giới hạn runtime Solana](./solana-runtime-limits-reference.md)
 - [Quy chuẩn Source Code & Git](../dev-source-code-git/)
 - [Tạo repository mới](../dev-new-repo/)

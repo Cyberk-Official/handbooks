@@ -20,7 +20,7 @@ Bảng này để tra nhanh các giới hạn của runtime khi làm bước Thi
 **Nhãn:** `[V]` đã kiểm (kèm ngày) · `[ER]` suy luận hoặc lấy từ tài liệu, chưa đối chiếu source · `[U]` chưa biết.
 
 **Hai lần kiểm:**
-- **10/11/2026** — dự án Flux đọc source Agave (nhánh `master` tại ngày đó), nội dung SIMD và feature account trên mainnet.
+- **10/11/2026** — dự án tham chiếu (xem [cẩm nang](./dev-solana-contract-handbook.md)) đọc source Agave (nhánh `master` tại ngày đó), nội dung SIMD và feature account trên mainnet.
 - **19/11/2026** — đọc lại on-chain bằng một batch RPC tại slot 471.184.938 (mainnet chạy `solana-core 4.4.0`): sysvar Rent và 4 feature account.
 
 ---
@@ -39,7 +39,7 @@ Bảng này để tra nhanh các giới hạn của runtime khi làm bước Thi
 | Instruction trace mỗi tx | 64, gồm instruction top-level và mọi CPI | Mỗi `emit_cpi!` là một self-CPI, tính 1. Tính event vào ngân sách | Agave `transaction-context/src/lib.rs:26` | `[V]` 10/11 |
 | Compute unit mỗi tx | Tối đa 1.400.000; mặc định 200.000 mỗi instruction | CU là ngân sách chung của cả tx. Đặt CU limit theo simulate | Agave `program-runtime/src/execution_budget.rs:26` | `[V]` 10/11 |
 | Compute unit mỗi block | 100.000.000 (SIMD-0286) | Mỗi account writable tối đa 40% block = 40.000.000 `[ER]` | Feature `P1BCUMpA…`, bật ở slot 435.888.000 | Feature `[V]` 19/11 |
-| Loaded accounts data | Mặc định 64 MB và có tính phí | Đặt `loadedAccountsDataSizeLimit` theo simulate. Flux đo được 5–19 MB mỗi route | Báo cáo spike Flux | Mặc định `[ER]` · số đo `[V]` 10/11 |
+| Loaded accounts data | Mặc định 64 MB và có tính phí | Đặt `loadedAccountsDataSizeLimit` theo simulate. Dự án tham chiếu đo được 5–19 MB mỗi route | Báo cáo spike dự án tham chiếu | Mặc định `[ER]` · số đo `[V]` 10/11 |
 | Chữ ký precompile ed25519 | Tối đa 8 mỗi tx | Ảnh hưởng thiết kế ký message off-chain | SIMD-0152 | `[V]` 10/11 |
 
 ### Account và rent
@@ -54,7 +54,7 @@ Bảng này để tra nhanh các giới hạn của runtime khi làm bước Thi
 
 | Giới hạn | Giá trị | Hệ quả khi thiết kế | Nguồn | Nhãn |
 |----------|---------|---------------------|-------|------|
-| Stack frame | 4.096 B mỗi frame | **Vượt thì build vẫn thành công**, chỉ in một dòng `overflows the maximum allowed frame space`, program chạy với hành vi không xác định. Box struct lớn, tách hàm `#[inline(never)]` | Flux tái hiện trên Anchor 1.2.2 | `[V]` 12/11 |
+| Stack frame | 4.096 B mỗi frame | **Vượt thì build vẫn thành công**, chỉ in một dòng `overflows the maximum allowed frame space`, program chạy với hành vi không xác định. Box struct lớn, tách hàm `#[inline(never)]` | Dự án tham chiếu tái hiện trên Anchor 1.2.2 | `[V]` 12/11 |
 | Heap | 32 KB mặc định | Không cấp phát theo kích thước dữ liệu mà người ngoài nới được | Skill `solana-dev` v2.8.0 | `[ER]` |
 | Kiến trúc sBPF | v3 chạy được trên mainnet. Anchor 1.2.2 build v3 mặc định; `cargo build-sbf` gọi trực tiếp mặc định v0. v0–v2 vẫn deploy được | Mọi công cụ test phải chạy được đúng kiến trúc sẽ deploy | Feature `5cC3foj7…`, bật ở slot 428.976.000 (26/06/2026) | Feature `[V]` 19/11 · mặc định của tool `[V]` 10/11 |
 
@@ -75,9 +75,9 @@ Bảng này để tra nhanh các giới hạn của runtime khi làm bước Thi
 
 | Quy tắc | Lý do |
 |---------|-------|
-| Không hard-code rent; program đọc `Rent::get()` | Rent đã giảm hai lần trong 09/2026 và còn giảm tiếp. Doc cũ của Flux từng dùng 6.960 lamports/byte lấy từ một fork, lệch với mainnet |
+| Không hard-code rent; program đọc `Rent::get()` | Rent đã giảm hai lần trong 09/2026 và còn giảm tiếp. Doc cũ của dự án tham chiếu từng dùng 6.960 lamports/byte lấy từ một fork, lệch với mainnet |
 | Test giới hạn byte và account của tx trên Surfpool, không trên LiteSVM | LiteSVM (npm 1.6.2) cho một tx v0 2.034 B chạy qua; nó không chặn kích thước packet `[V]` 10/11 |
-| Đo CU trên đúng kiến trúc sBPF sẽ deploy | Chưa kiểm số đo trên sBPF v0–v2 có dùng lại được cho bản v3 không `[U]`. Số CU của Flux trước spike đến từ build v0, nên phải đo lại |
+| Đo CU trên đúng kiến trúc sBPF sẽ deploy | Chưa kiểm số đo trên sBPF v0–v2 có dùng lại được cho bản v3 không `[U]`. Số CU của dự án tham chiếu trước spike đến từ build v0, nên phải đo lại |
 | Trường `status` trong repo SIMD chậm hơn thực tế | SIMD-0437 ghi "Idea" trong khi bước của nó đã chạy trên mainnet. Muốn biết đã bật chưa thì đọc feature account |
 
 ---

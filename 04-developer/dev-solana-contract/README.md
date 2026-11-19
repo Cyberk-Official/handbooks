@@ -12,7 +12,7 @@
 | File | Nội dung | Đọc khi |
 |------|----------|---------|
 | [dev-solana-contract-process.md](./dev-solana-contract-process.md) | 5 bước Thiết kế → Spike → Build → Audit → Launch: việc làm, ai làm, đầu ra, bằng chứng, tiêu chí "xong khi", 7 quy tắc cứng | Đang làm dự án, cần biết bước tiếp theo |
-| [dev-solana-contract-handbook.md](./dev-solana-contract-handbook.md) | Vì sao của từng bước, ví dụ tốt/tồi, gotcha, chuyện thật từ dự án Flux | Muốn hiểu lý do, hoặc gặp lỗi lạ |
+| [dev-solana-contract-handbook.md](./dev-solana-contract-handbook.md) | Vì sao của từng bước, ví dụ tốt/tồi, gotcha, chuyện thật từ một dự án Solana Cyberk đã làm | Muốn hiểu lý do, hoặc gặp lỗi lạ |
 | [solana-runtime-limits-reference.md](./solana-runtime-limits-reference.md) | Bảng giới hạn runtime (kích thước tx, số account, CPI depth, CU, rent, stack) kèm ngày kiểm và cách kiểm lại | Cần tra một con số khi thiết kế hoặc spike |
 
 ## Bản gửi khách hàng
@@ -41,4 +41,4 @@ Bản tiếng Việt chưa có. Bản HTML không ghi timeline vì timeline chư
 
 ## Độ tin cậy
 
-Bốn bước đầu dựa trên dự án Flux (11/2026). Bước Launch trên mainnet **chưa có dự án thật kiểm chứng**. Chi tiết ở mục [Nguồn và độ tin cậy](./dev-solana-contract-handbook.md#nguồn-và-độ-tin-cậy) của handbook.
+Bốn bước đầu dựa trên một dự án Solana Cyberk đã làm (11/2026). Bước Launch trên mainnet **chưa có dự án thật kiểm chứng**. Chi tiết ở mục [Nguồn và độ tin cậy](./dev-solana-contract-handbook.md#nguồn-và-độ-tin-cậy) của handbook.

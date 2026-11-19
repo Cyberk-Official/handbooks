@@ -13,10 +13,10 @@ status: Nháp
 **Cập nhật lần cuối:** 2026-11-19
 **Trạng thái:** Nháp
 
-Bạn đang làm theo [quy trình Solana contract](./dev-solana-contract-process.md) và muốn biết vì sao mỗi bước tồn tại, làm thế nào cho đúng, và những chỗ người đi trước đã vấp. Trang này trả lời từng câu đó, phần lớn bằng chuyện thật của dự án Flux (hai program Solana, `flux_registry` và `flux_vault`; doc thiết kế viết cuối 10/2026, từ spike đến lần deploy devnet đầu tiên là 10–16/11/2026).
+Bạn đang làm theo [quy trình Solana contract](./dev-solana-contract-process.md) và muốn biết vì sao mỗi bước tồn tại, làm thế nào cho đúng, và những chỗ người đi trước đã vấp. Trang này trả lời từng câu đó, phần lớn bằng chuyện thật của một dự án Solana Cyberk đã làm, trong trang này gọi là **dự án tham chiếu** (hai program; doc thiết kế viết cuối 10/2026, từ spike đến lần deploy devnet đầu tiên là 10–16/11/2026).
 
 **Nhãn nguồn** dùng trong trang:
-`Flux` đã làm và đo trên dự án Flux · `Skill` skill `solana-dev` v2.8.0 của Solana Foundation · `Audit research` nghiên cứu phương pháp audit nội bộ của Cyberk · `Ngoài` tài liệu công khai · `Chưa kiểm` chưa đọc được nguồn gốc.
+`Dự án` đã làm và đo trên dự án tham chiếu · `Skill` skill `solana-dev` v2.8.0 của Solana Foundation · `Audit research` nghiên cứu phương pháp audit nội bộ của Cyberk · `Ngoài` tài liệu công khai · `Chưa kiểm` chưa đọc được nguồn gốc.
 
 ---
 
@@ -24,14 +24,14 @@ Bạn đang làm theo [quy trình Solana contract](./dev-solana-contract-process
 
 Mỗi claim kỹ thuật trong doc thiết kế, báo cáo spike, báo cáo audit đều mang một nhãn: `[V]` đã kiểm, `[ER]` suy luận, `[U]` chưa biết. `[V]` phải đi kèm thứ người khác chạy lại được.
 
-Lý do không phải hình thức. Ở Flux, một worker đọc docs và SIMD rồi kết luận "swap vẫn dùng v0 + ALT, tx v1 chỉ hợp tx nhỏ" (nhãn `[ER]`). Một worker khác gửi tx swap thật trên fork mainnet, rồi compile tx dạng Flux đầy đủ từ chính các route đó: bản v0 vượt 1.232 B ở route 3-split và 2-hop, còn bản v1 thì mọi route đều vừa 4.096 B. Thiết kế chốt dùng v1. Nếu claim đầu không mang nhãn `[ER]`, không ai biết nó cần được đo. `Flux`
+Lý do không phải hình thức. Ở dự án tham chiếu, một worker đọc docs và SIMD rồi kết luận "swap vẫn dùng v0 + ALT, tx v1 chỉ hợp tx nhỏ" (nhãn `[ER]`). Một worker khác gửi tx swap thật trên fork mainnet, rồi compile tx đầy đủ của dự án (thêm các account riêng của program) từ chính các route đó: bản v0 vượt 1.232 B ở route 3-split và 2-hop, còn bản v1 thì mọi route đều vừa 4.096 B. Thiết kế chốt dùng v1. Nếu claim đầu không mang nhãn `[ER]`, không ai biết nó cần được đo. `Dự án`
 
 **✅ Cách tốt:**
 
 ```
 Tx swap v1, route 2 hop (Titan, DLMM → PumpSwap): 1.891 B / 50 account, dưới trần 4.096 B và 64 account.
 [V] gửi thật trên fork mainnet 10/11/2026, số đo thô trong raw/, lệnh chạy lại ở §7.
-Thêm 6 account của Flux thì thành 2.158 B / 57 account. [V] compile, chưa gửi.
+Thêm 6 account riêng của program thì thành 2.158 B / 57 account. [V] compile, chưa gửi.
 ```
 
 Tại sao tốt: có con số, có điều kiện đo, có ngày, có chỗ để chạy lại, và tách rõ số đã gửi với số mới compile.
@@ -42,7 +42,7 @@ Tại sao tốt: có con số, có điều kiện đo, có ngày, có chỗ đ�
 Với ALT, số account không bị giới hạn ở 34: protocol X chạy tới 103 account [V]
 ```
 
-Tại sao tồi: câu này nằm trong doc thiết kế đầu tiên của Flux, mang nhãn `[V]`, và vẫn sai. Con số 103 là số account meta đếm lặp qua các instruction, không phải số account khác nhau; mỗi tx khóa tối đa 64 account, tính cả account nạp qua ALT. Nhãn `[V]` mà không ghi đo cái gì, bằng cách nào thì không ai kiểm lại được, và đo nhầm đơn vị vẫn ra một con số trông rất thật. `Flux`
+Tại sao tồi: câu này nằm trong doc thiết kế đầu tiên của dự án tham chiếu, mang nhãn `[V]`, và vẫn sai. Con số 103 là số account meta đếm lặp qua các instruction, không phải số account khác nhau; mỗi tx khóa tối đa 64 account, tính cả account nạp qua ALT. Nhãn `[V]` mà không ghi đo cái gì, bằng cách nào thì không ai kiểm lại được, và đo nhầm đơn vị vẫn ra một con số trông rất thật. `Dự án`
 
 ---
 
@@ -59,12 +59,12 @@ Doc thiết kế cần trả lời đủ bốn nhóm câu hỏi: `Skill`
 | **Từng instruction** | Account nào signer, account nào writable? CPI sang program nào, PDA nào ký? Phát event gì? |
 | **Token và song song** | SPL Token hay Token-2022, xử lý extension nào? Có account global nào bị ghi ở mọi tx không (khóa ghi làm mất tính song song)? |
 
-Bốn bài học thiết kế của Flux: `Flux`
+Bốn bài học thiết kế của dự án tham chiếu: `Dự án`
 
-- **"Ai được đóng account" là câu hỏi bảo mật.** Trên EVM, dấu "grant đã revoke" nằm trong storage mãi mãi. Trên Solana account đóng được, và đóng account làm mất luôn dấu revoke, nên grant có thể bị đăng ký lại. Flux phải thêm một bất biến riêng: grant đã revoke mà chưa hết hạn thì không được đóng.
-- **Mô hình tin cậy phải do owner chốt, kèm đánh đổi.** Owner Flux chọn cả hai program upgradeable, upgrade authority ở một multisig Squads có time_lock. Bảng quyết định ghi thẳng hệ quả: người giữ multisig đó thay được code, nên user phải tin multisig. Không ai phải đoán lại chuyện này về sau.
-- **Chừa chỗ cho tương lai trước lần deploy đầu.** Flux thêm vùng reserved vào các account sống lâu để upgrade sau thêm field mà không phá layout. Grant và WithdrawAddr đến 16/11 mới được thêm, ngay trước lần deploy devnet.
-- **Thứ owner ký off-chain phải đọc được.** Bản đầu của Flux cho owner ký một digest ở lệnh đổi owner. Lượt audit yêu cầu đổi sang message đọc được và từ chối đường chỉ ký digest. Precompile ed25519 kiểm chữ ký trên chuỗi byte bất kỳ, nên ký hash hay ký message đọc được là lựa chọn của người thiết kế.
+- **"Ai được đóng account" là câu hỏi bảo mật.** Trên EVM, dấu "grant đã revoke" nằm trong storage mãi mãi. Trên Solana account đóng được, và đóng account làm mất luôn dấu revoke, nên grant có thể bị đăng ký lại. Dự án tham chiếu phải thêm một bất biến riêng: grant đã revoke mà chưa hết hạn thì không được đóng.
+- **Mô hình tin cậy phải do owner chốt, kèm đánh đổi.** Owner của dự án chọn cả hai program upgradeable, upgrade authority ở một multisig Squads có time_lock. Bảng quyết định ghi thẳng hệ quả: người giữ multisig đó thay được code, nên user phải tin multisig. Không ai phải đoán lại chuyện này về sau.
+- **Chừa chỗ cho tương lai trước lần deploy đầu.** Dự án tham chiếu thêm vùng reserved vào các account sống lâu để upgrade sau thêm field mà không phá layout. Grant và WithdrawAddr đến 16/11 mới được thêm, ngay trước lần deploy devnet.
+- **Thứ owner ký off-chain phải đọc được.** Bản đầu của dự án tham chiếu cho owner ký một digest ở lệnh đổi owner. Lượt audit yêu cầu đổi sang message đọc được và từ chối đường chỉ ký digest. Precompile ed25519 kiểm chữ ký trên chuỗi byte bất kỳ, nên ký hash hay ký message đọc được là lựa chọn của người thiết kế.
 
 **✅ Cách tốt** (ví dụ minh hoạ một dòng của bảng instruction × account):
 
@@ -94,14 +94,14 @@ Tại sao tồi: không có account nào, không có điều kiện nào. Mọi 
 
 Spike là code nháp, viết ra chỉ để trả lời "có chạy được không, tốn bao nhiêu". **Đầu ra của spike là thay đổi trong doc thiết kế, không phải code.** Code spike không đem đi deploy.
 
-Cách làm: `Flux`
+Cách làm: `Dự án`
 
 1. Đặt câu hỏi cụ thể, đo được, lấy từ các giả định `[ER]` / `[U]` của thiết kế.
 2. Dựng harness trên fork mainnet, gửi tx thật, lưu số đo thô ra file kèm lệnh chạy lại.
 3. Ghi luôn gotcha của toolchain gặp trên đường.
 4. Mỗi phát hiện kèm một dòng "sửa ở đâu trong doc thiết kế".
 
-Flux chạy ba spike song song (CPI swap trên fork, fact-check giới hạn runtime và dependency, thử hai fuzzer). Một phần kết quả: `Flux`
+Dự án tham chiếu chạy ba spike song song (CPI swap trên fork, fact-check giới hạn runtime và dependency, thử hai fuzzer). Một phần kết quả: `Dự án`
 
 | Câu hỏi | Đo được | Thiết kế đổi thế nào |
 |---------|---------|----------------------|
@@ -114,7 +114,7 @@ Flux chạy ba spike song song (CPI swap trên fork, fact-check giới hạn run
 
 Các con số giới hạn nằm ở [bảng giới hạn runtime](./solana-runtime-limits-reference.md).
 
-**Review thiết kế trước khi code.** Sau khi doc đã sửa theo số đo, một reviewer phản biện doc cùng báo cáo spike. Lead phân loại từng ý: sửa, không sửa kèm lý do, hoặc hỏi owner. Ở Flux lượt này ra 0 Critical, 4 High, 7 Medium, 1 Low, tất cả trước khi program có dòng code nào. Một finding ví dụ: giá qua nhiều hop phải tính trong miền giá, không cộng tick hay bin của các pool có bin step khác nhau. `Flux`
+**Review thiết kế trước khi code.** Sau khi doc đã sửa theo số đo, một reviewer phản biện doc cùng báo cáo spike. Lead phân loại từng ý: sửa, không sửa kèm lý do, hoặc hỏi owner. Ở dự án tham chiếu lượt này ra 0 Critical, 4 High, 7 Medium, 1 Low, tất cả trước khi program có dòng code nào. Một finding ví dụ: giá qua nhiều hop phải tính trong miền giá, không cộng tick hay bin của các pool có bin step khác nhau. `Dự án`
 
 **✅ Cách tốt:**
 
@@ -141,9 +141,9 @@ Tại sao tồi: không biết khi nào xong, và kết quả sẽ là một bà
 
 Pin đủ: Rust toolchain, Anchor, Solana CLI, platform-tools, **kiến trúc sBPF**, và version của từng crate test, fuzz. Mục tiêu: bản đã test và bản sẽ deploy cùng kiến trúc sBPF và cùng version toolchain. Hai bản này không trùng từng byte (build local và build Docker khác hash, xem mục Launch), nên ở Launch phải chạy lại smoke test trên chính artifact Docker.
 
-Stack Flux đã chạy được (11/2026, sẽ cũ dần): Anchor 1.2.2 build sBPF v3 · Solana CLI 4.1.2 · LiteSVM 0.15 và Mollusk `=0.14.0` cho unit test · Surfpool 1.7.0 cho fork mainnet · Crucible `0.3.0-alpha.1` cho fuzz · Codama + `@solana/kit` sinh client · `solana-verify` 0.5.2 · Squads v4. `Flux`
+Stack dự án tham chiếu đã chạy được (11/2026, sẽ cũ dần): Anchor 1.2.2 build sBPF v3 · Solana CLI 4.1.2 · LiteSVM 0.15 và Mollusk `=0.14.0` cho unit test · Surfpool 1.7.0 cho fork mainnet · Crucible `0.3.0-alpha.1` cho fuzz · Codama + `@solana/kit` sinh client · `solana-verify` 0.5.2 · Squads v4. `Dự án`
 
-Vì sao phải pin từng thứ: template Anchor kéo về Mollusk 0.10, bản này báo `invalid file header` với ELF sBPF v3. Image Docker của `solana-verify` mang platform-tools v1.54 trong khi Anchor dùng v1.57, phải truyền thêm tham số. Không phát hiện sớm thì CI xanh trên một bản build khác kiến trúc hoặc khác toolchain với bản deploy. `Flux`
+Vì sao phải pin từng thứ: template Anchor kéo về Mollusk 0.10, bản này báo `invalid file header` với ELF sBPF v3. Image Docker của `solana-verify` mang platform-tools v1.54 trong khi Anchor dùng v1.57, phải truyền thêm tham số. Không phát hiện sớm thì CI xanh trên một bản build khác kiến trúc hoặc khác toolchain với bản deploy. `Dự án`
 
 ### Thứ tự code
 
@@ -169,15 +169,15 @@ Phần lõi trước (state, phân quyền), phần tích hợp sau (CPI, oracle
 | **Fork** | Surfpool fork mainnet | CPI sang program thật, giới hạn byte và account của tx | Chuỗi thao tác hiếm |
 | **Fuzz** | Crucible | Vi phạm bất biến sau nhiều bước, tổ hợp mà người viết test không nghĩ tới | Thứ không được viết thành bất biến |
 
-Một ví dụ vì sao cần cả fuzz: Flux có một lỗi `UnbalancedInstruction` ở lệnh đổi owner, chỉ xảy ra khi người trả phí và người nhận lại rent là cùng một account. Unit test luôn dùng hai account khác nhau nên không thấy; fuzzer dùng chung một relayer nên bắt được. `Flux`
+Một ví dụ vì sao cần cả fuzz: dự án tham chiếu có một lỗi `UnbalancedInstruction` ở lệnh đổi owner, chỉ xảy ra khi người trả phí và người nhận lại rent là cùng một account. Unit test luôn dùng hai account khác nhau nên không thấy; fuzzer dùng chung một relayer nên bắt được. `Dự án`
 
 ### Planted control
 
 Planted control là một bản build cố tình cài bug (bật bằng cargo feature), dùng để chứng minh fuzzer **có khả năng** bắt loại bug đó. Fuzz xanh mà không có control thì không phân biệt được "program đúng" với "fuzzer mù".
 
-Cách Flux làm: `Flux`
+Cách dự án tham chiếu làm: `Dự án`
 - Mỗi bất biến quan trọng có ít nhất một control. Gate bắt đầu ở 19/19 và tăng dần theo các lượt review: 33/33 tại ngày 16/11/2026.
-- Mỗi control phải bị bắt trong thời gian có trần (Flux đặt dưới 60 giây). Control nào bắt chậm thì sửa harness cho dễ tới, không tăng timeout.
+- Mỗi control phải bị bắt trong thời gian có trần (dự án tham chiếu đặt dưới 60 giây). Control nào bắt chậm thì sửa harness cho dễ tới, không tăng timeout.
 - Finding của audit trở thành control mới, để lần sau không lọt lại.
 - Kiểm kết quả bằng nội dung log (`FUZZ_FINDING`), không bằng exit code.
 
@@ -196,7 +196,7 @@ Tại sao tốt: có cả phép thử dương (bắt được bug) lẫn phép t
 Fuzz chạy 1 giờ, exit code 0, không có crash.
 ```
 
-Tại sao tồi: chưa có gì chứng minh fuzzer tới được chỗ có bug. Khi Flux thử fuzzer, Trident với random đều chạy 1.000 lần lặp trên một program cài sẵn bug zero-deposit mà không bắt được lần nào; đổi sang random có thiên lệch mới bắt được 783/1.000. Thêm nữa, Crucible `0.3.0-alpha.1` thoát với exit code 0 cả khi tìm ra crash, nên exit code cũng không nói lên gì. `Flux`
+Tại sao tồi: chưa có gì chứng minh fuzzer tới được chỗ có bug. Khi dự án tham chiếu thử fuzzer, Trident với random đều chạy 1.000 lần lặp trên một program cài sẵn bug zero-deposit mà không bắt được lần nào; đổi sang random có thiên lệch mới bắt được 783/1.000. Thêm nữa, Crucible `0.3.0-alpha.1` thoát với exit code 0 cả khi tìm ra crash, nên exit code cũng không nói lên gì. `Dự án`
 
 ---
 
@@ -204,7 +204,7 @@ Tại sao tồi: chưa có gì chứng minh fuzzer tới được chỗ có bug.
 
 ### Đóng băng và brief
 
-Chọn một commit pin, đóng băng code program. Báo cáo audit chỉ nói về code tại pin đó: code đổi giữa chừng là code chưa ai review, và finding ghi theo `file:dòng` cũng lệch theo. Trong lúc đóng băng, Flux chỉ cho sửa harness fuzz. `Flux`
+Chọn một commit pin, đóng băng code program. Báo cáo audit chỉ nói về code tại pin đó: code đổi giữa chừng là code chưa ai review, và finding ghi theo `file:dòng` cũng lệch theo. Trong lúc đóng băng, dự án tham chiếu chỉ cho sửa harness fuzz. `Dự án`
 
 Brief gửi reviewer gồm: scope kèm commit pin, spec cần đọc, và danh sách **claim có giới hạn** (nói rõ điều gì được khẳng định và điều gì không). Viết bằng ngôn từ trung tính, đứng từ phía người giữ tài sản.
 
@@ -224,13 +224,13 @@ Tại sao tồi: câu này mời reviewer đồng ý. Reviewer nhận sẵn kế
 
 ### Vì sao cần nhiều reviewer độc lập
 
-Mỗi reviewer làm trên bản sao riêng tại pin, không đọc báo cáo của nhau; hash của từng báo cáo được chốt trước khi gộp. Ở lượt 1 của Flux (3 reviewer), trong 19 mục finding có 7 mục chỉ một reviewer tìm ra, gồm cả finding Medium duy nhất. Một lượt đọc không phải là độ phủ. `Flux`
+Mỗi reviewer làm trên bản sao riêng tại pin, không đọc báo cáo của nhau; hash của từng báo cáo được chốt trước khi gộp. Ở lượt 1 của dự án tham chiếu (3 reviewer), trong 19 mục finding có 7 mục chỉ một reviewer tìm ra, gồm cả finding Medium duy nhất. Một lượt đọc không phải là độ phủ. `Dự án`
 
 ### Vì sao fix xong phải verify lại
 
-Lượt 1 của Flux không có Critical hay High. Sau khi fix, cả 3 reviewer verify độc lập: 11 finding được xác nhận đã đóng, nhưng **cả 3 cùng tìm ra một lỗ hổng mới nằm trong chính bản fix** của guard oracle (lỗi logic trong chuỗi clamp). Cả 3 cũng tìm thêm một lỗi chưa có trong báo cáo lượt 1: reader oracle cấp phát bộ nhớ theo dữ liệu mà ai cũng nới được, làm swap hết heap. Bản fix là code mới, chưa ai review; nó cần được review như mọi code khác. `Flux`
+Lượt 1 của dự án tham chiếu không có Critical hay High. Sau khi fix, cả 3 reviewer verify độc lập: 11 finding được xác nhận đã đóng, nhưng **cả 3 cùng tìm ra một lỗ hổng mới nằm trong chính bản fix** của guard oracle (lỗi logic trong chuỗi clamp). Cả 3 cũng tìm thêm một lỗi chưa có trong báo cáo lượt 1: reader oracle cấp phát bộ nhớ theo dữ liệu mà ai cũng nới được, làm swap hết heap. Bản fix là code mới, chưa ai review; nó cần được review như mọi code khác. `Dự án`
 
-Sau khi sạch, Flux chạy thêm một lượt simplify (một người tìm chỗ thừa, một người khác phân xử): program bớt 194 dòng, CU của swap giảm 2,7–5,7%, lượt verify cuối không còn gì trên mức Info. Lượt này là tùy chọn. `Flux`
+Sau khi sạch, dự án tham chiếu chạy thêm một lượt simplify (một người tìm chỗ thừa, một người khác phân xử): program bớt 194 dòng, CU của swap giảm 2,7–5,7%, lượt verify cuối không còn gì trên mức Info. Lượt này là tùy chọn. `Dự án`
 
 ### Gợi ý phương pháp cho reviewer
 
@@ -259,46 +259,46 @@ Thay vì đọc cả repo một lượt, dựng bảng mô hình rồi quét t�
 Lưu ý khi dùng:
 - Tỷ lệ trên là số chung mọi ngôn ngữ, dùng để xếp thứ tự công việc. Riêng Rust trên Solana: 1.603 finding trong cơ sở dữ liệu, 11% là Critical/High; nhóm lỗi lớn nhất là business logic 28%, input validation 15%, accounting 15%, access control 12,5%. Pattern gặp nhiều nhất: thiếu kiểm state, thiếu kiểm input, truyền sai tham số, thiếu phân quyền, account bị khởi tạo lại.
 - Finding do người (hoặc agent) khác cố bác bỏ trước, rồi mới chứng minh. Không có PoC chạy được thì tối đa Medium.
-- Phương pháp bảng và lượt quét là thiết kế từ nghiên cứu, **chưa được đo hiệu quả** trên benchmark. Reviewer của Flux được tự chọn phương pháp.
+- Phương pháp bảng và lượt quét là thiết kế từ nghiên cứu, **chưa được đo hiệu quả** trên benchmark. Reviewer của dự án tham chiếu được tự chọn phương pháp.
 
 ---
 
 ## Launch: deploy đúng cái đã audit nghĩa là gì?
 
-> ⚠️ Flux chưa deploy mainnet. Trong mục này, phần nhãn `Flux` đã kiểm trên devnet hoặc trên máy; phần nhãn `Ngoài` lấy từ tài liệu công khai; các lệnh CLI đã đối chiếu với `--help` của Solana CLI 4.1.2 và `solana-verify` 0.5.2.
+> ⚠️ Dự án tham chiếu chưa deploy mainnet. Trong mục này, phần nhãn `Dự án` đã kiểm trên devnet hoặc trên máy; phần nhãn `Ngoài` lấy từ tài liệu công khai; các lệnh CLI đã đối chiếu với `--help` của Solana CLI 4.1.2 và `solana-verify` 0.5.2.
 
 Là giữ được một chuỗi không đứt: **commit đã audit → build trong Docker → hash của file `.so` → deploy → hash on-chain.** Đứt một mắt thì báo cáo audit không còn nói về code đang chạy.
 
 ### Build artifact
 
-- Build bằng `solana-verify build` trong Docker, cùng kiến trúc sBPF và platform-tools với lúc test. Lấy hash bằng `solana-verify get-executable-hash`. `Flux`
-- **Build trên macOS không khớp hash với Docker** (đã kiểm với Anchor 1.2.2, platform-tools v1.57, Mac arm64; toolchain khác chưa kiểm). Flux so từng byte: thư viện std dựng sẵn của platform-tools nhúng đường dẫn khác nhau giữa macOS và Linux. `Flux`
-- **Build trên một checkout sạch, tách riêng.** Lệnh build mount thư mục đang làm việc suốt thời gian chạy (khoảng 16 phút ở Flux); sửa file trong lúc đó thì thay đổi lọt vào `.so` trong khi hash vẫn ghi tên commit cũ. `Flux`
+- Build bằng `solana-verify build` trong Docker, cùng kiến trúc sBPF và platform-tools với lúc test. Lấy hash bằng `solana-verify get-executable-hash`. `Dự án`
+- **Build trên macOS không khớp hash với Docker** (đã kiểm với Anchor 1.2.2, platform-tools v1.57, Mac arm64; toolchain khác chưa kiểm). Dự án tham chiếu so từng byte: thư viện std dựng sẵn của platform-tools nhúng đường dẫn khác nhau giữa macOS và Linux. `Dự án`
+- **Build trên một checkout sạch, tách riêng.** Lệnh build mount thư mục đang làm việc suốt thời gian chạy (khoảng 16 phút ở dự án tham chiếu); sửa file trong lúc đó thì thay đổi lọt vào `.so` trong khi hash vẫn ghi tên commit cũ. `Dự án`
 - Đừng chạy build thường đè lên artifact sau đó.
-- **Diễn tập và smoke test chạy trên chính artifact này**, không trên bản build local. Script deploy của Flux kiểm hash file `.so` khớp file hash trước khi deploy. `Flux`
-- Nếu program có cargo feature theo cluster thì artifact mainnet là một file khác với file đã diễn tập trên devnet (Flux build vault với `--features devnet` vì vault ghim genesis hash của cluster). Khi đó chạy smoke test của artifact mainnet trên fork mainnet trước khi deploy; Flux chưa làm bước này vì chưa lên mainnet.
+- **Diễn tập và smoke test chạy trên chính artifact này**, không trên bản build local. Script deploy của dự án tham chiếu kiểm hash file `.so` khớp file hash trước khi deploy. `Dự án`
+- Nếu program có cargo feature theo cluster thì artifact mainnet là một file khác với file đã diễn tập trên devnet (dự án tham chiếu build vault với `--features devnet` vì vault ghim genesis hash của cluster). Khi đó chạy smoke test của artifact mainnet trên fork mainnet trước khi deploy; dự án tham chiếu chưa làm bước này vì chưa lên mainnet.
 
 ### Deploy
 
 - Deploy đi qua một buffer account, không atomic. Đứt giữa chừng: tìm buffer bằng `solana program show --buffers`, deploy tiếp với `--buffer`, đóng buffer thừa bằng `solana program close --buffers` để lấy lại SOL. `Ngoài`
-- Keypair của program và của deployer nằm ngoài repo. `Flux`
+- Keypair của program và của deployer nằm ngoài repo. `Dự án`
 
 ### Upgrade authority
 
 - Chuyển sang multisig bằng `solana program set-upgrade-authority`. Vault của multisig là PDA, không ký được, nên phải dùng cờ `--skip-new-upgrade-authority-signer-check`; nhập sai địa chỉ là mất quyền upgrade `[ER]`. Đây là lý do phải diễn tập trên devnet trước.
 - Muốn program bất biến thì dùng `--final`. Không đảo ngược được.
 - Kiểm lại bằng `solana program show <PROGRAM_ID>`.
-- **Khởi tạo state trước khi chuyển authority.** Ở Flux, `init_config` đòi signer là upgrade authority để người ngoài không gọi trước được. Chuyển authority (hoặc đặt `--final`) khi chưa init thì chỉ còn init qua multisig, hoặc không init được nữa và phải build lại program với id mới. Script chuyển authority của Flux từ chối chạy khi config chưa tồn tại. `Flux`
-- **Quyền không chỉ là upgrade authority.** Role lưu trong account (admin, pauser, unpauser) cũng phải khớp bảng quyết định. Ở Flux, vault của một multisig giữ cả upgrade authority của hai program lẫn `Config.admin`, và bước kiểm cuối đọc tất cả trong một lần `getMultipleAccounts`. `Flux`
+- **Khởi tạo state trước khi chuyển authority.** Ở dự án tham chiếu, `init_config` đòi signer là upgrade authority để người ngoài không gọi trước được. Chuyển authority (hoặc đặt `--final`) khi chưa init thì chỉ còn init qua multisig, hoặc không init được nữa và phải build lại program với id mới. Script chuyển authority của dự án tham chiếu từ chối chạy khi config chưa tồn tại. `Dự án`
+- **Quyền không chỉ là upgrade authority.** Role lưu trong account (admin, pauser, unpauser) cũng phải khớp bảng quyết định. Ở dự án tham chiếu, vault của một multisig giữ cả upgrade authority của hai program lẫn `Config.admin`, và bước kiểm cuối đọc tất cả trong một lần `getMultipleAccounts`. `Dự án`
 
-Những điều Flux đã kiểm trong source của Squads v4: `Flux`
+Những điều dự án tham chiếu đã kiểm trong source của Squads v4: `Dự án`
 - time_lock đếm từ lúc đủ ngưỡng approve, không phải từ lúc tạo proposal.
 - Không có đường tắt qua time_lock trong cùng một multisig. Hệ quả: quyền pause khẩn cấp phải nằm ở một key nóng hoặc một multisig riêng có time_lock 0.
 - Upgrade về sau: ghi buffer, chuyển buffer authority cho vault của multisig, tạo proposal, **so hash của buffer với hash artifact trước khi approve** (`solana-verify get-buffer-hash`), chờ time_lock, execute.
 
-Flux tách ba vai: một multisig có time_lock giữ quyền upgrade và admin, một multisig time_lock 0 giữ quyền unpause, và key nóng chỉ được pause và thu hẹp quyền. Owner chốt time_lock mainnet 3.600 giây, thấp hơn mức mà chuẩn bên dưới đặt cho protocol lớn; đánh đổi này được ghi trong bảng quyết định. `Flux`
+Dự án tham chiếu tách ba vai: một multisig có time_lock giữ quyền upgrade và admin, một multisig time_lock 0 giữ quyền unpause, và key nóng chỉ được pause và thu hẹp quyền. Owner chốt time_lock mainnet 3.600 giây, thấp hơn mức mà chuẩn bên dưới đặt cho protocol lớn; đánh đổi này được ghi trong bảng quyết định. `Dự án`
 
-Diễn tập devnet của Flux bắt được một lỗi vận hành: vault của multisig unpause chưa có SOL nên lệnh unpause fail cho đến khi nạp tiền. Lỗi kiểu này chỉ lộ khi chạy thật đủ các bước multisig. `Flux`
+Diễn tập devnet của dự án tham chiếu bắt được một lỗi vận hành: vault của multisig unpause chưa có SOL nên lệnh unpause fail cho đến khi nạp tiền. Lỗi kiểu này chỉ lộ khi chạy thật đủ các bước multisig. `Dự án`
 
 ### Chuẩn tham khảo cho multisig
 
@@ -318,7 +318,7 @@ Bảng này đọc ngày 19/11/2026 qua công cụ đọc web tự động. Tên
 ### Verify
 
 - So `solana-verify get-program-hash <PROGRAM_ID>` với hash artifact.
-- Đăng ký verified build khi authority là multisig: `solana-verify export-pda-tx` với uploader là vault của multisig → execute qua multisig → `solana-verify remote submit-job`. Cờ `--remote` cũ đã bị bỏ và báo lỗi. `Flux`
+- Đăng ký verified build khi authority là multisig: `solana-verify export-pda-tx` với uploader là vault của multisig → execute qua multisig → `solana-verify remote submit-job`. Cờ `--remote` cũ đã bị bỏ và báo lỗi. `Dự án`
 - "Verified" chỉ chứng minh bytecode build từ commit nào. Nó không chứng minh code an toàn. `Ngoài`
 
 **✅ Cách tốt:**
@@ -340,19 +340,19 @@ Tại sao tồi: hash không tái lập được, không ai nối được bản
 
 ## Nhiều Dev hoặc nhiều AI session cùng làm thì chia thế nào?
 
-Flux chạy một lead và ba worker song song. Những quy ước đã giúp tránh giẫm chân nhau: `Flux`
+Dự án tham chiếu chạy một lead và ba worker song song. Những quy ước đã giúp tránh giẫm chân nhau: `Dự án`
 
 - Mỗi worker một git worktree và một branch riêng; chỉ lead merge. Chi tiết branch và commit theo [quy chuẩn Git](../dev-source-code-git/).
 - Chia ranh giới theo crate, thư mục, module ngay từ kế hoạch, để hai người không sửa cùng file.
 - Hai worktree không dùng chung thư mục build: một bản dependency cũ từ cây bên kia đã lọt vào và sinh lỗi biên dịch giả.
 - Mỗi worker một cổng Surfpool cố định; script dừng nếu cổng đang bận, để không ghi nhầm vào fork của người khác.
-- Gom lệnh đọc RPC vào batch, không gọi trong vòng lặp. Không in nội dung `.env` hay URL RPC ra output: ở Flux một API key đã lọt vào output của công cụ và phải xoay.
+- Gom lệnh đọc RPC vào batch, không gọi trong vòng lặp. Không in nội dung `.env` hay URL RPC ra output: ở dự án tham chiếu một API key đã lọt vào output của công cụ và phải xoay.
 
 ---
 
 ## Gotcha thực tế
 
-Đều đã tái hiện ở Flux trên Anchor 1.2.2 và Solana CLI 4.1.2 (11/2026). Version khác có thể khác. `Flux`
+Đều đã tái hiện ở dự án tham chiếu trên Anchor 1.2.2 và Solana CLI 4.1.2 (11/2026). Version khác có thể khác. `Dự án`
 
 | Hiện tượng | Nguyên nhân | Cách tránh |
 |------------|-------------|------------|
@@ -363,7 +363,7 @@ Flux chạy một lead và ba worker song song. Những quy ước đã giúp tr
 | Program "thành công" trong 2 CU mà không làm gì | Trên Surfpool, set program account trước programdata | Nạp programdata trước |
 | Program thứ hai trong fuzz chạy nhầm binary | `--program-so` của Crucible thay byte của mọi program được nạp | Nạp program phụ bằng đường khác |
 | Tx có ed25519 fail trong unit test | LiteSVM chỉ chạy precompile khi bật feature `precompiles` | Bật feature |
-| Một phép tính tốn 65k CU | Thư viện U256 tốn khoảng 1,1k CU mỗi phép nhân | Viết lại phép nhân 128×128; Flux giảm còn 12k CU |
+| Một phép tính tốn 65k CU | Thư viện U256 tốn khoảng 1,1k CU mỗi phép nhân | Viết lại phép nhân 128×128; dự án tham chiếu giảm còn 12k CU |
 | Planted control lúc bắt lúc không | Đổi harness làm xáo trộn tìm kiếm với seed cố định, khi bug nằm sâu nhiều bước | Sửa trạng thái khởi đầu cho dễ tới, không tăng timeout |
 | Fuzz treo hàng giờ, giữ khóa CI | Crucible bản alpha đôi khi không tự dừng | Bọc mọi lần chạy bằng một trần thời gian cứng |
 
@@ -385,7 +385,7 @@ Flux chạy một lead và ba worker song song. Những quy ước đã giúp tr
 
 | Phần | Nguồn | Độ tin cậy |
 |------|-------|------------|
-| Thiết kế, Spike, Build, Audit | Kế hoạch, báo cáo spike, nhật ký và báo cáo review của Flux (10–16/11/2026) | Đã làm thật trên một dự án |
+| Thiết kế, Spike, Build, Audit | Kế hoạch, báo cáo spike, nhật ký và báo cáo review của dự án tham chiếu (10–16/11/2026) | Đã làm thật trên một dự án |
 | Checklist lỗ hổng, câu hỏi thiết kế | Skill `solana-dev` v2.8.0 | Tài liệu của Solana Foundation, chưa đối chiếu lại từng mục |
 | Bảng mô hình, lượt quét, số liệu finding | Nghiên cứu audit nội bộ Cyberk (11/2026) | Số liệu từ cơ sở dữ liệu finding; phương pháp chưa đo hiệu quả |
 | Launch trên mainnet | Tài liệu công khai, `--help` của CLI | **Chưa có dự án thật kiểm chứng** |
