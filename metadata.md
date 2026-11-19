@@ -22,6 +22,7 @@ Quy ước chung xem [metadata-rule](../../.agents/rules/metadata-rule.md).
 | `handbook` | Tài liệu meta — cách đóng góp, owners, quy trình viết handbook |
 | `process` | Template và hướng dẫn viết quy trình |
 | `template` | Template dùng chung |
+| `policy` | Quy chuẩn, quyết định đã ban hành — bản sao tra cứu của policy repo |
 
 ---
 

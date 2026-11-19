@@ -193,5 +193,6 @@ Không phải ai cũng cần `Admin` permission. Dùng quyền tối thiểu c�
 ## Liên kết
 
 - [Quy trình các bước chi tiết](./dev-new-repo-process.md)
+- [Quy chuẩn Quản lý Source Code và Git](../dev-source-code-git/dev-source-code-git-policy.md) — nguồn chính thức cho tên branch, commit message, quy tắc PR và tag release
 - [Mẫu README, .gitignore, cấu trúc folder](./dev-new-repo-example.md)
 - [Onboarding khi tham gia dự án đã có sẵn](../dev-project-onboarding/dev-project-onboarding-handbook.md)

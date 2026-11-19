@@ -54,6 +54,7 @@ handbook/
 │   └── team-communicate/        #   Horenso — báo cáo, liên lạc, thảo luận
 │
 ├── 💻 04-developer/             # Dành cho Developer
+│   ├── dev-source-code-git/     #   Quy chuẩn Git bắt buộc (CYBERK-DEV-001)
 │   ├── dev-daily/               #   Quản lý công việc cá nhân hàng ngày
 │   ├── dev-project-onboarding/  #   Tham gia dự án mới
 │   ├── dev-project-offboarding/ #   Bàn giao khi Developer rời dự án
