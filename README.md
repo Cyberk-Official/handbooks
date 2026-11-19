@@ -59,7 +59,8 @@ handbook/
 │   ├── dev-project-offboarding/ #   Bàn giao khi Developer rời dự án
 │   ├── dev-daily-report/        #   Viết Daily Report gửi khách hàng
 │   ├── dev-tasks-logs/          #   Tạo & quản lý task trên board (AI-driven)
-│   └── dev-write-brd/           #   Viết BRD khi phát sinh yêu cầu mới
+│   ├── dev-write-brd/           #   Viết BRD khi phát sinh yêu cầu mới
+│   └── dev-solana-contract/     #   Quy trình làm dự án Solana contract
 │
 ├── 🎯 05-product-owner/         # Dành cho Product Owner
 │   ├── po-project-leave/        #   Quy trình thành viên rời dự án
