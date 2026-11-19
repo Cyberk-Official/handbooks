@@ -21,6 +21,8 @@ Tài liệu dành cho **Developer** tại Cyberk. Mọi quy trình, cẩm nang v
 ```
 
 > **Ghi chú:** [dev-project-onboarding/](./dev-project-onboarding/) và [dev-daily-report/](./dev-daily-report/) đọc song song từ bước 3 trở đi.
+>
+> **Theo loại dự án:** làm program Solana thì đọc thêm [dev-solana-contract/](./dev-solana-contract/).
 
 ---
 
@@ -36,3 +38,4 @@ Tài liệu dành cho **Developer** tại Cyberk. Mọi quy trình, cẩm nang v
 | 4 | [dev-write-brd/](./dev-write-brd/) | Khi phát sinh yêu cầu mới — tự document thay vì chờ PO | Developer |
 | 5 | [dev-tasks-logs/](./dev-tasks-logs/) | Tạo & quản lý task trên board bằng AI | Developer |
 | 6 | [dev-project-offboarding/](./dev-project-offboarding/) | Rời dự án — đóng gói code/task, tài liệu, kiểm chứng và chuyển quyền | Developer rời dự án |
+| — | [dev-solana-contract/](./dev-solana-contract/) | Làm dự án Solana contract — Thiết kế → Spike → Build → Audit → Launch, giới hạn runtime | Lead, Dev, Reviewer của dự án Solana |
