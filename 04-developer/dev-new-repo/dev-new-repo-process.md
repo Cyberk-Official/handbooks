@@ -93,6 +93,7 @@ Mỗi dự án tại Cyberk bắt đầu bằng một repository. Tạo sai cấ
 ## Liên kết
 
 - [Cẩm nang tạo repo — cách nghĩ & tốt/tồi](./dev-new-repo-handbook.md)
+- [Quy chuẩn Quản lý Source Code và Git](../dev-source-code-git/dev-source-code-git-policy.md) — nguồn chính thức cho tên branch, commit message, quy tắc PR và tag release
 - [Ví dụ tốt — mẫu README, .gitignore, cấu trúc folder](./dev-new-repo-example.md)
 - [Onboarding dự án cho Developer](../dev-project-onboarding/dev-project-onboarding-process.md)
 - [Board Create — PO khởi tạo board sau khi có repo](../../05-product-owner/po-board-create/board-create-process.md)

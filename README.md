@@ -54,12 +54,14 @@ handbook/
 │   └── team-communicate/        #   Horenso — báo cáo, liên lạc, thảo luận
 │
 ├── 💻 04-developer/             # Dành cho Developer
+│   ├── dev-source-code-git/     #   Quy chuẩn Git bắt buộc (CYBERK-DEV-001)
 │   ├── dev-daily/               #   Quản lý công việc cá nhân hàng ngày
 │   ├── dev-project-onboarding/  #   Tham gia dự án mới
 │   ├── dev-project-offboarding/ #   Bàn giao khi Developer rời dự án
 │   ├── dev-daily-report/        #   Viết Daily Report gửi khách hàng
 │   ├── dev-tasks-logs/          #   Tạo & quản lý task trên board (AI-driven)
-│   └── dev-write-brd/           #   Viết BRD khi phát sinh yêu cầu mới
+│   ├── dev-write-brd/           #   Viết BRD khi phát sinh yêu cầu mới
+│   └── dev-solana-contract/     #   Quy trình làm dự án Solana contract
 │
 ├── 🎯 05-product-owner/         # Dành cho Product Owner
 │   ├── po-project-leave/        #   Quy trình thành viên rời dự án
