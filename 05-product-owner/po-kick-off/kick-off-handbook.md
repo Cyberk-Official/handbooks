@@ -2,7 +2,7 @@
 type: delivery
 tags: [kick-off, handbook, client-management]
 created-date: 2026-08-27
-updated-date: 2026-09-06
+updated-date: 2026-11-16
 author: anderson
 status: Nháp
 ---
@@ -10,7 +10,7 @@ status: Nháp
 # Kick-off với Khách hàng — Cẩm nang cho Product Owner
 
 **Người chịu trách nhiệm:** PO dự án
-**Cập nhật lần cuối:** 2026-08-27
+**Cập nhật lần cuối:** 2026-11-16
 **Trạng thái:** Nháp
 
 Bạn là PO, hợp đồng vừa ký, Internal Planning đã xong. Giờ bạn cần tổ chức buổi Kick-off Meeting chính thức với khách hàng. Đây là **ấn tượng đầu tiên** — client đánh giá team qua buổi này. Chuyên nghiệp hay hời hợt, có chuẩn bị hay bị động — tất cả lộ ra trong 45 phút kick-off.
@@ -189,6 +189,25 @@ Tại sao tốt: Client hiểu methodology (sẽ thấy output mỗi ngày, khô
 
 Tại sao tồi: Client nghe "Agile" hàng chục lần rồi. Không nói gì mới, không tạo giá trị.
 
+#### Dùng tài liệu quy trình Zero to Product
+
+Với dự án Zero to Product, phần này trình bày bằng [tài liệu quy trình](../before-kick-off-docs/cyberk-zero-to-product-en.html). Client đã nhận bản PDF cùng Planning Report, nên bạn **không đọc lại từng trang**. Share màn hình và dừng ở 4 trang:
+
+1. **Overview (trang 02):** 4 bước, mỗi bước kết thúc bằng một mốc duyệt.
+2. **Timeline (trang 07):** nói ngày thật. "Day 01 là thứ Hai 1/12, Launch là ngày 28/12."
+3. **A day, a week, a month (trang 08):** client sẽ nhận gì mỗi ngày, mỗi tuần.
+4. **Change & ownership (trang 10):** đổi ý thì làm thế nào, và code là của client.
+
+✅ Cách tốt:
+> PO share trang Timeline: *"Here's your 30 days on one page. Design and development start together on Monday the 1st. From day 7, you'll see the product in a short demo every day, and your feedback goes straight into the next day's work. Launch day is the 28th: our team stays online for 24 hours after go-live. You'll approve at three points: design and specs on day 6, production review on day 27, and a stable live system on day 29."*
+
+Tại sao tốt: Client nghe ngày cụ thể trên lịch của mình, biết lúc nào mình cần có mặt và lúc nào mình phải duyệt.
+
+❌ Cách tồi:
+> *"We sent you our process document, please read it when you have time."*
+
+Tại sao tồi: Phần lớn client không đọc. Ba tuần sau họ ngạc nhiên vì phải duyệt production review, hoặc không hiểu vì sao một yêu cầu đổi cần báo impact trước.
+
 ### Phần 4: Open Q&A (10 phút)
 
 **Mục đích:** Client hỏi bất cứ gì — kể cả điều họ ngại hỏi.
@@ -250,7 +269,7 @@ Email tổng kết cần có:
 | Gửi plan | Summary text (Approach, Risks, Strategy) + file PDF | Gửi file trơn: "Please see attached" |
 | Team intro | Giới thiệu vai trò cụ thể trong dự án **này** | Đọc chức danh: "PO, Senior Dev, Dev" |
 | Walk-through | Tóm ý chính, highlight risk, mời hỏi | Đọc lại PDF từng trang |
-| Approach | Giải thích methodology + tech choice bằng business language | "We use Agile. Any questions?" |
+| Approach | Giải thích methodology + tech choice bằng business language. Dự án Zero to Product: share tài liệu quy trình, nói ngày thật trên timeline | "We use Agile. Any questions?" / "Please read the process doc" |
 | Q&A | Mời góp ý: "Is there anything you'd like us to do differently?" | "Any questions? No? Ok done." |
 | Next Steps | 3 câu: start date, summary email, first sync | Kết thúc không commit gì cụ thể |
 | Email tổng kết | Gửi trong ngày, structured, có action items table | Gửi hôm sau, đoạn văn dài |
@@ -261,4 +280,5 @@ Email tổng kết cần có:
 
 - [Quy trình kick-off với client — từng bước](./kick-off-process.md)
 - [Mẫu agenda, tin nhắn & email](./kick-off-example.md)
+- [Tài liệu quy trình Zero to Product gửi khách](../before-kick-off-docs/cyberk-zero-to-product-en.html)
 - [Internal Planning — họp nội bộ lập kế hoạch](../po-planning/planning-handbook.md)

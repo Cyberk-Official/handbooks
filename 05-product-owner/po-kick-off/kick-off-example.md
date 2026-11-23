@@ -2,14 +2,14 @@
 type: delivery
 tags: [kick-off, templates, client-management]
 created-date: 2026-08-27
-updated-date: 2026-09-06
+updated-date: 2026-11-16
 author: anderson
 status: Nháp
 ---
 
 # Kick-off với Khách hàng — Mẫu Agenda, Tin nhắn & Email
 
-**Cập nhật lần cuối:** 2026-08-27
+**Cập nhật lần cuối:** 2026-11-16
 **Trạng thái:** Nháp
 
 ---
@@ -80,7 +80,10 @@ Best,
 Hi [Client Name],
 
 Our internal planning session is complete. 
-Please find the attached Planning Report for [Project Name].
+Please find attached:
+  • The Planning Report for [Project Name]
+  • Our Zero to Product process guide: what happens in your
+    first 30 days, from idea to launch
 
 Here's a quick summary:
 
@@ -144,12 +147,13 @@ Below is the agenda for our kick-off meeting on [Date], [Time]:
      — Feature prioritization
      — Task breakdown & ownership
 
-  3. Approach & Strategy Discussion             15 min
-     How we plan to tackle the project:
-     — Development methodology (Agile/Sprint)
-     — Technical approach & architecture
-     — Risk mitigation strategy
-     — Communication & reporting cadence
+  3. How We Work Together                      15 min
+     A walk-through of our Zero to Product process
+     guide (sent with the Planning Report):
+     — Your 30 days on one page: key dates & approvals
+     — Daily demo, weekly and monthly reports
+     — How we handle changes
+     — Technical approach & risk mitigation
 
   4. Open Q&A                                   10 min
      Your questions, concerns, and anything
@@ -230,7 +234,7 @@ NEXT STEPS
 
 ━━━━━━━━━━━━━━━━━━━━━
 
-Attached: Planning Report (PDF), Meeting slides
+Attached: Planning Report (PDF), Zero to Product process guide (PDF), Meeting slides
 
 Please let us know if anything needs to be corrected.
 
