@@ -129,7 +129,7 @@ Một sprint khác, đến thứ 5 có 1 `Todo`, 7 `Doing`, 0 `Done`. Bảy task
 - **Quá nhiều Todo (> 10 tasks)** — Board thành danh sách mong ước, không phải kế hoạch. Developer bị choáng ngợp, không biết bắt đầu từ đâu.
 - **Quá ít Todo (0–1 tasks)** — Developer đang reactive, chờ ai đó giao việc. Thiếu chủ động review Milestone và tự kéo task.
 - **`Doing` > 3 tasks cùng lúc** — Multitasking giả. Context switching giết năng suất. Thực tế không task nào được tập trung.
-- **Task treo `Doing` > 2 ngày liên tục** — Task quá lớn cần breakdown, hoặc bị block mà không báo.
+- **Task treo `Doing` > 2 ngày liên tục** — Task quá lớn cần breakdown, hoặc bị block mà không báo. PO bôi đỏ dòng task đó ngay ở bước Change.
 - **Không có task `Done` trong cả tuần** — Hoặc không cập nhật board, hoặc task quá lớn chưa xong. Cả hai đều là vấn đề.
 - **Board không được mở đầu ngày** — Developer code theo quán tính, không theo ưu tiên. Đây là dấu hiệu nghiêm trọng nhất.
 

@@ -2,7 +2,7 @@
 type: team
 tags: [process, dev-daily, personal-management, board, google-sheet]
 created: 2026-09-02
-updated: 2026-09-01
+updated: 2026-11-26
 author: anderson
 status: Nháp
 ---
@@ -17,15 +17,15 @@ status: Nháp
 
 Hầu hết con người có trí nhớ rất kém. Chúng ta không thể nhớ hết việc cần làm — đặc biệt khi làm việc trong nhiều Epic, nhiều dự án cùng lúc. Não bộ giỏi *suy nghĩ*, nhưng tệ ở việc *lưu trữ*. Nếu bạn đang giữ danh sách công việc trong đầu, bạn sẽ quên — không phải "có thể quên", mà là **chắc chắn sẽ quên**.
 
-Vì vậy, việc đầu tiên của một developer chuyên nghiệp không phải là code giỏi — mà là **quản lý công việc cá nhân**. Và công cụ để làm điều đó chính là **Personal Board** trên GitHub Projects — nơi mọi thứ bạn cần làm, đang làm, và đã xong đều hiển thị rõ ràng trong 1 click.
+Vì vậy, việc đầu tiên của một developer chuyên nghiệp không phải là code giỏi — mà là **quản lý công việc cá nhân**. Và công cụ để làm điều đó chính là **phần task của mình trên board** trên GitHub Projects — nơi mọi thứ bạn cần làm, đang làm, và đã xong đều hiển thị rõ ràng trong 1 click.
 
-> Board cá nhân là "bộ nhớ ngoài" của bạn. Não bạn dùng để giải quyết vấn đề, board dùng để nhớ.
+> Phần task của bạn trên board là "bộ nhớ ngoài" của bạn. Não bạn dùng để giải quyết vấn đề, board dùng để nhớ.
 
 ## Khi nào áp dụng (Trigger)
 
 **Mỗi ngày làm việc — phản xạ đầu tiên.**
 
-Đảm bảo rằng phản xạ đầu tiên khi ngồi vào bàn làm việc của developer **không phải là mở IDE và code**, mà là **mở Personal Board** để:
+Đảm bảo rằng phản xạ đầu tiên khi ngồi vào bàn làm việc của developer **không phải là mở IDE và code**, mà là **mở phần task của mình trên board** để:
 1. Nhìn tổng quan công việc của mình
 2. Lựa chọn việc **quan trọng và khẩn cấp nhất** để làm trước
 3. Cập nhật trạng thái cho những gì đã thay đổi
@@ -60,7 +60,7 @@ flowchart TD
 
 | Vai trò | Chịu trách nhiệm gì |
 |---------|---------------------|
-| Developer | Chủ động quản lý Personal Board của mình: cập nhật status, báo blocker, đảm bảo board phản ánh đúng thực tế |
+| Developer | Chủ động quản lý phần task của mình trên board của mình: cập nhật status, báo blocker, đảm bảo board phản ánh đúng thực tế |
 | Tech Lead / PO | Review board của team để phát hiện bất thường (task treo, overload, board trống), hỗ trợ khi dev bị block |
 
 ---
@@ -71,12 +71,12 @@ flowchart TD
 |---|----------|--------|--------|----------|
 | 1 | **Daily Meeting** — Báo cáo: hôm qua làm gì, hôm nay làm gì, có blocker không | Developer | Team nắm được tiến độ | Đầu ngày |
 | 2 | **⚡ Capture ngay trong meeting** — Trong lúc họp, phát sinh task mới (bug, refactor, việc cần làm)? **Tạo task trên board ngay lập tức** — không chờ PO giao, không ghi giấy "để tạo sau". Đằng nào cũng phải tạo, tạo ngay khi não còn nhớ | Developer | Tasks mới xuất hiện trên board | Ngay trong meeting |
-| 3 | **Mở Personal Board** — Review toàn bộ task của mình trên board (bao gồm task vừa tạo) | Developer | Biết rõ bức tranh tổng thể | Ngay sau meeting |
+| 3 | **Mở phần task của mình trên board** — Review toàn bộ task của mình trên board (bao gồm task vừa tạo) | Developer | Biết rõ bức tranh tổng thể | Ngay sau meeting |
 | 4 | **Phân loại ưu tiên** — Dùng ma trận Quan trọng–Khẩn cấp để chọn task | Developer | Task ưu tiên được chọn | Ngay sau bước 3 |
-| 5 | **Update Board** — Chuyển task ưu tiên sang `In Progress`, cập nhật status chính xác | Developer | Board phản ánh đúng thực tế | Trước khi code |
-| 6 | **Coding** — Thực hiện task, tập trung vào task đang `In Progress` | Developer | Code / deliverable | Trong ngày |
-| 7 | **Xong task → Update Board** — Chuyển `In Progress` → `Done`, pick task tiếp theo | Developer | Board cập nhật, task mới bắt đầu | Ngay khi xong |
-| 8 | **Gặp blocker → Báo ngay** — Thông báo trên Telegram, gắn label/comment trên board | Developer | Blocker visible cho team | Ngay lập tức |
+| 5 | **Update Board** — Chuyển task ưu tiên sang `Doing`, cập nhật status chính xác | Developer | Board phản ánh đúng thực tế | Trước khi code |
+| 6 | **Coding** — Thực hiện task, tập trung vào task đang `Doing` | Developer | Code / deliverable | Trong ngày |
+| 7 | **Xong task → Update Board** — Chuyển `Doing` → `Done`, pick task tiếp theo | Developer | Board cập nhật, task mới bắt đầu | Ngay khi xong |
+| 8 | **Gặp blocker → Báo ngay** — Thông báo trên Telegram, chuyển task sang `Pending` và ghi lý do vào cột Notes | Developer | Blocker visible cho team | Ngay lập tức |
 | 9 | **Cuối ngày — Update Board lần cuối** — Đảm bảo mọi status đúng, chuẩn bị cho Daily Report | Developer | Board sạch, Daily Report có dữ liệu | Cuối ngày |
 
 > **Tại sao phải tạo task ngay trong meeting?**
@@ -86,35 +86,35 @@ flowchart TD
 
 ## Board của bạn đang khỏe hay đang bệnh?
 
-Nhìn vào board cá nhân 5 giây là biết developer đang làm việc hiệu quả hay đang có vấn đề. Dưới đây là 5 cặp ví dụ — bạn đang ở phía nào?
+Nhìn vào phần task của một developer trên board 5 giây là biết developer đang làm việc hiệu quả hay đang có vấn đề. Dưới đây là 5 cặp ví dụ — bạn đang ở phía nào?
 
 ### 1. Số lượng Todo
 
 **❌ Board bệnh:** Todo có **15 tasks** — từ fix CSS button cho đến refactor cả module authentication. Nhìn vào là thấy ngợp, không biết bắt đầu từ đâu. Board trở thành "danh sách mong ước", không phải kế hoạch.
 
-**✅ Board khỏe:** Todo có **4 tasks** cho tuần này — rõ ràng, đếm được trên một bàn tay. Còn lại nằm gọn ở `Backlog`, khi nào xong mới kéo thêm.
+**✅ Board khỏe:** Todo có **4 tasks** cho tuần này — rõ ràng, đếm được trên một bàn tay. Còn lại nằm gọn ở tab sprint tuần sau, khi nào xong mới kéo thêm.
 
-> **Ngưỡng:** 3–5 tasks trong Todo. Quá 10 → đẩy bớt về Backlog. Chỉ 0–1 → bạn đang reactive, chờ người khác giao thay vì chủ động kéo task.
+> **Ngưỡng:** 3–5 tasks trong Todo. Quá 10 → đẩy bớt sang sprint sau. Chỉ 0–1 → bạn đang reactive, chờ người khác giao thay vì chủ động kéo task.
 
 ---
 
-### 2. Số lượng In Progress
+### 2. Số lượng Doing
 
-**❌ Board bệnh:** In Progress có **4 tasks** — "API login", "Fix UI dashboard", "Refactor utils", "Write test". Thực tế? Không task nào được tập trung. Context switching liên tục, mỗi lần chuyển task mất 15–25 phút để lấy lại focus.
+**❌ Board bệnh:** Doing có **4 tasks** — "API login", "Fix UI dashboard", "Refactor utils", "Write test". Thực tế? Không task nào được tập trung. Context switching liên tục, mỗi lần chuyển task mất 15–25 phút để lấy lại focus.
 
-**✅ Board khỏe:** In Progress có **1 task** — "API login". Xong cái này → chuyển sang cái tiếp theo. Một lúc chỉ chiến một mặt trận.
+**✅ Board khỏe:** Doing có **1 task** — "API login". Xong cái này → chuyển sang cái tiếp theo. Một lúc chỉ chiến một mặt trận.
 
-> **Ngưỡng:** Tối đa 2 tasks In Progress. Nhiều hơn = không task nào thực sự được làm.
+> **Ngưỡng:** Tối đa 2 tasks Doing. Nhiều hơn = không task nào thực sự được làm.
 
 ---
 
 ### 3. Task treo quá lâu
 
-**❌ Board bệnh:** Task "Integrate payment gateway" nằm ở `In Progress` đã **5 ngày**. Không comment, không update. Team nghĩ bạn đang làm, bạn thì đang kẹt mà ngại nói.
+**❌ Board bệnh:** Task "Integrate payment gateway" nằm ở `Doing` đã **5 ngày**. Notes trống, không update. Team nghĩ bạn đang làm, bạn thì đang kẹt mà ngại nói.
 
-**✅ Board khỏe:** Task bị kẹt → **ngay lập tức** gắn comment "Blocked: chờ API key từ payment provider, đã ping @PO lúc 10h sáng". Đồng thời pick task khác làm trong lúc chờ — board luôn có task đang chuyển động.
+**✅ Board khỏe:** Task bị kẹt → **ngay lập tức** chuyển `Pending`, ghi Notes "Blocked: chờ API key từ payment provider, đã ping @PO lúc 10h sáng". Đồng thời pick task khác làm trong lúc chờ — board luôn có task đang chuyển động.
 
-> **Ngưỡng:** Task In Progress > 2 ngày → phải breakdown nhỏ hơn hoặc báo blocker ngay.
+> **Ngưỡng:** Task Doing > 2 ngày → PO bôi đỏ trên board. Phải breakdown nhỏ hơn hoặc báo blocker ngay.
 
 ---
 
@@ -130,9 +130,9 @@ Nhìn vào board cá nhân 5 giây là biết developer đang làm việc hiệu
 
 ### 5. Làm việc "ngoài board"
 
-**❌ Board bệnh:** Client nhờ hotfix gấp, bạn nhảy vào fix ngay — mất 3 tiếng. Board vẫn hiện task khác đang `In Progress`. PO hỏi "hôm nay làm gì?" — bạn kể một đống việc không có trên board. Board nói dối.
+**❌ Board bệnh:** Client nhờ hotfix gấp, bạn nhảy vào fix ngay — mất 3 tiếng. Board vẫn hiện task khác đang `Doing`. PO hỏi "hôm nay làm gì?" — bạn kể một đống việc không có trên board. Board nói dối.
 
-**✅ Board khỏe:** Client nhờ hotfix → **tạo task trên board TRƯỚC** (chỉ mất 2 phút), chuyển `In Progress`, rồi mới làm. Xong → chuyển `Done`. Board luôn phản ánh đúng thực tế — 100% thời gian.
+**✅ Board khỏe:** Client nhờ hotfix → **tạo task trên board TRƯỚC** (chỉ mất 2 phút), chuyển `Doing`, rồi mới làm. Xong → chuyển `Done`. Board luôn phản ánh đúng thực tế — 100% thời gian.
 
 > **Nguyên tắc:** Nếu một việc không có trên board, team không biết, PO không biết — khi có vấn đề, không ai giúp bạn được.
 
@@ -146,7 +146,7 @@ Năm quy tắc trên gói lại thành 5 câu không bao giờ vi phạm:
 |---|---------|---------------|
 | 1 | **Phản xạ đầu ngày: mở Board, không phải IDE** | Code trước khi check board = có thể đang làm sai việc |
 | 2 | **Board = thực tế — mọi lúc** | Board nói dối → team nhìn sai → quyết định sai |
-| 3 | **Tối đa 2 task In Progress** | 3+ task "đang làm" = 0 task được tập trung |
+| 3 | **Tối đa 2 task Doing** | 3+ task "đang làm" = 0 task được tập trung |
 | 4 | **Blocker → báo Telegram ngay, không chờ Daily** | Chờ 1 ngày = cả team mất 1 ngày |
 | 5 | **Mọi việc phải có trên board** | Việc "vô hình" = không ai giúp được khi kẹt |
 
@@ -156,8 +156,8 @@ Năm quy tắc trên gói lại thành 5 câu không bao giờ vi phạm:
 
 | Tình huống | Hành động |
 |-----------|----------|
-| Không có task nào trên board (board trống) | Chủ động review Epic còn lại, tự kéo task. Nếu hết task → **báo PO/Tech Lead ngay** trong buổi sáng, không chờ đến hết ngày |
-| Task bị block bởi team khác (Design chưa xong, API chưa có) | Gắn comment blocker trên task, báo Telegram. **Không được ngồi chờ** — pick task khác trong khi đợi |
+| Không có task nào trên board (board trống) | Chủ động review Milestone còn lại, mở tab sprint tuần sau. Nếu hết task → **báo PO/Tech Lead ngay** trong buổi sáng, không chờ đến hết ngày |
+| Task bị block bởi team khác (Design chưa xong, API chưa có) | Chuyển task sang `Pending`, ghi blocker ở cột Notes, báo Telegram. **Không được ngồi chờ** — pick task khác trong khi đợi |
 | Phát sinh công việc ngoài board (client nhờ gấp, hotfix) | Tạo task trên board TRƯỚC khi làm (dù chỉ 5 phút để tạo). Board phải biết bạn đang làm gì |
 | Ước tính sai — task tưởng 2 giờ hóa ra mất 2 ngày | Cập nhật estimate, chia nhỏ task, báo PO/Lead để điều chỉnh sprint |
 

@@ -43,7 +43,7 @@ Board giải quyết 2 vấn đề cốt lõi:
 
 1. **Dev không cần chờ ai giao việc** — mở tab sprint, lọc theo tên mình ở cột Assignee, thấy ngay task nào cần làm hôm nay. Tự chủ, không phụ thuộc.
 
-2. **Vấn đề tự lộ ra** — task kẹt `Doing` quá 3 ngày? Đến thứ 5 vẫn chưa có task nào `Done`? Expected done date đã qua mà Progress mới 50%? Board tự nói cho bạn biết sprint đang có vấn đề — trước khi bất kỳ ai kịp báo cáo.
+2. **Vấn đề tự lộ ra** — task kẹt `Doing` quá 2 ngày *(bôi đỏ)*? Đến thứ 5 vẫn chưa có task nào `Done`? Expected done date đã qua mà Progress mới 50%? Board tự nói cho bạn biết sprint đang có vấn đề — trước khi bất kỳ ai kịp báo cáo.
 
 > **Tiêu chí board tốt:** Một người chưa biết gì về dự án — kể cả khách hàng — mở board ra, **10 giây** biết được: team đang ở sprint nào, ai đang làm gì, có task nào đang kẹt không, deadline tuần này có kịp không.
 
@@ -186,7 +186,9 @@ Bug là các issue của dự án. Cần được phát hiện càng sớm càng
 - Mô tả đầy đủ, rõ ràng sao cho người đọc không cần hỏi lại cũng hiểu được vấn đề.
 - Deadline luôn nằm trong Milestones, và Fix càng sớm càng tốt.
 
-Bug cũng là một task: nằm trong tab sprint, dưới Milestone mà nó thuộc về, có Estimate, Assignee, Expected done date như mọi task khác. Gắn mức độ ở đầu tên task để nhìn là biết gấp hay không — VD Milestone `Trading UI Audit Fixes` của Koto: `[P0] O-1: Start the order form with an empty size...`, `[P1] P-3: Type any leverage directly...`.
+Bug được QA log thành **GitHub Issue** theo chuẩn của [QA Bugs Logs](../../06-qa/qa-bugs-logs/qa-bugs-logs-process.md) — có severity, bước tái hiện, ảnh chụp. GitHub Issue là nơi lưu chi tiết kỹ thuật của bug.
+
+Việc **sửa** bug thì lên board như mọi task khác: nằm trong tab sprint, dưới Milestone mà bug thuộc về, có Estimate, Assignee, Expected done date, và link GitHub Issue ở cột Notes. Gắn mức độ ở đầu tên task để nhìn là biết gấp hay không — VD Milestone `Trading UI Audit Fixes` của Koto: `[P0] O-1: Start the order form with an empty size...`, `[P1] P-3: Type any leverage directly...`. Nhờ vậy bug có giờ trong Estimate, có người nhận, và khách thấy được trong bản PDF.
 
 Người chịu trách nhiệm cho Milestone, thì sẽ chịu trách nhiệm cho bugs thuộc về Milestone đó.
 
@@ -218,5 +220,4 @@ Cần khi: Dự án có ≥ 5 Milestone chạy song song. PO muốn biết "Ligh
 
 - [Quy trình tạo Board](./board-create-process.md) — Luồng `TEMPLATE → ESTIMATE → PLAN`, Board Rule, quy tắc cứng, checklist
 - [Tạo Milestone](../po-milestone-create/milestone-create-handbook.md) — Đặt tên Milestone, tách task, estimate cùng Dev
-- [AI Instruction](./board-create-ai-instruction/board-create-instruction.md) — AI soạn nháp task & Estimate từ PRD
 - [Internal Daily Meeting](../po-internal-daily/internal-daily-process.md) — Cập nhật board hằng ngày, Daily Report, export PDF gửi khách

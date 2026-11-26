@@ -70,48 +70,11 @@ Tại sao tốt: Client biết ngay PO là ai. Hiểu quy trình Cyberk — team
 
 ---
 
-## Gửi plan — summary trước, file sau
+## Gửi tài liệu quy trình & agenda — trước buổi call
 
-Sai lầm lớn nhất khi gửi board sau buổi Planning: gửi file trơn. Client mở PDF 10 trang ra, không biết đọc phần nào quan trọng, lướt qua rồi đóng. Khi buổi kick-off diễn ra, client chưa thực sự đọc plan.
+Board đã được gửi ngay sau buổi [Internal Planning](../po-planning/planning-process.md). Trước buổi kick-off call, PO chỉ cần gửi thêm 2 thứ: **tài liệu quy trình** *(Zero to Product)* để khách hiểu Cyberk sẽ làm gì trong 30 ngày đầu, và **agenda** buổi call ít nhất 1 ngày trước, để khách chuẩn bị câu hỏi.
 
-**Nguyên tắc: summary text đi trước file.** Client đọc summary trong 30 giây, nắm 3 ý chính, rồi mới mở file xem chi tiết nếu muốn.
-
-Ba mục bắt buộc trong summary:
-
-1. **Approach** — Team sẽ tiếp cận dự án thế nào? (Agile? Sprint bao lâu? Feature nào làm trước?)
-2. **Key Risks** — Rủi ro nào đáng lưu ý nhất? Team sẽ xử lý thế nào?
-3. **Strategy** — Chiến lược delivery: ưu tiên gì, tại sao thứ tự này?
-
-Lúc này client đã biết sẽ có buổi kick-off (bạn đã hẹn ở tin nhắn sáng). Nên tin nhắn gửi plan chỉ cần focus vào **nội dung plan** — không cần hỏi lịch lại.
-
-❌ Cách tồi:
-> *"Hi David, please find the attached project board."*
-
-Tại sao tồi: Client mở PDF, lướt qua, đóng lại. Không nắm ý chính, không biết phần nào quan trọng. Buổi kick-off sau đó phải giải thích từ đầu — lãng phí thời gian.
-
-❌ Cũng tồi:
-> *"Hi David, the plan is done. The project has some risks but we'll handle them. Let me know when you're free to call."*
-
-Tại sao tồi: "Some risks but we'll handle them" = mơ hồ, không chuyên nghiệp. "Let me know when you're free" = bị động — bạn đã hỏi lịch ở tin nhắn sáng rồi, đừng hỏi lại.
-
-✅ Cách tốt:
-> PO gửi Telegram kèm file:
->
-> *"Hi David, our internal planning is complete! Here's our project board (PDF attached). Quick summary:*
->
-> *📋 Approach: We'll run 1-week sprints with daily progress updates, starting with the booking flow — the core user journey — before building secondary features like admin reports.*
->
-> *⚠️ Key Risks: The payment gateway API documentation is incomplete. We've allocated a spike in Sprint 1 to validate integration before committing to a timeline for that module.*
->
-> *🎯 Strategy: Key Success Features first (booking, payment, notifications). Nice-to-have features (analytics dashboard) will be prioritized if we have capacity in Sprint 4.*
->
-> *Looking forward to walking you through this in our kick-off call! I'll send the agenda once we confirm the time."*
-
-Tại sao tốt: Client hiểu 3 ý chính trong 30 giây. Risk được frame thành "team đã nghĩ trước và có plan" — không phải "có vấn đề". Nối liền với kick-off call đã hẹn sáng — quy trình mạch lạc.
-
-> Mẫu tin nhắn hoàn chỉnh: xem [kick-off-example.md](./kick-off-example.md)
-
-> **Về agenda kick-off:** Khi client confirm giờ, gửi agenda ít nhất **1 ngày trước buổi call**. Client biết trước sẽ thảo luận gì, chuẩn bị câu hỏi, không bị bất ngờ.
+> Mẫu tin nhắn gửi tài liệu quy trình và agenda: xem [kick-off-example.md](./kick-off-example.md)
 
 ---
 
@@ -267,7 +230,7 @@ Email tổng kết cần có:
 
 |-----------|-----------|-----------| 
 | Tin nhắn ngày đầu | Tự giới thiệu, giải thích 2-step process, hỏi lịch kick-off luôn | Im lặng cả ngày, hoặc gửi tin không giới thiệu mình |
-| Gửi plan | Summary text (Approach, Risks, Strategy) + file PDF | Gửi file trơn: "Please see attached" |
+| Tài liệu quy trình & agenda | Gửi trước buổi call ít nhất 1 ngày | Gửi sát giờ, hoặc không gửi tài liệu quy trình |
 | Team intro | Giới thiệu vai trò cụ thể trong dự án **này** | Đọc chức danh: "PO, Senior Dev, Dev" |
 | Walk-through | Tóm ý chính, highlight risk, mời hỏi | Đọc lại PDF từng trang |
 | Approach | Giải thích methodology + tech choice bằng business language. Dự án Zero to Product: share tài liệu quy trình, nói ngày thật trên timeline | "We use Agile. Any questions?" / "Please read the process doc" |

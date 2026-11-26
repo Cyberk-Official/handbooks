@@ -9,6 +9,7 @@
 |------|------|-------|
 | [planning-process.md](./planning-process.md) | Process | Quy trình planning: `PRIORITY → ASSIGN → SEND` |
 | [planning-handbook.md](./planning-handbook.md) | Handbook | Cách nghĩ khi planning — triết lý, mẫu tốt/tồi |
+| [planning-example.md](./planning-example.md) | Example | Mẫu tin nhắn gửi board cho khách sau buổi Planning |
 
 ## Audience
 

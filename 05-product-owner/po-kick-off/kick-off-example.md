@@ -72,44 +72,25 @@ Best,
 
 ---
 
-## 2. Tin nhắn gửi kèm board (Bước 2)
+## 2. Tin nhắn gửi tài liệu quy trình (Bước 2)
 
-> Gửi **ngay sau** Internal Planning hoàn tất. Không gửi file trơn — phải kèm summary.
+> Board đã được gửi ngay sau Internal Planning *(xem [mẫu tin nhắn gửi board](../po-planning/planning-example.md))*. Tin nhắn này chỉ gửi tài liệu quy trình và chốt giờ kick-off call.
 
 ```
 Hi [Client Name],
 
-Our internal planning session is complete. 
-Please find attached:
-  • The project board for [Project Name] (PDF, you also have view access)
-  • Our Zero to Product process guide: what happens in your
-    first 30 days, from idea to launch
+Ahead of our kick-off call, here's our Zero to Product process
+guide (PDF attached): what happens in your first 30 days,
+from idea to launch, including daily demos and how we handle
+changes. We'll walk through it together during the call.
 
-Here's a quick summary:
-
-📋 Approach
-- [1–2 câu mô tả cách team sẽ tiếp cận dự án]
-- Example: "We'll follow an agile approach with 1-week sprints, 
-  starting with the core user flow before building out secondary features."
-
-⚠️ Key Risks
-- [Risk 1]: [Mitigation plan]
-- [Risk 2]: [Mitigation plan]
-- Example: "Third-party API documentation is incomplete — 
-  we've allocated a spike in Sprint 1 to validate integration."
-
-🎯 Strategy
-- [1–2 câu về chiến lược delivery]
-- Example: "We prioritize the Key Success Features for the first 
-  3 sprints to ensure the core value is deliverable on time."
-
-I'd like to schedule a kick-off call with you to walk through 
-the plan in detail, introduce the team, and discuss the approach. 
-Would any of the following times work?
+Would any of the following times work for the call?
 
   • [Option 1: Date, Time]
   • [Option 2: Date, Time]
   • [Option 3: Date, Time]
+
+I'll send the agenda as soon as we confirm the time.
 
 Best,
 [PO Name]
@@ -149,7 +130,7 @@ Below is the agenda for our kick-off meeting on [Date], [Time]:
 
   3. How We Work Together                      15 min
      A walk-through of our Zero to Product process
-     guide (sent with the project board):
+     guide (sent before this call):
      — Your 30 days on one page: key dates & approvals
      — Daily demo, weekly and monthly reports
      — How we handle changes

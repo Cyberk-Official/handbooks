@@ -237,11 +237,54 @@ Tại sao tốt: Ngày gửi khách là ngày cả team đã cam kết. Chỗ th
 
 Cả team đã cam kết EOD, PO có 1 việc quan trọng nhất: **gửi board cho khách ngay trong ngày**. Không cần soạn một bản Planning Report riêng — board đã có đủ Milestone, task, người phụ trách và deadline. PO chỉ viết thêm [Daily Report](../po-internal-daily/internal-daily-handbook.md) đầu tiên ở đầu tab `sprint_1`, rồi export PDF. Không phải "mai em gửi" — vì ngày mai bạn sẽ quên 30% chi tiết đã thảo luận.
 
-Tin nhắn gửi kèm board viết theo 3 mục Approach, Key Risks, Strategy — xem [Gửi plan — summary trước, file sau](../po-kick-off/kick-off-handbook.md).
-
 Gửi cho 2 nhóm:
 1. **Client** — để xác nhận scope, timeline, và team hiểu đúng yêu cầu
 2. **Leaders (Anderson/COO)** — để nắm tiến độ và hỗ trợ khi cần
+
+### Tin nhắn gửi kèm board — summary trước, file sau
+
+Sai lầm lớn nhất khi gửi board sau buổi Planning: gửi file trơn. Client mở PDF 10 trang ra, không biết đọc phần nào quan trọng, lướt qua rồi đóng. Khi buổi kick-off diễn ra, client chưa thực sự đọc plan.
+
+**Nguyên tắc: summary text đi trước file.** Client đọc summary trong 30 giây, nắm 3 ý chính, rồi mới mở file xem chi tiết nếu muốn.
+
+Ba mục bắt buộc trong summary:
+
+1. **Approach** — Team sẽ tiếp cận dự án thế nào? (Agile? Sprint bao lâu? Feature nào làm trước?)
+2. **Key Risks** — Rủi ro nào đáng lưu ý nhất? Team sẽ xử lý thế nào?
+3. **Strategy** — Chiến lược delivery: ưu tiên gì, tại sao thứ tự này?
+
+Lúc này client đã biết sẽ có buổi kick-off (bạn đã hẹn ở [tin nhắn sáng](../po-kick-off/kick-off-handbook.md)). Nên tin nhắn gửi board chỉ cần focus vào **nội dung plan** — không cần hỏi lịch lại.
+
+❌ Cách tồi:
+> *"Hi David, please find the attached project board."*
+
+Tại sao tồi: Client mở PDF, lướt qua, đóng lại. Không nắm ý chính, không biết phần nào quan trọng. Buổi kick-off sau đó phải giải thích từ đầu — lãng phí thời gian.
+
+❌ Cũng tồi:
+> *"Hi David, the plan is done. The project has some risks but we'll handle them. Let me know when you're free to call."*
+
+Tại sao tồi: "Some risks but we'll handle them" = mơ hồ, không chuyên nghiệp. "Let me know when you're free" = bị động — bạn đã hỏi lịch ở tin nhắn sáng rồi, đừng hỏi lại.
+
+✅ Cách tốt:
+> PO gửi Telegram kèm file:
+>
+> *"Hi David, our internal planning is complete! Here's our project board (PDF attached). Quick summary:*
+>
+> *📋 Approach: We'll run 1-week sprints with daily progress updates, starting with the booking flow — the core user journey — before building secondary features like admin reports.*
+>
+> *⚠️ Key Risks: The payment gateway API documentation is incomplete. We've allocated a spike in Sprint 1 to validate integration before committing to a timeline for that module.*
+>
+> *🎯 Strategy: Key Success Features first (booking, payment, notifications). Nice-to-have features (analytics dashboard) will be prioritized if we have capacity in Sprint 4.*
+>
+> *Looking forward to walking you through this in our kick-off call! I'll send the agenda once we confirm the time."*
+
+Tại sao tốt: Client hiểu 3 ý chính trong 30 giây. Risk được frame thành "team đã nghĩ trước và có plan" — không phải "có vấn đề". Nối liền với kick-off call đã hẹn sáng — quy trình mạch lạc.
+
+> Mẫu tin nhắn hoàn chỉnh: xem [kick-off-example.md](./kick-off-example.md)
+
+> **Về agenda kick-off:** Khi client confirm giờ, gửi agenda ít nhất **1 ngày trước buổi call**. Client biết trước sẽ thảo luận gì, chuẩn bị câu hỏi, không bị bất ngờ.
+
+### Gửi ngay trong ngày
 
 ❌ Cách tồi:
 > PO: *"Ok, em sẽ tổng hợp gửi khách sau nhé."*
@@ -255,8 +298,7 @@ Tại sao tồi: Gửi trễ = chi tiết sai (vì quên). Client lo lắng. Lea
 > - Mọi Key Success Feature đã có Milestone và task chưa?
 > - Mỗi task có Assignee + Expected done date chưa?
 >
-> Viết Daily Report đầu tab `sprint_1`: kế hoạch đã chốt, 2 rủi ro chính kèm giải pháp, 2 câu hỏi cần David trả lời. Export PDF, cấp quyền xem board cho David, gửi vào group `Booking - Cyberk devs`:
-> *"Hi David, here's our project board following today's internal planning 📎 Please review the milestones and timeline, and let us know if anything needs adjustment. We have 2 questions for you in the report at the top — would appreciate your input on those."*
+> Viết Daily Report đầu tab `sprint_1`: kế hoạch đã chốt, 2 rủi ro chính kèm giải pháp, 2 câu hỏi cần David trả lời. Export PDF, cấp quyền xem board cho David, gửi vào group `Booking - Cyberk devs` kèm tin nhắn summary 3 mục Approach, Key Risks, Strategy như trên.
 >
 > Đồng thời gửi qua Telegram cho Anderson:
 > *"Anh ơi, em gửi board dự án Booking Platform. Tổng timeline 3 tháng, team 3 người. Có 2 rủi ro chính: Stripe integration chưa có kinh nghiệm và design chưa final. Em đã có giải pháp cho cả 2. Anh xem có góp ý gì không ạ."*

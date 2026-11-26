@@ -2,7 +2,7 @@
 type: team
 tags: [handbook, dev-daily, personal-management, board, google-sheet]
 created: 2026-09-02
-updated: 2026-09-01
+updated: 2026-11-26
 author: anderson
 status: Nháp
 ---
@@ -52,10 +52,10 @@ quadrantChart
 
 | Góc phần tư | Hành động trên board | Ví dụ |
 |---|---|---|
-| **① LÀM NGAY** (Quan trọng + Khẩn cấp) | Chuyển `In Progress` ngay, làm đầu tiên | Bug production, deadline hôm nay, blocker chặn team |
+| **① LÀM NGAY** (Quan trọng + Khẩn cấp) | Chuyển `Doing` ngay, làm đầu tiên | Bug production, deadline hôm nay, blocker chặn team |
 | **② LÊN KẾ HOẠCH** (Quan trọng + Không khẩn cấp) | Đảm bảo nằm trong `Todo` của sprint, xếp lịch rõ ràng | Feature chính, tech debt quan trọng, code review |
 | **③ LÀM NHANH** (Không quan trọng + Khẩn cấp) | Làm nhanh trong khoảng trống giữa task lớn, không để chiếm cả ngày | Fix nhỏ, respond PR review, trả lời câu hỏi |
-| **④ BỎ / ĐỂ SAU** (Không quan trọng + Không khẩn cấp) | Để ở `Backlog`, không kéo vào sprint trừ khi hết việc | Nice-to-have, refactor không ảnh hưởng |
+| **④ BỎ / ĐỂ SAU** (Không quan trọng + Không khẩn cấp) | Để ở sprint sau, không kéo vào sprint hiện tại trừ khi hết việc | Nice-to-have, refactor không ảnh hưởng |
 
 > **⚠️ Sai lầm phổ biến:** Developer dành cả ngày cho việc ③ (khẩn cấp nhưng không quan trọng) — trả lời chat, fix lỗi nhỏ, review nhanh — rồi cuối ngày không đụng được task ② (quan trọng nhưng chưa gấp). Kết quả: sprint trễ, feature chính bị dồn.
 
@@ -65,15 +65,15 @@ quadrantChart
 
 Mở board ra là nhìn toàn cảnh — không phải để "biết mình có việc gì" (cái đó bạn biết rồi), mà để **chọn đúng việc quan trọng nhất** cho hôm nay. Não bạn sáng sớm còn tỉnh, đừng phí nó vào việc nhỏ.
 
-Cách đọc board: quét nhanh 4 cột (`Backlog` → `Todo` → `In Progress` → `Done`). Tập trung vào `Todo` và `In Progress` — đó là chiến trường hôm nay.
+Cách đọc board: quét nhanh cột Status (`Todo` → `Doing` → `Done`, cộng `Pending`) trên tab sprint hiện tại. Tập trung vào `Todo` và `Doing` — đó là chiến trường hôm nay.
 
 **✅ Cách tốt:**
 
 ```
-Mở Personal Board → thấy 5 task trong Todo.
+Mở tab sprint, lọc cột Assignee theo tên mình → thấy 5 task `Todo`.
 Tự hỏi: "Cái nào quan trọng nhất? Cái nào có deadline gần nhất?"
 → Chọn task [FR-042] Integrate payment API (deadline ngày mai, blocker cho team QA)
-→ Kéo sang In Progress
+→ Chuyển Status sang `Doing`
 → Mở IDE, bắt đầu code task đó
 ```
 
@@ -119,7 +119,7 @@ Tại sao tốt: Mỗi task đủ nhỏ để Done trong ngày. Progress rõ rà
 ```
 Task: "[FR-015] Implement user profile page"
 → Nghĩ: "OK để làm xem sao"
-→ Code 3 ngày, task vẫn In Progress
+→ Code 3 ngày, task vẫn Doing
 → Daily meeting 3 ngày liên tiếp: "Vẫn đang làm profile page"
 → PO hỏi "còn bao lâu?" — trả lời: "Chắc sắp xong"
 ```
@@ -132,7 +132,7 @@ Tại sao tồi: Không ai biết bạn đang ở đâu trong task. "Sắp xong"
 
 Blocker là bình thường — chờ API từ team khác, chờ design, chờ approval. Vấn đề không phải là bị block, mà là **bị block mà im lặng**. Một blocker 5 phút có thể trở thành bottleneck 2 ngày nếu không ai biết.
 
-Nguyên tắc: **báo ngay trên Telegram** + **gắn comment trên task** + **pick task khác làm trong lúc chờ**.
+Nguyên tắc: **báo ngay trên Telegram** + **ghi vào cột Notes của task** + **pick task khác làm trong lúc chờ**.
 
 **✅ Cách tốt:**
 
@@ -140,10 +140,10 @@ Nguyên tắc: **báo ngay trên Telegram** + **gắn comment trên task** + **p
 Đang làm task [FR-042] Integrate payment API
 → Cần API key từ payment provider, đã gửi mail từ hôm qua nhưng chưa có reply
 → Hành động:
-  1. Comment trên task: "Blocked: chờ API key từ Stripe, đã follow up 10:00 AM"
+  1. Chuyển task sang `Pending`, ghi ở Notes: "Blocked: chờ API key từ Stripe, đã follow up 10:00 AM"
   2. Gửi Telegram cho PO: "FR-042 bị block vì chờ API key Stripe.
      Đã follow up. Trong lúc chờ, mình chuyển sang FR-043"
-  3. Chuyển FR-042 về Todo, pick FR-043 vào In Progress
+  3. Chuyển FR-042 về Todo, pick FR-043 vào Doing
 ```
 
 Tại sao tốt: Team biết blocker ngay lập tức. PO có thể escalate nếu cần. Bạn không ngồi chờ — vẫn productive với task khác. Board phản ánh đúng thực tế.
@@ -158,7 +158,7 @@ Tại sao tốt: Team biết blocker ngay lập tức. PO có thể escalate n�
 → PO: "Sao không nói sớm? Mình có thể gọi provider ngay hôm qua mà"
 ```
 
-Tại sao tồi: Mất nguyên 1 ngày vì không báo. PO không biết nên không giúp được. Board vẫn hiện "In Progress" nhưng thực tế bạn không progress gì cả. Cả team mất ít nhất 1 ngày vì một tin nhắn 30 giây không được gửi.
+Tại sao tồi: Mất nguyên 1 ngày vì không báo. PO không biết nên không giúp được. Board vẫn hiện "Doing" nhưng thực tế bạn không progress gì cả. Cả team mất ít nhất 1 ngày vì một tin nhắn 30 giây không được gửi.
 
 ---
 
@@ -171,10 +171,10 @@ Xong sớm là tốt — nhưng "rảnh" không có nghĩa là "chờ". Develope
 ```
 Xong [FR-043] lúc 3h chiều, còn 2 tiếng
 → Mở board → thấy FR-044 đang Todo (deadline tuần sau)
-→ Kéo FR-044 vào In Progress, bắt đầu setup
+→ Chuyển FR-044 sang `Doing`, bắt đầu setup
 → Nếu hết task trong Todo → review PR của đồng nghiệp (góc phần tư ③)
-→ Nếu hết PR → check Backlog, kéo task tiếp vào Todo
-→ Nếu Backlog cũng hết → báo Tech Lead: "Mình hết task, cần việc mới"
+→ Nếu hết PR → mở tab sprint tuần sau, báo PO kéo task tiếp về sprint hiện tại
+→ Nếu sprint sau cũng hết → báo Tech Lead: "Mình hết task, cần việc mới"
 ```
 
 Tại sao tốt: Chủ động, không chờ. Mỗi phút đều productive. Tech Lead thấy bạn tự quản lý được — tin tưởng giao Epic lớn hơn. Sprint nhanh hơn kế hoạch.
@@ -201,8 +201,8 @@ Cuối ngày là lúc "dọn dẹp" board — đảm bảo mọi thứ phản á
 
 ```
 16:55 — trước khi tắt máy:
-1. ✅ Task [FR-044] đã setup xong → chuyển Done, comment "PR #127 merged"
-2. ✅ Task [FR-045] đang làm dở → giữ In Progress, comment:
+1. ✅ Task [FR-044] đã setup xong → chuyển `Done`, Progress 100%, Notes ghi "PR #127 merged"
+2. ✅ Task [FR-045] đang làm dở → giữ `Doing`, cập nhật Progress, ghi Notes:
    "Done: API endpoint + validation. Remaining: unit test (~1h sáng mai)"
 3. ✅ Không có blocker → không cần báo
 4. ✅ Mở Daily Report template → viết report dựa trên board
@@ -215,7 +215,7 @@ Tại sao tốt: Board luôn đúng. Report viết dễ vì nhìn board là th�
 
 ```
 17:00 — tắt máy luôn:
-→ Task đã xong nhưng vẫn In Progress trên board
+→ Task đã xong nhưng vẫn Doing trên board
 → Task mới nhận trong ngày chưa tạo trên board
 → Sáng hôm sau mở board ra: "Ủa cái này mình xong rồi mà?
    Cái kia mình đang làm dở ở đâu nhỉ?"
@@ -232,9 +232,9 @@ Tại sao tồi: Board nói dối — task xong vẫn hiện đang làm, task m�
 |-----------|-----------|
 | **Đầu ngày** | Mở board TRƯỚC, chọn task theo ưu tiên, KHÔNG mở IDE trước |
 | **Task quá to** | Breakdown < 4 giờ mỗi task. "Vẫn đang làm" không phải progress |
-| **Bị block** | Báo Telegram NGAY + comment trên task + pick task khác |
+| **Bị block** | Báo Telegram NGAY + chuyển `Pending`, ghi Notes + pick task khác |
 | **Xong sớm** | Tự pick task tiếp. Không chờ ai giao. Board trống → báo Lead |
-| **Cuối ngày** | 5 phút dọn board: Done đúng, In Progress đúng, report có dữ liệu |
+| **Cuối ngày** | 5 phút dọn board: Done đúng, Doing đúng, report có dữ liệu |
 
 > **Một câu gói gọn tất cả:** Board là sự thật — nếu board không biết, team không biết. Cập nhật board không phải là "việc thêm", mà là cách bạn chứng minh mình đang làm việc.
 

@@ -72,6 +72,7 @@ flowchart LR
 |:------:|---------|------|------------------|
 | **3.1** | [Planning — Cẩm nang cho PO](./po-planning/planning-handbook.md) | Handbook | Tại sao buổi planning quyết định thành bại dự án, cách dẫn team soát kế hoạch & chia việc |
 | **3.2** | [Quy trình Internal Planning](./po-planning/planning-process.md) | Process | Luồng `PRIORITY → ASSIGN → SEND`: chốt Key Success Features, chia việc theo độ quan trọng, cam kết EOD, gửi board cho khách |
+| **3.3** | [Mẫu tin nhắn gửi board](./po-planning/planning-example.md) | Example | Tin nhắn summary (Approach, Key Risks, Strategy) gửi kèm board sau buổi Planning |
 
 #### Chương 4: Kick-off Dự Án với Khách Hàng ([`po-kick-off/`](./po-kick-off/))
 > *Ấn tượng đầu tiên quyết định niềm tin của khách hàng trong suốt dự án — thiết lập kỳ vọng, nhịp làm việc 24h và cách xử lý thay đổi.*
@@ -80,7 +81,7 @@ flowchart LR
 |:------:|---------|------|------------------|
 | **4.1** | [Kick-off với Khách hàng — Cẩm nang](./po-kick-off/kick-off-handbook.md) | Handbook | Cách kiểm soát kỳ vọng, gửi summary trước file và dẫn dắt buổi call |
 | **4.2** | [Quy trình Kick-off Meeting](./po-kick-off/kick-off-process.md) | Process | Luồng 4 bước từ tin nhắn sáng ngày đầu đến email tổng kết sau call |
-| **4.3** | [Mẫu Agenda, Tin nhắn & Email Kick-off](./po-kick-off/kick-off-example.md) | Example | Trọn bộ tin nhắn chào hỏi, summary kèm board, agenda & email recap |
+| **4.3** | [Mẫu Agenda, Tin nhắn & Email Kick-off](./po-kick-off/kick-off-example.md) | Example | Trọn bộ tin nhắn chào hỏi, gửi tài liệu quy trình, agenda & email recap |
 
 ---
 
@@ -134,5 +135,4 @@ Các tài liệu dưới đây là file gửi riêng cho khách hàng, biểu m�
 
 - **Tài liệu gửi khách trước Kick-off:** [cyberk-zero-to-product-en.pdf](./before-kick-off-docs/cyberk-zero-to-product-en.pdf) *(xem hướng dẫn tại [before-kick-off-docs/README.md](./before-kick-off-docs/README.md))*
 - **Biểu mẫu BRD & Báo giá mở rộng (Feature Request):** [feature-request-brd-template.md](./po-feature-request/template/feature-request-brd-template.md)
-- **AI Instruction soạn nháp task cho Board:** [board-create-instruction.md](./po-board-create/board-create-ai-instruction/board-create-instruction.md)
 - **Cẩm nang bàn giao dành riêng cho Member rời dự án:** [po-project-leave-member-handbook.md](./po-project-leave/po-project-leave-member-handbook.md)

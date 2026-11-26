@@ -102,7 +102,6 @@ flowchart LR
 ## Liên kết
 
 - [Cẩm nang Board — Triết lý & cách nghĩ](./board-create-handbook.md) — Vì sao dùng Sheet, 8 cột, các tab, mẹo khi Estimate / Plan, mẫu tốt/tồi
-- [AI Instruction — Soạn nháp task từ PRD](./board-create-ai-instruction/board-create-instruction.md)
 - [Tạo Milestone](../po-milestone-create/milestone-create-handbook.md) — Cách đặt tên, tách task, estimate cùng Dev
 - [Internal Planning — Họp nội bộ](../po-planning/planning-process.md) — Bước tiếp theo: team soát kế hoạch và chia việc
 - [Internal Daily Meeting](../po-internal-daily/internal-daily-process.md) — Cập nhật board hằng ngày, Daily Report và export PDF gửi khách

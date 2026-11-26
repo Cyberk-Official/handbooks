@@ -2,7 +2,7 @@
 type: team
 tags: [handbook, dev-daily, personal-management, board, google-sheet]
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-11-26
 author: anderson
 status: Nháp
 ---
@@ -10,7 +10,7 @@ status: Nháp
 # 🎯 Dev Daily — Quản lý công việc cá nhân cho Developer
 
 > **Đối tượng:** Developer (tất cả level)
-> **Mục đích:** Hướng dẫn developer tự quản lý công việc hàng ngày xoay quanh Project Board (GitHub Projects), đảm bảo minh bạch, chủ động, và không bỏ sót.
+> **Mục đích:** Hướng dẫn developer tự quản lý công việc hàng ngày xoay quanh board dự án (Google Sheet `[Project]-Management`), đảm bảo minh bạch, chủ động, và không bỏ sót.
 
 ---
 

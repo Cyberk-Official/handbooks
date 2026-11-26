@@ -29,7 +29,7 @@ Ngay sau khi [Internal Planning](../po-planning/planning-process.md) hoàn tất
 
 ```mermaid
 flowchart LR
-    A["1. Tin nhắn ngày đầu\nChào hỏi + quy trình\n+ hẹn lịch kick-off"] --> B["2. Gửi\nboard (PDF) + summary\n+ tài liệu quy trình"]
+    A["1. Tin nhắn ngày đầu\nChào hỏi + quy trình\n+ hẹn lịch kick-off"] --> B["2. Gửi\ntài liệu quy trình\n+ agenda"]
     B --> C["3. Kick-off Call\ntrình bày tài liệu quy trình"]
     C --> D["4. Gửi email\ntổng kết"]
 ```
@@ -51,7 +51,7 @@ flowchart LR
 | # | Việc làm | Ai làm | Đầu ra | Timeline |
 |---|----------|--------|--------|----------|
 | 1 | **Tin nhắn ngày đầu tiên** — Tự giới thiệu PO, giải thích quy trình Cyberk (Step 1: Internal Planning hôm nay, Step 2: Kick-off Call), hỏi lịch kick-off call luôn. | PO | Tin nhắn đã gửi (Telegram/Email) + client biết lịch trình + đã hỏi availability cho kick-off | Sáng ngày planning — trước buổi họp nội bộ |
-| 2 | **Gửi board cho client** *(chính là bước SEND của [Internal Planning](../po-planning/planning-process.md))* — Đính kèm board export PDF, có Daily Report ở đầu tab `sprint_1`, cấp quyền xem board cho client, kèm tin nhắn tóm tắt: rủi ro chính (Risks), cách tiếp cận (Approach), chiến lược triển khai (Strategy). Không gửi file trơn — phải có summary bằng text. Gửi kèm [tài liệu quy trình Zero to Product](../before-kick-off-docs/cyberk-zero-to-product-en.html) (bản PDF) để khách hiểu Cyberk sẽ làm gì trong 30 ngày đầu. Gửi agenda kick-off call khi client đã chọn giờ. | PO | Board (PDF) + summary + tài liệu quy trình (PDF) đã gửi + agenda kick-off (xem [mẫu](./kick-off-example.md)) | Ngay sau Internal Planning — trong ngày |
+| 2 | **Gửi tài liệu quy trình & agenda** — Board đã được gửi ở bước SEND của [Internal Planning](../po-planning/planning-process.md). Bước này chỉ gửi [tài liệu quy trình Zero to Product](../before-kick-off-docs/cyberk-zero-to-product-en.html) (bản PDF) để khách hiểu Cyberk sẽ làm gì trong 30 ngày đầu, và gửi agenda kick-off call khi client đã chọn giờ. | PO | Tài liệu quy trình (PDF) đã gửi + agenda kick-off (xem [mẫu](./kick-off-example.md)) | Ngay sau Internal Planning |
 | 3 | **Kick-off Call với client** — Theo agenda: giới thiệu team → walk through board → **trình bày tài liệu quy trình** (phần Approach: share màn hình, đi qua timeline 30 ngày, nhịp làm việc, cách xử lý thay đổi) → Q&A mở. | PO + TL | Buổi call hoàn tất, client hiểu quy trình 30 ngày, action items ghi nhận | Trong vòng 2–3 ngày sau bước 2 |
 | 4 | **Gửi email tổng kết** — Recap buổi họp, đính kèm slide/tài liệu, liệt kê action items, confirm next steps và ngày bắt đầu sprint 1. | PO | Email tổng kết (xem [mẫu email](./kick-off-example.md)) | Trong ngày sau buổi call |
 
@@ -62,8 +62,6 @@ flowchart LR
 | Quy tắc | Lý do |
 |---------|-------|
 | Phải gửi tin nhắn cho client **trước** khi họp nội bộ | Client biết team đang chủ động làm việc ngay từ ngày đầu — tạo niềm tin |
-| Board phải gửi **trong ngày** sau buổi Planning — không để qua đêm | Gửi nhanh = chuyên nghiệp. Để lâu = client nghĩ team chưa bắt đầu |
-| Tin nhắn gửi plan phải kèm **summary text** (risks, approach, strategy) | File trơn không ai đọc ngay. Summary text giúp client nắm ý chính trong 30 giây |
 | Gửi agenda cho client ít nhất **1 ngày** trước buổi call | Client cần chuẩn bị câu hỏi. Gửi sát giờ = hời hợt |
 | Tài liệu quy trình phải gửi **trước** buổi call và **trình bày** trong buổi call | Gửi trước để client đọc và chuẩn bị câu hỏi. Trình bày trong call vì không phải client nào cũng đọc file. Client hiểu quy trình từ đầu thì không bất ngờ với demo hằng ngày, các mốc duyệt hay cách xử lý thay đổi |
 | Không commit thêm scope tại buổi kick-off call | Ghi nhận → estimate → báo lại sau. Commit tại chỗ = nợ miệng |
@@ -79,12 +77,10 @@ flowchart LR
 - [ ] Đã hỏi availability cho kick-off call
 - [ ] Gửi trước buổi họp nội bộ
 
-### Bước 2 — Gửi board
-- [ ] Board đã export PDF, client đã có quyền xem board
-- [ ] Summary đã viết: Risks, Approach, Strategy
-- [ ] Đã gửi cho client kèm summary text (không gửi file trơn)
-- [ ] Tài liệu quy trình Zero to Product đã xuất PDF và gửi kèm
-- [ ] Agenda kick-off đã gửi khi client chọn giờ
+### Bước 2 — Gửi tài liệu quy trình & agenda
+- [ ] Board đã được gửi ở bước SEND của Internal Planning
+- [ ] Tài liệu quy trình Zero to Product đã xuất PDF và gửi
+- [ ] Agenda kick-off đã gửi khi client chọn giờ, ít nhất 1 ngày trước buổi call
 - [ ] Thành phần tham gia đã confirm cả 2 phía
 
 ### Bước 3 — Kick-off Call

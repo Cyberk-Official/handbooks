@@ -77,7 +77,7 @@ flowchart LR
 
 | Tình huống | Hành động |
 |-----------|----------|
-| **Chưa có team dự án** *(đang làm proposal)*, hoặc Dev **chưa ngồi estimate kịp** vì đang chạy dự án khác | Estimate cùng Tech Lead hoặc một senior của Team Asimov. Nếu vẫn chưa có ai, PO estimate nháp *(có thể nhờ [AI](../po-board-create/board-create-ai-instruction/board-create-instruction.md) soạn)*, ghi `Chờ Dev xác nhận` ở cột Notes. Dev nhận task xem lại Estimate ở bước Assign của [Khởi tạo Board](../po-board-create/board-create-process.md). Mọi task luôn có số Estimate |
+| **Chưa có team dự án** *(đang làm proposal)*, hoặc Dev **chưa ngồi estimate kịp** vì đang chạy dự án khác | Estimate cùng Tech Lead hoặc một senior của Team Asimov. Nếu vẫn chưa có ai, PO estimate nháp, ghi `Chờ Dev xác nhận` ở cột Notes. Dev nhận task xem lại Estimate ở bước Assign của [Khởi tạo Board](../po-board-create/board-create-process.md). Mọi task luôn có số Estimate |
 | Yêu cầu **còn mơ hồ**, chưa trả lời được "xong thì khách dùng được gì" | Dừng ở DEFINE. Hỏi lại khách, hoặc viết BRD theo [mẫu BRD](../po-feature-request/template/feature-request-brd-template.md) trước khi tách task |
 | Task **không tách được dưới 4 tiếng** *(research, tích hợp bên thứ ba chưa rõ tài liệu)* | Tạo trước một task research ≤ 4 tiếng. Đầu ra là một bản báo cáo: có những cách giải quyết nào, chọn cách nào và tại sao *(link ở cột Notes)*. Có cách đã chọn rồi mới estimate phần làm thật |
 | Milestone **lớn hơn 1 tuần** sau khi cộng Estimate | Quay lại DEFINE, tách thành 2 Milestone, mỗi cái có tên và phạm vi riêng |
