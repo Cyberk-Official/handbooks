@@ -51,7 +51,7 @@ flowchart LR
 | # | Việc làm | Ai làm | Đầu ra | Timeline |
 |---|----------|--------|--------|----------|
 | 1 | **Tin nhắn ngày đầu tiên** — Tự giới thiệu PO, giải thích quy trình Cyberk (Step 1: Internal Planning hôm nay, Step 2: Kick-off Call), hỏi lịch kick-off call luôn. | PO | Tin nhắn đã gửi (Telegram/Email) + client biết lịch trình + đã hỏi availability cho kick-off | Sáng ngày planning — trước buổi họp nội bộ |
-| 2 | **Gửi tài liệu quy trình & agenda** — Board đã được gửi ở bước SEND của [Internal Planning](../po-planning/planning-process.md). Bước này chỉ gửi [tài liệu quy trình Zero to Product](../before-kick-off-docs/cyberk-zero-to-product-en.html) (bản PDF) để khách hiểu Cyberk sẽ làm gì trong 30 ngày đầu, và gửi agenda kick-off call khi client đã chọn giờ. | PO | Tài liệu quy trình (PDF) đã gửi + agenda kick-off (xem [mẫu](./kick-off-example.md)) | Ngay sau Internal Planning |
+| 2 | **Gửi tài liệu quy trình & agenda** — Board đã được gửi ở bước SEND của [Internal Planning](../po-planning/planning-process.md). Bước này chỉ gửi tài liệu quy trình Zero to Product (bản PDF) để khách hiểu Cyberk sẽ làm gì trong 30 ngày đầu, và gửi agenda kick-off call khi client đã chọn giờ. | PO | Tài liệu quy trình (PDF) đã gửi + agenda kick-off (xem [mẫu](./kick-off-example.md)) | Ngay sau Internal Planning |
 | 3 | **Kick-off Call với client** — Theo agenda: giới thiệu team → walk through board → **trình bày tài liệu quy trình** (phần Approach: share màn hình, đi qua timeline 30 ngày, nhịp làm việc, cách xử lý thay đổi) → Q&A mở. | PO + TL | Buổi call hoàn tất, client hiểu quy trình 30 ngày, action items ghi nhận | Trong vòng 2–3 ngày sau bước 2 |
 | 4 | **Gửi email tổng kết** — Recap buổi họp, đính kèm slide/tài liệu, liệt kê action items, confirm next steps và ngày bắt đầu sprint 1. | PO | Email tổng kết (xem [mẫu email](./kick-off-example.md)) | Trong ngày sau buổi call |
 
@@ -115,4 +115,3 @@ flowchart LR
 - [Cách nghĩ khi kick-off — triết lý & mẫu tốt/tồi](./kick-off-handbook.md)
 - [Mẫu agenda, tin nhắn & email](./kick-off-example.md)
 - [Internal Planning (họp nội bộ)](../po-planning/planning-process.md)
-- [Tài liệu quy trình Zero to Product](../before-kick-off-docs/cyberk-zero-to-product-en.html): gửi trước và trình bày trong buổi kick-off

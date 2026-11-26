@@ -2,57 +2,58 @@
 type: delivery
 tags: [daily-report, ai-instruction]
 created-date: 2026-06-29
-updated-date: 2026-09-06
+updated-date: 2026-11-26
 author: anderson
 status: Nháp
 ---
 
-# **Cyberk Daily Report Instruction** 
+# **Cyberk Daily Report Instruction**
 
-Các Quy tắc cần tuân thủ: 
+Daily Report nằm ở đầu tab sprint trong file Management. Đầu vào cho AI là board đã cập nhật (các cột Milestones, Tasks, Assignee, Status, Progress, Estimate (h), Expected done date, Notes), ghi chú buổi Internal Daily, và Daily Report hôm trước.
 
-\- Liệt kê cụ thể các việc đã làm, không thừa, không thiếu.   
-\- Next-step cần có ETA cụ thể. ví dụ: tôi sẽ hoàn thành màn home-page vào ngày 20 tháng 9\.   
-\- Nếu các risk của ngày hôm trước đã được giải quyết, cần viết rõ tại mục “**What I did**”, nếu chúng chưa được giải quyết thì phải tiếp tục viết trong mục risk, mà không được bỏ qua.   
-\- Nếu risk/blocker này phụ thuộc vào khách hàng, cần viết rõ actions của khách hàng: Ví dụ: vấn đang chờ Jon cung cấp Tài khoản Google dev account   
-\- Các blocker cần có solution: Đang gặp trục trặc với việc request OpenAI key từ Jon, Đang liên hệ để giải quyết vấn đề.   
-\- Có cảnh báo nếu như các blocker từ buổi lần trước chưa được giải quyết: ví dụ: Không thể liên lạc được với Jon, nên không thể lấy được key. và đảm bảo nó được high-ligh   
-   
-*Dứoi đây là hướng dẫn cho AI của các bạn:* 
+Các quy tắc cần tuân thủ:
 
-### **1\. Tổng Quan Dự Án** 
+- Trả lời đúng 4 câu hỏi, đúng thứ tự: What we completed → What we're stuck on → Options → What we chose and why.
+- Liệt kê cụ thể các việc đã làm, không thừa, không thiếu. Lấy từ task chuyển sang `Done` kể từ report hôm trước.
+- Nếu các vấn đề của ngày hôm trước đã được giải quyết, viết rõ ở câu 1. Nếu chưa giải quyết thì tiếp tục viết ở câu 2, ghi ngày thứ mấy, không được bỏ qua.
+- Nếu vấn đề phụ thuộc vào khách hàng, viết rõ khách cần làm gì. Ví dụ: đang chờ Jon cung cấp tài khoản Google dev account.
+- Mỗi vấn đề có ít nhất 2 giải pháp, mỗi giải pháp kèm cái giá (thời gian, chi phí, ảnh hưởng).
+- Giải pháp đã chọn có lý do, người làm và ngày xong.
+- Không viết mục Next Steps: kế hoạch đã nằm ở cột Expected done date trên board.
+- Viết bằng tiếng Anh, ngắn gọn, bullet-point.
 
-**Explain:** Là mục hiển thị **tổng quan tiến độ** đã hoàn thành của dự án, ngắn gọn trong 1 dòng.   
- **Instruction:** Viết ngắn gọn,   
- 
+*Dưới đây là hướng dẫn cho AI của các bạn:*
 
-* Phải có phần trăm trên tổng tiến độ.   
-* Ngày hoàn thành dự án dự kiến, số ngày còn lại   
-* Ví dụ tốt: **80% of work completed**, **3 days ahead of schedule,** expected completion date: **Sep 15, 20 working days remaining**  
-* Ví dụ không tốt: Project is progressing well", "Work is on track"
+### **1\. What we completed — Team đã làm xong những gì?**
 
-👉 *Ví dụ:* **80% công việc** đã hoàn thành, **nhanh hơn 3 ngày** so với kế hoạch, Dự kiến ngày hoàn thành dự án: 20 September. 10 còn lại. 
+**Explain:** Mở đầu bằng 1 dòng tiến độ chung của Milestone, sau đó liệt kê công việc đã hoàn thành kể từ báo cáo trước.
+**Instruction:**
+
+* Dòng tiến độ có phần trăm Milestone, nhanh/chậm so với kế hoạch, hoặc ngày dự kiến hoàn thành.
+* Mỗi dòng là một việc khách thấy được trên sản phẩm, đúng tên task trên board.
+* Nếu hôm trước có một vấn đề được giải quyết, liệt kê ở đây.
+* Ví dụ tốt: "80% of Lighter Platform Integration done, on schedule for Nov 20", "Completed JWT authentication API, login/logout working on staging", "Deepseek API pending from yesterday: resolved"
+* Ví dụ tệ: "Project is progressing well", "worked on frontend", "finished coding feature", "fixed bugs"
+* Ví dụ rất tệ: "use generic descriptions like "worked on frontend""
 
 ---
 
 ### **📊 Production Metrics (Nếu dự án đã Launch)**
 
-**Explain:** Khi dự án đã launch và có người dùng thật, mục Overview cần bổ sung các chỉ số vận hành thực tế bên cạnh tiến độ phát triển feature mới.
+**Explain:** Khi dự án đã launch và có người dùng thật, thêm các chỉ số vận hành ngay sau câu 1.
 
 **Instruction:**
-- Số liệu do **Leader/PO cung cấp**, dev copy vào report.
-- Nếu PO chưa cung cấp, dev PHẢI ghi: `⚠️ Awaiting data from PO/Leader`
+- Số liệu do **Leader/PO cung cấp**.
+- Nếu PO chưa cung cấp, ghi: `⚠️ Awaiting data from PO/Leader`
 - Metrics là **snapshot cuối ngày hôm trước**, không cần real-time.
-- Nếu có **biến động bất thường** (users giảm >20%, revenue drop, critical bugs tăng), PHẢI highlight bằng `⚠️ WARNING` và ghi thêm vào mục **Risks and Blockers**.
+- Nếu có **biến động bất thường** (users giảm >20%, revenue drop, critical bugs tăng), đưa vào câu 2 như một vấn đề.
 
 #### **👥 Users (Active / Total / New)**
-
-Phản ánh tình trạng adoption và tăng trưởng người dùng.
 
 - Ghi rõ nguồn data (Firebase, Mixpanel, v.v.)
 - Format: `Active Users / Total Users / New Users Today`
 
-*Ví dụ tốt:* `👥 Users: 1,250 active / 5,000 total / +45 new today (source: Firebase)`
+*Ví dụ tốt:* `Users: 1,250 active / 5,000 total / +45 new today (source: Firebase)`
 
 *Ví dụ tệ:* `"Có nhiều người dùng mới"`, `"Users tăng"`
 
@@ -63,74 +64,64 @@ Tùy dự án chọn metrics phù hợp: Revenue, Transactions, Profit margin, h
 - Ghi rõ nguồn data (Stripe, internal dashboard, v.v.)
 - Nếu không có data, ghi: `N/A — awaiting PO input`
 
-*Ví dụ tốt:* `💰 Revenue: $12,500 / 320 transactions / Profit margin: 15% (source: Stripe Dashboard)`
+*Ví dụ tốt:* `Business: $12,500 revenue / 320 transactions (source: Stripe)`
 
 *Ví dụ tệ:* `"Doanh thu tốt"`, `"Có giao dịch mới"`
 
 #### **🐛 Production Bugs (Open / Fixed / Total)**
 
-Số liệu bug **tích lũy từ ngày launch** (không reset theo sprint). Lấy từ GitHub Issues hoặc project board.
+Số liệu bug **tích lũy từ ngày launch** (không reset theo sprint). Lấy từ GitHub Issues.
 
 - Phân theo severity: Critical / High / Medium / Low
-- PHẢI highlight nếu có **Critical bugs chưa fix**
+- Critical bugs chưa fix → đưa vào câu 2
 
-*Ví dụ tốt:* `🐛 Bugs: 12 open (2 critical, 4 high) / 85 fixed / 97 total since launch`
+*Ví dụ tốt:* `Bugs: 12 open (2 critical, 4 high) / 85 fixed / 97 total since launch`
 
 *Ví dụ tệ:* `"Có vài bugs cần fix"`, `"Đang fix bugs"`
 
 ---
 
-### **2\. Tôi đã làm những gì (What I did)**
+### **2\. What we're stuck on — Đang gặp vấn đề gì?**
 
-**Explain:** Liệt kê công việc đã hoàn thành kể từ báo cáo trước.  
- **Instruction:** Viết ngắn gọn, có thể gắn kèm ID task/bug.
+**Explain:** Báo cáo những vấn đề đang cản trở hoặc rủi ro tiềm tàng. Tìm trong board: dòng bôi đỏ (task `Doing` quá 2 ngày), task `Pending`, task sắp tới Expected done date mà Progress còn thấp.
+**Instruction:**
 
-\- MUST list specific completed tasks with details
-
-\- Nếu hôm trước có một vấn đề trong mục “risk” được giải quyết, hãy liệt kê chúng ở đây. 
-
-*Ví dụ tốt: "Completed JWT authentication API, implemented login/logout functionality, The problem of deepseek API pending: resolved"*
-
-*Ví dụ tệ: "worked on frontend", "finished coding feature", "fixed bugs"*
-
-*Ví dụ rất tệ:  “use generic descriptions like "worked on frontend"*
+* Mỗi vấn đề có severity: Critical, High, Medium, Low.
+* Viết rõ vấn đề, nguyên nhân và ảnh hưởng tới người dùng hoặc ngày bàn giao.
+* Nêu lại vấn đề của hôm trước nếu chưa giải quyết, ghi ngày thứ mấy.
+* Nếu vấn đề phụ thuộc vào khách hàng, viết rõ khách cần làm gì.
+* Ví dụ tốt: "CRITICAL: Deepseek API accuracy is lower than expected. Impact: Milestone moves from Sep 20 to Sep 22."
+* Ví dụ không tốt: "Có một số vấn đề về performance", "Backend đang bị lỗi", "Chưa có risk gì đáng kể"
 
 ---
 
-### **3\. Next-step tôi sẽ làm (Next steps)**
+### **3\. Options — Có những giải pháp nào?**
 
-**Explain:** Kế hoạch công việc tiếp theo, kèm **ngày dự kiến hoàn thành** (ETA).  
- **Instruction:** Ghi task cụ thể \+ deadline rõ ràng. Không dùng câu chung chung như “tiếp tục code”.  
- 👉 *Ví dụ:*
+**Explain:** Với mỗi vấn đề, liệt kê các cách giải quyết.
+**Instruction:**
 
-* Implement reward distribution module– **ETA: Aug 25**  
-* Write unit tests for NFT minting contract – **ETA: Aug 27**
-
----
-
-### **4\. Risk hoặc rủi ro (Blockers / Risks)**
-
-**Explain:** Báo cáo những vấn đề đang cản trở hoặc rủi ro tiềm tàng.  
- **Instruction:** Ghi rõ nguyên nhân \+ cần hỗ trợ từ ai. Sau đó đề xuất giải pháp.
-
-* MỖI vấn đề PHẢI có giải pháp hoặc action plan  
-* Nêu lại các vấn đề   
-* PHẢI có đánh giá về mức độ ảnh hưởng của vấn đề đến dự án, (Critical, High, Medium, Low)  
-* PHẢI nếu lại vấn đề của hôm trước nếu như chúng chưa được giải quyết   
-* PHẢI viết rõ ràng vấn đề, và hậu quả, nguyên nhân  
-* \- Nếu risk/blocker này phụ thuộc vào khách hàng, cần viết rõ actions của khách hàng: Ví dụ: vấn đang chờ Jon cung cấp Tài khoản Google dev account
-
-
-       \- VÍ DỤ TỐT: "**CRITICAL**: Deepseek có vấn đề về độ chính xác, và cần test kỹ hơn dự kiến dẫn tới **chậm tiến độ 2 ngày**. Action plan: Tăng cường QA resource và parallel testing để bù tiến độ"
-
-       \- VÍ DỤ KHÔNG TỐT: "Có một số vấn đề về performance", "Backend đang bị lỗi", "Chưa có risk gì đáng kể"\`
+* Ít nhất 2 giải pháp cho mỗi vấn đề, đánh A, B, C.
+* Mỗi giải pháp kèm cái giá: thời gian, chi phí, ảnh hưởng.
+* "Chờ" cũng là một giải pháp, ghi kèm cái giá của việc chờ.
+* Ví dụ tốt: "B. Add a validation step and run parallel QA. 2 extra days." "C. Switch to OpenAI. 1 day of work, +$200/month."
+* Ví dụ không tốt: "Fix the bug", "Ask the client"
 
 ---
 
-📌 **Note cho dev:**
+### **4\. What we chose and why — Chọn giải pháp nào, tại sao?**
+
+**Explain:** Quyết định của team cho từng vấn đề.
+**Instruction:**
+
+* Ghi giải pháp đã chọn, lý do chọn, người làm, ngày xong.
+* Nếu cần khách duyệt, ghi rõ khách cần trả lời trước ngày nào.
+* Ví dụ tốt: "B. Keeps the model the client chose, no extra monthly cost. Dennis adds validation today, Kate runs parallel QA from Sep 18."
+* Ví dụ không tốt: "We will handle it"
+
+---
+
+📌 **Note:**
 
 * Báo cáo nên ngắn gọn, dễ đọc (bullet-point).
-
-* **Next-step luôn phải có ETA.**
-
-* **Blocker phải có giải pháp đi kèm**, không chỉ liệt kê vấn đề.
+* **Mỗi vấn đề có giải pháp đi kèm**, không chỉ liệt kê vấn đề.
+* **Giải pháp đã chọn luôn có ngày xong.**

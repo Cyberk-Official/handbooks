@@ -65,9 +65,9 @@ Buổi Demo luôn sinh ra việc: một màn hình cần sửa, một luồng c�
 
 Sau mỗi buổi Demo, PO đi qua board với 3 việc:
 
-- Luôn cập nhật task mới nhất lên board. Việc mới, bug mới phát hiện trong buổi Demo lên tab sprint trong ngày.
+- Luôn cập nhật task mới nhất lên board. Việc mới phát hiện trong buổi Demo lên tab sprint trong ngày. Bug mới thì chụp ảnh, đưa thẳng lên GitHub Issue, rồi tạo task sửa cho đúng bug đó.
 - Bỏ các tasks đã outdate. Task không còn đúng với sản phẩm hiện tại thì bỏ, đừng để board phình ra bằng những việc không ai làm nữa.
-- Task/Bugs mới được tạo luôn đầy đủ thông tin: đủ 8 cột, đúng Board Rule *(xem [Cẩm nang Board](../po-board-create/board-create-handbook.md))*.
+- Task mới, kể cả task sửa bug, luôn đầy đủ thông tin: đủ 8 cột, đúng Board Rule *(xem [Cẩm nang Board](../po-board-create/board-create-handbook.md))*.
 
 Rồi điều chỉnh các task đang có cho hợp lý: task trễ thì đổi Expected done date, người quá tải thì chuyển bớt, việc không kịp tuần này thì đưa sang sprint sau với ngày cụ thể.
 
@@ -160,6 +160,8 @@ Viết vấn đề thật, kể cả khi đó là tin xấu. Mục vấn đề �
 
 Tin nhắn summary không lặp lại cả bản PDF. Nó là 3–5 dòng để khách đọc trên điện thoại là biết hôm nay có gì quan trọng, và có cần mở PDF ra xem kỹ không. Gửi mỗi file PDF thì khách phải mở ra mới biết có gì, mà đọc trên điện thoại nhiều khi khách không mở. Summary dài 3 đoạn, có lời chào và lời kết như email, thì khách đọc lướt rồi bỏ qua đúng câu quan trọng.
 
+> 📖 Cách viết từng câu, Production Metrics sau launch: xem [Cẩm nang Daily Report](../../04-developer/dev-daily-report/daily-report-handbook.md)
+>
 > 📖 Mẫu Daily Report và tin nhắn summary: xem [Internal Daily — Mẫu](./internal-daily-example.md)
 
 ---

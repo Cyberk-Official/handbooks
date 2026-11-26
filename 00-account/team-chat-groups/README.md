@@ -37,6 +37,6 @@ status: Nháp
 
 - [Giao tiếp trong team (Horenso)](../../03-all-team/team-communicate/communicate-handbook.md)
 - [Project Onboarding — tiếp nhận thành viên vào dự án](../../04-developer/dev-project-onboarding/dev-project-onboarding-process.md)
-- [Project Leave — rời dự án, thu hồi quyền](../../05-product-owner/po-project-leave/po-project-leave-process.md)
+- [Member Leave — rời dự án, thu hồi quyền](../../05-product-owner/po-member-leave/member-leave-process.md)
 - [Kick-off dự án](../../05-product-owner/po-kick-off/kick-off-process.md)
 - [Quy trình soạn hợp đồng (agreements)](../../../agreements/workflows/02-contracting/contracting-workflow.md)

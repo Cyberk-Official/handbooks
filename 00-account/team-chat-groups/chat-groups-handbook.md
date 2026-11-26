@@ -205,5 +205,5 @@ Nếu lỡ add người phía khách vào Internal, xoá họ khỏi group ngay 
 
 - [Lập 4 group — các bước và quy tắc đặt tên](chat-groups-setup-process.md)
 - [Project Onboarding — add member, PRD, GitHub repo](../../04-developer/dev-project-onboarding/dev-project-onboarding-process.md)
-- [Project Leave — xoá khỏi group khi rời dự án](../../05-product-owner/po-project-leave/po-project-leave-process.md)
+- [Member Leave — xoá khỏi group khi rời dự án](../../05-product-owner/po-member-leave/member-leave-process.md)
 - [Mẫu tin nhắn](chat-groups-example.md)

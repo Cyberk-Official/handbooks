@@ -103,7 +103,7 @@ Tại sao tồi: Bỏ mặc khiến nhân sự mới mất niềm tin và làm c
 
 ---
 
-## Tình huống 4 — Thành viên mới tiếp nhận bàn giao từ người rời dự án (Project Leave) cần làm gì để đảm bảo an toàn?
+## Tình huống 4 — Thành viên mới tiếp nhận bàn giao từ người rời dự án (Member Leave) cần làm gì để đảm bảo an toàn?
 
 Khi tiếp nhận dự án để thay thế một nhân sự chuyển đi, mục tiêu là tiếp thu toàn bộ kiến thức nghiệp vụ và quyền hạn mà không để sót lỗ hổng kỹ thuật.
 
@@ -189,4 +189,4 @@ Tại sao tồi: Tạo tâm lý tiêu cực cho tập thể và bỏ lỡ cơ h�
 - [Cẩm nang Giao tiếp trong Team (Horenso)](../../03-team/team-communicate/communicate-handbook.md)
 - [Quy trình Quản lý Công việc Hàng ngày (Dev Daily)](../dev-daily/dev-daily-process.md)
 - [Cẩm nang Quản lý Board Cá nhân & Dự Án](../../05-product-owner/po-board-create/board-create-handbook.md)
-- [Quy trình Rời Dự Án (Project Leave)](../../05-product-owner/po-project-leave/po-project-leave-process.md)
+- [Quy trình Rời Dự Án (Member Leave)](../../05-product-owner/po-member-leave/member-leave-process.md)

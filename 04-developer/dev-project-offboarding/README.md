@@ -19,5 +19,5 @@
 ## Liên kết
 
 - [Developer — Mục lục](../README.md)
-- [Project Leave — PO điều phối, chốt timeline và sign-off](../../05-product-owner/po-project-leave/po-project-leave-process.md)
+- [Member Leave — PO điều phối, chốt timeline và sign-off](../../05-product-owner/po-member-leave/member-leave-process.md)
 - [Project Onboarding — Người tiếp nhận bắt nhịp dự án](../dev-project-onboarding/dev-project-onboarding-process.md)

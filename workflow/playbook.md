@@ -132,7 +132,7 @@ VD thực tế đã triển khai:
 
 ```
 handbook/delivery/dev-daily-report/
-├── daily-report-process.md                ← Board-first → thông báo → viết → gửi
+├── daily-report-process.md                ← Kiểm board → viết 4 câu → export PDF → gửi
 ├── daily-report-handbook.md               ← Cách nghĩ khi viết từng mục
 ├── daily-report-example.md                ← Mẫu tốt/tồi + template trống
 └── daily-report-ai-instruction/           ← Cho AI viết report

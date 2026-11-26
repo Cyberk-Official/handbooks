@@ -42,6 +42,5 @@ Bộ tài liệu này gồm 4 loại, mỗi loại phục vụ một mục đíc
 
 - [Tạo Milestone](../po-milestone-create/milestone-create-process.md) — Mỗi Feature Request là một Milestone mới: đặt tên, tách task, estimate
 - [Kick-off Meeting với Khách hàng](../po-kick-off/kick-off-process.md) — Nơi PO giới thiệu trước cách xử lý thay đổi cho khách
-- [Tài liệu quy trình Zero to Product](../before-kick-off-docs/cyberk-zero-to-product-en.html) — Trang *Change & ownership* gửi khách
 - [Cẩm nang Board](../po-board-create/board-create-handbook.md) — Cách quản lý board dự án hằng ngày
 - [QA Handbook — Tiếp nhận & Xử lý Bugs](../../06-qa/qa-bugs-handling/README.md) — Quy trình song song khi khách báo lỗi

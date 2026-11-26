@@ -154,7 +154,7 @@ Tại sao tốt: Client hiểu methodology (sẽ thấy output mỗi ngày, khô
 
 #### Dùng tài liệu quy trình Zero to Product
 
-Với dự án Zero to Product, phần này trình bày bằng [tài liệu quy trình](../before-kick-off-docs/cyberk-zero-to-product-en.html). Client đã nhận bản PDF cùng Planning Report, nên bạn **không đọc lại từng trang**. Share màn hình và dừng ở 4 trang:
+Với dự án Zero to Product, phần này trình bày bằng tài liệu quy trình Zero to Product. Client đã nhận bản PDF trước buổi họp, nên bạn **không đọc lại từng trang**. Share màn hình và dừng ở 4 trang:
 
 1. **Overview (trang 02):** 4 bước, mỗi bước kết thúc bằng một mốc duyệt.
 2. **Timeline (trang 07):** nói ngày thật. "Day 01 là thứ Hai 1/12, Launch là ngày 28/12."
@@ -244,5 +244,4 @@ Email tổng kết cần có:
 
 - [Quy trình kick-off với client — từng bước](./kick-off-process.md)
 - [Mẫu agenda, tin nhắn & email](./kick-off-example.md)
-- [Tài liệu quy trình Zero to Product gửi khách](../before-kick-off-docs/cyberk-zero-to-product-en.html)
 - [Internal Planning — họp nội bộ lập kế hoạch](../po-planning/planning-handbook.md)

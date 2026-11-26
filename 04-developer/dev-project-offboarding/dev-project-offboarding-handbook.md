@@ -89,7 +89,7 @@ Tại sao tốt: Đổi người chịu trách nhiệm mà hệ thống vẫn ho
 
 **❌ Cách tồi:** Gửi `.env` qua Telegram cho người nhận, hoặc tự xóa tài khoản đang sở hữu pipeline trước khi kiểm tra phụ thuộc.
 
-Tại sao tồi: Gửi mật khẩu không chuyển được trách nhiệm sở hữu; xóa tài khoản có thể làm deploy dừng hoạt động. Khi cần khóa quyền khẩn cấp, báo PO xử lý theo Project Leave thay vì tự thay đổi hệ thống.
+Tại sao tồi: Gửi mật khẩu không chuyển được trách nhiệm sở hữu; xóa tài khoản có thể làm deploy dừng hoạt động. Khi cần khóa quyền khẩn cấp, báo PO xử lý theo Member Leave thay vì tự thay đổi hệ thống.
 
 ---
 
@@ -118,7 +118,7 @@ Tại sao tồi: Không biết ai cần hành động, chờ gì hoặc khi nào
 
 ## 6. Rời dự án rồi, nghĩa vụ bảo mật còn gì?
 
-Khi off-boarding, bạn cần ký NDA về bảo mật thông tin dự án sau khi rời đi theo [yêu cầu trong Project Leave](../../05-product-owner/po-project-leave/po-project-leave-process.md#yêu-cầu-ký-nda-khi-off-boarding). HR cung cấp mẫu được phê duyệt; bạn đọc rõ dự án áp dụng, thông tin được bảo vệ, thời hạn, ngoại lệ và cách xử lý bản sao dữ liệu. Nếu đã có NDA trước đó, gửi HR đối chiếu để chuẩn bị văn bản ký xác nhận phù hợp cho lần off-boarding này.
+Khi off-boarding, bạn cần ký NDA về bảo mật thông tin dự án sau khi rời đi theo [yêu cầu trong Member Leave](../../05-product-owner/po-member-leave/member-leave-process.md#yêu-cầu-ký-nda-khi-off-boarding). HR cung cấp mẫu được phê duyệt; bạn đọc rõ dự án áp dụng, thông tin được bảo vệ, thời hạn, ngoại lệ và cách xử lý bản sao dữ liệu. Nếu đã có NDA trước đó, gửi HR đối chiếu để chuẩn bị văn bản ký xác nhận phù hợp cho lần off-boarding này.
 
 **✅ Cách tốt:** Nhận mẫu ngay khi chốt kế hoạch, hỏi HR/PO các điều khoản chưa rõ, ký trước sign-off và nhận xác nhận HR đã lưu bản ký. Hồ sơ bàn giao chỉ ghi trạng thái, ngày ký, mã tham chiếu. Sau khi rời dự án, muốn dùng hình ảnh hoặc đoạn code trong portfolio thì kiểm tra NDA và xin chấp thuận theo quy định trong văn bản trước khi sử dụng.
 
@@ -148,7 +148,7 @@ Tại sao tồi: Thu hồi quyền không xóa thông tin bạn đã tiếp cậ
 ## Liên kết
 
 - [Quy trình off-boarding — Các bước và checklist](./dev-project-offboarding-process.md)
-- [Project Leave — Lịch và điều phối bàn giao](../../05-product-owner/po-project-leave/po-project-leave-process.md)
+- [Member Leave — Lịch và điều phối bàn giao](../../05-product-owner/po-member-leave/member-leave-process.md)
 - [Project Onboarding — Cách Receiver tiếp nhận dự án](../dev-project-onboarding/dev-project-onboarding-process.md)
 - [Dev Write BRD — Ghi lại requirement còn thiếu](../dev-write-brd/dev-write-brd-process.md)
 - [Dev Bootstrap — Các tài liệu nền tảng cần dẫn link](../dev-bootstrap/dev-bootstrap-process.md)

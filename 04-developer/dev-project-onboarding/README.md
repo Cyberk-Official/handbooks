@@ -27,7 +27,7 @@ status: Đang dùng
 
 - [Tạo Repository Mới — Quy ước `.env` và `.env.example`](../dev-new-repo/dev-new-repo-process.md)
 - [Dev Daily — Quản lý công việc cá nhân hàng ngày](../dev-daily/dev-daily-process.md)
-- [Project Leave — Quy trình bàn giao khi rời dự án](../../05-product-owner/po-project-leave/po-project-leave-process.md)
+- [Member Leave — Quy trình bàn giao khi rời dự án](../../05-product-owner/po-member-leave/member-leave-process.md)
 - [Team Communicate — Cẩm nang giao tiếp](../../03-team/team-communicate/communicate-handbook.md)
 - [Cẩm nang Board — Cẩm nang quản lý board dự án](../../05-product-owner/po-board-create/board-create-handbook.md)
 - [Dev Daily Report — Quy trình báo cáo hàng ngày](../dev-daily-report/daily-report-process.md)

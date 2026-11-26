@@ -74,6 +74,7 @@ flowchart LR
 | Mỗi member có đủ 2 task mỗi ngày, 10 task mỗi tuần | Không ai ngồi chơi, không ai ôm quá sức |
 | Tên các Task và Milestone phải meaningful, khách hàng đọc phải hiểu | Khách nhận board dưới dạng PDF mỗi ngày |
 | Meeting minutes với khách hàng có tasks mới phải cập nhật vào board ngay | Việc không lên board thì không tồn tại |
+| Sửa bug nào thì có task cho đúng bug đó trong tab sprint, link GitHub Issue ở cột Notes | Bug có giờ, có người nhận, QA biết test lại cái gì |
 | PO có trách nhiệm đưa task lên board, và Assign cho member | Một người chịu trách nhiệm, không đùn đẩy |
 | Member có trách nhiệm cập nhật tiến độ | Người làm là người biết rõ nhất |
 | Luôn copy từ `TEMPLATE`, lưu trong folder Project Management | Mọi board cùng một chuẩn, cả team + COO cùng thấy |

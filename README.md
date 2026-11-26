@@ -64,7 +64,7 @@ handbook/
 │   └── dev-solana-contract/     #   Quy trình làm dự án Solana contract
 │
 ├── 🎯 05-product-owner/         # Dành cho Product Owner
-│   ├── po-project-leave/        #   Quy trình thành viên rời dự án
+│   ├── po-member-leave/        #   Quy trình thành viên rời dự án
 │   ├── po-planning/             #   Internal Planning Meeting (nội bộ)
 │   ├── po-kick-off/             #   Kick-off Meeting (với khách hàng)
 │   ├── po-board-create/         #   Khởi tạo Board dự án (Google Sheet)

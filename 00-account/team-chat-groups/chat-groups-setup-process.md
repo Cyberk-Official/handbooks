@@ -129,7 +129,7 @@ Người của Cyberk được add theo [Project Onboarding](../../04-developer/
 | Khách muốn dùng group hoặc công cụ chat của họ | Báo Anderson quyết. Group Internal vẫn tạo như bình thường |
 | Account vắng mà cần tạo group gấp | Báo Anderson qua Telegram. Anderson chỉ định người tạo thay |
 | Deal huỷ sau khi đã tạo group | Chưa có quy định. Account báo Anderson để quyết giữ hay giải tán group |
-| Member rời dự án | Xoá khỏi group theo [Project Leave](../../05-product-owner/po-project-leave/po-project-leave-process.md) |
+| Member rời dự án | Xoá khỏi group theo [Member Leave](../../05-product-owner/po-member-leave/member-leave-process.md) |
 
 Trang này chưa mô tả việc bot Neo và Smith làm trong từng group.
 

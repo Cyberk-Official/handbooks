@@ -36,7 +36,7 @@ Bảng tra nhanh: ai là owner (người duyệt PR) cho mục nào trong handbo
 | **Dev Daily** (quản lý công việc cá nhân) | `04-developer/dev-daily/` | Anderson | Tech Lead |
 | **Team Communicate** (Horenso) | `03-team/team-communicate/` | Anderson | — |
 | **Project Onboarding** (tham gia dự án) | `04-developer/dev-project-onboarding/` | Anderson | Tech Lead |
-| **Project Leave** (rời dự án) | `05-product-owner/po-project-leave/` | Anderson | Tech Lead |
+| **Member Leave** (rời dự án) | `05-product-owner/po-member-leave/` | Anderson | Tech Lead |
 | **Về Handbook** (contributing, playbook) | `02-about-handbook/`, `workflow/` | Anderson | — |
 
 > **Chưa có owner cụ thể?** → Mặc định là Anderson cho đến khi gán. Khi team đủ lớn, owner sẽ được chuyển cho người phù hợp nhất.

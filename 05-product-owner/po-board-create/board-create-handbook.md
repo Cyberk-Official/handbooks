@@ -186,9 +186,11 @@ Bug là các issue của dự án. Cần được phát hiện càng sớm càng
 - Mô tả đầy đủ, rõ ràng sao cho người đọc không cần hỏi lại cũng hiểu được vấn đề.
 - Deadline luôn nằm trong Milestones, và Fix càng sớm càng tốt.
 
-Bug được QA log thành **GitHub Issue** theo chuẩn của [QA Bugs Logs](../../06-qa/qa-bugs-logs/qa-bugs-logs-process.md) — có severity, bước tái hiện, ảnh chụp. GitHub Issue là nơi lưu chi tiết kỹ thuật của bug.
+Thấy bug ở đâu *(buổi Demo, khách báo, QA test)* thì chụp ảnh và đưa thẳng lên **GitHub Issue** theo chuẩn của [QA Bugs Logs](../../06-qa/qa-bugs-logs/qa-bugs-logs-process.md) — có severity, bước tái hiện, ảnh chụp. GitHub Issue là nơi duy nhất lưu bug. Board không có danh sách bug riêng.
 
-Việc **sửa** bug thì lên board như mọi task khác: nằm trong tab sprint, dưới Milestone mà bug thuộc về, có Estimate, Assignee, Expected done date, và link GitHub Issue ở cột Notes. Gắn mức độ ở đầu tên task để nhìn là biết gấp hay không — VD Milestone `Trading UI Audit Fixes` của Koto: `[P0] O-1: Start the order form with an empty size...`, `[P1] P-3: Type any leverage directly...`. Nhờ vậy bug có giờ trong Estimate, có người nhận, và khách thấy được trong bản PDF.
+Khi **sửa** bug nào, PO tạo task tương ứng cho đúng bug đó trong tab sprint, như mọi task khác: nằm trong tab sprint, dưới Milestone mà bug thuộc về, có Estimate, Assignee, Expected done date, và link GitHub Issue ở cột Notes. Gắn mức độ ở đầu tên task để nhìn là biết gấp hay không — VD Milestone `Trading UI Audit Fixes` của Koto: `[P0] O-1: Start the order form with an empty size...`, `[P1] P-3: Type any leverage directly...`. Nhờ vậy bug có giờ trong Estimate, có người nhận, và khách thấy được trong bản PDF.
+
+Một task là một bug. Task tên `Fix bugs` hay `Fix UI issues` thì khách đọc không biết bug nào đã sửa, QA không biết test lại cái gì, và Estimate không có cơ sở.
 
 Người chịu trách nhiệm cho Milestone, thì sẽ chịu trách nhiệm cho bugs thuộc về Milestone đó.
 

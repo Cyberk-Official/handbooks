@@ -2,164 +2,151 @@
 type: delivery
 tags: [daily-report, example, template]
 created: 2026-08-25
-updated: 2026-09-01
+updated: 2026-11-26
 author: anderson
 status: Nháp
 ---
 
-# Mẫu Daily Report — Tốt vs Không Tốt
+# Mẫu Daily Report — Chưa tốt vs Tốt
 
 **Người chịu trách nhiệm:** PO / Product Owner
-**Cập nhật lần cuối:** [ngày]
+**Cập nhật lần cuối:** 2026-11-26
 
-> Quy tắc: Ngắn gọn, cụ thể, có số liệu. Next-step luôn có ETA. Blocker luôn có giải pháp.
+> Mỗi mẫu có một bản chưa tốt đặt trước và một bản tốt đặt sau, để so trực tiếp. Daily Report viết bằng tiếng Anh, vì người đọc là khách. Cách nghĩ đằng sau từng câu nằm ở [Cẩm nang Daily Report](./daily-report-handbook.md). Mẫu Daily Report Koto và tin nhắn summary gửi kèm PDF nằm ở [Internal Daily — Mẫu](../../05-product-owner/po-internal-daily/internal-daily-example.md).
 
 ---
 
-## ✅ Mẫu TỐT
+## 1. Daily Report của dự án đang chạy
 
-### Daily Report hoàn chỉnh
+### Mẫu chưa tốt
 
-```markdown
-# Cyberk Daily Report - [Date]
+```
+Daily Report - Sep 17th
 
-## 1. Project Progress
-85% completed, 2 days ahead of schedule
-Expected completion: Oct 15, 15 working days remaining
+What we completed
+- Worked on frontend
+- Finished coding feature
+- Fixed bugs
 
-## 📊 Production Metrics (Post-Launch)
-> Snapshot ngày 17 Sep — Số liệu do PO cung cấp
+What we're stuck on
+- Có một số vấn đề về performance
+- Chưa có risk gì đáng kể
 
-- 👥 Users: 1,250 active / 5,000 total / +45 new today (source: Firebase)
-- 💰 Business: $12,500 revenue / 320 transactions (source: Stripe)
-- 🐛 Bugs: 12 open (2 critical, 4 high) / 85 fixed / 97 total since launch
+Next steps
+- Continue coding
+- Will work on backend
+```
 
-## 2. What I did
+Khách không biết frontend nào, bug nào. Vấn đề performance không có severity, không biết ảnh hưởng gì. Không có giải pháp nào, nên khách đọc xong chỉ thấy lo. "Continue coding" là mô tả trạng thái, không phải kế hoạch, và Next steps đã có trên board ngay bên dưới.
+
+### Mẫu tốt
+
+```
+Daily Report - Sep 17th
+
+What we completed
+85% of AI Assistant Milestone done, 2 days behind plan
 - Deployed staking contract with gas optimization, reduced cost by 30%
 - Completed new dashboard UI with dark mode support
 - Fixed API rate limiting with token bucket algorithm
-- Resolved testnet downtime issue from yesterday
+- Testnet downtime from yesterday: resolved
 
-## 3. Next Steps
-- Smart contract development and audit - ETA: Sep 24
-- Portfolio analytics dashboard integration - ETA: Sep 23
-- Vesting test plan and automation - ETA: Sep 22
+What we're stuck on
+- CRITICAL: Deepseek API accuracy is lower than expected.
+  Impact: AI answers are wrong on 1 in 5 test questions, Milestone moves
+  from Sep 20 to Sep 22.
+- MEDIUM: Dark mode specs from Jon still pending (day 3).
+  Impact: Cannot finalize the settings screen.
 
-## 4. Risks and Blockers
-- CRITICAL: Gas optimization needed for vesting contract
-  → Action: Implementing batch processing, external audit scheduled
-- HIGH: Expected high network load
-  → Action: Setting up load balancing with DevOps
-- MEDIUM: Pending dark mode specs from Jon
-  → Action: Implementing light mode first, following up daily
+Options
+- Deepseek
+  A. Wait for Deepseek to improve their model. No date from Deepseek.
+  B. Add a validation step and run parallel QA. 2 extra days.
+  C. Switch to OpenAI for this feature. 1 day of work, +$200/month.
+- Dark mode
+  A. Wait for Jon's specs before building the settings screen.
+  B. Build light mode first, add dark mode when specs arrive.
+
+What we chose and why
+- Deepseek: B. Keeps the model the client chose, no extra monthly cost.
+  Dennis adds validation today, Kate runs parallel QA from Sep 18.
+- Dark mode: B. The settings screen is not blocked. Need Jon's specs
+  by Sep 20 to keep dark mode in this Milestone.
 ```
 
-Tốt vì:
-- Progress có %, có ngày dự kiến, có số ngày còn lại
-- Production Metrics: có số cụ thể, có nguồn data, phân severity cho bugs
-- What I did: cụ thể từng task, có chi tiết kỹ thuật
-- Next steps: mỗi task có ETA rõ ràng
-- Risks: phân loại severity + mỗi cái có action plan
+Câu 1 mở bằng một dòng tiến độ, nói thẳng là đang chậm 2 ngày. Mỗi việc đã xong là thứ khách mở sản phẩm ra là thấy. Vấn đề có severity, có ảnh hưởng bằng con số, có ngày thứ mấy. Mỗi vấn đề có các giải pháp kèm cái giá. Lý do chọn nằm ngay cạnh quyết định, kèm tên người làm, ngày, và việc khách cần làm trước ngày nào.
 
 ---
 
-## ❌ Mẫu KHÔNG TỐT
+## 2. Production Metrics của dự án đã launch
 
-### 1. Project Progress tồi
-
-```
-Project is progressing well
-Work is on track
-```
-
-Tồi vì: Không có %, không có ngày, không ai biết "well" nghĩa là gì.
-
-### 📊 Production Metrics tồi
+### Mẫu chưa tốt
 
 ```
+Production Metrics
 - Có nhiều người dùng mới
 - Doanh thu tốt
 - Có vài bugs cần fix
 ```
 
-Tồi vì: Không có số, không nguồn data, không severity. "Doanh thu tốt" không nói gì cả — tốt so với cái gì?
+Không có số, không nguồn data, không severity. "Doanh thu tốt" không nói gì cả — tốt so với cái gì?
 
-### 2. What I did tồi
-
-```
-- Worked on frontend
-- Finished coding feature
-- Fixed bugs
-```
-
-Tồi vì: "Worked on frontend" — làm gì trên frontend? "Fixed bugs" — bug nào? Không truy vết được.
-
-### 3. Next steps tồi
+### Mẫu tốt
 
 ```
-- Continue coding
-- Will work on backend
+Production Metrics (snapshot Sep 17)
+- Users: 1,250 active / 5,000 total / +45 new today (source: Firebase)
+- Business: $12,500 revenue / 320 transactions (source: Stripe)
+- Bugs: 12 open (2 critical, 4 high) / 85 fixed / 97 total since launch
 ```
 
-Tồi vì: Không có ETA. "Continue coding" không phải kế hoạch — đó là mô tả trạng thái.
-
-### 4. Risks tồi
-
-```
-- Có một số vấn đề về performance
-- Backend đang bị lỗi
-- Chưa có risk gì đáng kể
-```
-
-Tồi vì: Không severity, không action plan, không nguyên nhân. "Chưa có risk" thường là chưa nghĩ kỹ.
+Mỗi dòng có số và nguồn. Bug tính từ ngày launch, chia theo severity. Nếu active users hôm nay giảm hơn 20%, con số đó cũng được đưa lên câu 2 như một vấn đề cần giải pháp.
 
 ---
 
 ## 📋 Template trống (copy để dùng)
 
-```markdown
-# Cyberk Daily Report - [Date]
+```
+[Project] Daily Report - [Date]
 
-## 1. Project Progress
-[X]% completed, [ahead/behind X days]
-Expected completion: [Date], [X] working days remaining
+What we completed
+[X]% of [Milestone] done, [ahead / behind / on] plan
+- [Việc cụ thể khách thấy được]
+- [Việc cụ thể khách thấy được]
+- [Vấn đề hôm trước đã giải quyết (nếu có)]
 
-## 📊 Production Metrics (Post-Launch)
-> Snapshot ngày [Date] — Số liệu do PO cung cấp
+Production Metrics (snapshot [Date])   ← bỏ nếu chưa launch
+- Users: [active] active / [total] total / +[new] new today (source: [tool])
+- Business: $[revenue] revenue / [transactions] transactions (source: [tool])
+- Bugs: [open] open ([critical] critical) / [fixed] fixed / [total] total since launch
 
-- 👥 Users: [active] active / [total] total / +[new] new today (source: [tool])
-- 💰 Business: $[revenue] revenue / [transactions] transactions (source: [tool])
-- 🐛 Bugs: [open] open ([critical] critical) / [fixed] fixed / [total] total since launch
+What we're stuck on
+- [CRITICAL/HIGH/MEDIUM/LOW]: [Vấn đề]
+  Impact: [Ảnh hưởng tới người dùng / ngày bàn giao]
+- [Nếu chờ khách hàng]: Waiting for [Tên] to provide [gì] (day [N])
 
-> ⚠️ Nếu dự án chưa launch → bỏ qua mục này
+Options
+- A. [Giải pháp] — [thời gian / chi phí / ảnh hưởng]
+- B. [Giải pháp] — [thời gian / chi phí / ảnh hưởng]
 
-## 2. What I did
-- [Task cụ thể + chi tiết]
-- [Task cụ thể + chi tiết]
-- [Risk đã resolved từ hôm trước (nếu có)]
-
-## 3. Next Steps
-- [Task] - ETA: [Date]
-- [Task] - ETA: [Date]
-
-## 4. Risks and Blockers
-- [CRITICAL/HIGH/MEDIUM/LOW]: [Vấn đề + hậu quả]
-  → Action: [Giải pháp / đang làm gì]
-- [Nếu chờ khách hàng]: Đang chờ [Tên] cung cấp [gì]
-- [Nếu metrics bất thường]: ⚠️ WARNING: [Mô tả biến động + impact]
+What we chose and why
+- [A/B]. [Lý do]. [Người làm] [việc gì], done by [Date].
+- [Nếu cần khách duyệt]: Need [Tên] to confirm by [Date].
 ```
 
 ---
 
 ## Nguyên tắc chung
 
-| Không nên | Nên |
+| Chưa tốt | Tốt |
 |-----------|-----|
 | "Worked on frontend" | "Completed dashboard UI with dark mode support" |
-| "Will continue coding" | "Implement reward module – ETA: Aug 25" |
-| "Có vấn đề performance" | "CRITICAL: Response time > 3s, Action: profiling + cache" |
-| "Chưa có risk" | Nghĩ kỹ lại — luôn có ít nhất 1 risk tiềm ẩn |
-| Bỏ qua risk hôm trước | Nêu lại nếu chưa resolved, highlight nếu kéo dài |
+| "Project is progressing well" | "85% of AI Assistant Milestone done, 2 days behind plan" |
+| "Có vấn đề performance" | "CRITICAL: Response time > 3s on checkout. Impact: users drop at payment" |
+| "Chưa có risk" | Nghĩ kỹ lại — mở board xem dòng bôi đỏ, task `Pending` |
+| Chỉ có một giải pháp | Ít nhất 2 giải pháp, mỗi cái kèm cái giá |
+| "We will handle it" | "B. Dennis adds validation today, Kate runs QA from Sep 18" |
+| Bỏ qua vấn đề hôm trước | Nêu lại nếu chưa giải quyết, ghi ngày thứ mấy |
 | "Users tăng", "Doanh thu tốt" | "1,250 active / 5,000 total / +45 new (Firebase)" |
 
 ---

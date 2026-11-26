@@ -179,3 +179,16 @@ PO README, po-board-create/README, po-feature-request (README + example), po-pro
 - **Planning:** luôn tìm Key Success Features, làm đầu tiên, giao cho người giỏi & đáng tin nhất. Chia việc theo độ quan trọng, không theo độ khó.
 - ✅ Đã xoá `board-handbook/`, sửa ~23 link sang `po-board-create/board-create-handbook.md`.
 - Planning đổi thành `PRIORITY → ASSIGN → SEND`: PRIORITY = hiểu mục đích + 4 mức ưu tiên + Key Success Features bôi đỏ, đưa lên đầu board; ASSIGN = chia theo độ quan trọng + mỗi người soát việc mình + rủi ro + cam kết EOD; SEND = gửi board sau khi đủ cam kết.
+
+## Cập nhật 26/11 — A1–A6
+
+- A1: bỏ skill/AI instruction của board-create.
+- A2: task `Doing` quá 2 ngày → bôi đỏ (board-create handbook, internal-daily, dev-daily).
+- A3: bug vẫn log GitHub Issue; task sửa bug lên board kèm link ở Notes.
+- A4: Planning gửi board ngay sau họp (`planning-example.md` mới); Kick-off chỉ gửi agenda + tài liệu quy trình.
+- A5: dev-daily trỏ về management sheet.
+- A6: `04-developer/dev-daily-report/` viết lại theo 4 câu hỏi (process, handbook, example, AI instruction, template). Next Steps bỏ, kế hoạch nằm ở cột Expected done date. Production Metrics giữ, đặt sau câu 1; biến động bất thường đưa vào câu 2. Internal Daily handbook link sang cẩm nang Daily Report.
+- Tiếp theo: thảo luận B1–B2, C1–C6.
+- B1: bỏ link Zero to Product PDF/HTML. B2: `po-project-leave` → `po-member-leave`, quy trình 4 bước THANK-YOU → HANDOVER → REMOVE → AGREEMENT, template kinh nghiệm bảo trì, cam kết ở `policy/agreements/cyberk-member-leave-agreement.md`. Còn: 2 handbook member-leave + `dev-project-offboarding` theo luồng cũ.
+- A3 (chốt lại): bug chụp ảnh, đưa thẳng lên GitHub Issue; không có danh sách bug trên sheet. C3: sửa bug nào → task cho đúng bug đó trong tab sprint, link issue ở Notes (thêm vào Board Rule trong board-create-process). C1: giờ Internal Daily do team tự quyết, cố định mỗi ngày; PDF export trực tiếp từ file Management.
+- Còn: thêm dòng Board Rule mới vào tab README của TEMPLATE sheet.

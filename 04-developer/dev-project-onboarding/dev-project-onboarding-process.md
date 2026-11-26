@@ -28,7 +28,7 @@ Mục tiêu chính:
 Quy trình được kích hoạt khi:
 - Thành viên mới gia nhập Cyberk và được phân công vào dự án.
 - Thành viên nội bộ được điều chuyển từ dự án khác sang hoặc tham gia thêm dự án mới.
-- Thành viên được chỉ định làm người tiếp nhận bàn giao khi có người rời dự án (xem [Quy trình Rời Dự Án](../../05-product-owner/po-project-leave/po-project-leave-process.md)).
+- Thành viên được chỉ định làm người tiếp nhận bàn giao khi có người rời dự án (xem [Quy trình Rời Dự Án](../../05-product-owner/po-member-leave/member-leave-process.md)).
 
 ---
 
@@ -88,7 +88,7 @@ flowchart TD
 | **Thiếu hoặc sai biến môi trường** | So sánh `.env` với `.env.example`, kiểm tra quyền truy cập kho secrets và xác nhận đang dùng đúng cấu hình development. Nếu vẫn lỗi, báo Product Owner kèm tên biến bị thiếu và log đã che giá trị nhạy cảm. |
 | **Tài liệu hướng dẫn (README.md) của dự án bị thiếu hoặc sai lệch do thay đổi lâu ngày** | Product Owner trực tiếp giải thích các bước thực tế; thành viên mới ghi chép lại chính xác và mở ngay 1 Pull Request cập nhật lại file `README.md`. |
 | **Dự án đang trong giai đoạn phát hành gấp, Product Owner bận họp liên tục** | - Product Owner phân công tạm thời một Developer có kinh nghiệm trong team kèm cặp thay thế.<br>- Khoanh vùng cho thành viên mới một task hoàn toàn độc lập (như viết unit test hoặc tài liệu) để không ảnh hưởng đến luồng phát hành. |
-| **Thành viên mới là người tiếp nhận bàn giao từ nhân sự rời dự án** | - Product Owner chủ trì buổi họp bàn giao giữa người rời đi và người tiếp nhận.<br>- Thành viên mới phải trực tiếp chạy lại toàn bộ mã nguồn và xác nhận quyền truy cập trước sự chứng kiến của Product Owner (xem [Quy trình Rời Dự Án](../../05-product-owner/po-project-leave/po-project-leave-process.md)). |
+| **Thành viên mới là người tiếp nhận bàn giao từ nhân sự rời dự án** | - Product Owner chủ trì buổi họp bàn giao giữa người rời đi và người tiếp nhận.<br>- Thành viên mới phải trực tiếp chạy lại toàn bộ mã nguồn và xác nhận quyền truy cập trước sự chứng kiến của Product Owner (xem [Quy trình Rời Dự Án](../../05-product-owner/po-member-leave/member-leave-process.md)). |
 
 ---
 
@@ -125,7 +125,7 @@ flowchart TD
 
 - [Cẩm nang Onboarding Dự Án (Handbook)](dev-project-onboarding-handbook.md)
 - [Quy trình Tạo Repository Mới](../dev-new-repo/dev-new-repo-process.md)
-- [Quy trình Rời Dự Án (Project Leave)](../../05-product-owner/po-project-leave/po-project-leave-process.md)
+- [Quy trình Rời Dự Án (Member Leave)](../../05-product-owner/po-member-leave/member-leave-process.md)
 - [Cẩm nang Giao tiếp trong Team (Horenso)](../../03-team/team-communicate/communicate-handbook.md)
 - [Quy trình Quản lý Công việc Hàng ngày (Dev Daily)](../dev-daily/dev-daily-process.md)
 - [Cẩm nang Quản lý Board Dự Án](../../05-product-owner/po-board-create/board-create-handbook.md)

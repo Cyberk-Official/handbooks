@@ -25,7 +25,7 @@ flowchart LR
     P4 --> P5["5. Internal Daily\n(Mỗi ngày)"]
     P6["6. Feature Request\n(Khách thêm tính năng)"] -.-> P2
     P5 -.-> P2
-    P5 --> P7["7. Project Leave\n(Khi đổi nhân sự)"]
+    P5 --> P7["7. Member Leave\n(Khi đổi nhân sự)"]
     P5 --> P8["8. Handover\n(Bàn giao & Bảo trì)"]
 
     style P1 fill:#4dabf7,stroke:#333,color:#fff
@@ -105,13 +105,13 @@ flowchart LR
 | **6.2** | [Quy trình Tiếp nhận & Xử lý Feature Request](./po-feature-request/feature-request-process.md) | Process | Luồng 4 bước `UNDERSTAND → ESTIMATE (≤ 24h) → APPROVAL → PROPOSAL ($25/h)` & Email confirm |
 | **6.3** | [Mẫu Tin nhắn Không Tốt vs Tốt](./po-feature-request/feature-request-example.md) | Example | Chuỗi tình huống thực chiến với khách hàng Jon từ sau buổi họp đến Email chốt confirm |
 
-#### Chương 7: Điều Phối Khi Thành Viên Rời Dự Án ([`po-project-leave/`](./po-project-leave/))
+#### Chương 7: Điều Phối Khi Thành Viên Rời Dự Án ([`po-member-leave/`](./po-member-leave/))
 > *Đảm bảo không đứt gãy tiến độ, không thất thoát tri thức và an toàn bảo mật khi có biến động nhân sự.*
 
 | Thứ tự | Bài đọc | Loại | Nội dung cốt lõi |
 |:------:|---------|------|------------------|
-| **7.1** | [Cẩm nang Rời Dự Án dành cho PO](./po-project-leave/po-project-leave-lead-handbook.md) | Handbook | Trách nhiệm của PO khi điều phối bàn giao công việc và thu hồi quyền truy cập |
-| **7.2** | [Quy trình Chuyển giao & Rời Dự Án](./po-project-leave/po-project-leave-process.md) | Process | Các mốc bàn giao mã nguồn, tài liệu, tài khoản và checklist kiểm tra an toàn |
+| **7.1** | [Cẩm nang Rời Dự Án dành cho PO](./po-member-leave/member-leave-lead-handbook.md) | Handbook | Trách nhiệm của PO khi điều phối bàn giao công việc và thu hồi quyền truy cập |
+| **7.2** | [Quy trình Rời Dự Án](./po-member-leave/member-leave-process.md) | Process | 4 bước `THANK-YOU → HANDOVER → REMOVE → AGREEMENT`, file kinh nghiệm bảo trì và cam kết hoàn tất |
 
 ---
 
@@ -133,6 +133,5 @@ flowchart LR
 
 Các tài liệu dưới đây là file gửi riêng cho khách hàng, biểu mẫu để copy điền chữ hoặc tập lệnh dành cho AI thực thi:
 
-- **Tài liệu gửi khách trước Kick-off:** [cyberk-zero-to-product-en.pdf](./before-kick-off-docs/cyberk-zero-to-product-en.pdf) *(xem hướng dẫn tại [before-kick-off-docs/README.md](./before-kick-off-docs/README.md))*
 - **Biểu mẫu BRD & Báo giá mở rộng (Feature Request):** [feature-request-brd-template.md](./po-feature-request/template/feature-request-brd-template.md)
-- **Cẩm nang bàn giao dành riêng cho Member rời dự án:** [po-project-leave-member-handbook.md](./po-project-leave/po-project-leave-member-handbook.md)
+- **Cẩm nang bàn giao dành riêng cho Member rời dự án:** [member-leave-member-handbook.md](./po-member-leave/member-leave-member-handbook.md)

@@ -2,16 +2,21 @@
 type: delivery
 tags: [daily-report, templates, ai-instruction]
 created-date: 2025-07-05
-updated-date: 2026-09-06
+updated-date: 2026-11-26
 author: anderson
 status: Nháp
 ---
 
-# Cyberk Daily Report \- [Ngày]
+# [Project] Daily Report \- [Ngày]
 
-## **1\. Project Progress**
+## **What we completed**
 
-85% completed, 2 days ahead of schedule. Expected completion: [Ngày dự kiến hoàn thành], 15 working days remaining
+85% of [Milestone] done, 2 days behind plan
+
+* Deployed staking contract with gas optimization, reduced cost by 30%
+* Completed new dashboard UI with dark mode support
+* Fixed API rate limiting with token bucket algorithm
+* Testnet downtime from yesterday: resolved
 
 ## **📊 Production Metrics** *(Post-Launch)*
 
@@ -21,22 +26,22 @@ status: Nháp
 - 💰 **Business**: $12,500 revenue / 320 transactions *(source: Stripe Dashboard)*
 - 🐛 **Bugs**: 12 open (2 critical, 4 high) / 85 fixed / 97 total since launch
 
-## **2\. What I did**
+## **What we're stuck on**
 
-* Deployed staking contract with gas optimization, reduced cost by 30%  
-* Completed new dashboard UI with dark mode support  
-* Fixed API rate limiting with token bucket algorithm  
-* Resolved testnet downtime issue from yesterday
+* CRITICAL: Deepseek API accuracy is lower than expected. Impact: Milestone moves from [Ngày] to [Ngày]
+* MEDIUM: Dark mode specs from Jon still pending (day 3). Impact: Cannot finalize the settings screen
 
-## **3\. Next Steps**
+## **Options**
 
-* Smart contract development and audit \- ETA: [Ngày]  
-* Portfolio analytics dashboard integration \- ETA: [Ngày]  
-* Vesting test plan and automation \- ETA: [Ngày]  
-* Complete dark mode implementation \- ETA: [Ngày]
+* Deepseek
+  * A. Wait for Deepseek to improve their model. No date from Deepseek
+  * B. Add a validation step and run parallel QA. 2 extra days
+  * C. Switch to OpenAI for this feature. 1 day of work, +$200/month
+* Dark mode
+  * A. Wait for Jon's specs before building the settings screen
+  * B. Build light mode first, add dark mode when specs arrive
 
-## **4\. Risks and Blockers**
+## **What we chose and why**
 
-* CRITICAL: Gas optimization needed for vesting contract \- Action: Implementing batch processing, external audit scheduled  
-* HIGH: Expected high network load \- Action: Setting up load balancing with DevOps  
-* MEDIUM: Pending dark mode specs from Jon \- Action: Implementing light mode first, following up daily
+* Deepseek: B. Keeps the model the client chose, no extra monthly cost. [Người làm] adds validation today, [Người test] runs parallel QA from [Ngày]
+* Dark mode: B. The settings screen is not blocked. Need Jon's specs by [Ngày] to keep dark mode in this Milestone
