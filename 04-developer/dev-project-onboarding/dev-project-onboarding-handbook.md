@@ -188,5 +188,5 @@ Tại sao tồi: Tạo tâm lý tiêu cực cho tập thể và bỏ lỡ cơ h�
 - [Quy trình Tạo Repository Mới](../dev-new-repo/dev-new-repo-process.md)
 - [Cẩm nang Giao tiếp trong Team (Horenso)](../../03-team/team-communicate/communicate-handbook.md)
 - [Quy trình Quản lý Công việc Hàng ngày (Dev Daily)](../dev-daily/dev-daily-process.md)
-- [Cẩm nang Quản lý Board Cá nhân & Dự Án](../../05-product-owner/board-handbook/board-handbook.md)
+- [Cẩm nang Quản lý Board Cá nhân & Dự Án](../../05-product-owner/po-board-create/board-create-handbook.md)
 - [Quy trình Rời Dự Án (Project Leave)](../../05-product-owner/po-project-leave/po-project-leave-process.md)

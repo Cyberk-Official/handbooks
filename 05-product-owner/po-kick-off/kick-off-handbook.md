@@ -2,7 +2,7 @@
 type: delivery
 tags: [kick-off, handbook, client-management]
 created-date: 2026-08-27
-updated-date: 2026-11-16
+updated-date: 2026-11-26
 author: anderson
 status: Nháp
 ---
@@ -41,21 +41,6 @@ Tin nhắn ngày đầu phải làm được 4 việc:
 3. **Giới thiệu bước tiếp theo** — Kick-off Call để làm gì, tại sao cần
 4. **Hỏi lịch** — Đề xuất hẹn kick-off call ngay trong tin nhắn đầu tiên
 
-✅ Cách tốt:
-> *"Hi David, good morning! I'm Minh, your Product Owner from Cyberk — I'll be your main point of contact throughout the project. Very excited to be working with you on BookingApp!*
->
-> *I wanted to share how we kick things off at Cyberk:*
->
-> *📋 Step 1 — Internal Planning (today): Our full team — developers, QA, and tech lead — will sit down together to go through the project requirements in detail. We'll build a complete project plan: task breakdown, timeline, milestones, risk assessment, and team assignments. Why? We want every team member to deeply understand the product before writing a single line of code. I'll send you the Planning Report by end of day today.*
->
-> *🤝 Step 2 — Kick-off Call (with you): After the plan is ready, I'd like to schedule a call where we introduce the team, walk through the plan, and discuss our approach together. This is where we align expectations and make sure we're 100% on the same page before Sprint 1 begins.*
->
-> *Could you share your availability for a 45–60 min call in the next 2–3 days? I'll send an agenda beforehand so you know exactly what we'll cover.*
->
-> *Looking forward to a great collaboration!"*
-
-Tại sao tốt: Client biết ngay PO là ai. Hiểu quy trình Cyberk — team không code bừa mà có planning bài bản. Biết sẽ có buổi kick-off call, không bị bất ngờ. Và PO đã hỏi lịch luôn — không phải chờ bước 2 rồi mới hẹn.
-
 ❌ Cách tồi:
 > *(Im lặng cả ngày. Tối mới gửi file: "Hi David, attached is the plan.")*
 
@@ -66,13 +51,28 @@ Tại sao tồi: Client không biết PO là ai. Không hiểu team đang làm g
 
 Tại sao tồi: Không tự giới thiệu — client không biết nói chuyện với ai. Không giải thích planning là gì, tại sao quan trọng — client nghĩ đây chỉ là thủ tục. Không nhắc kick-off call — bước tiếp theo bị bỏ ngỏ. "Soon" và "by end of day" quá mờ nhạt.
 
+✅ Cách tốt:
+> *"Hi David, good morning! I'm Minh, your Product Owner from Cyberk — I'll be your main point of contact throughout the project. Very excited to be working with you on BookingApp!*
+>
+> *I wanted to share how we kick things off at Cyberk:*
+>
+> *📋 Step 1 — Internal Planning (today): Our full team — developers, QA, and tech lead — will sit down together to go through the project requirements in detail. We'll review the project plan together — milestones, timeline, risk assessment — and assign every task to a team member. Why? We want every team member to deeply understand the product before writing a single line of code. I'll send you the project board by end of day today.*
+>
+> *🤝 Step 2 — Kick-off Call (with you): After the plan is ready, I'd like to schedule a call where we introduce the team, walk through the plan, and discuss our approach together. This is where we align expectations and make sure we're 100% on the same page before Sprint 1 begins.*
+>
+> *Could you share your availability for a 45–60 min call in the next 2–3 days? I'll send an agenda beforehand so you know exactly what we'll cover.*
+>
+> *Looking forward to a great collaboration!"*
+
+Tại sao tốt: Client biết ngay PO là ai. Hiểu quy trình Cyberk — team không code bừa mà có planning bài bản. Biết sẽ có buổi kick-off call, không bị bất ngờ. Và PO đã hỏi lịch luôn — không phải chờ bước 2 rồi mới hẹn.
+
 > Mẫu tin nhắn hoàn chỉnh: xem [kick-off-example.md](./kick-off-example.md)
 
 ---
 
 ## Gửi plan — summary trước, file sau
 
-Sai lầm lớn nhất khi gửi Planning Report: gửi file trơn. Client mở PDF 10 trang ra, không biết đọc phần nào quan trọng, lướt qua rồi đóng. Khi buổi kick-off diễn ra, client chưa thực sự đọc plan.
+Sai lầm lớn nhất khi gửi board sau buổi Planning: gửi file trơn. Client mở PDF 10 trang ra, không biết đọc phần nào quan trọng, lướt qua rồi đóng. Khi buổi kick-off diễn ra, client chưa thực sự đọc plan.
 
 **Nguyên tắc: summary text đi trước file.** Client đọc summary trong 30 giây, nắm 3 ý chính, rồi mới mở file xem chi tiết nếu muốn.
 
@@ -84,10 +84,20 @@ Ba mục bắt buộc trong summary:
 
 Lúc này client đã biết sẽ có buổi kick-off (bạn đã hẹn ở tin nhắn sáng). Nên tin nhắn gửi plan chỉ cần focus vào **nội dung plan** — không cần hỏi lịch lại.
 
+❌ Cách tồi:
+> *"Hi David, please find the attached project board."*
+
+Tại sao tồi: Client mở PDF, lướt qua, đóng lại. Không nắm ý chính, không biết phần nào quan trọng. Buổi kick-off sau đó phải giải thích từ đầu — lãng phí thời gian.
+
+❌ Cũng tồi:
+> *"Hi David, the plan is done. The project has some risks but we'll handle them. Let me know when you're free to call."*
+
+Tại sao tồi: "Some risks but we'll handle them" = mơ hồ, không chuyên nghiệp. "Let me know when you're free" = bị động — bạn đã hỏi lịch ở tin nhắn sáng rồi, đừng hỏi lại.
+
 ✅ Cách tốt:
 > PO gửi Telegram kèm file:
 >
-> *"Hi David, our internal planning is complete! Here's the Planning Report (attached). Quick summary:*
+> *"Hi David, our internal planning is complete! Here's our project board (PDF attached). Quick summary:*
 >
 > *📋 Approach: We'll run 1-week sprints with daily progress updates, starting with the booking flow — the core user journey — before building secondary features like admin reports.*
 >
@@ -98,16 +108,6 @@ Lúc này client đã biết sẽ có buổi kick-off (bạn đã hẹn ở tin 
 > *Looking forward to walking you through this in our kick-off call! I'll send the agenda once we confirm the time."*
 
 Tại sao tốt: Client hiểu 3 ý chính trong 30 giây. Risk được frame thành "team đã nghĩ trước và có plan" — không phải "có vấn đề". Nối liền với kick-off call đã hẹn sáng — quy trình mạch lạc.
-
-❌ Cách tồi:
-> *"Hi David, please find the attached Planning Report."*
-
-Tại sao tồi: Client mở PDF, lướt qua, đóng lại. Không nắm ý chính, không biết phần nào quan trọng. Buổi kick-off sau đó phải giải thích từ đầu — lãng phí thời gian.
-
-❌ Cũng tồi:
-> *"Hi David, the plan is done. The project has some risks but we'll handle them. Let me know when you're free to call."*
-
-Tại sao tồi: "Some risks but we'll handle them" = mơ hồ, không chuyên nghiệp. "Let me know when you're free" = bị động — bạn đã hỏi lịch ở tin nhắn sáng rồi, đừng hỏi lại.
 
 > Mẫu tin nhắn hoàn chỉnh: xem [kick-off-example.md](./kick-off-example.md)
 
@@ -125,6 +125,11 @@ Tại sao tồi: "Some risks but we'll handle them" = mơ hồ, không chuyên n
 
 Đừng chỉ nói tên + chức danh. Client cần biết: **người này sẽ giúp tôi gì?**
 
+❌ Cách tồi:
+> *"I'm [Name], PO. This is [TL], senior developer. This is [Dev], developer."*
+
+Tại sao tồi: Chức danh không nói gì. Client không biết ai phụ trách gì, liên hệ ai khi cần gì.
+
 ✅ Cách tốt:
 > PO: *"Let me introduce the team. I'm [Name], I'll be your main point of contact for everything — progress updates, questions, changes. If you need anything, come to me first."*
 >
@@ -134,16 +139,11 @@ Tại sao tồi: "Some risks but we'll handle them" = mơ hồ, không chuyên n
 
 Tại sao tốt: Mỗi người được giới thiệu với vai trò cụ thể trong dự án **này** — không phải bio chung chung. Client biết ngay: "Có vấn đề gì → liên hệ PO. Câu hỏi kỹ thuật → TL."
 
-❌ Cách tồi:
-> *"I'm [Name], PO. This is [TL], senior developer. This is [Dev], developer."*
-
-Tại sao tồi: Chức danh không nói gì. Client không biết ai phụ trách gì, liên hệ ai khi cần gì.
-
 ### Phần 2: Planning Walk-through (15 phút)
 
 **Mục đích:** Client hiểu plan — không phải đọc lại plan.
 
-Client đã nhận Planning Report rồi (có thể đã đọc, có thể chưa). Phần này bạn **walk through** — không phải đọc lại từng dòng.
+Client đã nhận board rồi (có thể đã đọc, có thể chưa). Phần này bạn **walk through** — không phải đọc lại từng dòng.
 
 Focus vào 4 ý chính:
 1. **Scope** — Chúng ta sẽ build gì? (Feature list, phân loại ưu tiên)
@@ -151,18 +151,18 @@ Focus vào 4 ý chính:
 3. **Ownership** — Ai làm gì? (Task breakdown theo người)
 4. **Risks** — Điều gì có thể chậm trễ và team sẽ xử lý thế nào?
 
+❌ Cách tồi:
+> PO mở slide 1, đọc: *"Page 1, Project Overview..."* → Đọc từng trang, y hệt file PDF.
+
+Tại sao tồi: Client đã có file. Đọc lại = lãng phí thời gian. Buổi call phải tạo giá trị **thêm** so với đọc file — đó là giải thích, highlight, và trả lời câu hỏi.
+
 ✅ Cách tốt:
-> PO share screen, mở Planning Report:
+> PO share screen, mở board:
 > *"You've received the full plan — let me walk through the key points. We've prioritized features into 4 levels. The Key Success Features — booking flow, payment, and notifications — will be delivered in Sprints 1–3. These are the must-haves that determine whether the product works."*
 >
 > *"One risk I want to flag early: the payment API docs are incomplete. We're running a validation spike in Sprint 1 — by the end of week 2, we'll know if we need to adjust the approach."*
 
 Tại sao tốt: Không đọc lại plan — tóm ý chính. Risk được frame chủ động ("team đã có plan"), không bị động ("có vấn đề").
-
-❌ Cách tồi:
-> PO mở slide 1, đọc: *"Page 1, Project Overview..."* → Đọc từng trang, y hệt file PDF.
-
-Tại sao tồi: Client đã có file. Đọc lại = lãng phí thời gian. Buổi call phải tạo giá trị **thêm** so với đọc file — đó là giải thích, highlight, và trả lời câu hỏi.
 
 ### Phần 3: Approach & Strategy Discussion (15 phút)
 
@@ -175,6 +175,11 @@ Tại sao tồi: Client đã có file. Đọc lại = lãng phí thời gian. Bu
 - **Risk mitigation** — Team sẽ xử lý risk thế nào nếu nó xảy ra?
 - **Communication cadence** — Daily demo? Daily report qua kênh nào?
 
+❌ Cách tồi:
+> PO: *"We'll use Agile. Any questions?"*
+
+Tại sao tồi: Client nghe "Agile" hàng chục lần rồi. Không nói gì mới, không tạo giá trị.
+
 ✅ Cách tốt:
 > PO: *"Let me explain our approach. We'll work in 1-week sprints, with daily progress updates and demos. Every day, you'll see what's been built — you can see it running and give feedback immediately. If something needs to change, we catch it the next day, not next week."*
 >
@@ -183,11 +188,6 @@ Tại sao tồi: Client đã có file. Đọc lại = lãng phí thời gian. Bu
 > PO: *"For communication, we'll send you a daily progress report via Telegram — including what was built, what's next, and any blockers. Each day ends with a quick demo of what's been completed, so you can see the product evolving in real-time and give feedback immediately. Does that work for your team?"**
 
 Tại sao tốt: Client hiểu methodology (sẽ thấy output mỗi ngày, không phải chờ cuối sprint), TL giải thích tech choice bằng ngôn ngữ business (không phải jargon), và communication được thiết lập cụ thể — ngày, kênh, tần suất.
-
-❌ Cách tồi:
-> PO: *"We'll use Agile. Any questions?"*
-
-Tại sao tồi: Client nghe "Agile" hàng chục lần rồi. Không nói gì mới, không tạo giá trị.
 
 #### Dùng tài liệu quy trình Zero to Product
 
@@ -198,15 +198,15 @@ Với dự án Zero to Product, phần này trình bày bằng [tài liệu quy 
 3. **A day, a week, a month (trang 08):** client sẽ nhận gì mỗi ngày, mỗi tuần.
 4. **Change & ownership (trang 10):** đổi ý thì làm thế nào, và code là của client.
 
-✅ Cách tốt:
-> PO share trang Timeline: *"Here's your 30 days on one page. Design and development start together on Monday the 1st. From day 7, you'll see the product in a short demo every day, and your feedback goes straight into the next day's work. Launch day is the 28th: our team stays online for 24 hours after go-live. You'll approve at three points: design and specs on day 6, production review on day 27, and a stable live system on day 29."*
-
-Tại sao tốt: Client nghe ngày cụ thể trên lịch của mình, biết lúc nào mình cần có mặt và lúc nào mình phải duyệt.
-
 ❌ Cách tồi:
 > *"We sent you our process document, please read it when you have time."*
 
 Tại sao tồi: Phần lớn client không đọc. Ba tuần sau họ ngạc nhiên vì phải duyệt production review, hoặc không hiểu vì sao một yêu cầu đổi cần báo impact trước.
+
+✅ Cách tốt:
+> PO share trang Timeline: *"Here's your 30 days on one page. Design and development start together on Monday the 1st. From day 7, you'll see the product in a short demo every day, and your feedback goes straight into the next day's work. Launch day is the 28th: our team stays online for 24 hours after go-live. You'll approve at three points: design and specs on day 6, production review on day 27, and a stable live system on day 29."*
+
+Tại sao tốt: Client nghe ngày cụ thể trên lịch của mình, biết lúc nào mình cần có mặt và lúc nào mình phải duyệt.
 
 ### Phần 4: Open Q&A (10 phút)
 
@@ -214,15 +214,15 @@ Tại sao tồi: Phần lớn client không đọc. Ba tuần sau họ ngạc nh
 
 Mở bằng câu mời rõ ràng, không hỏi chung chung "Có câu hỏi gì không?"
 
-✅ Cách tốt:
-> *"Before we wrap up — is there anything you'd like us to do differently? Any concerns about the timeline, the approach, or anything else? This is the best time to raise it — we'd rather adjust now than discover a misalignment in Sprint 3."*
-
-Tại sao tốt: "Do differently" mời client góp ý (không chỉ hỏi). "Rather adjust now" = frame rằng feedback sớm là tốt, không phải phàn nàn.
-
 ❌ Cách tồi:
 > *"Any questions? No? Ok let's wrap up."*
 
 Tại sao tồi: Hỏi nhanh, không chờ = client nghĩ team không thực sự muốn nghe. Những lo lắng chưa nói ra sẽ thành vấn đề 3 tuần sau.
+
+✅ Cách tốt:
+> *"Before we wrap up — is there anything you'd like us to do differently? Any concerns about the timeline, the approach, or anything else? This is the best time to raise it — we'd rather adjust now than discover a misalignment in Sprint 3."*
+
+Tại sao tốt: "Do differently" mời client góp ý (không chỉ hỏi). "Rather adjust now" = frame rằng feedback sớm là tốt, không phải phàn nàn.
 
 ### Phần 5: Next Steps (5 phút)
 
@@ -251,19 +251,20 @@ Email tổng kết cần có:
 - Action items (ai, làm gì, khi nào)
 - Next steps (ngày bắt đầu sprint, first sync, kênh liên lạc)
 
-✅ Cách tốt:
-> Gửi email 2 tiếng sau buổi call, structured rõ ràng, có bảng action items.
-
 ❌ Cách tồi:
 > Gửi ngày hôm sau, nội dung là 1 đoạn văn dài không bullet points.
+
+✅ Cách tốt:
+> Gửi email 2 tiếng sau buổi call, structured rõ ràng, có bảng action items.
 
 > Mẫu email hoàn chỉnh: xem [kick-off-example.md](./kick-off-example.md)
 
 ---
 
+| Giai đoạn | Mẫu tốt ✅ | Mẫu tồi ❌ |
+
 ## Mẫu tốt vs Mẫu tồi — tổng hợp
 
-| Giai đoạn | Mẫu tốt ✅ | Mẫu tồi ❌ |
 |-----------|-----------|-----------| 
 | Tin nhắn ngày đầu | Tự giới thiệu, giải thích 2-step process, hỏi lịch kick-off luôn | Im lặng cả ngày, hoặc gửi tin không giới thiệu mình |
 | Gửi plan | Summary text (Approach, Risks, Strategy) + file PDF | Gửi file trơn: "Please see attached" |

@@ -149,6 +149,12 @@ Slide 8: Thank You & Open Discussion
 
 ## Bước 2 — Hẹn lịch call, kèm nội dung trước
 
+### ❌ Mẫu KHÔNG TỐT
+
+> *Hi David, project is done. When can we schedule the handover meeting?*
+
+Tại sao tồi: "Done" khi vẫn còn bugs — không trung thực. Không có agenda → client vào họp không biết chuẩn bị gì. Không nhắc maintenance → client nghĩ handover = kết thúc.
+
 ### ✅ Mẫu TỐT — Tin nhắn hẹn lịch bàn giao
 
 > *Hi David, great news — we've completed the development phase! All main features are fully built and working, including the booking flow, admin dashboard, and payment integration.*
@@ -171,12 +177,6 @@ Slide 8: Thank You & Open Discussion
 > *- Wednesday Aug 27, 10:00 AM (GMT+7)*
 
 Tốt vì: Trả lời 4 câu hỏi client quan tâm (xong gì, còn gì, bàn giao thế nào, sau đó sao). Có agenda cụ thể → client biết sẽ thảo luận gì. Đề xuất 2 slot → client chọn nhanh. Frame "chuyển giai đoạn" loại bỏ nỗi lo.
-
-### ❌ Mẫu KHÔNG TỐT
-
-> *Hi David, project is done. When can we schedule the handover meeting?*
-
-Tại sao tồi: "Done" khi vẫn còn bugs — không trung thực. Không có agenda → client vào họp không biết chuẩn bị gì. Không nhắc maintenance → client nghĩ handover = kết thúc.
 
 ---
 
@@ -258,6 +258,13 @@ Tại sao tồi: "Done" khi vẫn còn bugs — không trung thực. Không có 
 
 ## Bước 4 — Gửi email tổng kết
 
+### ❌ Mẫu KHÔNG TỐT
+
+> *Hi David, đính kèm tài liệu bàn giao. Anh xem nhé, có gì liên hệ team.*
+> → Đính kèm file PDF 15 trang. Không recap, không action items.
+
+Tại sao tồi: Client không đọc 15 trang. Không có action items → mọi thứ nói trong buổi họp tan biến. 3 tuần sau hệ thống lỗi → mở file không biết phần nào liên quan.
+
 ### ✅ Mẫu TỐT — Email recap sau buổi bàn giao
 
 > **Subject:** [Project Name] — Handover Complete | Documents & Next Steps
@@ -299,13 +306,6 @@ Tại sao tồi: "Done" khi vẫn còn bugs — không trung thực. Không có 
 > *Cyberk*
 
 Tốt vì: Email có cấu trúc rõ — recap → action items có deadline → attachments → maintenance timeline. Client có 1 nơi duy nhất để tra cứu mọi thứ. Action items ghi rõ **ai làm** + **deadline cụ thể**.
-
-### ❌ Mẫu KHÔNG TỐT
-
-> *Hi David, đính kèm tài liệu bàn giao. Anh xem nhé, có gì liên hệ team.*
-> → Đính kèm file PDF 15 trang. Không recap, không action items.
-
-Tại sao tồi: Client không đọc 15 trang. Không có action items → mọi thứ nói trong buổi họp tan biến. 3 tuần sau hệ thống lỗi → mở file không biết phần nào liên quan.
 
 ---
 

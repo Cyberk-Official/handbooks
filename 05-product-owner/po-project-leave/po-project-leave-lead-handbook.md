@@ -23,6 +23,17 @@ Mục tiêu tối thượng của Product Owner là: **Đảm bảo tính liên 
 
 Khi nhận được tin nhắn hoặc email xin rời dự án từ một thành viên, phản ứng ban đầu của Product Owner sẽ quyết định toàn bộ thái độ hợp tác và sự suôn sẻ của cả quá trình chuyển giao sau đó.
 
+**❌ Cách tồi:**  
+- Tỏ thái độ khó chịu, trách móc, tra khảo hoặc im lặng không phản hồi nhiều ngày.
+- Hoặc ngược lại, đồng ý ngay lập tức mà không rà soát lại khối lượng công việc và quyền truy cập thành viên đang nắm giữ.
+
+```text
+"Sao lại nghỉ lúc này? Dự án đang gấp thế này em nghỉ là vỡ hết tiến độ đấy!"
+(Hoặc: "Ok em, chừng nào nghỉ thì bảo anh.")
+```
+
+Tại sao tồi: Gây ức chế tâm lý, khiến thành viên có tâm lý buông xuôi, bàn giao qua loa hoặc thậm chí bỏ ngang công việc gây khủng hoảng cho team.
+
 **✅ Cách tốt:**  
 1. **Phản hồi chuyên nghiệp và bình tĩnh:** Ghi nhận thông tin, gửi lời cảm ơn đóng góp ban đầu và hẹn một buổi gặp 1-1 nhanh (15–30 phút) trong vòng 24 giờ.
 2. **Thực hiện Đánh giá Tác động & Rủi ro (Impact Assessment):** Trước buổi gặp 1-1, Product Owner tự rà soát:
@@ -39,22 +50,16 @@ Anh em mình set một buổi trao đổi 1-1 ngắn lúc 14:00 chiều nay đ�
 
 Tại sao tốt: Thể hiện sự tôn trọng, giữ tinh thần làm việc tích cực cho thành viên và giúp Product Owner ngay lập tức nắm thế chủ động trong việc quản trị rủi ro nhân sự.
 
-**❌ Cách tồi:**  
-- Tỏ thái độ khó chịu, trách móc, tra khảo hoặc im lặng không phản hồi nhiều ngày.
-- Hoặc ngược lại, đồng ý ngay lập tức mà không rà soát lại khối lượng công việc và quyền truy cập thành viên đang nắm giữ.
-
-```text
-"Sao lại nghỉ lúc này? Dự án đang gấp thế này em nghỉ là vỡ hết tiến độ đấy!"
-(Hoặc: "Ok em, chừng nào nghỉ thì bảo anh.")
-```
-
-Tại sao tồi: Gây ức chế tâm lý, khiến thành viên có tâm lý buông xuôi, bàn giao qua loa hoặc thậm chí bỏ ngang công việc gây khủng hoảng cho team.
-
 ---
 
 ## Tình huống 2 — Thiết lập Kế hoạch Chuyển giao (Handover Plan) & Điểm cắt công việc (Cutoff Date)
 
 Một sai lầm phổ biến là để thành viên sắp rời đi tiếp tục ôm đồm tính năng mới cho đến tận ngày cuối cùng, dẫn đến việc không còn thời gian viết tài liệu và kiểm thử chuyển giao.
+
+**❌ Cách tồi:**  
+Giao thêm task mới sát ngày nghỉ: *"Còn 3 ngày nữa em ráng code nốt màn hình này đi rồi hôm cuối gửi tài liệu qua chat sau."*
+
+Tại sao tồi: Thành viên không kịp viết tài liệu, code vội vàng sinh nhiều lỗi tiềm ẩn, và khi họ rời đi không ai trong team hiểu logic để bảo trì tiếp.
 
 **✅ Cách tốt:**  
 Product Owner thiết lập **Điểm cắt công việc (Cutoff Date - thường là T-7 ngày làm việc)** và chia giai đoạn chuyển giao rõ ràng:
@@ -76,16 +81,16 @@ Product Owner thiết lập **Điểm cắt công việc (Cutoff Date - thườn
 
 Tại sao tốt: Phân bổ thời gian khoa học, đảm bảo công việc không bị dồn ứ vào ngày cuối và tài liệu bàn giao đạt chất lượng thực tế.
 
-**❌ Cách tồi:**  
-Giao thêm task mới sát ngày nghỉ: *"Còn 3 ngày nữa em ráng code nốt màn hình này đi rồi hôm cuối gửi tài liệu qua chat sau."*
-
-Tại sao tồi: Thành viên không kịp viết tài liệu, code vội vàng sinh nhiều lỗi tiềm ẩn, và khi họ rời đi không ai trong team hiểu logic để bảo trì tiếp.
-
 ---
 
 ## Tình huống 3 — Chỉ định và định hướng nhiệm vụ cho Người nhận bàn giao (Receiver)
 
 Nếu Product Owner chỉ định Receiver một cách hời hợt theo kiểu "ngồi nghe cho biết", buổi bàn giao sẽ trở thành hình thức và người ở lại vẫn không thể tiếp quản được hệ thống.
+
+**❌ Cách tồi:**  
+Chỉ định Receiver sát giờ họp mà không thông báo trước, hoặc để Receiver ngồi nghe thụ động suốt buổi họp mà không yêu cầu thao tác thực tế trên máy tính.
+
+Tại sao tồi: Receiver nghe xong nhưng không nhớ, không chạy được code trên máy mình và để lại lỗ hổng tri thức nghiêm trọng cho dự án.
 
 **✅ Cách tốt:**  
 1. **Tiêu chí chọn Receiver:** Chọn nhân sự có chuyên môn tương đồng, hoặc đang phụ trách module liên quan. Nếu khối lượng công việc quá lớn, PO có thể tách làm 2 Receiver (ví dụ: 1 người nhận mảng Frontend, 1 người nhận Backend/Infra).
@@ -103,16 +108,16 @@ Sáng mai anh em mình sẽ có buổi họp bàn giao 3 bên, em sẽ trực ti
 
 Tại sao tốt: Receiver có sự chuẩn bị chủ động, tiếp thu tri thức có chiều sâu và sẵn sàng làm chủ mã nguồn ngay sau buổi bàn giao.
 
-**❌ Cách tồi:**  
-Chỉ định Receiver sát giờ họp mà không thông báo trước, hoặc để Receiver ngồi nghe thụ động suốt buổi họp mà không yêu cầu thao tác thực tế trên máy tính.
-
-Tại sao tồi: Receiver nghe xong nhưng không nhớ, không chạy được code trên máy mình và để lại lỗ hổng tri thức nghiêm trọng cho dự án.
-
 ---
 
 ## Tình huống 4 — Quản trị mã nguồn & Board: Dọn dẹp Git Branch và dứt điểm Pull Request
 
 Mã nguồn dở dang nằm trên máy cá nhân của người rời đi là một trong những rủi ro kỹ thuật lớn nhất khi nhân sự nghỉ việc.
+
+**❌ Cách tồi:**  
+Không kiểm tra Git remote trước khi member rời đi, chỉ tin vào lời hứa *"code em để trên máy, có gì em gửi sau"*.
+
+Tại sao tồi: Sau khi member rời đi hoặc bị khóa tài khoản, mã nguồn quan trọng bị kẹt trên máy cá nhân không thể thu hồi được.
 
 **✅ Cách tốt:**  
 Product Owner trực tiếp rà soát và kiểm soát theo 3 bước:
@@ -127,16 +132,16 @@ Product Owner trực tiếp rà soát và kiểm soát theo 3 bước:
 
 Tại sao tốt: Không bị thất thoát bất kỳ dòng code nào, giữ cho Git repository và Board dự án luôn sạch sẽ, rõ ràng.
 
-**❌ Cách tồi:**  
-Không kiểm tra Git remote trước khi member rời đi, chỉ tin vào lời hứa *"code em để trên máy, có gì em gửi sau"*.
-
-Tại sao tồi: Sau khi member rời đi hoặc bị khóa tài khoản, mã nguồn quan trọng bị kẹt trên máy cá nhân không thể thu hồi được.
-
 ---
 
 ## Tình huống 5 — Thẩm định & Phê duyệt Tài liệu Bàn giao (Handover Doc Review)
 
 Product Owner là người chịu trách nhiệm cuối cùng về chất lượng tài liệu bàn giao. Không phê duyệt các tài liệu viết chung chung, sơ sài.
+
+**❌ Cách tồi:**  
+Đọc lướt qua tài liệu 2 trang A4 chỉ toàn gạch đầu dòng ngắn ngủn (`Code ở branch main, task trên board`) rồi bấm duyệt ngay.
+
+Tại sao tồi: Tài liệu vô giá trị, gây lãng phí thời gian của người tiếp quản sau này.
 
 **✅ Cách tốt:**  
 Product Owner thẩm định tài liệu dựa trên **Bộ tiêu chuẩn 4 Trụ Cột & Tính tự giải thích (Self-explanatory)**:
@@ -153,16 +158,16 @@ Em bổ sung thêm mục giải thích log lỗi Webhook và đính kèm video q
 
 Tại sao tốt: Đảm bảo tài liệu có tính ứng dụng cao, bất kỳ dev mới nào vào sau đọc cũng có thể tiếp quản được ngay mà không cần liên hệ lại người cũ.
 
-**❌ Cách tồi:**  
-Đọc lướt qua tài liệu 2 trang A4 chỉ toàn gạch đầu dòng ngắn ngủn (`Code ở branch main, task trên board`) rồi bấm duyệt ngay.
-
-Tại sao tồi: Tài liệu vô giá trị, gây lãng phí thời gian của người tiếp quản sau này.
-
 ---
 
 ## Tình huống 6 — Chủ trì Buổi họp Bàn giao (Handover Session & Live Verification)
 
 Buổi họp bàn giao không phải là buổi thuyết trình một chiều, mà là phiên **nghiệm thu và kiểm chứng thực tế (Verification Session)** do Product Owner chủ trì.
+
+**❌ Cách tồi:**  
+Product Owner vắng mặt trong buổi họp để 2 thành viên tự trao đổi với nhau, không quay video lưu trữ, không có bước nghiệm thu chạy code thực tế.
+
+Tại sao tồi: Hai thành viên trao đổi qua loa, bỏ qua các góc khuất kỹ thuật, và khi phát sinh lỗi Product Owner không nắm được nguyên nhân để xử lý.
 
 **✅ Cách tốt:**  
 Product Owner điều phối buổi họp theo kịch bản 3 bước:
@@ -172,16 +177,16 @@ Product Owner điều phối buổi họp theo kịch bản 3 bước:
 
 Tại sao tốt: Xác thực 100% việc người mới đã cài đặt và hiểu được mã nguồn; lưu trữ tư liệu sống động cho dự án.
 
-**❌ Cách tồi:**  
-Product Owner vắng mặt trong buổi họp để 2 thành viên tự trao đổi với nhau, không quay video lưu trữ, không có bước nghiệm thu chạy code thực tế.
-
-Tại sao tồi: Hai thành viên trao đổi qua loa, bỏ qua các góc khuất kỹ thuật, và khi phát sinh lỗi Product Owner không nắm được nguyên nhân để xử lý.
-
 ---
 
 ## Tình huống 7 — Thu hồi Quyền truy cập (Access Revocation) & Bảo mật Zero Trust
 
 Bảo mật thông tin dự án là trách nhiệm sống còn của Product Owner. Sau ngày làm việc cuối cùng, không được để sót bất kỳ quyền truy cập nào.
+
+**❌ Cách tồi:**  
+Quên không xóa SSH keys trên server production hoặc để member tiếp tục ở lại nhóm Telegram dự án sau khi đã rời đi hàng tháng trời.
+
+Tại sao tồi: Vi phạm nghiêm trọng chính sách bảo mật, tạo nguy cơ lộ dữ liệu khách hàng và mất an toàn mã nguồn.
 
 **✅ Cách tốt:**  
 Product Owner áp dụng nguyên tắc **Zero Trust Offboarding**, thực hiện rà soát và thu hồi quyền theo bảng kiểm định trước 18:00 ngày làm việc cuối cùng:
@@ -197,16 +202,16 @@ Product Owner áp dụng nguyên tắc **Zero Trust Offboarding**, thực hiện
 
 Tại sao tốt: Ngăn chặn triệt để rủi ro rò rỉ dữ liệu khách hàng, đảm bảo tính toàn vẹn và tuân thủ tiêu chuẩn an toàn thông tin của Cyberk.
 
-**❌ Cách tồi:**  
-Quên không xóa SSH keys trên server production hoặc để member tiếp tục ở lại nhóm Telegram dự án sau khi đã rời đi hàng tháng trời.
-
-Tại sao tồi: Vi phạm nghiêm trọng chính sách bảo mật, tạo nguy cơ lộ dữ liệu khách hàng và mất an toàn mã nguồn.
-
 ---
 
 ## Tình huống 8 — Xử lý tình huống Bất khả kháng / Nghỉ đột xuất / Thành viên Ghosting
 
 Trong trường hợp thành viên gặp sự cố sức khỏe nặng, biến cố gia đình đột xuất hoặc cố tình ngắt liên lạc (Ghosting) mà không bàn giao:
+
+**❌ Cách tồi:**  
+Hoảng loạn, đổ lỗi cho thành viên trước mặt khách hàng/team, hoặc bỏ mặc các task dở dang làm ảnh hưởng dây chuyền đến cả hệ thống.
+
+Tại sao tồi: Làm mất uy tín của cả công ty với khách hàng và gây suy sụp tinh thần của các thành viên còn lại trong team.
 
 **✅ Cách tốt:**  
 Product Owner kích hoạt **Quy trình Ứng phó Khẩn cấp 4 bước**:
@@ -217,16 +222,16 @@ Product Owner kích hoạt **Quy trình Ứng phó Khẩn cấp 4 bước**:
 
 Tại sao tốt: Giữ cho dự án đứng vững trước khủng hoảng nhân sự, xử lý minh bạch và đúng quy định công ty.
 
-**❌ Cách tồi:**  
-Hoảng loạn, đổ lỗi cho thành viên trước mặt khách hàng/team, hoặc bỏ mặc các task dở dang làm ảnh hưởng dây chuyền đến cả hệ thống.
-
-Tại sao tồi: Làm mất uy tín của cả công ty với khách hàng và gây suy sụp tinh thần của các thành viên còn lại trong team.
-
 ---
 
 ## Tình huống 9 — Khi dự án chưa có nhân sự thay thế: Product Owner đóng vai trò "Knowledge Vault"
 
 Khi dự án neo người hoặc chưa kịp tuyển nhân sự mới thay thế ngay, Product Owner chính là "chiếc cầu nối tri thức" lưu trữ mọi thông tin.
+
+**❌ Cách tồi:**  
+Nghĩ rằng "chưa có người mới thì bàn giao làm gì", cho phép member rời đi mà không cần viết tài liệu chi tiết.
+
+Tại sao tồi: Đến khi tuyển được người mới vào thì toàn bộ tri thức kỹ thuật cũ đã biến mất, team phải mò mẫm hoặc viết lại code từ đầu.
 
 **✅ Cách tốt:**  
 1. **Tiếp nhận vai trò Receiver trung gian:** Product Owner trực tiếp đứng ra nhận bàn giao từ thành viên rời đi, yêu cầu tài liệu đạt chuẩn Self-explanatory tối đa.
@@ -235,16 +240,17 @@ Khi dự án neo người hoặc chưa kịp tuyển nhân sự mới thay thế
 
 Tại sao tốt: Dự án không bị phụ thuộc vào một cá nhân cụ thể, tri thức được thể chế hóa và dễ dàng chuyển giao cho bất kỳ ai trong tương lai.
 
-**❌ Cách tồi:**  
-Nghĩ rằng "chưa có người mới thì bàn giao làm gì", cho phép member rời đi mà không cần viết tài liệu chi tiết.
-
-Tại sao tồi: Đến khi tuyển được người mới vào thì toàn bộ tri thức kỹ thuật cũ đã biến mất, team phải mò mẫm hoặc viết lại code từ đầu.
-
 ---
 
 ## Tình huống 10 — Đánh giá Hoàn tất (Sign-off), Phân bổ Thưởng dự án & Giữ gìn văn hóa
 
 Kết thúc quá trình rời dự án bằng một buổi nghiệm thu rõ ràng và lời cảm ơn chân thành khẳng định văn hóa chuyên nghiệp của Cyberk.
+
+**❌ Cách tồi:**  
+- Âm thầm kick member ra khỏi nhóm chat không một lời thông báo, hoặc tìm cách cắt giảm thưởng vô lý dù thành viên đã bàn giao chu đáo.
+- Hoặc ký duyệt bừa bãi khi chưa kiểm tra checklist khiến rủi ro kỹ thuật còn treo lơ lửng.
+
+Tại sao tồi: Phá vỡ văn hóa công ty, tạo hình ảnh xấu về năng lực quản trị của Product Owner và gây bất an cho các nhân sự ở lại.
 
 **✅ Cách tốt:**  
 1. **Ký duyệt hoàn tất (Sign-off):** Product Owner kiểm tra lại toàn bộ checklist: mã nguồn đã dọn dẹp, PR đã xử lý, tài liệu đã lưu trữ, quyền hạn đã thu hồi 100%.
@@ -258,12 +264,6 @@ Chúc em luôn nhiều sức khỏe, năng lượng và gặt hái nhiều thàn
 ```
 
 Tại sao tốt: Tạo kết thúc đẹp, giữ gìn mối quan hệ đồng nghiệp tốt đẹp, khích lệ tinh thần trách nhiệm của toàn thể đội ngũ còn ở lại.
-
-**❌ Cách tồi:**  
-- Âm thầm kick member ra khỏi nhóm chat không một lời thông báo, hoặc tìm cách cắt giảm thưởng vô lý dù thành viên đã bàn giao chu đáo.
-- Hoặc ký duyệt bừa bãi khi chưa kiểm tra checklist khiến rủi ro kỹ thuật còn treo lơ lửng.
-
-Tại sao tồi: Phá vỡ văn hóa công ty, tạo hình ảnh xấu về năng lực quản trị của Product Owner và gây bất an cho các nhân sự ở lại.
 
 ---
 
@@ -289,5 +289,5 @@ Tại sao tồi: Phá vỡ văn hóa công ty, tạo hình ảnh xấu về năn
 - [Quy trình Onboarding Dự Án](../project-onboarding/project-onboarding-process.md)
 - [Cẩm nang Onboarding Dự Án](../project-onboarding/project-onboarding-handbook.md)
 - [Cẩm nang Giao tiếp trong Team (Horenso)](../team-communicate/team-communicate-handbook.md)
-- [Cẩm nang Quản lý Board Dự Án](../../05-product-owner/board-handbook/board-handbook.md)
+- [Cẩm nang Quản lý Board Dự Án](../po-board-create/board-create-handbook.md)
 - Chính Sách Thưởng Dự Án *(tài liệu đang cập nhật)*

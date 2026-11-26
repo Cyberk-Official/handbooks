@@ -21,6 +21,15 @@ Sổ tay này cung cấp các hướng dẫn thực tế, giải thích cách t�
 
 Khi bạn muốn rời dự án vì lý do cá nhân hoặc định hướng công việc, cách bạn giao tiếp quyết định sự chuyên nghiệp và uy tín cá nhân của bạn.
 
+**❌ Cách tồi:**  
+> Thông báo sát ngày (hoặc đột ngột nghỉ) mà không có sự chuẩn bị hay bàn giao gì.
+
+```text
+"Chào anh, ngày mai em nghỉ dự án X nha anh. Code em đã push lên git rồi, mọi người tự lấy về chạy tiếp nha."
+```
+
+Tại sao tồi: Gây khó khăn cực kỳ lớn cho team, làm vỡ tiến độ dự án, vi phạm quy tắc ứng xử và có thể bị hủy thưởng dự án theo [[project-bonus-policy|Chính Sách Thưởng Dự Án]].
+
 **✅ Cách tốt:**  
 > Thông báo sớm ít nhất 2 tuần, giải thích lý do rõ ràng, lịch sự và chủ động đề xuất kế hoạch bàn giao chi tiết.
 
@@ -32,20 +41,20 @@ Em gửi kèm link dự thảo kế hoạch bàn giao ở đây để anh xem x�
 
 Tại sao tốt: Giúp Product Owner ở thế chủ động sắp xếp người thay thế, giảm thiểu xung đột và giữ mối quan hệ tốt đẹp giữa các thành viên.
 
-**❌ Cách tồi:**  
-> Thông báo sát ngày (hoặc đột ngột nghỉ) mà không có sự chuẩn bị hay bàn giao gì.
-
-```text
-"Chào anh, ngày mai em nghỉ dự án X nha anh. Code em đã push lên git rồi, mọi người tự lấy về chạy tiếp nha."
-```
-
-Tại sao tồi: Gây khó khăn cực kỳ lớn cho team, làm vỡ tiến độ dự án, vi phạm quy tắc ứng xử và có thể bị hủy thưởng dự án theo [[project-bonus-policy|Chính Sách Thưởng Dự Án]].
-
 ---
 
 ## Tình huống 2 — Được Ban Quản lý điều chuyển sang dự án khác thì cần làm gì?
 
 Khi công ty yêu cầu bạn chuyển sang một dự án mới quan trọng hơn hoặc phù hợp hơn, bạn vẫn có trách nhiệm đóng gói và bàn giao dự án cũ một cách trọn vẹn.
+
+**❌ Cách tồi:**  
+> Ngay khi có lệnh chuyển là lập tức bỏ bê dự án cũ, dồn toàn bộ sự chú ý sang dự án mới hoặc ôm đồm cả 2 mà không làm rõ giới hạn năng lực.
+
+```text
+"Em nhận lệnh sang dự án mới rồi nên dự án này em không làm tiếp được nữa nha, anh kiếm ai làm nốt giùm em."
+```
+
+Tại sao tồi: Gây ách tắc cho dự án cũ, tạo ấn tượng thiếu trách nhiệm và làm mất uy tín cá nhân với cả hai team.
 
 **✅ Cách tốt:**  
 > Phối hợp cùng Product Owner dự án cũ và Product Owner dự án mới để thống nhất "Điểm cắt chuyển giao" (Transition Cutoff), tập trung hoàn thiện dứt điểm các task đang làm trước ngày switch hoàn toàn.
@@ -58,20 +67,16 @@ Em gửi kế hoạch chuyển giao chi tiết ở đây ạ."
 
 Tại sao tốt: Đảm bảo dự án cũ không bị "gãy", bạn bước sang dự án mới với tâm thế thoải mái và vẫn được hưởng chính sách thưởng dự án theo tỷ lệ đóng góp (pro-rata).
 
-**❌ Cách tồi:**  
-> Ngay khi có lệnh chuyển là lập tức bỏ bê dự án cũ, dồn toàn bộ sự chú ý sang dự án mới hoặc ôm đồm cả 2 mà không làm rõ giới hạn năng lực.
-
-```text
-"Em nhận lệnh sang dự án mới rồi nên dự án này em không làm tiếp được nữa nha, anh kiếm ai làm nốt giùm em."
-```
-
-Tại sao tồi: Gây ách tắc cho dự án cũ, tạo ấn tượng thiếu trách nhiệm và làm mất uy tín cá nhân với cả hai team.
-
 ---
 
 ## Tình huống 3 — Xử lý thế nào khi gặp trường hợp bất khả kháng / nghỉ đột xuất (sức khỏe, sự cố gia đình)?
 
 Khi xảy ra biến cố bất khả kháng, ưu tiên hàng đầu là sự an toàn và sức khỏe của bạn. Tuy nhiên, hãy cố gắng cung cấp thông tin tối thiểu cần thiết để team có thể vận hành tiếp.
+
+**❌ Cách tồi:**  
+> Biến mất hoàn toàn không một lời nhắn (Ghosting), giữ mã nguồn dở dang trên máy cá nhân mà không push lên Git, hoặc giữ tài khoản độc quyền khiến team không thể truy cập.
+
+Tại sao tồi: Làm tê liệt toàn bộ luồng công việc của đồng đội, team phải viết lại từ đầu hoặc mất quyền truy cập tài nguyên của khách hàng.
 
 **✅ Cách tốt:**  
 > Báo ngay cho Product Owner càng sớm càng tốt qua điện thoại hoặc tin nhắn ngắn gọn. Gửi thông tin truy cập khẩn cấp và vị trí code/tài liệu đang dở dang.
@@ -86,16 +91,16 @@ Em ủy quyền cho anh tiếp quản task này giúp em. Khi sức khỏe ổn 
 
 Tại sao tốt: Giúp team có ngay phương án ứng phó khẩn cấp, tiếp quản code kịp thời, và vẫn được xem xét bảo lưu quyền lợi thưởng pro-rata theo chính sách bất khả kháng.
 
-**❌ Cách tồi:**  
-> Biến mất hoàn toàn không một lời nhắn (Ghosting), giữ mã nguồn dở dang trên máy cá nhân mà không push lên Git, hoặc giữ tài khoản độc quyền khiến team không thể truy cập.
-
-Tại sao tồi: Làm tê liệt toàn bộ luồng công việc của đồng đội, team phải viết lại từ đầu hoặc mất quyền truy cập tài nguyên của khách hàng.
-
 ---
 
 ## Tình huống 4 — Khi dự án chưa tìm được Receiver (Người nhận bàn giao) thay thế thì làm sao?
 
 Nếu thời điểm bạn rời đi mà công ty chưa tuyển hoặc chưa sắp xếp được nhân sự mới vào thay thế ngay, người nhận bàn giao mặc định là **Product Owner**.
+
+**❌ Cách tồi:**  
+> Bàn giao theo kiểu nói miệng một chiều cho Product Owner mà không lưu lại tài liệu thành văn bản, vì nghĩ "dù sao Lead cũng biết code/quản lý rồi".
+
+Tại sao tồi: Product Owner quản lý nhiều đầu việc sẽ nhanh chóng quên các chi tiết kỹ thuật nhỏ, dẫn đến việc người mới vào sau vẫn bị bế tắc.
 
 **✅ Cách tốt:**  
 > Soạn tài liệu bàn giao dưới dạng "Tự giải thích" (Self-explanatory Documentation) để bất kỳ nhân sự nào vào sau đọc cũng có thể tự chạy và hiểu được mà không cần bạn giải thích lại.
@@ -114,16 +119,22 @@ Nếu thời điểm bạn rời đi mà công ty chưa tuyển hoặc chưa s�
 
 Tại sao tốt: Giúp Product Owner dễ dàng lưu trữ và bàn giao lại cho người mới bất cứ lúc nào trong tương lai theo đúng [[project-onboarding-process|Quy trình Onboarding Dự Án]].
 
-**❌ Cách tồi:**  
-> Bàn giao theo kiểu nói miệng một chiều cho Product Owner mà không lưu lại tài liệu thành văn bản, vì nghĩ "dù sao Lead cũng biết code/quản lý rồi".
-
-Tại sao tồi: Product Owner quản lý nhiều đầu việc sẽ nhanh chóng quên các chi tiết kỹ thuật nhỏ, dẫn đến việc người mới vào sau vẫn bị bế tắc.
-
 ---
 
 ## Tình huống 5 — Viết tài liệu bàn giao (Handover Document) như thế nào là đạt chuẩn?
 
 Tài liệu bàn giao là di sản bạn để lại cho dự án. Một tài liệu tốt giúp người sau làm việc tiếp mà không phải liên tục nhắn tin làm phiền bạn sau khi bạn đã rời đi.
+
+**❌ Cách tồi:**  
+> Viết tài liệu qua loa, chung chung, không có tính định hướng hành động.
+
+```text
+- Code ở trên GitHub branch main.
+- Các task cần làm đều ở trên Board dự án (Google Sheet).
+- Có gì không hiểu thì cứ nhắn Telegram cho em (mặc dù đã rời dự án).
+```
+
+Tại sao tồi: Người tiếp quản sẽ không biết bắt đầu từ đâu, branch nào là branch mới nhất, và dễ dẫn đến việc làm sai logic cũ.
 
 **✅ Cách tốt:**  
 > Tài liệu rõ ràng, chia làm 4 phần: (1) Danh sách task dở dang và trạng thái hiện tại, (2) Sơ đồ cấu trúc/logic cốt lõi do bạn chịu trách nhiệm, (3) Thông tin tài khoản/API key và cách setup môi trường, (4) Video quay ngắn luồng chạy tính năng.
@@ -146,17 +157,6 @@ Tài liệu bàn giao là di sản bạn để lại cho dự án. Một tài li
 
 Tại sao tốt: Tiết kiệm hàng giờ đồng hồ cho người tiếp quản và giữ vững chất lượng dự án.
 
-**❌ Cách tồi:**  
-> Viết tài liệu qua loa, chung chung, không có tính định hướng hành động.
-
-```text
-- Code ở trên GitHub branch main.
-- Các task cần làm đều ở trên Board dự án (Google Sheet).
-- Có gì không hiểu thì cứ nhắn Telegram cho em (mặc dù đã rời dự án).
-```
-
-Tại sao tồi: Người tiếp quản sẽ không biết bắt đầu từ đâu, branch nào là branch mới nhất, và dễ dẫn đến việc làm sai logic cũ.
-
 ---
 
 ## Tóm lại
@@ -178,5 +178,5 @@ Tại sao tồi: Người tiếp quản sẽ không biết bắt đầu từ đ�
 - [Cẩm nang Rời Dự Án cho Product Owner (Lead Handbook)](project-leave-lead-handbook.md)
 - [Quy trình Onboarding Dự Án](../project-onboarding/project-onboarding-process.md)
 - [Cẩm nang Giao tiếp trong Team (Horenso)](../team-communicate/team-communicate-handbook.md)
-- [Cẩm nang Quản lý Board Dự Án](../../05-product-owner/board-handbook/board-handbook.md)
+- [Cẩm nang Quản lý Board Dự Án](../po-board-create/board-create-handbook.md)
 - Chính Sách Thưởng Dự Án *(tài liệu đang cập nhật)*

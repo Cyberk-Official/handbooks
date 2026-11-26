@@ -167,3 +167,15 @@ PO README, po-board-create/README, po-feature-request (README + example), po-pro
 - ✅ Tạo `po-milestone-create/`: handbook + example đã có nội dung chuyển từ board-create và internal-daily; process còn khung trống, chờ thảo luận.
 - ⏳ Chưa chốt: giờ họp Internal Daily / giờ gửi PDF; có thêm Board Rule "task xử lý lỗi" không; số ngày task treo `Doing` (2 hay 3); bug ở GitHub Issues hay Sheet; số phận `04-developer/dev-daily-report/`.
 - ⏳ Chưa xoá `board-handbook/`, chưa sửa ~23 link.
+
+### Đổi thứ tự Phần I (26/11)
+- Thứ tự mới: **Board Create (PO làm trước) → Internal Planning (team soát & chia việc) → Kick-off**.
+- Board Create: `TEMPLATE → ESTIMATE → PLAN` (ASSIGN chuyển sang Planning).
+- Planning: `UNDERSTAND → REVIEW → ASSIGN → SEND`. Bỏ Planning Report & Planning Template; sau buổi họp gửi thẳng board (PDF + Daily Report đầu tab sprint_1) cho khách.
+- Đã xoá `po-planning/planning-ai-instruction/` (còn trong git history).
+- Kick-off: đổi "Planning Report" → board. Cần review kỹ Kick-off ở vòng sau.
+- `01-cyberk-way/5.2-important-meeting.md` vẫn nhắc Planning Report / Planning Template — chưa sửa (Cyberk Way, chờ Anderson quyết).
+- **Quy ước ví dụ:** mọi cặp ví dụ đặt **cách tồi trước, cách tốt sau** (thấy vấn đề trước giải pháp). Đã đảo lại toàn bộ `05-product-owner/` ngày 26/11.
+- **Planning:** luôn tìm Key Success Features, làm đầu tiên, giao cho người giỏi & đáng tin nhất. Chia việc theo độ quan trọng, không theo độ khó.
+- ✅ Đã xoá `board-handbook/`, sửa ~23 link sang `po-board-create/board-create-handbook.md`.
+- Planning đổi thành `PRIORITY → ASSIGN → SEND`: PRIORITY = hiểu mục đích + 4 mức ưu tiên + Key Success Features bôi đỏ, đưa lên đầu board; ASSIGN = chia theo độ quan trọng + mỗi người soát việc mình + rủi ro + cam kết EOD; SEND = gửi board sau khi đủ cam kết.

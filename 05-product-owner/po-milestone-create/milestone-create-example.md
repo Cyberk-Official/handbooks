@@ -105,6 +105,47 @@ Mỗi dòng là một việc khách đọc là hiểu, một người nhận, kh
 
 ---
 
+## 3. Task research
+
+### Mẫu chưa tốt
+
+| Milestones | Tasks | Assignee | Status | Progress | Estimate (h) | Expected done date | Notes |
+|---|---|---|---|---|---|---|---|
+| Lighter Platform Integration | Research Lighter API | Dennis | Done | 100% | | | |
+
+Không có Estimate nên không ai biết đã tốn bao nhiêu giờ. Tên task không nói đang tìm hiểu để giải quyết chuyện gì. Status `Done` nhưng Notes trống: kết quả research nằm trong đầu Dennis.
+
+### Mẫu tốt
+
+| Milestones | Tasks | Assignee | Status | Progress | Estimate (h) | Expected done date | Notes |
+|---|---|---|---|---|---|---|---|
+| Lighter Platform Integration | Research: how to move funds from Lighter back to Koto | Dennis | Done | 100% | 4 | 2026-11-17 | Report: [link] |
+
+Báo cáo đính kèm ở Notes, phỏng theo board Koto tuần 16–20/11:
+
+```
+Research: how to move funds from Lighter back to Koto
+
+Options
+- A. Wait for Lighter to support a direct route back.
+     Lighter has no date for this.
+- B. Route funds through the Mayan Swift bridge.
+     We already run gas sponsorship for GRVT, so we can reuse it.
+     Needs a record for each transfer so a stuck one can be recovered.
+- C. Release with deposit only, add withdraw later.
+
+Chosen: B
+- Users can't be left with funds they can't take out.
+- Reuses infrastructure we already run, so less new risk.
+- Fits before the Nov 20 release.
+
+Next: estimate the implementation (bridge + recovery records) with the Tech Lead.
+```
+
+Đọc báo cáo này, người khác trong team hiểu được vì sao chọn Mayan bridge mà không phải hỏi lại Dennis. PO có đủ thông tin để estimate phần làm thật và giải thích cho khách nếu khách hỏi.
+
+---
+
 ## Liên kết
 
 - [Cẩm nang Tạo Milestone](./milestone-create-handbook.md)

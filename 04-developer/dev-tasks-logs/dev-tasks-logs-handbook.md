@@ -176,5 +176,5 @@ Task kéo dài hơn dự kiến? → Comment trong issue, báo Lead, tách task 
 - [Quy trình tạo Task](dev-tasks-logs-process.md) — Flowchart, quy tắc cứng
 - [Mẫu Task tốt/tồi](dev-tasks-logs-example.md) — Template, GH CLI scripts
 - [AI Instruction](dev-tasks-logs-ai-instruction/dev-tasks-instruction.md) — Quy tắc cho AI
-- [Board Handbook](../board-handbook/board-handbook.md) — Tổng quan quản lý dự án
+- [Cẩm nang Board](../../05-product-owner/po-board-create/board-create-handbook.md) — Tổng quan quản lý dự án
 - [Daily Report](../dev-daily-report/daily-report-handbook.md) — Task → report cho khách

@@ -14,4 +14,4 @@
 ## Liên kết
 
 - [Xử lý Bugs](../qa-bugs-handling/) — Quy trình xử lý bugs từ khách
-- [Board Handbook](../board-handbook/) — Quản lý board tổng quan
+- [Cẩm nang Board](../../05-product-owner/po-board-create/board-create-handbook.md) — Quản lý board tổng quan

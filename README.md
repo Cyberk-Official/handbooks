@@ -36,7 +36,7 @@ Mỗi quy trình trong đây tồn tại vì đã có người làm sai trước
   - `*-role.md` — Vai trò, trách nhiệm
   - `*-ai-instruction/` — Hướng dẫn cho AI sinh nội dung
 - **Người mới:** đọc [01-cyberk-way/](./01-cyberk-way/) + [Giao tiếp](./03-team/team-communicate/) + [Getting Started](./07-hr/newbie-getting-started/), rồi đọc theo vai trò
-- **Dev:** [Daily Report](./04-developer/dev-daily-report/) → [Board](./05-product-owner/board-handbook/) → [Bug Handling](./06-qa/qa-bugs-handling/)
+- **Dev:** [Daily Report](./04-developer/dev-daily-report/) → [Board](05-product-owner/po-board-create/board-create-handbook.md) → [Bug Handling](./06-qa/qa-bugs-handling/)
 - **QA:** [Bug Handling](./06-qa/qa-bugs-handling/) → [Bug Logging](./06-qa/qa-bugs-logs/)
 - **PO:** [Planning](./05-product-owner/po-planning/) → [Kick-off](./05-product-owner/po-kick-off/) → [Bàn giao](./05-product-owner/po-handover/)
 - **HR:** [Đón newbie](./07-hr/admin-welcoming-newbie/) → [Getting Started](./07-hr/newbie-getting-started/)
@@ -67,9 +67,11 @@ handbook/
 │   ├── po-project-leave/        #   Quy trình thành viên rời dự án
 │   ├── po-planning/             #   Internal Planning Meeting (nội bộ)
 │   ├── po-kick-off/             #   Kick-off Meeting (với khách hàng)
-│   ├── po-board-create/         #   Khởi tạo Board dự án
-│   ├── po-handover/             #   Bàn giao sản phẩm
-│   └── board-handbook/          #   Quản lý board dự án hằng ngày
+│   ├── po-board-create/         #   Khởi tạo Board dự án (Google Sheet)
+│   ├── po-milestone-create/     #   Tạo Milestone: đặt tên, tách task, estimate
+│   ├── po-internal-daily/       #   Họp Internal Daily & gửi báo cáo khách
+│   ├── po-feature-request/      #   Xử lý Feature Request
+│   └── po-handover/             #   Bàn giao sản phẩm
 │
 ├── 🔍 06-qa/                    # Dành cho QA
 │   ├── qa-bugs-handling/        #   Xử lý & phân loại bugs

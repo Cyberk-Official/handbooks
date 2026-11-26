@@ -25,6 +25,6 @@ status: Nháp
 
 ## Liên kết
 
-- [Board Handbook — Tổng quan quản lý dự án](../../05-product-owner/board-handbook/board-handbook.md)
+- [Cẩm nang Board — Tổng quan quản lý dự án](../../05-product-owner/po-board-create/board-create-handbook.md)
 - [Daily Report — Báo cáo hàng ngày](../../04-developer/dev-daily-report/daily-report-process.md)
 - [Dev Tasks Logs — Quy trình tạo task](../../04-developer/dev-tasks-logs/dev-tasks-logs-process.md)

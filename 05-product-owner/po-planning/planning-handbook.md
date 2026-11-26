@@ -2,7 +2,7 @@
 type: delivery
 tags: [planning, handbook]
 created-date: 2026-08-27
-updated-date: 2026-09-06
+updated-date: 2026-11-26
 author: anderson
 status: Nháp
 ---
@@ -10,7 +10,7 @@ status: Nháp
 # Planning — Cẩm nang cho Product Owner
 
 **Người chịu trách nhiệm:** PO dự án
-**Cập nhật lần cuối:** 2026-08-26
+**Cập nhật lần cuối:** 2026-11-26
 **Trạng thái:** Nháp
 
 Bạn là PO, dự án mới vừa ký xong và bạn cần tổ chức buổi Internal Planning Meeting. Buổi planning không chỉ là "họp giới thiệu dự án" — đây là **lúc duy nhất** cả team cùng ngồi lại để hiểu đúng cùng một thứ. Làm tốt thì dự án chạy mượt từ ngày đầu; làm hời hợt thì 2 tuần sau mới phát hiện mỗi người hiểu một kiểu.
@@ -21,16 +21,16 @@ Trang này giúp bạn hiểu **cách nghĩ đúng** ở từng giai đoạn c�
 
 ## Tại sao planning meeting quan trọng đến vậy?
 
-Planning meeting là buổi họp duy nhất mà **cả team cùng ngồi lại hiểu mục đích dự án** — không phải chỉ hiểu task. Sai lầm lớn nhất là biến buổi planning thành buổi "giao task" — PO đọc danh sách việc, dev gật đầu, ai về nấy code. Kết quả: mỗi người hiểu scope một kiểu, 3 tuần sau mới phát hiện.
+Planning meeting là buổi họp duy nhất mà **cả team cùng ngồi lại hiểu mục đích dự án** — không phải chỉ hiểu task. PO đã dựng sẵn board trước buổi họp, nhưng sai lầm lớn nhất là biến buổi planning thành buổi "đọc board" — PO đọc danh sách việc, dev gật đầu, ai về nấy code. Kết quả: mỗi người hiểu scope một kiểu, 3 tuần sau mới phát hiện.
 
 Một buổi planning tốt đạt được 4 điều:
 
 1. **Cả team hiểu mục đích của khách hàng** — Khách hàng làm dự án này để làm gì? Gọi vốn? Có nhiều user? Có doanh thu từ sớm? Hiểu mục đích thì dev mới quyết định đúng khi gặp trade-off.
 2. **Toàn bộ team hiểu đúng yêu cầu** — Không phải "đọc qua PRD" mà là thảo luận, hỏi, và chốt.
-3. **Có Planning Report** — Kết quả cụ thể: task list, người phụ trách, deadline, rủi ro. Gửi được cho client ngay trong ngày.
+3. **Board đã chia việc xong** — Kết quả cụ thể: mỗi task có người phụ trách, deadline, rủi ro đã có giải pháp. Gửi được cho client ngay trong ngày.
 4. **Đồng bộ kỳ vọng** — Kỳ vọng của khách hàng, kỳ vọng của công ty, và cách triển khai dự án — mọi người phải cùng hiểu.
 
-> **Quy tắc:** Buổi planning thành công khi kết thúc có Planning Report gửi được cho client ngay trong ngày. Không có report = buổi họp thất bại.
+> **Quy tắc:** Buổi planning thành công khi kết thúc, board đã chia việc xong và gửi được cho client ngay trong ngày.
 
 ---
 
@@ -40,17 +40,8 @@ Chuẩn bị **không phải việc của riêng PO**. PO chuẩn bị tài li�
 
 Cụ thể PO cần làm:
 - Gửi PRD cho team đọc trước, yêu cầu comment trực tiếp vào tài liệu
-- Gửi Planning Template để mọi người xem qua cấu trúc
-- Custom template cho phù hợp với dự án cụ thể
+- Gửi link board đã dựng sẵn *(theo [Khởi tạo Board](../po-board-create/board-create-process.md))* để mọi người xem trước Milestone, task và Estimate
 - Book phòng họp nghiêm túc — buổi planning nên **càng xa khu vực làm việc thường ngày càng tốt** (tạo không khí khác biệt, tập trung)
-
-✅ Cách tốt:
-> PO gửi PRD vào Telegram kèm tin nhắn:
-> *"Team ơi, đây là PRD dự án mới — Booking Platform cho client David. Mọi người đọc trước và comment trực tiếp vào doc, đặc biệt phần booking flow (trang 5-8) và payment (trang 12). Planning meeting 2pm thứ Ba, phòng họp tầng 3. Ai có câu hỏi ghi sẵn vào doc nhé."*
->
-> Kèm theo: link PRD (Google Doc, cho phép comment) + link Planning Template.
-
-Tại sao tốt: Team biết đọc gì, đọc phần nào kỹ. Comment trực tiếp vào doc = PO thấy được ai đã đọc, ai chưa. Buổi họp không mất 30 phút đầu giải thích "dự án này là gì".
 
 ❌ Cách tồi:
 > PO bước vào phòng họp, mở PRD trên máy:
@@ -59,13 +50,28 @@ Tại sao tốt: Team biết đọc gì, đọc phần nào kỹ. Comment trực
 
 Tại sao tồi: Team đến buổi họp "tay trắng" — chưa đọc, chưa nghĩ, chưa có câu hỏi. Kết quả: PO nói một mình, team gật đầu nhưng không thực sự hiểu. Về code rồi mới phát hiện "ủa, tính năng này hoạt động kiểu gì?"
 
+✅ Cách tốt:
+> PO gửi PRD vào Telegram kèm tin nhắn:
+> *"Team ơi, đây là PRD dự án mới — Booking Platform cho client David. Mọi người đọc trước và comment trực tiếp vào doc, đặc biệt phần booking flow (trang 5-8) và payment (trang 12). Board anh đã dựng xong, mọi người xem trước task và Estimate phần mình, thấy chỗ nào thiếu hay sai thì ghi lại. Planning meeting 2pm thứ Ba, phòng họp tầng 3. Ai có câu hỏi ghi sẵn vào doc nhé."*
+>
+> Kèm theo: link PRD (Google Doc, cho phép comment) + link board `Booking-Management`.
+
+Tại sao tốt: Team biết đọc gì, đọc phần nào kỹ. Comment trực tiếp vào doc = PO thấy được ai đã đọc, ai chưa. Buổi họp không mất 30 phút đầu giải thích "dự án này là gì".
+
 ---
 
-## Hiểu sản phẩm — Đừng chỉ hiểu tính năng, hiểu MỤC ĐÍCH
+## PRIORITY — Hiểu MỤC ĐÍCH để tìm ra Key Success Features
 
 Phần đầu buổi planning không phải đi vào chi tiết tính năng — mà là giúp cả team hiểu **bối cảnh dự án**. Sản phẩm này giải quyết vấn đề gì? Cho ai? Tại sao khách hàng cần nó? 
 
 Khi dev hiểu mục đích, họ sẽ tự biết cái nào quan trọng hơn khi phải trade-off. Ví dụ: nếu mục đích là "gọi vốn" → UX/UI phải đẹp, flow phải mượt, dù backend chưa perfect. Nếu mục đích là "có doanh thu" → payment phải ổn định, admin phải dễ dùng.
+
+❌ Cách tồi:
+> PO mở PRD, bắt đầu đọc:
+> *"Feature 1: User Registration — cho phép user đăng ký bằng email hoặc social login. Feature 2: Booking — user chọn ngày giờ và book slot..."*
+> → Đọc danh sách tính năng mà không ai biết tại sao client cần từng cái.
+
+Tại sao tồi: Dev nghe tính năng mà không hiểu mục đích → code đúng spec nhưng sai spirit. Ví dụ: build booking flow 10 bước vì spec viết vậy, trong khi David cần flow "under 30 seconds". Hiểu mục đích mới code đúng.
 
 ✅ Cách tốt:
 > PO mở slide giới thiệu dự án:
@@ -77,20 +83,83 @@ Khi dev hiểu mục đích, họ sẽ tự biết cái nào quan trọng hơn k
 
 Tại sao tốt: Team thấy được "người thật, việc thật" — không phải danh sách tính năng trừu tượng. Khi code booking flow, dev sẽ tự biết "cái này phải mượt vì David cần nó để gọi vốn".
 
-❌ Cách tồi:
-> PO mở PRD, bắt đầu đọc:
-> *"Feature 1: User Registration — cho phép user đăng ký bằng email hoặc social login. Feature 2: Booking — user chọn ngày giờ và book slot..."*
-> → Đọc danh sách tính năng mà không ai biết tại sao client cần từng cái.
+### Phân loại feature — 4 mức ưu tiên
 
-Tại sao tồi: Dev nghe tính năng mà không hiểu mục đích → code đúng spec nhưng sai spirit. Ví dụ: build booking flow 10 bước vì spec viết vậy, trong khi David cần flow "under 30 seconds". Hiểu mục đích mới code đúng.
+Hiểu mục đích rồi, cả team cùng thống nhất feature nào thuộc mức nào. Trên board, PO đã xếp Milestone theo 4 mức dưới đây:
+
+| Mức | Tên | Ý nghĩa | Ví dụ |
+|-----|-----|---------|-------|
+| 🔴 | **Key Success Features** | Tính năng quyết định thành công. Thiếu = dự án fail. | Booking flow, Payment |
+| 🟡 | **Thiết yếu** | Cần để hệ thống hoạt động đúng, nhưng không phải điểm nhấn. | User registration, Email notification |
+| 🔵 | **Không ưu tiên** | Bổ sung nhưng không bắt buộc trong phiên bản đầu. | Reporting dashboard, Export CSV |
+| ⚪ | **Nice-to-have** | Ý tưởng mở rộng cho tương lai. Không làm trong scope hiện tại. | SMS reminder, Multi-language |
+
+Các Milestone **Key Success Features** được **bôi màu đỏ và đưa lên trên cùng** của tab sprint. Mở board ra, ai cũng thấy ngay đâu là việc quan trọng nhất của dự án.
+
+❌ Cách tồi:
+> Board xếp Milestone theo thứ tự PRD: Registration, Profile, Booking Flow, Payment, Reporting. Không có Milestone nào được đánh dấu.
+> → Mai làm xong Profile trước vì nó nằm trên cùng. Booking Flow — thứ David cần để pitch — bắt đầu muộn 3 ngày.
+
+Tại sao tồi: Nhìn board không biết việc nào quan trọng hơn việc nào. Mỗi người tự chọn việc theo thứ tự trên màn hình.
+
+✅ Cách tốt:
+> PO chiếu board:
+> *"Mục đích của David là pitch nhà đầu tư trong 3 tháng. Nên Booking Flow và Payment là Key Success — mình bôi đỏ và đưa lên đầu sprint_1. Mọi người thấy đúng chưa?"*
+> Dev: *"Đúng — không có nó thì app không có giá trị."*
+> PO: *"Còn Reporting Dashboard mình đang để Thiết yếu, sprint_2."*
+> QA: *"Em nghĩ là Không ưu tiên — David có thể xem revenue trên Stripe dashboard trước, sprint sau mình build riêng."*
+> PO: *"Good call. Chuyển Reporting xuống Không ưu tiên, dời sang sprint_3."*
+
+Tại sao tốt: Mọi người cùng quyết định ưu tiên — không có cảm giác "bị giao việc". Hai dòng đỏ trên cùng board nói cho cả team biết việc gì phải xong trước.
 
 ---
 
-## Đọc PRD cùng team — Thảo luận, không chỉ đọc
+## ASSIGN — Chia việc, rồi mỗi người soát việc của mình và cam kết
 
-Đây là phần **lõi** của buổi planning. Mục tiêu không phải "đọc xong PRD" — mà là **cả team hiểu giống nhau** về những gì PRD mô tả. Nơi nào PRD chưa rõ, chưa logic → ghi lại để hỏi client.
+PO đã dựng xong board trước buổi họp. Nhưng kế hoạch của PO mới là bản nháp: PO không thấy hết chi tiết kỹ thuật, không biết hết ai mạnh phần nào. Sai lầm phổ biến là PO đọc board rồi assign luôn. Dev không đồng thuận nhưng không nói → task bị trễ → PO frustrate → dev frustrate. Vòng lặp tiêu cực.
+
+Cách đúng: **chia việc trước, rồi mỗi người soát kỹ phần việc của mình**. Dev soát task và Estimate của mình. QA soát task QA và test strategy. Designer soát task UX/UI và timeline design. PO sửa board ngay khi có góp ý. Cuối ngày, mỗi người cam kết ngày release — đó là con số của họ, không phải của PO.
+
+❌ Cách tồi:
+> PO mở board đã estimate sẵn:
+> *"Booking Flow — 3 ngày. Payment — 2 ngày. Dashboard — 4 ngày. Đức làm booking, Thái làm payment, Mai làm dashboard."*
+> Dev im lặng, gật đầu.
+> → Sprint 2, Đức nhắn Telegram: *"Anh ơi, booking flow phức tạp hơn em tưởng, cần thêm 3 ngày."*
+
+Tại sao tồi: Không ai soát kế hoạch của PO = Estimate sai không ai phát hiện (vì PO không hiểu hết chi tiết kỹ thuật). Dev không commit vì "đây không phải con số của mình". Khi trễ, ai cũng đổ lỗi.
+
+### Chia việc theo độ quan trọng, không theo độ khó
+
+Buổi planning luôn phải tìm ra **Key Success Features** — những tính năng thiếu là dự án fail — và làm chúng đầu tiên.
+
+Khi chia việc, phản xạ thường gặp là chia theo độ khó: task khó cho người giỏi, task dễ cho người mới. Nghe hợp lý, nhưng task khó chưa chắc là task quan trọng. Một bài toán tối ưu performance có thể rất khó, nhưng nếu nó nằm ở tính năng Nice-to-have thì làm chậm một tuần cũng không ai thấy. Còn Booking Flow có thể không khó, nhưng nếu nó chạy sai thì David không có gì để pitch nhà đầu tư.
+
+Vì vậy Cyberk chia việc theo **độ quan trọng**. Người quan trọng là người làm những việc quan trọng: người giỏi nhất, đáng tin nhất team nhận Key Success Features, và làm ở sprint đầu — để nếu có gì sai thì còn nhiều thời gian nhất để sửa.
+
+❌ Cách tồi:
+> PO: *"Phần Stripe integration khó nhất, Đức giỏi nhất nên Đức làm Stripe. Booking Flow dễ hơn, để Mai mới vào làm cho quen."*
+> → Booking Flow là Key Success Feature, nhưng nằm trong tay người mới nhất team. Sprint 2 demo cho David, flow book còn lỗi trùng slot.
+
+Tại sao tồi: Chia theo độ khó. Việc quan trọng nhất của dự án lại giao cho người chưa có kinh nghiệm.
+
+✅ Cách tốt:
+> PO: *"Booking Flow là Key Success, David cần nó để pitch. Đức nhận Booking Flow, làm ngay sprint_1. Stripe mình làm sau, Thái nhận, Đức review giúp phần integration."*
+
+Tại sao tốt: Key Success Feature nằm trong tay người giỏi nhất, làm đầu tiên. Việc khó nhưng ít quan trọng hơn vẫn có người làm và có người giỏi review.
+
+### Mỗi người soát kỹ phần việc của mình — Thảo luận, không chỉ đọc
+
+Nhận việc xong, mỗi người đọc lại PRD **ở phần việc của mình** và soát task của mình: thừa ở đâu, thiếu ở đâu, Estimate có đúng không. Việc riêng của mình thì mình soát tỉ mỉ hơn bất kỳ ai. Mục tiêu không phải "đọc xong PRD" — mà là **cả team hiểu giống nhau** về những gì PRD mô tả. Nơi nào PRD chưa rõ, chưa logic → ghi lại để hỏi client.
 
 Leader hoặc BA giải thích từng phần PRD, ưu tiên theo tính năng quan trọng. Dev và QA chủ động hỏi ngay chỗ chưa rõ — **đừng chờ về code rồi mới phát hiện**.
+
+❌ Cách tồi:
+> PO đọc PRD từ đầu đến cuối. Team im lặng.
+> PO: *"Ok, mọi người hiểu hết rồi nhé? Có câu hỏi gì không?"*
+> Team: *"... không."*
+> → 2 tuần sau, dev nhắn Telegram PO lúc 11h đêm: *"Anh ơi, payment flow này em không hiểu logic, PRD viết mâu thuẫn chỗ này..."*
+
+Tại sao tồi: "Không có câu hỏi" thường có nghĩa là "chưa hiểu đủ sâu để hỏi". Im lặng trong buổi planning = câu hỏi sẽ nổ ra khi code — lúc đó tốn gấp 10 lần thời gian.
 
 ✅ Cách tốt:
 > PO chiếu PRD, đi theo từng user flow:
@@ -106,59 +175,13 @@ Leader hoặc BA giải thích từng phần PRD, ưu tiên theo tính năng qua
 
 Tại sao tốt: Mỗi câu hỏi bây giờ là 1 bug/conflict được **chặn trước** khi xảy ra. Dev hỏi payment = tránh build sai rồi refactor. QA hỏi concurrency = tránh bug production. Và PO có danh sách cụ thể để hỏi client.
 
-❌ Cách tồi:
-> PO đọc PRD từ đầu đến cuối. Team im lặng.
-> PO: *"Ok, mọi người hiểu hết rồi nhé? Có câu hỏi gì không?"*
-> Team: *"... không."*
-> → 2 tuần sau, dev nhắn Telegram PO lúc 11h đêm: *"Anh ơi, payment flow này em không hiểu logic, PRD viết mâu thuẫn chỗ này..."*
+Soát task cũng là lúc Estimate của PO được kiểm lại bởi chính người sẽ làm:
 
-Tại sao tồi: "Không có câu hỏi" thường có nghĩa là "chưa hiểu đủ sâu để hỏi". Im lặng trong buổi planning = câu hỏi sẽ nổ ra khi code — lúc đó tốn gấp 10 lần thời gian.
+> Đức nhận Booking Flow, đọc lại phần booking trong PRD:
+> *"Task 'Booking calendar' anh để 4h là thiếu, còn phần chặn 2 người book trùng slot. Em tách ra thành 2 task, mỗi task 4h."*
+> PO sửa board ngay.
 
----
-
-## Lập kế hoạch — Cả team cùng plan, không phải PO plan xong rồi giao
-
-Sai lầm phổ biến: PO ngồi estimate rồi assign task cho từng người. Dev không đồng thuận nhưng không nói → task bị trễ → PO frustrate → dev frustrate. Vòng lặp tiêu cực.
-
-Cách đúng: **cả team cùng tham gia lập plan**. Dev estimate task của mình (vì dev hiểu effort hơn PO). QA góp ý test strategy. Designer xác nhận design timeline. PO tổng hợp và điều phối.
-
-### Phân loại feature — 4 mức ưu tiên
-
-Planning Template của Cyberk chia feature thành 4 mức. Cả team cần cùng thống nhất feature nào thuộc mức nào:
-
-| Mức | Tên | Ý nghĩa | Ví dụ |
-|-----|-----|---------|-------|
-| 🔴 | **Key Success Features** | Tính năng quyết định thành công. Thiếu = dự án fail. | Booking flow, Payment |
-| 🟡 | **Thiết yếu** | Cần để hệ thống hoạt động đúng, nhưng không phải điểm nhấn. | User registration, Email notification |
-| 🔵 | **Không ưu tiên** | Bổ sung nhưng không bắt buộc trong phiên bản đầu. | Reporting dashboard, Export CSV |
-| ⚪ | **Nice-to-have** | Ý tưởng mở rộng cho tương lai. Không làm trong scope hiện tại. | SMS reminder, Multi-language |
-
-✅ Cách tốt:
-> PO chiếu danh sách feature, hỏi team:
-> *"Ok, theo mọi người, Booking Flow là Key Success hay Thiết yếu?"*
-> Dev: *"Key Success — không có nó thì app không có giá trị."*
-> PO: *"Đồng ý. Vậy Reporting Dashboard?"*
-> QA: *"Không ưu tiên — David có thể xem revenue trên Stripe dashboard trước, sprint sau mình build riêng."*
-> PO: *"Good call. Ghi Reporting = Không ưu tiên."*
->
-> → Sau khi phân loại xong, PO hỏi estimate cho từng Key Success Feature:
-> *"Booking Flow — Dev estimate bao lâu?"*
-> Dev: *"Frontend 3 ngày, backend 2 ngày, integration test 1 ngày. Tổng 6 ngày."*
-> PO ghi vào Planning Template.
-
-Tại sao tốt: Mọi người cùng quyết định ưu tiên — không có cảm giác "bị giao việc". Estimate do dev tự đưa ra → dev commit vì đó là con số của họ. PO chỉ tổng hợp và điều phối.
-
-❌ Cách tồi:
-> PO mở spreadsheet đã estimate sẵn:
-> *"Booking Flow — 3 ngày. Payment — 2 ngày. Dashboard — 4 ngày. Đức làm booking, Thái làm payment, Mai làm dashboard."*
-> Dev im lặng, gật đầu.
-> → Sprint 2, Đức nhắn Telegram: *"Anh ơi, booking flow phức tạp hơn em tưởng, cần thêm 3 ngày."*
-
-Tại sao tồi: PO estimate thay dev = estimate sai (vì PO không hiểu chi tiết kỹ thuật). Dev không commit vì "đây không phải con số của mình". Khi trễ, ai cũng đổ lỗi.
-
----
-
-## Xác định rủi ro — Chủ động hôm nay, đỡ cháy ngày mai
+### Xác định rủi ro — Chủ động hôm nay, đỡ cháy ngày mai
 
 Nhiều team bỏ qua phần này vì "có gì thì xử lý sau". Sai. Rủi ro **luôn** xảy ra — câu hỏi chỉ là bạn đã chuẩn bị hay bị bất ngờ.
 
@@ -171,8 +194,14 @@ Nhiều team bỏ qua phần này vì "có gì thì xử lý sau". Sai. Rủi ro
 | **Giao tiếp client** | Phản hồi chậm, hiểu sai yêu cầu | PRD có điểm nào mâu thuẫn? Client response nhanh không? |
 | **Con người** | Nghỉ việc đột xuất, quá tải | Ai là single point of failure? Có backup không? |
 
+❌ Cách tồi:
+> PO: *"Rủi ro thì... chắc không có gì đặc biệt. Ok, tiếp nhé."*
+> → Sprint 2: Stripe API thay đổi, dev mất 3 ngày debug. Designer deliver trễ 1 tuần, FE ngồi chờ.
+
+Tại sao tồi: "Không có rủi ro" là câu nói nguy hiểm nhất. Mọi dự án đều có rủi ro — chỉ khác là bạn thấy trước hay bị bất ngờ.
+
 ✅ Cách tốt:
-> PO mở phần Risk trong Planning Template:
+> PO mở Milestone Payment trên board, hỏi team:
 > *"Ok, rủi ro. Mình thấy Payment Integration dùng Stripe API — team đã integrate Stripe bao giờ chưa?"*
 > Dev: *"Chưa. Em chỉ dùng thử sandbox."*
 > PO: *"Vậy ghi rủi ro: 'Stripe integration chưa có kinh nghiệm'. Giải pháp: Đức dành 1 ngày đầu sprint làm PoC — nếu gặp blocker thì báo ngay, mình switch sang payment gateway khác."*
@@ -182,42 +211,57 @@ Nhiều team bỏ qua phần này vì "có gì thì xử lý sau". Sai. Rủi ro
 
 Tại sao tốt: Mỗi rủi ro đã có giải pháp trước khi xảy ra. PoC ngày đầu = biết sớm có vấn đề hay không. Designer deliver wireframe trước = FE không bị block.
 
-❌ Cách tồi:
-> PO: *"Rủi ro thì... chắc không có gì đặc biệt. Ok, tiếp nhé."*
-> → Sprint 2: Stripe API thay đổi, dev mất 3 ngày debug. Designer deliver trễ 1 tuần, FE ngồi chờ.
+### Cam kết EOD — Release được đúng ngày không?
 
-Tại sao tồi: "Không có rủi ro" là câu nói nguy hiểm nhất. Mọi dự án đều có rủi ro — chỉ khác là bạn thấy trước hay bị bất ngờ.
+Cuối ngày (EOD), mỗi người soát xong phần việc của mình và đưa ra cam kết: **nếu không có vấn đề gì phát sinh, phần việc của mình có release được đúng ngày đã estimate không?**
+
+Ai trả lời "được" thì kế hoạch đi tiếp. Ai trả lời "không" thì điều chỉnh ngay: tách lại task, chuyển bớt việc cho người khác, hoặc dời Milestone ít quan trọng hơn sang sprint sau. Board chỉ được gửi cho khách khi mọi người đã cam kết.
+
+❌ Cách tồi:
+> PO: *"Ok mọi người nhận việc rồi nhé, mình gửi khách luôn."*
+> → Tối đó Thái mới đọc kỹ phần Payment, thấy cần thêm 2 ngày. Nhưng board đã gửi David với ngày cũ.
+
+Tại sao tồi: Kế hoạch gửi khách khi chưa ai soát kỹ việc của mình. Ngày trên board là ngày của PO, không phải ngày team cam kết.
+
+✅ Cách tốt:
+> Cuối ngày, trong group Internal:
+> Đức: *"Booking Flow ok, thứ 5 release được."*
+> Thái: *"Payment em cần thêm 1 task xử lý refund, 4h. Nếu thêm vào thì vẫn kịp thứ 6."*
+> PO thêm task, cập nhật ngày, rồi mới gửi board cho David.
+
+Tại sao tốt: Ngày gửi khách là ngày cả team đã cam kết. Chỗ thiếu được phát hiện trước khi khách thấy.
 
 ---
 
-## Gửi Planning Report — Chốt trong ngày, không để qua đêm
+## SEND — Gửi board cho khách sau khi cả team đã cam kết
 
-Buổi planning kết thúc, PO có 1 việc quan trọng nhất: **tổng hợp Planning Report và gửi trong ngày**. Không phải "mai em gửi" — vì ngày mai bạn sẽ quên 30% chi tiết đã thảo luận.
+Cả team đã cam kết EOD, PO có 1 việc quan trọng nhất: **gửi board cho khách ngay trong ngày**. Không cần soạn một bản Planning Report riêng — board đã có đủ Milestone, task, người phụ trách và deadline. PO chỉ viết thêm [Daily Report](../po-internal-daily/internal-daily-handbook.md) đầu tiên ở đầu tab `sprint_1`, rồi export PDF. Không phải "mai em gửi" — vì ngày mai bạn sẽ quên 30% chi tiết đã thảo luận.
 
-Report cần gửi cho 2 nhóm:
+Tin nhắn gửi kèm board viết theo 3 mục Approach, Key Risks, Strategy — xem [Gửi plan — summary trước, file sau](../po-kick-off/kick-off-handbook.md).
+
+Gửi cho 2 nhóm:
 1. **Client** — để xác nhận scope, timeline, và team hiểu đúng yêu cầu
 2. **Leaders (Anderson/COO)** — để nắm tiến độ và hỗ trợ khi cần
 
+❌ Cách tồi:
+> PO: *"Ok, em sẽ tổng hợp gửi khách sau nhé."*
+> → 3 ngày sau vẫn chưa gửi. Board chưa ai cập nhật lại những gì đã sửa trong buổi họp. Dev: "Hôm đó mình chốt dời Reporting sang sprint nào nhỉ?"
+> → 1 tuần sau mới gửi. Client: "Sao lâu vậy, mọi thứ ổn chứ?"
+
+Tại sao tồi: Gửi trễ = chi tiết sai (vì quên). Client lo lắng. Leaders không nắm được tình hình. Và team mất momentum — "cảm giác planning" đã bay mất.
+
 ✅ Cách tốt:
-> Ngay sau buổi họp, PO ngồi lại 1 tiếng, tổng hợp Planning Template đã điền:
-> - Kiểm tra logic: task list có cover hết Key Success Features không?
-> - Kiểm tra format: mỗi task có owner + deadline chưa?
-> - Thêm phần "Follow-up Questions for Client" — những điểm chưa rõ cần hỏi
+> Ngay sau buổi họp, PO kiểm lại board:
+> - Mọi Key Success Feature đã có Milestone và task chưa?
+> - Mỗi task có Assignee + Expected done date chưa?
 >
-> Xuất PDF, gửi qua Telegram cho client:
-> *"Hi David, here's our project plan following today's internal planning. Please review the scope, timeline, and let us know if anything needs adjustment. We also have a few questions listed on page 4 — would appreciate your input on those."*
+> Viết Daily Report đầu tab `sprint_1`: kế hoạch đã chốt, 2 rủi ro chính kèm giải pháp, 2 câu hỏi cần David trả lời. Export PDF, cấp quyền xem board cho David, gửi vào group `Booking - Cyberk devs`:
+> *"Hi David, here's our project board following today's internal planning 📎 Please review the milestones and timeline, and let us know if anything needs adjustment. We have 2 questions for you in the report at the top — would appreciate your input on those."*
 >
 > Đồng thời gửi qua Telegram cho Anderson:
-> *"Anh ơi, em gửi Planning Report dự án Booking Platform. Tổng timeline 3 tháng, team 3 người. Có 2 rủi ro chính: Stripe integration chưa có kinh nghiệm và design chưa final. Em đã có giải pháp cho cả 2. Anh xem có góp ý gì không ạ."*
+> *"Anh ơi, em gửi board dự án Booking Platform. Tổng timeline 3 tháng, team 3 người. Có 2 rủi ro chính: Stripe integration chưa có kinh nghiệm và design chưa final. Em đã có giải pháp cho cả 2. Anh xem có góp ý gì không ạ."*
 
-Tại sao tốt: Client nhận report trong ngày → cảm thấy team professional và có kế hoạch rõ. Anderson nắm được tình hình ngay. Câu hỏi cho client được gửi sớm = trả lời sớm = không bị block.
-
-❌ Cách tồi:
-> PO: *"Ok, em sẽ tổng hợp report gửi sau nhé."*
-> → 3 ngày sau vẫn chưa gửi. Phải hỏi lại dev "hôm đó estimate bao nhiêu ngày nhỉ?" Dev: "Em không nhớ..."
-> → 1 tuần sau mới gửi report. Client: "Sao lâu vậy, mọi thứ ổn chứ?"
-
-Tại sao tồi: Report gửi trễ = chi tiết sai (vì quên). Client lo lắng. Leaders không nắm được tình hình. Và team mất momentum — "cảm giác planning" đã bay mất.
+Tại sao tốt: Client nhận board trong ngày → cảm thấy team professional và có kế hoạch rõ. Từ hôm sau client nhận đúng định dạng PDF này mỗi ngày, nên quen ngay cách đọc. Anderson nắm được tình hình ngay. Câu hỏi cho client được gửi sớm = trả lời sớm = không bị block.
 
 ---
 
@@ -225,16 +269,18 @@ Tại sao tồi: Report gửi trễ = chi tiết sai (vì quên). Client lo lắ
 
 | Giai đoạn | Nguyên tắc cốt lõi | Sai lầm hay gặp |
 |-----------|-------------------|-----------------| 
-| Chuẩn bị | Gửi PRD trước, team đọc và ghi chú, book phòng nghiêm túc | Không gửi trước, mất 45 phút đọc PRD trong buổi họp |
-| Hiểu sản phẩm | Hiểu MỤC ĐÍCH của client, không chỉ tính năng | Đọc danh sách feature mà không ai biết tại sao |
-| Đọc PRD | Thảo luận chủ động, ghi lại mọi câu hỏi chưa rõ | Team im lặng, PRD mâu thuẫn không ai phát hiện |
-| Lập kế hoạch | Cả team cùng estimate, phân loại 4 mức ưu tiên | PO tự estimate rồi assign, dev không commit |
-| Rủi ro | Xác định sớm 4 loại, mỗi rủi ro có kịch bản xử lý | "Không có rủi ro" — câu nói nguy hiểm nhất |
-| Gửi report | Gửi cho client + leaders TRONG NGÀY | Để 1 tuần mới tổng hợp, quên chi tiết, mất momentum |
+| Chuẩn bị | Dựng board trước, gửi PRD + board cho team đọc và ghi chú, book phòng nghiêm túc | Không gửi trước, mất 45 phút đọc PRD trong buổi họp |
+| PRIORITY | Hiểu MỤC ĐÍCH của client, tìm ra Key Success Features, bôi đỏ và đưa lên đầu board | Xếp Milestone theo thứ tự PRD, không ai biết việc nào quan trọng nhất |
+| ASSIGN — chia việc | Chia theo độ quan trọng: Key Success Features cho người giỏi và đáng tin nhất, làm đầu tiên | Chia theo độ khó, việc quan trọng nhất rơi vào tay người mới |
+| ASSIGN — soát việc mình | Mỗi người đọc PRD phần mình, soát task thừa/thiếu, hỏi ngay chỗ chưa rõ | Team im lặng, PRD mâu thuẫn không ai phát hiện |
+| ASSIGN — rủi ro | Xác định sớm 4 loại, mỗi rủi ro có kịch bản xử lý | "Không có rủi ro" — câu nói nguy hiểm nhất |
+| ASSIGN — cam kết EOD | Mỗi người cam kết release đúng ngày; không được thì điều chỉnh trước khi gửi khách | Gửi khách khi chưa ai soát kỹ việc của mình |
+| SEND | Sau khi cả team cam kết, gửi PDF board + Daily Report cho client, tóm tắt cho leaders TRONG NGÀY | Để 1 tuần mới gửi, quên chi tiết, mất momentum |
 
 ---
 
 ## Liên kết
 
-- [Quy trình planning — 4 bước](./planning-process.md)
-- *(Mẫu Planning Report & Agenda — chưa có, cần tạo)*
+- [Quy trình planning — `PRIORITY → ASSIGN → SEND`](./planning-process.md)
+- [Khởi tạo Board](../po-board-create/board-create-process.md) — Board dựng trước buổi họp
+- [Mẫu Daily Report & tin nhắn summary](../po-internal-daily/internal-daily-example.md)

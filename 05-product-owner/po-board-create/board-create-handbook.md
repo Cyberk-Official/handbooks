@@ -153,6 +153,16 @@ Mỗi sprint là một tuần, mỗi tuần một tab: `sprint_1`, `sprint_2`...
 
 Sang sprint tiếp theo — với người nhận và ngày cụ thể. Tên tab luôn đặt theo sprint: `sprint_1`, `sprint_2`... nên mọi task luôn thuộc về một tuần nào đó.
 
+Cách tồi:
+
+```
+Tab: Backlog | sprint_1 | Members | README
+
+Thứ 6 chốt sprint, task chưa xong bị kéo về tab Backlog "lúc nào rảnh làm".
+```
+
+Tại sao tồi: Tab Backlog là nơi task đến rồi nằm chết. *"Cái này để sau làm"* — rồi không ai nhớ tới, cho đến ngày khách hỏi *"Cái anh nhờ tháng trước đâu rồi em?"*.
+
 Cách tốt:
 
 ```
@@ -164,16 +174,6 @@ Thứ 6 chốt sprint, task "Withdraw: Lighter → Koto" chưa xong
 ```
 
 Tại sao tốt: Task vẫn có người, có ngày, và thứ 3 tuần sau sẽ có người hỏi tới.
-
-Cách tồi:
-
-```
-Tab: Backlog | sprint_1 | Members | README
-
-Thứ 6 chốt sprint, task chưa xong bị kéo về tab Backlog "lúc nào rảnh làm".
-```
-
-Tại sao tồi: Tab Backlog là nơi task đến rồi nằm chết. *"Cái này để sau làm"* — rồi không ai nhớ tới, cho đến ngày khách hỏi *"Cái anh nhờ tháng trước đâu rồi em?"*.
 
 ### Tab Members
 
@@ -209,14 +209,14 @@ Cần khi: Dự án có ≥ 5 Milestone chạy song song. PO muốn biết "Ligh
 | Đặt tên? | `[Project]-Management` hoặc tên bộ phận |
 | Bao nhiêu cột? | 8 — không thiếu, không thừa. Estimate bắt buộc |
 | Tab chính? | Mỗi sprint một tab: `sprint_1`, `sprint_2`... |
-| Ai tạo? | PO, Estimate cùng Dev *(xem [Tạo Milestone](../po-milestone-create/milestone-create-handbook.md))*, Assign cùng team |
+| Ai tạo? | PO, estimate cùng Tech Lead *(xem [Tạo Milestone](../po-milestone-create/milestone-create-handbook.md))*. Team nhận việc trong buổi [Planning](../po-planning/planning-process.md) |
 | Status bao nhiêu? | 4. Không hơn. |
 
 ---
 
 ## Liên kết
 
-- [Quy trình tạo Board](./board-create-process.md) — Luồng `TEMPLATE → ESTIMATE → ASSIGN → PLAN`, Board Rule, quy tắc cứng, checklist
+- [Quy trình tạo Board](./board-create-process.md) — Luồng `TEMPLATE → ESTIMATE → PLAN`, Board Rule, quy tắc cứng, checklist
 - [Tạo Milestone](../po-milestone-create/milestone-create-handbook.md) — Đặt tên Milestone, tách task, estimate cùng Dev
-- [AI Instruction](./board-create-ai-instruction/board-create-instruction.md) — AI soạn nháp task & Estimate từ Planning Report
+- [AI Instruction](./board-create-ai-instruction/board-create-instruction.md) — AI soạn nháp task & Estimate từ PRD
 - [Internal Daily Meeting](../po-internal-daily/internal-daily-process.md) — Cập nhật board hằng ngày, Daily Report, export PDF gửi khách

@@ -38,6 +38,15 @@ Demo không dừng ở luồng chạy đúng. Người dùng thật sẽ nhập 
 
 Không cần thử hết cả bảng cho mọi tính năng. Tính năng đăng nhập thì thử nhóm Đăng nhập. Tính năng rút tiền thì thử nhóm Ví & giao dịch và Mạng & server. Trường hợp nào chưa xử lý thì lên board thành task ở bước Change.
 
+Cách tồi:
+
+```
+Shota: "Hôm qua em làm xong phần TP/SL rồi anh, chiều em push."
+PO: "Ok, next."
+```
+
+Tại sao tồi: Cả team chỉ nghe Shota nói là xong, chưa ai thấy nó chạy thế nào. Hai ngày sau khách dùng thử và phát hiện lỗi.
+
 Cách tốt:
 
 ```
@@ -47,15 +56,6 @@ PO ghi lại: bug [P1] cho Milestone Lighter Platform Integration.
 ```
 
 Tại sao tốt: Lỗi bị bắt ngay trên sản phẩm, trong 1 phút, trước khi khách nhìn thấy.
-
-Cách tồi:
-
-```
-Shota: "Hôm qua em làm xong phần TP/SL rồi anh, chiều em push."
-PO: "Ok, next."
-```
-
-Tại sao tồi: Cả team chỉ nghe Shota nói là xong, chưa ai thấy nó chạy thế nào. Hai ngày sau khách dùng thử và phát hiện lỗi.
 
 ---
 
@@ -71,17 +71,6 @@ Sau mỗi buổi Demo, PO đi qua board với 3 việc:
 
 Rồi điều chỉnh các task đang có cho hợp lý: task trễ thì đổi Expected done date, người quá tải thì chuyển bớt, việc không kịp tuần này thì đưa sang sprint sau với ngày cụ thể.
 
-Cách tốt:
-
-```
-Sau Demo, PO thêm 2 dòng vào sprint_2:
-  Lighter Platform Integration | [P1] Block stop-loss below entry price | Shota | Todo | 0% | 2 | 2026-11-19
-  Lighter Platform Integration | QA: retest TP/SL drag on chart          | Kate  | Todo | 0% | 1 | 2026-11-20
-Task "Leverage presets" của Shota dời Expected done date sang thứ 5.
-```
-
-Tại sao tốt: Board phản ánh đúng những gì vừa thấy trong buổi Demo. Bản PDF gửi khách hôm nay đã có cả bug và kế hoạch sửa.
-
 Cách tồi:
 
 ```
@@ -92,6 +81,17 @@ Board không đổi gì.
 Tại sao tồi: Việc không lên board thì không có Estimate, QA cũng không biết để test lại. Khách đọc PDF không biết team đã thấy lỗi này.
 
 Một lỗi hay gặp khác: cả buổi họp xong mà không ai đụng vào board, vì ai cũng đã biết việc của mình. Task xong vẫn để `Doing`, việc mới nằm trong đầu PO. Khách chỉ thấy bản PDF, và nếu PDF hôm nay giống hệt hôm qua thì khách hiểu là team không làm gì, dù thực tế cả team vừa có một ngày làm việc tốt. Hai ba ngày như vậy là khách bắt đầu hỏi dồn, rồi nghĩ team lười.
+
+Cách tốt:
+
+```
+Sau Demo, PO thêm 2 dòng vào sprint_2:
+  Lighter Platform Integration | [P1] Block stop-loss below entry price | Shota | Todo | 0% | 2 | 2026-11-19
+  Lighter Platform Integration | QA: retest TP/SL drag on chart          | Kate  | Todo | 0% | 1 | 2026-11-20
+Task "Leverage presets" của Shota dời Expected done date sang thứ 5.
+```
+
+Tại sao tốt: Board phản ánh đúng những gì vừa thấy trong buổi Demo. Bản PDF gửi khách hôm nay đã có cả bug và kế hoạch sửa.
 
 ### Đọc board mỗi sáng thế nào?
 

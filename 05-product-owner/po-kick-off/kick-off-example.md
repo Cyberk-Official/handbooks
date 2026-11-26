@@ -2,7 +2,7 @@
 type: delivery
 tags: [kick-off, templates, client-management]
 created-date: 2026-08-27
-updated-date: 2026-11-16
+updated-date: 2026-11-26
 author: anderson
 status: Nháp
 ---
@@ -34,15 +34,15 @@ exactly what to expect:
 
 Today, our full team — developers, QA, and tech lead — will sit 
 down together to go through the project requirements in detail. 
-We'll build a complete project plan: task breakdown, timeline, 
-milestones, risk assessment, and team assignments.
+We'll review the project plan together — milestones, timeline, 
+risk assessment — and assign every task to a team member.
 
 Why we do this: We want every team member to deeply understand 
 the product before writing a single line of code. This session 
 ensures everyone is aligned — not just on WHAT to build, but 
 WHY it matters to your business.
 
-I'll send you the Planning Report by end of day today.
+I'll send you the project board by end of day today.
 
 ━━━━━━━━━━━━━━━━━━━━━
 
@@ -72,7 +72,7 @@ Best,
 
 ---
 
-## 2. Tin nhắn gửi kèm Planning Report (Bước 2)
+## 2. Tin nhắn gửi kèm board (Bước 2)
 
 > Gửi **ngay sau** Internal Planning hoàn tất. Không gửi file trơn — phải kèm summary.
 
@@ -81,7 +81,7 @@ Hi [Client Name],
 
 Our internal planning session is complete. 
 Please find attached:
-  • The Planning Report for [Project Name]
+  • The project board for [Project Name] (PDF, you also have view access)
   • Our Zero to Product process guide: what happens in your
     first 30 days, from idea to launch
 
@@ -141,7 +141,7 @@ Below is the agenda for our kick-off meeting on [Date], [Time]:
      who to contact for what.
 
   2. Project Planning Walk-through              15 min
-     Detailed review of the Planning Report:
+     Detailed review of the project board:
      — Scope & deliverables
      — Timeline & milestones
      — Feature prioritization
@@ -149,7 +149,7 @@ Below is the agenda for our kick-off meeting on [Date], [Time]:
 
   3. How We Work Together                      15 min
      A walk-through of our Zero to Product process
-     guide (sent with the Planning Report):
+     guide (sent with the project board):
      — Your 30 days on one page: key dates & approvals
      — Daily demo, weekly and monthly reports
      — How we handle changes
@@ -234,7 +234,7 @@ NEXT STEPS
 
 ━━━━━━━━━━━━━━━━━━━━━
 
-Attached: Planning Report (PDF), Zero to Product process guide (PDF), Meeting slides
+Attached: Project board (PDF), Zero to Product process guide (PDF), Meeting slides
 
 Please let us know if anything needs to be corrected.
 

@@ -2,7 +2,7 @@
 type: delivery
 tags: [handbook, project-management, client-management, communication]
 created-date: 2026-11-19
-updated-date: 2026-11-19
+updated-date: 2026-11-26
 author: anderson
 status: Nháp
 ---
@@ -105,7 +105,7 @@ Nhịp vận hành giữa khách hàng và team tại Cyberk xoay theo chu kỳ 
 ### Tại sao báo cáo của Tech Lead phải có đủ 4 hạng mục + Buffer 30%–50%?
 Trong mắt khách hàng, tính năng mới đôi khi chỉ là *"thêm 1 màn hình lấy link mời bạn bè — chắc mất 4 tiếng"*. Họ không nhìn thấy phần chìm dưới mặt nước: thiết kế bảng dữ liệu mới, viết cronjob đối soát phí mỗi đêm, chặn gian lận tự tạo 2 ví mời nhau, kiểm thử lại toàn bộ luồng khớp lệnh cũ.
 
-Vì vậy, đừng bao giờ nhận từ Tech Lead một con số trơ trọi kiểu *"Khoảng 30 tiếng em nhé"*. Báo cáo Estimate bắt buộc phải bóc tách đủ **4 hạng mục**:
+Vì vậy, đừng bao giờ nhận từ Tech Lead một con số trơ trọi kiểu *"Khoảng 30 tiếng em nhé"*. Con số đó đến từ danh sách task chi tiết của Milestone mới, làm theo [Tạo Milestone](../po-milestone-create/milestone-create-process.md). Danh sách task giữ nội bộ; khi trình khách, Tech Lead gom task lại thành **4 hạng mục**:
 1. **Thiết kế UX/UI cần mở rộng**
 2. **Thiết kế hệ thống cần thay đổi** *(nếu có)*
 3. **Source code và side effects cần chỉnh sửa**

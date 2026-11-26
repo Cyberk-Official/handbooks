@@ -168,6 +168,6 @@ Năm quy tắc trên gói lại thành 5 câu không bao giờ vi phạm:
 
 - [Dev Daily Handbook — Cẩm nang cách nghĩ](dev-daily-handbook.md)
 - [Quy chuẩn Quản lý Source Code và Git](../dev-source-code-git/dev-source-code-git-policy.md) — nguồn chính thức cho tên branch, commit message, quy tắc PR và tag release
-- [Board Handbook — Tổng quan quản lý dự án](../../05-product-owner/board-handbook/board-handbook.md)
+- [Cẩm nang Board — Tổng quan quản lý dự án](../../05-product-owner/po-board-create/board-create-handbook.md)
 - [Daily Report — Quy trình báo cáo](../../04-developer/dev-daily-report/daily-report-process.md)
 - [Dev Tasks Logs — Quy trình tạo task](../../04-developer/dev-tasks-logs/dev-tasks-logs-process.md)

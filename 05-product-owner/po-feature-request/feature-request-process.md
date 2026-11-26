@@ -2,7 +2,7 @@
 type: delivery
 tags: [process, project-management, client-management, workflow]
 created-date: 2026-11-19
-updated-date: 2026-11-19
+updated-date: 2026-11-26
 author: anderson
 status: Nháp
 ---
@@ -60,8 +60,8 @@ flowchart LR
 
 | # | Việc làm | Ai làm | Đầu ra |
 |---|----------|--------|--------|
-| 1 | **UNDERSTAND — Họp làm rõ yêu cầu & nhắn xác nhận sau họp:** Các tính năng mới thường được thảo luận trực tiếp trong buổi họp với khách. Sau buổi họp, PO viết **BRD** theo [mẫu BRD chuẩn](./template/feature-request-brd-template.md) (bằng skill viết BRD), đồng thời **gửi tin nhắn cho khách** đính kèm BRD, báo rõ quy trình tiếp theo của Cyberk (Estimate trong 24h → Proposal) và nêu trước mức phí mở rộng tiêu chuẩn **`$25/giờ`** để khách biết chừng. | PO | Tài liệu **BRD** + Tin nhắn báo quy trình tiếp theo & đơn giá `$25/giờ` |
-| 2 | **ESTIMATE — Ước lượng công sức & rủi ro (chuẩn ≤ 24h):** Dựa trên BRD, Tech Lead lập báo cáo ước lượng số giờ làm việc của team trong vòng **24 giờ**, bắt buộc cộng **buffer 30%–50%** cho các phát sinh liên quan để đánh giá rủi ro mở rộng scope. Báo cáo phải bao gồm đủ 4 hạng mục:<br>• Thiết kế UX/UI cần mở rộng<br>• Thiết kế hệ thống cần thay đổi *(nếu có)*<br>• Source code và side effects cần chỉnh sửa<br>• Team effort / Số giờ mà team cần xử lý cho yêu cầu mới | Tech Lead | **Báo cáo Estimate** (4 hạng mục + tổng giờ kèm buffer 30%–50%) |
+| 1 | **UNDERSTAND — Họp làm rõ yêu cầu & nhắn xác nhận sau họp:** Các tính năng mới thường được thảo luận trực tiếp trong buổi họp với khách. Sau buổi họp, PO viết **BRD** theo [mẫu BRD chuẩn](./template/feature-request-brd-template.md) (bằng skill viết BRD) — đặt tên Milestone cho tính năng mới theo bước DEFINE của [Tạo Milestone](../po-milestone-create/milestone-create-process.md) — đồng thời **gửi tin nhắn cho khách** đính kèm BRD, báo rõ quy trình tiếp theo của Cyberk (Estimate trong 24h → Proposal) và nêu trước mức phí mở rộng tiêu chuẩn **`$25/giờ`** để khách biết chừng. | PO | Tài liệu **BRD** + Tin nhắn báo quy trình tiếp theo & đơn giá `$25/giờ` |
+| 2 | **ESTIMATE — Ước lượng công sức & rủi ro (chuẩn ≤ 24h):** Dựa trên BRD, PO và Tech Lead chạy bước BREAKDOWN → ESTIMATE của [Tạo Milestone](../po-milestone-create/milestone-create-process.md) để có danh sách task và số giờ thật *(giữ nội bộ)*. Từ đó Tech Lead gom task thành 4 hạng mục và lập báo cáo ước lượng số giờ làm việc của team trong vòng **24 giờ**, bắt buộc cộng **buffer 30%–50%** cho các phát sinh liên quan để đánh giá rủi ro mở rộng scope. Báo cáo phải bao gồm đủ 4 hạng mục:<br>• Thiết kế UX/UI cần mở rộng<br>• Thiết kế hệ thống cần thay đổi *(nếu có)*<br>• Source code và side effects cần chỉnh sửa<br>• Team effort / Số giờ mà team cần xử lý cho yêu cầu mới | Tech Lead | **Báo cáo Estimate** (4 hạng mục + tổng giờ kèm buffer 30%–50%) |
 | 3 | **APPROVAL — Duyệt ngân sách & mức chi phí:** PO trình BRD + Báo cáo Estimate cho AM. AM duyệt ngân sách mở rộng và chốt mức chi phí áp dụng cho khách hàng *(tính theo đơn giá chuẩn **`$25/giờ`** hoặc tài trợ miễn phí tuỳ hoàn cảnh dự án)*. | AM (Anderson / Brian) | Phê duyệt ngân sách + **Mức chi phí mở rộng** |
 | 4 | **PROPOSAL — Trình bày phương án & chốt Email confirm:** PO trình bày **BRD** cho khách hàng kèm theo **chi phí mở rộng yêu cầu dự án** (`số giờ × $25/giờ`, hoặc thông báo tài trợ miễn phí), giải thích rõ từng hạng mục thay đổi cụ thể ở bước Estimate:<br>• Thiết kế UX/UI cần mở rộng<br>• Thiết kế hệ thống cần thay đổi *(nếu có)*<br>• Source code và side effects cần chỉnh sửa<br>• Team effort / Số giờ mà team cần xử lý cho yêu cầu mới<br>Ngay sau khi khách gật đầu đồng ý về chi phí (trên họp hoặc chat), PO **bắt buộc gửi 1 Email chốt confirm** (CC AM) để khách reply xác nhận chính thức bằng văn bản. | PO | Khách nắm rõ BRD, 4 hạng mục & chi phí → **Reply xác nhận qua Email** |
 
@@ -100,12 +100,13 @@ flowchart LR
 - [ ] **Estimate:** Tech Lead đã hoàn thành báo cáo trong **≤ 24h** *(nếu quá 24h đã báo Anderson)*, đủ 4 hạng mục (UX/UI, System Design, Source code & side effects, Team effort kèm buffer 30%–50%)
 - [ ] **Approval:** AM (Anderson / Brian) đã duyệt ngân sách mở rộng và chốt mức chi phí (tính phí hoặc miễn phí)
 - [ ] **Proposal:** PO đã trình bày rõ cho khách **BRD + 4 hạng mục thay đổi + chi phí mở rộng**
-- [ ] **Email Confirm:** Sau khi khách gật đầu về chi phí, PO đã gửi **Email chốt confirm** (CC AM) và nhận được phản hồi xác nhận của khách qua Email trước khi đưa task vào Sprint thực thi
+- [ ] **Email Confirm:** Sau khi khách gật đầu về chi phí, PO đã gửi **Email chốt confirm** (CC AM) và nhận được phản hồi xác nhận của khách qua Email trước khi đưa Milestone lên board ở bước CHANGE của [Internal Daily](../po-internal-daily/internal-daily-process.md)
 
 ---
 
 ## Liên kết
 
+- [Tạo Milestone](../po-milestone-create/milestone-create-process.md) — Mỗi Feature Request là một Milestone mới: đặt tên, tách task, estimate
 - [Xử lý Feature Request — Cẩm nang cho PO](./feature-request-handbook.md) — Định nghĩa, hướng dẫn cách nghĩ, mẫu tốt/tồi
 - [Mẫu BRD & Báo giá mở rộng](./template/feature-request-brd-template.md) — File mẫu chuẩn PO và Tech Lead điền xuyên suốt 4 bước
 - [Mẫu tin nhắn & phản hồi](./feature-request-example.md) — Tất cả mẫu tin nhắn cho mọi tình huống

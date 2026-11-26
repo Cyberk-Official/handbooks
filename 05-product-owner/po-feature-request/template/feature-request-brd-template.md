@@ -9,7 +9,7 @@ author: "[PO Name]"
 tech-lead: "[Tech Lead Name]"
 approver: "[Anderson / Brian]"
 created-date: 2026-11-19
-updated-date: 2026-11-19
+updated-date: 2026-11-26
 status: Nháp
 ---
 
@@ -22,7 +22,9 @@ HƯỚNG DẪN SỬ DỤNG CHO PO & TECH LEAD (XÓA KHỐI NÀY TRƯỚC KHI XU�
    - Gửi link/bản nháp phần BRD này kèm tin nhắn báo quy trình tiếp theo & đơn giá chuẩn $25/giờ.
 
 2. BƯỚC ESTIMATE — DEADLINE ≤ 24H (Tech Lead):
-   - Tech Lead đọc Mục 1–3 và điền đầy đủ 4 hạng mục tại Mục 4 (4.1 → 4.4).
+   - PO & Tech Lead tách Milestone thành task và estimate theo handbook/05-product-owner/po-milestone-create/
+     (danh sách task giữ nội bộ, KHÔNG đưa vào file gửi khách).
+   - Tech Lead gom task thành 4 hạng mục và điền tại Mục 4 (4.1 → 4.4).
    - QUAN TRỌNG: Cộng sẵn buffer 30%–50% thẳng vào số giờ của từng vai trò ở bảng 4.4.
      TUYỆT ĐỐI KHÔNG tạo dòng chữ "Buffer" hay ghi phần trăm buffer ra tài liệu này!
    - Nếu ước lượng vượt quá 24h chưa xong → Báo ngay cho Anderson.
@@ -48,6 +50,7 @@ HƯỚNG DẪN SỬ DỤNG CHO PO & TECH LEAD (XÓA KHỐI NÀY TRƯỚC KHI XU�
 | **Client** | `[Client Name, e.g., Jon]` | **Date** | `[YYYY-MM-DD]` |
 | **Prepared By** | `[PO Name]`, Product Owner | **Tech Review** | `[Tech Lead Name]`, Tech Lead |
 | **Status** | `Draft / Pending Client Confirmation / Confirmed` | **Standard Rate** | `$25 USD / hour` |
+| **Milestone** | `[Object + Action, e.g., Referral & Fee Rebate Rollout]` | | |
 
 ---
 

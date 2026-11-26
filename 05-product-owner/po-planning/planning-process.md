@@ -2,7 +2,7 @@
 type: delivery
 tags: [planning, process]
 created-date: 2026-08-27
-updated-date: 2026-09-06
+updated-date: 2026-11-26
 author: anderson
 status: Nháp
 ---
@@ -10,16 +10,18 @@ status: Nháp
 # Lập kế hoạch dự án (Internal Planning)
 
 **Người chịu trách nhiệm:** PO dự án
-**Cập nhật lần cuối:** 2026-08-26
+**Cập nhật lần cuối:** 2026-11-26
 **Trạng thái:** Nháp
 
 ## Tại sao có trang này
 
 Internal Planning Meeting là buổi họp quan trọng nhất trước khi bắt tay vào phát triển — quyết định cả team có cùng hiểu đúng yêu cầu, cùng thống nhất kế hoạch, hay mạnh ai nấy hiểu. Planning tốt thì dự án chạy mượt từ sprint đầu; planning hời hợt thì 2 tuần sau mới phát hiện mỗi người hiểu một kiểu.
 
+Tại Cyberk, PO đã dựng xong board trước buổi họp: đủ Milestone, đủ task, mỗi task có số giờ và ngày xong dự kiến. Team bước vào buổi họp với mọi thứ đã sẵn sàng. Buổi Planning tập trung vào hai việc: tìm ra **Key Success Features** và đưa chúng lên đầu board, rồi **chia việc** — mỗi người nhận việc, soát kỹ phần của mình, và cam kết ngày release. Cả team cam kết xong, PO gửi thẳng board cho khách.
+
 ## Khi nào áp dụng (Trigger)
 
-Khi dự án mới được ký hợp đồng, PRD đã sẵn sàng, và team đã được assign — **trước khi bắt đầu sprint đầu tiên**.
+Khi board đã được dựng theo [Khởi tạo Board](../po-board-create/board-create-process.md), PRD đã sẵn sàng, và team đã được assign vào dự án — **trước khi bắt đầu sprint đầu tiên**.
 
 ---
 
@@ -27,9 +29,12 @@ Khi dự án mới được ký hợp đồng, PRD đã sẵn sàng, và team đ
 
 ```mermaid
 flowchart LR
-    A["1. Chuẩn bị\nPRD + template\n+ hẹn lịch"] --> B["2. Planning Meeting\nHiểu sản phẩm\nĐọc PRD\nLập plan"]
-    B --> C["3. Hoàn thiện\nPlanning Report"]
-    C --> D["4. Gửi report\ncho client & leaders"]
+    A["PRIORITY"] --> B["ASSIGN"]
+    B --> C["SEND"]
+
+    style A fill:#ff6b6b,stroke:#333,color:#fff
+    style B fill:#9775fa,stroke:#333,color:#fff
+    style C fill:#69db7c,stroke:#333,color:#000
 ```
 
 ---
@@ -38,11 +43,11 @@ flowchart LR
 
 | Vai trò | Chịu trách nhiệm gì |
 |---------|---------------------|
-| Product Owner / PO | Chuẩn bị buổi họp (gửi PRD, book phòng), dẫn dắt buổi planning, tổng hợp Planning Report, gửi cho client & leaders |
-| Tech Lead | Đánh giá kiến trúc kỹ thuật, estimate effort tổng thể, xác định rủi ro công nghệ, đề xuất tech stack |
-| Dev | Đọc PRD trước và ghi chú câu hỏi, estimate task của mình, nhận phân công, góp ý task list |
-| QA | Xác định test strategy, góp ý về rủi ro chất lượng, estimate effort QA |
-| Designer | Xác nhận design scope, cam kết timeline wireframe/high-fidelity, đánh giá UX risk |
+| **Product Owner (PO)** | Gửi PRD và link board cho team đọc trước; trình bày mục đích của khách, chốt Key Success Features và bôi đỏ trên board (*Priority*); chia việc, sửa board theo góp ý, thu cam kết EOD (*Assign*); gửi board cho khách và leaders (*Send*) |
+| **Tech Lead** | Góp ý thứ tự ưu tiên về mặt kỹ thuật (*Priority*); soát kiến trúc, các Estimate lớn và thứ tự phụ thuộc, xác định rủi ro công nghệ (*Assign*) |
+| **Dev** | Đọc PRD và board trước; nhận task, soát kỹ task của mình (thừa/thiếu, Estimate), cam kết EOD ngày release (*Assign*) |
+| **QA** | Góp ý mức ưu tiên (*Priority*); nhận và soát task QA, góp ý rủi ro chất lượng, cam kết EOD (*Assign*) |
+| **Designer** | Nhận và soát task UX/UI, timeline design, cam kết EOD (*Assign*) |
 
 ---
 
@@ -50,14 +55,9 @@ flowchart LR
 
 | # | Việc làm | Ai làm | Đầu ra | Timeline |
 |---|----------|--------|--------|----------|
-| 1 | **Chuẩn bị** — Gửi PRD cho team đọc trước (yêu cầu comment vào doc). Gửi Planning Template để xem qua. Custom template cho phù hợp dự án. Book phòng họp nghiêm túc — càng xa khu vực làm việc thường ngày càng tốt. | PO | PRD đã gửi (Google Doc, cho phép comment), Planning Template đã custom, lịch đã book | Trước buổi họp ít nhất 1 ngày |
-| 2 | **Planning Meeting** — Gồm 4 phần trong 1 buổi họp: | PO + cả team | | |
-| 2a | → *Hiểu sản phẩm:* Leader trình bày bối cảnh dự án — khách hàng là ai, vấn đề họ đang giải quyết, mục đích (gọi vốn? doanh thu? user?). Dùng slide, user flow, hoặc demo nếu có. | PO | Team hiểu MỤC ĐÍCH, không chỉ tính năng | 15 phút |
-| 2b | → *Đọc PRD & thảo luận:* Leader giải thích từng phần PRD theo user flow. Dev/QA hỏi ngay chỗ chưa rõ. Ghi lại câu hỏi chưa trả lời được vào "Follow-up Questions for Client". | PO + cả team | Danh sách câu hỏi cho client, điểm mâu thuẫn đã phát hiện | 30–45 phút |
-| 2c | → *Lập kế hoạch:* Cả team cùng phân loại feature (4 mức: Key Success → Thiết yếu → Không ưu tiên → Nice-to-have). Dev estimate task. Phân công owner cho từng task/epic. | PO + cả team | Task list có owner + deadline + estimate | 30–45 phút |
-| 2d | → *Xác định rủi ro:* Liệt kê rủi ro (4 loại: tiến độ, công nghệ, giao tiếp client, con người). Mỗi rủi ro có giải pháp/kịch bản xử lý. | PO + TL | Bảng rủi ro + giải pháp | 15 phút |
-| 3 | **Hoàn thiện Planning Report** — Tổng hợp kết quả họp vào Planning Template. Kiểm tra: task list cover hết Key Success Features chưa? Mọi task có owner + deadline chưa? Thêm phần "Follow-up Questions". Xuất PDF. | PO | Planning Report hoàn chỉnh (PDF) | Trong ngày — ngay sau buổi họp |
-| 4 | **Gửi report** — Gửi cho client qua email/Telegram kèm câu hỏi follow-up. Gửi cho Anderson/COO qua Telegram kèm tóm tắt rủi ro chính. | PO | Client nhận report, leaders nắm tình hình | Trong ngày |
+| 1 | **PRIORITY — Tìm ra Key Success Features:** PO trình bày bối cảnh dự án — khách hàng là ai, vấn đề họ đang giải quyết, mục đích *(gọi vốn? doanh thu? user?)*. Từ mục đích đó, cả team thống nhất 4 mức ưu tiên *(Key Success → Thiết yếu → Không ưu tiên → Nice-to-have)*. Các Milestone **Key Success Features** được **bôi màu đỏ và đưa lên trên cùng** tab sprint, để ai mở board cũng biết đó là việc quan trọng nhất | PO + cả team | **Key Success Features bôi đỏ, nằm trên cùng board** | 30 phút |
+| 2 | **ASSIGN — Chia việc, soát việc của mình, cam kết EOD:** Bắt đầu từ Key Success Features — giao cho người giỏi và đáng tin nhất, làm đầu tiên. Chia theo **độ quan trọng**, không theo độ khó. Mỗi task đúng 1 người, đúng vai trò, mỗi member 2 task/ngày, 10 task/tuần. Nhận việc xong, mỗi người soát kỹ phần của mình:<br>• Đọc lại PRD ở phần mình, task thừa hay thiếu ở đâu?<br>• Estimate và ngày xong có đúng không?<br>• Chỗ nào chưa rõ → câu hỏi cho khách; rủi ro gì → kèm giải pháp<br>PO sửa board theo góp ý. Cuối ngày, mỗi người **cam kết**: nếu không có vấn đề gì phát sinh, phần việc của mình có release đúng ngày đã estimate không? Được thì đi tiếp. Không được thì điều chỉnh *(tách task, chuyển việc, dời Milestone ít quan trọng)* rồi cam kết lại | PO + cả team | **Mỗi task có 1 Assignee** + **cam kết EOD của từng người** | Buổi họp 30–45 phút, cam kết trước EOD |
+| 3 | **SEND — Gửi board cho khách:** Khi cả team đã cam kết, PO viết [Daily Report](../po-internal-daily/internal-daily-handbook.md) đầu tiên ở đầu tab `sprint_1`: kế hoạch đã chốt, rủi ro chính và câu hỏi cho khách, giải pháp team chọn. Export PDF, cấp quyền **xem** board cho khách, gửi vào group `[Project] - Cyberk devs` kèm tin nhắn summary *(Approach, Key Risks, Strategy — xem [bước 2 của Kick-off](../po-kick-off/kick-off-process.md))*. Gửi Anderson/COO qua Telegram kèm tóm tắt rủi ro chính | PO | Khách nhận board, leaders nắm tình hình | Ngay sau khi có đủ cam kết EOD |
 
 ---
 
@@ -65,11 +65,12 @@ flowchart LR
 
 | Quy tắc | Lý do |
 |---------|-------|
-| Team phải đọc PRD **trước** buổi họp | Không đọc trước = mất 45 phút đầu giải thích lại, buổi họp không có chiều sâu thảo luận |
+| Team phải đọc PRD và board **trước** buổi họp | Không đọc trước = mất 45 phút đầu giải thích lại, buổi họp không có chiều sâu thảo luận |
 | Key-members (TL, dev chính, QA) bắt buộc tham gia | Thiếu người quan trọng = quyết định thiếu cơ sở kỹ thuật, phải họp lại lần 2 |
-| Planning Report phải gửi **trong ngày** sau buổi planning | Để lâu = quên 30% chi tiết, report mất chính xác, client lo lắng |
-| Mỗi task phải có **1 owner + deadline cụ thể** | Task không có owner = không ai làm. Không có deadline = không bao giờ xong |
-| Dev tự estimate task của mình, PO không estimate thay | PO estimate thay = con số sai (không hiểu chi tiết kỹ thuật). Dev không commit vì "không phải con số của mình" |
+| Mỗi task có **1 Assignee + Expected done date** | Task không có owner = không ai làm. Không có deadline = không bao giờ xong |
+| Key Success Features bôi màu đỏ, nằm trên cùng board, làm đầu tiên, do người giỏi và đáng tin nhất làm | Thiếu Key Success Features thì dự án fail. Việc quan trọng nhất phải ở trong tay người chắc chắn nhất, và có nhiều thời gian nhất để sửa nếu sai |
+| Mỗi người cam kết EOD ngày release của phần việc mình trước khi gửi board cho khách | Dev phải cam kết với con số của chính mình, không phải "con số của PO" |
+| Board gửi cho khách **trong ngày**, ngay sau khi đủ cam kết | Để lâu = câu hỏi cho khách trả lời muộn, khách lo lắng |
 | Buổi planning phải có **facilitator** (người dẫn dắt) rõ ràng | Không có facilitator = buổi họp loãng, không có kết luận, không có quyết định |
 
 ---
@@ -78,35 +79,40 @@ flowchart LR
 
 | Tình huống | Hành động |
 |-----------|----------|
-| PRD chưa rõ, có nhiều điểm mâu thuẫn | Ghi lại tất cả câu hỏi, follow-up với client **trước** khi lập kế hoạch chi tiết. Không estimate trên requirement mơ hồ. |
-| Team không đủ capacity cho scope dự án | Escalate lên COO/Anderson để điều chỉnh resource, timeline, hoặc scope. Không im lặng chấp nhận rồi trễ. |
-| Client thay đổi yêu cầu sau buổi planning | Đánh giá impact (timeline, effort, cost), cập nhật Planning Report, thông báo cho client + leaders. |
-| Key-member vắng buổi planning | Ghi lại meeting notes, brief riêng cho người vắng trong vòng 24h. Không để ai "tự đọc meeting notes". |
-| Không kịp gửi report trong ngày | Gửi bản draft (dù chưa perfect) kèm ghi chú "final version gửi trước 10am mai". Không để quá 24h. |
+| PRD chưa rõ, có nhiều điểm mâu thuẫn | Ghi lại tất cả câu hỏi, follow-up với khách **trước** khi chốt các Milestone liên quan. Không estimate trên requirement mơ hồ — xem [Tạo Milestone](../po-milestone-create/milestone-create-process.md) |
+| Khi soát việc, phát hiện **thiếu Milestone** hoặc Estimate sai lớn | PO sửa board ngay trong buổi họp. Nếu kế hoạch mới không kịp ngày Launch đã cam kết → escalate **AM (Anderson / Brian)** trước khi gửi board cho khách |
+| Team không đủ capacity cho scope dự án | Escalate lên COO/Anderson để điều chỉnh resource, timeline, hoặc scope. Không im lặng chấp nhận rồi trễ |
+| Member **chưa đủ 2 task mỗi ngày** sau khi chia việc | Kéo thêm việc từ sprint sau lên. Nếu dự án thật sự hết việc → báo Anderson để điều phối member sang hỗ trợ dự án khác |
+| Khách thay đổi yêu cầu sau buổi planning | Dưới 8 giờ → đưa thẳng lên board. Từ 8 giờ trở lên → đi theo [Feature Request](../po-feature-request/feature-request-process.md) |
+| Key-member vắng buổi planning | Ghi lại meeting notes, brief riêng cho người vắng trong vòng 24h. Không để ai "tự đọc meeting notes" |
+| Có người chưa cam kết được trước EOD, hoặc không kịp gửi board trong ngày | Gửi bản PDF hiện có kèm ghi chú "bản cập nhật gửi trước 10am mai". Không để quá 24h |
 
 ---
 
 ## Checklist
 
 ### Trước buổi họp
-- [ ] PRD đã gửi cho team ít nhất 1 ngày trước
-- [ ] Planning Template đã chuẩn bị, custom cho dự án
+- [ ] Board đã dựng xong theo [Khởi tạo Board](../po-board-create/board-create-process.md)
+- [ ] PRD và link board đã gửi cho team ít nhất 1 ngày trước
 - [ ] Key-members đã xác nhận tham gia
 - [ ] Phòng họp đã book (nghiêm túc, xa khu vực làm việc)
 - [ ] Slide giới thiệu dự án đã chuẩn bị (bối cảnh, mục đích, user)
 
 ### Trong buổi họp
-- [ ] Team đã đọc PRD và có câu hỏi
 - [ ] Bối cảnh + mục đích dự án đã được giải thích
-- [ ] PRD đã thảo luận, điểm chưa rõ đã ghi lại
-- [ ] Features đã phân loại 4 mức ưu tiên
-- [ ] Mọi task có owner + deadline + estimate
+- [ ] Features đã phân loại 4 mức, Key Success Features đã bôi đỏ và đưa lên đầu board
+- [ ] Key Success Features do người giỏi nhất team nhận, nằm ở sprint đầu
+- [ ] Mọi task có 1 Assignee
+- [ ] Mỗi người đã soát task của mình, chỗ thiếu đã sửa, câu hỏi cho khách đã ghi lại
 - [ ] Rủi ro đã xác định + có giải pháp
 
+### Cuối ngày
+- [ ] Mỗi người đã cam kết ngày release; ai chưa được thì đã điều chỉnh và cam kết lại
+
 ### Sau buổi họp
-- [ ] Planning Report đã hoàn thiện (PDF)
-- [ ] Report đã gửi cho client + leaders trong ngày
-- [ ] Follow-up Questions đã gửi cho client
+- [ ] Daily Report đầu tiên đã viết ở đầu tab `sprint_1`
+- [ ] Board đã gửi khách (PDF + quyền xem + tin nhắn summary) trong ngày
+- [ ] Anderson/COO đã nhận tóm tắt rủi ro
 - [ ] Key-member vắng đã được brief riêng
 
 ---
@@ -114,4 +120,7 @@ flowchart LR
 ## Liên kết
 
 - [Cách nghĩ khi planning — triết lý & mẫu tốt/tồi](./planning-handbook.md)
-- *(Mẫu Planning Report & Agenda — chưa có, cần tạo)*
+- [Khởi tạo Board](../po-board-create/board-create-process.md) — Bước trước: PO dựng board đầy đủ
+- [Kick-off với khách hàng](../po-kick-off/kick-off-process.md) — Bước tiếp theo
+- [Kick-off — Gửi board kèm summary](../po-kick-off/kick-off-handbook.md) — Cách viết tin nhắn summary cho bước Send
+- [Mẫu Daily Report](../po-internal-daily/internal-daily-example.md) — Daily Report đầu tiên ở đầu tab `sprint_1`

@@ -13,7 +13,7 @@ status: Nháp
 **Cập nhật lần cuối:** 2026-11-26
 **Trạng thái:** Nháp
 
-Trang này dùng mỗi khi PO cần đưa một Milestone mới lên board: lúc dựng board từ Planning Report, hoặc giữa dự án khi khách chốt thêm một đợt việc. Nội dung gồm cách đặt tên, độ lớn của một Milestone, cách tách thành task và cách estimate cùng Dev.
+Trang này dùng mỗi khi PO cần đưa một Milestone mới lên board: lúc dựng board từ PRD, hoặc giữa dự án khi khách chốt thêm một đợt việc. Nội dung gồm cách đặt tên, độ lớn của một Milestone, cách tách thành task và cách estimate cùng Dev.
 
 ---
 
@@ -48,23 +48,31 @@ Ngoài 3 luật trên, khi tách Milestone thành task, hãy kiểm thêm **xử
 
 ---
 
-## Vì sao PO estimate cùng Dev?
+## Khi nào cần task research, và research xong thì nộp gì?
+
+Có những việc chưa estimate được vì chưa biết cách làm: tích hợp một bên thứ ba chưa có tài liệu rõ, một công nghệ team chưa dùng bao giờ, một yêu cầu có nhiều cách hiểu về kỹ thuật. Đoán số giờ cho những việc này thì gần như chắc chắn sai.
+
+Lúc đó, tạo trước một **task research**. Nghiên cứu cũng tốn thời gian thật, nên task research được đối xử như mọi task khác: nằm dưới Milestone mà nó phục vụ, có người nhận, có Estimate không quá 4 tiếng, có Expected done date.
+
+Đầu ra của task research là **một bản báo cáo ngắn**, trả lời 2 câu hỏi:
+
+1. Có những cách giải quyết nào?
+2. Chọn cách nào, và tại sao?
+
+Báo cáo xong thì đặt link ở cột Notes của task. Có cách giải quyết đã chọn, PO cùng Tech Lead mới estimate phần làm thật. Một task research mà kết thúc bằng câu *"em tìm hiểu xong rồi anh"* thì không ai dùng lại được, và lần sau gặp vấn đề tương tự lại phải tìm hiểu từ đầu.
+
+Xem [mẫu task research và báo cáo](./milestone-create-example.md#3-task-research).
+
+---
+
+## Vì sao PO estimate cùng Tech Lead / Dev?
 
 PO hiểu khách cần gì. Dev hiểu hệ thống cần gì. Estimate một mình thì chỉ thấy một nửa bức tranh.
 
+Việc estimate thường diễn ra từ lúc làm proposal, khi team dự án chưa được thành lập. Lúc đó PO ngồi cùng Tech Lead hoặc một senior của Team Asimov. Khi có team, Dev nhận task xem lại số giờ của task mình.
+
 - **PO estimate một mình** sẽ sót hạng mục kỹ thuật — rồi giữa sprint mới nghe *"cái này phải viết thêm migration nữa anh ơi"*, *"phải cấu hình lại server mới chạy được"*.
 - **Dev estimate một mình** sẽ sót hạng mục khách cần — màn hình trạng thái lỗi, email thông báo, trang hướng dẫn — những thứ không nằm trong code nhưng khách nhìn thấy đầu tiên.
-
-Cách tốt:
-
-```
-PO mở Planning Report, đi qua từng Milestone cùng Tech Lead.
-PO: "Milestone Withdraw có 3 task: form rút tiền, xác nhận, lịch sử giao dịch."
-TL: "Thiếu task xử lý rút tiền bị treo ở bridge, cái đó mất 4h. Form rút tiền cũng phải tách đôi — 6h là quá 4h rồi."
-→ Board có đủ hạng mục, không task nào quá 4 tiếng.
-```
-
-Tại sao tốt: Dev chỉ ra phần PO không thấy. Task được tách nhỏ ngay khi estimate, không phải đợi tới lúc làm mới biết.
 
 Cách tồi:
 
@@ -75,6 +83,17 @@ PO tự điền Estimate cho 30 task trong 15 phút, gửi link board vào group
 ```
 
 Tại sao tồi: Estimate theo cảm giác, nên mới giữa tuần sprint đã trễ.
+
+Cách tốt:
+
+```
+PO mở PRD, đi qua từng Milestone cùng Tech Lead.
+PO: "Milestone Withdraw có 3 task: form rút tiền, xác nhận, lịch sử giao dịch."
+TL: "Thiếu task xử lý rút tiền bị treo ở bridge, cái đó mất 4h. Form rút tiền cũng phải tách đôi — 6h là quá 4h rồi."
+→ Board có đủ hạng mục, không task nào quá 4 tiếng.
+```
+
+Tại sao tốt: Dev chỉ ra phần PO không thấy. Task được tách nhỏ ngay khi estimate, không phải đợi tới lúc làm mới biết.
 
 ---
 
@@ -96,12 +115,14 @@ Vì vậy task mới lên board lúc nào cũng có số giờ, ước lượng 
 | Ai chịu trách nhiệm? | Đúng 1 người cho 1 Milestone tại 1 thời điểm |
 | Đặt tên thế nào? | Đối tượng cụ thể + việc cần làm: `Lighter Platform Integration` |
 | Tách task cần đủ gì? | UX/UI, QA, Code Refactor, xử lý lỗi, mỗi task ≤ 4 tiếng |
-| Estimate với ai? | PO ngồi cùng Dev |
+| Estimate với ai? | PO ngồi cùng Tech Lead / Dev có kinh nghiệm. Ghi giờ thật, buffer cộng ở bước báo giá |
+| Chưa biết cách làm thì sao? | Tạo task research ≤ 4 tiếng, nộp báo cáo: các cách giải quyết, cách chọn và lý do |
 
 ---
 
 ## Liên kết
 
+- [Quy trình Tạo Milestone](./milestone-create-process.md) — `DEFINE → BREAKDOWN → ESTIMATE`
 - [Mẫu Milestone & Task](./milestone-create-example.md)
 - [Khởi tạo Board](../po-board-create/board-create-process.md) — Board Rule, 8 cột
 - [Feature Request](../po-feature-request/feature-request-process.md) — Khi khách thêm Milestone mới

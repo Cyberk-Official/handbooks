@@ -45,6 +45,16 @@ PO cần frame đúng góc nhìn này khi viết tin nhắn — để client hi�
 3. **Buổi bàn giao sẽ diễn ra thế nào?** — client biết trước agenda để chuẩn bị
 4. **Sau bàn giao thì sao?** — nhấn mạnh 30 ngày maintenance miễn phí, team vẫn làm việc
 
+❌ Cách tồi:
+> *"Hi David, project is done. When can we schedule the handover meeting?"*
+
+Tại sao tồi: "Done" trong khi vẫn còn bugs = không trung thực. Client sẽ phát hiện bugs khi dùng thật, lúc đó niềm tin sụp đổ — "Sao nói done mà còn lỗi?". Không nhắc maintenance = client nghĩ handover là kết thúc, mọi yêu cầu sau đó sẽ bị phản ứng "Sao các bạn không support nữa?".
+
+❌ Cũng tồi:
+> *"Hi David, we're mostly done but there are still some bugs. We'll fix them after handover."*
+
+Tại sao tồi: Nói "mostly done" + "still some bugs" mà không có plan cụ thể tạo cảm giác chưa sẵn sàng. Client sẽ nghĩ "Vậy sao lại bàn giao?" — mất tin tưởng. Thiếu frame "chuyển giai đoạn" khiến bugs trở thành vấn đề thay vì phần bình thường của quy trình.
+
 ✅ Cách tốt:
 > *"Hi David, great news — we've completed the development phase! All main features are fully built and working, including the booking flow, admin dashboard, and payment integration.*
 >
@@ -58,16 +68,6 @@ PO cần frame đúng góc nhìn này khi viết tin nhắn — để client hi�
 
 Tại sao tốt: Client nhận được bức tranh trung thực — không chỉ "đã xong" mà cả "còn gì đang xử lý". Câu "handover doesn't mean we stop" loại bỏ nỗi lo lớn nhất của client. 30 ngày miễn phí được frame là "safety net" chứ không phải "deadline". Client vào buổi họp với tâm lý thoải mái vì đã hiểu trước mọi thứ.
 
-❌ Cách tồi:
-> *"Hi David, project is done. When can we schedule the handover meeting?"*
-
-Tại sao tồi: "Done" trong khi vẫn còn bugs = không trung thực. Client sẽ phát hiện bugs khi dùng thật, lúc đó niềm tin sụp đổ — "Sao nói done mà còn lỗi?". Không nhắc maintenance = client nghĩ handover là kết thúc, mọi yêu cầu sau đó sẽ bị phản ứng "Sao các bạn không support nữa?".
-
-❌ Cũng tồi:
-> *"Hi David, we're mostly done but there are still some bugs. We'll fix them after handover."*
-
-Tại sao tồi: Nói "mostly done" + "still some bugs" mà không có plan cụ thể tạo cảm giác chưa sẵn sàng. Client sẽ nghĩ "Vậy sao lại bàn giao?" — mất tin tưởng. Thiếu frame "chuyển giai đoạn" khiến bugs trở thành vấn đề thay vì phần bình thường của quy trình.
-
 > Mẫu tin nhắn hoàn chỉnh: xem [handover-example.md](./handover-example.md)
 
 ---
@@ -78,6 +78,14 @@ Khách hàng thường **không nhớ hết** những gì đã thống nhất t�
 
 Việc nhắc lại tạo nền tảng để demo. Client thấy bạn đã deliver đúng và đủ những gì đã hứa — đó là nền tảng của tin tưởng.
 
+❌ Cách tồi:
+> PO: *"Ok let's start the demo!"* → Nhảy thẳng vào show màn hình.
+> Client giữa buổi: *"Wait, what about the reporting feature?"*
+> PO: *"Uh... that wasn't in scope actually."*
+> Client: *"I thought we discussed it..."*
+
+Tại sao tồi: Không có overview = client xem demo với kỳ vọng hiện tại (đã drift nhiều so với ban đầu). Kết quả: tranh luận về scope ngay giữa buổi bàn giao — phá hỏng không khí.
+
 ✅ Cách tốt:
 > PO mở slide Planning từ buổi kickoff:
 > *"Before we jump into the demo, let's quickly revisit what we set out to build together. The original goal was to create a booking platform that helps your customers reserve slots online and reduces manual work for your ops team."*
@@ -86,14 +94,6 @@ Việc nhắc lại tạo nền tảng để demo. Client thấy bạn đã deli
 > *"Here's the feature list we committed to — User registration ✓, Booking flow ✓, Payment integration ✓, Admin dashboard ✓, Email notifications ✓. All 12 features delivered as agreed, with one change: we replaced SMS with push notification per your request in Sprint 3."*
 
 Tại sao tốt: Client được "reset" về cùng điểm xuất phát. Khi demo sau đó, họ đánh giá theo cam kết ban đầu — không phải kỳ vọng mới phát sinh giữa chừng.
-
-❌ Cách tồi:
-> PO: *"Ok let's start the demo!"* → Nhảy thẳng vào show màn hình.
-> Client giữa buổi: *"Wait, what about the reporting feature?"*
-> PO: *"Uh... that wasn't in scope actually."*
-> Client: *"I thought we discussed it..."*
-
-Tại sao tồi: Không có overview = client xem demo với kỳ vọng hiện tại (đã drift nhiều so với ban đầu). Kết quả: tranh luận về scope ngay giữa buổi bàn giao — phá hỏng không khí.
 
 > **Quy tắc:** Không bỏ qua phần này dù nghĩ là khách hàng đã biết. Việc nhắc lại tạo nền tảng để demo và tạo sự tin tưởng.
 
@@ -108,6 +108,13 @@ Ba nguyên tắc cốt lõi:
 2. **User flow, không phải screen tour** — đi theo hành trình người dùng thực tế, không chỉ click qua từng màn hình
 3. **Demo → hỏi → tiếp** — với mỗi tính năng: giới thiệu ngắn mục đích → demo → hỏi client có câu hỏi không → rồi mới chuyển tiếp
 
+❌ Cách tồi:
+> Dev mở staging, share screen:
+> *"Đây là trang login. Đây là dashboard. Ở đây có nút booking. Bấm vào thì nó sẽ mở form..."* → Không thực sự bấm, chỉ mô tả.
+> Hoặc bấm vào thì staging load chậm, data trống, UI bị lệch vì chưa deploy bản mới nhất.
+
+Tại sao tồi: Mô tả thay vì demo = đọc spec, không phải bàn giao sản phẩm. Staging khác production — nếu bug xảy ra trên staging, client mất tin tưởng dù production chạy tốt. Và không có data mẫu thì demo trông như prototype, không phải finished product.
+
 ✅ Cách tốt:
 > Dev mở production trên browser:
 > *"This feature lets customers book a slot in under 30 seconds. Let me walk through the actual flow."*
@@ -116,13 +123,6 @@ Ba nguyên tắc cốt lõi:
 > *"Any questions about this flow before we move on?"*
 
 Tại sao tốt: Client thấy sản phẩm sống — từ góc user lẫn admin. Demo theo flow thật (không phải click qua màn hình), và pause sau mỗi feature để client hỏi ngay thay vì dồn hết cuối buổi.
-
-❌ Cách tồi:
-> Dev mở staging, share screen:
-> *"Đây là trang login. Đây là dashboard. Ở đây có nút booking. Bấm vào thì nó sẽ mở form..."* → Không thực sự bấm, chỉ mô tả.
-> Hoặc bấm vào thì staging load chậm, data trống, UI bị lệch vì chưa deploy bản mới nhất.
-
-Tại sao tồi: Mô tả thay vì demo = đọc spec, không phải bàn giao sản phẩm. Staging khác production — nếu bug xảy ra trên staging, client mất tin tưởng dù production chạy tốt. Và không có data mẫu thì demo trông như prototype, không phải finished product.
 
 > **Quy tắc cứng:** Không để bug xảy ra lúc demo trực tiếp. Nếu có rủi ro, chuẩn bị video backup. Đã chạy thử toàn bộ flow demo ít nhất 1 lần trước buổi họp.
 
@@ -141,6 +141,13 @@ Nội dung tài liệu Handover cần bao gồm:
 - Quy trình xử lý khi có sự cố
 - Thông tin liên hệ hỗ trợ
 
+❌ Cách tồi:
+> PO gửi Telegram sau buổi họp:
+> *"Hi David, đính kèm tài liệu bàn giao. Anh xem nhé, có gì liên hệ team."*
+> → Đính kèm file PDF 15 trang.
+
+Tại sao tồi: Client sẽ không đọc 15 trang (hoặc đọc mà không hiểu hết). 3 tuần sau hệ thống có lỗi, client mở file ra mà không biết phần nào liên quan. Gọi Cyberk thì đã hết maintenance — cả hai bên đều không vui.
+
 ✅ Cách tốt:
 > PO mở tài liệu handover, share screen:
 > *"Let's go through the handover document together so your team can operate the system independently."*
@@ -153,13 +160,6 @@ Nội dung tài liệu Handover cần bao gồm:
 
 Tại sao tốt: Client không chỉ "nhận file" mà thực sự hiểu. Cho client thử login ngay = xác nhận credentials hoạt động. Câu hỏi được giải đáp tại chỗ — không để tích lũy thành frustration 2 tuần sau.
 
-❌ Cách tồi:
-> PO gửi Telegram sau buổi họp:
-> *"Hi David, đính kèm tài liệu bàn giao. Anh xem nhé, có gì liên hệ team."*
-> → Đính kèm file PDF 15 trang.
-
-Tại sao tồi: Client sẽ không đọc 15 trang (hoặc đọc mà không hiểu hết). 3 tuần sau hệ thống có lỗi, client mở file ra mà không biết phần nào liên quan. Gọi Cyberk thì đã hết maintenance — cả hai bên đều không vui.
-
 ---
 
 ## Maintenance policy — nói sớm, nói khéo, bảo vệ cả hai bên
@@ -167,6 +167,16 @@ Tại sao tồi: Client sẽ không đọc 15 trang (hoặc đọc mà không hi
 Đây là phần nhiều PO ngại nhất — phải nói với client rằng "từ giờ trở đi, làm thêm phải trả tiền". Nhưng suy nghĩ như vậy là sai góc nhìn.
 
 Mục đích thật sự: **thiết lập ranh giới rõ ràng** giữa giai đoạn development và maintenance — ngay tại buổi họp, khi khách hàng đang ở trạng thái tốt, thoải mái và đồng thuận. Việc clarify policy sớm tránh được hiểu nhầm và tranh chấp sau này. Đây là **bảo vệ cho cả hai bên**, không phải "từ chối client".
+
+❌ Cách tồi:
+> PO đọc slide:
+> *"According to our contract, the free maintenance period covers bug fixes only, not new features. The maintenance window ends on September 15th. After that date, all requests will be scoped and billed separately."*
+>
+> Client im lặng. Không khí buổi họp lạnh đi.
+
+Tại sao tồi: Giọng pháp lý biến buổi bàn giao thành buổi đọc hợp đồng. Client cảm thấy bị đặt vào thế đối lập — "billed separately" nghe như đe dọa thay vì hỗ trợ. Không khí tích cực từ demo bị phá hỏng trong 30 giây.
+
+> Chi tiết SLA, thời hạn, phạm vi: xem [maintenance-policy-reference.md](./maintenance-policy-reference.md)
 
 ✅ Cách tốt:
 > PO chuyển giọng nhẹ nhàng, nói như đang giải thích cho đối tác:
@@ -179,16 +189,6 @@ Mục đích thật sự: **thiết lập ranh giới rõ ràng** giữa giai đ
 
 Tại sao tốt: Giọng giải thích, không giọng thông báo. "Safety net" thay vì "thời hạn". Mở cửa cho tương lai thay vì đóng lại. Và khi client hỏi — xử lý tại đây, không để thành email tranh luận sau.
 
-❌ Cách tồi:
-> PO đọc slide:
-> *"According to our contract, the free maintenance period covers bug fixes only, not new features. The maintenance window ends on September 15th. After that date, all requests will be scoped and billed separately."*
->
-> Client im lặng. Không khí buổi họp lạnh đi.
-
-Tại sao tồi: Giọng pháp lý biến buổi bàn giao thành buổi đọc hợp đồng. Client cảm thấy bị đặt vào thế đối lập — "billed separately" nghe như đe dọa thay vì hỗ trợ. Không khí tích cực từ demo bị phá hỏng trong 30 giây.
-
-> Chi tiết SLA, thời hạn, phạm vi: xem [maintenance-policy-reference.md](./maintenance-policy-reference.md)
-
 ---
 
 ## Open Talk — kết thúc đẹp mở ra cơ hội tiếp theo
@@ -200,6 +200,14 @@ Gợi ý câu hỏi để mở đầu:
 - *"Do you have any feedback from the QA session on your side?"*
 - *"What are you thinking about next for the product?"*
 
+❌ Cách tồi:
+> PO: *"Ok, if there's nothing else, let's end the meeting. Thank you everyone."*
+> → Tắt họp. Không hỏi, không đợi.
+>
+> Hoặc ngược lại — client nói muốn thêm feature, PO nói luôn: *"Sure, we can do that!"* mà chưa estimate.
+
+Tại sao tồi: Kết thúc lạnh lẽo = client không có cơ hội nói, bạn mất cơ hội bán thêm. Còn commit tại chỗ = tạo kỳ vọng mà chưa biết effort — dễ thành nợ miệng.
+
 ✅ Cách tốt:
 > PO: *"Before we wrap up — is there anything you'd like us to revisit, or any feedback from your side?"*
 >
@@ -210,14 +218,6 @@ Gợi ý câu hỏi để mở đầu:
 > → Ghi lại action item: "Propose SMS reminder feature — send estimate by next Friday."
 
 Tại sao tốt: Client cảm thấy ý kiến được đón nhận, không bị từ chối. PO không commit scope tại chỗ nhưng mở ra cơ hội rõ ràng. Và action item được ghi lại — không phải lời hứa suông.
-
-❌ Cách tồi:
-> PO: *"Ok, if there's nothing else, let's end the meeting. Thank you everyone."*
-> → Tắt họp. Không hỏi, không đợi.
->
-> Hoặc ngược lại — client nói muốn thêm feature, PO nói luôn: *"Sure, we can do that!"* mà chưa estimate.
-
-Tại sao tồi: Kết thúc lạnh lẽo = client không có cơ hội nói, bạn mất cơ hội bán thêm. Còn commit tại chỗ = tạo kỳ vọng mà chưa biết effort — dễ thành nợ miệng.
 
 ---
 

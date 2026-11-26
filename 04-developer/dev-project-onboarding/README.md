@@ -29,5 +29,5 @@ status: Đang dùng
 - [Dev Daily — Quản lý công việc cá nhân hàng ngày](../dev-daily/dev-daily-process.md)
 - [Project Leave — Quy trình bàn giao khi rời dự án](../../05-product-owner/po-project-leave/po-project-leave-process.md)
 - [Team Communicate — Cẩm nang giao tiếp](../../03-team/team-communicate/communicate-handbook.md)
-- [Board Handbook — Cẩm nang quản lý board dự án](../../05-product-owner/board-handbook/board-handbook.md)
+- [Cẩm nang Board — Cẩm nang quản lý board dự án](../../05-product-owner/po-board-create/board-create-handbook.md)
 - [Dev Daily Report — Quy trình báo cáo hàng ngày](../dev-daily-report/daily-report-process.md)

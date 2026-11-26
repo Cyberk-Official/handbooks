@@ -31,7 +31,7 @@ Bảng tra nhanh: ai là owner (người duyệt PR) cho mục nào trong handbo
 | **Dev Write BRD** | `04-developer/dev-write-brd/` | Anderson | Tech Lead |
 | **Bug Handling** | `06-qa/qa-bugs-handling/` | Kate | Anderson |
 | **Bug Logging** | `06-qa/qa-bugs-logs/` | Kate | Anderson |
-| **Board Management** | `05-product-owner/board-handbook/` | Anderson | Tech Lead |
+| **Board Management** | `05-product-owner/po-board-create/`, `po-milestone-create/`, `po-internal-daily/` | Anderson | Tech Lead |
 | **PO Handover** | `05-product-owner/po-handover/` | Anderson | Tech Lead |
 | **Dev Daily** (quản lý công việc cá nhân) | `04-developer/dev-daily/` | Anderson | Tech Lead |
 | **Team Communicate** (Horenso) | `03-team/team-communicate/` | Anderson | — |
