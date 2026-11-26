@@ -49,7 +49,7 @@ Cách làm: sửa **từng bước một**. Xong mỗi bước thì dừng lại
 
 | Bước | File | Việc cần làm | Mức độ |
 |:---:|------|-------------|:---:|
-| **1** ✅ *xong 25/11* | `po-board-create/` (README, handbook, process) | Viết lại Chương 3: tạo Sheet từ template, đặt tên, để vào folder Drive, phân quyền, điền scope từ proposal, chia sprint | Viết lại |
+| **1** ✍️ *process đã sửa lần 3 (26/11), chờ duyệt; handbook & README đang để bản gốc* | `po-board-create/` (README, handbook, process) | Viết lại Chương 3: tạo Sheet từ template, đặt tên, để vào folder Drive, phân quyền, điền scope từ proposal, chia sprint | Viết lại |
 | **2** ✍️ *đã viết, chờ duyệt 25/11* | `po-board-create/board-create-ai-instruction/` | Viết lại AI instruction: từ proposal/PRD, AI soạn các dòng task (có Estimate) để dán vào Sheet, thay cho GH CLI | Viết lại |
 | **3** | `board-handbook/` (README, handbook) | Giữ phần tư duy (Scope/Deadline/Resource/Responsibility, Epic, Milestone, Task, Bug). Thay phần GitHub bằng: Board Rule, cách cập nhật hằng ngày, Daily Report, cách chốt sprint và đẩy việc dở sang sprint sau | Sửa lớn |
 | **4** | `05-product-owner/README.md` | Sửa sơ đồ mermaid, tên Chương 3 và 4, link AI Instruction | Sửa nhỏ |
@@ -67,3 +67,38 @@ Mỗi file sửa xong thì cập nhật `updated-date` trong front matter.
 2. Bug để ở đâu: một tab riêng trong Sheet, hay vẫn ở GitHub Issues?
 5. Có đổi tên folder `po-board-create/` và `board-handbook/` không? (Đổi tên sẽ phải sửa link ở nhiều nơi)
 6. Có giữ tab Members (dashboard) và tab Finance trong template chuẩn không?
+
+---
+
+## Ghi chú khi sửa (26/11)
+
+- Luồng tạo board chốt **3 bước: `ESTIMATE → ASSIGN → PLAN`**. Copy TEMPLATE là việc chuẩn bị trước, không phải một bước.
+- Phần export PDF + Daily Report gửi khách hằng ngày **chuyển sang Chương 4** (`board-handbook/`), không nằm trong quy trình tạo board.
+- Bảng **8 cột** và **các tab chuẩn** đã gỡ khỏi process, cần đưa vào `board-create-handbook.md` khi sửa file đó.
+- Lối viết theo mẫu `po-feature-request/`: "Tại sao" nêu bẫy, mỗi bước là đoạn đầy đủ có `•`, vai trò gắn bước *(in nghiêng)*, lý do có câu nói thật, ngoại lệ là tình huống thật.
+- **Không viết lại cả file.** Khôi phục bản gốc, giữ hồn, sửa từng đoạn, mỗi file xong thì thảo luận.
+- **Process đúng khung `workflow/process-template.md`:** không thêm mục ngoài template, bảng Các bước có cột Timeline. Mẹo, hướng dẫn mềm → handbook.
+- **Quy tắc cứng ít, đơn giản, viết theo hướng "việc cần làm"** (VD: "Tên tab đặt theo sprint: `sprint_1`, `sprint_2`..."), không viết "không được làm X" — vì việc không được làm thì vô số. Cách làm sai → đưa vào ví dụ ❌ trong handbook/example.
+
+## Nội dung chuyển sang Chương 4 (`board-handbook/`) — gỡ khỏi `board-create-handbook.md` ngày 26/11
+
+PO mở tab sprint ra mỗi sáng — 10 giây biết:
+- Còn bao nhiêu task `Todo`? (chưa ai bắt đầu)
+- Task `Doing` nào kéo dài bất thường? (đang nghẽn)
+- Số task `Done` có đang tăng? (team đang tiến triển)
+
+Nếu thứ 4 mà chưa có task nào `Done` — sprint đang có vấn đề. Không cần ai nói, board tự nói.
+
+✅ Tab sprint tốt: Thứ 2 — 8 task Todo, 0 Doing, 0 Done. Thứ 5 — 2 Todo, 3 Doing, 3 Done. → Đang ổn.
+
+❌ Tab sprint tệ: Thứ 5 — 1 Todo, 7 Doing, 0 Done. → 7 task đang làm dở, không cái nào xong. Sprint sẽ vỡ.
+
+
+## Nâng cao — Khi nào mới cần?
+
+Không phải dự án nào cũng cần. Thêm khi **có nhu cầu thật**, không thêm cho đủ.
+
+### Chuẩn bị sprint tiếp theo
+
+Thứ 5 – thứ 6, PO mở sẵn tab sprint tuần tới: kiểm tra đã có đủ task chưa, estimate chưa, assign chưa. Không cần ngay khi mới tạo board.
+
