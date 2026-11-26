@@ -161,3 +161,9 @@ PO README, po-board-create/README, po-feature-request (README + example), po-pro
 - ✅ Đã tạo khung trống `po-internal-daily/` (README, process, handbook, example) — chờ duyệt cấu trúc.
 - ⏳ Chưa xoá `board-handbook/`, chưa đổi link.
 - Quyết định mặc định: bỏ yêu cầu Feature ID (Sheet chưa có cột); Milestone theo tên tính năng (theo Sheet).
+
+### Tiến độ (26/11, chiều)
+- ✅ `po-internal-daily/` đủ 4 file (process, handbook, example, README). Handbook sắp theo luồng DEMO → CHANGE → REPORT.
+- ✅ Tạo `po-milestone-create/`: handbook + example đã có nội dung chuyển từ board-create và internal-daily; process còn khung trống, chờ thảo luận.
+- ⏳ Chưa chốt: giờ họp Internal Daily / giờ gửi PDF; có thêm Board Rule "task xử lý lỗi" không; số ngày task treo `Doing` (2 hay 3); bug ở GitHub Issues hay Sheet; số phận `04-developer/dev-daily-report/`.
+- ⏳ Chưa xoá `board-handbook/`, chưa sửa ~23 link.
