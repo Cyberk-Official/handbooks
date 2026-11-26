@@ -2,7 +2,7 @@
 type: delivery
 tags: [templates, communication, client-management]
 created-date: 2026-11-19
-updated-date: 2026-11-19
+updated-date: 2026-11-26
 author: anderson
 status: Nháp
 ---
@@ -404,7 +404,7 @@ Since both are essential baseline flows and take less than 8 hours in total, we'
 | **2. Estimate** | Ném câu chat cụt ngủn cho TL đoán mò; quá 24h thì im thin thít | Giao **BRD** để TL tính đủ 4 hạng mục (+ buffer 30%–50%) trong **24h**; quá 24h báo Anderson & update khách chủ động |
 | **3. Approval** | Hỏi AM trống không *"thu tiền hay free anh?"* | Trình đủ **BRD + 4 mục Estimate + mức phí `$25/h` + bối cảnh khách** trong 1 tin nhắn |
 | **4. Proposal** | Báo cục tiền trơ trọi, lộ chữ *"buffer"*, hoặc khách gật đầu trên chat là đi code luôn không lưu Email | Trình bày **BRD + 4 hạng mục + tổng giờ** → Khách đồng ý xong **gửi ngay Email chốt confirm** (CC AM) chờ khách reply *"Confirmed"* |
-| **Ngoại lệ `< 8h`** | Máy móc bắt làm BRD & thu phí lẻ tẻ cho *Forgot Password, 2FA, Terms...* | Bỏ qua quy trình 4 bước, đưa lên GitHub board làm luôn cho khách |
+| **Ngoại lệ `< 8h`** | Máy móc bắt làm BRD & thu phí lẻ tẻ cho *Forgot Password, 2FA, Terms...* | Bỏ qua quy trình 4 bước, đưa lên board làm luôn cho khách |
 
 ---
 

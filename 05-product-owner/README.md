@@ -2,7 +2,7 @@
 type: delivery
 tags: [handbook, process, project-management, client-management]
 created-date: 2026-09-06
-updated-date: 2026-11-19
+updated-date: 2026-11-26
 author: anderson
 status: Đang dùng
 ---
@@ -20,7 +20,7 @@ Cuốn cẩm nang này được sắp xếp theo **đúng trình tự thời gia
 ```mermaid
 flowchart LR
     P1["1. Internal Planning\n(Họp nội bộ)"] --> P2["2. Kick-off\n(Họp với khách)"]
-    P2 --> P3["3. Board Create\n(Dựng GitHub Board)"]
+    P2 --> P3["3. Board Create\n(Dựng Board trên Sheet)"]
     P3 --> P4["4. Daily Board\n& 5. Feature Request\n(Suốt dự án)"]
     P4 --> P6["6. Project Leave\n(Khi đổi nhân sự)"]
     P4 --> P7["7. Handover\n(Bàn giao & Bảo trì)"]
@@ -56,13 +56,13 @@ flowchart LR
 | **2.2** | [Quy trình Kick-off Meeting](./po-kick-off/kick-off-process.md) | Process | Luồng 4 bước từ tin nhắn sáng ngày đầu đến email tổng kết sau call |
 | **2.3** | [Mẫu Agenda, Tin nhắn & Email Kick-off](./po-kick-off/kick-off-example.md) | Example | Trọn bộ tin nhắn chào hỏi, summary Planning Report, agenda & email recap |
 
-#### Chương 3: Khởi Tạo GitHub Projects Board ([`po-board-create/`](./po-board-create/))
+#### Chương 3: Khởi Tạo Board Dự Án ([`po-board-create/`](./po-board-create/))
 > *Chưa có Board chuẩn thì chưa bắt đầu dự án — nơi mọi tiến độ tự hiển thị trong 10 giây không cần hỏi.*
 
 | Thứ tự | Bài đọc | Loại | Nội dung cốt lõi |
 |:------:|---------|------|------------------|
-| **3.1** | [Khởi tạo Board — Cẩm nang cho PO](./po-board-create/board-create-handbook.md) | Handbook | Triết lý Kanban tại Cyberk, các trường bắt buộc và 3 View chuẩn |
-| **3.2** | [Quy trình Khởi tạo Board](./po-board-create/board-create-process.md) | Process | Chuẩn bị input, khởi tạo board bằng công cụ tự động và nghiệm thu View |
+| **3.1** | [Khởi tạo Board — Cẩm nang cho PO](./po-board-create/board-create-handbook.md) | Handbook | 8 cột bắt buộc, các tab chuẩn, cách estimate cùng Dev |
+| **3.2** | [Quy trình Khởi tạo Board](./po-board-create/board-create-process.md) | Process | Luồng 4 bước `TEMPLATE → ESTIMATE → ASSIGN → PLAN` & Board Rule |
 
 ---
 
@@ -73,7 +73,7 @@ flowchart LR
 
 | Thứ tự | Bài đọc | Loại | Nội dung cốt lõi |
 |:------:|---------|------|------------------|
-| **4.1** | [Cẩm nang Quản lý Board GitHub Projects](./board-handbook/board-handbook.md) | Handbook | Cách đọc board mỗi ngày, dấu hiệu board tốt vs board chết, tiêu chuẩn tạo task |
+| **4.1** | [Cẩm nang Quản lý Board](./board-handbook/board-handbook.md) | Handbook | Cách đọc board mỗi ngày, dấu hiệu board tốt vs board chết, tiêu chuẩn tạo task |
 
 #### Chương 5: Tiếp Nhận & Xử Lý Yêu Cầu Tính Năng Mới ([`po-feature-request/`](./po-feature-request/))
 > *Biến nhu cầu mở rộng sản phẩm của khách thành cơ hội tăng doanh thu mà vẫn bảo vệ tuyệt đối ngày Launch.*
@@ -115,5 +115,5 @@ Các tài liệu dưới đây là file gửi riêng cho khách hàng, biểu m�
 - **Tài liệu gửi khách trước Kick-off:** [cyberk-zero-to-product-en.pdf](./before-kick-off-docs/cyberk-zero-to-product-en.pdf) *(xem hướng dẫn tại [before-kick-off-docs/README.md](./before-kick-off-docs/README.md))*
 - **Biểu mẫu BRD & Báo giá mở rộng (Feature Request):** [feature-request-brd-template.md](./po-feature-request/template/feature-request-brd-template.md)
 - **Biểu mẫu & AI Instruction cho Internal Planning:** [planning-template.md](./po-planning/planning-ai-instruction/planning-template.md) · [planning-instruction.md](./po-planning/planning-ai-instruction/planning-instruction.md)
-- **AI Instruction tự động dựng GitHub Board:** [board-create-instruction.md](./po-board-create/board-create-ai-instruction/board-create-instruction.md)
+- **AI Instruction soạn nháp task cho Board:** [board-create-instruction.md](./po-board-create/board-create-ai-instruction/board-create-instruction.md)
 - **Cẩm nang bàn giao dành riêng cho Member rời dự án:** [po-project-leave-member-handbook.md](./po-project-leave/po-project-leave-member-handbook.md)

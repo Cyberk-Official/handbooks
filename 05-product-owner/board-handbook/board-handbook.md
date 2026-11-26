@@ -1,6 +1,6 @@
 ---
 type: delivery
-tags: [board, github-projects, project-management, handbook]
+tags: [board, google-sheet, project-management, handbook]
 created: 2026-08-14
 updated: 2026-09-01
 author: anderson

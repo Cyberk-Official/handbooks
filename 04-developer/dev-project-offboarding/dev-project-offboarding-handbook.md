@@ -2,7 +2,7 @@
 type: team
 tags: [offboarding, project, developer, handbook]
 created-date: 2026-09-17
-updated-date: 2026-09-17
+updated-date: 2026-11-26
 status: Nháp
 ---
 
@@ -141,7 +141,7 @@ Tại sao tồi: Thu hồi quyền không xóa thông tin bạn đã tiếp cậ
 | Nghĩa vụ bảo mật sau khi rời đi đã được xác nhận chưa? | NDA đã ký đầy đủ, HR xác nhận lưu và mã tham chiếu trong hồ sơ |
 | Ai chốt hoàn tất? | Sign-off của PO trong hồ sơ bàn giao |
 
-**Bắt đầu ngay:** mở Personal Board, rà task/PR còn mở và gửi PO link phạm vi cần bàn giao để chốt kế hoạch.
+**Bắt đầu ngay:** mở Board dự án, lọc task theo tên mình, rà task/PR còn mở và gửi PO link phạm vi cần bàn giao để chốt kế hoạch.
 
 ---
 

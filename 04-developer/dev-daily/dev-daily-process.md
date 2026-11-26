@@ -1,6 +1,6 @@
 ---
 type: team
-tags: [process, dev-daily, personal-management, board, github-projects]
+tags: [process, dev-daily, personal-management, board, google-sheet]
 created: 2026-09-02
 updated: 2026-09-01
 author: anderson

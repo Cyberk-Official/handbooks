@@ -69,7 +69,7 @@ handbook/
 │   ├── po-kick-off/             #   Kick-off Meeting (với khách hàng)
 │   ├── po-board-create/         #   Khởi tạo Board dự án
 │   ├── po-handover/             #   Bàn giao sản phẩm
-│   └── board-handbook/          #   Quản lý board GitHub Projects
+│   └── board-handbook/          #   Quản lý board dự án hằng ngày
 │
 ├── 🔍 06-qa/                    # Dành cho QA
 │   ├── qa-bugs-handling/        #   Xử lý & phân loại bugs

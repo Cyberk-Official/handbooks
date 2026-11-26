@@ -2,7 +2,7 @@
 type: handbook
 tags: [playbook, handbook, process]
 created-date: 2026-08-25
-updated-date: 2026-09-02
+updated-date: 2026-11-26
 author: anderson
 status: Nháp
 ---
@@ -84,11 +84,11 @@ Khi viết handbook, **luôn dùng đúng tên công cụ** mà CyberK thực t�
 | Mục đích | Công cụ CyberK dùng | KHÔNG dùng |
 |----------|---------------------|------------|
 | Giao tiếp nội bộ & với client | **Telegram** | ~~Slack~~, ~~Zalo~~, ~~Teams~~ |
-| Quản lý task & board dự án | **GitHub Projects** | ~~Jira~~, ~~Trello~~, ~~Notion board~~ |
+| Quản lý task & board dự án | **Google Sheet** (copy từ `TEMPLATE` trong folder Project Management) | ~~Jira~~, ~~Trello~~, ~~Notion board~~, ~~GitHub Projects~~ |
 | Lưu trữ tài liệu / handbook | **Git + Markdown** | ~~Confluence~~, ~~Google Docs~~ (trừ khi share cho client) |
 | Email | **Email** (khi cần formal với client) | |
 
-> **Quy tắc:** Khi viết mẫu tin nhắn, mẫu quy trình, hoặc ví dụ — phải dùng đúng tên công cụ trên. VD: viết "gửi qua Telegram" chứ không viết "gửi qua Slack". Viết "tạo issue trên GitHub Projects" chứ không viết "tạo ticket trên Jira".
+> **Quy tắc:** Khi viết mẫu tin nhắn, mẫu quy trình, hoặc ví dụ — phải dùng đúng tên công cụ trên. VD: viết "gửi qua Telegram" chứ không viết "gửi qua Slack". Viết "đưa task lên board" chứ không viết "tạo ticket trên Jira".
 
 ### Hệ thống 7 loại tài liệu
 
@@ -360,7 +360,7 @@ Các quy tắc cần tuân thủ:
 - [ ] Đủ chi tiết để dùng, nhưng không rườm rà
 - [ ] Đã đặt link tới các trang liên quan
 - [ ] Mẫu tin nhắn/template viết đúng tone kênh giao tiếp (chat ≠ email)
-- [ ] Công cụ đúng tên: **Telegram** (không Slack), **GitHub Projects** (không Jira)
+- [ ] Công cụ đúng tên: **Telegram** (không Slack), **Google Sheet** cho board dự án (không Jira)
 - [ ] Mỗi hướng dẫn quan trọng có cặp **tốt + tồi** kèm giải thích
 - [ ] Tên file đúng quy ước `[chủ-đề]-[loại].md`
 - [ ] **Giữ hồn** — migrate tài liệu cũ không mất triết lý, câu chuyện, lý do

@@ -2,7 +2,7 @@
 type: team
 tags: [handbook, communication, client-management, setup]
 created-date: 2026-10-22
-updated-date: 2026-10-22
+updated-date: 2026-11-26
 author: neo
 status: Nháp
 ---
@@ -21,7 +21,7 @@ Trang này dành cho Account khi tạo group lúc khách đồng ý, và cho PO 
 
 ## 1. Tên dự án khác tên công ty khách thì đặt theo tên nào?
 
-Ví dụ khách là công ty Acme, còn dự án tên Leaseform. Đặt theo tên dự án, viết giống tên board trên GitHub Projects. Gõ "Leaseform" trong Telegram sẽ ra group, gõ trên GitHub sẽ ra board `leaseform-management`.
+Ví dụ khách là công ty Acme, còn dự án tên Leaseform. Đặt theo tên dự án, viết giống tên board dự án. Gõ "Leaseform" trong Telegram sẽ ra group, gõ trên Google Drive sẽ ra board `Leaseform-Management`.
 
 **Cách tốt:**
 

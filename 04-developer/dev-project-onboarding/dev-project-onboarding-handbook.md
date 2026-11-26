@@ -2,7 +2,7 @@
 type: team
 tags: [onboarding, project, team]
 created: 2026-08-25
-updated: 2026-09-07
+updated: 2026-11-26
 author: Brian
 status: Đang dùng
 ---
@@ -85,7 +85,7 @@ Product Owner có trách nhiệm trực tiếp hướng dẫn thành viên mới
 
 **✅ Cách tốt:**  
 Thiết lập khuôn khổ rõ ràng và chủ động chuẩn bị tài nguyên từ trước:
-1. **Chuẩn bị sẵn quyền truy cập trước Ngày 1:** Phân quyền GitHub repo, thêm vào nhóm Telegram, cấp quyền kho secrets development và chuẩn bị sẵn một task nhỏ trên GitHub Projects.
+1. **Chuẩn bị sẵn quyền truy cập trước Ngày 1:** Phân quyền GitHub repo, thêm vào nhóm Telegram, cấp quyền kho secrets development và chuẩn bị sẵn một task nhỏ trên Board dự án.
 2. **Kiểm tra hướng dẫn cấu hình:** Đảm bảo `.env.example` đầy đủ, `.env` nằm trong `.gitignore` và README chỉ rõ từng bước setup local.
 3. **Tổ chức buổi định hướng ngắn gọn (30 phút):** Giới thiệu bức tranh lớn của sản phẩm, giải thích kiến trúc và chỉ dẫn các tài liệu quan trọng.
 4. **Thiết lập 2 mốc trao đổi cố định trong ngày (15 phút mỗi mốc):**
@@ -129,7 +129,7 @@ Task đầu tiên trong Ngày thứ 2 là cơ hội để thành viên mới là
 
 **✅ Cách tốt:**  
 Tuân thủ chuẩn mực kỹ thuật và quy trình của team:
-1. **Tiếp nhận task trên GitHub Projects:** Chuyển trạng thái task sang `In Progress`.
+1. **Tiếp nhận task trên Board dự án:** Chuyển trạng thái task sang `Doing`.
 2. **Đặt tên nhánh đúng quy ước:** Ví dụ: `fix/CYB-101-update-auth-flow` hoặc `feature/CYB-105-user-list-api`.
 3. **Dùng AI hỗ trợ:** Nhờ AI kiểm tra các trường hợp lỗi có thể xảy ra (ngoại lệ), viết test tự động (unit test) và gợi ý viết code gọn hơn.
 4. **Tự kiểm tra lại code trước khi commit:** Xem lại những chỗ mình vừa thay đổi, xóa bỏ code thừa, câu lệnh in log thử nghiệm và các biến không dùng.

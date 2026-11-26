@@ -13,6 +13,26 @@ status: Nháp
 **Cập nhật lần cuối:** 2026-11-26
 **Trạng thái:** Nháp
 
+## Quản lý dự án là gì?
+
+Tại Cyberk quản lý dự án bao gồm 4 thành phần:
+
+- **Scope:** Đề bài, tổng khối lượng công việc.
+- **Deadline:** Deadline cho mỗi phần công việc đó.
+- **Resource:** Nguồn lực, effort, số lượng nhân sự dành cho dự án đó.
+- **Responsibility:** Trách nhiệm công việc, tinh thần hoàn thành công việc của từng cá nhân.
+
+## Quản lý dự án tốt là:
+
+- Scope rõ ràng, được cập nhật liên tục, và không bị out-dated
+- Deadline là cố định, và hiếm khi bị trễ. Luôn bàn giao đúng hạn
+- Resource hợp lý. Anh em hiếm khi phải overtime
+- Team đoàn kết. Anh em luôn sẵn sàng hỗ trợ nhau để hoàn thành dự án
+
+Board là nơi 4 thành phần này hiện ra trên cùng một trang: Scope là các Milestone và task, Deadline là Expected done date, Resource là Estimate, Responsibility là Assignee.
+
+---
+
 ## Board là gì?
 
 Tại Cyberk, board là một **Google Sheet** copy từ [`TEMPLATE`](https://docs.google.com/spreadsheets/d/1PA2c5UgSfVdYbqnafB0_hLelpRm8gluAt0MIA2W8vlg), nằm trong folder [Project Management](https://drive.google.com/drive/folders/1Yo-AivRaa4vDYkOE9-UEP5W3nNjzlj5S) — mỗi dự án một board, mỗi bộ phận một board.
@@ -38,37 +58,36 @@ Board giải quyết 2 vấn đề cốt lõi:
 
 ---
 
-## 8 cột bắt buộc — Tại sao mỗi cột đều cần?
+## 8 cột bắt buộc
 
 Bảng task trên mỗi tab sprint có **8 cột**: `Milestones · Tasks · Assignee · Status · Progress · Estimate (h) · Expected done date · Notes`. Mỗi cột giải quyết một câu hỏi cụ thể. Thiếu 1 cột = board không trả lời được 1 câu hỏi. Thêm cột không cần = team phải điền thêm 1 thứ mà không ai dùng.
 
-### Milestones — Task không có Milestone = task trôi nổi
+### Milestones
 
-Milestone là mốc bàn giao hoặc tên tính năng trong proposal: `Lighter - Trading`, `Monochrome Trading Competition`, `Trading Audit`.
+Milestone là mốc bàn giao hoặc một đợt việc trong proposal: `Lighter Platform Integration`, `Monochrome Trading Competition Launch`, `Smart Contract Audit Report Cover`.
 
-Tại sao bắt buộc? Vì tab sprint chỉ cho bạn thấy tuần này làm gì. Nhưng nếu task không gắn Milestone, bạn không biết task đó phục vụ tính năng nào. 30 task trên board — nhìn vào không biết "Lighter Trading đã xong bao nhiêu phần trăm, kịp release ngày 20 không?"
+Tại sao bắt buộc? Vì tab sprint chỉ cho bạn thấy tuần này làm gì. Nhưng nếu task không gắn Milestone, bạn không biết task đó phục vụ tính năng nào. 30 task trên board — nhìn vào không biết "Lighter Platform Integration đã xong bao nhiêu phần trăm, kịp release ngày 20 không?"
 
 Task không có Milestone giống hàng trong kho không gắn nhãn — có đó, nhưng không biết thuộc đơn hàng nào.
 
-Tên Milestone cũng phải để khách đọc là hiểu — trong bản PDF, khách đọc tên Milestone trước khi đọc từng task.
+Cách đặt tên, độ lớn của một Milestone và cách tách Milestone thành task: xem [Tạo Milestone](../po-milestone-create/milestone-create-handbook.md).
 
-✅ Tốt: `Lighter - Trading`, `Custom Referral Link`
-
-❌ Tồi: `M3`, `BE phase 2`
-
-### Tasks — Viết cho khách đọc, không phải cho dev đọc
+### Tasks
 
 Mỗi ngày board được export PDF gửi khách. Khách đọc cột Tasks để biết sản phẩm của họ đang đi tới đâu. Task viết bằng ngôn ngữ của dev thì khách không hiểu — rồi lại nhắn hỏi PO.
 
-✅ Tốt: `Show the amount actually sent after step rounding, with a round-up to the next step`
+Ví dụ, cùng một việc:
 
-❌ Tồi: `fix rounding util + refactor hook`
+```
+Khách đọc là hiểu:   Show the amount actually sent after step rounding, with a round-up to the next step
+Chỉ dev hiểu:        fix rounding util + refactor hook
+```
 
-### Assignee — Mỗi task đúng 1 người
+### Assignee
 
 2 người assign = không ai chịu trách nhiệm. "Tôi tưởng anh làm" — câu nói kinh điển khi task có 2 assignees.
 
-### Status — Tại sao chỉ 4?
+### Status
 
 `Todo → Doing → Done`, cộng thêm `Pending`.
 
@@ -83,15 +102,13 @@ Không. Lý do:
 
 4 trạng thái đủ rõ để **ai nhìn cũng hiểu giống nhau.** Thêm trạng thái thứ 5 trở đi = thêm tranh cãi "task này nên để trạng thái nào."
 
-✅ Tốt: Task `Pending`, Notes ghi `Waiting for client API key — asked Jon on Nov 24`.
+Một task `Pending` có Notes ghi `Waiting for client API key — asked Jon on Nov 24` thì ai đọc cũng biết đang chờ gì và đã hỏi ai. Một task `Pending` 4 ngày với Notes trống thì PO phải đi hỏi từng người.
 
-❌ Tồi: Task `Pending` 4 ngày, Notes trống. PO hỏi: "Đang chờ gì?" Không ai biết.
-
-### Progress — Xong bao nhiêu phần trăm?
+### Progress
 
 `0%` → `100%`. Status cho biết task đang ở đâu, Progress cho biết còn bao xa. Task `Doing` 20% ngày thứ Năm mà Expected done date là thứ Sáu = sắp trễ, biết trước để xử lý. `Done` thì phải `100%`.
 
-### Estimate (h) — Không phải để đo giờ, mà để phát hiện overload
+### Estimate (h)
 
 `2`, `3`, `4` (giờ). **Bắt buộc**, không quá 4 giờ một task.
 
@@ -103,49 +120,19 @@ Cộng estimate của tất cả task trong sprint → so với capacity team (V
 
 Và vì sao Estimate luôn đi trước Assign? Chưa biết task bao nhiêu giờ thì không biết giao cho ai là vừa sức. Giao theo cảm giác = người ôm 50 giờ, người ngồi chơi.
 
-### Expected done date — Biết task nào trễ
+### Expected done date
 
 Task có ngày xong = nhìn vào là biết trễ hay chưa. Thiếu ngày xong = task "sống mãi" mà không ai hỏi.
 
 Ngày phải là **một ngày cụ thể** — "tuần sau", "khi nào xong backend" không phải là ngày.
 
-### Notes — Những gì cần biết thêm
+### Notes
 
-Lý do `Pending`, task chuyển từ sprint trước (`Moved from sprint_1`), link tài liệu liên quan. Notes trống là bình thường — Notes sai mới là vấn đề.
-
----
-
-## Estimate cùng ai? — Tại sao PO không estimate một mình?
-
-PO hiểu khách cần gì. Dev hiểu hệ thống cần gì. Estimate một mình thì chỉ thấy một nửa bức tranh.
-
-- **PO estimate một mình** sẽ sót hạng mục kỹ thuật — rồi giữa sprint mới nghe *"cái này phải viết thêm migration nữa anh ơi"*, *"phải cấu hình lại server mới chạy được"*.
-- **Dev estimate một mình** sẽ sót hạng mục khách cần — màn hình trạng thái lỗi, email thông báo, trang hướng dẫn — những thứ không nằm trong code nhưng khách nhìn thấy đầu tiên.
-
-✅ Cách tốt:
-
-```
-PO mở Planning Report, đi qua từng Milestone cùng Tech Lead.
-PO: "Milestone Withdraw có 3 task: form rút tiền, xác nhận, lịch sử giao dịch."
-TL: "Thiếu task xử lý rút tiền bị treo ở bridge, cái đó mất 4h. Form rút tiền cũng phải tách đôi — 6h là quá 4h rồi."
-→ Board có đủ hạng mục, không task nào quá 4 tiếng.
-```
-
-Tại sao tốt: Dev chỉ ra phần PO không thấy. Task được tách nhỏ ngay khi estimate, không phải đợi tới lúc làm mới biết.
-
-❌ Cách tồi:
-
-```
-PO tự điền Estimate cho 30 task trong 15 phút, gửi link board vào group:
-"Mọi người xem task tuần này nhé."
-→ Thứ Tư Dev báo: "Task deposit này phải 2 ngày chứ không phải 4h đâu anh."
-```
-
-Tại sao tồi: Estimate theo cảm giác. Sprint vỡ ngay giữa tuần.
+Lý do `Pending`, task chuyển từ sprint trước (`Moved from sprint_1`), link tài liệu liên quan. Không có gì cần ghi thì để trống.
 
 ---
 
-## Các tab — Mỗi tab trả lời một câu hỏi
+## Các tab
 
 Nếu dồn **tất cả** task vào một chỗ — cả tuần trước, tuần sau, task đã done, task chưa ai làm — nhìn vào = nhiễu. Mỗi tab chỉ hiện đúng thứ bạn cần.
 
@@ -156,9 +143,9 @@ Nếu dồn **tất cả** task vào một chỗ — cả tuần trước, tuầ
 | 📖 `README` | Luật chơi của board là gì? |
 | 🗂️ `data` *(ẩn)* | Tự gom task từ các tab sprint bằng công thức QUERY để `Members` tính số. **Không sửa tay** |
 
-### Tab sprint — "Tuần này team làm gì?"
+### Tab sprint
 
-Mỗi sprint là một tuần, mỗi tuần một tab: `sprint_1`, `sprint_2`... Đầu tab là **Daily Report** (Upcoming Milestones, Completed Tasks, Today's Focus, Risks), bên dưới là bảng task 8 cột.
+Mỗi sprint là một tuần, mỗi tuần một tab: `sprint_1`, `sprint_2`... Đầu tab là **Daily Report** *(xem [Internal Daily](../po-internal-daily/internal-daily-handbook.md))*, bên dưới là bảng task 8 cột.
 
 Đây là tab **quan trọng nhất** — và cũng chính là trang khách nhận được dưới dạng PDF mỗi ngày.
 
@@ -166,7 +153,7 @@ Mỗi sprint là một tuần, mỗi tuần một tab: `sprint_1`, `sprint_2`...
 
 Sang sprint tiếp theo — với người nhận và ngày cụ thể. Tên tab luôn đặt theo sprint: `sprint_1`, `sprint_2`... nên mọi task luôn thuộc về một tuần nào đó.
 
-✅ Cách tốt:
+Cách tốt:
 
 ```
 Tab: sprint_1 | sprint_2 | Members | README
@@ -178,7 +165,7 @@ Thứ 6 chốt sprint, task "Withdraw: Lighter → Koto" chưa xong
 
 Tại sao tốt: Task vẫn có người, có ngày, và thứ 3 tuần sau sẽ có người hỏi tới.
 
-❌ Cách tồi:
+Cách tồi:
 
 ```
 Tab: Backlog | sprint_1 | Members | README
@@ -188,33 +175,28 @@ Thứ 6 chốt sprint, task chưa xong bị kéo về tab Backlog "lúc nào r�
 
 Tại sao tồi: Tab Backlog là nơi task đến rồi nằm chết. *"Cái này để sau làm"* — rồi không ai nhớ tới, cho đến ngày khách hỏi *"Cái anh nhờ tháng trước đâu rồi em?"*.
 
-### Tab Members — "Ai đang quá tải?"
+### Tab Members
 
 Tab `Members` cho PO bức tranh toàn team: mỗi người đang có bao nhiêu task, xong bao nhiêu, tuần này so với tuần trước.
 
-### Bugs — Nằm ở đâu?
+### Bugs
 
-Bug cũng là một task: nằm trong tab sprint, dưới Milestone mà nó thuộc về, có Estimate, Assignee, Expected done date như mọi task khác. Gắn mức độ ở đầu tên task để nhìn là biết gấp hay không — VD Milestone `Trading Audit` của Koto: `[P0] O-1: Start the order form with an empty size...`, `[P1] P-3: Type any leverage directly...`.
+Bug là các issue của dự án. Cần được phát hiện càng sớm càng tốt.
 
-Người chịu trách nhiệm Milestone thì chịu trách nhiệm luôn các bug thuộc Milestone đó.
+- Mô tả đầy đủ, rõ ràng sao cho người đọc không cần hỏi lại cũng hiểu được vấn đề.
+- Deadline luôn nằm trong Milestones, và Fix càng sớm càng tốt.
 
----
+Bug cũng là một task: nằm trong tab sprint, dưới Milestone mà nó thuộc về, có Estimate, Assignee, Expected done date như mọi task khác. Gắn mức độ ở đầu tên task để nhìn là biết gấp hay không — VD Milestone `Trading UI Audit Fixes` của Koto: `[P0] O-1: Start the order form with an empty size...`, `[P1] P-3: Type any leverage directly...`.
 
-## Tại sao mỗi Milestone phải có task UX/UI, QA, Code Refactor?
-
-Đây là 3 luật đầu tiên trong Board Rule *(nằm ở tab `README` của mọi board, xem đủ ở phần quy tắc cứng của [quy trình](./board-create-process.md))*. Ba luật này là ba việc **dễ bị quên nhất** — không có dòng trên board thì không ai làm:
-
-- **UX/UI** — Dev code xong mới phát hiện chưa có design cho trạng thái lỗi, trạng thái rỗng. Có task UX/UI ngay từ đầu Milestone = design đi trước code.
-- **QA** — Không có task QA, đến ngày bàn giao mới thấy chưa ai test. Có task QA với Expected done date sau các task dev = QA có chỗ đứng trong kế hoạch, không phải "làm thêm nếu còn thời gian".
-- **Code Refactor** — Refactor là nợ kỹ thuật mà **chỉ dev biết** — code cũ cần viết lại, performance cần tối ưu, dependency cần cập nhật. Không có task riêng, refactor sẽ luôn bị đẩy xuống cuối vì không "gấp" bằng feature mới — rồi nợ chồng nợ cho đến khi hệ thống quá chậm hoặc quá khó maintain. Mỗi Milestone một task refactor = trả nợ đều đặn, không để dồn.
+Người chịu trách nhiệm cho Milestone, thì sẽ chịu trách nhiệm cho bugs thuộc về Milestone đó.
 
 ---
 
-## Lọc theo Milestone — Milestone này xong bao nhiêu phần trăm?
+## Xem tiến độ một Milestone
 
 *Dữ liệu → Tạo chế độ xem lọc*, lọc cột Milestones.
 
-Cần khi: Dự án có ≥ 5 Milestone chạy song song. PO muốn biết "Lighter Trading hoàn thành bao nhiêu phần trăm?" → lọc Milestone = Lighter - Trading, đếm Done/Total.
+Cần khi: Dự án có ≥ 5 Milestone chạy song song. PO muốn biết "Lighter Platform Integration hoàn thành bao nhiêu phần trăm?" → lọc Milestone = Lighter Platform Integration, đếm Done/Total.
 
 ---
 
@@ -227,7 +209,7 @@ Cần khi: Dự án có ≥ 5 Milestone chạy song song. PO muốn biết "Ligh
 | Đặt tên? | `[Project]-Management` hoặc tên bộ phận |
 | Bao nhiêu cột? | 8 — không thiếu, không thừa. Estimate bắt buộc |
 | Tab chính? | Mỗi sprint một tab: `sprint_1`, `sprint_2`... |
-| Ai tạo? | PO, Estimate cùng Dev, Assign cùng team |
+| Ai tạo? | PO, Estimate cùng Dev *(xem [Tạo Milestone](../po-milestone-create/milestone-create-handbook.md))*, Assign cùng team |
 | Status bao nhiêu? | 4. Không hơn. |
 
 ---
@@ -235,5 +217,6 @@ Cần khi: Dự án có ≥ 5 Milestone chạy song song. PO muốn biết "Ligh
 ## Liên kết
 
 - [Quy trình tạo Board](./board-create-process.md) — Luồng `TEMPLATE → ESTIMATE → ASSIGN → PLAN`, Board Rule, quy tắc cứng, checklist
+- [Tạo Milestone](../po-milestone-create/milestone-create-handbook.md) — Đặt tên Milestone, tách task, estimate cùng Dev
 - [AI Instruction](./board-create-ai-instruction/board-create-instruction.md) — AI soạn nháp task & Estimate từ Planning Report
-- [Board Handbook — Quản lý board hằng ngày](../board-handbook/board-handbook.md) — Cập nhật tiến độ, Daily Report, export PDF gửi khách
+- [Internal Daily Meeting](../po-internal-daily/internal-daily-process.md) — Cập nhật board hằng ngày, Daily Report, export PDF gửi khách

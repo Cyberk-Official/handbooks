@@ -95,7 +95,7 @@ flowchart TD
 
 | Tình huống | Hành động |
 |-----------|----------|
-| **Nghỉ đột xuất (lý do bất khả kháng: sức khỏe nặng, biến cố gia đình)** | - Product Owner lập tức khóa mọi quyền truy cập trong vòng 1 giờ để bảo vệ hệ thống.<br>- Kéo toàn bộ code mới nhất từ remote Git về kiểm tra commit cuối cùng; rà soát task trên GitHub Projects.<br>- Chỉ định Interim Receiver tiếp quản khẩn cấp để giữ nhịp Sprint.<br>- Đề xuất phân chia thưởng pro-rata theo đóng góp thực tế (cần Anderson duyệt). |
+| **Nghỉ đột xuất (lý do bất khả kháng: sức khỏe nặng, biến cố gia đình)** | - Product Owner lập tức khóa mọi quyền truy cập trong vòng 1 giờ để bảo vệ hệ thống.<br>- Kéo toàn bộ code mới nhất từ remote Git về kiểm tra commit cuối cùng; rà soát task trên Board dự án.<br>- Chỉ định Interim Receiver tiếp quản khẩn cấp để giữ nhịp Sprint.<br>- Đề xuất phân chia thưởng pro-rata theo đóng góp thực tế (cần Anderson duyệt). |
 | **Thành viên cố tình ngắt liên lạc (Ghosting) hoặc bất hợp tác** | - Khóa ngay lập tức mọi quyền truy cập Git, Cloud, Server, Database, SaaS.<br>- Thu hồi toàn bộ quyền lợi thưởng dự án theo quy chế kỷ luật.<br>- Báo cáo ngay lên Anderson để có phương án pháp lý/hành chính nếu cần. |
 | **Dự án chưa tuyển được Receiver thay thế (Team neo người)** | - Product Owner tạm thời đóng vai trò Receiver trung gian, lưu trữ toàn bộ Handover Doc và Video record vào Wiki dự án.<br>- Khi có nhân sự mới, áp dụng trực tiếp [[project-onboarding-process\|Quy trình Onboarding Dự Án]] để chuyển giao lại trong 24h. |
 | **NDA chưa ký, có điều khoản chưa rõ hoặc thành viên chưa thể ký/từ chối ký** | PO ghi trạng thái còn thiếu, báo HR và escalate lên Anderson; ghi người xử lý và hạn tiếp theo. HR phối hợp làm rõ hoặc tổ chức ký từ xa theo hình thức công ty chấp nhận nếu cần. Tiếp tục bàn giao và thu hồi quyền đúng lịch; chưa sign-off hoàn tất khi NDA chưa được ký đầy đủ. |
@@ -109,7 +109,7 @@ flowchart TD
 - [ ] **T-14:** Đã tiếp nhận thông báo, họp 1-1 xác nhận timeline và đánh giá rủi ro (Impact Assessment).
 - [ ] **T-10:** Đã chỉ định Receiver và ban hành kế hoạch chuyển giao (Handover Plan).
 - [ ] **Khi chốt kế hoạch:** Đã yêu cầu HR chuẩn bị NDA bảo mật sau khi rời dự án và xác nhận lịch ký.
-- [ ] **T-7:** Đã thiết lập Cutoff Date, chốt danh sách task dở dang trên GitHub Projects.
+- [ ] **T-7:** Đã thiết lập Cutoff Date, chốt danh sách task dở dang trên Board.
 - [ ] **T-3:** Đã thẩm định và phê duyệt tài liệu bàn giao (Handover Doc) đạt chuẩn 4 trụ cột.
 - [ ] **T-2:** Đã chủ trì buổi họp Handover Session, xác nhận Receiver chạy thành công local, và lưu trữ video record.
 - [ ] **Last Day:** Đã thu hồi quyền GitHub Repo/Org của thành viên.
@@ -128,7 +128,7 @@ flowchart TD
 - [ ] **T-3:** Đã hoàn thành Handover Doc chuẩn 4 phần kèm video quay màn hình demo luồng code.
 - [ ] **T-2:** Đã trình diễn Live Demo trong buổi họp và hướng dẫn Receiver chạy thành công mã nguồn.
 - [ ] **Last Day:** Đã chuyển giao quyền Owner tài khoản dịch vụ và secrets cho Product Owner.
-- [ ] **Last Day:** Đã cập nhật trạng thái toàn bộ issues cá nhân trên GitHub Projects sang Closed hoặc reassign.
+- [ ] **Last Day:** Đã cập nhật Status và Notes toàn bộ task cá nhân trên Board sang `Done` hoặc đổi Assignee.
 - [ ] **Trước sign-off:** Đã đọc, làm rõ điều khoản và ký NDA về nghĩa vụ bảo mật thông tin dự án sau khi rời đi; HR đã xác nhận tiếp nhận bản ký.
 
 ### Dành cho Người nhận bàn giao (Receiver)
@@ -136,7 +136,7 @@ flowchart TD
 - [ ] **T-3:** Đã đọc trước tài liệu bàn giao và chuẩn bị danh sách câu hỏi làm rõ.
 - [ ] **T-2:** Đã tham gia buổi họp, tự tay clone code, tạo `.env` từ `.env.example` và chạy ứng dụng thành công trên máy mình.
 - [ ] **T-2:** Đã nắm rõ luồng xử lý của module, các edge cases và cách debug khi có sự cố.
-- [ ] **Last Day:** Đã tiếp nhận chính thức các issue và task được phân công trên GitHub Projects.
+- [ ] **Last Day:** Đã tiếp nhận chính thức các task được phân công trên Board.
 
 ---
 

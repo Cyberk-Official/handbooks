@@ -1,6 +1,6 @@
 ---
 type: team
-tags: [handbook, dev-daily, personal-management, board, github-projects]
+tags: [handbook, dev-daily, personal-management, board, google-sheet]
 created: 2026-09-02
 updated: 2026-09-01
 author: anderson

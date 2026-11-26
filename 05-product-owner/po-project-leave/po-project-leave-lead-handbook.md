@@ -116,10 +116,10 @@ Mã nguồn dở dang nằm trên máy cá nhân của người rời đi là m�
 
 **✅ Cách tốt:**  
 Product Owner trực tiếp rà soát và kiểm soát theo 3 bước:
-1. **Rà soát GitHub Projects Board:**
-   - Lọc toàn bộ issue gán cho member (`assignee:@member`).
+1. **Rà soát Board dự án (Google Sheet):**
+   - Lọc cột Assignee theo tên member ở tab sprint hiện tại và sprint tiếp theo.
    - Task đã hoàn thành: yêu cầu member hoàn thiện kiểm thử và mở PR.
-   - Task đang làm dở không kịp xong trước Cutoff: yêu cầu member viết ghi chú chi tiết vào issue (đã làm đến đâu, còn vướng chỗ nào) và reassign sang cho Receiver hoặc Product Owner.
+   - Task đang làm dở không kịp xong trước Cutoff: yêu cầu member viết ghi chú chi tiết vào cột Notes (đã làm đến đâu, còn vướng chỗ nào) và đổi Assignee sang Receiver hoặc Product Owner.
 2. **Kiểm tra và dọn dẹp Git Branches:**
    - **Quy tắc bắt buộc:** Yêu cầu member push 100% các commit và branch cá nhân lên remote repo trên GitHub. Tuyệt đối không để code dở dang trên máy local cá nhân.
    - Đối với các PR đang mở: Product Owner review và merge các PR đạt chuẩn; đối với PR dở dang, chuyển thành **Draft PR** và giao lại cho Receiver theo dõi tiếp.
@@ -141,7 +141,7 @@ Product Owner là người chịu trách nhiệm cuối cùng về chất lượ
 **✅ Cách tốt:**  
 Product Owner thẩm định tài liệu dựa trên **Bộ tiêu chuẩn 4 Trụ Cột & Tính tự giải thích (Self-explanatory)**:
 1. **Trụ cột 1 — Bức tranh tổng quan & Module phụ trách:** Sơ đồ cấu trúc, luồng nghiệp vụ cốt lõi, công nghệ đặc thù.
-2. **Trụ cột 2 — Danh mục công việc dở dang (Pending Tasks):** Mã issue trên GitHub Projects, tên branch tương ứng, trạng thái hiện tại và hướng xử lý tiếp theo.
+2. **Trụ cột 2 — Danh mục công việc dở dang (Pending Tasks):** Tên task trên Board, tên branch tương ứng, trạng thái hiện tại và hướng xử lý tiếp theo.
 3. **Trụ cột 3 — Tài nguyên, Secrets & Cấu hình:** Danh sách tài khoản dịch vụ, vị trí lưu secrets và hướng dẫn tạo `.env` từ `.env.example`.
 4. **Trụ cột 4 — Kinh nghiệm vận hành & Edge cases:** Những lỗi hay gặp (known issues), cách khắc phục sự cố khẩn cấp (troubleshooting).
 5. **Yêu cầu Walkthrough Video:** Đối với các luồng nghiệp vụ phức tạp, yêu cầu member quay một video ngắn (10–15 phút quay màn hình giải thích luồng code) đính kèm vào tài liệu.
@@ -211,7 +211,7 @@ Trong trường hợp thành viên gặp sự cố sức khỏe nặng, biến c
 **✅ Cách tốt:**  
 Product Owner kích hoạt **Quy trình Ứng phó Khẩn cấp 4 bước**:
 1. **Khóa quyền truy cập tức thì (Trong vòng 1 giờ):** Lập tức thu hồi mọi quyền truy cập Git, Cloud, Server và Secrets của thành viên để bảo vệ an toàn hệ thống.
-2. **Thu hồi và khôi phục mã nguồn:** Kéo toàn bộ branch mới nhất trên remote Git về máy; kiểm tra lịch sử commit gần nhất; rà soát GitHub Projects Board để tổng hợp danh sách task đang dang dở.
+2. **Thu hồi và khôi phục mã nguồn:** Kéo toàn bộ branch mới nhất trên remote Git về máy; kiểm tra lịch sử commit gần nhất; rà soát Board dự án để tổng hợp danh sách task đang dang dở.
 3. **Chỉ định Interim Receiver:** Product Owner trực tiếp tiếp quản tạm thời hoặc phân công một Senior Dev có năng lực đứng ra gánh vác các task critical path để không làm trễ tiến độ Sprint.
 4. **Báo cáo và xử lý chế tài:** Báo cáo tình hình cho Quản lý cấp cao (Anderson); căn cứ quy định tại [[project-bonus-policy|Chính Sách Thưởng Dự Án]] để xem xét bảo lưu quyền lợi pro-rata (nếu có lý do bất khả kháng chính đáng) hoặc hủy thưởng và kỷ luật (nếu cố tình tự ý bỏ việc/ghosting).
 
@@ -273,7 +273,7 @@ Tại sao tồi: Phá vỡ văn hóa công ty, tạo hình ảnh xấu về năn
 |---|---|---|
 | **Tiếp nhận thông báo (T-14)** | Bình tĩnh, hẹn 1-1 trong 24h, đánh giá rủi ro (Impact Assessment) và các điểm nghẽn SPOF. | Trách móc, khó chịu hoặc im lặng không phản hồi. |
 | **Lập kế hoạch (T-10 đến T-7)** | Thiết lập Cutoff Date (T-7 dừng nhận task mới), chỉ định Receiver và lập timeline bàn giao rõ ràng. | Tiếp tục giao task mới sát ngày nghỉ khiến không có thời gian viết tài liệu. |
-| **Quản trị Git & Task (T-5 đến T-3)** | Yêu cầu push 100% remote branch, đóng gói Draft PRs, reassign task dở dang trên GitHub Projects. | Để code dở dang nằm trên máy local của member. |
+| **Quản trị Git & Task (T-5 đến T-3)** | Yêu cầu push 100% remote branch, đóng gói Draft PRs, đổi Assignee các task dở dang trên Board. | Để code dở dang nằm trên máy local của member. |
 | **Duyệt Handover Doc (T-3)** | Thẩm định theo 4 trụ cột, kiểm tra tính tự giải thích (Self-explanatory), yêu cầu video demo. | Duyệt qua loa tài liệu sơ sài chỉ có vài gạch đầu dòng. |
 | **Chủ trì họp Handover (T-2)** | Điều phối Live Demo, yêu cầu Receiver tự tay chạy local (Reverse Demo), quay video lưu trữ. | Vắng mặt trong buổi họp hoặc chỉ để hai bên nói chuyện miệng. |
 | **Bảo mật & Thu hồi quyền (Last Day)** | Thu hồi toàn bộ quyền GitHub, Cloud SSH/IAM, kho secrets; rotate credentials liên quan và chuyển Owner SaaS. | Bỏ quên SSH keys trên server hoặc giữ nguyên quyền Admin SaaS. |

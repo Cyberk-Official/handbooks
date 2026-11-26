@@ -151,7 +151,7 @@ Tại sao tốt: Tiết kiệm hàng giờ đồng hồ cho người tiếp qu�
 
 ```text
 - Code ở trên GitHub branch main.
-- Các task cần làm đều ở trên Board (GitHub Projects).
+- Các task cần làm đều ở trên Board dự án (Google Sheet).
 - Có gì không hiểu thì cứ nhắn Telegram cho em (mặc dù đã rời dự án).
 ```
 
@@ -168,7 +168,7 @@ Tại sao tồi: Người tiếp quản sẽ không biết bắt đầu từ đ�
 | **Bất khả kháng (ốm/việc gấp)** | Báo khẩn cấp ngay, push commit mới nhất, gửi quyền truy cập. | Biến mất không báo trước (Ghosting), giữ code dở trên local. |
 | **Chưa có Receiver** | Viết tài liệu tự giải thích (Self-explanatory) gửi Product Owner. | Chỉ nói miệng qua loa cho Product Owner rồi thôi. |
 | **Bàn giao code & quyền** | Code sạch, push 100% remote branch, transfer owner tài khoản. | Code dở dang không push, vẫn giữ quyền admin sau khi rời đi. |
-| **Tài liệu bàn giao** | Đủ 4 phần + Video demo luồng chạy, cập nhật task trên GitHub Projects. | Viết vài dòng chung chung hoặc hứa "có gì nhắn hỏi sau". |
+| **Tài liệu bàn giao** | Đủ 4 phần + Video demo luồng chạy, cập nhật task trên Board. | Viết vài dòng chung chung hoặc hứa "có gì nhắn hỏi sau". |
 
 ---
 

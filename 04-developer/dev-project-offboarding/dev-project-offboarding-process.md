@@ -2,7 +2,7 @@
 type: team
 tags: [offboarding, project, developer, process]
 created-date: 2026-09-17
-updated-date: 2026-09-17
+updated-date: 2026-11-26
 status: Nháp
 ---
 
@@ -69,7 +69,7 @@ Luồng trên dành cho bàn giao theo kế hoạch. Khi phải khóa quyền kh
 | # | Việc làm | Ai làm | Đầu ra | Timeline |
 |---|----------|--------|--------|----------|
 | 1 | **Xác nhận kế hoạch bàn giao.** Gửi PO link danh sách repo/module và công việc đang phụ trách. Xác nhận ngày cuối, Cutoff Date, Receiver, lịch review/demo và thời điểm thu hồi quyền. | Developer + PO | Kế hoạch ghi rõ người nhận và hạn cho từng phần; link hồ sơ bàn giao trong repo dự án | Khi PO tiếp nhận thông báo |
-| 2 | **Rà toàn bộ công việc trên board.** Đối chiếu Personal Board với board dự án, issue, PR và cam kết còn mở trong Daily Report. Cùng PO chốt việc hoàn tất trước khi rời đi và việc chuyển tiếp; dừng nhận task mới từ Cutoff Date. | Developer; PO chốt ưu tiên | Mỗi task còn mở có trạng thái thật, link code, next step, blocker và người nhận dự kiến | Trước Cutoff Date; cập nhật mỗi ngày đến khi chuyển giao |
+| 2 | **Rà toàn bộ công việc trên board.** Lọc task của mình trên board dự án, đối chiếu với issue, PR và cam kết còn mở trong Daily Report. Cùng PO chốt việc hoàn tất trước khi rời đi và việc chuyển tiếp; dừng nhận task mới từ Cutoff Date. | Developer; PO chốt ưu tiên | Mỗi task còn mở có trạng thái thật, link code, next step, blocker và người nhận dự kiến | Trước Cutoff Date; cập nhật mỗi ngày đến khi chuyển giao |
 | 3 | **Đóng gói code.** Rà working tree, stash, file chưa track và branch local của dự án. Kiểm tra secrets trước khi commit/push mọi phần code cần bàn giao lên remote được phê duyệt. Mở Draft PR cho phần dở; phần hoàn tất đi qua review thông thường. | Developer | Issue ↔ branch/commit ↔ PR truy vết được; ghi kết quả test, phần chưa test và phần chưa hoàn thành | Trước buổi duyệt tài liệu |
 | 4 | **Cập nhật tài liệu tại nguồn.** Sửa README, `.env.example`, PRD/BRD, ADR hoặc hướng dẫn vận hành khi thiếu/sai; mở PR để review. Tạo hồ sơ bàn giao Markdown trong repo, ví dụ `docs/handover/<ten-dev>-<ngay-roi>.md`, dẫn link tới các nguồn này. Xem [cách viết hồ sơ](./dev-project-offboarding-handbook.md). | Developer; PO duyệt | Hồ sơ gồm công việc, logic kỹ thuật, môi trường/quyền và demo; Receiver truy cập được mọi link cần thiết | Theo mốc duyệt tài liệu trong kế hoạch |
 | 5 | **Demo và kiểm chứng ngược (Reverse Demo).** Trình diễn phần phụ trách, lỗi đã biết và cách debug. Receiver tự lấy code từ remote, setup theo README bằng quyền của mình, chạy luồng chính và test liên quan. Ghi commit đã kiểm tra, kết quả và câu hỏi còn mở vào hồ sơ. | Developer + Receiver; PO chủ trì | Xác nhận của Receiver và link video buổi bàn giao do PO lưu; điểm chưa đạt có người xử lý và hạn kiểm tra lại | Tại buổi bàn giao; kiểm tra lại trước sign-off nếu chưa đạt |
@@ -111,7 +111,7 @@ Luồng trên dành cho bàn giao theo kế hoạch. Khi phải khóa quyền kh
 ## Checklist tự kiểm
 
 - [ ] Đã xác nhận với PO ngày cuối, Cutoff Date, Receiver, lịch demo và thu hồi quyền.
-- [ ] Đã rà Personal Board, board dự án, issue, PR và các cam kết/risk còn mở trong Daily Report.
+- [ ] Đã rà task của mình trên board dự án, issue, PR và các cam kết/risk còn mở trong Daily Report.
 - [ ] Code cần bàn giao từ working tree, stash và branch local đã được kiểm tra secrets và đưa lên remote; phần dở có Draft PR.
 - [ ] Mỗi task còn mở có link code, kết quả test, next step, blocker, đúng một Assignee đã nhận và ETA.
 - [ ] README, `.env.example` và tài liệu liên quan đã được cập nhật, review; hồ sơ chỉ dẫn link tới nguồn chính.

@@ -102,3 +102,62 @@ Không phải dự án nào cũng cần. Thêm khi **có nhu cầu thật**, kh�
 
 Thứ 5 – thứ 6, PO mở sẵn tab sprint tuần tới: kiểm tra đã có đủ task chưa, estimate chưa, assign chưa. Không cần ngay khi mới tạo board.
 
+
+---
+
+## Rà soát toàn handbook (26/11) — chỗ còn dùng GitHub Projects
+
+**Sửa nhỏ (đổi chữ/link):** `05-product-owner/README.md`, `po-board-create/README.md`, `po-feature-request/README.md` (dòng 45), `feature-request-example.md` (dòng 407), `po-project-leave/` (3 file, ~8 chỗ), `00-account/team-chat-groups/` (2 chỗ "tên board trên GitHub Projects"), `08-media/Media-source-management-vi.md` (2 chỗ), `handbook/README.md` (dòng 72), `metadata.md` (tag `github-projects`), `workflow/playbook.md` (bảng Công cụ chuẩn + checklist), `04-developer/dev-project-onboarding/` (5 chỗ), `dev-project-offboarding/` (3 chỗ "Personal Board").
+
+**Sửa lớn:** `05-product-owner/board-handbook/` (Chương 4), `po-board-create/board-create-ai-instruction/`, `04-developer/dev-daily/` (xoay quanh Personal Board), `04-developer/dev-tasks-logs/` (cả folder dựa trên GH CLI push — mâu thuẫn Board Rule "PO đưa task lên board"), `04-developer/dev-daily-report/` (trùng với Daily Report đầu tab sprint + PDF).
+
+**Chờ quyết định bug:** `06-qa/qa-bugs-handling/`, `06-qa/qa-bugs-logs/` (bug đang là GitHub Issues).
+
+**Ngoài handbook:** `AGENTS.md` mục "Board & Task Management — GitHub Projects", "GitHub Boards", "Mở Leader board đầu ngày" (Leader/MEDIA/DESIGN/QA/SALE board).
+
+### ✅ Đã xử lý nhóm "Sửa nhỏ" (26/11)
+PO README, po-board-create/README, po-feature-request (README + example), po-project-leave (3 file), team-chat-groups (2 file), 08-media, handbook README, metadata (tag `github-projects` → `google-sheet`), workflow/playbook (bảng Công cụ chuẩn + checklist), dev-project-onboarding (2 file), dev-project-offboarding (2 file). Giữ nguyên mọi chỗ nói về GitHub **repo / branch / PR / Issues** (bug chờ quyết định).
+
+---
+
+## Plan: Gộp `board-handbook/` vào `po-board-create/` + tạo `po-internal-daily/` (26/11, chờ duyệt)
+
+### Bản đồ di chuyển tri thức từ `board-handbook.md`
+
+| Nội dung gốc | Đi đâu | Cách xử lý |
+|---|---|---|
+| Quản lý dự án là gì? (Scope / Deadline / Resource / Responsibility) + Quản lý dự án tốt là | `board-create-handbook.md` — mục mở đầu | Giữ nguyên văn |
+| Epic: 1 người chịu trách nhiệm, < 1 tuần, team < 5 người; thêm Epic = mở rộng scope → báo quản lý; khách thêm Epic = cơ hội mở rộng hợp đồng | `board-create-handbook.md` — mục Milestones | Giữ ý, đổi Epic → Milestone, link Feature Request |
+| Epic phải có Feature ID (`BR-XXX`, `FR-XXX`) | ❓ Chờ Anderson | Sheet chưa có cột Feature ID |
+| Milestone = mốc bàn giao weekly (`W33`, `Alpha`) | ❓ Chờ Anderson | Sheet hiện dùng Milestone = tên tính năng, mốc ngày nằm ở Upcoming Milestones |
+| Tasks: < 4h, làm trong 1 ngày | Đã có trong Board Rule | — |
+| Bugs: mô tả đủ để người đọc không cần hỏi lại; deadline nằm trong Milestone; fix càng sớm càng tốt; người giữ Epic giữ bug | `board-create-handbook.md` — mục Bugs | Giữ nguyên văn |
+| Board: team nhìn vào biết tuần này làm gì, có trễ không | Đã có (Tiêu chí board tốt) | — |
+| Về Tasks: luôn cập nhật task mới nhất, bỏ task outdated, task mới đủ thông tin | `internal-daily-handbook.md` — bước CHANGE | Giữ ý |
+| 3 loại board cơ bản + nâng cao (Sprint / Bugs / Personal / Sprint Future / Gantt / Filter) | Đã thay bằng các tab | Bỏ phần GitHub |
+| Tạo Board chuẩn (GitHub Projects) | — | Bỏ (đã có `po-board-create/`) |
+| Tạo Task chuẩn (AI-driven, GH CLI, format body) | — | Bỏ, xử lý cùng `dev-tasks-logs/` |
+| **Dấu hiệu quản lý dự án không tốt** — cấp team (12 dấu hiệu) & cấp cá nhân (6 dấu hiệu) | `internal-daily-handbook.md` — "Board đang ốm: nhận biết thế nào?" | Giữ nguyên văn, chỉ đổi thuật ngữ (In Progress → Doing, Personal Board → lọc tên mình, Epic → Milestone) |
+| Đọc tab sprint mỗi sáng (✅/❌ thứ 2 – thứ 5) + Chuẩn bị sprint tiếp theo (đã gỡ khỏi board-create) | `internal-daily-handbook.md` | Giữ nguyên văn |
+
+### Folder mới `05-product-owner/po-internal-daily/` (tạo template trống trước, duyệt cấu trúc rồi mới viết)
+
+- `README.md`
+- `internal-daily-process.md` — Luồng `DEMO → CHANGE → REPORT`
+  - DEMO: show sản phẩm cả team đã làm hôm qua
+  - CHANGE: đưa thay đổi, task mới phát hiện lên board, điều chỉnh task cho hợp lý, viết agile report ở đầu file Management
+  - REPORT: export file Management ra PDF gửi khách, kèm tin nhắn summary
+- `internal-daily-handbook.md` — cách nghĩ từng bước + dấu hiệu board ốm
+- `internal-daily-example.md` — mẫu agile report đầu tab, mẫu tin nhắn summary kèm PDF (tốt/tồi)
+
+### Sau khi chuyển xong
+- Xoá folder `board-handbook/` (cần Anderson cho phép xoá) hoặc chuyển vào `_to_delete/`
+- Đổi ~25 link trỏ tới `board-handbook/` → `po-board-create/board-create-handbook.md` hoặc `po-internal-daily/`
+- `05-product-owner/README.md`: Chương 4 → Internal Daily Meeting
+- Đánh giá trùng lặp với `04-developer/dev-daily/` và `04-developer/dev-daily-report/` (làm sau)
+
+### Tiến độ (26/11)
+- ✅ Đã chuyển vào `board-create-handbook.md`: Quản lý dự án là gì / Quản lý dự án tốt là (nguyên văn), kiến thức Epic → Milestones, kiến thức Bugs (nguyên văn).
+- ✅ Đã tạo khung trống `po-internal-daily/` (README, process, handbook, example) — chờ duyệt cấu trúc.
+- ⏳ Chưa xoá `board-handbook/`, chưa đổi link.
+- Quyết định mặc định: bỏ yêu cầu Feature ID (Sheet chưa có cột); Milestone theo tên tính năng (theo Sheet).

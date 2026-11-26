@@ -42,5 +42,5 @@ Bộ tài liệu này gồm 4 loại, mỗi loại phục vụ một mục đíc
 
 - [Kick-off Meeting với Khách hàng](../po-kick-off/kick-off-process.md) — Nơi PO giới thiệu trước cách xử lý thay đổi cho khách
 - [Tài liệu quy trình Zero to Product](../before-kick-off-docs/cyberk-zero-to-product-en.html) — Trang *Change & ownership* gửi khách
-- [Quản lý Board hàng ngày](../board-handbook/) — Cách quản lý backlog và GitHub Projects
+- [Quản lý Board hàng ngày](../board-handbook/) — Cách quản lý board dự án hằng ngày
 - [QA Handbook — Tiếp nhận & Xử lý Bugs](../../06-qa/qa-bugs-handling/README.md) — Quy trình song song khi khách báo lỗi

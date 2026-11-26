@@ -33,8 +33,8 @@ Quy ước chung xem [metadata-rule](../../.agents/rules/metadata-rule.md).
 | `cyberk-way` | Phương pháp CyberK, bí quyết, văn hóa |
 | `process` | Quy trình, flowchart, checklist |
 | `handbook` | Cẩm nang, hướng dẫn chi tiết |
-| `board` | GitHub Projects, board management |
-| `github-projects` | Liên quan đến GitHub Projects |
+| `board` | Board dự án (Google Sheet), board management |
+| `google-sheet` | Liên quan đến Board trên Google Sheet |
 | `bug-handling` | Xử lý bugs, severity, SLA |
 | `communication` | Giao tiếp với khách hàng, team |
 | `client-management` | Quản lý quan hệ khách hàng |

@@ -2,7 +2,7 @@
 type: handbook
 tags: [media, sop, nas, storage, vj, editor, process]
 created-date: 2026-09-03
-updated-date: 2026-09-04
+updated-date: 2026-11-26
 author: Media Manager
 status: Đang dùng
 ---
@@ -182,7 +182,7 @@ Cyberk Media NAS Root/
 | **1. Thu nhận & Đóng gói** | Quay & Đóng gói Source | Quay video, tạo cấu trúc `YYYY-MM-DD/ten-du-an_ten-vj_ten-clip/` chứa thư mục `source/`, file dựng thô (`.mp4`/`.mov`) & file kịch bản (có note popup text/motion). | **VJ** | Máy quay, CapCut/Premiere |
 | **2. Bàn giao** | Gửi cho Team Media | Chuyển gói folder đã đóng gói cho Editor kèm link/thông báo. | **VJ ➔ Editor** | **Telegram** |
 | **3. Lưu trữ NAS Source** | Đẩy lên NAS `sources/` | Editor đẩy dữ liệu lên NAS tại `sources/YYYY-MM-DD/`. Gộp các gói có cùng ngày vào chung 1 folder cha `YYYY-MM-DD`. | **Editor** | NAS Manager / SMB |
-| **4. Hậu kỳ** | Dựng & Hoàn thiện | Editor tiến hành dựng tinh, làm hiệu ứng Popup Text, Motion Graphics theo ghi chú trong file kịch bản. Cập nhật tiến độ task. | **Editor** | Premiere/After Effects, **GitHub Projects** |
+| **4. Hậu kỳ** | Dựng & Hoàn thiện | Editor tiến hành dựng tinh, làm hiệu ứng Popup Text, Motion Graphics theo ghi chú trong file kịch bản. Cập nhật tiến độ task. | **Editor** | Premiere/After Effects, **Board Media** |
 | **5. Xuất bản phẩm Final** | Lưu vào `social/` | Export clip final (`.mp4`/`.mov`) và lưu trực tiếp vào thư mục `social/` theo định dạng tên: `YYYY-MM-DD_ten-du-an_ten-vj_ten-clip.mp4`. | **Editor** | NAS `social/` |
 
 ---
@@ -215,7 +215,7 @@ Trước khi bàn giao hoặc đẩy file lên NAS, các bên cần tự kiểm 
   - [ ] Đã gộp các dự án cùng ngày vào chung một folder cha `YYYY-MM-DD`.
   - [ ] Clip final đã export đúng định dạng `.mp4` hoặc `.mov` nằm tại thư mục `social/`.
   - [ ] Tên file final đặt đúng chuẩn: `YYYY-MM-DD_ten-du-an_ten-vj_ten-clip.mp4`.
-  - [ ] Đã thông báo cập nhật link/file final cho team trên **Telegram** và update status trên **GitHub Projects**.
+  - [ ] Đã thông báo cập nhật link/file final cho team trên **Telegram** và update status trên **Board Media**.
 
 ---
 

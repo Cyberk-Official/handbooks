@@ -2,7 +2,7 @@
 type: team
 tags: [process, communication, client-management, setup]
 created-date: 2026-10-22
-updated-date: 2026-10-22
+updated-date: 2026-11-26
 author: neo
 status: Nháp
 ---
@@ -65,7 +65,7 @@ flowchart LR
 
 `BROKER_NAME` là tên broker. Nếu làm việc với một công ty broker thì dùng tên công ty.
 
-`PROJECT_NAME` là tên dự án, viết giống tên board `[project-name]-management` trên GitHub Projects, viết hoa chữ cái đầu.
+`PROJECT_NAME` là tên dự án, viết giống tên board `[Project]-Management` trên Google Drive, viết hoa chữ cái đầu.
 
 Giữa hai phần là dấu gạch ngang, mỗi bên một khoảng trắng. Phần đuôi `Cyberk devs`, `Cyberk Internal`, `Cyberk Management` giữ nguyên, không dịch và không viết tắt. Tên group không có emoji, ngày tháng hay tên người.
 
