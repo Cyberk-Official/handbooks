@@ -280,7 +280,7 @@ Tại sao tồi: "Some risks but we'll handle them" = mơ hồ, không chuyên n
 
 Tại sao tốt: Client hiểu 3 ý chính trong 30 giây. Risk được frame thành "team đã nghĩ trước và có plan" — không phải "có vấn đề". Nối liền với kick-off call đã hẹn sáng — quy trình mạch lạc.
 
-> Mẫu tin nhắn hoàn chỉnh: xem [kick-off-example.md](./kick-off-example.md)
+> Mẫu tin nhắn hoàn chỉnh: xem [planning-example.md](./planning-example.md)
 
 > **Về agenda kick-off:** Khi client confirm giờ, gửi agenda ít nhất **1 ngày trước buổi call**. Client biết trước sẽ thảo luận gì, chuẩn bị câu hỏi, không bị bất ngờ.
 

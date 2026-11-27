@@ -79,7 +79,7 @@ flowchart LR
 
 | Thứ tự | Bài đọc | Loại | Nội dung cốt lõi |
 |:------:|---------|------|------------------|
-| **4.1** | [Kick-off với Khách hàng — Cẩm nang](./po-kick-off/kick-off-handbook.md) | Handbook | Cách kiểm soát kỳ vọng, gửi summary trước file và dẫn dắt buổi call |
+| **4.1** | [Kick-off với Khách hàng — Cẩm nang](./po-kick-off/kick-off-handbook.md) | Handbook | Cách kiểm soát kỳ vọng, gửi tài liệu quy trình & agenda và dẫn dắt buổi call |
 | **4.2** | [Quy trình Kick-off Meeting](./po-kick-off/kick-off-process.md) | Process | Luồng 4 bước từ tin nhắn sáng ngày đầu đến email tổng kết sau call |
 | **4.3** | [Mẫu Agenda, Tin nhắn & Email Kick-off](./po-kick-off/kick-off-example.md) | Example | Trọn bộ tin nhắn chào hỏi, gửi tài liệu quy trình, agenda & email recap |
 

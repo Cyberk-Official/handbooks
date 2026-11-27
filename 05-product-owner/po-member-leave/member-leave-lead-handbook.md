@@ -284,10 +284,10 @@ Tại sao tốt: Tạo kết thúc đẹp, giữ gìn mối quan hệ đồng ng
 
 ## Liên kết
 
-- [Quy trình Rời Dự Án (Process)](project-leave-process.md)
-- [Cẩm nang Rời Dự Án cho Thành viên (Member Handbook)](project-leave-member-handbook.md)
-- [Quy trình Onboarding Dự Án](../project-onboarding/project-onboarding-process.md)
-- [Cẩm nang Onboarding Dự Án](../project-onboarding/project-onboarding-handbook.md)
-- [Cẩm nang Giao tiếp trong Team (Horenso)](../team-communicate/team-communicate-handbook.md)
+- [Quy trình Rời Dự Án (Process)](member-leave-process.md)
+- [Cẩm nang Rời Dự Án cho Thành viên (Member Handbook)](member-leave-member-handbook.md)
+- [Quy trình Onboarding Dự Án](../../04-developer/dev-project-onboarding/dev-project-onboarding-process.md)
+- [Cẩm nang Onboarding Dự Án](../../04-developer/dev-project-onboarding/dev-project-onboarding-handbook.md)
+- [Cẩm nang Giao tiếp trong Team (Horenso)](../../03-all-team/team-communicate/communicate-handbook.md)
 - [Cẩm nang Quản lý Board Dự Án](../po-board-create/board-create-handbook.md)
 - Chính Sách Thưởng Dự Án *(tài liệu đang cập nhật)*

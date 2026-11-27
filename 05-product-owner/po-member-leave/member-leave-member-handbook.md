@@ -174,9 +174,9 @@ Tại sao tốt: Tiết kiệm hàng giờ đồng hồ cho người tiếp qu�
 
 ## Liên kết
 
-- [Quy trình Rời Dự Án (Process)](po-member-leave-process.md)
-- [Cẩm nang Rời Dự Án cho Product Owner (Lead Handbook)](project-leave-lead-handbook.md)
-- [Quy trình Onboarding Dự Án](../project-onboarding/project-onboarding-process.md)
-- [Cẩm nang Giao tiếp trong Team (Horenso)](../team-communicate/team-communicate-handbook.md)
+- [Quy trình Rời Dự Án (Process)](member-leave-process.md)
+- [Cẩm nang Rời Dự Án cho Product Owner (Lead Handbook)](member-leave-lead-handbook.md)
+- [Quy trình Onboarding Dự Án](../../04-developer/dev-project-onboarding/dev-project-onboarding-process.md)
+- [Cẩm nang Giao tiếp trong Team (Horenso)](../../03-all-team/team-communicate/communicate-handbook.md)
 - [Cẩm nang Quản lý Board Dự Án](../po-board-create/board-create-handbook.md)
 - Chính Sách Thưởng Dự Án *(tài liệu đang cập nhật)*
