@@ -43,6 +43,7 @@ Quy ước chung xem [metadata-rule](../../.agents/rules/metadata-rule.md).
 | `project-management` | Quản lý dự án |
 | `personal-management` | Quản lý công việc cá nhân |
 | `policy` | Chính sách của Cyberk |
+| `media` | Tài liệu của team Media (kịch bản, quay dựng, review, đăng & ads) |
 | `dev-daily` | Daily meeting, daily report |
 | `setup` | Khởi tạo, cài đặt |
 | `workflow` | Luồng công việc |
